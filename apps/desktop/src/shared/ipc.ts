@@ -21,6 +21,7 @@ export const IpcChannel = {
   OverlayVisiblePanels: 'overlay:visible-panels',
   OverlayTest: 'overlay:test',
   OverlayStatus: 'overlay:status',
+  OverlayPointer: 'overlay:pointer',
 } as const;
 
 /** What the overlay is doing for one game, for the settings screen's test section. */
@@ -40,6 +41,8 @@ export interface OverlayStatus {
 export interface VisiblePanels {
   panelIds: string[];
   testing: boolean;
+  /** The game's menu is open: panels may take the mouse while it is over them. */
+  interactive: boolean;
 }
 
 export type OverlayTestResult = 'started' | 'not-running' | 'disabled' | 'no-window';
@@ -90,5 +93,7 @@ export interface DesktopApi {
     /** Shows every enabled panel of a running game for a few seconds, ignoring hotkeys and focus. */
     test(gameId: string): Promise<OverlayTestResult>;
     status(gameId: string): Promise<OverlayStatus>;
+    /** Only honored from the overlay window: the pointer entered (true) or left (false) a panel. */
+    setPointerOver(over: boolean): void;
   };
 }

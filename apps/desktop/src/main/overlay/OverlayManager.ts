@@ -7,6 +7,7 @@ import type { GameRegistry } from '../core/GameRegistry';
 import { HotkeyService } from '../core/HotkeyService';
 import type { SettingsStore } from '../core/SettingsStore';
 import type { TrustedIpc } from '../ui/trustedIpc';
+import { MENU_BINDINGS, MenuMode } from './MenuMode';
 import { isPanelRegistration, PanelVisibility } from './PanelVisibility';
 import { WindowBackend, type GameWindowState } from './WindowBackend';
 
@@ -38,6 +39,11 @@ export class OverlayManager {
   private lastHotkeyAt: number | null = null;
   private testUntil: number | null = null;
   private testTimer: NodeJS.Timeout | null = null;
+  /** ESC menu tracking: while the game's menu is open, panels may take the mouse. */
+  private readonly menu = new MenuMode();
+  private readonly menuKeys = new HotkeyService(areKeysDown, (held) => {
+    if (this.menu.update(held)) this.render();
+  });
   private readonly hotkeys = new HotkeyService(areKeysDown, (held) => {
     if (held.size > 0) this.lastHotkeyAt = Date.now();
     this.panels.setHeld(held);
@@ -53,6 +59,8 @@ export class OverlayManager {
     ipc: TrustedIpc,
   ) {
     ipc.on(IpcChannel.OverlayRegisterPanels, (event, payload) => this.handleRegister(event, payload));
+    ipc.on(IpcChannel.OverlayPointer, (event, over) => this.handlePointer(event, over));
+    this.menuKeys.setBindings(MENU_BINDINGS);
   }
 
   gameStarted(gameId: string, pid: number): void {
@@ -161,6 +169,8 @@ export class OverlayManager {
     this.panels = new PanelVisibility();
     this.registrations = [];
     this.lastHotkeyAt = null;
+    this.menuKeys.setActive(false);
+    this.menu.reset();
     this.endTest();
     this.log.info('Overlay detached', { gameId: current.gameId });
   }
@@ -225,6 +235,17 @@ export class OverlayManager {
   private updateHotkeyPolling(): void {
     const { focused, minimized } = this.gameWindow;
     this.hotkeys.setActive(focused && !minimized && this.panels.hotkeyBindings().length > 0);
+    this.menuKeys.setActive(focused && !minimized);
+  }
+
+  /**
+   * The overlay page reports the pointer entering or leaving a panel. Only while the game's menu is
+   * open does the panel take clicks; everywhere else, and otherwise, clicks go to the game.
+   */
+  private handlePointer(event: IpcMainEvent, over: unknown): void {
+    const current = this.current;
+    if (!current || event.sender !== current.backend.window.webContents) return;
+    current.backend.setClickThrough(!(over === true && this.menu.isOpen));
   }
 
   private render(): void {
@@ -238,7 +259,10 @@ export class OverlayManager {
       ? this.registrations.map((panel) => panel.panelId).filter(enabled)
       : this.panels.visible(enabled);
     const { window } = current.backend;
-    const shown: VisiblePanels = { panelIds, testing };
+    const interactive = this.menu.isOpen && panelIds.length > 0;
+    // Leaving the menu hands the mouse back to the game even if the pointer is still over a panel.
+    if (!interactive) current.backend.setClickThrough(true);
+    const shown: VisiblePanels = { panelIds, testing, interactive };
     if (!window.isDestroyed()) window.webContents.send(IpcChannel.OverlayVisiblePanels, shown);
 
     const { focused, minimized, hasBounds } = this.gameWindow;

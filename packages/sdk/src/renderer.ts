@@ -28,7 +28,11 @@ export interface OverlayPanel<S extends GameState = GameState> {
   id: string;
   /** Shown in the settings screen. */
   title: LocalizedText;
-  component: ComponentType<{ state: S }>;
+  /**
+   * `interactive` is true while the game's menu is open (ESC): the panel then takes the mouse
+   * while the pointer is over it, so it can offer choices. Otherwise clicks go to the game.
+   */
+  component: ComponentType<{ state: S; interactive?: boolean }>;
   /** Hides the panel in some game states, e.g. show a loadout summary only on the ship. */
   showWhen?: (state: S) => boolean;
   defaultAnchor: Anchor;

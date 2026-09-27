@@ -23,6 +23,7 @@ const api: DesktopApi = {
     onVisiblePanelsChanged: (listener) => subscribe(IpcChannel.OverlayVisiblePanels, listener),
     test: (gameId) => ipcRenderer.invoke(IpcChannel.OverlayTest, gameId),
     status: (gameId) => ipcRenderer.invoke(IpcChannel.OverlayStatus, gameId),
+    setPointerOver: (over) => ipcRenderer.send(IpcChannel.OverlayPointer, over),
   },
 };
 

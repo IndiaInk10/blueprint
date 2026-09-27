@@ -43,3 +43,8 @@ body {
   padding: 12px;
   overflow: hidden;
 }
+
+/* The game menu is open: the panel takes the mouse while the pointer is over it. */
+.overlay-panel.interactive {
+  border-color: rgba(102, 192, 244, 0.7);
+}
