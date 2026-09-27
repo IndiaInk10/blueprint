@@ -1,0 +1,2397 @@
+# Stratagems with their input codes, cross-checked across helldivers.wiki.gg, namu.wiki and community lists.
+# uses: null means unlimited. requiresBackpack: the support weapon comes with its own backpack.
+kind: stratagem-catalog
+schemaVersion: 1
+revision: 2
+updatedAt: 2026-09-27
+stratagems:
+  - id: orbital-120mm-he-barrage
+    name:
+      en: Orbital 120mm HE Barrage
+      ko: 궤도 120mm 고폭 폭격
+    category: orbital
+    code:
+      - right
+      - right
+      - down
+      - left
+      - right
+      - down
+    cooldown: 180
+    uses: null
+    callInTime: 7.45
+    unlock:
+      level: 5
+      requisition: 4000
+    source: Base game (requisition, Orbital Cannons)
+    icon: Orbital_120mm_HE_Barrage_Stratagem_Icon_Background.svg
+    notes:
+      en: Tight artillery barrage for clearing a small area such as an outpost.
+      ko: 전초기지처럼 좁은 지역을 쓸어버리는 밀집 포격입니다.
+  - id: orbital-380mm-he-barrage
+    name:
+      en: Orbital 380mm HE Barrage
+      ko: 궤도 380mm 고폭 폭격
+    category: orbital
+    code:
+      - right
+      - down
+      - up
+      - up
+      - left
+      - down
+      - down
+    cooldown: 240
+    uses: null
+    callInTime: 8.45
+    unlock:
+      level: 8
+      requisition: 7500
+    source: Base game (requisition, Orbital Cannons)
+    icon: Orbital_380mm_HE_Barrage_Stratagem_Icon_Background.svg
+    notes:
+      en: Long, wide heavy-shell barrage that levels large bases and everything nearby.
+      ko: 넓은 범위에 오래 쏟아지는 대구경 포격으로, 대형 기지와 주변의 모든 것을 초토화합니다.
+  - id: orbital-airburst-strike
+    name:
+      en: Orbital Airburst Strike
+      ko: 궤도 공중폭발 타격
+    category: orbital
+    code:
+      - right
+      - right
+      - right
+    cooldown: 100
+    uses: null
+    callInTime: 4.45
+    unlock:
+      level: 5
+      requisition: 4000
+    source: Base game (requisition, Orbital Cannons)
+    icon: Orbital_Airburst_Strike_Stratagem_Icon_Background.svg
+    notes:
+      en: Airburst shells rain shrapnel on unarmored crowds but struggle against heavy armor.
+      ko: 공중에서 터지는 포탄이 비장갑 적 무리에 파편을 쏟아붓지만, 고장갑 적에게는 효과가 떨어집니다.
+  - id: orbital-ems-strike
+    name:
+      en: Orbital EMS Strike
+      ko: 궤도 EMS 타격
+    category: orbital
+    code:
+      - right
+      - right
+      - left
+      - down
+    cooldown: 75
+    uses: null
+    callInTime: 4.45
+    unlock:
+      level: 5
+      requisition: 6000
+    source: Base game (requisition, Bridge)
+    icon: Orbital_EMS_Strike_Stratagem_Icon_Background.svg
+    notes:
+      en: Non-lethal blast that stuns all enemies in the area.
+      ko: 구역 내 모든 적을 기절시키는 비살상 폭발입니다.
+  - id: orbital-gas-strike
+    name:
+      en: Orbital Gas Strike
+      ko: 궤도 가스 타격
+    category: orbital
+    code:
+      - right
+      - right
+      - down
+      - right
+    cooldown: 75
+    uses: null
+    callInTime: 4.45
+    unlock:
+      level: 1
+      requisition: 4000
+    source: Base game (requisition, Bridge)
+    icon: Orbital_Gas_Strike_Stratagem_Icon_Background.svg
+    notes:
+      en: Releases a lingering corrosive gas cloud that damages and confuses enemies.
+      ko: 적에게 피해를 주고 혼란에 빠뜨리는 부식성 가스 구름을 오래 남깁니다.
+  - id: orbital-gatling-barrage
+    name:
+      en: Orbital Gatling Barrage
+      ko: 궤도 개틀링 폭격
+    category: orbital
+    code:
+      - right
+      - down
+      - left
+      - up
+      - up
+    cooldown: 70
+    uses: null
+    callInTime: 3.05
+    unlock:
+      level: 1
+      requisition: 1500
+    source: Base game (requisition, Orbital Cannons)
+    icon: Orbital_Gatling_Barrage_Stratagem_Icon_Background.svg
+    notes:
+      en: Short-cooldown autocannon barrage that shreds groups of small and medium enemies.
+      ko: 쿨다운이 짧은 오토캐넌 포격으로, 소형·중형 적 무리를 갈아버립니다.
+  - id: orbital-laser
+    name:
+      en: Orbital Laser
+      ko: 궤도 레이저
+    category: orbital
+    code:
+      - right
+      - down
+      - up
+      - right
+      - down
+    cooldown: 300
+    uses: 3
+    callInTime: 2
+    unlock:
+      level: 15
+      requisition: 10000
+    source: Base game (requisition, Orbital Cannons)
+    icon: Orbital_Laser_Stratagem_Icon_Background.svg
+    notes:
+      en: Limited-use laser that tracks and burns enemies around the beacon for several seconds.
+      ko: 사용 횟수가 제한된 레이저로, 신호기 주변의 적을 몇 초 동안 추적하며 태웁니다.
+  - id: orbital-napalm-barrage
+    name:
+      en: Orbital Napalm Barrage
+      ko: 궤도 네이팜 폭격
+    category: orbital
+    code:
+      - right
+      - right
+      - down
+      - left
+      - right
+      - up
+    cooldown: 240
+    uses: null
+    callInTime: 7.45
+    unlock:
+      level: 18
+      requisition: 10000
+    source: Base game (requisition, Orbital Cannons)
+    icon: Orbital_Napalm_Barrage_Stratagem_Icon_Background.svg
+    notes:
+      en: Prolonged incendiary barrage that sets a wide area ablaze.
+      ko: 넓은 지역을 불바다로 만드는 장시간 소이 포격입니다.
+  - id: orbital-precision-strike
+    name:
+      en: Orbital Precision Strike
+      ko: 궤도 정밀 타격
+    category: orbital
+    code:
+      - right
+      - right
+      - up
+    cooldown: 80
+    uses: null
+    callInTime: 4.45
+    unlock:
+      level: 1
+      requisition: 0
+    source: Base game (requisition, Bridge)
+    icon: Orbital_Precision_Strike_Stratagem_Icon_Background.svg
+    notes:
+      en: A single precise heavy shell for structures and single large targets.
+      ko: 구조물과 단일 대형 표적을 노리는 정밀한 대구경 포탄 한 발입니다.
+  - id: orbital-railcannon-strike
+    name:
+      en: Orbital Railcannon Strike
+      ko: 궤도 레일캐넌 타격
+    category: orbital
+    code:
+      - right
+      - up
+      - down
+      - down
+      - right
+    cooldown: 180
+    uses: null
+    callInTime: 0
+    unlock:
+      level: 20
+      requisition: 10000
+    source: Base game (requisition, Orbital Cannons)
+    icon: Orbital_Railcannon_Strike_Stratagem_Icon_Background.svg
+    notes:
+      en: Near-instant railcannon shot that locks onto the largest enemy near the beacon.
+      ko: 신호기 근처의 가장 큰 적을 조준하는, 거의 즉발인 레일캐넌 사격입니다.
+  - id: orbital-smoke-strike
+    name:
+      en: Orbital Smoke Strike
+      ko: 궤도 연막 타격
+    category: orbital
+    code:
+      - right
+      - right
+      - down
+      - up
+    cooldown: 75
+    uses: null
+    callInTime: 4.45
+    unlock:
+      level: 8
+      requisition: 4000
+    source: Base game (requisition, Bridge)
+    icon: Orbital_Smoke_Strike_Stratagem_Icon_Background.svg
+    notes:
+      en: Creates a large smoke screen to break enemy line of sight.
+      ko: 거대한 연막을 만들어 적의 시야를 차단합니다.
+  - id: orbital-walking-barrage
+    name:
+      en: Orbital Walking Barrage
+      ko: 궤도 이동 폭격
+    category: orbital
+    code:
+      - right
+      - down
+      - right
+      - down
+      - right
+      - down
+    cooldown: 240
+    uses: null
+    callInTime: 5.45
+    unlock:
+      level: 10
+      requisition: 7500
+    source: Base game (requisition, Orbital Cannons)
+    icon: Orbital_Walking_Barrage_Stratagem_Icon_Background.svg
+    notes:
+      en: Artillery barrage that walks forward in a line away from the thrower.
+      ko: 투척자로부터 멀어지는 방향으로 일직선을 그리며 전진하는 포격입니다.
+  - id: eagle-110mm-rocket-pods
+    name:
+      en: Eagle 110mm Rocket Pods
+      ko: 이글 110mm 로켓 포드
+    category: eagle
+    code:
+      - up
+      - right
+      - up
+      - left
+    cooldown: 15
+    uses: 3
+    callInTime: 3.4
+    unlock:
+      level: 10
+      requisition: 7500
+    source: Base game (requisition, Hangar)
+    icon: Eagle_110mm_Rocket_Pods_Stratagem_Icon_Background.svg
+    notes:
+      en: Rocket barrage that targets the largest enemy near the beacon.
+      ko: 신호기 근처의 가장 큰 적을 노리는 로켓 일제 사격입니다.
+  - id: eagle-500kg-bomb
+    name:
+      en: Eagle 500kg Bomb
+      ko: 이글 500kg 폭탄
+    category: eagle
+    code:
+      - up
+      - right
+      - down
+      - down
+      - down
+    cooldown: 15
+    uses: 1
+    callInTime: 3.45
+    unlock:
+      level: 15
+      requisition: 10000
+    source: Base game (requisition, Hangar)
+    icon: Eagle_500kg_Bomb_Stratagem_Icon_Background.svg
+    notes:
+      en: Single huge bomb that destroys heavy targets and structures.
+      ko: 대형 표적과 구조물을 파괴하는 거대한 폭탄 한 발입니다.
+  - id: eagle-airstrike
+    name:
+      en: Eagle Airstrike
+      ko: 이글 공중타격
+    category: eagle
+    code:
+      - up
+      - right
+      - down
+      - right
+    cooldown: 15
+    uses: 2
+    callInTime: 4.1
+    unlock:
+      level: 1
+      requisition: 4000
+    source: Base game (requisition, Hangar)
+    icon: Eagle_Airstrike_Stratagem_Icon_Background.svg
+    notes:
+      en: Carpet of bombs perpendicular to the throw that can destroy structures.
+      ko: 투척 방향과 수직으로 폭탄을 융단 투하하며, 구조물을 파괴할 수 있습니다.
+  - id: eagle-cluster-bomb
+    name:
+      en: Eagle Cluster Bomb
+      ko: 이글 집속탄
+    category: eagle
+    code:
+      - up
+      - right
+      - down
+      - down
+      - right
+    cooldown: 15
+    uses: 4
+    callInTime: 4.1
+    unlock:
+      level: 3
+      requisition: 4000
+    source: Base game (requisition, Hangar)
+    icon: Eagle_Cluster_Bomb_Stratagem_Icon_Background.svg
+    notes:
+      en: Many small bomblets that clear crowds of lightly armored enemies.
+      ko: 수많은 소형 자탄으로 경장갑 적 무리를 쓸어버립니다.
+  - id: eagle-gas-airstrike
+    name:
+      en: Eagle Gas Airstrike
+      ko: 이글 가스 타격
+    category: eagle
+    code:
+      - up
+      - right
+      - left
+      - right
+    cooldown: 15
+    uses: 2
+    callInTime: 4.1
+    source: "Campaign reward: Counterdissident Hammer"
+    icon: Eagle_Gas_Airstrike_Stratagem_Icon_Background.svg
+    notes:
+      en: Gas bombs that spread a corrosive cloud over the target area.
+      ko: 목표 지역에 부식성 가스 구름을 퍼뜨리는 가스 폭탄입니다.
+  - id: eagle-napalm-airstrike
+    name:
+      en: Eagle Napalm Airstrike
+      ko: 이글 네이팜 공중타격
+    category: eagle
+    code:
+      - up
+      - right
+      - down
+      - up
+    cooldown: 15
+    uses: 2
+    callInTime: 4.1
+    unlock:
+      level: 5
+      requisition: 5000
+    source: Base game (requisition, Hangar)
+    icon: Eagle_Napalm_Airstrike_Stratagem_Icon_Background.svg
+    notes:
+      en: Napalm bombs that leave a wall of fire to block or burn enemies.
+      ko: 화염 벽을 남겨 적을 막거나 태우는 네이팜 폭탄입니다.
+  - id: eagle-smoke-strike
+    name:
+      en: Eagle Smoke Strike
+      ko: 이글 연막 타격
+    category: eagle
+    code:
+      - up
+      - right
+      - up
+      - down
+    cooldown: 15
+    uses: 2
+    callInTime: 4.4
+    unlock:
+      level: 8
+      requisition: 4000
+    source: Base game (requisition, Hangar)
+    icon: Eagle_Smoke_Strike_Stratagem_Icon_Background.svg
+    notes:
+      en: Smoke bombs that create a thick screen for cover or disengaging.
+      ko: 엄폐나 교전 이탈을 위한 짙은 연막을 만드는 연막탄입니다.
+  - id: eagle-strafing-run
+    name:
+      en: Eagle Strafing Run
+      ko: 이글 기총소사
+    category: eagle
+    code:
+      - up
+      - right
+      - right
+    cooldown: 15
+    uses: 4
+    callInTime: 2.4
+    unlock:
+      level: 1
+      requisition: 1500
+    source: Base game (requisition, Hangar)
+    icon: Eagle_Strafing_Run_Stratagem_Icon_Background.svg
+    notes:
+      en: Fast cannon strafe along a line for light and medium enemies.
+      ko: 일직선을 따라 빠르게 기관포를 쏘는 기총소사로, 소형·중형 적에게 효과적입니다.
+  - id: 40-k-meltagun
+    name:
+      en: 40-K Meltagun
+      ko: 40-K 멜타건
+    category: support-weapon
+    code:
+      - down
+      - left
+      - up
+      - left
+      - left
+      - down
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    source: "Warbond: Castellan's Creed"
+    icon: Meltagun_Stratagem_Icon_Background.svg
+    notes:
+      en: Short-range superheated beam with very high armor penetration and damage.
+      ko: 장갑 관통력과 피해량이 매우 높은 단거리 초고열 빔입니다.
+  - id: ac-8-autocannon
+    name:
+      en: AC-8 Autocannon
+      ko: AC-8 오토캐넌
+    category: support-weapon
+    code:
+      - down
+      - left
+      - down
+      - up
+      - up
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: heavy
+    requiresBackpack: true
+    unlock:
+      level: 10
+      requisition: 7000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Autocannon_Stratagem_Icon_Background.svg
+    notes:
+      en: Versatile heavy-penetrating autocannon with an ammo backpack; also destroys fabricators and nests.
+      ko: 탄약 배낭을 쓰는 다재다능한 고장갑 관통 오토캐넌으로, 제작 시설과 둥지도 파괴합니다.
+  - id: apw-1-anti-materiel-rifle
+    name:
+      en: APW-1 Anti-Materiel Rifle
+      ko: APW-1 대물소총
+    category: support-weapon
+    code:
+      - down
+      - left
+      - right
+      - up
+      - down
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: heavy
+    unlock:
+      level: 1
+      requisition: 5000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Anti-Materiel_Rifle_Stratagem_Icon_Background.svg
+    notes:
+      en: Long-range high-caliber rifle for picking off medium and heavy weak points.
+      ko: 중형·대형 적의 약점을 저격하는 장거리 대구경 소총입니다.
+  - id: arc-3-arc-thrower
+    name:
+      en: ARC-3 Arc Thrower
+      ko: ARC-3 아크 발사기
+    category: support-weapon
+    code:
+      - down
+      - right
+      - down
+      - up
+      - left
+      - left
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    unlock:
+      level: 15
+      requisition: 7000
+    source: Base game (requisition, Engineering Bay)
+    icon: Arc_Thrower_Stratagem_Icon_Background.svg
+    notes:
+      en: Ammo-free chaining electric arc for close to mid range crowds.
+      ko: 탄약이 필요 없는 연쇄 전격 아크로, 근거리~중거리 적 무리에 효과적입니다.
+  - id: b-flam-80-cremator
+    name:
+      en: B/FLAM-80 Cremator
+      ko: B/FLAM-80 크리메이터
+    category: support-weapon
+    code:
+      - down
+      - down
+      - right
+      - down
+      - up
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: heavy
+    requiresBackpack: true
+    source: "Warbond: Entrenched Division"
+    icon: Cremator_Stratagem_Icon_Background.svg
+    notes:
+      en: Backpack-fed flamethrower with a large fuel tank for sustained burning.
+      ko: 대용량 연료 탱크로 오래 불태울 수 있는 배낭 급탄식 화염방사기입니다.
+  - id: b-md-c4-pack
+    name:
+      en: B/MD C4 Pack
+      ko: B/MD C4 팩
+    category: support-weapon
+    code:
+      - down
+      - right
+      - up
+      - up
+      - right
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    armorPen: anti-tank
+    requiresBackpack: true
+    source: "Warbond: Redacted Regiment"
+    icon: C4_Pack_Stratagem_Icon_Background.svg
+    notes:
+      en: Backpack of remotely detonated sticky C4 charges for demolition and heavy targets.
+      ko: 원격으로 기폭하는 점착식 C4 폭약이 든 배낭으로, 철거와 대형 표적 처리에 쓰입니다.
+  - id: cqc-1-one-true-flag
+    name:
+      en: CQC-1 One True Flag
+      ko: CQC-1 원 트루 플래그
+    category: support-weapon
+    code:
+      - down
+      - left
+      - right
+      - right
+      - up
+    cooldown: 480
+    uses: null
+    armorPen: medium
+    source: "Warbond: Masters of Ceremony"
+    icon: One_True_Flag_Stratagem_Icon_Background.svg
+    notes:
+      en: Super Earth flag used as a one-handed melee spear.
+      ko: 한손 근접 창으로 쓰는 슈퍼지구 깃발입니다.
+  - id: cqc-20-breaching-hammer
+    name:
+      en: CQC-20 Breaching Hammer
+      ko: CQC-20 벽 폭파 망치
+    category: support-weapon
+    code:
+      - down
+      - left
+      - right
+      - left
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    source: "Warbond: Siege Breakers"
+    icon: Breaching_Hammer_Stratagem_Icon_Background.svg
+    notes:
+      en: Sledgehammer with an explosive head that can breach heavy armor and walls.
+      ko: 폭발성 머리가 달린 대형 망치로, 고장갑과 벽을 뚫을 수 있습니다.
+  - id: cqc-9-defoliation-tool
+    name:
+      en: CQC-9 Defoliation Tool
+      ko: CQC-9 고엽 도구
+    category: support-weapon
+    code:
+      - down
+      - left
+      - right
+      - right
+      - down
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    source: "Warbond: Python Commandos"
+    icon: Defoliation_Tool_Stratagem_Icon_Background.svg
+    notes:
+      en: Two-handed chainsaw melee weapon that grinds through armor on sustained contact.
+      ko: 계속 접촉하면 장갑을 갈아 뚫는 양손 전기톱 근접 무기입니다.
+  - id: eat-17-expendable-anti-tank
+    name:
+      en: EAT-17 Expendable Anti-Tank
+      ko: EAT-17 일회성 대전차
+    category: support-weapon
+    code:
+      - down
+      - down
+      - left
+      - up
+      - right
+    cooldown: 70
+    uses: null
+    callInTime: 6.75
+    armorPen: anti-tank
+    unlock:
+      level: 3
+      requisition: 3000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Expendable_Anti-Tank_Stratagem_Icon_Background.svg
+    notes:
+      en: Single-shot disposable anti-tank launcher on a short cooldown.
+      ko: 쿨다운이 짧은 단발 일회용 대전차 발사기입니다.
+  - id: eat-411-leveller
+    name:
+      en: EAT-411 Leveller
+      ko: EAT-411 평탄화기
+    category: support-weapon
+    code:
+      - down
+      - down
+      - left
+      - up
+      - down
+    cooldown: 140
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    source: "Warbond: Siege Breakers"
+    icon: Leveller_Stratagem_Icon_Background.svg
+    notes:
+      en: Single-use launcher firing a heavy demolition missile.
+      ko: 강력한 철거용 미사일을 발사하는 일회용 발사기입니다.
+  - id: eat-700-expendable-napalm
+    name:
+      en: EAT-700 Expendable Napalm
+      ko: EAT-700 일회성 네이팜
+    category: support-weapon
+    code:
+      - down
+      - down
+      - left
+      - up
+      - left
+    cooldown: 140
+    uses: null
+    callInTime: 7.75
+    armorPen: medium
+    source: "Warbond: Dust Devils"
+    icon: Expendable_Napalm_Stratagem_Icon_Background.svg
+    notes:
+      en: Single-use launcher whose missile scatters napalm bomblets.
+      ko: 미사일이 네이팜 자탄을 흩뿌리는 일회용 발사기입니다.
+  - id: faf-14-spear
+    name:
+      en: FAF-14 Spear
+      ko: FAF-14 스피어
+    category: support-weapon
+    code:
+      - down
+      - down
+      - up
+      - down
+      - down
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    requiresBackpack: true
+    unlock:
+      level: 20
+      requisition: 9000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Spear_Stratagem_Icon_Background.svg
+    notes:
+      en: Lock-on anti-tank missile launcher for heavy armor and structures.
+      ko: 고장갑과 구조물을 상대하는 락온 대전차 미사일 발사기입니다.
+  - id: flam-40-flamethrower
+    name:
+      en: FLAM-40 Flamethrower
+      ko: FLAM-40 화염방사기
+    category: support-weapon
+    code:
+      - down
+      - left
+      - up
+      - down
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: heavy
+    unlock:
+      level: 10
+      requisition: 6000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Flamethrower_Stratagem_Icon_Background.svg
+    notes:
+      en: Close-range flamethrower that ignites enemies and terrain.
+      ko: 적과 지형에 불을 붙이는 근거리 화염방사기입니다.
+  - id: gl-21-grenade-launcher
+    name:
+      en: GL-21 Grenade Launcher
+      ko: GL-21 유탄 발사기
+    category: support-weapon
+    code:
+      - down
+      - left
+      - up
+      - left
+      - down
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: medium
+    unlock:
+      level: 5
+      requisition: 6000
+    source: Base game (requisition, Engineering Bay)
+    icon: Grenade_Launcher_Stratagem_Icon_Background.svg
+    notes:
+      en: Explosive grenade launcher for crowds, medium armor and bug holes.
+      ko: 적 무리, 중장갑, 벌레 굴에 효과적인 폭발 유탄 발사기입니다.
+  - id: gl-28-belt-fed-grenade-launcher
+    name:
+      en: GL-28 Belt-Fed Grenade Launcher
+      ko: GL-28 벨트식 유탄 발사기
+    category: support-weapon
+    code:
+      - down
+      - left
+      - up
+      - left
+      - up
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: heavy
+    requiresBackpack: true
+    source: "Warbond: Siege Breakers"
+    icon: Belt-Fed_Grenade_Launcher_Stratagem_Icon_Background.svg
+    notes:
+      en: Backpack-fed grenade launcher that can fire continuously.
+      ko: 배낭에서 탄을 공급받아 연속으로 사격할 수 있는 유탄 발사기입니다.
+  - id: gl-52-de-escalator
+    name:
+      en: GL-52 De-Escalator
+      ko: GL-52 디에스컬레이터
+    category: support-weapon
+    code:
+      - down
+      - right
+      - up
+      - left
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: heavy
+    source: "Warbond: Force of Law"
+    icon: De-Escalator_Stratagem_Icon_Background.svg
+    notes:
+      en: Grenade launcher firing arc grenades that stun enemies.
+      ko: 적을 기절시키는 아크 유탄을 발사하는 유탄 발사기입니다.
+  - id: gr-8-recoilless-rifle
+    name:
+      en: GR-8 Recoilless Rifle
+      ko: GR-8 무반동포
+    category: support-weapon
+    code:
+      - down
+      - left
+      - right
+      - right
+      - left
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    requiresBackpack: true
+    unlock:
+      level: 5
+      requisition: 6000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Recoilless_Rifle_Stratagem_Icon_Background.svg
+    notes:
+      en: Reloadable anti-tank rifle with a backpack; supports team reloading.
+      ko: 배낭을 사용하는 재장전식 대전차 화기로, 팀 장전을 지원합니다.
+  - id: las-98-laser-cannon
+    name:
+      en: LAS-98 Laser Cannon
+      ko: LAS-98 레이저 캐넌
+    category: support-weapon
+    code:
+      - down
+      - left
+      - down
+      - up
+      - left
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: heavy
+    unlock:
+      level: 5
+      requisition: 4000
+    source: Base game (requisition, Engineering Bay)
+    icon: Laser_Cannon_Stratagem_Icon_Background.svg
+    notes:
+      en: Continuous beam weapon that uses heat sinks instead of ammo.
+      ko: 탄약 대신 방열판을 사용하는 지속형 빔 무기입니다.
+  - id: las-99-quasar-cannon
+    name:
+      en: LAS-99 Quasar Cannon
+      ko: LAS-99 퀘이사 캐넌
+    category: support-weapon
+    code:
+      - down
+      - down
+      - up
+      - left
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    unlock:
+      level: 18
+      requisition: 7500
+    source: Base game (requisition, Engineering Bay)
+    icon: Quasar_Cannon_Stratagem_Icon_Background.svg
+    notes:
+      en: Ammo-free charged anti-tank energy cannon with a recharge delay.
+      ko: 탄약이 필요 없는 충전식 대전차 에너지 캐넌으로, 재충전 대기 시간이 있습니다.
+  - id: m-1000-maxigun
+    name:
+      en: M-1000 Maxigun
+      ko: M-1000 맥시건
+    category: support-weapon
+    code:
+      - down
+      - left
+      - right
+      - down
+      - up
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: medium
+    requiresBackpack: true
+    source: "Warbond: Python Commandos"
+    icon: Maxigun_Stratagem_Icon_Background.svg
+    notes:
+      en: Belt-fed minigun with a large ammo backpack.
+      ko: 대용량 탄약 배낭을 갖춘 벨트 급탄식 미니건입니다.
+  - id: m-105-stalwart
+    name:
+      en: M-105 Stalwart
+      ko: M-105 스털워트
+    category: support-weapon
+    code:
+      - down
+      - left
+      - down
+      - up
+      - up
+      - left
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: light
+    unlock:
+      level: 1
+      requisition: 3500
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Stalwart_Stratagem_Icon_Background.svg
+    notes:
+      en: Light, fast-handling machine gun for crowd control.
+      ko: 가볍고 다루기 쉬운 군중 제어용 기관총입니다.
+  - id: mg-206-heavy-machine-gun
+    name:
+      en: MG-206 Heavy Machine Gun
+      ko: MG-206 중기관총
+    category: support-weapon
+    code:
+      - down
+      - left
+      - up
+      - down
+      - down
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: heavy
+    unlock:
+      level: 12
+      requisition: 6000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Heavy_Machine_Gun_Stratagem_Icon_Background.svg
+    notes:
+      en: Hard-recoiling heavy machine gun that penetrates heavy armor.
+      ko: 반동이 강하며 고장갑을 관통하는 중기관총입니다.
+  - id: mg-43-machine-gun
+    name:
+      en: MG-43 Machine Gun
+      ko: MG-43 기관총
+    category: support-weapon
+    code:
+      - down
+      - left
+      - down
+      - up
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: medium
+    unlock:
+      level: 1
+      requisition: 0
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Machine_Gun_Stratagem_Icon_Background.svg
+    notes:
+      en: General-purpose machine gun best used from a stable position.
+      ko: 안정된 자세에서 쓸 때 가장 좋은 범용 기관총입니다.
+  - id: mgx-42-bullet-storm
+    name:
+      en: MGX-42 Bullet Storm
+      ko: MGX-42 불릿 스톰
+    category: support-weapon
+    code:
+      - down
+      - left
+      - down
+      - right
+      - up
+      - left
+    cooldown: 70
+    uses: null
+    callInTime: 6.75
+    armorPen: light
+    source: "Warbond: Exo Experts"
+    icon: Bullet_Storm_Stratagem_Icon_Background.svg
+    notes:
+      en: Disposable machine gun on a short cooldown.
+      ko: 쿨다운이 짧은 일회용 기관총입니다.
+  - id: mls-4x-commando
+    name:
+      en: MLS-4X Commando
+      ko: MLS-4X 코만도
+    category: support-weapon
+    code:
+      - down
+      - left
+      - up
+      - down
+      - right
+    cooldown: 120
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    unlock:
+      level: 15
+      requisition: 8000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Commando_Stratagem_Icon_Background.svg
+    notes:
+      en: Expendable launcher with four laser-guided anti-tank missiles.
+      ko: 레이저 유도 대전차 미사일 4발이 든 일회용 발사기입니다.
+  - id: ms-11-solo-silo
+    name:
+      en: MS-11 Solo Silo
+      ko: MS-11 솔로 사일로
+    category: support-weapon
+    code:
+      - down
+      - up
+      - right
+      - down
+      - down
+    cooldown: 180
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    source: "Warbond: Dust Devils"
+    icon: Solo_Silo_Stratagem_Icon_Background.svg
+    notes:
+      en: Deployable silo holding one guided missile fired via a handheld designator.
+      ko: 휴대용 지시기로 발사하는 유도 미사일 1발이 든 설치형 사일로입니다.
+  - id: plas-45-epoch
+    name:
+      en: PLAS-45 Epoch
+      ko: PLAS-45 에포크
+    category: support-weapon
+    code:
+      - down
+      - left
+      - up
+      - left
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: heavy
+    source: "Warbond: Control Group"
+    icon: Epoch_Stratagem_Icon_Background.svg
+    notes:
+      en: Charge-up plasma cannon that fires explosive shots.
+      ko: 충전 후 폭발탄을 발사하는 플라즈마 캐넌입니다.
+  - id: rl-77-airburst-rocket-launcher
+    name:
+      en: RL-77 Airburst Rocket Launcher
+      ko: RL-77 공중폭발 로켓 발사기
+    category: support-weapon
+    code:
+      - down
+      - up
+      - up
+      - left
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: medium
+    requiresBackpack: true
+    unlock:
+      level: 15
+      requisition: 8000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Airburst_Rocket_Launcher_Stratagem_Icon_Background.svg
+    notes:
+      en: Rockets that burst into cluster munitions near targets, good against flyers and crowds.
+      ko: 표적 근처에서 집속탄으로 터지는 로켓으로, 비행 적과 적 무리에 효과적입니다.
+  - id: rs-422-railgun
+    name:
+      en: RS-422 Railgun
+      ko: RS-422 레일건
+    category: support-weapon
+    code:
+      - down
+      - right
+      - down
+      - up
+      - left
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    unlock:
+      level: 20
+      requisition: 10000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: Railgun_Stratagem_Icon_Background.svg
+    notes:
+      en: Charge-up precision railgun for penetrating armored targets.
+      ko: 장갑 표적을 관통하는 충전식 정밀 레일건입니다.
+  - id: s-11-speargun
+    name:
+      en: S-11 Speargun
+      ko: S-11 작살총
+    category: support-weapon
+    code:
+      - down
+      - right
+      - down
+      - left
+      - up
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    source: "Warbond: Dust Devils"
+    icon: Speargun_Stratagem_Icon_Background.svg
+    notes:
+      en: Harpoon gun whose heavy projectiles are effective against armored targets.
+      ko: 무거운 투사체로 장갑 표적에 효과적인 작살총입니다.
+  - id: sta-x3-wasp-launcher
+    name:
+      en: StA-X3 W.A.S.P. Launcher
+      ko: StA-X3 W.A.S.P. 발사기
+    category: support-weapon
+    code:
+      - down
+      - down
+      - up
+      - down
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    armorPen: anti-tank
+    requiresBackpack: true
+    unlock:
+      level: 20
+      requisition: 12000
+    source: Base game (requisition, Patriotic Administration Center)
+    icon: W.A.S.P._Launcher_Stratagem_Icon_Background.svg
+    notes:
+      en: Multi-missile launcher that can lock on or fire in salvos.
+      ko: 락온하거나 일제 사격할 수 있는 다연장 미사일 발사기입니다.
+  - id: tx-41-sterilizer
+    name:
+      en: TX-41 Sterilizer
+      ko: TX-41 스터릴라이저
+    category: support-weapon
+    code:
+      - down
+      - left
+      - up
+      - down
+      - left
+    cooldown: 480
+    uses: null
+    callInTime: 7.75
+    source: "Warbond: Chemical Agents"
+    icon: Sterilizer_Stratagem_Icon_Background.svg
+    notes:
+      en: Sprays a corrosive mist that damages, blinds and slows enemies.
+      ko: 부식성 안개를 분사해 적에게 피해를 주고 시야를 가리며 느리게 만듭니다.
+  - id: ax-ar-23-guard-dog
+    name:
+      en: AX/AR-23 "Guard Dog"
+      ko: AX/AR-23 '가드 독'
+    category: backpack
+    code:
+      - down
+      - up
+      - left
+      - up
+      - right
+      - down
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    unlock:
+      level: 10
+      requisition: 7500
+    source: Base game (requisition, Engineering Bay)
+    icon: Guard_Dog_Stratagem_Icon_Background.svg
+    notes:
+      en: Drone armed with a Liberator rifle that defends the wearer in all directions.
+      ko: 리버레이터 소총으로 무장하고 착용자를 전방위로 지키는 드론입니다.
+  - id: ax-arc-3-guard-dog-k-9
+    name:
+      en: AX/ARC-3 "Guard Dog" K-9
+      ko: AX/ARC-3 '가드 독' K-9
+    category: backpack
+    code:
+      - down
+      - up
+      - left
+      - up
+      - right
+      - left
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    source: "Warbond: Force of Law"
+    icon: K-9_Stratagem_Icon_Background.svg
+    notes:
+      en: Drone with a non-lethal arc thrower that stuns nearby enemies.
+      ko: 주변 적을 기절시키는 비살상 아크 발사기를 단 드론입니다.
+  - id: ax-flam-75-guard-dog-hot-dog
+    name:
+      en: AX/FLAM-75 "Guard Dog" Hot Dog
+      ko: AX/FLAM-75 '가드 독' 핫 도그
+    category: backpack
+    code:
+      - down
+      - up
+      - left
+      - up
+      - left
+      - left
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    source: "Warbond: Python Commandos"
+    icon: Hot_Dog_Stratagem_Icon_Background.svg
+    notes:
+      en: Drone with a flamethrower that burns nearby enemies.
+      ko: 주변 적을 불태우는 화염방사기를 단 드론입니다.
+  - id: ax-las-5-guard-dog-rover
+    name:
+      en: AX/LAS-5 "Guard Dog" Rover
+      ko: AX/LAS-5 '가드 독' 로버
+    category: backpack
+    code:
+      - down
+      - up
+      - left
+      - up
+      - right
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    unlock:
+      level: 10
+      requisition: 7500
+    source: Base game (requisition, Engineering Bay)
+    icon: Rover_Stratagem_Icon_Background.svg
+    notes:
+      en: Drone with a laser rifle that never needs to reload.
+      ko: 재장전이 전혀 필요 없는 레이저 소총을 단 드론입니다.
+  - id: ax-tx-13-guard-dog-dog-breath
+    name:
+      en: AX/TX-13 "Guard Dog" Dog Breath
+      ko: AX/TX-13 '가드 독' 독 브레스
+    category: backpack
+    code:
+      - down
+      - up
+      - left
+      - up
+      - right
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    source: "Warbond: Chemical Agents"
+    icon: Dog_Breath_Stratagem_Icon_Background.svg
+    notes:
+      en: Drone that sprays caustic gas to blind and slow nearby enemies.
+      ko: 부식성 가스를 분사해 주변 적의 시야를 가리고 느리게 만드는 드론입니다.
+  - id: b-1-supply-pack
+    name:
+      en: B-1 Supply Pack
+      ko: B-1 보급 팩
+    category: backpack
+    code:
+      - down
+      - left
+      - down
+      - up
+      - up
+      - down
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    unlock:
+      level: 1
+      requisition: 4000
+    source: Base game (requisition, Engineering Bay)
+    icon: Supply_Pack_Stratagem_Icon_Background.svg
+    notes:
+      en: Carries resupply packages that the wearer can hand out to the squad.
+      ko: 착용자가 분대원에게 나눠 줄 수 있는 보급품 꾸러미를 운반합니다.
+  - id: b-100-portable-hellbomb
+    name:
+      en: B-100 Portable Hellbomb
+      ko: B-100 휴대용 지옥폭탄
+    category: backpack
+    code:
+      - down
+      - right
+      - up
+      - up
+      - up
+    cooldown: 300
+    uses: null
+    callInTime: 9.75
+    source: "Warbond: Servants of Freedom"
+    icon: Portable_Hellbomb_Stratagem_Icon_Background.svg
+    notes:
+      en: Backpack Hellbomb that detonates after a countdown for massive destruction.
+      ko: 카운트다운 후 폭발해 막대한 파괴를 일으키는 배낭형 지옥폭탄입니다.
+  - id: lift-182-warp-pack
+    name:
+      en: LIFT-182 Warp Pack
+      ko: LIFT-182 워프 팩
+    category: backpack
+    code:
+      - down
+      - left
+      - right
+      - down
+      - left
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    source: "Warbond: Control Group"
+    icon: Warp_Pack_Stratagem_Icon_Background.svg
+    notes:
+      en: Backpack that lets the wearer teleport a short distance.
+      ko: 착용자가 짧은 거리를 순간이동할 수 있게 해 주는 배낭입니다.
+  - id: lift-850-jump-pack
+    name:
+      en: LIFT-850 Jump Pack
+      ko: LIFT-850 점프 팩
+    category: backpack
+    code:
+      - down
+      - up
+      - up
+      - down
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    unlock:
+      level: 8
+      requisition: 6000
+    source: Base game (requisition, Hangar)
+    icon: Jump_Pack_Stratagem_Icon_Background.svg
+    notes:
+      en: Jet-assisted jumps over obstacles and enemies.
+      ko: 제트 추진으로 장애물과 적을 뛰어넘습니다.
+  - id: lift-860-hover-pack
+    name:
+      en: LIFT-860 Hover Pack
+      ko: LIFT-860 호버 팩
+    category: backpack
+    code:
+      - down
+      - up
+      - up
+      - down
+      - left
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    source: "Warbond: Borderline Justice"
+    icon: Hover_Pack_Stratagem_Icon_Background.svg
+    notes:
+      en: Lets the wearer hover in the air for a short time.
+      ko: 착용자가 짧은 시간 동안 공중에 떠 있을 수 있게 해 줍니다.
+  - id: sh-20-ballistic-shield-backpack
+    name:
+      en: SH-20 Ballistic Shield Backpack
+      ko: SH-20 탄도 방패 배낭
+    category: backpack
+    code:
+      - down
+      - left
+      - down
+      - down
+      - up
+      - left
+    cooldown: 240
+    uses: null
+    callInTime: 9.75
+    unlock:
+      level: 12
+      requisition: 6000
+    source: Base game (requisition, Engineering Bay)
+    icon: Ballistic_Shield_Backpack_Stratagem_Icon_Background.svg
+    notes:
+      en: One-handed ballistic shield that blocks small-arms fire.
+      ko: 소화기 사격을 막아 주는 한손 탄도 방패입니다.
+  - id: sh-32-shield-generator-pack
+    name:
+      en: SH-32 Shield Generator Pack
+      ko: SH-32 방어막 생성 팩
+    category: backpack
+    code:
+      - down
+      - up
+      - left
+      - right
+      - left
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 9.75
+    unlock:
+      level: 20
+      requisition: 10000
+    source: Base game (requisition, Engineering Bay)
+    icon: Shield_Generator_Pack_Stratagem_Icon_Background.svg
+    notes:
+      en: Personal energy bubble that absorbs high-speed projectiles.
+      ko: 고속 투사체를 흡수하는 개인용 에너지 방어막입니다.
+  - id: sh-51-directional-shield
+    name:
+      en: SH-51 Directional Shield
+      ko: SH-51 방향 방패
+    category: backpack
+    code:
+      - down
+      - up
+      - left
+      - right
+      - up
+      - up
+    cooldown: 300
+    uses: null
+    callInTime: 9.75
+    source: "Warbond: Urban Legends"
+    icon: Directional_Shield_Stratagem_Icon_Background.svg
+    notes:
+      en: Wide frontal energy barrier that lets the user shoot out but blocks shots coming in.
+      ko: 사용자는 밖으로 사격할 수 있지만 들어오는 사격은 막아 주는 넓은 전방 에너지 방벽입니다.
+  - id: a-ac-8-autocannon-sentry
+    name:
+      en: A/AC-8 Autocannon Sentry
+      ko: A/AC-8 오토캐넌 센트리
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - up
+      - left
+      - up
+    cooldown: 150
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 13
+      requisition: 6000
+    source: Base game (requisition, Robotics Workshop)
+    icon: Autocannon_Sentry_Stratagem_Icon_Background.svg
+    notes:
+      en: Long-range autocannon turret effective against medium armor.
+      ko: 중장갑에 효과적인 장거리 오토캐넌 센트리입니다.
+  - id: a-arc-3-tesla-tower
+    name:
+      en: A/ARC-3 Tesla Tower
+      ko: A/ARC-3 테슬라 탑
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - up
+      - left
+      - right
+    cooldown: 120
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 15
+      requisition: 8000
+    source: Base game (requisition, Bridge)
+    icon: Tesla_Tower_Stratagem_Icon_Background.svg
+    notes:
+      en: Tower that zaps anything nearby with electric arcs, including careless allies.
+      ko: 부주의한 아군을 포함해 주변의 모든 대상을 전기 아크로 공격하는 탑입니다.
+  - id: a-flam-40-flame-sentry
+    name:
+      en: A/FLAM-40 Flame Sentry
+      ko: A/FLAM-40 화염 센트리
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - down
+      - up
+      - up
+    cooldown: 100
+    uses: null
+    callInTime: 7.75
+    source: "Warbond: Urban Legends"
+    icon: Flame_Sentry_Stratagem_Icon_Background.svg
+    notes:
+      en: Automated flamethrower turret for close-range defense.
+      ko: 근거리 방어용 자동 화염방사 센트리입니다.
+  - id: a-g-16-gatling-sentry
+    name:
+      en: A/G-16 Gatling Sentry
+      ko: A/G-16 개틀링 센트리
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - left
+    cooldown: 150
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 5
+      requisition: 4000
+    source: Base game (requisition, Robotics Workshop)
+    icon: Gatling_Sentry_Stratagem_Icon_Background.svg
+    notes:
+      en: High fire-rate turret for mowing down light enemies.
+      ko: 소형 적을 쓸어버리는 고연사 센트리입니다.
+  - id: a-gm-17-gas-mortar-sentry
+    name:
+      en: A/GM-17 Gas Mortar Sentry
+      ko: A/GM-17 가스 박격포 센트리
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - down
+      - left
+    cooldown: 180
+    uses: null
+    callInTime: 7.75
+    source: "Warbond: Entrenched Division"
+    icon: Gas_Mortar_Sentry_Stratagem_Icon_Background.svg
+    notes:
+      en: Mortar turret that lobs corrosive gas shells.
+      ko: 부식성 가스탄을 날려 보내는 박격포 센트리입니다.
+  - id: a-las-98-laser-sentry
+    name:
+      en: A/LAS-98 Laser Sentry
+      ko: A/LAS-98 레이저 센트리
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - down
+      - up
+      - right
+    cooldown: 150
+    uses: null
+    callInTime: 7.75
+    source: "Warbond: Control Group"
+    icon: Laser_Sentry_Stratagem_Icon_Background.svg
+    notes:
+      en: Laser turret that fires a continuous accurate beam.
+      ko: 정확한 빔을 지속적으로 발사하는 레이저 센트리입니다.
+  - id: a-m-12-mortar-sentry
+    name:
+      en: A/M-12 Mortar Sentry
+      ko: A/M-12 박격포 센트리
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - right
+      - down
+    cooldown: 180
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 8
+      requisition: 7000
+    source: Base game (requisition, Robotics Workshop)
+    icon: Mortar_Sentry_Stratagem_Icon_Background.svg
+    notes:
+      en: Indirect-fire mortar turret for hitting enemies behind cover.
+      ko: 엄폐물 뒤의 적을 타격하는 간접 사격 박격포 센트리입니다.
+  - id: a-m-23-ems-mortar-sentry
+    name:
+      en: A/M-23 EMS Mortar Sentry
+      ko: A/M-23 EMS 박격포 센트리
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - down
+      - right
+    cooldown: 180
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 20
+      requisition: 8000
+    source: Base game (requisition, Robotics Workshop)
+    icon: EMS_Mortar_Sentry_Stratagem_Icon_Background.svg
+    notes:
+      en: Mortar turret that fires stunning EMS shells.
+      ko: 적을 기절시키는 EMS 포탄을 발사하는 박격포 센트리입니다.
+  - id: a-mg-43-machine-gun-sentry
+    name:
+      en: A/MG-43 Machine Gun Sentry
+      ko: A/MG-43 기관총 센트리
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - right
+      - up
+    cooldown: 90
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 1
+      requisition: 1500
+    source: Base game (requisition, Robotics Workshop)
+    icon: Machine_Gun_Sentry_Stratagem_Icon_Background.svg
+    notes:
+      en: Short-cooldown machine gun turret for light enemies.
+      ko: 소형 적을 상대하는, 쿨다운이 짧은 기관총 센트리입니다.
+  - id: a-mls-4x-rocket-sentry
+    name:
+      en: A/MLS-4X Rocket Sentry
+      ko: A/MLS-4X 로켓 센트리
+    category: sentry
+    code:
+      - down
+      - up
+      - right
+      - right
+      - left
+    cooldown: 150
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 15
+      requisition: 7500
+    source: Base game (requisition, Robotics Workshop)
+    icon: Rocket_Sentry_Stratagem_Icon_Background.svg
+    notes:
+      en: Rocket turret that prioritizes large armored targets.
+      ko: 대형 장갑 표적을 우선 공격하는 로켓 센트리입니다.
+  - id: e-at-12-anti-tank-emplacement
+    name:
+      en: E/AT-12 Anti-Tank Emplacement
+      ko: E/AT-12 대전차 거치포
+    category: emplacement
+    code:
+      - down
+      - up
+      - left
+      - right
+      - right
+      - right
+    cooldown: 180
+    uses: null
+    callInTime: 7.75
+    source: "Warbond: Urban Legends"
+    icon: Anti-Tank_Emplacement_Stratagem_Icon_Background.svg
+    notes:
+      en: Manned anti-tank cannon for destroying heavy armor at range.
+      ko: 원거리에서 고장갑을 파괴하는, 직접 탑승해 조작하는 대전차포입니다.
+  - id: e-gl-21-grenadier-battlement
+    name:
+      en: E/GL-21 Grenadier Battlement
+      ko: E/GL-21 척탄 흉벽
+    category: emplacement
+    code:
+      - down
+      - right
+      - down
+      - left
+      - right
+    cooldown: 120
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 15
+      requisition: 10000
+    source: Base game (requisition, Bridge)
+    icon: Grenadier_Battlement_Stratagem_Icon_Background.svg
+    notes:
+      en: Fortified wall with a mounted grenade launcher.
+      ko: 유탄 발사기가 거치된 요새화 방벽입니다.
+  - id: e-mg-101-hmg-emplacement
+    name:
+      en: E/MG-101 HMG Emplacement
+      ko: E/MG-101 중기관총 거치포
+    category: emplacement
+    code:
+      - down
+      - up
+      - left
+      - right
+      - right
+      - left
+    cooldown: 180
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 10
+      requisition: 10000
+    source: Base game (requisition, Bridge)
+    icon: HMG_Emplacement_Stratagem_Icon_Background.svg
+    notes:
+      en: Manned heavy machine gun with a wide field of fire.
+      ko: 사격 범위가 넓은, 직접 탑승해 조작하는 중기관총입니다.
+  - id: fx-12-shield-generator-relay
+    name:
+      en: FX-12 Shield Generator Relay
+      ko: FX-12 방어막 생성 릴레이
+    category: emplacement
+    code:
+      - down
+      - down
+      - left
+      - right
+      - left
+      - right
+    cooldown: 90
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 10
+      requisition: 9000
+    source: Base game (requisition, Bridge)
+    icon: Shield_Generator_Relay_Stratagem_Icon_Background.svg
+    notes:
+      en: Stationary energy dome that blocks projectiles.
+      ko: 투사체를 막는 고정형 에너지 돔입니다.
+  - id: md-17-anti-tank-mines
+    name:
+      en: MD-17 Anti-Tank Mines
+      ko: MD-17 대전차 지뢰
+    category: emplacement
+    code:
+      - down
+      - left
+      - up
+      - up
+    cooldown: 120
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 15
+      requisition: 7000
+    source: Base game (requisition, Engineering Bay)
+    icon: Anti-Tank_Mines_Stratagem_Icon_Background.svg
+    notes:
+      en: Minefield that only triggers on heavy targets.
+      ko: 대형 표적에만 반응하는 지뢰 지대입니다.
+  - id: md-6-anti-personnel-minefield
+    name:
+      en: MD-6 Anti-Personnel Minefield
+      ko: MD-6 대인 지뢰 매설 지역
+    category: emplacement
+    code:
+      - down
+      - left
+      - up
+      - right
+    cooldown: 120
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 1
+      requisition: 1500
+    source: Base game (requisition, Engineering Bay)
+    icon: Anti-Personnel_Minefield_Stratagem_Icon_Background.svg
+    notes:
+      en: Minefield for slowing and killing infantry.
+      ko: 보병을 늦추고 처치하는 지뢰 지대입니다.
+  - id: md-8-gas-mines
+    name:
+      en: MD-8 Gas Mines
+      ko: MD-8 가스 지뢰
+    category: emplacement
+    code:
+      - down
+      - left
+      - left
+      - right
+    cooldown: 120
+    uses: null
+    callInTime: 3
+    unlock:
+      level: 20
+      requisition: 12000
+    source: Base game (requisition, Engineering Bay)
+    icon: Gas_Mines_Stratagem_Icon_Background.svg
+    notes:
+      en: Minefield that releases corrosive gas clouds.
+      ko: 부식성 가스 구름을 방출하는 지뢰 지대입니다.
+  - id: md-i4-incendiary-mines
+    name:
+      en: MD-I4 Incendiary Mines
+      ko: MD-I4 소이 지뢰
+    category: emplacement
+    code:
+      - down
+      - left
+      - left
+      - down
+    cooldown: 120
+    uses: null
+    callInTime: 7.75
+    unlock:
+      level: 8
+      requisition: 4000
+    source: Base game (requisition, Engineering Bay)
+    icon: Incendiary_Mines_Stratagem_Icon_Background.svg
+    notes:
+      en: Minefield that sets targets on fire.
+      ko: 표적에 불을 붙이는 지뢰 지대입니다.
+  - id: exo-45-patriot-exosuit
+    name:
+      en: EXO-45 Patriot Exosuit
+      ko: EXO-45 애국자 엑소슈트
+    category: vehicle
+    code:
+      - left
+      - down
+      - right
+      - up
+      - left
+      - down
+      - down
+    cooldown: 420
+    uses: 3
+    callInTime: 10.5
+    unlock:
+      level: 25
+      requisition: 20000
+    source: Base game (requisition, Robotics Workshop)
+    icon: Patriot_Exosuit_Stratagem_Icon_Background.svg
+    notes:
+      en: Exosuit armed with a rocket pod and a minigun.
+      ko: 로켓 포드와 미니건으로 무장한 엑소슈트입니다.
+  - id: exo-49-emancipator-exosuit
+    name:
+      en: EXO-49 Emancipator Exosuit
+      ko: EXO-49 해방자 엑소슈트
+    category: vehicle
+    code:
+      - left
+      - down
+      - right
+      - up
+      - left
+      - down
+      - up
+    cooldown: 420
+    uses: 3
+    callInTime: 10.5
+    unlock:
+      level: 25
+      requisition: 20000
+    source: Base game (requisition, Robotics Workshop)
+    icon: Emancipator_Exosuit_Stratagem_Icon_Background.svg
+    notes:
+      en: Exosuit with two autocannon arms.
+      ko: 양팔에 오토캐넌을 단 엑소슈트입니다.
+  - id: exo-51-lumberer-exosuit
+    name:
+      en: EXO-51 Lumberer Exosuit
+      ko: EXO-51 벌목꾼 엑소슈트
+    category: vehicle
+    code:
+      - left
+      - down
+      - right
+      - up
+      - right
+      - left
+      - up
+    cooldown: 420
+    uses: 3
+    callInTime: 10.5
+    source: "Warbond: Exo Experts"
+    icon: Lumberer_Exosuit_Stratagem_Icon_Background.svg
+    notes:
+      en: Exosuit with a flamethrower and an anti-tank cannon.
+      ko: 화염방사기와 대전차포를 갖춘 엑소슈트입니다.
+  - id: exo-55-breakthrough-exosuit
+    name:
+      en: EXO-55 Breakthrough Exosuit
+      ko: EXO-55 돌파구 엑소슈트
+    category: vehicle
+    code:
+      - left
+      - down
+      - right
+      - left
+      - right
+      - down
+      - up
+    cooldown: 420
+    uses: 3
+    callInTime: 10.5
+    source: "Warbond: Exo Experts"
+    icon: Breakthrough_Exosuit_Stratagem_Icon_Background.svg
+    notes:
+      en: Exosuit with a ballistic shield and a heavy shotgun cannon for close quarters.
+      ko: 탄도 방패와 근접전용 대형 산탄포를 갖춘 엑소슈트입니다.
+  - id: m-102-gunner-frv
+    name:
+      en: M-102 Gunner FRV
+    category: vehicle
+    code:
+      - left
+      - down
+      - right
+      - down
+      - right
+      - down
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 10.5
+    unlock:
+      level: 25
+      requisition: 25000
+    source: Base game (requisition, Hangar)
+    icon: Fast_Recon_Vehicle_Stratagem_Icon_Background.svg
+    notes:
+      en: Fast recon vehicle with a rear-mounted heavy machine gun.
+      ko: 후방에 중기관총을 장착한 고속 정찰 차량입니다.
+  - id: m-103-supply-frv
+    name:
+      en: M-103 Supply FRV
+      ko: M-103 보급 고속 정찰 차량
+    category: vehicle
+    code:
+      - left
+      - down
+      - left
+      - left
+      - down
+      - up
+      - right
+    cooldown: 480
+    uses: null
+    callInTime: 10.5
+    source: "Campaign reward: Census Thunder"
+    icon: Supply_FRV_Stratagem_Icon_Background.svg
+    notes:
+      en: Fast recon vehicle carrying resupply packages and an automated turret.
+      ko: 보급품 꾸러미와 자동 포탑을 실은 고속 정찰 차량입니다.
+  - id: m-104-incinerator-frv
+    name:
+      en: M-104 Incinerator FRV
+      ko: M-104 소각형 고속 정찰 차량
+    category: vehicle
+    code:
+      - left
+      - down
+      - right
+      - left
+      - down
+      - up
+      - up
+    cooldown: 480
+    uses: null
+    callInTime: 10.5
+    source: Operational Variation during the Census Thunder campaign; no permanent permit granted as of wiki.gg 1.007.100
+    icon: Incinerator_FRV_Stratagem_Icon_Background.svg
+    notes:
+      en: Armored fast recon vehicle with a ram grille and roof flamethrower.
+      ko: 충각 그릴과 지붕 화염방사기를 갖춘 장갑 고속 정찰 차량입니다.
+  - id: td-110-maelstrom
+    name:
+      en: TD-110 Maelstrom
+      ko: TD-110 마엘스트롬
+    category: vehicle
+    code:
+      - left
+      - down
+      - right
+      - down
+      - left
+      - down
+      - up
+      - left
+      - right
+    cooldown: 780
+    uses: null
+    callInTime: 10.5
+    source: "Campaign reward: Armored Eagle"
+    icon: Maelstrom_Stratagem_Icon_Background.svg
+    notes:
+      en: Tank with twin rotary guns and guided missiles for crowds and some armor.
+      ko: 쌍열 회전포와 유도 미사일로 적 무리와 일부 장갑 표적을 상대하는 전차입니다.
+  - id: td-220-bastion-mk-xvi
+    name:
+      en: TD-220 Bastion MK XVI
+      ko: TD-220 바스티온 MK XVI
+    category: vehicle
+    code:
+      - left
+      - down
+      - right
+      - down
+      - left
+      - down
+      - up
+      - down
+      - up
+    cooldown: 780
+    uses: null
+    callInTime: 10.5
+    unlock:
+      level: 30
+      requisition: 35000
+    source: Base game (requisition, Hangar)
+    icon: Bastion_MK_XVI_Stratagem_Icon_Background.svg
+    notes:
+      en: Four-seat tank destroyer with a 120mm cannon and coaxial machine gun.
+      ko: 120mm 주포와 동축 기관총을 갖춘 4인승 구축전차입니다.
+  - id: activate-e-711-extraction-drill
+    name:
+      en: Activate E-711 Extraction Drill
+    category: mission
+    code:
+      - down
+      - down
+      - left
+      - left
+      - down
+      - down
+    cooldown: 0
+    uses: null
+    callInTime: 0
+    source: Mission objective
+    icon: Drill_Stratagem_Icon_Background.svg
+    notes:
+      en: Starts the drill on the mobile E-711 extraction platform.
+      ko: 이동식 E-711 추출 플랫폼의 드릴을 가동합니다.
+  - id: aquifer-drill
+    name:
+      en: Aquifer Drill
+    category: mission
+    code:
+      - left
+      - left
+      - left
+      - up
+      - down
+      - right
+      - down
+      - down
+    cooldown: 0
+    uses: 1
+    callInTime: 10
+    source: Mission objective
+    icon: Drill_Stratagem_Icon_Background.svg
+    notes:
+      en: Drill for the Cleanse Foul Shrine objective in Infiltrate Illuminate Lair.
+      ko: 일루미닛 소굴 침투 임무의 오염된 성소 정화 목표에 쓰이는 드릴입니다.
+  - id: call-in-super-destroyer
+    name:
+      en: Call In Super Destroyer
+      ko: 슈퍼 구축함 호출
+    category: mission
+    code:
+      - up
+      - up
+      - down
+      - down
+      - left
+      - right
+      - left
+      - right
+    uses: null
+    source: Mission (Commando missions only)
+    icon: Call_In_Super_Destroyer_Stratagem_Icon_Background.svg
+    notes:
+      en: Brings the Super Destroyer back for one minute during Commando missions.
+      ko: 코만도 임무 중 슈퍼 구축함을 1분 동안 복귀시킵니다.
+  - id: cargo-container
+    name:
+      en: Cargo Container
+      ko: 카고 컨테이너
+    category: mission
+    code:
+      - up
+      - up
+      - down
+      - down
+      - right
+      - down
+    cooldown: 0
+    uses: 1
+    callInTime: 10
+    source: Mission objective
+    icon: Cargo_Container_Stratagem_Icon_Background.svg
+    notes:
+      en: Container for loading platinum bars or fusion batteries for pickup.
+      ko: 회수를 위해 플래티넘 괴 또는 핵융합 배터리를 싣는 컨테이너입니다.
+  - id: data-jack
+    name:
+      en: Data Jack
+      ko: 데이터 잭
+    category: mission
+    code:
+      - down
+      - down
+      - down
+      - left
+      - up
+      - up
+      - up
+    uses: null
+    source: Mission objective
+    notes:
+      en: Device called down to break the Exospire shield generator in Destroy Exospire missions.
+      ko: 엑소스파이어 파괴 임무에서 엑소스파이어 방어막 생성기를 무력화하기 위해 호출하는 장치입니다.
+  - id: eagle-rearm
+    name:
+      en: Eagle Rearm
+      ko: 이글 재무장
+    category: mission
+    code:
+      - up
+      - up
+      - left
+      - up
+      - right
+    cooldown: 0
+    uses: null
+    callInTime: 0
+    source: Mission / always available
+    icon: Eagle_Rearm_Stratagem_Icon_Background.svg
+    notes:
+      en: Sends the Eagle back to rearm early to refill all Eagle stratagems.
+      ko: 이글을 조기에 재무장하도록 복귀시켜 모든 이글 스트라타젬을 다시 채웁니다.
+  - id: hive-breaker-drill
+    name:
+      en: Hive Breaker Drill
+      ko: 하이브 브레이커 드릴
+    category: mission
+    code:
+      - left
+      - up
+      - down
+      - right
+      - down
+      - down
+    cooldown: 0
+    uses: 1
+    callInTime: 10
+    source: Mission objective
+    icon: Drill_Stratagem_Icon_Background.svg
+    notes:
+      en: Drill that delivers a nuke into Terminid nursery chambers.
+      ko: 테르미니드 번식실에 핵폭탄을 투입하는 드릴입니다.
+  - id: nux-223-hellbomb
+    name:
+      en: NUX-223 Hellbomb
+      ko: NUX-223 지옥폭탄
+    category: mission
+    code:
+      - down
+      - up
+      - left
+      - down
+      - up
+      - right
+      - down
+      - up
+    cooldown: 30
+    uses: null
+    callInTime: 10
+    source: Mission objective
+    icon: Hellbomb_Stratagem_Icon_Background.svg
+    notes:
+      en: Massive bomb used to destroy objectives when a Hellbomb site is available.
+      ko: 지옥폭탄 설치 지점이 있을 때 목표를 파괴하는 데 쓰는 거대한 폭탄입니다.
+  - id: portable-comms-relay
+    name:
+      en: Portable Comms Relay
+    category: mission
+    code:
+      - up
+      - up
+      - down
+      - down
+      - left
+      - left
+      - down
+    cooldown: 0
+    uses: 1
+    callInTime: 10
+    source: Mission objective
+    icon: Cargo_Container_Stratagem_Icon_Background.svg
+    notes:
+      en: Relay used to upload Tactical Video Camera footage in Illuminate lair missions.
+      ko: 일루미닛 소굴 임무에서 전술 비디오 카메라 영상을 업로드하는 데 쓰는 중계기입니다.
+  - id: prospecting-drill
+    name:
+      en: Prospecting Drill
+      ko: 탐광 드릴
+    category: mission
+    code:
+      - down
+      - down
+      - left
+      - right
+      - down
+      - down
+    cooldown: 0
+    uses: 1
+    callInTime: 10
+    source: Mission objective
+    icon: Drill_Stratagem_Icon_Background.svg
+    notes:
+      en: Calls in the drill for the Conduct Geological Survey mission.
+      ko: 지질 조사 임무용 드릴을 호출합니다.
+  - id: reinforce
+    name:
+      en: Reinforce
+      ko: 증원
+    category: mission
+    code:
+      - up
+      - down
+      - right
+      - left
+      - up
+    cooldown: 0
+    uses: null
+    source: Mission / always available
+    icon: Reinforce_Stratagem_Icon_Background.svg
+    notes:
+      en: Calls a fallen Helldiver back into the mission.
+      ko: 쓰러진 헬다이버를 임무에 다시 투입합니다.
+  - id: resupply
+    name:
+      en: Resupply
+      ko: 재보급
+    category: mission
+    code:
+      - down
+      - down
+      - up
+      - right
+    cooldown: 180
+    uses: null
+    callInTime: 8
+    source: Mission / always available
+    icon: Resupply_Stratagem_Icon_Background.svg
+    notes:
+      en: Drops a pod with ammo, grenades and stims for the squad.
+      ko: 분대에게 탄약, 수류탄, 스팀팩이 든 포드를 투하합니다.
+  - id: seaf-artillery
+    name:
+      en: SEAF Artillery
+      ko: SEAF 야포
+    category: mission
+    code:
+      - right
+      - up
+      - up
+      - down
+    cooldown: 0
+    uses: 5
+    source: Mission objective
+    icon: SEAF_Artillery_Stratagem_Icon_Background.svg
+    notes:
+      en: Fires shells loaded into a captured SEAF artillery piece.
+      ko: 확보한 SEAF 야포에 장전된 포탄을 발사합니다.
+  - id: sos-beacon
+    name:
+      en: SOS Beacon
+      ko: SOS 신호기
+    category: mission
+    code:
+      - up
+      - down
+      - right
+      - up
+    cooldown: 0
+    uses: 1
+    callInTime: 1
+    source: Mission / always available
+    icon: SOS_Beacon_Stratagem_Icon_Background.svg
+    notes:
+      en: Opens the mission to other players who answer distress calls.
+      ko: 구조 요청에 응답하는 다른 플레이어에게 임무를 개방합니다.
+  - id: sssd-delivery
+    name:
+      en: SSSD Delivery
+      ko: SSSD 전달
+    category: mission
+    code:
+      - down
+      - down
+      - down
+      - down
+      - down
+      - up
+      - up
+    cooldown: 0
+    uses: 1
+    callInTime: 4
+    source: Mission objective
+    icon: Upload_Data_Stratagem_Icon_Background.svg
+    notes:
+      en: Delivers an SSSD hard drive for data objectives.
+      ko: 데이터 목표용 SSSD 하드 드라이브를 전달합니다.
+  - id: seismic-probe
+    name:
+      en: Seismic Probe
+      ko: 지진 탐사기
+    category: mission
+    code:
+      - up
+      - up
+      - left
+      - right
+      - down
+      - down
+    cooldown: 0
+    uses: 1
+    callInTime: 10
+    source: Mission objective
+    icon: Seismic_Probe_Stratagem_Icon_Background.svg
+    notes:
+      en: Calls in a probe for geological survey objectives.
+      ko: 지질 조사 목표용 탐사기를 호출합니다.
+  - id: super-earth-flag
+    name:
+      en: Super Earth Flag
+      ko: 슈퍼지구 깃발
+    category: mission
+    code:
+      - down
+      - up
+      - down
+      - up
+    cooldown: 0
+    uses: 1
+    callInTime: 10
+    source: Mission objective
+    icon: Super_Earth_Flag_Stratagem_Icon_Background.svg
+    notes:
+      en: Calls in the flag to raise for Spread Democracy objectives.
+      ko: 민주주의 전파 목표에서 게양할 깃발을 호출합니다.
+  - id: tactical-video-camera
+    name:
+      en: Tactical Video Camera
+    category: mission
+    code:
+      - right
+      - down
+      - down
+      - up
+      - left
+      - left
+      - up
+    cooldown: 0
+    uses: null
+    source: Mission objective
+    icon: Tactical_Video_Camera_Stratagem_Icon_Background.svg
+    notes:
+      en: Camera used to record evidence for Commando and Illuminate lair objectives.
+      ko: 코만도 및 일루미닛 소굴 목표에서 증거를 촬영하는 데 쓰는 카메라입니다.
+  - id: upload-data
+    name:
+      en: Upload Data
+      ko: 데이터 업로드
+    category: mission
+    code:
+      - left
+      - right
+      - up
+      - up
+      - up
+    cooldown: 0
+    uses: 1
+    callInTime: 4
+    source: Mission objective
+    icon: Upload_Data_Stratagem_Icon_Background.svg
+    notes:
+      en: Uploads data from a crashed escape pod or terminal objective.
+      ko: 추락한 탈출 포드 또는 단말기 목표에서 데이터를 업로드합니다.

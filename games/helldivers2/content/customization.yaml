@@ -1,0 +1,2999 @@
+# Weapon attachments (primaries only) with a recommended setup per weapon, from helldivers.wiki.gg and 2025-2026 guides.
+kind: weapon-customization
+schemaVersion: 1
+revision: 1
+updatedAt: 2026-09-27
+system:
+  en: "Weapon customization (added in 1.003.000, May 2025) applies to primary weapons only. Secondaries, throwables and crossover or legacy primaries (StA-11, StA-52, M7S, M90A, MA5C, R/40-K Hot-Shot, R-2124 Constitution, PLAS-39 Accelerator Rifle, FLAM-66 Torcher) cannot be customized. Each customizable primary has up to four slots: optic, muzzle (shotguns use chokes, the Sai uses lenses), underbarrel, and magazine (laser weapons use heatsinks); which slots and parts exist varies per weapon. The weapon levels 1-25 from ordinary mission XP earned while it is in your loadout; each level unlocks specific parts, which are then bought with Requisition Slips (0 for defaults, otherwise 3,000-25,000). Most parts are sidegrades: recoil reduction usually costs sway or ergonomics (how quickly the muzzle follows your crosshair), and bigger magazines reload slower and carry fewer spares. Paint patterns unlock the same way but are purely cosmetic."
+  ko: "무기 커스터마이징은 1.003.000(2025년 5월)에 추가되었고 주 무기에만 적용됩니다. 보조 무기, 투척 무기, 콜라보·일부 주 무기(StA-11, StA-52, M7S, M90A, MA5C, R/40-K 핫샷 마크맨 라이플, R-2124 콘스티튜션, PLAS-39 가속 소총, FLAM-66 토처)는 개조할 수 없습니다. 개조 가능한 주 무기는 최대 4개 슬롯을 가집니다: 광학 장비, 총구(산탄총은 초크, 사이는 렌즈), 총열 하부, 탄창(레이저 무기는 방열판). 어떤 슬롯과 파츠가 있는지는 무기마다 다릅니다. 해당 무기를 장비하고 미션을 하면 얻는 경험치로 무기 레벨(1~25)이 오르고, 레벨마다 정해진 부착물이 해금되며 요청 신청서로 구매해야 장착할 수 있습니다(기본 파츠 0, 나머지 3,000~25,000). 대부분 부착물은 사이스그레이드라서 반동을 줄이면 흔들림이나 인체공학성(총구가 조준점을 따라오는 속도)이 나빠지고, 큰 탄창은 재장전이 느리고 예비 탄창이 줄어듭니다. 도색 패턴도 같은 방식으로 해금되지만 외형만 바뀝니다."
+slots:
+  - id: optic
+    name:
+      en: Optics
+      ko: 광학 장비
+  - id: muzzle
+    name:
+      en: Muzzle
+      ko: 총구
+  - id: underbarrel
+    name:
+      en: Underbarrel
+      ko: 총열 하부
+  - id: magazine
+    name:
+      en: Magazine / Heatsink
+      ko: 탄창 / 방열판
+attachments:
+  - id: tube-red-dot-1-5x
+    name:
+      en: 1.5x Tube Red Dot
+      ko: 1.5x 튜브 레드 도트
+    slot: optic
+    effect:
+      en: 1.5x tube red dot; single 37.5 m zero, no ergonomics penalty.
+      ko: 1.5배 튜브 레드 도트. 영점 37.5m 고정, 인체공학성 감소 없음.
+    icon: 1.5x_tube_red_dot.png
+  - id: tube-red-dot-2x
+    name:
+      en: 2x Tube Red Dot
+      ko: 2x 튜브 레드 도트
+    slot: optic
+    effect:
+      en: 2x magnification, zero 25/50/100 m; ergonomics -1.
+      ko: 2배율, 영점 25/50/100m, 인체공학성 -1.
+    icon: Armory_2x_Tube_Red_Dot.png
+  - id: combat-scope-4x
+    name:
+      en: 4x Combat Scope
+      ko: 4x 전투 스코프
+    slot: optic
+    effect:
+      en: 4x magnification, zero 25/75/150 m; ergonomics -2.
+      ko: 4배율, 영점 25/75/150m, 인체공학성 -2.
+    icon: Armory_4x_Combat_Scope.png
+  - id: sniper-scope-10x
+    name:
+      en: 10x Sniper Scope
+      ko: 10x 저격 스코프
+    slot: optic
+    effect:
+      en: 10x magnification, zero 50/100/200 m; ergonomics -4.
+      ko: 10배율, 영점 50/100/200m, 인체공학성 -4.
+    icon: Armory_10x_sniper_scope.png
+  - id: reflex-sight
+    name:
+      en: Reflex Sight
+      ko: 반사식 조준경
+    slot: optic
+    effect:
+      en: Unmagnified reflex dot, 25 m zero; no ergonomics penalty.
+      ko: 무배율 도트 조준경, 영점 25m, 인체공학성 감소 없음.
+    icon: Armory_reflex_sight.png
+  - id: reflex-sight-mk2
+    name:
+      en: Reflex Sight Mk2
+      ko: 반사식 조준경 MK2
+    slot: optic
+    effect:
+      en: Alternative unmagnified reflex dot, 25 m zero; no ergonomics penalty.
+      ko: 다른 형태의 무배율 도트 조준경, 영점 25m, 인체공학성 감소 없음.
+    icon: Armory_Reflex_Sight_mk2.png
+  - id: holographic-sight
+    name:
+      en: Holographic Sight
+      ko: 홀로그램 조준경
+    slot: optic
+    effect:
+      en: Unmagnified holographic sight, 25 m zero; no ergonomics penalty.
+      ko: 무배율 홀로그램 조준경, 영점 25m, 인체공학성 감소 없음.
+    icon: Armory_Holographic_Sight.png
+  - id: iron-sight
+    name:
+      en: Iron Sight
+      ko: 기계식 조준기
+    slot: optic
+    effect:
+      en: Iron sights, 25 m zero; ergonomics +5.
+      ko: 기계식 가늠자, 영점 25m, 인체공학성 +5.
+    icon: Armory_Iron_Sights.png
+  - id: no-optics
+    name:
+      en: No Optics
+      ko: 광학 장비 없음
+    slot: optic
+    effect:
+      en: Built-in sights only, 25 m zero; no ergonomics bonus (unlike Iron Sight).
+      ko: 기본 내장 가늠자만 사용, 영점 25m. 기계식 조준기와 달리 인체공학성 보너스 없음.
+  - id: no-muzzle
+    name:
+      en: No Attachment (muzzle)
+      ko: 총구 부착물 없음
+    slot: muzzle
+    effect:
+      en: Bare muzzle; no stat changes.
+      ko: 총구 부착물 없음. 능력치 변화 없음.
+    icon: No_muzzle_attachment.png
+  - id: flash-hider
+    name:
+      en: Flash Hider
+      ko: 소염기
+    slot: muzzle
+    effect:
+      en: Horizontal recoil -20%, vertical recoil -10%, sway +10%, ergonomics -3; smaller muzzle flash.
+      ko: 수평 반동 -20%, 수직 반동 -10%, 흔들림 +10%, 인체공학성 -3. 총구 화염 감소.
+    icon: Flash_hider.png
+  - id: muzzle-brake
+    name:
+      en: Muzzle Brake
+      ko: 총구 제동기
+    slot: muzzle
+    effect:
+      en: Horizontal recoil -40%, sway +20% (+50% on HYENA), ergonomics -5.
+      ko: 수평 반동 -40%, 흔들림 +20%(하이에나는 +50%), 인체공학성 -5.
+    icon: Muzzle_brake.png
+  - id: compensator
+    name:
+      en: Compensator
+      ko: 보정기
+    slot: muzzle
+    effect:
+      en: Vertical recoil -30%, sway +25%, ergonomics -5.
+      ko: 수직 반동 -30%, 흔들림 +25%, 인체공학성 -5.
+    icon: Compensator.png
+  - id: half-choke
+    name:
+      en: Half Choke
+      ko: 하프 초크
+    slot: muzzle
+    effect:
+      en: Pellet spread -25% (horizontal and vertical).
+      ko: 산탄 확산 -25%(수평·수직).
+    icon: Half_choke.png
+  - id: full-choke
+    name:
+      en: Full Choke
+      ko: 풀 초크
+    slot: muzzle
+    effect:
+      en: Pellet spread -50% (horizontal and vertical).
+      ko: 산탄 확산 -50%(수평·수직).
+    icon: Full_choke.png
+  - id: duckbill
+    name:
+      en: Duckbill
+      ko: 덕빌
+    slot: muzzle
+    effect:
+      en: Horizontal spread +60%, vertical spread -70% (flat line of pellets); on the Punisher also sway +25%.
+      ko: 수평 확산 +60%, 수직 확산 -70%로 산탄이 가로로 퍼짐. 퍼니셔는 흔들림 +25% 추가.
+  - id: no-choke
+    name:
+      en: No Choke
+      ko: 초크 없음
+    slot: muzzle
+    effect:
+      en: Bare shotgun muzzle; no stat changes.
+      ko: 초크를 달지 않은 상태. 능력치 변화 없음.
+    icon: No_muzzle_attachment_shotgun.png
+  - id: triple-lens
+    name:
+      en: Triple Lens
+      ko: 삼중 렌즈
+    slot: muzzle
+    effect:
+      en: "Default Sai lens: full 800 rpm with wide spread."
+      ko: 사이 기본 렌즈. 800 rpm 연사, 넓은 확산.
+    icon: Sai_triple_lens.png
+  - id: focus-lens
+    name:
+      en: Focus Lens
+      ko: 집속 렌즈
+    slot: muzzle
+    effect:
+      en: Fire rate 800 -> 600 rpm, spread set to 75 (about half), less heat per second; ergonomics -6.
+      ko: 연사 속도 800→600 rpm, 확산 75로 고정(약 절반), 초당 발열 감소, 인체공학성 -6.
+    icon: Sai_focus_lens.png
+  - id: no-underbarrel
+    name:
+      en: No Underbarrel
+      ko: 총열 하부 없음
+    slot: underbarrel
+    effect:
+      en: Empty underbarrel; no stat changes.
+      ko: 총열 하부 부착물 없음. 능력치 변화 없음.
+  - id: vertical-foregrip
+    name:
+      en: Vertical Foregrip
+      ko: 수직 손잡이
+    slot: underbarrel
+    effect:
+      en: Vertical recoil -20%, ergonomics -5.
+      ko: 수직 반동 -20%, 인체공학성 -5.
+    icon: Vertical_foregrip.png
+  - id: angled-foregrip
+    name:
+      en: Angled Foregrip
+      ko: 앵글 손잡이
+    slot: underbarrel
+    effect:
+      en: Ergonomics +5, sway -25%, vertical recoil +20%.
+      ko: 인체공학성 +5, 흔들림 -25%, 수직 반동 +20%.
+    icon: Angled_foregrip.png
+  - id: flashlight-vertical-foregrip
+    name:
+      en: Flashlight Vertical Foregrip
+      ko: 조명 수직 손잡이
+    slot: underbarrel
+    effect:
+      en: Vertical recoil -20%, ergonomics -7; adds a flashlight.
+      ko: 수직 반동 -20%, 인체공학성 -7. 조명 포함.
+    icon: Flashlight_vertical_foregrip.png
+  - id: laser-sight
+    name:
+      en: Laser Sight
+      ko: 레이저 조준기
+    slot: underbarrel
+    effect:
+      en: Laser pointer aligned with the barrel; ergonomics -3.
+      ko: 총열과 정렬된 레이저 포인터. 인체공학성 -3.
+    icon: Lone_laser.png
+  - id: laser-sight-flashlight
+    name:
+      en: Laser Sight W/ Flashlight
+      ko: 레이저 조준기+조명
+    slot: underbarrel
+    effect:
+      en: Laser pointer plus flashlight; ergonomics -5.
+      ko: 레이저 포인터와 조명. 인체공학성 -5.
+    icon: Flashlight_and_laser.png
+  - id: laser-sight-angled-foregrip
+    name:
+      en: Laser Sight Angled Foregrip
+      ko: 레이저 조준기 앵글 손잡이
+    slot: underbarrel
+    effect:
+      en: Ergonomics +3, sway -15%, vertical recoil +20%; adds a laser pointer.
+      ko: 인체공학성 +3, 흔들림 -15%, 수직 반동 +20%. 레이저 포인터 포함.
+    icon: Laser_angled_foregrip.png
+  - id: short-magazine
+    name:
+      en: Short Magazine
+      ko: 짧은 탄창
+    slot: magazine
+    effect:
+      en: Lower capacity, more spare mags, faster reload; usually ergonomics +3 to +11. Exact values vary per weapon.
+      ko: 탄창 용량은 줄지만 예비 탄창이 늘고 재장전이 빨라짐. 보통 인체공학성 +3~+11. 수치는 무기마다 다름.
+    icon: Liberator_short_mag.png
+  - id: extended-magazine
+    name:
+      en: Extended Magazine
+      ko: 확장 탄창
+    slot: magazine
+    effect:
+      en: Mid-to-large box magazine (the default on many rifles); balances capacity and reload. Exact values vary per weapon.
+      ko: 여러 소총의 기본 탄창인 중대형 탄창. 용량과 재장전의 균형형. 수치는 무기마다 다름.
+    icon: Liberator_extended_mag.png
+  - id: drum-magazine
+    name:
+      en: Drum Magazine
+      ko: 드럼 탄창
+    slot: magazine
+    effect:
+      en: Highest capacity, fewer spare mags, slower reload; ergonomics -10 to -15. Exact values vary per weapon.
+      ko: 최대 용량. 예비 탄창이 줄고 재장전이 느려짐. 인체공학성 -10~-15. 수치는 무기마다 다름.
+    icon: Liberator_drum_mag.png
+  - id: standard-heatsink
+    name:
+      en: Standard Heatsink
+      ko: 표준 방열판
+    slot: magazine
+    effect:
+      en: Default heatsink for laser weapons.
+      ko: 레이저 무기의 기본 방열판.
+    icon: Standard_heaksink.png
+  - id: high-capacity-heatsink
+    name:
+      en: High Capacity Heatsink
+      ko: 고용량 방열판
+    slot: magazine
+    effect:
+      en: Stores more heat before overheating (Scythe 100 -> 150; Sai heat per shot 1.5); ergonomics -10, fewer spares, slower swap.
+      ko: 과열 전 더 많은 열을 저장(사이스 100→150, 사이는 발당 발열 1.5). 인체공학성 -10, 예비 수 감소, 교체가 느림.
+    icon: High_capacity_heaksink.png
+  - id: high-dissipation-heatsink
+    name:
+      en: High Dissipation Heatsink
+      ko: 고효율 방열판
+    slot: magazine
+    effect:
+      en: "Cools faster but stores less heat (Scythe: cap 60, cooldown 12/s; Sai: cooldown 8.5/s, ergonomics -7)."
+      ko: "냉각은 빠르지만 저장 열량이 적음(사이스: 용량 60, 냉각 12/s. 사이: 냉각 8.5/s, 인체공학성 -7)."
+    icon: Sai_high_dissipation_heaksink.png
+weapons:
+  - weapon: ar-11-arbitrator
+    available:
+      optic:
+        - tube-red-dot-2x
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-1-5x
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+    recommended:
+      optic: tube-red-dot-2x
+      muzzle: compensator
+    why:
+      en: "Stat reasoning: at 1,200 rpm vertical climb is the main issue; the underbarrel holds the built-in shotgun."
+      ko: "능력치 기준 추천: 1,200 rpm이라 수직 반동이 가장 큰 문제이며, 총열 하부는 내장 산탄총이 차지합니다."
+    unlocks:
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 6
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 8
+        requisition: 5000
+      holographic-sight:
+        level: 14
+        requisition: 13000
+      tube-red-dot-1-5x:
+        level: 23
+        requisition: 5000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 3
+        requisition: 3000
+      muzzle-brake:
+        level: 9
+        requisition: 7000
+      compensator:
+        level: 19
+        requisition: 13000
+  - weapon: ar-2-coyote
+    available:
+      optic:
+        - no-optics
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - combat-scope-4x
+        - sniper-scope-10x
+      muzzle:
+        - muzzle-brake
+        - no-muzzle
+        - flash-hider
+        - compensator
+      underbarrel:
+        - no-underbarrel
+        - laser-sight-flashlight
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: reflex-sight
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+    why:
+      en: Its "No Optics" default gives no ergonomics bonus, so a clean reflex sight costs nothing; compensator and vertical foregrip steady its auto fire (no magazine slot).
+      ko: 기본 "광학 장비 없음"은 인체공학성 보너스가 없으므로 반사식 조준경을 달아도 손해가 없고, 보정기와 수직 손잡이로 연사 반동을 잡습니다(탄창 슬롯 없음).
+    unlocks:
+      no-optics:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 14
+        requisition: 13000
+      combat-scope-4x:
+        level: 18
+        requisition: 13000
+      sniper-scope-10x:
+        level: 24
+        requisition: 25000
+      muzzle-brake:
+        level: 1
+        requisition: 0
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 11
+        requisition: 5000
+      compensator:
+        level: 21
+        requisition: 13000
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      laser-sight-flashlight:
+        level: 2
+        requisition: 3000
+      vertical-foregrip:
+        level: 6
+        requisition: 5000
+      angled-foregrip:
+        level: 13
+        requisition: 7000
+      flashlight-vertical-foregrip:
+        level: 16
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 23
+        requisition: 7000
+  - weapon: ar-23-liberator
+    available:
+      optic:
+        - tube-red-dot-2x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+        - combat-scope-4x
+      magazine:
+        - extended-magazine
+        - short-magazine
+        - drum-magazine
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: tube-red-dot-2x
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+      magazine: extended-magazine
+    why:
+      en: Compensator plus vertical foregrip cut vertical recoil by about half for sustained auto fire; keep the default 2x red dot (three zero ranges) and 45-round mag.
+      ko: 보정기와 수직 손잡이로 수직 반동을 약 절반으로 줄여 연사를 안정시키고, 기본 2x 레드 도트(영점 3단계)와 45발 탄창을 유지합니다.
+    unlocks:
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 11
+        requisition: 7000
+      iron-sight:
+        level: 18
+        requisition: 7000
+      combat-scope-4x:
+        level: 21
+        requisition: 25000
+      extended-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 14
+        requisition: 7000
+      drum-magazine:
+        level: 24
+        requisition: 25000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 3
+        requisition: 3000
+      muzzle-brake:
+        level: 12
+        requisition: 5000
+      compensator:
+        level: 22
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 2
+        requisition: 3000
+      angled-foregrip:
+        level: 6
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 16
+        requisition: 5000
+      laser-sight-angled-foregrip:
+        level: 23
+        requisition: 7000
+  - weapon: ar-23a-liberator-carbine
+    available:
+      optic:
+        - reflex-sight-mk2
+        - reflex-sight
+        - holographic-sight
+        - tube-red-dot-1-5x
+        - combat-scope-4x
+      magazine:
+        - extended-magazine
+        - short-magazine
+        - drum-magazine
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: reflex-sight-mk2
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+      magazine: drum-magazine
+    why:
+      en: Its 920 rpm recoil is the main weakness; vertical foregrip + compensator tame it and the 60-round drum turns it into a "mini-Stalwart".
+      ko: 920 rpm의 강한 반동이 최대 약점이라 수직 손잡이와 보정기로 잡고, 60발 드럼 탄창으로 사실상 소형 스톨워트처럼 운용합니다.
+    unlocks:
+      reflex-sight-mk2:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      tube-red-dot-1-5x:
+        level: 14
+        requisition: 13000
+      combat-scope-4x:
+        level: 23
+        requisition: 25000
+      extended-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 11
+        requisition: 7000
+      drum-magazine:
+        level: 24
+        requisition: 25000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 2
+        requisition: 5000
+      muzzle-brake:
+        level: 13
+        requisition: 5000
+      compensator:
+        level: 21
+        requisition: 7000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 3
+        requisition: 3000
+      angled-foregrip:
+        level: 7
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: ar-23c-liberator-concussive
+    available:
+      optic:
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - reflex-sight-mk2
+        - iron-sight
+        - tube-red-dot-2x
+        - combat-scope-4x
+      magazine:
+        - drum-magazine
+        - short-magazine
+        - extended-magazine
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: tube-red-dot-1-5x
+      underbarrel: vertical-foregrip
+      magazine: drum-magazine
+    why:
+      en: The default drum lets it stagger-lock enemies longest; a vertical foregrip offsets its relatively high per-shot recoil (no muzzle slot).
+      ko: 기본 드럼 탄창이 적을 가장 오래 경직시킬 수 있게 해 주고, 발당 반동이 큰 편이라 수직 손잡이를 답니다(총구 슬롯 없음).
+    unlocks:
+      tube-red-dot-1-5x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 9
+        requisition: 7000
+      iron-sight:
+        level: 13
+        requisition: 7000
+      tube-red-dot-2x:
+        level: 19
+        requisition: 13000
+      combat-scope-4x:
+        level: 24
+        requisition: 25000
+      drum-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 11
+        requisition: 7000
+      extended-magazine:
+        level: 23
+        requisition: 7000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 2
+        requisition: 3000
+      angled-foregrip:
+        level: 7
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: ar-23p-liberator-penetrator
+    available:
+      optic:
+        - combat-scope-4x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+        - tube-red-dot-2x
+      magazine:
+        - extended-magazine
+        - short-magazine
+        - drum-magazine
+      muzzle:
+        - muzzle-brake
+        - no-muzzle
+        - flash-hider
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: combat-scope-4x
+      muzzle: flash-hider
+      underbarrel: vertical-foregrip
+      magazine: drum-magazine
+    why:
+      en: Low base recoil, so a balanced flash hider and vertical foregrip suffice; the 60-round drum keeps it firing at armored targets, and the default 4x suits its mid-range role.
+      ko: 기본 반동이 낮아 균형형 소염기와 수직 손잡이면 충분하고, 60발 드럼 탄창으로 장갑 목표에 오래 사격하며, 중거리용으로 기본 4x 스코프가 맞습니다.
+    unlocks:
+      combat-scope-4x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 9
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 11
+        requisition: 7000
+      iron-sight:
+        level: 19
+        requisition: 7000
+      tube-red-dot-2x:
+        level: 23
+        requisition: 25000
+      extended-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 14
+        requisition: 7000
+      drum-magazine:
+        level: 24
+        requisition: 25000
+      muzzle-brake:
+        level: 1
+        requisition: 0
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 13
+        requisition: 7000
+      compensator:
+        level: 21
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 3
+        requisition: 3000
+      angled-foregrip:
+        level: 7
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: ar-32-pacifier
+    available:
+      optic:
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-2x
+        - combat-scope-4x
+      muzzle:
+        - muzzle-brake
+        - no-muzzle
+        - flash-hider
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: tube-red-dot-2x
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+    why:
+      en: "Stat reasoning: moderate recoil at 700 rpm benefits most from stacking vertical-recoil reduction; the 2x red dot adds range options for only 1 ergonomics."
+      ko: "능력치 기준 추천: 700 rpm에 반동이 중간 정도라 수직 반동 감소를 겹치는 편이 가장 효과적이며, 2x 레드 도트는 인체공학성 1만 깎고 사거리 선택지를 줍니다."
+    unlocks:
+      reflex-sight:
+        level: 1
+        requisition: 0
+      reflex-sight-mk2:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 9
+        requisition: 7000
+      tube-red-dot-2x:
+        level: 19
+        requisition: 7000
+      combat-scope-4x:
+        level: 23
+        requisition: 25000
+      muzzle-brake:
+        level: 1
+        requisition: 0
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 13
+        requisition: 7000
+      compensator:
+        level: 21
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 3
+        requisition: 3000
+      angled-foregrip:
+        level: 7
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: ar-59-suppressor
+    available:
+      optic:
+        - reflex-sight-mk2
+        - reflex-sight
+        - tube-red-dot-1-5x
+        - holographic-sight
+        - iron-sight
+        - combat-scope-4x
+      magazine:
+        - extended-magazine
+        - short-magazine
+        - drum-magazine
+      underbarrel:
+        - laser-sight
+        - no-underbarrel
+        - laser-sight-flashlight
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: tube-red-dot-1-5x
+      underbarrel: vertical-foregrip
+      magazine: drum-magazine
+    why:
+      en: "Stat reasoning: an 850 rpm suppression rifle with no muzzle slot; the 60-round drum and vertical foregrip maximize sustained fire."
+      ko: "능력치 기준 추천: 총구 슬롯이 없는 850 rpm 제압 소총이라 60발 드럼 탄창과 수직 손잡이로 지속 사격을 극대화합니다."
+    unlocks:
+      reflex-sight-mk2:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      tube-red-dot-1-5x:
+        level: 8
+        requisition: 5000
+      holographic-sight:
+        level: 9
+        requisition: 13000
+      iron-sight:
+        level: 18
+        requisition: 5000
+      combat-scope-4x:
+        level: 21
+        requisition: 13000
+      extended-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 11
+        requisition: 7000
+      drum-magazine:
+        level: 24
+        requisition: 25000
+      laser-sight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      laser-sight-flashlight:
+        level: 2
+        requisition: 3000
+      vertical-foregrip:
+        level: 6
+        requisition: 5000
+      angled-foregrip:
+        level: 13
+        requisition: 7000
+      flashlight-vertical-foregrip:
+        level: 16
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 23
+        requisition: 7000
+  - weapon: ar-61-tenderizer
+    available:
+      optic:
+        - tube-red-dot-2x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+        - combat-scope-4x
+      muzzle:
+        - muzzle-brake
+        - no-muzzle
+        - flash-hider
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: tube-red-dot-2x
+      muzzle: muzzle-brake
+      underbarrel: vertical-foregrip
+    why:
+      en: Already low recoil; guides pair a muzzle brake (horizontal) with a grip for pinpoint bursts. No magazine options exist, for balance.
+      ko: 원래 반동이 낮은 편이라 가이드들은 총구 제동기(수평 반동)와 손잡이를 조합해 정밀 사격을 권합니다. 밸런스상 탄창 선택지는 없습니다.
+    unlocks:
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 2
+        requisition: 5000
+      holographic-sight:
+        level: 9
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 14
+        requisition: 13000
+      iron-sight:
+        level: 18
+        requisition: 7000
+      combat-scope-4x:
+        level: 24
+        requisition: 25000
+      muzzle-brake:
+        level: 1
+        requisition: 0
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 13
+        requisition: 5000
+      compensator:
+        level: 22
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 7
+        requisition: 5000
+      angled-foregrip:
+        level: 12
+        requisition: 7000
+      flashlight-vertical-foregrip:
+        level: 16
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 21
+        requisition: 7000
+  - weapon: ar-gl-21-one-two
+    available:
+      optic:
+        - tube-red-dot-2x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+        - combat-scope-4x
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+    recommended:
+      optic: tube-red-dot-2x
+      muzzle: compensator
+    why:
+      en: "Stat reasoning: the underbarrel is taken by the grenade launcher, so only optic and muzzle change; the compensator handles vertical climb."
+      ko: "능력치 기준 추천: 총열 하부가 유탄 발사기로 고정되어 조준경과 총구만 바꿀 수 있으며, 보정기로 수직 반동을 잡습니다."
+    unlocks:
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 2
+        requisition: 5000
+      holographic-sight:
+        level: 6
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 13
+        requisition: 7000
+      iron-sight:
+        level: 19
+        requisition: 7000
+      combat-scope-4x:
+        level: 22
+        requisition: 25000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 8
+        requisition: 5000
+      muzzle-brake:
+        level: 17
+        requisition: 7000
+      compensator:
+        level: 23
+        requisition: 13000
+  - weapon: arc-12-blitzer
+    available:
+      optic:
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+        - iron-sight
+    recommended:
+      optic: holographic-sight
+    why:
+      en: Arcs auto-target, so any unmagnified sight works; one 2026 guide picks the holographic.
+      ko: 전격이 자동으로 튀므로 무배율 조준경이면 충분하며, 2026년 가이드 하나는 홀로그램 조준경을 권합니다.
+    unlocks:
+      reflex-sight:
+        level: 1
+        requisition: 0
+      reflex-sight-mk2:
+        level: 3
+        requisition: 5000
+      holographic-sight:
+        level: 13
+        requisition: 13000
+      iron-sight:
+        level: 23
+        requisition: 7000
+  - weapon: br-14-adjudicator
+    available:
+      optic:
+        - tube-red-dot-2x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - combat-scope-4x
+        - sniper-scope-10x
+      muzzle:
+        - muzzle-brake
+        - no-muzzle
+        - flash-hider
+        - compensator
+      underbarrel:
+        - no-underbarrel
+        - laser-sight-flashlight
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: tube-red-dot-2x
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+    why:
+      en: Vertical foregrip + compensator fix its heavy recoil and make it a mid-range precision rifle; no magazine options exist.
+      ko: 수직 손잡이와 보정기로 큰 반동을 잡으면 중거리 정밀 소총이 됩니다. 탄창 선택지는 없습니다.
+    unlocks:
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 14
+        requisition: 5000
+      combat-scope-4x:
+        level: 18
+        requisition: 13000
+      sniper-scope-10x:
+        level: 24
+        requisition: 25000
+      muzzle-brake:
+        level: 1
+        requisition: 0
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 11
+        requisition: 5000
+      compensator:
+        level: 21
+        requisition: 13000
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      laser-sight-flashlight:
+        level: 2
+        requisition: 3000
+      vertical-foregrip:
+        level: 6
+        requisition: 5000
+      angled-foregrip:
+        level: 13
+        requisition: 7000
+      flashlight-vertical-foregrip:
+        level: 16
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 23
+        requisition: 7000
+  - weapon: cb-9-exploding-crossbow
+    available:
+      optic:
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+    recommended:
+      optic: tube-red-dot-1-5x
+    why:
+      en: Optics only; the default 1.5x has no ergonomics cost and a longer zero for arcing bolts.
+      ko: 조준경만 바꿀 수 있으며, 기본 1.5x는 인체공학성 손해가 없고 곡사 탄에 맞는 먼 영점을 제공합니다.
+    unlocks:
+      tube-red-dot-1-5x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 3
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 13
+        requisition: 7000
+      holographic-sight:
+        level: 24
+        requisition: 25000
+  - weapon: dbs-2-double-freedom
+    available:
+      underbarrel:
+        - no-underbarrel
+        - laser-sight-flashlight
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      underbarrel: vertical-foregrip
+    why:
+      en: "Stat reasoning: extreme per-shot recoil (163) makes vertical recoil reduction the only meaningful pick."
+      ko: "능력치 기준 추천: 발당 반동이 매우 커서(163) 수직 반동 감소가 유일하게 의미 있는 선택입니다."
+    unlocks:
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      laser-sight-flashlight:
+        level: 3
+        requisition: 3000
+      vertical-foregrip:
+        level: 7
+        requisition: 5000
+      angled-foregrip:
+        level: 12
+        requisition: 7000
+      flashlight-vertical-foregrip:
+        level: 18
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 23
+        requisition: 13000
+  - weapon: gl-15-evictor
+    available:
+      optic:
+        - no-optics
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-1-5x
+    recommended:
+      optic: reflex-sight
+    why:
+      en: "Stat reasoning: optics only; a reflex sight gives a clear view for lobbing grenades."
+      ko: "능력치 기준 추천: 조준경만 바꿀 수 있으며, 반사식 조준경이 유탄 조준 시야를 깔끔하게 해 줍니다."
+    unlocks:
+      no-optics:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 1
+        requisition: 0
+      reflex-sight-mk2:
+        level: 3
+        requisition: 3000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      tube-red-dot-1-5x:
+        level: 14
+        requisition: 13000
+  - weapon: jar-5-dominator
+    available:
+      optic:
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+        - combat-scope-4x
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: tube-red-dot-1-5x
+      underbarrel: vertical-foregrip
+    why:
+      en: Heavy recoil favors a vertical foregrip; avoid the 4x scope, which the wiki notes is misaligned with the real point of impact.
+      ko: 반동이 커서 수직 손잡이가 유리하며, 위키에 따르면 4x 스코프는 실제 탄착점과 어긋나므로 피하는 게 좋습니다.
+    unlocks:
+      tube-red-dot-1-5x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 7
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 13
+        requisition: 13000
+      iron-sight:
+        level: 19
+        requisition: 7000
+      combat-scope-4x:
+        level: 24
+        requisition: 25000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 3
+        requisition: 3000
+      angled-foregrip:
+        level: 9
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 23
+        requisition: 7000
+  - weapon: las-12-sai
+    available:
+      muzzle:
+        - triple-lens
+        - focus-lens
+      magazine:
+        - standard-heatsink
+        - high-capacity-heatsink
+        - high-dissipation-heatsink
+      optic:
+        - tube-red-dot-2x
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-1-5x
+        - combat-scope-4x
+    recommended:
+      optic: tube-red-dot-2x
+      muzzle: focus-lens
+      magazine: high-capacity-heatsink
+    why:
+      en: Focus Lens roughly halves spread and lowers heat per second; the High Capacity Heatsink extends firing time. Guides call the pair near-perfect.
+      ko: 집속 렌즈는 확산을 약 절반으로 줄이고 초당 발열도 낮추며, 고용량 방열판은 사격 시간을 늘립니다. 가이드들은 이 조합을 거의 완벽하다고 평가합니다.
+    unlocks:
+      triple-lens:
+        level: 1
+        requisition: 0
+      focus-lens:
+        level: 9
+        requisition: 7000
+      standard-heatsink:
+        level: 1
+        requisition: 0
+      high-capacity-heatsink:
+        level: 3
+        requisition: 5000
+      high-dissipation-heatsink:
+        level: 14
+        requisition: 13000
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 6
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 8
+        requisition: 7000
+      holographic-sight:
+        level: 11
+        requisition: 7000
+      tube-red-dot-1-5x:
+        level: 18
+        requisition: 13000
+      combat-scope-4x:
+        level: 23
+        requisition: 25000
+  - weapon: las-13-trident
+    available:
+      optic:
+        - tube-red-dot-1-5x
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-2x
+        - iron-sight
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - angled-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: holographic-sight
+      underbarrel: laser-sight-flashlight
+    why:
+      en: "Stat reasoning: near-zero recoil and duckbill-like spread make grips pointless; keep the default laser/light and an open sight."
+      ko: "능력치 기준 추천: 반동이 거의 없고 덕빌처럼 퍼지는 탄이라 손잡이는 의미가 없으니 기본 레이저+조명과 무배율 조준경을 씁니다."
+    unlocks:
+      tube-red-dot-1-5x:
+        level: 1
+        requisition: 0
+      reflex-sight-mk2:
+        level: 3
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      tube-red-dot-2x:
+        level: 18
+        requisition: 13000
+      iron-sight:
+        level: 23
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      angled-foregrip:
+        level: 13
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 13000
+  - weapon: las-16-sickle
+    available:
+      optic:
+        - tube-red-dot-2x
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-1-5x
+        - iron-sight
+        - combat-scope-4x
+    recommended:
+      optic: tube-red-dot-2x
+    why:
+      en: "Keep the default 2x: its 100 m zero in first person allows precise bot headshots while third person handles close range."
+      ko: 기본 2x를 유지합니다. 1인칭 100m 영점으로 오토마톤 머리를 정밀 사격하고 3인칭으로 근거리를 처리할 수 있습니다.
+    unlocks:
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      reflex-sight-mk2:
+        level: 3
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      tube-red-dot-1-5x:
+        level: 13
+        requisition: 13000
+      iron-sight:
+        level: 18
+        requisition: 7000
+      combat-scope-4x:
+        level: 23
+        requisition: 25000
+  - weapon: las-17-double-edge-sickle
+    available:
+      optic:
+        - tube-red-dot-2x
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-1-5x
+        - iron-sight
+        - combat-scope-4x
+    recommended:
+      optic: tube-red-dot-2x
+    why:
+      en: Same optic logic as the Sickle; a 2026 guide also runs the 2x red dot.
+      ko: 시클과 같은 이유로 2x를 권하며, 2026년 가이드도 2x 레드 도트를 씁니다.
+    unlocks:
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      reflex-sight-mk2:
+        level: 3
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      tube-red-dot-1-5x:
+        level: 13
+        requisition: 13000
+      iron-sight:
+        level: 18
+        requisition: 7000
+      combat-scope-4x:
+        level: 23
+        requisition: 25000
+  - weapon: las-5-scythe
+    available:
+      optic:
+        - tube-red-dot-2x
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+      magazine:
+        - standard-heatsink
+        - high-capacity-heatsink
+        - high-dissipation-heatsink
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - angled-foregrip
+    recommended:
+      optic: tube-red-dot-2x
+      underbarrel: laser-sight-flashlight
+      magazine: standard-heatsink
+    why:
+      en: "Heatsinks are situational: High Dissipation on hot planets, High Capacity on cold ones; the standard sink is the all-round default."
+      ko: 방열판은 상황별로 고릅니다. 더운 행성은 고효율, 추운 행성은 고용량이 좋고, 평소에는 표준 방열판이 무난합니다.
+    unlocks:
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 3
+        requisition: 5000
+      reflex-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 18
+        requisition: 13000
+      holographic-sight:
+        level: 24
+        requisition: 25000
+      standard-heatsink:
+        level: 1
+        requisition: 0
+      high-capacity-heatsink:
+        level: 13
+        requisition: 7000
+      high-dissipation-heatsink:
+        level: 22
+        requisition: 25000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      angled-foregrip:
+        level: 12
+        requisition: 7000
+  - weapon: mp-98-knight
+    available:
+      optic:
+        - reflex-sight
+        - tube-red-dot-1-5x
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-2x
+      magazine:
+        - short-magazine
+        - extended-magazine
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - flashlight-vertical-foregrip
+    recommended:
+      optic: reflex-sight
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+      magazine: extended-magazine
+    why:
+      en: Recoil control plus the extended mag (420 total rounds vs 400) is the common SMG setup.
+      ko: 반동 제어 파츠와 확장 탄창(총 420발, 기본 400발)이 흔히 쓰는 기관단총 세팅입니다.
+    unlocks:
+      reflex-sight:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 4
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 7
+        requisition: 7000
+      holographic-sight:
+        level: 17
+        requisition: 13000
+      tube-red-dot-2x:
+        level: 24
+        requisition: 25000
+      short-magazine:
+        level: 1
+        requisition: 0
+      extended-magazine:
+        level: 14
+        requisition: 7000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 3
+        requisition: 3000
+      muzzle-brake:
+        level: 12
+        requisition: 5000
+      compensator:
+        level: 21
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 2
+        requisition: 3000
+      flashlight-vertical-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: plas-1-scorcher
+    available:
+      optic:
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: tube-red-dot-1-5x
+      underbarrel: vertical-foregrip
+    why:
+      en: "Stat reasoning: only optic and underbarrel are customizable; a vertical foregrip reduces recoil for follow-up shots."
+      ko: "능력치 기준 추천: 조준경과 총열 하부만 바꿀 수 있으며, 수직 손잡이로 반동을 줄여 연속 사격을 돕습니다."
+    unlocks:
+      tube-red-dot-1-5x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 7
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 14
+        requisition: 7000
+      iron-sight:
+        level: 24
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 2
+        requisition: 5000
+      angled-foregrip:
+        level: 9
+        requisition: 7000
+      flashlight-vertical-foregrip:
+        level: 18
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: plas-101-purifier
+    available:
+      optic:
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: tube-red-dot-1-5x
+      underbarrel: vertical-foregrip
+    why:
+      en: "Stat reasoning: only optic and underbarrel are customizable; vertical foregrip for recoil."
+      ko: "능력치 기준 추천: 조준경과 총열 하부만 바꿀 수 있으며, 반동 때문에 수직 손잡이를 씁니다."
+    unlocks:
+      tube-red-dot-1-5x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 7
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 14
+        requisition: 13000
+      iron-sight:
+        level: 24
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 2
+        requisition: 3000
+      angled-foregrip:
+        level: 9
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: r-2-amendment
+    available:
+      optic:
+        - combat-scope-4x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - tube-red-dot-1-5x
+        - sniper-scope-10x
+    recommended:
+      optic: combat-scope-4x
+    why:
+      en: "Stat reasoning: optics only; the default 4x (ergonomics -2) fits a marksman rifle."
+      ko: "능력치 기준 추천: 조준경만 바꿀 수 있으며, 기본 4x(인체공학성 -2)가 지정사수 소총에 맞습니다."
+    unlocks:
+      combat-scope-4x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 2
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 13
+        requisition: 13000
+      tube-red-dot-1-5x:
+        level: 18
+        requisition: 13000
+      sniper-scope-10x:
+        level: 23
+        requisition: 25000
+  - weapon: r-36-eruptor
+    available:
+      optic:
+        - sniper-scope-10x
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+        - tube-red-dot-2x
+        - combat-scope-4x
+      underbarrel:
+        - no-underbarrel
+        - laser-sight-flashlight
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: iron-sight
+      underbarrel: angled-foregrip
+    why:
+      en: Iron Sight + Angled Foregrip raise its practical ergonomics from 21 to 35, fixing its sluggish handling; keep the 10x if you mainly snipe.
+      ko: 기계식 조준기와 앵글 손잡이로 실질 인체공학성이 21에서 35로 올라 굼뜬 조작감이 해결됩니다. 주로 저격한다면 10x를 유지합니다.
+    unlocks:
+      sniper-scope-10x:
+        level: 1
+        requisition: 0
+      holographic-sight:
+        level: 3
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 9
+        requisition: 7000
+      iron-sight:
+        level: 12
+        requisition: 7000
+      tube-red-dot-2x:
+        level: 19
+        requisition: 13000
+      combat-scope-4x:
+        level: 24
+        requisition: 25000
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      laser-sight-flashlight:
+        level: 2
+        requisition: 3000
+      vertical-foregrip:
+        level: 8
+        requisition: 3000
+      angled-foregrip:
+        level: 14
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 18
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: r-4-hyena
+    available:
+      optic:
+        - sniper-scope-10x
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-2x
+        - combat-scope-4x
+      magazine:
+        - extended-magazine
+        - short-magazine
+      muzzle:
+        - muzzle-brake
+        - no-muzzle
+        - flash-hider
+        - compensator
+      underbarrel:
+        - no-underbarrel
+        - laser-sight-flashlight
+    recommended:
+      optic: sniper-scope-10x
+      muzzle: muzzle-brake
+      magazine: short-magazine
+    why:
+      en: Short mags carry 10 more rounds overall with better ergonomics and faster reloads; keep the default brake and 10x.
+      ko: 짧은 탄창이 총 탄약 10발 더 많고 인체공학성과 재장전 속도도 좋습니다. 기본 제동기와 10x는 유지합니다.
+    unlocks:
+      sniper-scope-10x:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 3
+        requisition: 5000
+      reflex-sight:
+        level: 7
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 8
+        requisition: 7000
+      holographic-sight:
+        level: 14
+        requisition: 7000
+      tube-red-dot-2x:
+        level: 18
+        requisition: 13000
+      combat-scope-4x:
+        level: 24
+        requisition: 25000
+      extended-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 16
+        requisition: 13000
+      muzzle-brake:
+        level: 1
+        requisition: 0
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 11
+        requisition: 7000
+      compensator:
+        level: 21
+        requisition: 13000
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      laser-sight-flashlight:
+        level: 2
+        requisition: 3000
+  - weapon: r-6-deadeye
+    available:
+      optic:
+        - combat-scope-4x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+        - sniper-scope-10x
+    recommended:
+      optic: combat-scope-4x
+    why:
+      en: "Stat reasoning: optics only; the default 4x balances zoom and ergonomics."
+      ko: "능력치 기준 추천: 조준경만 바꿀 수 있으며, 기본 4x가 배율과 인체공학성의 균형이 좋습니다."
+    unlocks:
+      combat-scope-4x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 3
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 13
+        requisition: 13000
+      iron-sight:
+        level: 18
+        requisition: 13000
+      sniper-scope-10x:
+        level: 23
+        requisition: 25000
+  - weapon: r-63-diligence
+    available:
+      optic:
+        - combat-scope-4x
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+      underbarrel:
+        - no-underbarrel
+        - laser-sight-flashlight
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: combat-scope-4x
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+    why:
+      en: Korean community builds focus on recoil for fast follow-up shots; slow, deliberate shooters may prefer an angled foregrip with no muzzle device.
+      ko: 국내 커뮤니티는 빠른 연속 사격을 위해 반동 감소를 우선합니다. 한 발씩 신중히 쏜다면 앵글 손잡이에 총구 부착물 없이 쓰기도 합니다.
+    unlocks:
+      combat-scope-4x:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 4
+        requisition: 5000
+      reflex-sight:
+        level: 9
+        requisition: 7000
+      holographic-sight:
+        level: 14
+        requisition: 13000
+      reflex-sight-mk2:
+        level: 19
+        requisition: 13000
+      iron-sight:
+        level: 24
+        requisition: 25000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 2
+        requisition: 5000
+      muzzle-brake:
+        level: 11
+        requisition: 7000
+      compensator:
+        level: 21
+        requisition: 13000
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      laser-sight-flashlight:
+        level: 3
+        requisition: 3000
+      vertical-foregrip:
+        level: 7
+        requisition: 5000
+      angled-foregrip:
+        level: 12
+        requisition: 7000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 13000
+  - weapon: r-63cs-diligence-counter-sniper
+    available:
+      optic:
+        - sniper-scope-10x
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - combat-scope-4x
+      muzzle:
+        - muzzle-brake
+        - no-muzzle
+        - flash-hider
+        - compensator
+      underbarrel:
+        - no-underbarrel
+        - laser-sight-flashlight
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: sniper-scope-10x
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+    why:
+      en: Keep the 10x for long-range headshots and stack vertical-recoil reduction for quicker follow-ups; its magazine cannot be changed.
+      ko: 장거리 헤드샷용 10x를 유지하고 수직 반동 감소를 겹쳐 연속 사격을 빠르게 합니다. 탄창은 바꿀 수 없습니다.
+    unlocks:
+      sniper-scope-10x:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 3
+        requisition: 5000
+      reflex-sight:
+        level: 8
+        requisition: 7000
+      holographic-sight:
+        level: 14
+        requisition: 13000
+      reflex-sight-mk2:
+        level: 18
+        requisition: 13000
+      combat-scope-4x:
+        level: 24
+        requisition: 25000
+      muzzle-brake:
+        level: 1
+        requisition: 0
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 11
+        requisition: 7000
+      compensator:
+        level: 21
+        requisition: 13000
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      laser-sight-flashlight:
+        level: 2
+        requisition: 3000
+      vertical-foregrip:
+        level: 6
+        requisition: 5000
+      angled-foregrip:
+        level: 13
+        requisition: 7000
+      flashlight-vertical-foregrip:
+        level: 16
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 23
+        requisition: 7000
+  - weapon: r-72-censor
+    available:
+      optic:
+        - combat-scope-4x
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-1-5x
+        - iron-sight
+        - sniper-scope-10x
+      magazine:
+        - short-magazine
+        - extended-magazine
+      underbarrel:
+        - laser-sight
+        - no-underbarrel
+        - laser-sight-flashlight
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: combat-scope-4x
+      underbarrel: vertical-foregrip
+      magazine: extended-magazine
+    why:
+      en: "Stat reasoning: the extended mag raises capacity from 20 to 30; keep the default 4x and add vertical recoil control."
+      ko: "능력치 기준 추천: 확장 탄창으로 20발에서 30발로 늘리고, 기본 4x에 수직 반동 제어를 더합니다."
+    unlocks:
+      reflex-sight:
+        level: 2
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 8
+        requisition: 13000
+      holographic-sight:
+        level: 9
+        requisition: 13000
+      tube-red-dot-1-5x:
+        level: 14
+        requisition: 5000
+      iron-sight:
+        level: 19
+        requisition: 7000
+      sniper-scope-10x:
+        level: 24
+        requisition: 25000
+      short-magazine:
+        level: 1
+        requisition: 0
+      extended-magazine:
+        level: 23
+        requisition: 13000
+      laser-sight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      laser-sight-flashlight:
+        level: 4
+        requisition: 3000
+      vertical-foregrip:
+        level: 7
+        requisition: 5000
+      angled-foregrip:
+        level: 12
+        requisition: 7000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 13000
+      combat-scope-4x:
+        level: 1
+        requisition: 0
+  - weapon: sg-20-halt
+    available:
+      optic:
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+    recommended:
+      optic: tube-red-dot-1-5x
+    why:
+      en: Optics only; the default sight has no real drawback, so there is little reason to change it.
+      ko: 조준경만 바꿀 수 있고 기본 조준경에 뚜렷한 단점이 없어 굳이 바꿀 이유가 적습니다.
+    unlocks:
+      tube-red-dot-1-5x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 2
+        requisition: 5000
+      holographic-sight:
+        level: 7
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 18
+        requisition: 13000
+      iron-sight:
+        level: 23
+        requisition: 13000
+  - weapon: sg-225-breaker
+    available:
+      optic:
+        - reflex-sight
+        - tube-red-dot-1-5x
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+      magazine:
+        - extended-magazine
+        - short-magazine
+        - drum-magazine
+      muzzle:
+        - no-muzzle
+        - half-choke
+        - full-choke
+        - duckbill
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: reflex-sight
+      muzzle: full-choke
+      underbarrel: vertical-foregrip
+      magazine: drum-magazine
+    why:
+      en: Full Choke tightens its already narrow spread for single-target damage; the drum and vertical foregrip keep it firing controllably.
+      ko: 풀 초크가 원래 좁은 확산을 더 좁혀 단일 대상 화력을 높이고, 드럼 탄창과 수직 손잡이로 통제된 연사를 유지합니다.
+    unlocks:
+      reflex-sight:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 19
+        requisition: 13000
+      iron-sight:
+        level: 23
+        requisition: 13000
+      extended-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 12
+        requisition: 7000
+      drum-magazine:
+        level: 24
+        requisition: 25000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      half-choke:
+        level: 2
+        requisition: 3000
+      full-choke:
+        level: 13
+        requisition: 7000
+      duckbill:
+        level: 22
+        requisition: 7000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 3
+        requisition: 3000
+      angled-foregrip:
+        level: 7
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 21
+        requisition: 7000
+  - weapon: sg-225ie-breaker-incendiary
+    available:
+      optic:
+        - holographic-sight
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - reflex-sight-mk2
+        - iron-sight
+      magazine:
+        - drum-magazine
+        - short-magazine
+        - extended-magazine
+      muzzle:
+        - no-muzzle
+        - half-choke
+        - full-choke
+        - duckbill
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+    recommended:
+      optic: holographic-sight
+      muzzle: duckbill
+      magazine: drum-magazine
+    why:
+      en: The wiki recommends Duckbill so pellets spread horizontally across groups instead of flying over heads; keep the default drum.
+      ko: 위키는 산탄이 가로로 퍼져 무리를 맞히고 머리 위로 날아가지 않도록 덕빌을 권합니다. 기본 드럼 탄창을 유지합니다.
+    unlocks:
+      holographic-sight:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 3
+        requisition: 5000
+      reflex-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 18
+        requisition: 13000
+      iron-sight:
+        level: 24
+        requisition: 13000
+      drum-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 12
+        requisition: 7000
+      extended-magazine:
+        level: 22
+        requisition: 13000
+      half-choke:
+        level: 2
+        requisition: 5000
+      full-choke:
+        level: 14
+        requisition: 7000
+      duckbill:
+        level: 23
+        requisition: 25000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      no-muzzle:
+        level: 1
+        requisition: 0
+  - weapon: sg-225sp-breaker-spray-and-pray
+    available:
+      optic:
+        - reflex-sight-mk2
+        - tube-red-dot-1-5x
+        - holographic-sight
+        - reflex-sight
+        - iron-sight
+      magazine:
+        - drum-magazine
+        - short-magazine
+        - extended-magazine
+      muzzle:
+        - duckbill
+        - no-choke
+        - half-choke
+        - full-choke
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: reflex-sight-mk2
+      muzzle: duckbill
+      underbarrel: vertical-foregrip
+      magazine: drum-magazine
+    why:
+      en: Keep its default Duckbill and drum for chaff clearing; a vertical foregrip helps its full-auto recoil.
+      ko: 잡몹 처리용 기본 덕빌과 드럼 탄창을 유지하고, 수직 손잡이로 자동 사격 반동을 줄입니다.
+    unlocks:
+      reflex-sight-mk2:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 3
+        requisition: 5000
+      holographic-sight:
+        level: 9
+        requisition: 7000
+      reflex-sight:
+        level: 19
+        requisition: 7000
+      iron-sight:
+        level: 24
+        requisition: 7000
+      drum-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 14
+        requisition: 7000
+      extended-magazine:
+        level: 23
+        requisition: 25000
+      duckbill:
+        level: 1
+        requisition: 0
+      no-choke:
+        level: 1
+        requisition: 0
+      half-choke:
+        level: 4
+        requisition: 5000
+      full-choke:
+        level: 12
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 2
+        requisition: 3000
+      angled-foregrip:
+        level: 7
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 13000
+  - weapon: sg-451-cookout
+    available:
+      optic:
+        - reflex-sight
+        - tube-red-dot-1-5x
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+    recommended:
+      optic: reflex-sight
+    why:
+      en: Optics only; the default sight has no real drawback, so there is little reason to change it.
+      ko: 조준경만 바꿀 수 있고 기본 조준경에 뚜렷한 단점이 없어 굳이 바꿀 이유가 적습니다.
+    unlocks:
+      reflex-sight:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 2
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 18
+        requisition: 13000
+      iron-sight:
+        level: 23
+        requisition: 13000
+  - weapon: sg-8-punisher
+    available:
+      optic:
+        - reflex-sight
+        - tube-red-dot-1-5x
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+      muzzle:
+        - no-muzzle
+        - half-choke
+        - full-choke
+        - duckbill
+    recommended:
+      optic: reflex-sight
+      muzzle: full-choke
+    why:
+      en: Chokes cut spread so more pellets land on the targeted weak point; Full Choke gives maximum per-shot damage.
+      ko: 초크로 확산을 줄여 더 많은 산탄이 약점에 맞게 하며, 발당 피해를 최대로 하려면 풀 초크를 씁니다.
+    unlocks:
+      reflex-sight:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 4
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 18
+        requisition: 7000
+      iron-sight:
+        level: 24
+        requisition: 13000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      half-choke:
+        level: 2
+        requisition: 3000
+      full-choke:
+        level: 12
+        requisition: 5000
+      duckbill:
+        level: 22
+        requisition: 13000
+  - weapon: sg-8p-punisher-plasma
+    available:
+      optic:
+        - holographic-sight
+        - reflex-sight
+        - tube-red-dot-1-5x
+        - reflex-sight-mk2
+        - iron-sight
+    recommended:
+      optic: holographic-sight
+    why:
+      en: Optics only; the default sight has no real drawback, so there is little reason to change it.
+      ko: 조준경만 바꿀 수 있고 기본 조준경에 뚜렷한 단점이 없어 굳이 바꿀 이유가 적습니다.
+    unlocks:
+      holographic-sight:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 3
+        requisition: 5000
+      tube-red-dot-1-5x:
+        level: 7
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 17
+        requisition: 13000
+      iron-sight:
+        level: 23
+        requisition: 13000
+  - weapon: sg-8s-slugger
+    available:
+      optic:
+        - tube-red-dot-1-5x
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - iron-sight
+    recommended:
+      optic: tube-red-dot-1-5x
+    why:
+      en: Optics only; the default sight has no real drawback, so there is little reason to change it.
+      ko: 조준경만 바꿀 수 있고 기본 조준경에 뚜렷한 단점이 없어 굳이 바꿀 이유가 적습니다.
+    unlocks:
+      tube-red-dot-1-5x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 2
+        requisition: 5000
+      holographic-sight:
+        level: 7
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 18
+        requisition: 13000
+      iron-sight:
+        level: 23
+        requisition: 13000
+  - weapon: sg-97-sweeper
+    available:
+      optic:
+        - no-optics
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-1-5x
+        - combat-scope-4x
+        - tube-red-dot-2x
+      muzzle:
+        - no-muzzle
+        - half-choke
+        - full-choke
+        - duckbill
+    recommended:
+      optic: reflex-sight
+      muzzle: half-choke
+    why:
+      en: "Stat reasoning: Half Choke is the middle ground between spread and reach."
+      ko: "능력치 기준 추천: 하프 초크가 확산과 사거리 사이의 절충안입니다."
+    unlocks:
+      no-optics:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 3
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 6
+        requisition: 5000
+      holographic-sight:
+        level: 8
+        requisition: 5000
+      tube-red-dot-1-5x:
+        level: 12
+        requisition: 7000
+      combat-scope-4x:
+        level: 17
+        requisition: 7000
+      tube-red-dot-2x:
+        level: 22
+        requisition: 13000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      half-choke:
+        level: 4
+        requisition: 3000
+      full-choke:
+        level: 19
+        requisition: 13000
+      duckbill:
+        level: 24
+        requisition: 25000
+  - weapon: smg-203-gallant
+    available:
+      optic:
+        - reflex-sight
+        - tube-red-dot-1-5x
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-2x
+      magazine:
+        - short-magazine
+        - extended-magazine
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - flashlight-vertical-foregrip
+    recommended:
+      optic: reflex-sight
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+      magazine: extended-magazine
+    why:
+      en: "Stat reasoning: same parts and fire rate as the Knight, so the Knight setup carries over."
+      ko: "능력치 기준 추천: 나이트와 파츠와 연사 속도가 같아 나이트 세팅을 그대로 씁니다."
+    unlocks:
+      reflex-sight:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 4
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 7
+        requisition: 7000
+      holographic-sight:
+        level: 17
+        requisition: 13000
+      tube-red-dot-2x:
+        level: 24
+        requisition: 25000
+      short-magazine:
+        level: 1
+        requisition: 0
+      extended-magazine:
+        level: 14
+        requisition: 7000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 3
+        requisition: 5000
+      muzzle-brake:
+        level: 12
+        requisition: 5000
+      compensator:
+        level: 21
+        requisition: 13000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 2
+        requisition: 3000
+      flashlight-vertical-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: smg-32-reprimand
+    available:
+      optic:
+        - holographic-sight
+        - reflex-sight-mk2
+        - reflex-sight
+        - tube-red-dot-1-5x
+        - iron-sight
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - flashlight-vertical-foregrip
+    recommended:
+      optic: holographic-sight
+      muzzle: compensator
+      underbarrel: vertical-foregrip
+    why:
+      en: Vertical foregrip + compensator fix its high recoil and make it a mid-range headshot weapon.
+      ko: 수직 손잡이와 보정기로 높은 반동을 잡아 중거리 헤드샷 무기로 만듭니다.
+    unlocks:
+      holographic-sight:
+        level: 1
+        requisition: 0
+      reflex-sight-mk2:
+        level: 8
+        requisition: 5000
+      reflex-sight:
+        level: 12
+        requisition: 7000
+      tube-red-dot-1-5x:
+        level: 18
+        requisition: 7000
+      iron-sight:
+        level: 24
+        requisition: 25000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 2
+        requisition: 5000
+      muzzle-brake:
+        level: 13
+        requisition: 7000
+      compensator:
+        level: 23
+        requisition: 5000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 3
+        requisition: 3000
+      flashlight-vertical-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: smg-37-defender
+    available:
+      optic:
+        - reflex-sight
+        - tube-red-dot-1-5x
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-2x
+      magazine:
+        - extended-magazine
+        - short-magazine
+        - drum-magazine
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+        - vertical-foregrip
+        - angled-foregrip
+        - flashlight-vertical-foregrip
+        - laser-sight-angled-foregrip
+    recommended:
+      optic: reflex-sight
+      muzzle: flash-hider
+      underbarrel: vertical-foregrip
+      magazine: drum-magazine
+    why:
+      en: "Stat reasoning: already low recoil, so a light flash hider is enough; the 75-round drum suits one-handed shield play."
+      ko: "능력치 기준 추천: 원래 반동이 낮아 소염기로 충분하며, 75발 드럼 탄창이 방패와 함께 한 손으로 쓰는 운용에 맞습니다."
+    unlocks:
+      reflex-sight:
+        level: 1
+        requisition: 0
+      tube-red-dot-1-5x:
+        level: 4
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 8
+        requisition: 7000
+      holographic-sight:
+        level: 19
+        requisition: 13000
+      tube-red-dot-2x:
+        level: 23
+        requisition: 25000
+      extended-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 9
+        requisition: 7000
+      drum-magazine:
+        level: 24
+        requisition: 25000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 3
+        requisition: 5000
+      muzzle-brake:
+        level: 13
+        requisition: 7000
+      compensator:
+        level: 21
+        requisition: 7000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+      vertical-foregrip:
+        level: 2
+        requisition: 3000
+      angled-foregrip:
+        level: 7
+        requisition: 5000
+      flashlight-vertical-foregrip:
+        level: 17
+        requisition: 7000
+      laser-sight-angled-foregrip:
+        level: 22
+        requisition: 7000
+  - weapon: smg-72-pummeler
+    available:
+      optic:
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - tube-red-dot-2x
+      magazine:
+        - extended-magazine
+        - short-magazine
+        - drum-magazine
+      muzzle:
+        - no-muzzle
+        - flash-hider
+        - muzzle-brake
+        - compensator
+      underbarrel:
+        - laser-sight-flashlight
+        - no-underbarrel
+    recommended:
+      optic: reflex-sight
+      muzzle: flash-hider
+      magazine: drum-magazine
+    why:
+      en: "Stat reasoning: low recoil; a 75-round drum keeps its stagger effect going longer."
+      ko: "능력치 기준 추천: 반동이 낮으므로 75발 드럼 탄창으로 경직 효과를 더 오래 유지합니다."
+    unlocks:
+      reflex-sight:
+        level: 1
+        requisition: 0
+      holographic-sight:
+        level: 9
+        requisition: 7000
+      reflex-sight-mk2:
+        level: 18
+        requisition: 13000
+      tube-red-dot-2x:
+        level: 24
+        requisition: 25000
+      extended-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 7
+        requisition: 7000
+      drum-magazine:
+        level: 23
+        requisition: 25000
+      no-muzzle:
+        level: 1
+        requisition: 0
+      flash-hider:
+        level: 2
+        requisition: 5000
+      muzzle-brake:
+        level: 13
+        requisition: 5000
+      compensator:
+        level: 22
+        requisition: 7000
+      laser-sight-flashlight:
+        level: 1
+        requisition: 0
+      no-underbarrel:
+        level: 1
+        requisition: 0
+  - weapon: smg-flam-34-stoker
+    available:
+      muzzle:
+        - no-muzzle
+        - muzzle-brake
+        - compensator
+      magazine:
+        - extended-magazine
+        - short-magazine
+        - drum-magazine
+      optic:
+        - no-optics
+        - reflex-sight
+        - holographic-sight
+        - reflex-sight-mk2
+        - combat-scope-4x
+        - tube-red-dot-1-5x
+        - tube-red-dot-2x
+    recommended:
+      optic: reflex-sight
+      muzzle: compensator
+      magazine: drum-magazine
+    why:
+      en: The compensator steadies vertical recoil and the 60-round drum maximizes fire uptime.
+      ko: 보정기로 수직 반동을 안정시키고 60발 드럼 탄창으로 사격 시간을 최대화합니다.
+    unlocks:
+      no-muzzle:
+        level: 1
+        requisition: 0
+      muzzle-brake:
+        level: 14
+        requisition: 7000
+      compensator:
+        level: 22
+        requisition: 13000
+      extended-magazine:
+        level: 1
+        requisition: 0
+      short-magazine:
+        level: 17
+        requisition: 13000
+      drum-magazine:
+        level: 24
+        requisition: 25000
+      no-optics:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 2
+        requisition: 3000
+      holographic-sight:
+        level: 4
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 7
+        requisition: 5000
+      combat-scope-4x:
+        level: 9
+        requisition: 7000
+      tube-red-dot-1-5x:
+        level: 12
+        requisition: 7000
+      tube-red-dot-2x:
+        level: 19
+        requisition: 7000
+  - weapon: vg-70-variable
+    available:
+      optic:
+        - tube-red-dot-2x
+        - reflex-sight
+        - reflex-sight-mk2
+        - holographic-sight
+        - tube-red-dot-1-5x
+        - combat-scope-4x
+    recommended:
+      optic: tube-red-dot-2x
+    why:
+      en: Optics only; the default sight has no real drawback, so there is little reason to change it.
+      ko: 조준경만 바꿀 수 있고 기본 조준경에 뚜렷한 단점이 없어 굳이 바꿀 이유가 적습니다.
+    unlocks:
+      tube-red-dot-2x:
+        level: 1
+        requisition: 0
+      reflex-sight:
+        level: 3
+        requisition: 5000
+      reflex-sight-mk2:
+        level: 7
+        requisition: 5000
+      holographic-sight:
+        level: 13
+        requisition: 7000
+      tube-red-dot-1-5x:
+        level: 18
+        requisition: 7000
+      combat-scope-4x:
+        level: 23
+        requisition: 25000

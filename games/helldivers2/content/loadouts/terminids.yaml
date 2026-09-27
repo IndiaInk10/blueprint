@@ -1,0 +1,278 @@
+# Terminids loadouts, compiled from the community guides and patch notes in sources.
+kind: loadouts
+schemaVersion: 1
+revision: 2
+updatedAt: 2026-09-27
+gameVersion: 7.1.1 (1.007.101)
+sources:
+  - https://timesaver.gg/blog/helldivers-2-best-terminid-loadout
+  - https://www.switchbladegaming.com/helldivers-2/best-weapons-tier-list/
+  - https://gamerant.com/helldivers-2-best-terminid-builds-loadout-best-bug-weapons/
+  - https://steamcommunity.com/games/553850/announcements/detail/703276586134143013
+  - https://steamcommunity.com/games/553850/announcements
+  - https://www.pcgamesn.com/helldivers-2/best-stratagems
+  - https://helldivers.wiki.gg/
+loadouts:
+  - id: terminid_breach_control
+    title:
+      en: Breach Control Standard
+      ko: 버그 브리치 진압 표준형
+    faction: terminids
+    missionTypes:
+      - eradicate_terminid_swarm
+      - purge_hatcheries
+      - blitz_search_and_destroy
+      - spread_democracy
+      - conduct_geological_survey
+      - retrieve_recon_craft_intel
+      - enable_oil_extraction
+      - launch_icbm
+      - conduct_mobile_e711_extraction
+    difficulty:
+      min: 5
+      max: 10
+    primary: sg-225ie-breaker-incendiary
+    secondary: gp-31-grenade-pistol
+    throwable: g-123-thermite
+    stratagems:
+      - las-99-quasar-cannon
+      - eagle-500kg-bomb
+      - orbital-gas-strike
+      - ax-las-5-guard-dog-rover
+    armorPassive: engineering-kit
+    booster: vitality-enhancement
+    summary:
+      en: "The default bug-front kit in 2026 guides: an incendiary shotgun and a laser drone keep the chaff burning while the Quasar Cannon, Thermite and the 500kg Bomb split the Chargers and Bile Titans. The Grenade Pistol closes bug holes without spending a stratagem, and Orbital Gas Strike shuts down a breach on cooldown."
+      ko: 2026년 가이드들이 가장 많이 추천하는 버그전 기본 세팅입니다. 소이 샷건과 로버 드론이 잡몹을 태우는 동안 퀘이사 캐넌, 테르밋, 500kg 폭탄이 차저와 바일 타이탄을 나눠서 처리합니다. 유탄 권총으로 스트라타젬 없이 버그 구멍을 막고, 궤도 가스 폭격으로 브리치를 쿨마다 틀어막습니다.
+    slotNotes:
+      primary:
+        en: Fire damage keeps ticking while you swap targets, and short-magazine ammo was buffed in 7.0.0.
+        ko: 대상을 바꿔도 화염 도트가 계속 들어가며, 7.0.0에서 짧은 탄창 탄약이 늘었습니다.
+      secondary:
+        en: Eight explosive shots that close bug holes, so the whole squad does not have to stop for nests.
+        ko: 폭발탄 8발로 버그 구멍을 닫아 둥지 처리에 스트라타젬을 쓸 필요가 없습니다.
+      throwable:
+        en: Sticks to Chargers and Titans and burns through heavy armor; Engineering Kit gives two extra.
+        ko: 차저와 타이탄에 붙어 중장갑을 태워 뚫습니다. 공병 키트로 2개 더 들고 갑니다.
+      stratagems:
+        en: Quasar needs no backpack or ammo, freeing the backpack slot for the Rover; 500kg is the emergency Bile Titan delete; Gas Strike confuses and now also slows bugs (6.2.2).
+        ko: 퀘이사는 탄약과 백팩이 필요 없어 백팩 칸을 로버에 쓸 수 있습니다. 500kg은 바일 타이탄 긴급 처리용이고, 가스 폭격은 혼란에 더해 6.2.2부터 둔화까지 걸어 줍니다.
+      armorPassive:
+        en: +2 throwables (more Thermites) and less recoil when crouching.
+        ko: 투척물 +2(테르밋 추가)와 앉았을 때 반동 감소.
+      booster:
+        en: Squad-wide damage reduction; the safest pick against Hunter and Warrior swarms.
+        ko: 분대 전체 피해 감소로, 헌터·워리어 물량전에서 가장 무난합니다.
+    roles:
+      - anti-tank
+      - crowd-control
+      - objective
+      - generalist
+  - id: terminid_titan_hunter
+    title:
+      en: Titan Hunter (Team Anti-Tank)
+      ko: 타이탄 사냥꾼 (팀 대전차)
+    faction: terminids
+    missionTypes:
+      - nuke_nursery
+      - eliminate_bile_titans
+      - eliminate_chargers
+      - eliminate_impaler
+      - destroy_spore_lung
+      - cleanse_infested_district
+      - eradicate_terminid_swarm
+    difficulty:
+      min: 7
+      max: 10
+    primary: sg-451-cookout
+    secondary: gp-20-ultimatum
+    throwable: g-123-thermite
+    stratagems:
+      - gr-8-recoilless-rifle
+      - orbital-railcannon-strike
+      - eagle-500kg-bomb
+      - a-mg-43-machine-gun-sentry
+    armorPassive: true-grit
+    booster: hellpod-space-optimization
+    summary:
+      en: "The squad's heavy killer for difficulty 7-10: the Recoilless Rifle one-shots Chargers and deletes Bile Titans, while Railcannon, 500kg and Thermite give three more ways to kill a Titan when the launcher is reloading. The Cookout staggers and burns anything that gets close, and a Machine Gun Sentry covers you while you line up shots."
+      ko: 난이도 7~10에서 분대의 중장갑 담당 세팅입니다. 무반동포로 차저와 바일 타이탄을 잡고, 재장전 중에는 레일캐넌, 500kg, 테르밋으로 타이탄을 처리할 수 있습니다. 쿡아웃은 가까이 붙은 적을 경직시키며 태우고, 기관총 센트리가 조준하는 동안 엄호해 줍니다.
+    slotNotes:
+      primary:
+        en: Full-auto incendiary shotgun with strong stagger to keep Hunters and Warriors off you while you carry a heavy launcher.
+        ko: 경직이 강한 연사형 소이 샷건으로, 무거운 발사기를 든 동안 헌터와 워리어를 떼어 냅니다.
+      secondary:
+        en: One-shot answer to a Charger at close range or a Bile Titan bug hole.
+        ko: 근거리 차저나 바일 타이탄 구멍을 한 방에 처리하는 비상 수단입니다.
+      throwable:
+        en: Backup anti-tank when the Recoilless is empty.
+        ko: 무반동포 탄이 떨어졌을 때의 예비 대전차 수단입니다.
+      stratagems:
+        en: Recoilless is the team anti-tank pick (a teammate can now assist-reload from either backpack, 7.0.0); Railcannon was buffed to 10,000 damage (6.3.0) and a 180s cooldown (4.1.0); 500kg for grouped heavies; the sentry had its health doubled in 6.3.0.
+        ko: 무반동포는 팀 대전차용이며 7.0.0부터 백팩을 누가 메든 보조 장전이 됩니다. 레일캐넌은 6.3.0에서 피해 10,000, 4.1.0에서 쿨다운 180초로 강화됐습니다. 500kg은 뭉친 대형 적용이고, 센트리 체력은 6.3.0에서 두 배가 됐습니다.
+      armorPassive:
+        en: 30% faster support-weapon reloads; the Recoilless reload is its main weakness.
+        ko: 지원 무기 재장전 30% 가속. 무반동포의 가장 큰 약점이 재장전입니다.
+      booster:
+        en: Drop in with full ammo, grenades and stims after every reinforce.
+        ko: 증원될 때마다 탄약·수류탄·스팀팩을 가득 채운 채 투하됩니다.
+    roles:
+      - anti-tank
+      - team-support
+  - id: terminid_flame_fortress
+    title:
+      en: Flame Fortress (Bug Defense)
+      ko: 화염 요새 (버그 방어전)
+    faction: terminids
+    missionTypes:
+      - evacuate_high_value_assets
+      - emergency_evacuation
+      - launch_icbm
+      - retrieve_valuable_data
+      - enable_oil_extraction
+      - nuke_nursery
+      - eradicate_terminid_swarm
+    difficulty:
+      min: 5
+      max: 10
+    primary: smg-flam-34-stoker
+    secondary: p-11-stim-pistol
+    throwable: g-10-incendiary
+    stratagems:
+      - b-flam-80-cremator
+      - e-at-12-anti-tank-emplacement
+      - a-mg-43-machine-gun-sentry
+      - orbital-napalm-barrage
+    armorPassive: inflammable
+    booster: integrated-extinguishers
+    summary:
+      en: Built for holding a point against bug waves, which got much harder in 7.1.0. Flamethrowers make small and medium bugs panic and attack each other (6.1.0), Napalm Barrage turns a breach into a fire field, and the Anti-Tank Emplacement handles Chargers and Titans from a fixed spot. The Stim Pistol lets you heal teammates from range.
+      ko: 7.1.0에서 크게 어려워진 버그 웨이브 거점 방어용입니다. 화염방사기는 6.1.0부터 소형·중형 버그를 공황 상태로 만들어 서로 공격하게 하고, 네이팜 포격은 브리치를 불바다로 만들며, 대전차 거치포가 제자리에서 차저와 타이탄을 처리합니다. 스팀 권총으로 멀리서 팀원을 치료할 수 있습니다.
+    slotNotes:
+      primary:
+        en: SMG plus flamethrower in one gun; its short magazine got more ammo and a faster reload in 7.0.0.
+        ko: SMG와 화염방사기를 겸하는 총으로, 7.0.0에서 짧은 탄창의 탄약과 재장전 속도가 개선됐습니다.
+      secondary:
+        en: Heal teammates from range; heal effect doubled in 6.1.0.
+        ko: 원거리 아군 치료. 6.1.0에서 치료량이 두 배가 됐습니다.
+      throwable:
+        en: Area fire for the choke point; 6.3.0 raised it to 4 starting / 5 max.
+        ko: 길목 화염 장판용. 6.3.0에서 시작 4개, 최대 5개로 늘었습니다.
+      stratagems:
+        en: Cremator is a no-reload heavy flamethrower; the AT Emplacement kills heavies from a fixed defense spot; the MG Sentry also shoots down Shriekers (added to this mission in 7.1.0); Napalm Barrage holds a breach for its whole duration.
+        ko: 크리메이터는 재장전 없는 중화염방사기, 대전차 거치포는 고정 방어 위치에서 대형 적을 잡습니다. 기관총 센트리는 7.1.0에서 이 임무에 추가된 슈리커도 격추하고, 네이팜 포격은 브리치를 지속적으로 봉쇄합니다.
+      armorPassive:
+        en: 75% fire resistance so your own flames and burning bugs do not kill you.
+        ko: 화염 저항 75%로 자기 불길과 불타는 버그에 죽지 않습니다.
+      booster:
+        en: "New in Ironclad Democracy (2026-09-22): puts out flames on you faster. Swap for Vitality Enhancement if you do not own it."
+        ko: 아이언클래드 데모크라시(2026-09-22)의 신규 부스터로 몸에 붙은 불이 빨리 꺼집니다. 없으면 활력 강화로 대체하세요.
+    roles:
+      - crowd-control
+      - defense
+      - team-support
+  - id: terminid_solo_nest_runner
+    title:
+      en: Solo Nest Runner
+      ko: 솔로 둥지 러너
+    faction: terminids
+    missionTypes:
+      - blitz_search_and_destroy
+      - purge_hatcheries
+      - spread_democracy
+      - conduct_geological_survey
+      - retrieve_recon_craft_intel
+      - blitz_secure_research_site
+      - eliminate_chargers
+    difficulty:
+      min: 4
+      max: 9
+    primary: cb-9-exploding-crossbow
+    secondary: las-58-talon
+    throwable: g-123-thermite
+    stratagems:
+      - las-99-quasar-cannon
+      - lift-850-jump-pack
+      - eagle-500kg-bomb
+      - orbital-gas-strike
+    armorPassive: scout
+    booster: stamina-enhancement
+    summary:
+      en: Best Terminid pick for solo play. The Exploding Crossbow closes bug holes and kills medium bugs at range, and the Jump Pack gets you out of any swarm. The Quasar Cannon never runs out of ammo, so you always have an answer to a Charger even with no resupply.
+      ko: 테르미니드 솔로 플레이에 가장 적합한 세팅입니다. 폭발 석궁으로 원거리에서 버그 구멍을 닫고 중형 버그를 처치하며, 점프팩으로 어떤 무리에서든 빠져나옵니다. 퀘이사 캐넌은 탄약이 필요 없어 보급 없이도 항상 차저를 상대할 수 있습니다.
+    slotNotes:
+      primary:
+        en: Explosive bolts close bug holes from range and one-tap Warriors.
+        ko: 폭발 볼트로 멀리서 버그 구멍을 닫고 워리어를 한 발에 잡습니다.
+      secondary:
+        en: Heat-based laser pistol with no ammo; covers the crossbow's slow fire rate.
+        ko: 탄약이 없는 열 방식 레이저 권총으로 석궁의 느린 연사를 보완합니다.
+      throwable:
+        en: Portable anti-tank for Chargers when the Quasar is charging.
+        ko: 퀘이사 충전 중 차저를 잡는 휴대용 대전차 수단입니다.
+      stratagems:
+        en: Quasar (no backpack, infinite ammo) plus Jump Pack for escapes; 500kg for Titans; Gas Strike covers you while you disengage.
+        ko: 퀘이사(백팩 불필요, 무한 탄약)와 탈출용 점프팩, 타이탄용 500kg, 이탈할 때 엄호해 주는 가스 폭격입니다.
+      armorPassive:
+        en: Enemies detect you 30% later and map markers radar-scan, so you can pick fights.
+        ko: 적의 탐지 거리가 30% 줄고 지도 마커가 레이더 스캔을 해 싸움을 골라서 할 수 있습니다.
+      booster:
+        en: More stamina for a runner who never stops moving.
+        ko: 계속 움직여야 하는 러너를 위한 스태미나 증가입니다.
+    roles:
+      - solo
+      - stealth
+      - anti-tank
+      - objective
+  - id: terminid_starter
+    title:
+      en: Starter Bug Kit (Low Difficulty)
+      ko: 입문용 버그 세팅 (저난이도)
+    faction: terminids
+    missionTypes:
+      - eradicate_terminid_swarm
+      - purge_hatcheries
+      - eliminate_brood_commanders
+      - eliminate_chargers
+      - spread_democracy
+      - retrieve_valuable_data
+      - launch_icbm
+    difficulty:
+      min: 1
+      max: 5
+    primary: ar-23-liberator
+    secondary: p-2-peacemaker
+    throwable: g-12-high-explosive
+    stratagems:
+      - m-105-stalwart
+      - eat-17-expendable-anti-tank
+      - eagle-airstrike
+      - ax-ar-23-guard-dog
+    armorPassive: extra-padding
+    booster: hellpod-space-optimization
+    summary:
+      en: "A kit for new players who have not unlocked premium warbonds: every weapon is free or bought with requisition. The Stalwart and Guard Dog provide lots of bullets for small bugs, and the EAT-17 plus Eagle Airstrike handle the first Chargers and nests."
+      ko: 프리미엄 워본드가 없는 신규 플레이어용 세팅으로, 모든 장비를 기본 지급이나 징발 포인트로 얻을 수 있습니다. 스톨워트와 가드 독이 소형 버그에 탄을 쏟아붓고, EAT-17과 이글 공습이 초반 차저와 둥지를 처리합니다.
+    slotNotes:
+      primary:
+        en: Default rifle; 4.1.0 raised its damage and durable damage.
+        ko: 기본 소총으로, 4.1.0에서 피해량이 올랐습니다.
+      secondary:
+        en: Free sidearm for finishing off small bugs.
+        ko: 소형 버그 마무리용 기본 권총입니다.
+      throwable:
+        en: Closes bug holes; 6.3.0 raised it to 4 starting / 5 max.
+        ko: 버그 구멍을 닫는 수류탄으로, 6.3.0에서 시작 4개·최대 5개로 늘었습니다.
+      stratagems:
+        en: Stalwart for crowd clear, EAT-17 for Chargers (short cooldown, drop two at a time), Eagle Airstrike for nests and breaches, Guard Dog for extra bullets.
+        ko: 스톨워트로 잡몹을 쓸고, EAT-17로 차저를 잡으며(쿨다운이 짧고 두 발씩 투하), 이글 공습으로 둥지와 브리치를, 가드 독으로 추가 화력을 냅니다.
+      armorPassive:
+        en: Extra armor rating; comes on free starting armor.
+        ko: 기본 방어구에 붙어 있는 추가 방어력입니다.
+      booster:
+        en: Free booster from Helldivers Mobilize.
+        ko: 기본 워본드 Helldivers Mobilize의 부스터입니다.
+    roles:
+      - crowd-control
+      - beginner
+      - anti-tank

@@ -1,0 +1,53 @@
+{
+  "version": "2026.09.27.5",
+  "documents": {
+    "combos.yaml": {
+      "revision": 6,
+      "hash": "e87001f506fba487"
+    },
+    "customization.yaml": {
+      "revision": 1,
+      "hash": "f03fe94f3b638c59"
+    },
+    "loadouts/automatons.yaml": {
+      "revision": 2,
+      "hash": "9371616aae286892"
+    },
+    "loadouts/illuminate.yaml": {
+      "revision": 2,
+      "hash": "9998f348d7ca4553"
+    },
+    "loadouts/terminids.yaml": {
+      "revision": 2,
+      "hash": "a6b11dd004904ce7"
+    },
+    "missions.yaml": {
+      "revision": 2,
+      "hash": "041b849ba12df7d2"
+    },
+    "perks.yaml": {
+      "revision": 1,
+      "hash": "8ec2915b27fe613d"
+    },
+    "ratings.yaml": {
+      "revision": 2,
+      "hash": "713a1f854aae7bde"
+    },
+    "stratagems.yaml": {
+      "revision": 2,
+      "hash": "a8ca83997097c157"
+    },
+    "warbonds.yaml": {
+      "revision": 1,
+      "hash": "36366d5e790baf04"
+    },
+    "weapons.yaml": {
+      "revision": 1,
+      "hash": "f449606761122920"
+    },
+    "manifest.yaml": {
+      "revision": 1,
+      "hash": "4d7335c73ee2401d"
+    }
+  }
+}

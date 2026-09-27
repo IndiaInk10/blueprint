@@ -1,0 +1,224 @@
+# Illuminate loadouts, compiled from the community guides and patch notes in sources.
+kind: loadouts
+schemaVersion: 1
+revision: 2
+updatedAt: 2026-09-27
+gameVersion: 7.1.1 (1.007.101)
+sources:
+  - https://www.thegamer.com/helldivers-2-wretch-crusher-enemy-best-weapons-stratagems-how-to-beat-kill-guide/
+  - https://www.mmoexp.com/News/helldivers-2-2026-best-illuminate-loadout-max-difficulty-trident-w-a-s-p-launcher-autocannon-anti-crusher-swarm-guide.html
+  - https://timesaver.gg/blog/helldivers-2-best-illuminate-loadout
+  - https://gamerant.com/helldivers-2-best-illuminate-loadouts-builds/
+  - https://steamcommunity.com/games/553850/announcements
+  - https://www.switchbladegaming.com/helldivers-2/best-weapons-tier-list/
+  - https://helldivers.wiki.gg/
+  - https://md-eksperiment.org/en/post/20260123-helldivers-2-tier-list-january-2026-proven-meta-for-helldive-domination
+  - https://steamcommunity.com/app/553850/discussions/0/591758483838303092
+loadouts:
+  - id: illuminate_void_breaker
+    title:
+      en: Void Breaker (Crusher and Wretch)
+      ko: 보이드 돌파형 (크러셔·레치 대응)
+    faction: illuminate
+    missionTypes:
+      - eradicate_illuminate_forces
+      - free_colony
+      - destroy_gazer_spire
+      - extract_anomalous_material
+      - destroy_exospire
+      - retrieve_recon_craft_intel
+      - destroy_harvesters
+    difficulty:
+      min: 6
+      max: 10
+    primary: las-13-trident
+    secondary: p-40-k-bolt-pistol
+    throwable: g-123-thermite
+    stratagems:
+      - ac-8-autocannon
+      - orbital-railcannon-strike
+      - orbital-gas-strike
+      - eagle-strafing-run
+    armorPassive: peak-physique
+    booster: vitality-enhancement
+    summary:
+      en: Built for the Void enemies added in 7.0.0. The Trident's six beams strip Wretch limbs and melt Voteless, and 7.1.0 removed its unintended recoil. Crushers regenerate when damage stops, so the Bolt Pistol pops their helmet, the Autocannon keeps up constant damage, and Thermite kills them outright. Gas and Strafing Run handle the swarms.
+      ko: 7.0.0에서 추가된 보이드 적 대응용입니다. 트라이던트의 6갈래 빔이 레치의 팔다리를 끊고 무권자를 녹이며, 7.1.0에서 의도치 않은 반동이 수정됐습니다. 크러셔는 공격이 끊기면 재생하므로 볼트 권총으로 헬멧을 깨고 오토캐넌으로 계속 피해를 주며, 테르밋으로 바로 처치합니다. 가스와 기총 소사가 무리를 처리합니다.
+    slotNotes:
+      primary:
+        en: Heat-based laser shotgun, no ammo; vertical recoil cut from 12 to 2 in 7.1.0.
+        ko: 탄약이 없는 열 방식 레이저 샷건으로, 7.1.0에서 수직 반동이 12에서 2로 줄었습니다.
+      secondary:
+        en: "Heavy-penetration bolts: about two shots knock off a Crusher helmet and they strip Harvester legs."
+        ko: 고관통 볼트탄으로 약 2발이면 크러셔 헬멧이 벗겨지고 하베스터 다리도 깎습니다.
+      throwable:
+        en: Reported to kill a Crusher outright wherever it sticks.
+        ko: 어디에 붙든 크러셔를 바로 처치한다고 알려져 있습니다.
+      stratagems:
+        en: Autocannon covers Crushers, Harvesters and flyers; Railcannon one-shots Harvesters and big targets; Gas Strike counters Wretches and Voteless; Strafing Run is a low-cooldown lane clear.
+        ko: 오토캐넌은 크러셔·하베스터·비행체를, 레일캐넌은 하베스터와 대형 표적을 한 방에 처리합니다. 가스 폭격은 레치와 무권자 대응, 기총 소사는 쿨다운이 짧은 직선 청소용입니다.
+      armorPassive:
+        en: Better weapon handling for the heavy Autocannon, plus melee damage for Voteless in your face.
+        ko: 무거운 오토캐넌의 조작감 향상과, 코앞까지 온 무권자용 근접 피해 증가입니다.
+      booster:
+        en: Damage reduction against Wretch lunges and Crusher clubs.
+        ko: 레치의 도약과 크러셔 곤봉에 대한 피해 감소.
+    roles:
+      - anti-tank
+      - crowd-control
+      - generalist
+  - id: illuminate_ship_harvester_buster
+    title:
+      en: Warp Ship and Harvester Buster
+      ko: 워프 함선·하베스터 파괴형
+    faction: illuminate
+    missionTypes:
+      - blitz_destroy_illuminate_warp_ships
+      - destroy_harvesters
+      - take_down_overship
+      - repel_invasion_fleet
+      - free_colony
+      - eradicate_illuminate_forces
+    difficulty:
+      min: 5
+      max: 10
+    primary: plas-101-purifier
+    secondary: gp-31-grenade-pistol
+    throwable: g-13-incendiary-impact
+    stratagems:
+      - sta-x3-wasp-launcher
+      - eat-411-leveller
+      - orbital-laser
+      - eagle-airstrike
+    armorPassive: siege-ready
+    booster: hellpod-space-optimization
+    summary:
+      en: An objective-focused Illuminate kit. The W.A.S.P. Launcher's homing missiles one-shot Elevated Overseers and swat Stingrays, the EAT-411 Leveller destroys a grounded Warp Ship with one hit anywhere on the hull even with shields up, and the Orbital Laser deletes Harvesters and whole squads. The Purifier's splash handles Overseers and Voteless.
+      ko: 목표 파괴에 집중한 일루미닛 세팅입니다. W.A.S.P. 런처의 유도 미사일이 공중 오버시어를 한 방에 잡고 스팅레이를 떨어뜨리며, EAT-411 레벨러는 방어막이 켜진 착륙 워프 함선도 선체 어디든 한 발로 파괴합니다. 궤도 레이저가 하베스터와 적 무리를 지우고, 퓨리파이어 스플래시가 오버시어와 무권자를 처리합니다.
+    slotNotes:
+      primary:
+        en: Charged plasma with splash that melts Overseers, including Elevated ones.
+        ko: 스플래시가 있는 충전식 플라스마로 공중 오버시어까지 녹입니다.
+      secondary:
+        en: Explosive shots for spawners and Warp Ship weak spots.
+        ko: 스포너와 워프 함선 약점을 노리는 폭발탄입니다.
+      throwable:
+        en: Impact fire grenade that clears Voteless and can break structures.
+        ko: 착탄 즉시 불을 뿌리는 수류탄으로 무권자를 쓸고 구조물도 부술 수 있습니다.
+      stratagems:
+        en: W.A.S.P. for air and Overseers (and it can target Illegal Broadcast towers since 6.3.0); Leveller for Warp Ships and Harvesters on a 140s cooldown; Orbital Laser for Harvesters and big pushes; Eagle Airstrike for groups.
+        ko: W.A.S.P.는 비행체와 오버시어용(6.3.0부터 불법 방송 송신탑도 조준 가능), 레벨러는 140초 쿨다운으로 워프 함선과 하베스터용, 궤도 레이저는 하베스터와 대규모 적용, 이글 공습은 무리용입니다.
+      armorPassive:
+        en: +20% ammo and faster primary reloads for the Purifier's hungry magazine.
+        ko: 탄 소모가 큰 퓨리파이어를 위한 탄약 20% 증가와 재장전 가속입니다.
+      booster:
+        en: Drop back in with full grenades and stims for the next ship.
+        ko: 다음 함선을 향해 수류탄과 스팀팩을 가득 채운 채 재투입됩니다.
+    roles:
+      - anti-tank
+      - anti-air
+      - objective
+  - id: illuminate_colony_defense
+    title:
+      en: Colony Defense Line
+      ko: 식민지 방어선
+    faction: illuminate
+    missionTypes:
+      - evacuate_colonists
+      - evacuate_high_value_assets
+      - launch_icbm
+      - retrieve_valuable_data
+      - repel_invasion_fleet
+      - take_down_overship
+      - conduct_geological_survey
+    difficulty:
+      min: 5
+      max: 10
+    primary: las-16-sickle
+    secondary: p-11-stim-pistol
+    throwable: g-23-stun
+    stratagems:
+      - mg-43-machine-gun
+      - a-g-16-gatling-sentry
+      - a-mg-43-machine-gun-sentry
+      - e-at-12-anti-tank-emplacement
+    armorPassive: engineering-kit
+    booster: vitality-enhancement
+    summary:
+      en: A defense kit for Illuminate escort and hold missions. Two gun sentries (double health since 6.3.0) and the MG-43 shred Voteless waves, while the Anti-Tank Emplacement kills Harvesters, Leviathans and other heavies from a fixed spot. No fire or arc weapons, so colonists are not caught in friendly fire.
+      ko: 일루미닛 호송·방어 임무용 세팅입니다. 기관총 센트리 2종(6.3.0부터 체력 두 배)과 MG-43이 무권자 웨이브를 갈아 버리고, 대전차 거치포가 제자리에서 하베스터, 리바이어던 같은 대형 적을 잡습니다. 화염·전기 무기를 빼서 식민지 주민이 아군 사격에 휘말리지 않게 했습니다.
+    slotNotes:
+      primary:
+        en: Heat-based laser rifle with near-endless ammo; buffed in 4.1.0.
+        ko: 사실상 탄약 걱정이 없는 열 방식 레이저 소총으로, 4.1.0에서 강화됐습니다.
+      secondary:
+        en: Heal teammates and keep colonist escorts alive; heal doubled in 6.1.0.
+        ko: 팀원을 치료해 호송을 유지합니다. 6.1.0에서 치료량 두 배.
+      throwable:
+        en: Freezes Fleshmobs, Overseers and constructs without hurting civilians; capacity raised in 6.3.0.
+        ko: 민간인을 다치게 하지 않고 플레시몹, 오버시어, 구조체를 멈춥니다. 6.3.0에서 보유량 증가.
+      stratagems:
+        en: MG-43 is the most-cited Illuminate support weapon; Gatling and MG Sentries hold lanes; the AT Emplacement handles Harvesters and Leviathans.
+        ko: MG-43은 일루미닛전에서 가장 많이 추천되는 지원 무기이고, 개틀링·기관총 센트리가 통로를 막으며, 대전차 거치포가 하베스터와 리바이어던을 처리합니다.
+      armorPassive:
+        en: Less recoil when crouched for the MG-43, and two extra Stun grenades.
+        ko: 앉았을 때 MG-43 반동 감소와 스턴 수류탄 2개 추가.
+      booster:
+        en: Squad damage reduction for long holds.
+        ko: 장시간 방어를 위한 분대 피해 감소.
+    roles:
+      - defense
+      - crowd-control
+      - team-support
+      - anti-tank
+  - id: illuminate_solo_rover
+    title:
+      en: Solo Rover Skirmisher
+      ko: 솔로 로버 유격형
+    faction: illuminate
+    missionTypes:
+      - free_colony
+      - retrieve_recon_craft_intel
+      - blitz_destroy_illuminate_warp_ships
+      - destroy_harvesters
+      - spread_democracy
+      - eradicate_illuminate_forces
+    difficulty:
+      min: 4
+      max: 9
+    primary: plas-1-scorcher
+    secondary: las-58-talon
+    throwable: g-13-incendiary-impact
+    stratagems:
+      - las-99-quasar-cannon
+      - ax-las-5-guard-dog-rover
+      - orbital-railcannon-strike
+      - eagle-airstrike
+    armorPassive: med-kit
+    booster: stamina-enhancement
+    summary:
+      en: Best Illuminate pick for solo play. The Rover drone clears Voteless on its own so your Scorcher can focus on Overseers, and the Quasar Cannon plus Railcannon give two ammo-free answers to Harvesters and Leviathans. Keep moving; Med-Kit stims keep you alive without a medic.
+      ko: 일루미닛 솔로 플레이에 가장 적합한 세팅입니다. 로버 드론이 무권자를 알아서 정리하는 동안 스코처로 오버시어를 노리고, 퀘이사 캐넌과 레일캐넌으로 탄약 걱정 없이 하베스터와 리바이어던을 잡습니다. 계속 움직이며 메디킷 스팀팩으로 버팁니다.
+    slotNotes:
+      primary:
+        en: Plasma rifle that melts Overseers; since 4.1.0 its shots pass through foliage.
+        ko: 오버시어를 녹이는 플라스마 소총으로, 4.1.0부터 수풀을 관통합니다.
+      secondary:
+        en: Ammo-free laser pistol backup.
+        ko: 탄약이 필요 없는 예비 레이저 권총입니다.
+      throwable:
+        en: Instant fire for Voteless packs and structures.
+        ko: 무권자 무리와 구조물에 바로 불을 붙입니다.
+      stratagems:
+        en: Quasar and Railcannon for Harvesters/Leviathans with no ammo; Rover for autonomous chaff clear; Eagle Airstrike for Warp Ships' escorts and groups.
+        ko: 퀘이사와 레일캐넌으로 탄약 없이 하베스터와 리바이어던을, 로버로 잡몹을 자동 처리, 이글 공습으로 워프 함선 주변 적과 무리를 정리합니다.
+      armorPassive:
+        en: +2 stims and longer stim effect for self-sufficiency.
+        ko: 스팀팩 +2와 효과 시간 증가로 혼자서도 버팁니다.
+      booster:
+        en: More stamina for kiting Wretches and Fleshmobs.
+        ko: 레치와 플레시몹을 따돌리기 위한 스태미나 증가.
+    roles:
+      - solo
+      - anti-tank
+      - crowd-control

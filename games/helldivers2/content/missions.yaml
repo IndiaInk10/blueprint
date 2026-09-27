@@ -1,0 +1,554 @@
+# Factions, mission categories and main-objective mission types. Korean names from the in-game mission cards.
+kind: mission-catalog
+schemaVersion: 1
+revision: 2
+updatedAt: 2026-09-27
+factions:
+  - id: terminids
+    name:
+      en: Terminids
+      ko: 테르미니드
+    summary:
+      en: Swarming bugs. Endless light units plus Chargers, Impalers, Bile Titans, Dragonroaches and the Hive Lord on Hive Worlds.
+      ko: 떼로 몰려오는 버그입니다. 끝없이 나오는 경장갑 유닛에 더해 차저, 임페일러, 바일 타이탄, 드래곤로치가 등장하며, 하이브 월드에서는 하이브 로드도 등장합니다.
+    priorities:
+      - en: crowd clear with high ammo economy (fire, gas, shotguns)
+        ko: 탄약 효율이 좋은 광역 처리(화염, 가스, 샷건)
+      - en: reliable anti-tank for Chargers and Bile Titans
+        ko: 차저와 바일 타이탄을 확실히 잡는 대전차
+      - en: a way to close bug holes (explosive sidearm or grenades)
+        ko: 버그 구멍을 막을 수단(폭발형 보조무기 또는 수류탄)
+      - en: breach control (gas/napalm/airstrikes)
+        ko: 증원 차단(가스/네이팜/이글 공습)
+  - id: automatons
+    name:
+      en: Automatons
+      ko: 오토마톤
+    summary:
+      en: Ranged robots with heavy armor, rockets and artillery. Heavies are Hulks, Tanks, Factory Striders, War Striders, Gunships; the Cyborg Legion adds Vox Engines.
+      ko: 중장갑, 로켓, 포격을 갖춘 원거리형 로봇입니다. 헐크, 탱크, 팩토리 스트라이더, 워 스트라이더, 건쉽이 대형 적이며, 사이보그 군단은 복스 엔진을 추가로 투입합니다.
+    priorities:
+      - en: medium armor penetration to hit weak points (Devastator heads, Hulk eyes, tank vents)
+        ko: 약점을 노리는 중장갑 관통(데버스테이터 머리, 헐크 눈, 탱크 배기구)
+      - en: explosive resistance and shields against rockets
+        ko: 로켓에 대비한 폭발 저항과 실드
+      - en: anti-tank for Hulks, tanks, striders and Vox Engines
+        ko: 헐크, 탱크, 스트라이더, 복스 엔진용 대전차
+      - en: a way to destroy fabricators and bunkers
+        ko: 제조기와 벙커를 파괴할 수단
+  - id: illuminate
+    name:
+      en: Illuminate
+      ko: 일루미닛
+    summary:
+      en: "Shielded aliens: Voteless and Fleshmob hordes, Overseers (incl. jetpack Elevated Overseers), Harvesters, Stingrays and Leviathans (cities only). 2026 added piloted constructs (Veracitor, Gatekeeper), the Obtruder, Exostorms, and in the Void (7.0.0) the regenerating Crusher and the agile Wretch."
+      ko: 실드를 두른 외계 종족입니다. 보트리스와 플레시몹 무리, 오버시어(제트팩을 단 공중 오버시어 포함), 하베스터, 스팅레이, 리바이어던(도시 한정)이 등장합니다. 2026년에는 조종형 구조체(베라시터, 게이트키퍼), 옵트루더, 엑소스톰이 추가되었고, 보이드(7.0.0)에서는 재생하는 크러셔와 민첩한 레치가 추가되었습니다.
+    priorities:
+      - en: sustained damage (Crushers regenerate when damage stops)
+        ko: 지속 화력(크러셔는 피해가 끊기면 재생)
+      - en: crowd clear for Voteless and Wretches (fire, gas, spread weapons)
+        ko: 보트리스와 레치용 광역 처리(화염, 가스, 확산형 무기)
+      - en: anti-tank that handles Harvester shields and legs
+        ko: 하베스터의 실드와 다리를 처리할 대전차
+      - en: anti-air for Stingrays and Elevated Overseers
+        ko: 스팅레이와 공중 오버시어용 대공
+      - en: explosives for Warp Ships
+        ko: 워프 함선용 폭발물
+missionCategories:
+  - id: eradicate
+    name:
+      en: Kill everything
+      ko: 섬멸
+    demands:
+      en: Short timed arena fights against endless reinforcements; bring maximum sustained crowd clear, ammo economy and low-cooldown stratagems.
+      ko: 끝없는 증원을 상대로 제한 시간 동안 좁은 전장에서 싸웁니다. 지속적인 광역 처리, 탄약 효율, 쿨다운이 짧은 스트라타젬을 최대한 챙깁니다.
+  - id: hunt
+    name:
+      en: Hunt heavy targets
+      ko: 표적 제거
+    demands:
+      en: Kill a set number of heavy units; bring stacked anti-tank (support weapon plus orbital/eagle).
+      ko: 정해진 수의 대형 적을 처치합니다. 대전차를 겹겹이 챙깁니다(지원 무기와 궤도/이글).
+  - id: speed
+    name:
+      en: Speed and objectives
+      ko: 속전속결
+    demands:
+      en: Short timer and many structures; bring mobility, spawner-closing tools and quick anti-tank, avoid long fights.
+      ko: 제한 시간이 짧고 구조물이 많습니다. 기동성, 스포너 파괴 수단, 빠른 대전차를 챙기고 긴 교전은 피합니다.
+  - id: defense
+    name:
+      en: Hold a position
+      ko: 거점 방어
+    demands:
+      en: Protect a site, civilians or assets against waves; bring sentries, emplacements, area denial and team sustain.
+      ko: 지점, 민간인 또는 자산을 웨이브로부터 지킵니다. 센트리, 거치물, 지역 거부, 팀 유지력을 챙깁니다.
+  - id: structures
+    name:
+      en: Destroy structures
+      ko: 구조물 파괴
+    demands:
+      en: Push into fortified bases or nests to destroy objectives; bring demolition (explosives, 500kg, Hellbomb-capable) and anti-heavy.
+      ko: 요새화된 기지나 둥지로 진입해 목표를 파괴합니다. 파괴력(폭발물, 500kg, 헬밤 처리 가능)과 대형 적 대응 수단을 챙깁니다.
+  - id: escort_retrieval
+    name:
+      en: Escort and retrieval
+      ko: 호송·회수
+    demands:
+      en: Travel across the map, carry or protect something, or hold terminals; bring balanced kits with mobility and survivability.
+      ko: 맵을 가로질러 이동하거나, 무언가를 운반·보호하거나, 터미널을 지킵니다. 기동성과 생존력을 갖춘 균형 잡힌 구성을 챙깁니다.
+missionTypes:
+  - id: eradicate_terminid_swarm
+    name:
+      en: Eradicate Terminid Swarm
+      ko: 테르미니드 무리 퇴치하기
+    category: eradicate
+    factions:
+      - terminids
+    demands:
+      en: Fifteen-minute kill-count arena against nonstop bug breaches; fire, gas and a Charger answer matter more than long-range tools.
+      ko: 끊임없는 버그 증원을 상대로 15분간 처치 수를 채우는 전장입니다. 장거리 수단보다 화염, 가스, 차저 대응 수단이 더 중요합니다.
+  - id: eradicate_automaton_forces
+    name:
+      en: Eradicate Automaton Forces
+      ko: 오토마톤 세력 제거하기
+    category: eradicate
+    factions:
+      - automatons
+    demands:
+      en: Compact arena under constant dropships and artillery; explosive resistance, shields and fast Hulk/tank kills keep you alive.
+      ko: 드롭쉽과 포격이 끊이지 않는 좁은 전장입니다. 폭발 저항, 실드, 헐크/탱크를 빠르게 잡는 능력이 생존의 열쇠입니다.
+  - id: eradicate_illuminate_forces
+    name:
+      en: Eradicate Illuminate Forces
+      ko: 일루미닛 세력 제거하기
+    category: eradicate
+    factions:
+      - illuminate
+    demands:
+      en: Arena kill-count against Voteless floods, Overseers and Harvesters; sustained crowd clear plus a Harvester answer.
+      ko: 보트리스 물량, 오버시어, 하베스터를 상대로 처치 수를 채우는 전장입니다. 지속적인 광역 처리와 하베스터 대응 수단이 필요합니다.
+  - id: eliminate_chargers
+    name:
+      en: Eliminate Chargers
+      ko: 차저 제거하기
+    category: hunt
+    factions:
+      - terminids
+    demands:
+      en: Kill a quota of Chargers; any anti-tank support weapon or Thermite grenades will do.
+      ko: 정해진 수의 차저를 처치합니다. 대전차 지원 무기나 테르밋 수류탄이면 충분합니다.
+  - id: eliminate_bile_titans
+    name:
+      en: Eliminate Bile Titans
+      ko: 바일 타이탄 제거하기
+    category: hunt
+    factions:
+      - terminids
+    demands:
+      en: Kill a quota of Bile Titans; bring two anti-tank sources (e.g. Recoilless or Quasar plus Eagle 500kg Bomb or Orbital Railcannon Strike).
+      ko: "정해진 수의 바일 타이탄을 처치합니다. 대전차 수단을 두 가지 챙깁니다(예: 무반동포나 퀘이사 캐넌에 이글 500kg 폭탄이나 궤도 레일캐넌 포격)."
+  - id: eliminate_impaler
+    name:
+      en: Eliminate Impaler
+      ko: 임페일러 제거하기
+    category: hunt
+    factions:
+      - terminids
+    demands:
+      en: Kill Impalers, which hide their weak face and attack with ground tentacles; high-damage anti-tank and mobility.
+      ko: 약점인 얼굴을 숨기고 땅속 촉수로 공격하는 임페일러를 처치합니다. 고화력 대전차와 기동성이 필요합니다.
+  - id: eliminate_brood_commanders
+    name:
+      en: Eliminate Brood Commanders
+      ko: 브루드 커맨더 제거하기
+    category: hunt
+    factions:
+      - terminids
+    demands:
+      en: Beginner hunt of medium bugs; any primary with medium penetration or explosives.
+      ko: 중형 버그를 사냥하는 입문용 임무입니다. 중장갑 관통 주무기나 폭발물이면 무엇이든 됩니다.
+  - id: eliminate_devastators
+    name:
+      en: Eliminate Devastators
+      ko: 데버스테이터 제거하기
+    category: hunt
+    factions:
+      - automatons
+    demands:
+      en: Beginner hunt; aim for Devastator heads with a medium-penetration primary.
+      ko: 입문용 사냥 임무입니다. 중장갑 관통 주무기로 데버스테이터의 머리를 노립니다.
+  - id: eliminate_automaton_hulks
+    name:
+      en: Eliminate Automaton Hulks
+      ko: 오토마톤 헐크 제거하기
+    category: hunt
+    factions:
+      - automatons
+    demands:
+      en: Kill Hulks; anti-tank or Autocannon/AMR to the eye slit.
+      ko: 헐크를 처치합니다. 대전차나 오토캐넌/대물 저격소총으로 눈구멍을 노립니다.
+  - id: eliminate_automaton_factory_strider
+    name:
+      en: Eliminate Automaton Factory Strider
+      ko: 오토마톤 팩토리 스트라이더 제거하기
+    category: hunt
+    factions:
+      - automatons
+    demands:
+      en: Kill Factory Striders; destroy the chin guns, then burst the belly or eye with heavy anti-tank or orbitals.
+      ko: 팩토리 스트라이더를 처치합니다. 턱 아래 기관포를 먼저 부순 뒤, 강력한 대전차나 궤도 폭격으로 배나 눈을 터뜨립니다.
+  - id: blitz_search_and_destroy
+    name:
+      en: "Blitz: Search and Destroy"
+      ko: "블리츠: 수색 및 섬멸"
+    category: speed
+    factions:
+      - terminids
+      - automatons
+    demands:
+      en: Twelve-minute raid to destroy as many bug holes or fabricators as possible; mobility and spawner-closing tools (grenade pistol, explosives) beat raw firepower.
+      ko: 12분 동안 버그 구멍이나 제조기를 최대한 많이 파괴하는 급습 임무입니다. 순수 화력보다 기동성과 스포너 파괴 수단(유탄 권총, 폭발물)이 중요합니다.
+  - id: blitz_destroy_illuminate_warp_ships
+    name:
+      en: "Blitz: Destroy Illuminate Warp Ships"
+      ko: "블리츠: 일루미닛 워프 함선 파괴하기"
+    category: speed
+    factions:
+      - illuminate
+    demands:
+      en: Destroy grounded Warp Ships on a short timer; bring explosives that can crack their shields (EAT-411 Leveller, C4, Melta Mine, heavy orbitals) and mobility.
+      ko: 짧은 제한 시간 안에 지상에 내려앉은 워프 함선을 파괴합니다. 실드를 뚫을 폭발물(EAT-411 레벨러, C4, 멜타 지뢰, 강력한 궤도 폭격)과 기동성을 챙깁니다.
+  - id: blitz_destroy_bio_processors
+    name:
+      en: "Blitz: Destroy Bio-Processors"
+      ko: "블리츠: 바이오 프로세서 파괴하기"
+    category: speed
+    factions:
+      - automatons
+    demands:
+      en: Short-timer raid on Megafactory bio-processors; mobility plus demolition-capable explosives.
+      ko: 메가팩토리의 바이오 프로세서를 노리는 짧은 급습 임무입니다. 기동성과 구조물 파괴가 가능한 폭발물이 필요합니다.
+  - id: blitz_secure_research_site
+    name:
+      en: "Blitz: Secure Research Site"
+      ko: "블리츠: 연구 현장 확보하기"
+    category: speed
+    factions:
+      - terminids
+    demands:
+      en: Clear bug nests around a Gloom research site fast; fire and spawner-closing tools.
+      ko: 글룸 연구 현장 주변의 버그 둥지를 빠르게 정리합니다. 화염과 스포너 파괴 수단이 필요합니다.
+  - id: purge_hatcheries
+    name:
+      en: Purge Hatcheries
+      ko: 부화장 소탕하기
+    category: structures
+    factions:
+      - terminids
+    demands:
+      en: Find and destroy every egg cluster inside nests; crowd clear, bug-hole closing and an escape tool.
+      ko: 둥지 안의 알 무더기를 모두 찾아 파괴합니다. 광역 처리, 버그 구멍 파괴 수단, 탈출 수단이 필요합니다.
+  - id: nuke_nursery
+    name:
+      en: Nuke Nursery
+      ko: 핵무기로 육성장 공격하기
+    category: structures
+    factions:
+      - terminids
+    demands:
+      en: Hold nursery vents while the nuke sequence runs; heavy bug pressure, so anti-tank plus area denial.
+      ko: 핵 시퀀스가 진행되는 동안 육성장 환기구를 지킵니다. 버그 압박이 거세므로 대전차와 지역 거부가 필요합니다.
+  - id: destroy_spore_lung
+    name:
+      en: Destroy Spore Lung
+      ko: 스포어 렁 파괴하기
+    category: structures
+    factions:
+      - terminids
+    demands:
+      en: Underground cave objective destroyed with a free B-100 Portable Hellbomb; close-quarters crowd clear matters most.
+      ko: 무료로 주어지는 B-100 휴대용 헬밤으로 파괴하는 지하 동굴 목표입니다. 근거리 광역 처리가 가장 중요합니다.
+  - id: cleanse_infested_district
+    name:
+      en: Cleanse Infested District
+      ko: 감염된 구역 정화하기
+    category: structures
+    factions:
+      - terminids
+    demands:
+      en: Destroy Shrieker-infested towers in a city; anti-air/crowd clear for Shriekers plus demolition.
+      ko: 도시에서 슈리커가 들끓는 탑을 파괴합니다. 슈리커용 대공/광역 처리와 구조물 파괴 수단이 필요합니다.
+  - id: destroy_command_bunkers
+    name:
+      en: Destroy Command Bunkers
+      ko: 지휘 벙커 파괴하기
+    category: structures
+    factions:
+      - automatons
+    demands:
+      en: Assault heavily defended bunkers; strongest anti-heavy demand on the bot front (Hulks, tanks, cannon turrets, striders).
+      ko: 방어가 두터운 벙커를 공격합니다. 오토마톤 전선에서 대형 적 대응 요구가 가장 높습니다(헐크, 탱크, 캐논 포탑, 스트라이더).
+  - id: sabotage_supply_bases
+    name:
+      en: Sabotage Supply Bases
+      ko: 보급 기지 파괴하기
+    category: structures
+    factions:
+      - automatons
+    demands:
+      en: Destroy fuel and ammo stockpiles across several bases; demolition and fabricator killing.
+      ko: 여러 기지에 흩어진 연료와 탄약 비축물을 파괴합니다. 구조물 파괴와 제조기 파괴 수단이 필요합니다.
+  - id: sabotage_air_base
+    name:
+      en: Sabotage Air Base
+      ko: 항공 기지 파괴하기
+    category: structures
+    factions:
+      - automatons
+    demands:
+      en: Destroy dropships on pads and the control tower; anti-tank that can hit parked dropships plus base clearing.
+      ko: 착륙장의 드롭쉽과 관제탑을 파괴합니다. 정박한 드롭쉽을 맞힐 수 있는 대전차와 기지 소탕 능력이 필요합니다.
+  - id: destroy_transmission_network
+    name:
+      en: Destroy Transmission Network
+      ko: 전송 네트워크 파괴하기
+    category: structures
+    factions:
+      - automatons
+    demands:
+      en: Destroy antenna transmitters; low-difficulty base-clearing.
+      ko: 송신 안테나를 파괴합니다. 저난이도 기지 소탕 임무입니다.
+  - id: neutralize_ground_to_orbit_defenses
+    name:
+      en: Neutralize Ground-to-Orbit Defenses
+      ko: 궤도 방어 무력화하기
+    category: structures
+    factions:
+      - automatons
+    demands:
+      en: Destroy Automaton orbital cannons; long base fights with heavies, Hellbomb-level demolition.
+      ko: 오토마톤 궤도 포대를 파괴합니다. 대형 적이 가득한 긴 기지 전투이며, 헬밤급 파괴력이 필요합니다.
+  - id: halt_cyborg_production
+    name:
+      en: Halt Cyborg Production
+      ko: 사이보그 생산 중단하기
+    category: structures
+    factions:
+      - automatons
+    demands:
+      en: Sabotage cyborg production (Cyborg Legion); expect Vox Engines, so bring Thermite/anti-tank and explosive resistance.
+      ko: 사이보그 생산을 저지합니다(사이보그 군단). 복스 엔진이 나오므로 테르밋/대전차와 폭발 저항을 챙깁니다.
+  - id: destroy_harvesters
+    name:
+      en: Destroy Harvesters
+      ko: 하베스터 파괴하기
+    category: structures
+    factions:
+      - illuminate
+    demands:
+      en: Kill Harvester tripods; break shields and legs with anti-tank or sustained medium penetration.
+      ko: 삼각대형 하베스터를 처치합니다. 대전차나 지속적인 중장갑 관통으로 실드와 다리를 부숩니다.
+  - id: take_down_overship
+    name:
+      en: Take Down Overship
+      ko: 오버쉽 파괴
+    category: structures
+    factions:
+      - illuminate
+    demands:
+      en: Retrieve access codes, then operate planetary defense cannons to destroy the Overship while holding off Illuminate.
+      ko: 접근 코드를 회수한 뒤, 일루미닛을 막아내며 행성 방어포를 가동해 오버쉽을 파괴합니다.
+  - id: destroy_exospire
+    name:
+      en: Destroy Exospire
+      ko: 엑소스파이어 교란하기
+    category: structures
+    factions:
+      - illuminate
+    demands:
+      en: Overload shield nodes during an Exostorm, then destroy the Exospire core; mobility and crowd clear in bad weather.
+      ko: 엑소스톰 속에서 실드 노드를 과부하시킨 뒤 엑소스파이어 코어를 파괴합니다. 악천후 속 기동성과 광역 처리가 필요합니다.
+  - id: destroy_gazer_spire
+    name:
+      en: Destroy Gazer Spire
+      ko: 게이저 스파이어 파괴하기
+    category: structures
+    factions:
+      - illuminate
+    demands:
+      en: "Void mission: climb a Gazer Spire under a lethal beam and Hellbomb its top; mobility and outpost-portal destruction."
+      ko: 보이드 임무입니다. 치명적인 광선을 피하며 게이저 스파이어를 올라 꼭대기에 헬밤을 설치합니다. 기동성과 전초기지 포털 파괴 수단이 필요합니다.
+  - id: evacuate_high_value_assets
+    name:
+      en: Evacuate High-Value Assets
+      ko: 고가치 자산 후송하기
+    category: defense
+    factions:
+      - terminids
+      - automatons
+      - illuminate
+    demands:
+      en: Wave defense of generators and rocket launches; after 7.1.0 waves are larger and closer together, so sentries, emplacements and area denial are mandatory.
+      ko: 발전기와 로켓 발사를 지키는 웨이브 방어입니다. 7.1.0 이후 웨이브가 더 커지고 간격이 짧아져 센트리, 거치물, 지역 거부가 필수입니다.
+  - id: emergency_evacuation
+    name:
+      en: Emergency Evacuation
+      ko: 비상 탈출
+    category: defense
+    factions:
+      - terminids
+      - automatons
+    demands:
+      en: Activate uplinks, then escort civilians to shuttles; avoid friendly-fire-heavy tools near civilians and bring sentries/crowd control.
+      ko: 업링크를 활성화한 뒤 민간인을 셔틀까지 호송합니다. 민간인 근처에서는 아군 피해가 큰 장비를 피하고 센트리/군중 제어 수단을 챙깁니다.
+  - id: evacuate_colonists
+    name:
+      en: Evacuate Colonists
+      ko: 식민지 주민 탈출
+    category: defense
+    factions:
+      - illuminate
+    demands:
+      en: Illuminate counterpart of Emergency Evacuation; free colonists and escort them while Voteless flood the area.
+      ko: 비상 탈출의 일루미닛 버전입니다. 보트리스가 몰려드는 가운데 주민을 풀어주고 호송합니다.
+  - id: launch_icbm
+    name:
+      en: Launch ICBM
+      ko: ICBM 발사하기
+    category: defense
+    factions:
+      - terminids
+      - automatons
+      - illuminate
+    demands:
+      en: Fuel and launch a missile from a fixed silo, then hold during the launch; defensive stratagems and anti-heavy.
+      ko: 고정된 사일로에서 미사일에 연료를 넣어 발사하고, 발사 중에는 버팁니다. 방어용 스트라타젬과 대형 적 대응 수단이 필요합니다.
+  - id: repel_invasion_fleet
+    name:
+      en: Repel Invasion Fleet
+      ko: 침공 함대 격퇴
+    category: defense
+    factions:
+      - illuminate
+    demands:
+      en: Twenty-minute city defense against a landing Illuminate fleet; anti-air for Stingrays/Leviathans plus sustained crowd clear.
+      ko: 상륙하는 일루미닛 함대를 상대로 20분간 도시를 방어합니다. 스팅레이/리바이어던용 대공과 지속적인 광역 처리가 필요합니다.
+  - id: retrieve_valuable_data
+    name:
+      en: Retrieve Valuable Data
+      ko: 가치 있는 데이터 회수하기
+    category: escort_retrieval
+    factions:
+      - terminids
+      - automatons
+      - illuminate
+    demands:
+      en: Download data in a facility and carry drives to an uplink while enemies converge; balanced kit with defense for the upload.
+      ko: 시설에서 데이터를 내려받고, 적이 몰려드는 가운데 드라이브를 업링크까지 운반합니다. 업로드를 지킬 방어 수단을 갖춘 균형 잡힌 구성이 필요합니다.
+  - id: retrieve_recon_craft_intel
+    name:
+      en: Retrieve Recon Craft Intel
+      ko: 정찰기의 정보 회수하기
+    category: escort_retrieval
+    factions:
+      - terminids
+      - automatons
+      - illuminate
+    demands:
+      en: Find a crashed SEAF recon craft's black box and upload it; mobility and general-purpose kit.
+      ko: 추락한 SEAF 정찰기의 블랙박스를 찾아 업로드합니다. 기동성과 범용 구성이 필요합니다.
+  - id: conduct_geological_survey
+    name:
+      en: Conduct Geological Survey
+      ko: 지형 조사 시행하기
+    category: escort_retrieval
+    factions:
+      - terminids
+      - automatons
+      - illuminate
+    demands:
+      en: Seismic probe then drill at a second site; both trigger reinforcements, so hold a point twice.
+      ko: 지진 탐사기를 설치한 뒤 두 번째 지점에서 시추합니다. 둘 다 증원을 부르므로 거점을 두 번 지켜야 합니다.
+  - id: spread_democracy
+    name:
+      en: Spread Democracy
+      ko: 민주주의 전파하기
+    category: escort_retrieval
+    factions:
+      - terminids
+      - automatons
+      - illuminate
+    demands:
+      en: Infiltrate and raise the Super Earth flag while holding the area; general-purpose kit.
+      ko: 침투해 지역을 지키며 슈퍼 어스 깃발을 올립니다. 범용 구성이 필요합니다.
+  - id: enable_oil_extraction
+    name:
+      en: Enable Oil Extraction
+      ko: 오일 추출 활성화하기
+    category: escort_retrieval
+    factions:
+      - terminids
+    demands:
+      en: Restart oil pumps in bug territory and protect them; bug crowd clear plus defense.
+      ko: 버그 영역의 석유 펌프를 재가동하고 지킵니다. 버그 광역 처리와 방어 수단이 필요합니다.
+  - id: conduct_mobile_e711_extraction
+    name:
+      en: Conduct Mobile E-711 Extraction
+      ko: 이동식 E-711 추출하기
+    category: escort_retrieval
+    factions:
+      - terminids
+    demands:
+      en: Escort and operate the GATER drilling vehicle across a Hive World; the GATER was overhauled in 7.0.0 and enemies ignore it until used.
+      ko: 하이브 월드를 가로질러 GATER 시추 차량을 호송하고 운용합니다. GATER는 7.0.0에서 개편되었으며, 가동하기 전까지는 적이 공격하지 않습니다.
+  - id: extract_anomalous_material
+    name:
+      en: Extract Anomalous Material
+      ko: 이상 물질 추출하기
+    category: escort_retrieval
+    factions:
+      - illuminate
+    demands:
+      en: Void mission using the GATER to extract anomalous material; protect the vehicle and avoid hallucination blasts.
+      ko: GATER로 이상 물질을 추출하는 보이드 임무입니다. 차량을 보호하고 환각 폭발을 피합니다.
+  - id: free_colony
+    name:
+      en: Free Colony
+      ko: 식민지 해방하기
+    category: structures
+    factions:
+      - illuminate
+    demands:
+      en: Destroy Illuminate structures in a city and raise the flag; urban crowd clear plus Harvester answer.
+      ko: 도시의 일루미닛 구조물을 파괴하고 깃발을 올립니다. 시가전 광역 처리와 하베스터 대응 수단이 필요합니다.
+  - id: commando_secure_black_box
+    name:
+      en: "Commando: Secure Black Box"
+      ko: "코만도: 블랙박스 확보하기"
+    category: escort_retrieval
+    factions:
+      - automatons
+    demands:
+      en: "Stealth op: destroy AA emplacements and extract with the black box; stratagems only at the start, so front-load support weapons."
+      ko: 잠입 작전입니다. 대공 거치물을 파괴하고 블랙박스를 들고 탈출합니다. 스트라타젬은 시작 직후에만 쓸 수 있으므로 지원 무기를 미리 챙깁니다.
+  - id: commando_acquire_evidence
+    name:
+      en: "Commando: Acquire Evidence"
+      ko: "코만도: 증거 확보하기"
+    category: escort_retrieval
+    factions:
+      - automatons
+    demands:
+      en: Stealth op carrying a camera that occupies the support-weapon slot; primary, sidearm, grenades and backpack must carry the fight.
+      ko: 지원 무기 슬롯을 차지하는 카메라를 들고 하는 잠입 작전입니다. 주무기, 보조무기, 수류탄, 백팩으로 전투를 감당해야 합니다.
+  - id: commando_extract_intel
+    name:
+      en: "Commando: Extract Intel"
+      ko: "코만도: 정보 확보 및 탈출하기"
+    category: escort_retrieval
+    factions:
+      - automatons
+    demands:
+      en: Stealth op collecting keycards then an intel package that triggers an alarm; mobility to escape to extraction.
+      ko: 키카드를 모은 뒤 경보를 울리는 정보 패키지를 회수하는 잠입 작전입니다. 탈출 지점까지 빠져나갈 기동성이 필요합니다.
