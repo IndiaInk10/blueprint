@@ -44,7 +44,7 @@ const en = {
   graphics: {
     title: 'DX11 lighting fix',
     description:
-      'Running the game on DX11 (launch option --use-d3d11) raises the frame rate, but lights and the flashlight then cut off too early and look wrong. This puts them back. Values tuned on an RTX 3070 at 3440x1440.',
+      'Running the game on DX11 (launch option --use-d3d11) raises the frame rate, but the lighting settings change. This sets them back.',
     falloff: 'Light falloff distance',
     lighting: 'Lighting quality (2 = High)',
     notes: 'Close the game first: it rewrites this file when it exits. The game may reset the light value when you change lighting quality or a preset; apply again then. The previous file is kept as user_settings.config.bak.',
@@ -258,7 +258,7 @@ const ko: Hd2Messages = {
   graphics: {
     title: 'DX11 조명 보정',
     description:
-      'DX11(실행 옵션 --use-d3d11)로 돌리면 프레임은 오르지만 조명과 손전등이 일찍 끊기는 등 빛이 틀어집니다. 그걸 원래대로 잡아 주는 값입니다. RTX 3070 · 3440x1440 기준으로 맞췄습니다.',
+      'DX11(실행 옵션 --use-d3d11)로 돌리면 프레임은 오르지만 조명 세팅이 달라집니다. 그걸 원래대로 잡아 주는 값입니다.',
     falloff: '빛 감쇠 거리',
     lighting: '조명 품질 (2 = High)',
     notes: '게임을 끈 상태에서 적용하세요. 게임이 종료할 때 이 파일을 다시 씁니다. 조명 품질이나 프리셋을 바꾸면 게임이 값을 되돌릴 수 있으니 그때 다시 적용하면 됩니다. 이전 파일은 user_settings.config.bak으로 남겨 둡니다.',
