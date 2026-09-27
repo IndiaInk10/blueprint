@@ -293,7 +293,6 @@ function About({ games }: { games: GameManifest[] }) {
         <div className="setting-row">
           <div className="setting-text">
             <div className="setting-label">{APP_NAME}</div>
-            <div className="setting-description">{t.settings.fontCredit}</div>
           </div>
         </div>
       </section>
