@@ -1,0 +1,37 @@
+{
+  "name": "@guide/game-helldivers2",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./manifest": "./src/manifest.ts",
+    "./main": "./src/main/index.ts",
+    "./renderer": "./src/renderer/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "content:stamp": "node ../../packages/content-tools/src/stamp.ts content",
+    "content:check": "node ../../packages/content-tools/src/stamp.ts content --check"
+  },
+  "dependencies": {
+    "@guide/content-tools": "workspace:*",
+    "@guide/sdk": "workspace:*",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.6",
+    "vitest": "^5.0.2"
+  }
+}

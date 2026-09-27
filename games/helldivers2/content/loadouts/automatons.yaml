@@ -1,0 +1,282 @@
+# Automatons loadouts, compiled from the community guides and patch notes in sources.
+kind: loadouts
+schemaVersion: 1
+revision: 2
+updatedAt: 2026-09-27
+gameVersion: 7.1.1 (1.007.101)
+sources:
+  - https://www.switchbladegaming.com/helldivers-2/best-weapons-tier-list/
+  - https://steamcommunity.com/app/553850/discussions/0/4358997660744742346
+  - https://timesaver.gg/blog/helldivers-2-best-automaton-loadout
+  - https://games.gg/helldivers-2/guides/helldivers-2-loadouts-new-cyborg/
+  - https://steamcommunity.com/games/553850/announcements
+  - https://helldivers.wiki.gg/
+  - https://www.pcgamesn.com/helldivers-2/best-stratagems
+  - https://steamcommunity.com/app/553850/discussions/0/762932796518959627/
+  - https://namu.wiki/w/HELLDIVERS%202/%EC%98%A4%ED%86%A0%EB%A7%88%ED%86%A4/%EC%9E%84%EB%AC%B4
+  - https://www.dexerto.com/helldivers/best-automaton-build-in-helldivers-2-loadout-stratagems-more-2555285/
+loadouts:
+  - id: automaton_autocannon_generalist
+    title:
+      en: Autocannon Line Breaker
+      ko: 오토캐넌 전선 돌파형
+    faction: automatons
+    missionTypes:
+      - sabotage_supply_bases
+      - sabotage_air_base
+      - destroy_transmission_network
+      - eradicate_automaton_forces
+      - neutralize_ground_to_orbit_defenses
+      - blitz_search_and_destroy
+      - spread_democracy
+      - conduct_geological_survey
+    difficulty:
+      min: 4
+      max: 10
+    primary: plas-1-scorcher
+    secondary: p-4-senator
+    throwable: g-16-impact
+    stratagems:
+      - ac-8-autocannon
+      - orbital-railcannon-strike
+      - eagle-500kg-bomb
+      - eagle-airstrike
+    armorPassive: fortified
+    booster: vitality-enhancement
+    summary:
+      en: The long-standing bot all-rounder, stronger after 2026 buffs. The Autocannon kills Devastators, Gunships, fabricators and Hulks (to the eye) from range, and the Scorcher handles everything smaller. Railcannon and 500kg are saved for tanks, Factory Striders and bunkers.
+      ko: 오래전부터 쓰여 온 봇전 만능 세팅으로, 2026년 버프로 더 강해졌습니다. 오토캐넌이 원거리에서 데버스테이터, 건쉽, 제조기, 헐크(눈)를 처리하고 스코처가 나머지 소형 적을 맡습니다. 레일캐넌과 500kg은 탱크, 팩토리 스트라이더, 벙커용으로 아껴 둡니다.
+    slotNotes:
+      primary:
+        en: Plasma bolts with splash hit Devastator heads and Scout Strider pilots at medium range.
+        ko: 스플래시가 있는 플라스마 탄으로 중거리의 데버스테이터 머리와 스카우트 스트라이더 조종사를 맞힙니다.
+      secondary:
+        en: Heavy-hitting revolver with medium penetration as a backup for weak points.
+        ko: 중간 관통력을 가진 강력한 리볼버로 약점 사격을 보조합니다.
+      throwable:
+        en: Detonates on contact, so it reliably kills fabricators and groups; 6.3.0 raised it to 4 starting / 5 max.
+        ko: 닿는 즉시 터져 제조기와 뭉친 적을 확실히 처리합니다. 6.3.0에서 시작 4개·최대 5개가 됐습니다.
+      stratagems:
+        en: Autocannon damage 260 -> 325 (4.1.0) and a 1s faster reload (6.1.0); Railcannon one-shots Hulks and most tanks; 500kg and Eagle Airstrike clear bases and fabricators.
+        ko: 오토캐넌은 4.1.0에서 피해 260→325, 6.1.0에서 재장전이 1초 빨라졌습니다. 레일캐넌은 헐크와 대부분의 탱크를 한 방에 잡고, 500kg과 이글 공습이 기지와 제조기를 정리합니다.
+      armorPassive:
+        en: 50% explosive resistance against rockets and artillery, plus less recoil when crouched for Autocannon.
+        ko: 로켓과 포격에 대한 폭발 저항 50%, 앉았을 때 반동 감소로 오토캐넌과 잘 맞습니다.
+      booster:
+        en: Squad damage reduction; survival matters more than speed on bots.
+        ko: 분대 피해 감소. 봇전에서는 속도보다 생존이 중요합니다.
+    roles:
+      - anti-tank
+      - objective
+      - generalist
+      - team-support
+  - id: automaton_shielded_tank_buster
+    title:
+      en: Shielded Tank Buster
+      ko: 방어막 대전차 특화형
+    faction: automatons
+    missionTypes:
+      - destroy_command_bunkers
+      - halt_cyborg_production
+      - neutralize_ground_to_orbit_defenses
+      - eliminate_automaton_hulks
+      - eliminate_automaton_factory_strider
+      - blitz_destroy_bio_processors
+      - sabotage_air_base
+    difficulty:
+      min: 7
+      max: 10
+    primary: jar-5-dominator
+    secondary: gp-31-grenade-pistol
+    throwable: g-123-thermite
+    stratagems:
+      - las-99-quasar-cannon
+      - sh-32-shield-generator-pack
+      - orbital-railcannon-strike
+      - eagle-500kg-bomb
+    armorPassive: concussive-padding-reinforced
+    booster: hellpod-space-optimization
+    summary:
+      en: The high-difficulty bot heavy killer for bunkers, Megafactories and the Cyborg Legion. The shield pack absorbs rocket and gunfire chip damage while the Quasar Cannon kills Hulks, tanks, dropships and Gunships with no ammo to manage. Three Thermites kill a Vox Engine, and the Grenade Pistol takes fabricators so the Quasar never has to.
+      ko: 벙커, 메가팩토리, 사이보그 군단을 상대하는 고난이도 봇전 중장갑 처리용입니다. 방어막 팩이 로켓과 총탄의 누적 피해를 흡수하는 동안, 탄약 관리가 필요 없는 퀘이사 캐넌으로 헐크, 탱크, 드롭십, 건쉽을 잡습니다. 테르밋 3개면 복스 엔진이 쓰러지고, 제조기는 유탄 권총이 맡습니다.
+    slotNotes:
+      primary:
+        en: Heavy jet-propelled rounds with medium penetration and big stagger, stopping Devastators mid-volley.
+        ko: 중간 관통에 경직이 큰 제트탄으로 데버스테이터의 사격을 끊어 냅니다.
+      secondary:
+        en: Closes fabricators without using the Quasar or a stratagem.
+        ko: 퀘이사나 스트라타젬 없이 제조기를 부숩니다.
+      throwable:
+        en: About three Thermites kill a Vox Engine; also kills Hulks and tanks.
+        ko: 테르밋 약 3개로 복스 엔진을 잡으며 헐크와 탱크에도 통합니다.
+      stratagems:
+        en: Quasar has no backpack, so the Shield Generator Pack fits; Railcannon damage was raised to 10,000 in 6.3.0 specifically to handle Vox Engines better; 500kg for bunkers and turrets.
+        ko: 퀘이사는 백팩이 없어 방어막 팩을 함께 쓸 수 있습니다. 레일캐넌은 6.3.0에서 복스 엔진 대응을 위해 피해 10,000으로 올랐고, 500kg은 벙커와 포탑용입니다.
+      armorPassive:
+        en: 50% explosive resistance plus a higher armor rating, for heavy armor players.
+        ko: 폭발 저항 50%에 추가 방어력이 붙은 중장갑용 패시브입니다.
+      booster:
+        en: Re-deploy fully stocked after deaths, which are common on bunker assaults.
+        ko: 벙커 공략에서 잦은 사망 후에도 가득 채운 상태로 재투입됩니다.
+    roles:
+      - anti-tank
+      - survivability
+      - objective
+  - id: automaton_solo_infiltrator
+    title:
+      en: Solo Infiltrator (Commando-Ready)
+      ko: 솔로 침투형 (코만도 대응)
+    faction: automatons
+    missionTypes:
+      - commando_secure_black_box
+      - commando_acquire_evidence
+      - commando_extract_intel
+      - blitz_search_and_destroy
+      - sabotage_supply_bases
+      - destroy_transmission_network
+      - retrieve_recon_craft_intel
+      - spread_democracy
+    difficulty:
+      min: 4
+      max: 9
+    primary: r-63cs-diligence-counter-sniper
+    secondary: gp-31-grenade-pistol
+    throwable: g-16-impact
+    stratagems:
+      - mls-4x-commando
+      - lift-850-jump-pack
+      - orbital-railcannon-strike
+      - orbital-precision-strike
+    armorPassive: reduced-signature
+    booster: localization-confusion
+    summary:
+      en: Best Automaton pick for solo play and Commando operations. Pick off patrols at range before they can call a dropship, use the Grenade Pistol or Impact grenades on fabricators, and jump away when a fight goes wrong. In Commando missions stratagems only work for about two minutes after landing, so call the Commando and Jump Pack first.
+      ko: 오토마톤 솔로 플레이와 코만도 임무에 가장 적합한 세팅입니다. 순찰대가 드롭십을 부르기 전에 원거리에서 처치하고, 제조기는 유탄 권총이나 충격 수류탄으로 부수며, 교전이 꼬이면 점프팩으로 이탈합니다. 코만도 임무에서는 착지 후 약 2분 동안만 스트라타젬을 쓸 수 있으니 코만도와 점프팩부터 호출하세요.
+    slotNotes:
+      primary:
+        en: Semi-auto marksman rifle with medium penetration; kills Devastators and patrol leaders before they flare.
+        ko: 중간 관통 반자동 지정사수 소총으로 데버스테이터와 순찰대를 신호탄 전에 처치합니다.
+      secondary:
+        en: Fabricator and mortar-emplacement killer without spending a stratagem.
+        ko: 스트라타젬 없이 제조기와 박격포 진지를 부숩니다.
+      throwable:
+        en: Instant-detonation grenade for fabricators and grouped troopers.
+        ko: 즉시 폭발형 수류탄으로 제조기와 뭉친 트루퍼를 처리합니다.
+      stratagems:
+        en: MLS-4X Commando gives four guided rockets for Hulks and tanks in one call; Jump Pack for escape and high ground at extraction; Railcannon for heavies; Orbital Precision Strike is now cheap to spam (80s cooldown in 7.1.0, more damage in 6.3.0) for bases.
+        ko: MLS-4X 코만도는 한 번 호출로 헐크와 탱크용 유도 로켓 4발을 줍니다. 점프팩은 이탈과 탈출 지점 고지대 확보용, 레일캐넌은 대형 적용입니다. 궤도 정밀 타격은 7.1.0에서 쿨다운 80초, 6.3.0에서 피해 증가로 기지 공략에 자주 쓸 수 있습니다.
+      armorPassive:
+        en: 50% quieter and detected at 40% shorter range; ideal for stealth.
+        ko: 소음 50% 감소, 탐지 거리 40% 감소로 은신에 최적입니다.
+      booster:
+        en: Increases the time between enemy encounters, meaning fewer dropship waves for a lone diver.
+        ko: 적 조우 간격을 늘려 혼자일 때 드롭십 웨이브가 줄어듭니다.
+    roles:
+      - solo
+      - stealth
+      - anti-tank
+      - objective
+  - id: automaton_fortress_defense
+    title:
+      en: Bot Siege Fortress
+      ko: 봇전 농성 요새
+    faction: automatons
+    missionTypes:
+      - evacuate_high_value_assets
+      - emergency_evacuation
+      - launch_icbm
+      - retrieve_valuable_data
+      - eradicate_automaton_forces
+      - conduct_geological_survey
+    difficulty:
+      min: 5
+      max: 10
+    primary: plas-101-purifier
+    secondary: p-11-stim-pistol
+    throwable: g-23-stun
+    stratagems:
+      - e-at-12-anti-tank-emplacement
+      - a-ac-8-autocannon-sentry
+      - a-m-12-mortar-sentry
+      - mg-206-heavy-machine-gun
+    armorPassive: siege-ready
+    booster: vitality-enhancement
+    summary:
+      en: For holding a fixed point against bot drops. The Anti-Tank Emplacement kills Hulks, tanks, Factory Striders, dropships and Gunships from behind cover, and sentries got double health in 6.3.0 so they survive rocket fire. Stun grenades freeze Berserker rushes and Hulks, and the Stim Pistol keeps the squad alive at range.
+      ko: 고정 거점을 지키는 봇전 방어용입니다. 대전차 거치포가 엄폐물 뒤에서 헐크, 탱크, 팩토리 스트라이더, 드롭십, 건쉽을 잡고, 6.3.0에서 체력이 두 배가 된 센트리가 로켓 포화를 버팁니다. 스턴 수류탄으로 버서커 돌진과 헐크를 멈추고, 스팀 권총으로 멀리서 팀원을 살립니다.
+    slotNotes:
+      primary:
+        en: Charged explosive plasma; strong against groups of troopers and Devastators.
+        ko: 충전식 폭발 플라스마로 트루퍼 무리와 데버스테이터에 강합니다.
+      secondary:
+        en: Heal teammates at range; heal doubled in 6.1.0.
+        ko: 원거리 아군 치료. 6.1.0에서 치료량 두 배.
+      throwable:
+        en: Stuns everything including Hulks; 6.3.0 raised it to 4 starting / 5 max.
+        ko: 헐크를 포함한 모든 적을 기절시키며, 6.3.0에서 시작 4개·최대 5개가 됐습니다.
+      stratagems:
+        en: AT Emplacement for every heavy and aircraft; Autocannon and Mortar Sentries thin the waves; the HMG shreds Devastators, Berserkers and Hulk arms up close.
+        ko: 대전차 거치포는 모든 대형 적과 비행체, 오토캐넌·박격포 센트리는 웨이브 감소, 중기관총은 근거리 데버스테이터·버서커·헐크 팔을 담당합니다.
+      armorPassive:
+        en: +20% ammo and faster primary reloads for long defenses.
+        ko: 장기 방어를 위한 탄약 20% 증가와 주무기 재장전 가속입니다.
+      booster:
+        en: Squad damage reduction during long wave fights.
+        ko: 긴 웨이브전 동안 분대 피해 감소.
+    roles:
+      - defense
+      - anti-tank
+      - crowd-control
+      - team-support
+  - id: automaton_starter
+    title:
+      en: Starter Bot Kit (Low Difficulty)
+      ko: 입문용 봇 세팅 (저난이도)
+    faction: automatons
+    missionTypes:
+      - eliminate_devastators
+      - eliminate_automaton_hulks
+      - destroy_transmission_network
+      - sabotage_supply_bases
+      - eradicate_automaton_forces
+      - spread_democracy
+      - retrieve_valuable_data
+    difficulty:
+      min: 1
+      max: 5
+    primary: ar-23p-liberator-penetrator
+    secondary: p-2-peacemaker
+    throwable: g-12-high-explosive
+    stratagems:
+      - mg-43-machine-gun
+      - eat-17-expendable-anti-tank
+      - eagle-airstrike
+      - orbital-precision-strike
+    armorPassive: extra-padding
+    booster: hellpod-space-optimization
+    summary:
+      en: A bot kit for new players using only free or requisition-bought gear. The Liberator Penetrator's medium penetration teaches weak-point shooting on Devastators, the MG-43 handles groups, and EAT-17 rockets plus Eagle Airstrike and Orbital Precision Strike cover Hulks, tanks and fabricators.
+      ko: 무료 또는 징발 포인트로 얻는 장비만 쓰는 신규 플레이어용 봇 세팅입니다. 리버레이터 페네트레이터의 중간 관통력으로 데버스테이터 약점 사격을 익히고, MG-43으로 무리를 상대하며, EAT-17, 이글 공습, 궤도 정밀 타격으로 헐크, 탱크, 제조기를 처리합니다.
+    slotNotes:
+      primary:
+        en: Medium armor penetration from the free warbond; hits Devastator and Hulk weak points.
+        ko: 기본 워본드의 중간 관통 소총으로 데버스테이터와 헐크 약점을 뚫습니다.
+      secondary:
+        en: Free pistol, buffed in 4.1.0 and 5.0.0.
+        ko: 기본 권총으로, 4.1.0과 5.0.0에서 강화됐습니다.
+      throwable:
+        en: Destroys fabricators through the vent; 6.3.0 raised it to 4 starting / 5 max.
+        ko: 환기구에 던져 제조기를 부숩니다. 6.3.0에서 시작 4개·최대 5개가 됐습니다.
+      stratagems:
+        en: MG-43 for troopers and Devastators, EAT-17 for Hulks and tanks on a short cooldown, Eagle Airstrike for bases, Orbital Precision Strike (80s cooldown since 7.1.0) for single heavies and structures.
+        ko: MG-43은 트루퍼와 데버스테이터, EAT-17은 짧은 쿨다운으로 헐크와 탱크, 이글 공습은 기지, 궤도 정밀 타격(7.1.0부터 쿨다운 80초)은 단일 대형 적과 구조물용입니다.
+      armorPassive:
+        en: Extra armor rating on free starting armor.
+        ko: 기본 방어구의 추가 방어력입니다.
+      booster:
+        en: Free booster from Helldivers Mobilize.
+        ko: 기본 워본드 Helldivers Mobilize의 부스터입니다.
+    roles:
+      - beginner
+      - anti-tank
+      - crowd-control

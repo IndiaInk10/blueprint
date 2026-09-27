@@ -1,0 +1,2047 @@
+# Theme combos picked for fun rather than tier, from community fun-build guides and our own designs.
+kind: combos
+schemaVersion: 1
+revision: 6
+updatedAt: 2026-09-27
+sources:
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=3485335025
+  - https://www.youtube.com/watch?v=iYe2RHKyagU
+  - https://www.youtube.com/shorts/jQkvZNfQe60
+  - https://helldivers.wiki.gg/wiki/Stealth
+  - https://steamcommunity.com/app/553850/discussions/0/563660244760208395/
+  - https://steamcommunity.com/app/553850/discussions/0/563659924718058240/
+  - https://fandomwire.com/this-stun-lance-build-is-making-melee-cool-again-in-helldivers-2/
+  - https://www.u4n.com/news/helldivers-2-breaching-hammer-stats-loadout-build.html
+  - https://www.gamesradar.com/games/third-person-shooter/helldivers-2-halo-odst-crossover-warbond/
+  - https://www.playerauctions.com/helldivers-2-guide/news/halo-odst-warbond-full-list-of-weapons-armor/
+  - https://gameverse.app/blog/best-helldivers-2-builds
+  - https://supercutecollectibles.com/blogs/news/helldivers-2-meta-loadouts-26-full-builds-for-every-playstyle
+  - https://vortexgaming.io/en/postdetail/622676
+  - https://gall.dcinside.com/mgallery/board/view/?id=helldivers2&no=248232
+  - https://helldivers.wiki.gg/wiki/Stingray
+  - https://helldivers.wiki.gg/wiki/TD-110_Maelstrom
+  - https://helldivers.wiki.gg/wiki/Warbonds
+  - https://helldivers.wiki.gg/wiki/Stratagems
+combos:
+  - id: pyromaniac
+    title:
+      en: Burn Unit
+      ko: 방화광 소각반
+    difficulty:
+      min: 4
+      max: 7
+    primary: sg-451-cookout
+    secondary: p-72-crisper
+    throwable: g-10-incendiary
+    stratagems:
+      - flam-40-flamethrower
+      - eagle-napalm-airstrike
+      - a-flam-40-flame-sentry
+      - ax-flam-75-guard-dog-hot-dog
+    armorPassive: inflammable
+    booster: firebomb-hellpods
+    summary:
+      en: Drop the Flame Sentry at a chokepoint, paint the bug breach with Napalm, then walk into the fire with the Flamethrower while the Hot Dog torches flankers. The Flamethrower still chews through Charger legs, and Inflammable armor lets you stand in your own blaze. Watch the wind on your teammates.
+      ko: 화염 센트리를 길목에 박고 버그 브리치에 네이팜을 뿌린 다음, 화염방사기를 들고 불바다 속으로 걸어 들어가세요. 옆구리로 새는 놈들은 핫 도그가 알아서 지져 줍니다. 화염방사기는 차저 다리도 녹이고, 인화성 물질 아머 덕에 내가 지른 불 위에 서 있어도 버틸 만합니다. 팀원 쪽으로 불 번지는 건 조심.
+    focus: weapon
+    tagline:
+      en: If it crawls, it burns. If it burns, it spreads.
+      ko: 불로 시작해서 불로 끝나는 버그전 세팅
+    whyFun:
+      en: The whole map turns orange and every Hellpod landing is a free fireball.
+      ko: 브리치 하나가 통째로 불바다가 되는 게 볼만합니다.
+    armorSet:
+      en: I-102 Draconaught
+    bestAgainst:
+      - terminids
+    tags:
+      - theme
+      - chaos
+  - id: gas-chemist
+    title:
+      en: Mad Chemist
+      ko: 매드 케미스트
+    difficulty:
+      min: 4
+      max: 6
+    primary: ar-61-tenderizer
+    secondary: p-35-re-educator
+    throwable: g-4-gas
+    stratagems:
+      - tx-41-sterilizer
+      - eagle-gas-airstrike
+      - a-gm-17-gas-mortar-sentry
+      - ax-tx-13-guard-dog-dog-breath
+    armorPassive: advanced-filtration
+    booster: localization-confusion
+    summary:
+      en: "Everything in this kit blinds, slows or confuses: mist a crowd with the Sterilizer, let Dog Breath keep gas on whatever gets close, and keep the Gas Mortar Sentry lobbing shells onto the horde. Confused enemies attack each other, so fire into the cloud rather than charging it. Heavies are the weak point: gas them, then save the Eagle Gas Airstrike for the big packs."
+      ko: 이 세트의 모든 게 눈을 멀게 하고, 느리게 하고, 헷갈리게 만듭니다. 스터릴라이저로 무리에 안개를 뿌리고, 가까이 오는 놈은 독 브레스가 계속 가스를 먹이고, 가스 박격포 센트리가 무리 위로 포탄을 떨궈 줍니다. 혼란에 빠진 적은 서로 싸우니 구름 속으로 뛰어들지 말고 밖에서 쏘세요. 중장갑이 약점이니 대형 무리엔 이글 가스 타격을 아껴 두세요.
+    focus: weapon
+    tagline:
+      en: Make them cough, make them confused, make them each other's problem.
+      ko: 가스 뿌려 놓고 적끼리 싸우게 만드는 세팅
+    whyFun:
+      en: Watching a Hive Guard get bullied by its own swarm never gets old.
+      ko: 가스 맞은 적들이 서로 치고받는 걸 구경할 수 있습니다.
+    armorSet:
+      en: AF-02 Haz-Master
+    bestAgainst:
+      - terminids
+      - illuminate
+    tags:
+      - theme
+      - team
+  - id: arc-electrician
+    title:
+      en: Live Wire
+      ko: 감전 전기공
+    difficulty:
+      min: 4
+      max: 7
+    primary: arc-12-blitzer
+    secondary: cqc-19-stun-lance
+    throwable: g-31-arc
+    stratagems:
+      - arc-3-arc-thrower
+      - a-arc-3-tesla-tower
+      - ax-arc-3-guard-dog-k-9
+      - orbital-ems-strike
+    armorPassive: electrical-conduit
+    booster: stamina-enhancement
+    summary:
+      en: Plant the Tesla Tower on your fallback point and kite swarms through it, since Electrical Conduit makes you almost immune to your own arcs. The Arc Thrower and Blitzer never need ammo, so you only call resupply for grenades and stims. Freeze a big push with the EMS Strike and keep the K-9 on your back zapping stragglers.
+      ko: 테슬라 탑을 후퇴 지점에 꽂고 적 무리를 그쪽으로 끌고 다니세요. 전도성 아머 덕에 내 전기에는 거의 안 맞습니다. 아크 발사기와 블리처는 탄약이 필요 없어서 재보급은 수류탄·스팀팩용이에요. 큰 물량은 EMS 타격으로 묶고, 등에 멘 K-9이 남은 놈들을 지져 줍니다.
+    focus: weapon
+    tagline:
+      en: Infinite ammo, chain lightning, zero apologies.
+      ko: 탄약 걱정 없는 아크 무기 몰빵
+    whyFun:
+      en: Chains of lightning jumping across a whole bug breach look and sound incredible.
+      ko: 아크가 적 여러 마리를 줄줄이 타고 넘어가는 게 시원합니다.
+    armorSet:
+      en: EX-00 Prototype X
+    bestAgainst:
+      - terminids
+      - illuminate
+    tags:
+      - theme
+      - solo
+  - id: recon-sniper
+    title:
+      en: Overwatch Nest
+      ko: 고지대 저격 둥지
+    difficulty:
+      min: 4
+      max: 7
+    primary: r-6-deadeye
+    secondary: p-4-senator
+    throwable: g-3-smoke
+    stratagems:
+      - apw-1-anti-materiel-rifle
+      - lift-860-hover-pack
+      - orbital-railcannon-strike
+      - orbital-precision-strike
+    armorPassive: scout
+    booster: uav-recon-booster
+    summary:
+      en: Hover up to rocks and rooftops the others can't reach and pick off Devastators, Hulk eyes and gunship engines with the Anti-Materiel Rifle. Scout armor turns your map pings into radar scans, so you mark targets for the squad and call Railcannon or Precision Strikes on anything too big. Smoke your own position when the bots get your range.
+      ko: 호버 팩으로 남들이 못 가는 바위·옥상에 올라가 대물소총으로 디바스테이터, 헐크 눈, 건쉽 엔진을 저격하세요. 정찰 아머는 지도 마커가 레이더 스캔을 뿌려 주니 팀에게 표적을 찍어 주고, 너무 큰 놈에겐 레일캐넌이나 정밀 타격을 내리면 됩니다. 봇들이 조준을 잡으면 발밑에 연막을 까세요.
+    focus: role
+    tagline:
+      en: One shot, one kill, one very confused Hulk.
+      ko: 높은 곳에서 한 발씩 끊어 먹는 저격 세팅
+    whyFun:
+      en: Being the squad's eye in the sky from a perch nobody else can reach just feels cool.
+      ko: 팀이 싸우는 동안 멀리서 대형 적을 하나씩 지워 주는 역할입니다.
+    armorSet:
+      en: SC-34 Infiltrator
+    bestAgainst:
+      - automatons
+    tags:
+      - roleplay
+      - team
+  - id: chainsaw-berserker
+    title:
+      en: Chainsaw Crusade
+      ko: 전기톱 광전사
+    difficulty:
+      min: 4
+      max: 6
+    primary: smg-72-pummeler
+    secondary: cqc-42-machete
+    throwable: g-109-urchin
+    stratagems:
+      - cqc-9-defoliation-tool
+      - lift-850-jump-pack
+      - eat-17-expendable-anti-tank
+      - eagle-500kg-bomb
+    armorPassive: peak-physique
+    booster: dead-sprint
+    summary:
+      en: Jump in, stick an Urchin to stun the pack, then grind through armour with the Defoliation Tool while Peak Physique boosts every hit. The Machete and Pummeler cover you while the chainsaw is not out. EATs and the 500kg handle Bile Titans, and the Jump Pack is your escape when the swarm closes in.
+      ko: 점프 팩으로 뛰어들어 어친으로 무리를 기절시키고, 고엽 도구로 장갑째 갈아 버리세요. 이상적인 체형이 근접 피해를 올려 줍니다. 전기톱을 안 들었을 땐 마체테와 퍼멜러로 버티고, 바일 타이탄은 EAT와 500kg에 맡기세요. 포위당하면 점프 팩이 탈출구입니다.
+    focus: weapon
+    tagline:
+      en: Why shoot a Charger when you can saw it?
+      ko: 총 대신 톱 들고 들어가는 근접 세팅
+    whyFun:
+      en: It is pure DOOM energy, and the sound of a chainsaw on Charger armour is unmatched.
+      ko: 차저한테 톱 들고 달려드는 손맛이 확실합니다.
+    armorSet:
+      en: PH-9 Predator
+    bestAgainst:
+      - terminids
+    tags:
+      - theme
+      - challenge
+  - id: shield-knight
+    title:
+      en: Paladin of Liberty
+      ko: 민주주의 성기사
+    difficulty:
+      min: 4
+      max: 6
+    primary: mp-98-knight
+    secondary: cqc-2-saber
+    throwable: g-sh-39-shield
+    stratagems:
+      - cqc-1-one-true-flag
+      - sh-20-ballistic-shield-backpack
+      - eat-17-expendable-anti-tank
+      - eagle-500kg-bomb
+    armorPassive: rock-solid
+    booster: vitality-enhancement
+    summary:
+      en: Every weapon here is one-handed, so the Ballistic Shield stays up while you advance with the Knight SMG or the flag spear. Walk into bot fire, drop the bubble Shield grenade over downed teammates, and use the EAT as your jousting lance against Hulks and tanks. Rock Solid keeps you standing through rocket blasts.
+      ko: 여기 무기는 전부 한손이라 나이트 기관단총이든 깃발 창이든 탄도 방패를 든 채로 전진할 수 있습니다. 봇 사격을 정면으로 받아 내고, 쓰러진 팀원 위엔 실드 수류탄을 던져 주세요. 헐크와 탱크에겐 EAT를 기사의 랜스처럼 꽂으면 됩니다. 굳건한 바위 덕에 로켓 맞아도 잘 안 넘어집니다.
+    focus: role
+    tagline:
+      en: Shield up, flag forward, for Super Earth!
+      ko: 방패랑 깃발 들고 앞장서는 한손 무기 세팅
+    whyFun:
+      en: Advancing on a bot line behind a shield while waving the Super Earth flag is peak roleplay.
+      ko: 방패로 봇 사격을 막으면서 밀고 들어가는 재미가 있습니다.
+    armorSet:
+      en: RS-20 Constrictor
+    bestAgainst:
+      - automatons
+    tags:
+      - roleplay
+      - theme
+  - id: demolitionist
+    title:
+      en: Controlled Demolition
+      ko: 철거 전문가
+    difficulty:
+      min: 4
+      max: 7
+    primary: r-36-eruptor
+    secondary: sg-22-bushwhacker
+    throwable: ted-63-dynamite
+    stratagems:
+      - b-md-c4-pack
+      - eat-411-leveller
+      - eagle-cluster-bomb
+      - orbital-380mm-he-barrage
+    armorPassive: concussive-padding-grenadier
+    booster: hellpod-space-optimization
+    summary:
+      en: "Nearly everything you own explodes: Eruptor rounds, extra dynamite and C4 you can stick on objectives and heavies. The Eruptor hurts you up close, so keep the Bushwhacker for anything that gets inside its range. Drop the 380mm on outposts and point the Leveller at anything with armour."
+      ko: 들고 있는 게 거의 다 터집니다. 이럽터 탄, 넉넉한 다이너마이트, 목표물이나 대형 적에 붙이는 C4까지. 이럽터는 가까이서 쏘면 나도 맞으니, 붙은 적은 부시웨커로 정리하세요. 전초기지엔 380mm를, 장갑 달린 건 평탄화기로.
+    focus: weapon
+    tagline:
+      en: Nothing on this map is load-bearing anymore.
+      ko: 눈에 보이는 건 다 터뜨리는 폭파 세팅
+    whyFun:
+      en: Setting off a chain of C4 on a fortress and watching it fold is pure catharsis.
+      ko: 요새에 C4를 여러 개 붙여 놓고 한 번에 터뜨리는 맛이 있습니다.
+    armorSet:
+      en: CPG-48 Sapper
+    tags:
+      - chaos
+      - theme
+    slotNotes:
+      secondary:
+        en: The Eruptor is unsafe at close range; the sawn-off is the answer when something reaches you.
+        ko: 이럽터는 근거리에서 자폭 위험이 있어서, 붙은 적은 소드오프 산탄총으로 처리합니다.
+  - id: combat-medic
+    title:
+      en: Combat Medic
+      ko: 전투 의무병
+    difficulty:
+      min: 4
+      max: 7
+    primary: smg-37-defender
+    secondary: p-11-stim-pistol
+    throwable: g-89-smokescreen
+    stratagems:
+      - b-1-supply-pack
+      - fx-12-shield-generator-relay
+      - m-105-stalwart
+      - eagle-smoke-strike
+    armorPassive: med-kit
+    booster: experimental-infusion
+    summary:
+      en: "Stay one step behind your squad: heal teammates from range with the Stim Pistol, hand out ammo and stims from the Supply Pack, and throw smoke to cover revives. Drop the Shield Relay when the team has to hold a point. The Stalwart is there to keep chaff off you, not to top the kill board."
+      ko: 분대 한 걸음 뒤에 붙어서 각성제 권총으로 멀리서 팀원을 치료하고, 보급 팩으로 탄약과 스팀팩을 나눠 주세요. 부활시킬 땐 연막으로 가리고, 거점을 지켜야 하면 방어막 생성 릴레이를 까세요. 스털워트는 킬 먹으려는 게 아니라 나한테 붙는 잡몹 치우는 용도입니다.
+    focus: role
+    tagline:
+      en: Nobody dies on my watch. Well, not twice.
+      ko: 팀원 살리는 게 주 업무인 지원 세팅
+    whyFun:
+      en: Shooting a sprinting teammate with a stim dart and hearing them thank you is surprisingly rewarding.
+      ko: 쓰러지기 직전인 팀원한테 스팀 쏴 주는 역할이 생각보다 재밌습니다.
+    armorSet:
+      en: CM-14 Physician
+    tags:
+      - roleplay
+      - team
+  - id: sentry-turtle
+    title:
+      en: Turtle Engineer
+      ko: 거북이 공병
+    difficulty:
+      min: 4
+      max: 7
+    primary: sg-8s-slugger
+    secondary: p-19-redeemer
+    throwable: g-123-thermite
+    stratagems:
+      - a-g-16-gatling-sentry
+      - a-ac-8-autocannon-sentry
+      - a-m-12-mortar-sentry
+      - a-mls-4x-rocket-sentry
+    armorPassive: engineering-kit
+    booster: armed-resupply-pods
+    summary:
+      en: "Pick a defensible spot near the objective and build a gun line: Gatling for chaff, Autocannon and Rocket Sentries for heavies, Mortar at the back for everything else. Engineering Kit gives you extra Thermites for Chargers and Hulks that reach the wall. Keep sentries out of your team's path so friendly turrets don't mow them down."
+      ko: 목표 근처에 방어하기 좋은 자리를 잡고 포대를 짜세요. 개틀링은 잡몹, 오토캐넌·로켓 센트리는 대형, 뒤에 박격포는 나머지 전부. 공병 키트로 테르밋을 넉넉히 들고 벽까지 온 차저·헐크를 처리합니다. 아군이 오가는 길목엔 센트리를 두지 마세요, 포탑이 팀원까지 갈아 버립니다.
+    focus: stratagem
+    tagline:
+      en: Why aim when the turrets can do it for you?
+      ko: 포탑 깔아 놓고 버티는 방어전 세팅
+    whyFun:
+      en: Sitting behind a wall of four turrets on a defense mission feels like playing tower defense inside a shooter.
+      ko: 방어 미션이 타워 디펜스처럼 됩니다.
+    armorSet:
+      en: CE-35 Trench Engineer
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - theme
+      - solo
+  - id: eagle-controller
+    title:
+      en: Eagle Air Traffic Control
+      ko: 이글 항공 관제사
+    difficulty:
+      min: 4
+      max: 7
+    primary: br-14-adjudicator
+    secondary: p-2-peacemaker
+    throwable: g-16-impact
+    stratagems:
+      - eagle-500kg-bomb
+      - eagle-cluster-bomb
+      - eagle-strafing-run
+      - eagle-110mm-rocket-pods
+    armorPassive: servo-assisted
+    booster: uav-recon-booster
+    summary:
+      en: Four Eagle stratagems share one plane, so you chain them in bursts and then rearm together. Servo-Assisted lets you throw beacons 30% farther, so you call strikes from a safe distance. Rocket Pods and the 500kg handle heavies, Cluster and Strafing Run clear the rest.
+      ko: 이글 스트라타젬 네 개가 비행기 한 대를 같이 써서, 몰아서 쏟아붓고 한 번에 재무장하는 식으로 굴러갑니다. 서보 보조로 신호기를 30% 더 멀리 던지니 안전한 곳에서 폭격을 부르세요. 대형은 로켓 포드와 500kg, 나머지는 집속탄과 기총소사로 정리합니다.
+    focus: stratagem
+    tagline:
+      en: Eagle-1, you are cleared for everything.
+      ko: 이글 공습만 네 개 들고 가는 폭격 세팅
+    whyFun:
+      en: Calling in four airstrikes in a row and hearing the pilot's lines never gets old.
+      ko: 공습 네 개를 연달아 부르는 게 시원합니다.
+    armorSet:
+      en: SA-12 Servo Assisted
+    tags:
+      - theme
+      - chaos
+  - id: mech-hangar
+    title:
+      en: Walker Main
+      ko: 워커 유저
+    difficulty:
+      min: 4
+      max: 6
+    primary: sg-225-breaker
+    secondary: gp-20-ultimatum
+    throwable: g-60-anti-tank-seeker
+    stratagems:
+      - exo-45-patriot-exosuit
+      - exo-49-emancipator-exosuit
+      - exo-51-lumberer-exosuit
+      - exo-55-breakthrough-exosuit
+    armorPassive: blunt-force-mitigation
+    booster: flexible-reinforcement-budget
+    summary:
+      en: "Call a different exosuit each time the last one breaks: Patriot for bugs, Emancipator for bots, Lumberer to torch hives, Breakthrough to bulldoze close-range pushes. Between mechs you are fragile, so play safe with the Breaker and save the Ultimatum and Anti-Tank Seeker for a heavy that catches you on foot."
+      ko: 메크가 부서질 때마다 다른 엑소슈트를 부르세요. 버그엔 애국자, 봇엔 해방자, 둥지 태우기엔 벌목꾼, 근접 난전 밀어붙이기엔 돌파구. 메크 사이 빈 시간엔 약하니 브레이커로 조심히 버티고, 맨몸일 때 대형 적이 오면 얼티메이텀과 대전차 드론으로 처리하세요.
+    focus: stratagem
+    tagline:
+      en: Why walk when you own four walking tanks?
+      ko: 엑소슈트를 번갈아 타는 메크 세팅
+    whyFun:
+      en: Stomping around in a new mech every few minutes is the closest HD2 gets to a mecha anime.
+      ko: 몇 분마다 새 엑소슈트를 타고 싸울 수 있습니다.
+    armorSet:
+      en: BFM-220 Ironclad
+    tags:
+      - theme
+      - challenge
+  - id: riot-police
+    title:
+      en: Riot Control Unit
+      ko: 민주주의 진압대
+    difficulty:
+      min: 4
+      max: 6
+    primary: ar-32-pacifier
+    secondary: cqc-30-stun-baton
+    throwable: g-23-stun
+    stratagems:
+      - gl-52-de-escalator
+      - ax-ar-23-guard-dog
+      - orbital-gas-strike
+      - a-m-23-ems-mortar-sentry
+    armorPassive: unflinching
+    booster: vitality-enhancement
+    summary:
+      en: "You are the crowd-control officer: the Pacifier, De-Escalator and EMS Mortar lock enemies in place so your squad can execute them. The Guard Dog is your K-9 partner, and the Orbital Gas Strike is your tear gas for big crowds. Stun a target, then finish it with the baton or let a teammate with real anti-tank do it."
+      ko: 당신은 군중 제압 담당입니다. 퍼시파이어, 디에스컬레이터, EMS 박격포로 적을 묶어 두면 팀원이 처리합니다. 가드 독은 경찰견, 궤도 가스 타격은 최루탄이에요. 기절시키고 제압봉으로 마무리하거나, 대전차 든 팀원에게 넘기세요.
+    focus: role
+    tagline:
+      en: Stun first, ask questions never.
+      ko: 기절시키고 제압하는 진압 경찰 세팅
+    whyFun:
+      en: Playing a Super Earth riot cop with a police dog and tear gas is hilarious in voice chat.
+      ko: 팀원들이랑 경찰 역할극 하기 좋습니다.
+    armorSet:
+      en: UF-16 Inspector
+    bestAgainst:
+      - illuminate
+      - automatons
+    tags:
+      - roleplay
+      - team
+  - id: odst-drop-trooper
+    title:
+      en: Feet First Into Hell
+      ko: 발부터 지옥으로
+    difficulty:
+      min: 4
+      max: 7
+    primary: ma5c-assault-rifle
+    secondary: m6c-socom-pistol
+    throwable: g-12-high-explosive
+    stratagems:
+      - m-102-gunner-frv
+      - las-99-quasar-cannon
+      - eagle-500kg-bomb
+      - orbital-precision-strike
+    armorPassive: feet-first
+    booster: stun-pods
+    summary:
+      en: Wear the Helljumper set with the MA5C and suppressed SOCOM pistol, then drive the Gunner FRV like a Warthog while a friend mans the gun. The Quasar is your stand-in Spartan Laser for Harvesters and Fleshmobs. Fight the Illuminate for the full Halo feeling.
+      ko: 헬점퍼 세트에 MA5C와 소음 SOCOM 권총을 들고, 거너 FRV를 워트혹처럼 몰면서 친구에게 기관총을 맡기세요. 퀘이사 캐넌은 하베스터와 플레시몹을 잡는 스파르탄 레이저 대용입니다. 일루미닛 상대로 뛰면 헤일로 느낌이 제대로 납니다.
+    focus: role
+    tagline:
+      en: "Helljumpers: feet first into hell."
+      ko: 헤일로 ODST 장비로 맞춘 롤플레이 세팅
+    whyFun:
+      en: It is a Halo ODST reunion inside Helldivers, and the Warthog joke writes itself.
+      ko: 거너 FRV를 워트혹처럼 몰고 다니는 맛이 있습니다.
+    armorSet:
+      en: A-9 Helljumper
+    bestAgainst:
+      - illuminate
+    tags:
+      - roleplay
+      - team
+  - id: stealth-scout
+    title:
+      en: Ghost Protocol
+      ko: 고스트 프로토콜
+    difficulty:
+      min: 4
+      max: 7
+    primary: ar-59-suppressor
+    secondary: cqc-5-combat-hatchet
+    throwable: k-2-throwing-knife
+    stratagems:
+      - lift-182-warp-pack
+      - ms-11-solo-silo
+      - orbital-smoke-strike
+      - orbital-laser
+    armorPassive: reduced-signature
+    booster: concealed-insertion
+    summary:
+      en: "Split from the squad and clear side objectives unseen: suppressed rifle and silent throwing knives for patrols, Warp Pack to blink out of trouble. Destroy fabricators and objectives from range with the Solo Silo, and let the Orbital Laser erase a base you'd rather not walk into. If you're spotted, smoke and warp out instead of fighting."
+      ko: 분대와 갈라져 보조 목표를 몰래 처리하세요. 순찰대는 소음 소총과 조용한 투척 나이프로, 위험하면 워프 팩으로 순간이동. 공장과 목표물은 솔로 사일로로 멀리서 부수고, 들어가기 싫은 기지는 궤도 레이저로 지워 버립니다. 들키면 싸우지 말고 연막 깔고 워프로 튀세요.
+    focus: role
+    tagline:
+      en: They never saw you. That was the point.
+      ko: 안 들키고 목표만 처리하는 잠입 세팅
+    whyFun:
+      en: Clearing a whole bot outpost without a single alert feels like a real spec-ops mission.
+      ko: 경보 한 번 안 울리고 전초기지를 비우는 게 목표입니다.
+    armorSet:
+      en: RS-89 Shadow Paragon
+    bestAgainst:
+      - automatons
+    tags:
+      - theme
+      - solo
+      - challenge
+  - id: laser-only
+    title:
+      en: Photon Division
+      ko: 레이저 광선 부대
+    difficulty:
+      min: 4
+      max: 7
+    primary: las-16-sickle
+    secondary: las-7-dagger
+    throwable: g-50-seeker
+    stratagems:
+      - las-98-laser-cannon
+      - a-las-98-laser-sentry
+      - ax-las-5-guard-dog-rover
+      - orbital-laser
+    armorPassive: peak-physique
+    booster: stamina-enhancement
+    summary:
+      en: Every gun runs on heat instead of ammo, so you manage heat and swap weapons instead of reloading. The Laser Cannon cuts Hulk eyes and Overseers, the Rover and Laser Sentry burn chaff, and the Orbital Laser erases a base. Peak Physique makes the beam weapons swing faster.
+      ko: 모든 무기가 탄약 대신 열로 돌아가서, 재장전 대신 열 관리하며 무기를 번갈아 씁니다. 레이저 캐넌으로 헐크 눈이나 오버시어를 지지고, 로버와 레이저 센트리가 잡몹을 태우고, 궤도 레이저로 기지를 지웁니다. 이상적인 체형으로 빔 무기 조준이 더 빨라집니다.
+    focus: weapon
+    tagline:
+      en: No bullets. No reloads. Only light.
+      ko: 탄약 대신 열을 관리하는 레이저 무기 몰빵
+    whyFun:
+      en: A squad of beams crisscrossing the battlefield looks like a sci-fi movie finale.
+      ko: 재장전 없이 계속 쏘는 대신 과열을 관리하는 재미가 있습니다.
+    armorSet:
+      en: PH-202 Twigsnapper
+    bestAgainst:
+      - illuminate
+      - automatons
+    tags:
+      - theme
+      - challenge
+  - id: tank-commander
+    title:
+      en: Tank Commander
+      ko: 전차장
+    difficulty:
+      min: 4
+      max: 8
+    primary: ar-23p-liberator-penetrator
+    secondary: p-4-senator
+    throwable: g-123-thermite
+    stratagems:
+      - td-220-bastion-mk-xvi
+      - las-99-quasar-cannon
+      - eagle-airstrike
+      - a-mg-43-machine-gun-sentry
+    armorPassive: fortified
+    booster: vitality-enhancement
+    summary:
+      en: "The TD-220 Bastion (unlocked at level 30) is the point. Its cooldown is 13 minutes, so you get it two or three times a mission: load the squad in each time and clear heavies and outposts with the main gun. Between tanks, the Quasar Cannon covers anti-tank and the machine gun sentry watches your back."
+      ko: 레벨 30에 여는 TD-220 바스티온이 핵심입니다. 쿨다운이 13분이라 한 판에 두세 번 부를 수 있으니, 부를 때마다 팀원을 태우고 주포로 대형 적과 전초기지를 정리하세요. 전차가 없을 땐 퀘이사 캐넌으로 대전차를 맡고, 기관총 센트리로 뒤를 지킵니다.
+    focus: stratagem
+    tagline:
+      en: Drive the Bastion and bring the squad along
+      ko: 바스티온 몰고 팀원 태워 다니는 전차 세팅
+    whyFun:
+      en: Four divers in one tank, one shell per Hulk.
+      ko: 팀원 넷이 한 전차에 타고 주포 한 방에 헐크를 날리는 맛이 있습니다.
+    armorSet:
+      en: FS-55 Devastator
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - team
+      - theme
+  - id: orbital-main
+    title:
+      en: Orbital Main
+      ko: 궤도 포격 유저
+    difficulty:
+      min: 4
+      max: 7
+    primary: jar-5-dominator
+    secondary: p-4-senator
+    throwable: g-123-thermite
+    stratagems:
+      - orbital-railcannon-strike
+      - orbital-laser
+      - orbital-gatling-barrage
+      - orbital-walking-barrage
+    armorPassive: servo-assisted
+    booster: vitality-enhancement
+    summary:
+      en: Leave the support slot empty and fight with four orbitals. The Gatling Barrage is back every 70 seconds, so throw it whenever small enemies bunch up; the Railcannon takes heavies, and the Laser and Walking Barrage flatten bases. Servo-Assisted armor throws stratagem balls further, so you can call them from a safe distance.
+      ko: 지원무기 칸을 비우고 궤도 포격 네 개로 싸웁니다. 개틀링 폭격은 70초마다 돌아오니 잡몹이 몰릴 때마다 던지고, 대형 적은 레일캐넌, 기지는 레이저와 이동 폭격으로 밀어 버리세요. 서보 보조 방어구로 스트라타젬 공을 멀리 던질 수 있어 안전한 거리에서 부를 수 있습니다.
+    focus: stratagem
+    tagline:
+      en: No support weapon, four orbitals
+      ko: 지원무기 없이 궤도 포격만 네 개 들고 가는 세팅
+    whyFun:
+      en: Something is always falling from the sky.
+      ko: 하늘에서 계속 뭔가 떨어지는 걸 보는 게 이 세팅의 재미입니다.
+    armorSet:
+      en: SA-12 Servo Assisted
+    tags:
+      - theme
+      - solo
+  - id: emplacement-main
+    title:
+      en: Emplacement Main
+      ko: 거치물 유저
+    difficulty:
+      min: 4
+      max: 7
+    primary: sg-225ie-breaker-incendiary
+    secondary: p-4-senator
+    throwable: g-123-thermite
+    stratagems:
+      - fx-12-shield-generator-relay
+      - e-mg-101-hmg-emplacement
+      - e-at-12-anti-tank-emplacement
+      - e-gl-21-grenadier-battlement
+    armorPassive: engineering-kit
+    booster: vitality-enhancement
+    summary:
+      en: Made for defense missions. Drop the shield relay first, set the HMG and anti-tank emplacements behind it, and cover the flank with the grenadier battlement. Emplacements need someone in the seat, so let teammates watch the sides, and hold with the Breaker Incendiary when you have to move.
+      ko: 방어 미션용입니다. 방어막 릴레이를 먼저 깔고 그 뒤에 중기관총 거치포와 대전차 거치포를 세운 다음, 척탄 흉벽으로 옆을 막으세요. 거치포는 직접 타야 하니 옆은 팀원에게 맡기고, 자리를 옮길 땐 브레이커 인센디어리로 버팁니다.
+    focus: stratagem
+    tagline:
+      en: Build a firing line you man yourself
+      ko: 직접 앉아서 쏘는 거치포로 방어선 치는 세팅
+    whyFun:
+      en: Sitting behind a heavy gun while the wave walks into it.
+      ko: 거치포에 앉아서 몰려오는 적을 쓸어 담는 맛이 있습니다.
+    armorSet:
+      en: CE-35 Trench Engineer
+    tags:
+      - team
+      - theme
+  - id: mine-main
+    title:
+      en: Minefield Main
+      ko: 지뢰 유저
+    difficulty:
+      min: 4
+      max: 6
+    primary: ar-23a-liberator-carbine
+    secondary: p-4-senator
+    throwable: g-10-incendiary
+    stratagems:
+      - md-6-anti-personnel-minefield
+      - md-i4-incendiary-mines
+      - md-8-gas-mines
+      - md-17-anti-tank-mines
+    armorPassive: engineering-kit
+    booster: stamina-enhancement
+    summary:
+      en: Mine the routes enemies will take and the area around extraction ahead of time, then lead them across. Anti-personnel, incendiary and gas mines handle the small ones; anti-tank mines take Chargers and Titans. Mines hurt teammates too, so call it out when you lay them.
+      ko: 적이 올 길목이나 추출 지점 주변에 지뢰를 미리 깔고, 적을 끌고 그 위로 지나가게 하세요. 대인·소이·가스 지뢰는 잡몹을, 대전차 지뢰는 차저와 타이탄을 맡습니다. 팀원도 밟으면 터지니 깔 때는 꼭 알려 주세요.
+    focus: stratagem
+    tagline:
+      en: Mine the path, then lead them over it
+      ko: 지나갈 길에 지뢰 깔아 두고 끌고 다니는 세팅
+    whyFun:
+      en: Watching a chasing pack pop one by one on your minefield.
+      ko: 쫓아오던 적이 내가 깔아 둔 지뢰밭에서 줄줄이 터지는 게 은근 중독적입니다.
+    armorSet:
+      en: CE-27 Ground Breaker
+    bestAgainst:
+      - terminids
+      - illuminate
+    tags:
+      - challenge
+      - theme
+  - id: frv-road-trip
+    title:
+      en: FRV Road Trip
+      ko: FRV 드라이브
+    difficulty:
+      min: 4
+      max: 6
+    primary: smg-32-reprimand
+    secondary: p-92-warrant
+    throwable: g-6-frag
+    stratagems:
+      - m-102-gunner-frv
+      - mls-4x-commando
+      - eagle-airstrike
+      - orbital-ems-strike
+    armorPassive: blunt-force-mitigation
+    booster: flexible-reinforcement-budget
+    summary:
+      en: "Call the M-102 Gunner FRV right after landing: one diver drives, one takes the rear heavy machine gun. Passengers clear the flanks with the Reprimand or the homing Warrant, and if the road gets blocked, pin the pack with an Orbital EMS Strike and drive through. When you have to get out and fight, the Commando deletes the big targets first."
+      ko: 투하 직후 M-102 거너 FRV부터 부르고 한 명은 운전, 한 명은 뒤쪽 중기관총을 잡습니다. 나머지는 SMG-32 레프리맨드나 P-92 워런트로 옆을 정리하고, 길이 막히면 궤도 EMS 타격으로 적을 묶어 둔 채 빠져나갑니다. 내려서 싸워야 할 때는 MLS-4X 코만도로 큰 놈부터 지웁니다.
+    focus: stratagem
+    tagline:
+      en: "Squad car build: one drives, everyone else shoots out the side"
+      ko: 한 명은 운전하고 나머지는 차 밖으로 쏘는 차량 세팅
+    whyFun:
+      en: Crossing the whole map by car and fighting from the seats is more fun than it has any right to be.
+      ko: 맵 끝에서 끝까지 차로 달리면서 싸우는 게 은근 재밌습니다.
+    armorSet:
+      en: BFM-16 Tanker
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - team
+      - chaos
+  - id: maelstrom-crew
+    title:
+      en: Maelstrom Crew
+      ko: 마엘스트롬 전차병
+    difficulty:
+      min: 4
+      max: 7
+    primary: ar-11-arbitrator
+    secondary: p-113-verdict
+    throwable: g-7-pineapple
+    stratagems:
+      - td-110-maelstrom
+      - gr-8-recoilless-rifle
+      - orbital-railcannon-strike
+      - eagle-smoke-strike
+    armorPassive: extra-padding
+    booster: vitality-enhancement
+    summary:
+      en: The TD-110 Maelstrom is an Armored Eagle campaign reward, so only divers who took part have it. Its guns only swing about 40 degrees to the side, so the driver has to point the hull at the target; dropships and tanks are handled on foot with the Recoilless Rifle or the Railcannon Strike. When pulling back, drop the Eagle Smoke Strike and reverse out.
+      ko: TD-110 마엘스트롬은 Armored Eagle 캠페인 보상이라 참여한 사람만 쓸 수 있습니다. 포가 옆으로 40도 정도밖에 안 돌아가서 운전수가 차체를 적 쪽으로 돌려 줘야 하고, 드롭쉽이나 탱크는 내려서 GR-8 무반동포나 궤도 레일캐넌 타격으로 처리합니다. 빠질 때는 이글 연막 타격을 깔고 후진합니다.
+    focus: stratagem
+    tagline:
+      en: Twin-gatling tank for mowing down bot infantry
+      ko: 개틀링 전차로 봇 보병 쓸어 담기
+    whyFun:
+      en: A whole line of bot troopers drops every time the gatlings sweep across it.
+      ko: 개틀링 한 번 긁을 때마다 봇 보병 줄이 통째로 쓰러집니다.
+    armorSet:
+      en: B-27 Fortified Commando
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - team
+      - theme
+  - id: motor-pool
+    title:
+      en: Motor Pool
+      ko: 차량 총동원
+    difficulty:
+      min: 4
+      max: 6
+    primary: vg-70-variable
+    secondary: p-69-veto
+    throwable: g-123-thermite
+    stratagems:
+      - m-102-gunner-frv
+      - m-103-supply-frv
+      - td-220-bastion-mk-xvi
+      - exo-45-patriot-exosuit
+    armorPassive: fortified
+    booster: expert-extraction-pilot
+    summary:
+      en: Travel in the Gunner FRV, then bring in the Bastion or the Patriot exosuit when it is time to hit a base. The M-103 Supply FRV is a Census Thunder campaign reward; swap in any other vehicle if you do not have it. Every cooldown is long, so while you are on foot you get by on Thermite grenades and the Veto.
+      ko: 평소엔 M-102 거너 FRV로 이동하고, 기지를 칠 때 TD-220 바스티온이나 EXO-45 애국자 엑소슈트를 불러서 밀고 들어갑니다. M-103 보급 FRV는 Census Thunder 캠페인 보상이라 없으면 다른 탈것으로 바꿔도 됩니다. 쿨타임이 전부 길어서 걸어 다닐 때는 G-123 테르밋과 P-69 비토로 버텨야 합니다.
+    focus: stratagem
+    tagline:
+      en: All four stratagem slots are vehicles
+      ko: 스트라타젬 네 칸을 전부 탈것으로 채운 차고
+    whyFun:
+      en: When a ride blows up you just call the next one, so you almost never walk.
+      ko: 타던 게 터지면 다음 걸 부르면 돼서 걸어 다닐 일이 거의 없습니다.
+    armorSet:
+      en: FS-23 Battle Master
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - chaos
+      - challenge
+  - id: shield-walker
+    title:
+      en: Shield Walker
+      ko: 방패 워커
+    difficulty:
+      min: 4
+      max: 7
+    primary: smg-203-gallant
+    secondary: p-33-missile-pistol
+    throwable: g-16-impact
+    stratagems:
+      - exo-55-breakthrough-exosuit
+      - las-99-quasar-cannon
+      - sh-32-shield-generator-pack
+      - orbital-smoke-strike
+    armorPassive: oxygenator
+    booster: stamina-enhancement
+    summary:
+      en: Walk forward in the EXO-55 Breakthrough with the shield raised and let the squad stack up behind you. When the suit is gone, put on the Shield Generator Pack and use the Quasar Cannon on tanks and fabricator vents. The Orbital Smoke Strike breaks line of sight while the exosuit comes down or while you retreat.
+      ko: EXO-55 돌파구 엑소슈트를 타고 방패를 든 채 걸어 나가면 팀원들이 뒤에 붙어서 따라옵니다. 엑소가 터지면 SH-32 방어막 생성 팩을 메고 LAS-99 퀘이사 캐넌으로 탱크와 공장 환기구를 처리합니다. 궤도 연막 타격은 엑소를 부를 때나 뒤로 빠질 때 시야를 끊는 데 씁니다.
+    focus: stratagem
+    tagline:
+      en: Front-line tank for bot fights in a shielded exosuit
+      ko: 방패 달린 엑소슈트 타고 봇전 맨 앞에 서는 탱커
+    whyFun:
+      en: Soaking up bot lasers on the shield and answering with the shotgun cannon feels solid.
+      ko: 봇 레이저를 방패로 받아 내면서 산탄포를 박아 넣는 게 든든합니다.
+    armorSet:
+      en: O-2 Heavy Operator
+    bestAgainst:
+      - automatons
+    tags:
+      - team
+      - theme
+  - id: autocannon-user
+    title:
+      en: Autocannon Enjoyer
+      ko: 오토캐넌 유저
+    difficulty:
+      min: 4
+      max: 7
+    primary: sta-52-assault-rifle
+    secondary: p-19-redeemer
+    throwable: g-10-incendiary
+    stratagems:
+      - ac-8-autocannon
+      - a-ac-8-autocannon-sentry
+      - exo-49-emancipator-exosuit
+      - orbital-precision-strike
+    armorPassive: true-grit
+    booster: hellpod-space-optimization
+    summary:
+      en: Use the AC-8 Autocannon on fabricator vents and Devastators, and put the Autocannon Sentry wherever you plan to hold. The EXO-49 Emancipator has an autocannon on each arm, so save it for right before a big fight. The armor passive speeds up support weapon reloads by 30%, which takes the sting out of the two-stage autocannon reload.
+      ko: AC-8 오토캐넌으로 공장 환기구와 데바스테이터를 끊어 먹고, 버틸 자리엔 A/AC-8 오토캐넌 센트리를 깝니다. EXO-49 해방자 엑소슈트는 양팔이 다 오토캐넌이라 큰 싸움 직전에 부릅니다. 아머 패시브가 지원무기 재장전을 30% 빨라지게 해 줘서 오토캐넌 장전이 덜 답답합니다.
+    focus: stratagem
+    tagline:
+      en: Support weapon, sentry and exosuit are all autocannons
+      ko: 지원무기, 센트리, 엑소까지 전부 오토캐넌
+    whyFun:
+      en: Something is firing autocannon rounds everywhere you look, so bot bases fold fast.
+      ko: 어디를 봐도 오토캐넌이 쏘고 있어서 봇 기지가 금방 무너집니다.
+    armorSet:
+      en: TG-122 Demo-Trooper
+    bestAgainst:
+      - automatons
+      - illuminate
+    tags:
+      - theme
+      - solo
+  - id: railgun-classic
+    title:
+      en: Railgun Classic
+      ko: 레일건 유저
+    difficulty:
+      min: 4
+      max: 7
+    primary: sg-225-breaker
+    secondary: p-2-peacemaker
+    throwable: g-12-high-explosive
+    stratagems:
+      - rs-422-railgun
+      - sh-32-shield-generator-pack
+      - eagle-500kg-bomb
+      - orbital-laser
+    armorPassive: democracy-protects
+    booster: vitality-enhancement
+    summary:
+      en: Fire the RS-422 Railgun in Unsafe mode so a full charge punches through Charger legs or a Hulk's eye in one shot. Let the Shield Generator Pack eat incoming fire while you aim, and clean up small enemies with the Breaker. Holding the charge too long blows the railgun up and kills you, so learn the sound and release before it.
+      ko: RS-422 레일건은 안전 해제 모드로 꽉 채워 쏴야 차저 다리나 헐크 눈을 한 번에 뚫습니다. SH-32 방어막 생성 팩이 총알을 받아 주는 동안 조준에 집중하고, 잔챙이는 SG-225 브레이커로 정리합니다. 충전을 너무 오래 끌면 레일건이 터져서 죽으니 소리를 듣고 끊어 줍니다.
+    focus: stratagem
+    tagline:
+      en: The launch-era railgun and shield pack loadout, as it was
+      ko: 출시 초창기 레일건에 방어막 팩 조합 그대로
+    whyFun:
+      en: It is the loadout everyone ran in early 2024, and it still holds up.
+      ko: 2024년 초에 다들 이것만 들던 그 조합을 지금 다시 굴려 볼 수 있습니다.
+    armorSet:
+      en: DP-11 Champion of the People
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - theme
+      - solo
+  - id: disposable-arsenal
+    title:
+      en: Disposable Arsenal
+      ko: 일회용 무기 몰빵
+    difficulty:
+      min: 4
+      max: 7
+    primary: ar-2-coyote
+    secondary: plas-15-loyalist
+    throwable: g-13-incendiary-impact
+    stratagems:
+      - eat-17-expendable-anti-tank
+      - eat-411-leveller
+      - eat-700-expendable-napalm
+      - mgx-42-bullet-storm
+    armorPassive: supplementary-adrenaline
+    booster: surplus-eat-allocation
+    summary:
+      en: Cycle the EAT-17, Leveller, Expendable Napalm and Bullet Storm and drop them ahead of you along your route. Surplus EAT Allocation adds two free EAT-17 calls, so spend those on the first heavies. You can only carry one at a time, so fire it, drop it and grab the next.
+      ko: EAT-17, EAT-411 평탄화기, EAT-700 일회성 네이팜, MGX-42 불릿 스톰을 돌아가며 불러서 갈 길에 미리 떨궈 둡니다. 초과 EAT 할당 부스터로 EAT-17이 두 번 공짜로 붙으니 초반 대형 적은 그걸로 처리합니다. 한 번에 하나만 들 수 있어서 다 쓰면 바로 버리고 다음 걸 줍습니다.
+    focus: stratagem
+    tagline:
+      en: Nothing but throwaway launchers and guns
+      ko: 쓰고 버리는 일회용 발사기만 들고 가는 빌드
+    whyFun:
+      en: The cooldowns are short enough that there is a launcher lying around wherever you go.
+      ko: 쿨타임이 짧아서 가는 곳마다 발사기가 떨어져 있습니다.
+    armorSet:
+      en: SA-8 Ram
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - theme
+      - chaos
+  - id: shotgun-only
+    title:
+      en: Shotguns Only
+      ko: 샷건 몰빵
+    difficulty:
+      min: 4
+      max: 7
+    primary: sg-97-sweeper
+    secondary: sg-22-bushwhacker
+    throwable: g-6-frag
+    stratagems:
+      - ax-ar-23-guard-dog
+      - las-99-quasar-cannon
+      - eagle-cluster-bomb
+      - orbital-gatling-barrage
+    armorPassive: siege-ready
+    booster: stamina-enhancement
+    summary:
+      en: The SG-97 Sweeper dumps its shells fast, so empty it into whatever is on top of you. The reload is long; hold the line with the Bushwhacker while the Guard Dog keeps small bugs off you. Chargers and Titans go to the Quasar Cannon, bug breaches to the Eagle Cluster Bomb.
+      ko: SG-97 스위퍼는 연사가 빨라서 붙은 적한테 한 번에 쏟아붓기 좋습니다. 장전이 길어서 탄이 비면 SG-22 부시웨커로 버티고, 그동안 가드 독이 옆에서 잔챙이를 정리합니다. 차저나 타이탄은 LAS-99 퀘이사 캐넌으로, 버그 브리치는 이글 집속탄으로 처리합니다.
+    focus: weapon
+    tagline:
+      en: Shotgun primary, shotgun sidearm, all close range
+      ko: 주무기도 보조무기도 샷건인 근접 세팅
+    whyFun:
+      en: Point-blank shotgun blasts on every bug that rounds the corner just feel good.
+      ko: 모퉁이 돌아오는 벌레마다 산탄 한 방씩 박아 주는 손맛이 좋습니다.
+    armorSet:
+      en: SR-24 Street Scout
+    bestAgainst:
+      - terminids
+    tags:
+      - theme
+      - solo
+  - id: frontier-gunslinger
+    title:
+      en: Frontier Gunslinger
+      ko: 서부 총잡이
+    difficulty:
+      min: 4
+      max: 6
+    primary: dbs-2-double-freedom
+    secondary: p-4-senator
+    throwable: ted-63-dynamite
+    stratagems:
+      - lift-860-hover-pack
+      - a-g-16-gatling-sentry
+      - eagle-strafing-run
+      - orbital-railcannon-strike
+    armorPassive: gunslinger
+    booster: experimental-infusion
+    summary:
+      en: Gunslinger armor makes the Senator reload fast, so pull it out as often as your main gun. Use the Double Freedom on anything up close, the Senator on weak points at mid range, and throw Dynamite into clumps. Hover up onto a rooftop and shoot alongside the Gatling Sentry to hold a position.
+      ko: 총잡이 아머 덕에 P-4 세너터 장전이 빨라서 주무기처럼 자주 꺼내 써도 됩니다. DBS-2 더블 프리덤은 붙은 적에게, 세너터는 중거리 약점에 쓰고, 뭉친 적은 TED-63 다이너마이트로 날립니다. LIFT-860 호버 팩으로 지붕에 올라가서 A/G-16 개틀링 센트리랑 같이 쏘면 버티기 쉽습니다.
+    focus: weapon
+    tagline:
+      en: Double barrel, revolver and dynamite cowboy kit
+      ko: 쌍열 산탄총에 리볼버, 다이너마이트까지 챙긴 카우보이
+    whyFun:
+      en: Fanning six revolver shots and snapping in a reload feels like a western.
+      ko: 리볼버 여섯 발 쏘고 후딱 장전하는 게 서부극 찍는 기분입니다.
+    armorSet:
+      en: GS-17 Frontier Marshal
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - roleplay
+      - theme
+  - id: imperial-guardsman
+    title:
+      en: Imperial Guardsman
+      ko: 40K 방위군
+    difficulty:
+      min: 4
+      max: 7
+    primary: r-40-k-hot-shot-marksman-rifle
+    secondary: p-40-k-bolt-pistol
+    throwable: g-40-k-melta-mine
+    stratagems:
+      - 40-k-meltagun
+      - orbital-120mm-he-barrage
+      - orbital-380mm-he-barrage
+      - a-m-12-mortar-sentry
+    armorPassive: true-grit
+    booster: vitality-enhancement
+    summary:
+      en: Pick off infantry at mid range with the Hot-Shot Marksman Rifle; anything big that gets close gets the Bolt Pistol or the Meltagun. Open a base assault with the 120mm or 380mm barrage, and park the Mortar Sentry behind you when holding. Throw Melta-Mines onto the paths enemies will come down.
+      ko: R/40-K 핫샷 마크맨 라이플로 중거리 보병을 끊고, 가까이 붙은 큰 놈은 P/40-K 볼트 피스톨이나 40-K 멜타건으로 녹입니다. 기지를 칠 땐 궤도 120mm나 380mm 고폭 폭격을 먼저 떨어뜨리고, 버틸 땐 A/M-12 박격포 센트리를 뒤에 깝니다. G/40-K 멜타마인은 적이 들어올 길목에 던져 둡니다.
+    focus: weapon
+    tagline:
+      en: Hot-shot rifleman who calls in artillery
+      ko: 핫샷 라이플 들고 포병 지원 부르는 방위군 롤플레이
+    whyFun:
+      en: Holding with a lasgun while you wait for the artillery to land is exactly the Guard fantasy.
+      ko: 소총으로 버티면서 포격 떨어지길 기다리는 게 딱 방위군 느낌입니다.
+    armorSet:
+      en: TG-8 Sharpshooter
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - roleplay
+      - theme
+  - id: day-one-kit
+    title:
+      en: Day One Kit
+      ko: 무과금 기본 장비
+    difficulty:
+      min: 4
+      max: 6
+    primary: ar-23-liberator
+    secondary: p-2-peacemaker
+    throwable: g-12-high-explosive
+    stratagems:
+      - mg-43-machine-gun
+      - eat-17-expendable-anti-tank
+      - eagle-airstrike
+      - orbital-precision-strike
+    armorPassive: democracy-protects
+    booster: hellpod-space-optimization
+    summary:
+      en: The Liberator, Peacemaker and High Explosive grenade are what every diver starts with, and all four stratagems are bought with requisition. The MG-43 handles small enemies; heavies get the EAT-17, the Precision Strike or the Eagle Airstrike. Armor and booster come only from the free Helldivers Mobilize warbond.
+      ko: AR-23 리버레이터, P-2 피스메이커, G-12 고폭은 처음부터 있는 장비고, 스트라타젬도 전부 요청서로 사는 기본 목록입니다. MG-43 기관총으로 잔챙이를 잡고, 큰 놈은 EAT-17이나 궤도 정밀 타격, 이글 공중타격으로 처리합니다. 아머랑 부스터는 무료 전쟁 채권에서 받는 것만 씁니다.
+    focus: weapon
+    tagline:
+      en: Starter guns and requisition stratagems only
+      ko: 처음 받은 총이랑 요청서로 사는 스트라타젬만 쓰는 조합
+    whyFun:
+      en: Finding out how far the plain Liberator can carry you on higher difficulties is its own fun.
+      ko: 기본 리버레이터로 어디까지 버틸 수 있나 확인해 보는 재미가 있습니다.
+    armorSet:
+      en: DP-40 Hero of the Federation
+    bestAgainst:
+      - terminids
+      - automatons
+      - illuminate
+    tags:
+      - challenge
+      - theme
+  - id: anti-air-gunner
+    title:
+      en: Anti-Air Gunner
+      ko: 대공 사수
+    difficulty:
+      min: 4
+      max: 7
+    primary: r-63cs-diligence-counter-sniper
+    secondary: sg-22-bushwhacker
+    throwable: g-50-seeker
+    stratagems:
+      - sta-x3-wasp-launcher
+      - a-mls-4x-rocket-sentry
+      - orbital-airburst-strike
+      - eagle-500kg-bomb
+    armorPassive: fortified
+    booster: uav-recon-booster
+    summary:
+      en: A Stingray is only an easy target when it slows down for its bombing run, so lock on with the W.A.S.P. Launcher then. Keep the Rocket Sentry next to you so it also goes after Elevated Overseers. Clear anything that gets close with the Bushwhacker, and if a bombing run is coming at you, dive sideways or go prone.
+      ko: 스팅레이는 폭격하려고 속도를 줄일 때가 기회라서 그때 StA-X3 W.A.S.P. 발사기로 락온해 쏩니다. A/MLS-4X 로켓 센트리를 옆에 깔아 두면 떠다니는 오버시어도 같이 노려 줍니다. 가까이 붙는 잔챙이는 SG-22 부시웨커로 정리하고, 폭격이 내 쪽으로 오면 옆으로 뛰거나 엎드립니다.
+    focus: role
+    tagline:
+      en: The one who shoots down Illuminate Stingrays and Overseers
+      ko: 일루미닛 스팅레이랑 날아다니는 오버시어 떨구는 담당
+    whyFun:
+      en: Knock down the Stingray that keeps strafing the squad and everyone is grateful.
+      ko: 팀 머리 위를 긁고 다니던 스팅레이를 떨어뜨리면 다들 고마워합니다.
+    armorSet:
+      en: FS-38 Eradicator
+    bestAgainst:
+      - illuminate
+    tags:
+      - team
+      - roleplay
+  - id: hellbomb-courier
+    title:
+      en: Hellbomb Courier
+      ko: 지옥폭탄 배달부
+    difficulty:
+      min: 4
+      max: 7
+    primary: ar-23c-liberator-concussive
+    secondary: p-113-verdict
+    throwable: g-23-stun
+    stratagems:
+      - b-100-portable-hellbomb
+      - eagle-smoke-strike
+      - orbital-ems-strike
+      - s-11-speargun
+    armorPassive: integrated-explosives
+    booster: dead-sprint
+    summary:
+      en: Put on the B-100 Portable Hellbomb, blind the base with the Eagle Smoke Strike and sprint for the middle. Pin whatever blocks the way with the Orbital EMS Strike or knock it back with the Liberator Concussive, then arm the bomb and get as far away as you can during the countdown. The armor explodes when you die, so do not die next to your teammates.
+      ko: B-100 휴대용 지옥폭탄을 메고 이글 연막 타격으로 시야를 가린 다음 기지 안쪽까지 뛰어듭니다. 길을 막는 적은 궤도 EMS 타격으로 묶거나 AR-23C 리버레이터 컨커시브로 밀쳐 내고, 설치하면 카운트다운 동안 최대한 멀리 빠집니다. 아머가 죽을 때 터지니 팀원 옆에서 죽지 않게 조심합니다.
+    focus: role
+    tagline:
+      en: Strap a Hellbomb on and run it into the enemy base
+      ko: 등에 지옥폭탄 메고 적 기지로 뛰어드는 배달 업무
+    whyFun:
+      en: Dropping the bomb in the middle of a base and hearing it go off behind you as you run is the best part.
+      ko: 기지 한가운데 폭탄 내려놓고 도망치다가 뒤에서 터지는 순간이 제일 짜릿합니다.
+    armorSet:
+      en: IE-3 Martyr
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - chaos
+      - team
+  - id: objective-runner
+    title:
+      en: Objective Runner
+      ko: 목표 러너
+    difficulty:
+      min: 4
+      max: 7
+    primary: sta-11-smg
+    secondary: las-58-talon
+    throwable: g-3-smoke
+    stratagems:
+      - lift-850-jump-pack
+      - eat-17-expendable-anti-tank
+      - orbital-precision-strike
+      - orbital-smoke-strike
+    armorPassive: oxygenator
+    booster: muscle-enhancement
+    summary:
+      en: Stack the Jump Pack with Oxygenator armor for top speed and never stop moving between objectives. Shake off pursuers with the StA-11 SMG plus the Orbital Smoke Strike or Smoke grenades. If a heavy is parked on the objective, remove it in one go with the EAT-17 or the Precision Strike and keep moving.
+      ko: LIFT-850 점프 팩이랑 산소 공급기 아머로 이동 속도를 최대로 올리고 목표 사이를 쉬지 않고 뛰어다닙니다. 쫓아오는 적은 StA-11 기관단총으로 끊으면서 궤도 연막 타격이나 G-3 연막으로 따돌립니다. 목표를 막고 있는 대형 적은 EAT-17이나 궤도 정밀 타격으로 한 번에 치우고 지나갑니다.
+    focus: role
+    tagline:
+      en: Leaves the fighting to the squad and just ticks off objectives
+      ko: 싸움은 팀원한테 맡기고 목표만 찍고 다니는 역할
+    whyFun:
+      en: Finishing three objectives solo while the squad holds the fight is very satisfying.
+      ko: 팀이 싸우는 동안 혼자 목표 세 개를 끝내 놓으면 뿌듯합니다.
+    armorSet:
+      en: O-3 Free Spirit
+    bestAgainst:
+      - terminids
+      - automatons
+      - illuminate
+    tags:
+      - solo
+      - challenge
+  - id: wb-democratic-detonation
+    title:
+      en: Democratic Detonation Set
+      ko: 민주적 폭파 채권 세트
+    difficulty:
+      min: 4
+      max: 7
+    primary: r-36-eruptor
+    secondary: p-19-redeemer
+    throwable: g-123-thermite
+    stratagems:
+      - gr-8-recoilless-rifle
+      - eagle-500kg-bomb
+      - orbital-120mm-he-barrage
+      - a-m-12-mortar-sentry
+    armorPassive: engineering-kit
+    booster: expert-extraction-pilot
+    summary:
+      en: The R-36 Eruptor fires one heavy explosive round at a time, so use it from range on fabricators, bug holes and Devastators. Engineering Kit adds two more Thermite grenades; stick those on tanks and Chargers, and switch to the P-19 Redeemer when something gets close, because the Eruptor will hurt you at point blank.
+      ko: R-36 이럽터는 한 발씩 끊어 쏘는 폭발 소총이라 공장, 벌레 구멍, 데바스테이터를 멀리서 처리하는 데 씁니다. 공병 키트 패시브로 G-123 테르밋을 두 개 더 들고 다니니 탱크나 차저엔 붙여서 녹이고, 가까이 붙은 적은 P-19 리디머로 바꿔 쏩니다. 이럽터는 코앞에서 쏘면 나도 휘말리니 거리부터 벌리고 쏩니다.
+    focus: warbond
+    warbond: democratic-detonation
+    tagline:
+      en: "Eruptor and Thermite: everything in this warbond blows something up"
+      ko: 이럽터랑 테르밋으로 보이는 건 다 터뜨리는 폭발물 채권
+    whyFun:
+      en: Every trigger pull ends in an explosion somewhere, and that never gets old.
+      ko: 방아쇠 당길 때마다 어디선가 뭔가 터지니 질릴 틈이 없습니다.
+    armorSet:
+      en: CE-07 Demolition Specialist
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - theme
+      - chaos
+  - id: wb-polar-patriots
+    title:
+      en: Polar Patriots Set
+      ko: 극지의 애국자 채권 세트
+    difficulty:
+      min: 4
+      max: 7
+    primary: plas-101-purifier
+    secondary: p-113-verdict
+    throwable: g-13-incendiary-impact
+    stratagems:
+      - las-99-quasar-cannon
+      - eagle-airstrike
+      - orbital-gatling-barrage
+      - a-g-16-gatling-sentry
+    armorPassive: servo-assisted
+    booster: motivational-shocks
+    summary:
+      en: Charge the PLAS-101 Purifier fully and drop the shot into the middle of a pack; the blast clears clumps of small bugs. Up close the splash hits you too, so swap to the P-113 Verdict. Motivational Shocks shortens slows from acid and similar hits, which helps a lot against spitter-heavy bug missions.
+      ko: PLAS-101 퓨리파이어는 끝까지 충전해서 쏘면 폭발이 나니 뭉친 벌레 무리 한가운데에 한 발씩 넣습니다. 너무 붙으면 폭발에 나도 맞으니 그때는 P-113 버딕트로 바꿔 씁니다. 동기 부여 충격 부스터가 산성 둔화를 빨리 풀어 줘서 스피터 많은 벌레전에서 덜 답답합니다.
+    focus: warbond
+    warbond: polar-patriots
+    tagline:
+      en: Charged Purifier shots and Winter Warrior armor for snowy bug planets
+      ko: 퓨리파이어 충전샷에 겨울 전사 아머 입고 눈 행성 도는 세트
+    whyFun:
+      en: Timing the release of each charged shot has a nice rhythm to it.
+      ko: 충전 소리 듣다가 놓는 타이밍 맞추는 손맛이 있습니다.
+    armorSet:
+      en: CW-36 Winter Warrior
+    bestAgainst:
+      - terminids
+      - illuminate
+    tags:
+      - theme
+      - solo
+  - id: wb-viper-commandos
+    title:
+      en: Viper Commandos Set
+      ko: 독사 특공대 채권 세트
+    difficulty:
+      min: 4
+      max: 6
+    primary: ar-23a-liberator-carbine
+    secondary: sg-22-bushwhacker
+    throwable: k-2-throwing-knife
+    stratagems:
+      - m-105-stalwart
+      - eagle-napalm-airstrike
+      - orbital-napalm-barrage
+      - eat-17-expendable-anti-tank
+    armorPassive: peak-physique
+    booster: experimental-infusion
+    summary:
+      en: The AR-23A Liberator Carbine is light and fast, good for firing on the move, and the SG-22 Bushwhacker blows off whatever reaches you. Peak Physique boosts melee and weapon handling, and Experimental Infusion turns every stim into a short speed boost. Burn big packs with napalm and save the EAT-17 for heavies.
+      ko: AR-23A 리버레이터 카빈은 가볍고 연사가 빨라서 뛰면서 긁기 좋고, 붙은 적은 SG-22 부시웨커 한 방으로 떼어 냅니다. 이상적인 체형 패시브로 근접 피해와 조작성이 오르고, 실험용 주입 덕에 각성제를 맞을 때마다 잠깐 빨라집니다. 큰 무리는 이글 네이팜 공중타격으로 태우고 대형 적은 EAT-17로 처리합니다.
+    focus: warbond
+    warbond: viper-commandos
+    tagline:
+      en: Jungle commando kit for playing 80s action hero
+      ko: 정글 행성에서 80년대 액션 영화 주인공 흉내 내는 특공대 세트
+    whyFun:
+      en: Running through the jungle with a Stalwart on your hip feels like an old action movie.
+      ko: 스털워트 들고 정글을 뛰어다니면 딱 옛날 액션 영화 같습니다.
+    armorSet:
+      en: PH-202 Twigsnapper
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - roleplay
+      - theme
+  - id: wb-freedoms-flame
+    title:
+      en: Freedom's Flame Set
+      ko: 자유의 불길 채권 세트
+    difficulty:
+      min: 4
+      max: 7
+    primary: flam-66-torcher
+    secondary: p-72-crisper
+    throwable: g-6-frag
+    stratagems:
+      - orbital-napalm-barrage
+      - eagle-napalm-airstrike
+      - las-99-quasar-cannon
+      - md-i4-incendiary-mines
+    armorPassive: inflammable
+    booster: firebomb-hellpods
+    summary:
+      en: "The FLAM-66 Torcher is a flamethrower in the primary slot: hose down a bug pack, back off and let them burn. Inflammable armor cuts fire damage a lot, so you can fight next to your own fires. Chargers and Bile Titans take too long to burn, so use the LAS-99 Quasar Cannon on them, and lay MD-I4 Incendiary Mines on the paths bugs come from."
+      ko: FLAM-66 토처는 주무기 칸에 들어가는 화염방사기라 벌레 무리에 불을 뿌리고 뒤로 빠지면 알아서 타 죽습니다. 인화성 물질 아머가 화염 피해를 크게 줄여 줘서 내가 붙인 불 옆에서 싸워도 버틸 만합니다. 오래 태워야 하는 차저나 바일 타이탄은 LAS-99 퀘이사 캐넌으로 잡고, 벌레가 들어오는 길엔 MD-I4 소이 지뢰를 깔아 둡니다.
+    focus: warbond
+    warbond: freedoms-flame
+    tagline:
+      en: Primary and sidearm are both flamethrowers
+      ko: 주무기도 보조무기도 화염방사기인 불 채권
+    whyFun:
+      en: Bug waves burning up as fast as they arrive is very satisfying.
+      ko: 들어오는 족족 타 버리는 벌레 떼를 보면 속이 시원합니다.
+    armorSet:
+      en: I-09 Heatseeker
+    bestAgainst:
+      - terminids
+    tags:
+      - theme
+      - chaos
+  - id: wb-chemical-agents
+    title:
+      en: Chemical Agents Set
+      ko: 화학 요원 채권 세트
+    difficulty:
+      min: 4
+      max: 6
+    primary: sg-225-breaker
+    secondary: p-11-stim-pistol
+    throwable: g-4-gas
+    stratagems:
+      - tx-41-sterilizer
+      - ax-tx-13-guard-dog-dog-breath
+      - orbital-gas-strike
+      - eat-17-expendable-anti-tank
+    armorPassive: advanced-filtration
+    booster: vitality-enhancement
+    summary:
+      en: Spray incoming packs with the TX-41 Sterilizer; confused enemies start attacking each other. Dog Breath keeps puffing gas around you, so Advanced Filtration armor is a must. Heal hurt teammates from range with the P-11 Stim Pistol, and use the EAT-17 on big targets that shrug off gas.
+      ko: TX-41 스터릴라이저로 몰려오는 무리에 가스를 뿌리면 헷갈린 적끼리 서로 공격합니다. 독 브레스 가드 독이 옆에서 계속 가스를 뿜으니 고급 여과 아머는 꼭 입고, 다친 팀원은 P-11 각성제 권총으로 멀리서 치료합니다. 가스가 잘 안 먹히는 대형 적은 EAT-17로 정리합니다.
+    focus: warbond
+    warbond: chemical-agents
+    tagline:
+      en: Gas to confuse the enemy, stim darts to heal the squad
+      ko: 가스로 적을 헷갈리게 하고 팀원한테 각성제 쏴 주는 화학 세트
+    whyFun:
+      en: Watching enemies fight each other inside your gas cloud never stops being funny.
+      ko: 가스 속에서 적끼리 치고받는 걸 구경하는 재미가 있습니다.
+    armorSet:
+      en: AF-50 Noxious Ranger
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - team
+      - theme
+  - id: wb-truth-enforcers
+    title:
+      en: Truth Enforcers Set
+      ko: 진리의 집행자 채권 세트
+    difficulty:
+      min: 4
+      max: 7
+    primary: sg-20-halt
+    secondary: plas-15-loyalist
+    throwable: g-12-high-explosive
+    stratagems:
+      - mls-4x-commando
+      - a-ac-8-autocannon-sentry
+      - eagle-airstrike
+      - orbital-ems-strike
+    armorPassive: unflinching
+    booster: dead-sprint
+    summary:
+      en: "The SG-20 Halt switches between stun rounds and flechettes: freeze whatever is close with stun rounds, then swap and finish it. Charge the PLAS-15 Loyalist for Devastators and Berserkers. Unflinching armor keeps your aim steady under bot fire, and Dead Sprint burns health to keep running, so only lean on it when escaping."
+      ko: SG-20 홀트는 기절탄과 플레셰트탄을 바꿔 쓸 수 있어서 가까운 적은 기절탄으로 세워 두고 플레셰트탄으로 바꿔 처리합니다. 데바스테이터나 버서커는 PLAS-15 로열리스트를 충전해서 쏩니다. 결연함 아머라 봇 사격을 맞아도 조준이 덜 흔들리고, 데드 스프린트는 체력을 깎으면서 뛰는 거라 도망칠 때만 씁니다.
+    focus: warbond
+    warbond: truth-enforcers
+    tagline:
+      en: "Ministry of Truth enforcer: stun with the Halt, finish with the Loyalist"
+      ko: 진리부 단속반처럼 홀트로 세워 놓고 로열리스트로 마무리하는 세트
+    whyFun:
+      en: Stunning a bot and then taking it apart at your leisure gets addictive.
+      ko: 기절한 봇을 세워 놓고 하나씩 처리하는 게 은근 중독됩니다.
+    armorSet:
+      en: UF-50 Bloodhound
+    bestAgainst:
+      - automatons
+    tags:
+      - roleplay
+      - theme
+  - id: wb-urban-legends
+    title:
+      en: Urban Legends Set
+      ko: 도시 전설 채권 세트
+    difficulty:
+      min: 4
+      max: 6
+    primary: smg-37-defender
+    secondary: cqc-19-stun-lance
+    throwable: g-16-impact
+    stratagems:
+      - sh-51-directional-shield
+      - a-flam-40-flame-sentry
+      - e-at-12-anti-tank-emplacement
+      - orbital-ems-strike
+    armorPassive: siege-ready
+    booster: armed-resupply-pods
+    summary:
+      en: "Set up at a street entrance: E/AT-12 Anti-Tank Emplacement behind you, A/FLAM-40 Flame Sentry covering the gap. The SH-51 Directional Shield blocks fire from the front while your own shots go out, so hold behind it with the SMG-37 Defender and poke anything that reaches you with the CQC-19 Stun Lance. With Armed Resupply Pods, every supply drop doubles as a turret."
+      ko: 골목 입구를 정하면 뒤쪽에 E/AT-12 대전차 거치포를, 틈새엔 A/FLAM-40 화염 센트리를 박아 둡니다. SH-51 방향 방패는 앞에서 오는 사격만 막고 내 총알은 밖으로 나가니, 그 뒤에서 SMG-37 디펜더를 쏘고 붙은 적은 CQC-19 기절 창으로 찌릅니다. 무장 재보급 포드 부스터를 켜면 보급 포드도 잠깐 포탑 노릇을 합니다.
+    focus: warbond
+    warbond: urban-legends
+    tagline:
+      en: Hold a city street behind a shield wall and turrets
+      ko: 방패 세우고 포탑 깔아서 도시 골목 하나 지키는 세트
+    whyFun:
+      en: Turning one alley into a fortress and holding it feels like a tower defense game.
+      ko: 골목 하나를 막아 놓고 버티는 게 디펜스 게임 하는 기분입니다.
+    armorSet:
+      en: SR-18 Roadblock
+    bestAgainst:
+      - terminids
+      - illuminate
+    tags:
+      - team
+      - theme
+  - id: wb-servants-of-freedom
+    title:
+      en: Servants of Freedom Set
+      ko: 자유의 종복 채권 세트
+    difficulty:
+      min: 4
+      max: 6
+    primary: las-17-double-edge-sickle
+    secondary: gp-20-ultimatum
+    throwable: g-50-seeker
+    stratagems:
+      - b-100-portable-hellbomb
+      - eagle-500kg-bomb
+      - orbital-laser
+      - eat-17-expendable-anti-tank
+    armorPassive: integrated-explosives
+    booster: increased-reinforcement-budget
+    summary:
+      en: The LAS-17 Double-Edge Sickle never overheats, but it burns you as the heat climbs, so keep stims ready. One GP-20 Ultimatum shot takes care of a big target. Carry the B-100 Portable Hellbomb into the middle of a base and set it off, and since the IE-3 armor explodes when you die, going down in a crowd still takes enemies with you.
+      ko: LAS-17 더블 엣지 시클은 과열이 안 되는 대신 열이 오를수록 내가 화상을 입으니 각성제를 아끼지 않습니다. 큰 놈은 GP-20 얼티메이텀 한 발로 정리합니다. B-100 휴대용 지옥폭탄은 기지 한가운데로 들고 뛰어 들어가 터뜨리는 용도고, IE-3 아머는 죽으면 몸이 터지니 적 무리 안에서 쓰러져도 손해가 덜합니다.
+    focus: warbond
+    warbond: servants-of-freedom
+    tagline:
+      en: "Martyr kit: even your death is an explosion"
+      ko: 죽을 때도 터지는 순교자 세트
+    whyFun:
+      en: Every death takes a few enemies along, so even dying feels like part of the plan.
+      ko: 쓰러질 때마다 주변 적을 같이 데려가니 죽는 것도 작전이 됩니다.
+    armorSet:
+      en: IE-3 Martyr
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - chaos
+      - roleplay
+  - id: wb-borderline-justice
+    title:
+      en: Borderline Justice Set
+      ko: 정의의 경계선 채권 세트
+    difficulty:
+      min: 4
+      max: 7
+    primary: r-6-deadeye
+    secondary: las-58-talon
+    throwable: ted-63-dynamite
+    stratagems:
+      - lift-860-hover-pack
+      - las-98-laser-cannon
+      - eagle-cluster-bomb
+      - orbital-precision-strike
+    armorPassive: gunslinger
+    booster: sample-extricator
+    summary:
+      en: Work the lever on the R-6 Deadeye and aim every shot at a weak point; Gunslinger armor gets the LAS-58 Talon into your hand almost instantly when something rushes you. Sample Extricator makes big enemies drop samples, so go out of your way to kill Hulks and Chargers with the LAS-98 Laser Cannon and the Precision Strike. Hover onto rocks with the LIFT-860 to shake off pursuers.
+      ko: R-6 데드아이는 레버액션이라 한 발씩 약점을 노리고, 급할 때 꺼내는 LAS-58 탈론은 총잡이 아머 덕에 바로 손에 들립니다. 샘플 해방자 부스터가 대형 적을 잡으면 샘플을 떨구게 해 주니 헐크나 차저는 LAS-98 레이저 캐넌과 궤도 정밀 타격으로 일부러 찾아가서 잡습니다. 쫓기면 LIFT-860 호버 팩으로 바위 위에 떠서 추격을 끊습니다.
+    focus: warbond
+    warbond: borderline-justice
+    tagline:
+      en: Bounty hunter who drops big targets for their samples
+      ko: 데드아이 들고 큰 놈만 골라 잡아 샘플 챙기는 현상금 사냥꾼
+    whyFun:
+      en: Every big kill can drop samples, so hunting heavies starts to feel worth it.
+      ko: 큰 놈 쓰러뜨릴 때마다 샘플이 떨어지니 사냥하는 재미가 붙습니다.
+    armorSet:
+      en: GS-66 Lawmaker
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - roleplay
+      - solo
+  - id: wb-control-group
+    title:
+      en: Control Group Set
+      ko: 대조군 채권 세트
+    difficulty:
+      min: 4
+      max: 7
+    primary: vg-70-variable
+    secondary: p-19-redeemer
+    throwable: g-31-arc
+    stratagems:
+      - plas-45-epoch
+      - a-las-98-laser-sentry
+      - lift-182-warp-pack
+      - orbital-ems-strike
+    armorPassive: adreno-defibrillator
+    booster: stamina-enhancement
+    summary:
+      en: "Switch the VG-70 Variable between its fire modes: slow and accurate at range, fast and loose up close. The PLAS-45 Epoch fires after a charge, so learn the timing before relying on it against heavies. When you get swarmed, teleport out with the LIFT-182 Warp Pack; Adreno-Defibrillator armor brings you back briefly once after a lethal hit, which is your window to stim."
+      ko: VG-70 배리어블은 사격 모드를 바꿔서 멀리선 느리고 정확하게, 가까이선 빠르게 긁습니다. PLAS-45 에포크는 충전 후에 나가는 플라즈마 캐넌이라 대형 적에게 쓰기 전에 모아 쏘는 타이밍부터 익혀 둡니다. 둘러싸이면 LIFT-182 워프 팩으로 순간이동해 빠지고, 아드레노-제세동기 아머가 죽을 때 한 번 잠깐 일으켜 주니 그 틈에 각성제를 맞습니다.
+    focus: warbond
+    warbond: control-group
+    tagline:
+      en: "Prototype lab gear: plasma cannon, laser sentry and a warp pack"
+      ko: 플라즈마 캐넌, 레이저 센트리, 워프 팩까지 실험실 신무기만 챙긴 세트
+    whyFun:
+      en: Warping around next to a laser sentry makes a regular mission feel like sci-fi.
+      ko: 레이저 센트리 옆을 워프로 오가다 보면 평범한 임무도 SF 영화 같아집니다.
+    armorSet:
+      en: AD-26 Bleeding Edge
+    bestAgainst:
+      - automatons
+      - illuminate
+    tags:
+      - theme
+      - solo
+  - id: wb-dust-devils
+    title:
+      en: Dust Devils Set
+      ko: 먼지 폭풍 채권 세트
+    difficulty:
+      min: 4
+      max: 6
+    primary: ar-2-coyote
+    secondary: p-19-redeemer
+    throwable: g-7-pineapple
+    stratagems:
+      - s-11-speargun
+      - eat-700-expendable-napalm
+      - ms-11-solo-silo
+      - eagle-110mm-rocket-pods
+    armorPassive: desert-stormer
+    booster: stamina-enhancement
+    summary:
+      en: A few hits from the AR-2 Coyote set most enemies on fire, so sweep it across a pack and let them burn. Heavies get the S-11 Speargun or a missile from the MS-11 Solo Silo, and a shot from the EAT-700 Expendable Napalm puts a wall of fire in front of a charging swarm. Desert Stormer adds a bit of fire and gas resistance plus throw range, so the G-7 Pineapple reaches further.
+      ko: AR-2 코요테는 몇 발만 맞혀도 불이 붙으니 무리에 한 번 긁어 두면 알아서 탑니다. 대형 적은 S-11 작살총이나 MS-11 솔로 사일로 미사일로 처리하고, 몰려드는 무리 앞엔 EAT-700 일회성 네이팜을 쏴서 불벽을 만듭니다. 사막 돌격대 패시브가 화염과 가스 피해를 조금 막아 주고 투척 거리도 늘려 줘서 G-7 파인애플을 멀리 던질 수 있습니다.
+    focus: warbond
+    warbond: dust-devils
+    tagline:
+      en: Desert raider with an incendiary rifle, a speargun and a personal missile silo
+      ko: 불붙는 소총에 작살총, 개인 미사일 사일로까지 챙긴 사막 약탈자 세트
+    whyFun:
+      en: Switching between fire rifle, harpoon and missile keeps your hands busy in a good way.
+      ko: 불 소총, 작살, 미사일을 번갈아 쓰느라 손이 바쁜 게 재밌습니다.
+    armorSet:
+      en: DS-191 Scorpion
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - theme
+      - chaos
+  - id: wb-python-commandos
+    title:
+      en: Python Commandos Set
+      ko: 금사 특공대 채권 세트
+    difficulty:
+      min: 4
+      max: 7
+    primary: ar-gl-21-one-two
+    secondary: p-19-redeemer
+    throwable: g-6-frag
+    stratagems:
+      - m-1000-maxigun
+      - eagle-airstrike
+      - orbital-railcannon-strike
+      - eat-17-expendable-anti-tank
+    armorPassive: rock-solid
+    booster: vitality-enhancement
+    summary:
+      en: The M-1000 Maxigun feeds from a big ammo backpack, so hold the trigger down on whole lines of infantry. Use the AR/GL-21 One-Two's underbarrel grenades on clumps and small nests, but not up close, since the blast reaches you. Rock Solid keeps you on your feet, so you can keep firing while taking hits.
+      ko: M-1000 맥시건은 대용량 탄약 배낭을 메고 쓰는 거라 탄이 넉넉하니 보병 줄이 보이면 길게 긁어 줍니다. AR/GL-21 원-투의 총열 아래 유탄은 뭉친 적이나 작은 둥지에 쓰고, 가까이 쏘면 나도 맞으니 거리를 둡니다. 굳건한 바위 패시브로 잘 안 넘어져서 맞으면서도 계속 쏠 수 있습니다.
+    focus: warbond
+    warbond: python-commandos
+    tagline:
+      en: Maxigun on your back and a grenade launcher under the rifle
+      ko: 맥시건 돌리면서 원-투 유탄까지 쏘는 금사 특공대 세트
+    whyFun:
+      en: The minigun barely stops the whole mission, which is exactly the point.
+      ko: 미니건 소리가 임무 내내 거의 안 끊깁니다.
+    armorSet:
+      en: RS-40 Beast of Prey
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - theme
+      - chaos
+  - id: wb-redacted-regiment
+    title:
+      en: Redacted Regiment Set
+      ko: 존재하지 않는 부대 채권 세트
+    difficulty:
+      min: 4
+      max: 6
+    primary: r-72-censor
+    secondary: p-35-re-educator
+    throwable: tm-1-lure-mine
+    stratagems:
+      - b-md-c4-pack
+      - eagle-smoke-strike
+      - orbital-railcannon-strike
+      - orbital-ems-strike
+    armorPassive: reduced-signature
+    booster: concealed-insertion
+    summary:
+      en: The suppressed R-72 Censor removes patrols quietly from mid range, and with Reduced Signature armor you can get very close before anyone notices. Stick B/MD C4 on the objective or fabricator, back off and detonate, and throw a TM-1 Lure Mine in front of anything chasing you. If you are spotted, drop the Eagle Smoke Strike and disappear again.
+      ko: 소음기 달린 R-72 센서로 순찰병을 중거리에서 조용히 끊고, 신호 감소 아머까지 입으면 적 코앞까지 들키지 않고 들어갈 수 있습니다. 목표물이나 공장엔 B/MD C4 팩을 붙여 두고 멀리 빠진 다음 터뜨리고, 쫓아오는 적 앞엔 TM-1 유인 지뢰를 던져 둡니다. 들켰으면 이글 연막 타격을 깔고 다시 숨습니다.
+    focus: warbond
+    warbond: redacted-regiment
+    tagline:
+      en: Sneak in unseen, plant C4, walk out
+      ko: 안 들키게 들어가서 C4 붙이고 나오는 사보타주 세트
+    whyFun:
+      en: Blowing up a whole base without anyone knowing you were there is a real thrill.
+      ko: 아무도 모르게 기지 하나를 통째로 날리고 빠져나오는 게 짜릿합니다.
+    armorSet:
+      en: RS-67 Null Cipher
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - solo
+      - roleplay
+  - id: wb-siege-breakers
+    title:
+      en: Siege Breakers Set
+      ko: 공성 파괴자 채권 세트
+    difficulty:
+      min: 5
+      max: 7
+    primary: las-13-trident
+    secondary: p-19-redeemer
+    throwable: g-sh-39-shield
+    stratagems:
+      - cqc-20-breaching-hammer
+      - eat-411-leveller
+      - gl-28-belt-fed-grenade-launcher
+      - eagle-500kg-bomb
+    armorPassive: supplementary-adrenaline
+    booster: vitality-enhancement
+    summary:
+      en: Break into bot bases through walls and doors with the CQC-20 Breaching Hammer, then sweep the inside with the GL-28 Belt-Fed Grenade Launcher. Tanks and turrets get the EAT-411 Leveller; when fire gets heavy, throw a G/SH-39 Shield to put up a bubble. Supplementary Adrenaline refills stamina whenever you take damage, so the charge rarely stalls.
+      ko: 봇 기지 벽이나 문은 CQC-20 벽 폭파 망치로 부수고 들어가고, 안쪽 적은 GL-28 벨트식 유탄 발사기로 쓸어 담습니다. 탱크나 포탑은 EAT-411 평탄화기로 처리하고, 총알이 몰리면 G/SH-39 실드를 던져 방어막부터 세웁니다. 보급 아드레날린 패시브가 맞을 때마다 스태미나를 채워 줘서 돌격하다 멈출 일이 적습니다.
+    focus: warbond
+    warbond: siege-breakers
+    tagline:
+      en: Smash through the wall with a hammer and clear the room with grenades
+      ko: 망치로 벽 부수고 들어가서 유탄으로 쓸어 담는 공성 세트
+    whyFun:
+      en: Breaking a wall open and coming face to face with the bots inside is the best moment of the run.
+      ko: 벽 부수고 들어가서 안에 있던 봇이랑 딱 마주치는 순간이 제일 재밌습니다.
+    armorSet:
+      en: SA-7 Headfirst
+    bestAgainst:
+      - automatons
+    tags:
+      - team
+      - chaos
+  - id: wb-entrenched-division
+    title:
+      en: Entrenched Division Set
+      ko: 견고한 참호 사단 채권 세트
+    difficulty:
+      min: 4
+      max: 6
+    primary: smg-flam-34-stoker
+    secondary: p-69-veto
+    throwable: g-48-giga-grenade
+    stratagems:
+      - a-gm-17-gas-mortar-sentry
+      - b-flam-80-cremator
+      - md-6-anti-personnel-minefield
+      - e-mg-101-hmg-emplacement
+    armorPassive: concussive-padding-hazmat
+    booster: hellpod-space-optimization
+    summary:
+      en: Once you pick a spot to hold, put MD-6 mines in front and the E/MG-101 HMG Emplacement and A/GM-17 Gas Mortar Sentry behind. Whatever makes it past the guns gets burned with the B/FLAM-80 Cremator or the SMG/FLAM-34 Stoker, and big clumps get a G-48 Giga Grenade. The armor halves explosive damage and adds some gas resistance, so fighting near your own mortar is less risky.
+      ko: 버틸 자리를 정하면 앞에 MD-6 대인 지뢰를 깔고 뒤에 E/MG-101 중기관총 거치포와 A/GM-17 가스 박격포 센트리를 세웁니다. 거치포까지 뚫고 들어온 적은 B/FLAM-80 크리메이터나 SMG/FLAM-34 스토커로 태우고, 크게 뭉친 무리엔 G-48 기가 수류탄을 던집니다. 아머가 폭발 피해를 반으로 줄이고 가스 저항도 조금 있어서 내 가스 박격포 근처에서 싸워도 덜 위험합니다.
+    focus: warbond
+    warbond: entrenched-division
+    tagline:
+      en: "Mines, machine-gun nest and gas mortar: dig in and hold"
+      ko: 지뢰 깔고 기관총 진지 세우고 버티는 참호전 세트
+    whyFun:
+      en: Finishing the trench line and then watching wave after wave stall on it is very rewarding.
+      ko: 진지를 다 짓고 밀려오는 적을 그 앞에서 막아 내면 뿌듯합니다.
+    armorSet:
+      en: CPH-26 Commandant
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - team
+      - roleplay
+  - id: wb-ironclad-democracy
+    title:
+      en: Ironclad Democracy Set
+      ko: 철갑의 민주주의 채권 세트
+    difficulty:
+      min: 4
+      max: 7
+    primary: ar-11-arbitrator
+    secondary: p-34-breacher
+    throwable: g-8-immolation
+    stratagems:
+      - eat-17-expendable-anti-tank
+      - exo-45-patriot-exosuit
+      - eagle-airstrike
+      - orbital-precision-strike
+    armorPassive: blunt-force-mitigation
+    booster: surplus-eat-allocation
+    summary:
+      en: Surplus EAT Allocation gives two free EAT-17 calls per mission, so drop one as soon as you land and spend it on the first heavy. The AR-11 Arbitrator's underbarrel shotgun handles anything close, and armored targets get a P-34 Breacher round stuck on them. Blunt Force Mitigation keeps you from being knocked down, so you can hold the front until the EXO-45 Patriot arrives.
+      ko: 초과 EAT 할당 부스터로 EAT-17을 두 번 공짜로 부를 수 있으니 투하하자마자 하나 불러 두고 첫 대형 적에게 씁니다. AR-11 아비트레이터 아래 산탄총은 붙은 적용이고, 장갑 두른 놈은 P-34 브리처 탄을 붙여서 터뜨립니다. 둔기 충격 완화 아머라 잘 안 넘어지니 EXO-45 애국자 엑소슈트가 내려올 때까지 앞에서 버팁니다.
+    focus: warbond
+    warbond: ironclad-democracy
+    tagline:
+      en: Heavy armor and two free EAT calls per mission
+      ko: 무거운 아머 입고 공짜 EAT까지 받아 쓰는 철갑 세트
+    whyFun:
+      en: You stay standing through rockets that would floor anyone else, so you just keep walking forward.
+      ko: 봇 로켓을 맞아도 잘 안 넘어지니 그냥 계속 앞으로 걸어가게 됩니다.
+    armorSet:
+      en: BFM-16 Tanker
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - theme
+      - solo
+  - id: marksman-range
+    title:
+      en: Designated Marksman
+      ko: 지정사수
+    difficulty:
+      min: 4
+      max: 7
+    primary: r-2-amendment
+    secondary: p-92-warrant
+    throwable: g-6-frag
+    stratagems:
+      - apw-1-anti-materiel-rifle
+      - a-mg-43-machine-gun-sentry
+      - eagle-smoke-strike
+      - orbital-railcannon-strike
+    armorPassive: scout
+    booster: uav-recon-booster
+    summary:
+      en: Go prone on high ground and drop small enemies one by one with the R-2 Amendment; Devastators and Hulks get the APW-1 Anti-Materiel Rifle. Put the MG-43 Sentry next to you to catch anything that flanks, and when something slips through, the homing P-92 Warrant finishes it. Scout armor makes pinged spots on the map pulse radar, so you see what is coming.
+      ko: 높은 곳에 엎드려서 R-2 어멘드멘트로 잔챙이를 한 발씩 끊고, 데바스테이터나 헐크는 APW-1 대물소총으로 잡습니다. 옆으로 돌아오는 적은 A/MG-43 기관총 센트리가 받아 주고, 그래도 붙은 놈은 유도되는 P-92 워런트로 마무리합니다. 정찰 아머라 지도에 찍은 곳에서 레이더가 계속 돌아서 뭐가 오는지 먼저 보입니다.
+    focus: weapon
+    tagline:
+      en: Marksman rifle plus anti-materiel rifle, one shot at a time from prone
+      ko: 지정사수 소총에 대물소총까지, 엎드려서 한 발씩 끊는 세팅
+    whyFun:
+      en: Picking a squad's approach apart one headshot at a time is calm and satisfying.
+      ko: 멀리서 한 발씩 머리를 끊어 내는 게 조용하게 재밌습니다.
+    armorSet:
+      en: SC-30 Trailblazer Scout
+    bestAgainst:
+      - automatons
+      - illuminate
+    tags:
+      - solo
+      - theme
+  - id: smg-run-gun
+    title:
+      en: Run and Gun
+      ko: 뛰면서 쏘는 기관단총
+    difficulty:
+      min: 4
+      max: 7
+    primary: smg-32-reprimand
+    secondary: p-19-redeemer
+    throwable: g-16-impact
+    stratagems:
+      - ax-las-5-guard-dog-rover
+      - las-99-quasar-cannon
+      - eagle-strafing-run
+      - orbital-gatling-barrage
+    armorPassive: peak-physique
+    booster: stamina-enhancement
+    summary:
+      en: The SMG-32 Reprimand hits hard for an SMG and handles well on the move, so keep sprinting and fire in short bursts while the Rover burns what chases you. When the magazine runs dry, keep shooting with the P-19 Redeemer instead of stopping to reload. Chargers and Harvesters get the LAS-99 Quasar Cannon; a pack in the open gets the Strafing Run.
+      ko: SMG-32 레프리맨드는 기관단총치고 한 발이 세고 움직이면서도 잘 맞아서, 계속 뛰면서 짧게 끊어 쏘고 쫓아오는 놈은 로버가 지집니다. 탄창이 비면 멈춰서 장전하지 말고 P-19 리디머로 바꿔서 계속 쏩니다. 차저나 하베스터는 LAS-99 퀘이사 캐넌으로, 트인 곳에 모인 무리는 이글 기총소사로 정리합니다.
+    focus: weapon
+    tagline:
+      en: SMG and machine pistol, never stop moving
+      ko: 기관단총이랑 기관권총 들고 멈추지 않고 뛰어다니는 세팅
+    whyFun:
+      en: You almost never stand still, so the whole mission moves at full speed.
+      ko: 거의 서 있을 일이 없어서 임무 전체가 빠르게 굴러갑니다.
+    armorSet:
+      en: PH-9 Predator
+    bestAgainst:
+      - terminids
+      - illuminate
+    tags:
+      - solo
+      - chaos
+  - id: plasma-senator
+    title:
+      en: Plasma Rifleman
+      ko: 플라즈마 소총수
+    difficulty:
+      min: 4
+      max: 7
+    primary: plas-1-scorcher
+    secondary: p-4-senator
+    throwable: g-12-high-explosive
+    stratagems:
+      - plas-45-epoch
+      - eagle-airstrike
+      - orbital-precision-strike
+      - a-ac-8-autocannon-sentry
+    armorPassive: fortified
+    booster: hellpod-space-optimization
+    summary:
+      en: The PLAS-1 Scorcher's bolts do impact plus explosive damage, which is great on Devastator heads and Hulk vents at mid range. The splash also hits you, so switch to the P-4 Senator when a Berserker closes in. Fortified armor halves explosive damage and cuts recoil while crouched; the PLAS-45 Epoch handles tanks and fabricators.
+      ko: PLAS-1 스코처는 한 발에 충격 피해와 폭발 피해가 같이 들어가서 중거리에서 데바스테이터 머리나 헐크 환기구를 노리기 좋습니다. 폭발이 나한테도 튀니 버서커가 붙으면 P-4 세너터로 바꿔 쏩니다. 강화 아머가 폭발 피해를 반으로 줄이고 앉아 쏠 때 반동도 줄여 주고, 탱크나 공장은 PLAS-45 에포크로 처리합니다.
+    focus: weapon
+    tagline:
+      en: Scorcher on the bots, Senator when they get close
+      ko: 스코처로 봇 약점 태우고 붙으면 세너터 꺼내는 플라즈마 세팅
+    whyFun:
+      en: Blue bolts popping on bot armor just looks and feels right.
+      ko: 파란 플라즈마가 봇 장갑에 터지는 게 손맛이 확실합니다.
+    armorSet:
+      en: FS-05 Marksman
+    bestAgainst:
+      - automatons
+    tags:
+      - theme
+      - solo
+  - id: grenade-launcher-all
+    title:
+      en: Grenadier
+      ko: 유탄 몰빵
+    difficulty:
+      min: 4
+      max: 6
+    primary: gl-15-evictor
+    secondary: p-69-veto
+    throwable: g-6-frag
+    stratagems:
+      - gl-21-grenade-launcher
+      - gl-28-belt-fed-grenade-launcher
+      - e-gl-21-grenadier-battlement
+      - eagle-cluster-bomb
+    armorPassive: concussive-padding-reinforced
+    booster: hellpod-space-optimization
+    summary:
+      en: The GL-15 Evictor fires one 440-damage grenade per pump, so use it on clumps and medium targets at a safe distance, and draw the P-69 Veto when something is on top of you. The CPR-80 armor halves explosive damage, which forgives a lot of close calls. Bring the GL-21 for bug holes and the GL-28 Belt-Fed for long fights, and set up the Grenadier Battlement where you plan to hold.
+      ko: GL-15 이빅터는 펌프질 한 번에 유탄 한 발이라 뭉친 적이나 중형 적에게 거리를 두고 쏘고, 코앞까지 온 놈은 P-69 비토로 처리합니다. CPR-80 아머가 폭발 피해를 반으로 줄여 줘서 가까이 터져도 꽤 봐줍니다. 벌레 구멍은 GL-21 유탄 발사기로, 오래 싸울 땐 GL-28 벨트식으로 바꾸고, 버틸 자리엔 E/GL-21 척탄 흉벽을 세웁니다.
+    focus: weapon
+    tagline:
+      en: Pump-action grenade launcher primary and every grenade launcher on the stratagem list
+      ko: 주무기도 유탄, 지원무기도 유탄, 거치물도 유탄인 세팅
+    whyFun:
+      en: There is always something going boom in front of you, which never gets boring.
+      ko: 눈앞에서 계속 뭔가 터지고 있어서 지루할 틈이 없습니다.
+    armorSet:
+      en: CPR-80 Bulwark
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - chaos
+      - theme
+  - id: heat-sink-lasers
+    title:
+      en: Heat Management
+      ko: 열 관리반
+    difficulty:
+      min: 4
+      max: 7
+    primary: las-13-trident
+    secondary: las-58-talon
+    throwable: g-16-impact
+    stratagems:
+      - las-99-quasar-cannon
+      - sh-32-shield-generator-pack
+      - orbital-laser
+      - eagle-airstrike
+    armorPassive: med-kit
+    booster: vitality-enhancement
+    summary:
+      en: The LAS-13 Trident is a laser shotgun that fires six short beams at once, great at close range; let it cool while the LAS-58 Talon covers you. All three energy weapons run on heat rather than ammo, so resupply matters far less than usual. The Shield Generator Pack and Med-Kit armor keep you standing in close fights, and the Quasar Cannon covers anything armored.
+      ko: LAS-13 트라이던트는 짧은 빔 여섯 줄이 한 번에 나가는 레이저 산탄총이라 가까운 적에게 강하고, 열이 차면 LAS-58 탈론으로 바꿔 쏘면서 식힙니다. 에너지 무기 셋이 전부 탄 대신 열로 돌아가서 보급 상자 걱정이 훨씬 줄어듭니다. SH-32 방어막 생성 팩과 구급 키트 아머로 근접전에서 버티고, 장갑 달린 놈은 LAS-99 퀘이사 캐넌으로 잡습니다.
+    focus: weapon
+    tagline:
+      en: No magazines, just laser guns and a heat gauge
+      ko: 탄창 대신 열 게이지만 보면서 쏘는 레이저 총 세팅
+    whyFun:
+      en: You spend the whole mission without once worrying about running out of ammo.
+      ko: 임무 내내 탄약 걱정을 한 번도 안 하게 됩니다.
+    armorSet:
+      en: CM-09 Bonesnapper
+    bestAgainst:
+      - terminids
+      - illuminate
+    tags:
+      - theme
+      - solo
+  - id: crossbow-hunter
+    title:
+      en: Crossbow Hunter
+      ko: 석궁 사냥꾼
+    difficulty:
+      min: 4
+      max: 6
+    primary: cb-9-exploding-crossbow
+    secondary: p-113-verdict
+    throwable: k-2-throwing-knife
+    stratagems:
+      - ax-las-5-guard-dog-rover
+      - mls-4x-commando
+      - eagle-500kg-bomb
+      - orbital-airburst-strike
+    armorPassive: scout
+    booster: uav-recon-booster
+    summary:
+      en: CB-9 bolts fly in a slow arc, so you can lob them over rocks and cover onto enemies behind it. The blast is dangerous up close; when something rushes you, swap to the P-113 Verdict and let the Rover help. Scout armor keeps enemies from spotting you as early, so the Commando is best fired from far off before they react.
+      ko: CB-9 익스플로딩 크로스보우 볼트는 느리게 포물선을 그려서 바위나 엄폐물 너머 적한테 떨어뜨릴 수 있습니다. 가까이선 폭발에 나도 다치니 달려드는 적은 P-113 버딕트로 바꿔 쏘고 로버한테 맡깁니다. 정찰 아머라 적이 나를 늦게 알아채니 MLS-4X 코만도는 적이 반응하기 전에 멀리서 먼저 쏩니다.
+    focus: weapon
+    tagline:
+      en: Exploding crossbow and a heavy revolver, lobbing bolts from cover
+      ko: 폭발 석궁으로 엄폐물 너머에 볼트 떨구는 사냥꾼 세팅
+    whyFun:
+      en: Landing a bolt in an arc over cover onto a target you can barely see feels skillful.
+      ko: 엄폐물 너머로 포물선 그려서 맞히면 은근 실력 느는 기분이 듭니다.
+    armorSet:
+      en: CW-4 Arctic Ranger
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - challenge
+      - solo
+  - id: dog-and-turrets
+    title:
+      en: Pack Handler
+      ko: 자동 화력 조련사
+    difficulty:
+      min: 4
+      max: 6
+    primary: ar-23-liberator
+    secondary: p-2-peacemaker
+    throwable: g-6-frag
+    stratagems:
+      - ax-ar-23-guard-dog
+      - a-mg-43-machine-gun-sentry
+      - a-m-23-ems-mortar-sentry
+      - a-mls-4x-rocket-sentry
+    armorPassive: engineering-kit
+    booster: uav-recon-booster
+    summary:
+      en: Every time you stop, drop the MG-43 Sentry and Rocket Sentry side by side and put the EMS Mortar Sentry behind them to stun whatever approaches. The Guard Dog follows you around and shoots small enemies, so your own gun is mostly for finishing things. Sentries fire even with a teammate in the way, so place them off the squad's path.
+      ko: 멈출 때마다 A/MG-43 기관총 센트리와 A/MLS-4X 로켓 센트리를 나란히 깔고, 뒤에 A/M-23 EMS 박격포 센트리를 세워서 다가오는 적을 기절시킵니다. AX/AR-23 가드 독이 따라다니면서 잔챙이를 쏴 주니 내 총은 마무리용 정도로 씁니다. 센트리는 앞에 팀원이 있어도 그냥 쏘니 팀이 지나다니는 길은 피해서 깝니다.
+    focus: stratagem
+    tagline:
+      en: Guard dog on your back, three sentries around you, very little shooting of your own
+      ko: 가드 독 메고 센트리 셋 깔아서 내가 쏠 일을 줄이는 조합
+    whyFun:
+      en: Most of the kills come from things you placed, so you get to play commander.
+      ko: 처치 대부분이 내가 깔아 둔 것들한테서 나와서 지휘관 하는 기분이 납니다.
+    armorSet:
+      en: CE-35 Trench Engineer
+    bestAgainst:
+      - terminids
+      - automatons
+    tags:
+      - team
+      - theme
+  - id: rocket-barrage
+    title:
+      en: Rocket Barrage
+      ko: 로켓 몰빵
+    difficulty:
+      min: 5
+      max: 7
+    primary: sg-8s-slugger
+    secondary: p-33-missile-pistol
+    throwable: g-60-anti-tank-seeker
+    stratagems:
+      - faf-14-spear
+      - mls-4x-commando
+      - a-mls-4x-rocket-sentry
+      - eagle-110mm-rocket-pods
+    armorPassive: servo-assisted
+    booster: hellpod-space-optimization
+    summary:
+      en: Lock the FAF-14 Spear onto tanks, turrets and fabricators and fire from beyond their range. The MLS-4X Commando is for a quick volley when a target is close, and the Rocket Sentry and 110mm Rocket Pods cover you while the Spear reloads. The P-33 Missile Pistol and G-60 Anti-Tank Seeker mean even your sidearm and grenades hit armor.
+      ko: FAF-14 스피어를 탱크, 포탑, 공장에 락온해서 적 사거리 밖에서 쏩니다. 가까이 온 대형 적은 MLS-4X 코만도로 빠르게 몰아 쏘고, 스피어 장전하는 동안은 A/MLS-4X 로켓 센트리와 이글 110mm 로켓 포드가 받쳐 줍니다. P-33 미사일 권총과 G-60 대전차 드론까지 챙겨서 보조무기와 수류탄도 장갑을 칠 수 있습니다.
+    focus: stratagem
+    tagline:
+      en: Spear lock-ons, Commando, rocket sentry and rocket pods
+      ko: 스피어부터 로켓 포드까지 로켓만 네 종류 챙긴 대전차 조합
+    whyFun:
+      en: Hearing the lock-on tone and watching the missile arc into a tank is really satisfying.
+      ko: 락온 소리 듣고 미사일이 탱크로 꽂히는 게 시원합니다.
+    armorSet:
+      en: SA-32 Dynamo
+    bestAgainst:
+      - automatons
+      - terminids
+    tags:
+      - team
+      - theme
+  - id: machine-gun-nest
+    title:
+      en: Machine Gun Nest
+      ko: 기관총 진지
+    difficulty:
+      min: 4
+      max: 6
+    primary: ar-23c-liberator-concussive
+    secondary: p-2-peacemaker
+    throwable: g-12-high-explosive
+    stratagems:
+      - mg-206-heavy-machine-gun
+      - a-mg-43-machine-gun-sentry
+      - e-mg-101-hmg-emplacement
+      - eagle-strafing-run
+    armorPassive: fortified
+    booster: vitality-enhancement
+    summary:
+      en: Crouch or go prone with the MG-206 Heavy Machine Gun; Fortified armor cuts recoil further, so you can hold on target. Build a line with the E/MG-101 HMG Emplacement and MG-43 Sentry side by side, and use the Strafing Run on packs in the open. The concussive Liberator knocks enemies back, which buys time on the reload.
+      ko: MG-206 중기관총은 앉거나 엎드려서 쏘고, 강화 아머가 그 자세 반동을 더 줄여 줘서 목표에 계속 붙여 둘 수 있습니다. E/MG-101 중기관총 거치포와 A/MG-43 기관총 센트리를 나란히 세워 사선을 만들고, 트인 곳에 몰린 무리엔 이글 기총소사를 부릅니다. AR-23C 리버레이터 컨커시브는 적을 밀어내서 장전할 시간을 벌어 줍니다.
+    focus: stratagem
+    tagline:
+      en: Heavy machine gun, MG sentry, HMG emplacement and strafing runs
+      ko: 들고 쏘는 것도, 까는 것도, 하늘에서 오는 것도 전부 기관총
+    whyFun:
+      en: Three machine guns firing down the same street at once sounds great.
+      ko: 기관총 세 자루가 한 방향으로 같이 쏟아붓는 소리가 좋습니다.
+    armorSet:
+      en: FS-23 Battle Master
+    bestAgainst:
+      - automatons
+      - illuminate
+    tags:
+      - team
+      - theme

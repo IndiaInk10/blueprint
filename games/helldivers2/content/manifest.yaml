@@ -1,0 +1,6 @@
+# Content release. version/updatedAt are written by `pnpm --filter @guide/game-helldivers2 content:stamp`.
+kind: manifest
+schemaVersion: 1
+version: 2026.09.27.5
+gameVersion: 7.1.1 (1.007.101)
+updatedAt: 2026-09-27

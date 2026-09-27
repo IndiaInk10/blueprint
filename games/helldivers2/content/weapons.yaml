@@ -1,0 +1,1451 @@
+# Primary, secondary and throwable weapons, from helldivers.wiki.gg. Korean names from namu.wiki and PlayStation Blog Korea.
+# icon: image file name on helldivers.wiki.gg; fetched and cached at runtime, never bundled.
+kind: weapon-catalog
+schemaVersion: 1
+revision: 1
+updatedAt: 2026-09-27
+weapons:
+  - id: ar-11-arbitrator
+    name:
+      en: AR-11 Arbitrator
+      ko: AR-11 아비트레이터
+    slot: primary
+    category: assault-rifle
+    armorPen: light
+    source: Ironclad Democracy
+    icon: AR-11_Arbitrator_Primary_Render.png
+    notes:
+      en: Fast-firing 1,200 rpm light pen caseless rifle with a 4-shell underbarrel 10-gauge shotgun (medium pen) for close threats.
+      ko: 1,200 rpm으로 빠르게 연사하는 경장갑 관통 무탄피 소총으로, 근접 위협에 대응하는 4발들이 10게이지 총열 하부 산탄총(중장갑 관통)이 달려 있습니다.
+  - id: ar-2-coyote
+    name:
+      en: AR-2 Coyote
+      ko: AR-2 코요테
+    slot: primary
+    category: assault-rifle
+    armorPen: medium
+    traits:
+      - incendiary
+    source: Dust Devils
+    icon: AR-2_Coyote_Primary_Render.png
+    notes:
+      en: Medium pen incendiary assault rifle (75 damage, 600 rpm) that sets most enemies on fire within a few hits.
+      ko: 중장갑 관통 소이 돌격소총(피해량 75, 600 rpm)으로, 몇 발만 맞히면 대부분의 적에게 불을 붙입니다.
+  - id: ar-23-liberator
+    name:
+      en: AR-23 Liberator
+      ko: AR-23 리버레이터
+    slot: primary
+    category: assault-rifle
+    armorPen: light
+    source: Starter equipment
+    icon: AR-23_Liberator_Primary_Render.png
+    notes:
+      en: Starter light pen assault rifle with 90 damage, 640 rpm and a 45-round magazine; a reliable all-rounder against small enemies.
+      ko: 피해량 90, 640 rpm, 45발 탄창을 갖춘 기본 경장갑 관통 돌격소총으로, 소형 적을 상대로 믿을 만한 만능 무기입니다.
+  - id: ar-23a-liberator-carbine
+    name:
+      en: AR-23A Liberator Carbine
+      ko: AR-23A 리버레이터 카빈
+    slot: primary
+    category: assault-rifle
+    armorPen: light
+    source: Viper Commandos
+    icon: AR-23A_Liberator_Carbine_Primary_Render.png
+    notes:
+      en: Light pen carbine variant of the Liberator with a faster 920 rpm fire rate for about 1,380 DPS at close range.
+      ko: 리버레이터의 경장갑 관통 카빈 버전으로, 920 rpm의 더 빠른 연사 속도로 근거리에서 약 1,380 DPS를 냅니다.
+  - id: ar-23c-liberator-concussive
+    name:
+      en: AR-23C Liberator Concussive
+      ko: AR-23C 리버레이터 컨커시브
+    slot: primary
+    category: assault-rifle
+    armorPen: light
+    source: Steeled Veterans
+    icon: AR-23C_Liberator_Concussive_Primary_Render.png
+    notes:
+      en: Low-damage 400 rpm light pen rifle whose rounds stagger and knock back enemies, built for crowd control.
+      ko: 피해량이 낮은 400 rpm 경장갑 관통 소총으로, 탄환이 적을 경직시키고 밀쳐 내는 군중 제어용 무기입니다.
+  - id: ar-23p-liberator-penetrator
+    name:
+      en: AR-23P Liberator Penetrator
+      ko: AR-23P 리버레이터 페네트레이터
+    slot: primary
+    category: assault-rifle
+    armorPen: medium
+    source: Helldivers Mobilize
+    icon: AR-23P_Liberator_Penetrator_Primary_Render.png
+    notes:
+      en: Medium pen Liberator variant that gives up some damage (65 per shot) to hit armored weak spots.
+      ko: 피해량 일부(발당 65)를 포기하는 대신 장갑을 두른 약점을 맞힐 수 있는 중장갑 관통 리버레이터 변형입니다.
+  - id: ar-32-pacifier
+    name:
+      en: AR-32 Pacifier
+      ko: AR-32 퍼시파이어
+    slot: primary
+    category: assault-rifle
+    armorPen: medium
+    traits:
+      - stun
+    source: Force of Law
+    icon: AR-32_Pacifier_Primary_Render.png
+    notes:
+      en: Medium pen stun-round assault rifle with low 55 damage, built to lock enemies in place for the squad.
+      ko: 피해량이 55로 낮은 중장갑 관통 기절탄 돌격소총으로, 분대를 위해 적을 제자리에 묶어 두도록 설계되었습니다.
+  - id: ar-59-suppressor
+    name:
+      en: AR-59 Suppressor
+      ko: AR-59 서프레서
+    slot: primary
+    category: assault-rifle
+    armorPen: light
+    traits:
+      - suppressed
+    source: Redacted Regiment
+    icon: AR-59_Suppressor_Primary_Render.png
+    notes:
+      en: Integrally suppressed light pen rifle (80 damage, 850 rpm) for stealth play; its slow subsonic rounds lose damage at range.
+      ko: 은밀 플레이용 일체형 소음 경장갑 관통 소총(피해량 80, 850 rpm)입니다. 느린 아음속 탄이라 원거리에서는 피해량이 줄어듭니다.
+  - id: ar-61-tenderizer
+    name:
+      en: AR-61 Tenderizer
+      ko: AR-61 텐더라이저
+    slot: primary
+    category: assault-rifle
+    armorPen: light
+    source: Polar Patriots
+    icon: AR-61_Tenderizer_Primary_Render.png
+    notes:
+      en: Hard-hitting light pen assault rifle with 105 damage per shot and a selectable 600 or 850 rpm fire rate.
+      ko: 발당 피해량 105의 강력한 경장갑 관통 돌격소총으로, 연사 속도를 600 또는 850 rpm 중에서 선택할 수 있습니다.
+  - id: ar-gl-21-one-two
+    name:
+      en: AR/GL-21 One-Two
+      ko: AR/GL-21 원-투
+    slot: primary
+    category: assault-rifle
+    armorPen: light
+    traits:
+      - explosive
+    source: Python Commandos
+    icon: AR-GL-21_One_Two_Primary_Render.png
+    notes:
+      en: Light pen 8mm assault rifle with an underbarrel 40mm grenade launcher for demolition and groups.
+      ko: 철거와 적 무리 처리를 위한 40mm 총열 하부 유탄 발사기가 달린 경장갑 관통 8mm 돌격소총입니다.
+  - id: arc-12-blitzer
+    name:
+      en: ARC-12 Blitzer
+      ko: ARC-12 블리처
+    slot: primary
+    category: energy
+    armorPen: medium
+    traits:
+      - arc
+    source: Cutting Edge
+    icon: ARC-12_Blitzer_Primary_Render.png
+    notes:
+      en: Infinite-ammo arc weapon whose 250-damage bolts chain between nearby enemies; strong against swarms at short range.
+      ko: 피해량 250의 전격이 주변 적에게 연쇄되는 무한 탄약 아크 무기로, 근거리 적 무리에 강합니다.
+  - id: br-14-adjudicator
+    name:
+      en: BR-14 Adjudicator
+      ko: BR-14 어드주디케이터
+    slot: primary
+    category: assault-rifle
+    armorPen: medium
+    source: Democratic Detonation
+    icon: BR-14_Adjudicator_Primary_Render.png
+    notes:
+      en: Medium pen battle rifle with 95 damage per shot and a 30-round magazine for precise fire on armored targets.
+      ko: 발당 피해량 95, 30발 탄창을 갖춘 중장갑 관통 전투소총으로, 장갑 표적을 정밀하게 사격합니다.
+  - id: cb-9-exploding-crossbow
+    name:
+      en: CB-9 Exploding Crossbow
+      ko: CB-9 익스플로딩 크로스보우
+    slot: primary
+    category: explosive
+    armorPen: medium
+    traits:
+      - explosive
+      - one-handed
+    source: Democratic Detonation
+    icon: CB-9_Exploding_Crossbow_Primary_Render.png
+    notes:
+      en: One-handed crossbow firing slow, arcing explosive bolts (350 explosion damage) for single-target and splash damage.
+      ko: 느리게 포물선을 그리는 폭발 볼트(폭발 피해량 350)를 발사하는 한손 석궁으로, 단일 표적 피해와 범위 피해를 줍니다.
+  - id: dbs-2-double-freedom
+    name:
+      en: DBS-2 Double Freedom
+      ko: DBS-2 더블 프리덤
+    slot: primary
+    category: shotgun
+    armorPen: medium
+    traits:
+      - rounds-reload
+    source: Superstore
+    icon: DBS-2_Shotgun_Primary_Render.png
+    notes:
+      en: Double-barrel medium pen shotgun with 840 damage per shot for heavy point-blank burst damage.
+      ko: 발당 피해량 840의 쌍열 중장갑 관통 산탄총으로, 초근거리에서 강력한 순간 피해를 줍니다.
+  - id: flam-66-torcher
+    name:
+      en: FLAM-66 Torcher
+      ko: FLAM-66 토처
+    slot: primary
+    category: special
+    armorPen: heavy
+    traits:
+      - incendiary
+    source: Freedom's Flame
+    icon: FLAM-66_Torcher_Primary_Render.png
+    notes:
+      en: Primary flamethrower dealing 150 fire DPS with heavy armor penetration, strong against swarms at short range.
+      ko: 150의 화염 DPS를 내며 고장갑 관통을 지닌 주무기 화염방사기로, 근거리 적 무리에 강합니다.
+  - id: gl-15-evictor
+    name:
+      en: GL-15 Evictor
+      ko: GL-15 이빅터
+    slot: primary
+    category: explosive
+    armorPen: medium
+    traits:
+      - explosive
+      - rounds-reload
+    source: Ironclad Democracy
+    icon: GL-15_Evictor_Primary_Render.png
+    notes:
+      en: Pump-action medium pen grenade launcher with 440 explosion damage per round, reloaded one shell at a time.
+      ko: 발당 폭발 피해량 440의 펌프액션 중장갑 관통 유탄 발사기로, 한 발씩 장전합니다.
+  - id: jar-5-dominator
+    name:
+      en: JAR-5 Dominator
+      ko: JAR-5 도미네이터
+    slot: primary
+    category: special
+    armorPen: medium
+    source: Steeled Veterans
+    icon: JAR-5_Dominator_Primary_Render.png
+    notes:
+      en: Medium pen jet-propelled bolt rifle with 275 damage per shot and a 15-round magazine.
+      ko: 발당 피해량 275, 15발 탄창을 갖춘 중장갑 관통 제트 추진 볼트 소총입니다.
+  - id: las-12-sai
+    name:
+      en: LAS-12 Sai
+      ko: LAS-12 사이
+    slot: primary
+    category: energy
+    armorPen: medium
+    traits:
+      - one-handed
+      - heat
+    source: Superstore
+    icon: LAS-12_Sai_Primary_Render.png
+    notes:
+      en: One-handed medium pen laser SMG firing at 800 rpm with heat-based ammo, built for close-range crowd control.
+      ko: 열 기반 탄약을 사용하며 800 rpm으로 발사하는 한손 중장갑 관통 레이저 기관단총으로, 근거리 군중 제어용입니다.
+  - id: las-13-trident
+    name:
+      en: LAS-13 Trident
+      ko: LAS-13 트라이던트
+    slot: primary
+    category: energy
+    armorPen: light
+    traits:
+      - heat
+    source: Siege Breakers
+    icon: LAS-13_Trident_Primary_Render.png
+    notes:
+      en: Light pen laser shotgun firing six short beams per shot with near-hitscan speed and high close-range DPS.
+      ko: 한 번에 짧은 빔 6줄을 발사하는 경장갑 관통 레이저 산탄총으로, 즉발에 가까운 탄속과 높은 근거리 DPS를 지녔습니다.
+  - id: las-16-sickle
+    name:
+      en: LAS-16 Sickle
+      ko: LAS-16 시클
+    slot: primary
+    category: energy
+    armorPen: light
+    traits:
+      - heat
+    source: Cutting Edge
+    icon: LAS-16_Sickle_Primary_Render.png
+    notes:
+      en: Light pen laser rifle (60 damage, 750 rpm) that uses heat instead of magazines and swaps heat sinks when overheated.
+      ko: 탄창 대신 열을 사용하는 경장갑 관통 레이저 소총(피해량 60, 750 rpm)으로, 과열되면 방열판을 교체합니다.
+  - id: las-17-double-edge-sickle
+    name:
+      en: LAS-17 Double-Edge Sickle
+      ko: LAS-17 더블 엣지 시클
+    slot: primary
+    category: energy
+    armorPen: heavy
+    traits:
+      - heat
+    source: Servants of Freedom
+    icon: LAS-17_Double-Edge_Sickle_Primary_Render.png
+    notes:
+      en: Sickle variant without overheat protection that can fire indefinitely and gains damage at high heat, at the cost of burning its user.
+      ko: 과열 방지 기능이 없는 시클 변형으로, 끝없이 발사할 수 있고 열이 높을수록 피해량이 늘지만 대신 사용자가 화상을 입습니다.
+  - id: las-5-scythe
+    name:
+      en: LAS-5 Scythe
+      ko: LAS-5 사이스
+    slot: primary
+    category: energy
+    armorPen: light
+    traits:
+      - beam
+      - heat
+    source: Helldivers Mobilize
+    icon: LAS-5_Scythe_Primary_Render.png
+    notes:
+      en: Continuous light pen laser beam dealing about 350 DPS with heat-based ammo; accurate at any range.
+      ko: 열 기반 탄약으로 약 350 DPS를 내는 지속형 경장갑 관통 레이저 빔으로, 거리와 관계없이 정확합니다.
+  - id: m7s-smg
+    name:
+      en: M7S SMG
+      ko: M7S 기관단총
+    slot: primary
+    category: smg
+    armorPen: light
+    traits:
+      - one-handed
+      - suppressed
+    source: "Halo: ODST"
+    icon: M7S_SMG_Primary_Render.png
+    notes:
+      en: Suppressed one-handed light pen SMG (90 damage, 872 rpm) from the Halo ODST warbond, suited to stealth.
+      ko: Halo ODST 전쟁채권의 소음 한손 경장갑 관통 기관단총(피해량 90, 872 rpm)으로, 은밀 플레이에 적합합니다.
+  - id: m90a-shotgun
+    name:
+      en: M90A Shotgun
+      ko: M90A 샷건
+    slot: primary
+    category: shotgun
+    armorPen: light
+    traits:
+      - rounds-reload
+    source: "Halo: ODST"
+    icon: M90A_Shotgun_Primary_Render.png
+    notes:
+      en: Six-shell light pen pump shotgun with high 605 damage per shot from the Halo ODST warbond.
+      ko: Halo ODST 전쟁채권의 6발들이 경장갑 관통 펌프 산탄총으로, 발당 피해량이 605로 높습니다.
+  - id: ma5c-assault-rifle
+    name:
+      en: MA5C Assault Rifle
+      ko: MA5C 어썰트 라이플
+    slot: primary
+    category: assault-rifle
+    armorPen: medium
+    source: "Halo: ODST"
+    icon: MA5C_Assault_Rifle_Primary_Render.png
+    notes:
+      en: Medium pen assault rifle with 90 damage and a 32-round magazine from the Halo ODST warbond.
+      ko: Halo ODST 전쟁채권의 중장갑 관통 돌격소총으로, 피해량 90에 32발 탄창을 갖췄습니다.
+  - id: mp-98-knight
+    name:
+      en: MP-98 Knight
+      ko: MP-98 나이트
+    slot: primary
+    category: smg
+    armorPen: light
+    traits:
+      - one-handed
+    source: Super Citizen Edition
+    icon: MP-98_Knight_Primary_Render.png
+    notes:
+      en: One-handed light pen SMG with a very high 1,380 rpm fire rate that empties its 50-round magazine quickly.
+      ko: 1,380 rpm의 매우 빠른 연사 속도를 지닌 한손 경장갑 관통 기관단총으로, 50발 탄창을 금방 비웁니다.
+  - id: plas-1-scorcher
+    name:
+      en: PLAS-1 Scorcher
+      ko: PLAS-1 스코처
+    slot: primary
+    category: energy
+    armorPen: light
+    traits:
+      - explosive
+    source: Helldivers Mobilize
+    icon: PLAS-1_Scorcher_Primary_Render.png
+    notes:
+      en: Plasma rifle whose 20-round bolts deal 100 impact plus 100 explosive damage, good against Automaton weak points.
+      ko: 20발 탄창의 볼트가 충격 피해 100과 폭발 피해 100을 주는 플라즈마 소총으로, 오토마톤 약점 공략에 좋습니다.
+  - id: plas-101-purifier
+    name:
+      en: PLAS-101 Purifier
+      ko: PLAS-101 퓨리파이어
+    slot: primary
+    category: energy
+    armorPen: medium
+    traits:
+      - chargeup
+      - explosive
+    source: Polar Patriots
+    icon: PLAS-101_Purifier_Primary_Render.png
+    notes:
+      en: Chargeable plasma rifle whose charged shots explode for up to 300 damage with medium armor penetration.
+      ko: 충전 가능한 플라즈마 소총으로, 충전 사격은 폭발하여 최대 300의 피해를 주며 중장갑 관통을 지닙니다.
+  - id: plas-39-accelerator-rifle
+    name:
+      en: PLAS-39 Accelerator Rifle
+      ko: PLAS-39 가속 소총
+    slot: primary
+    category: energy
+    armorPen: medium
+    traits:
+      - explosive
+    source: Righteous Revenants
+    icon: PLAS-39_Accelerator_Rifle_Primary_Render.png
+    notes:
+      en: Burst-fire medium pen plasma rifle dealing 250 damage plus a small explosion per shot.
+      ko: 발당 피해량 250에 작은 폭발을 더하는 점사식 중장갑 관통 플라즈마 소총입니다.
+  - id: r-2-amendment
+    name:
+      en: R-2 Amendment
+      ko: R-2 어멘드멘트
+    slot: primary
+    category: marksman-rifle
+    armorPen: light
+    source: Masters of Ceremony
+    icon: R-2_Amendment_Primary_Render.png
+    notes:
+      en: Light pen marksman rifle with 200 damage per shot and a 20-round magazine for picking off small enemies.
+      ko: 발당 피해량 200, 20발 탄창을 갖춘 경장갑 관통 지정사수 소총으로, 소형 적을 하나씩 처치하는 데 쓰입니다.
+  - id: r-2124-constitution
+    name:
+      en: R-2124 Constitution
+      ko: R-2124 콘스티튜션
+    slot: primary
+    category: marksman-rifle
+    armorPen: medium
+    traits:
+      - rounds-reload
+    source: Liberty Day
+    icon: R-2124_Constitution_Primary_Render.png
+    notes:
+      en: Ceremonial bolt-action medium pen rifle with a 5-round clip and the lowest DPS of any primary; a challenge weapon.
+      ko: 5발 클립을 쓰는 의장용 볼트액션 중장갑 관통 소총으로, 주무기 중 DPS가 가장 낮은 도전용 무기입니다.
+  - id: r-36-eruptor
+    name:
+      en: R-36 Eruptor
+      ko: R-36 이럽터
+    slot: primary
+    category: explosive
+    armorPen: heavy
+    traits:
+      - explosive
+    source: Democratic Detonation
+    icon: R-36_Eruptor_Primary_Render.png
+    notes:
+      en: Bolt-action explosive rifle whose heavy pen shells deal large impact and blast damage.
+      ko: 고장갑 관통 탄이 큰 충격 피해와 폭발 피해를 주는 볼트액션 폭발 소총입니다.
+  - id: r-4-hyena
+    name:
+      en: R-4 Hyena
+      ko: R-4 하이에나
+    slot: primary
+    category: marksman-rifle
+    armorPen: medium
+    traits:
+      - incendiary
+    source: Celestial Fence
+    icon: R-4_Hyena_Primary_Render.png
+    notes:
+      en: Medium pen incendiary marksman rifle (220 damage) that sets targets on fire at range.
+      ko: 원거리에서 표적에 불을 붙이는 중장갑 관통 소이 지정사수 소총(피해량 220)입니다.
+  - id: r-6-deadeye
+    name:
+      en: R-6 Deadeye
+      ko: R-6 데드아이
+    slot: primary
+    category: marksman-rifle
+    armorPen: medium
+    traits:
+      - rounds-reload
+    source: Borderline Justice
+    icon: R-6_Deadeye_Primary_Render.png
+    notes:
+      en: Lever-action medium pen rifle with 300 damage per shot, reloaded round by round.
+      ko: 발당 피해량 300의 레버액션 중장갑 관통 소총으로, 한 발씩 장전합니다.
+  - id: r-63-diligence
+    name:
+      en: R-63 Diligence
+      ko: R-63 딜리전스
+    slot: primary
+    category: marksman-rifle
+    armorPen: light
+    source: Helldivers Mobilize
+    icon: R-63_Diligence_Primary_Render.png
+    notes:
+      en: Light pen marksman rifle (165 damage, 25 rounds) for accurate long-range fire on light enemies.
+      ko: 경장갑 적을 원거리에서 정확히 사격하기 위한 경장갑 관통 지정사수 소총(피해량 165, 25발)입니다.
+  - id: r-63cs-diligence-counter-sniper
+    name:
+      en: R-63CS Diligence Counter Sniper
+      ko: R-63CS 딜리전스 카운터 저격소총
+    slot: primary
+    category: marksman-rifle
+    armorPen: medium
+    source: Helldivers Mobilize
+    icon: R-63CS_Diligence_Counter_Sniper_Primary_Render.png
+    notes:
+      en: Medium pen marksman rifle with 200 damage per shot for long-range fire on armored targets.
+      ko: 발당 피해량 200의 중장갑 관통 지정사수 소총으로, 원거리의 장갑 표적을 사격합니다.
+  - id: r-72-censor
+    name:
+      en: R-72 Censor
+      ko: R-72 센서
+    slot: primary
+    category: marksman-rifle
+    armorPen: light
+    traits:
+      - suppressed
+    source: Redacted Regiment
+    icon: R-72_Censor_Primary_Render.png
+    notes:
+      en: Suppressed light pen marksman rifle (165 damage) built for stealthy mid-range picks.
+      ko: 중거리에서 은밀하게 적을 처치하도록 설계된 소음 경장갑 관통 지정사수 소총(피해량 165)입니다.
+  - id: r-40-k-hot-shot-marksman-rifle
+    name:
+      en: R/40-K Hot-Shot Marksman Rifle
+      ko: R/40-K 핫샷 마크맨 라이플
+    slot: primary
+    category: energy
+    armorPen: medium
+    source: Castellan’s Creed
+    icon: R-40-K_Hot-Shot_Primary_Render.png
+    notes:
+      en: Medium pen energy marksman rifle with 275 damage per shot and a 12-round magazine.
+      ko: 발당 피해량 275, 12발 탄창을 갖춘 중장갑 관통 에너지 지정사수 소총입니다.
+  - id: sg-20-halt
+    name:
+      en: SG-20 Halt
+      ko: SG-20 홀트
+    slot: primary
+    category: shotgun
+    armorPen: medium
+    traits:
+      - rounds-reload
+    source: Truth Enforcers
+    icon: SG-20_Halt_Primary_Render.png
+    notes:
+      en: Shotgun that switches between medium pen flechette rounds and light pen stun rounds.
+      ko: 중장갑 관통 플레셰트탄과 경장갑 관통 기절탄을 전환해 쓰는 산탄총입니다.
+  - id: sg-225-breaker
+    name:
+      en: SG-225 Breaker
+      ko: SG-225 브레이커
+    slot: primary
+    category: shotgun
+    armorPen: light
+    source: Helldivers Mobilize
+    icon: SG-225_Breaker_Primary_Render.png
+    notes:
+      en: Automatic light pen magazine-fed shotgun with high close-range DPS (about 1,650).
+      ko: 근거리 DPS가 높은(약 1,650) 자동 경장갑 관통 탄창식 산탄총입니다.
+  - id: sg-225ie-breaker-incendiary
+    name:
+      en: SG-225IE Breaker Incendiary
+      ko: SG-225IE 브레이커 인센디어리
+    slot: primary
+    category: shotgun
+    armorPen: light
+    traits:
+      - incendiary
+    source: Steeled Veterans
+    icon: SG-225IE_Breaker_Incendiary_Primary_Render.png
+    notes:
+      en: Magazine-fed light pen shotgun whose pellets set enemies on fire, strong against Terminid swarms.
+      ko: 산탄이 적에게 불을 붙이는 탄창식 경장갑 관통 산탄총으로, 테르미니드 무리에 강합니다.
+  - id: sg-225sp-breaker-spray-and-pray
+    name:
+      en: SG-225SP Breaker Spray&Pray
+      ko: SG-225SP 브레이커 스프레이 앤 프레이
+    slot: primary
+    category: shotgun
+    armorPen: light
+    source: Helldivers Mobilize
+    icon: SG-225SP_Breaker_Spray&Pray_Primary_Render.png
+    notes:
+      en: Automatic light pen shotgun with a 26-round magazine that trades damage per pellet for volume of fire.
+      ko: 26발 탄창을 갖춘 자동 경장갑 관통 산탄총으로, 펠릿당 피해량을 낮추는 대신 화력의 양을 늘렸습니다.
+  - id: sg-451-cookout
+    name:
+      en: SG-451 Cookout
+      ko: SG-451 쿡아웃
+    slot: primary
+    category: shotgun
+    armorPen: light
+    traits:
+      - rounds-reload
+      - incendiary
+    source: Freedom's Flame
+    icon: SG-451_Cookout_Primary_Render.png
+    notes:
+      en: Light pen incendiary pump shotgun with wide pellet spread that ignites small enemies for damage over time.
+      ko: 산탄이 넓게 퍼지는 경장갑 관통 소이 펌프 산탄총으로, 소형 적에게 불을 붙여 지속 피해를 줍니다.
+  - id: sg-8-punisher
+    name:
+      en: SG-8 Punisher
+      ko: SG-8 퍼니셔
+    slot: primary
+    category: shotgun
+    armorPen: light
+    traits:
+      - rounds-reload
+    source: Helldivers Mobilize
+    icon: SG-8_Punisher_Primary_Render.png
+    notes:
+      en: Light pen pump shotgun with 405 damage per shell for close-range stopping power.
+      ko: 탄당 피해량 405의 경장갑 관통 펌프 산탄총으로, 근거리 저지력이 뛰어납니다.
+  - id: sg-8p-punisher-plasma
+    name:
+      en: SG-8P Punisher Plasma
+      ko: SG-8P 퍼니셔 플라즈마
+    slot: primary
+    category: energy
+    armorPen: medium
+    traits:
+      - explosive
+    source: Cutting Edge
+    icon: SG-8P_Punisher_Plasma_Primary_Render.png
+    notes:
+      en: Plasma shotgun lobbing medium pen explosive bolts (225 damage) in an arc.
+      ko: 중장갑 관통 폭발 볼트(피해량 225)를 포물선으로 날려 보내는 플라즈마 산탄총입니다.
+  - id: sg-8s-slugger
+    name:
+      en: SG-8S Slugger
+      ko: SG-8S 슬러거
+    slot: primary
+    category: shotgun
+    armorPen: medium
+    traits:
+      - rounds-reload
+    source: Helldivers Mobilize
+    icon: SG-8S_Slugger_Primary_Render.png
+    notes:
+      en: Pump shotgun firing medium pen slugs (330 damage) usable at longer range than buckshot.
+      ko: 중장갑 관통 슬러그탄(피해량 330)을 쏘는 펌프 산탄총으로, 벅샷보다 먼 거리에서 쓸 수 있습니다.
+  - id: sg-97-sweeper
+    name:
+      en: SG-97 Sweeper
+      ko: SG-97 스위퍼
+    slot: primary
+    category: shotgun
+    armorPen: medium
+    traits:
+      - rounds-reload
+    source: Superstore
+    icon: SG-97_Shotgun_Primary_Render.png
+    notes:
+      en: Medium pen slam-fire shotgun that dumps 7 shells at 150 rpm for high burst damage.
+      ko: 7발을 150 rpm으로 쏟아붓는 중장갑 관통 슬램파이어 산탄총으로, 순간 피해가 높습니다.
+  - id: smg-203-gallant
+    name:
+      en: SMG-203 Gallant
+      ko: SMG-203 갤런트
+    slot: primary
+    category: smg
+    armorPen: medium
+    traits:
+      - one-handed
+    source: Exo Experts
+    icon: SMG-203_Gallant_Primary_Render.png
+    notes:
+      en: One-handed medium pen SMG with a very high 1,380 rpm fire rate.
+      ko: 1,380 rpm의 매우 빠른 연사 속도를 지닌 한손 중장갑 관통 기관단총입니다.
+  - id: smg-32-reprimand
+    name:
+      en: SMG-32 Reprimand
+      ko: SMG-32 레프리맨드
+    slot: primary
+    category: smg
+    armorPen: medium
+    source: Truth Enforcers
+    icon: SMG-32_Reprimand_Primary_Render.png
+    notes:
+      en: Medium pen SMG with high 140 damage per shot and a 25-round magazine.
+      ko: 발당 피해량이 140으로 높고 25발 탄창을 갖춘 중장갑 관통 기관단총입니다.
+  - id: smg-37-defender
+    name:
+      en: SMG-37 Defender
+      ko: SMG-37 디펜더
+    slot: primary
+    category: smg
+    armorPen: light
+    traits:
+      - one-handed
+    source: Helldivers Mobilize
+    icon: SMG-37_Defender_Primary_Render.png
+    notes:
+      en: One-handed light pen SMG (110 damage, 520 rpm) that pairs well with a ballistic shield.
+      ko: 탄도 방패와 잘 어울리는 한손 경장갑 관통 기관단총(피해량 110, 520 rpm)입니다.
+  - id: smg-72-pummeler
+    name:
+      en: SMG-72 Pummeler
+      ko: SMG-72 퍼멜러
+    slot: primary
+    category: smg
+    armorPen: light
+    traits:
+      - one-handed
+    source: Polar Patriots
+    icon: SMG-72_Pummeler_Primary_Render.png
+    notes:
+      en: One-handed light pen SMG (85 damage, 475 rpm) with a 45-round magazine.
+      ko: 45발 탄창을 갖춘 한손 경장갑 관통 기관단총(피해량 85, 475 rpm)입니다.
+  - id: smg-flam-34-stoker
+    name:
+      en: SMG/FLAM-34 Stoker
+      ko: SMG/FLAM-34 스토커
+    slot: primary
+    category: smg
+    armorPen: light
+    traits:
+      - one-handed
+      - incendiary
+    source: Entrenched Division
+    icon: SMGFLAM-34_Stoker_Primary_Icon.png
+    notes:
+      en: One-handed 12mm light pen SMG with an underbarrel flamethrower that pierces heavy armor.
+      ko: 고장갑을 관통하는 총열 하부 화염방사기가 달린 한손 12mm 경장갑 관통 기관단총입니다.
+  - id: sta-11-smg
+    name:
+      en: StA-11 SMG
+      ko: StA-11 기관단총
+    slot: primary
+    category: smg
+    armorPen: light
+    traits:
+      - one-handed
+    source: Righteous Revenants
+    icon: StA-11_SMG_Primary_Render.png
+    notes:
+      en: One-handed light pen SMG with 90 damage and a 1,050 rpm fire rate.
+      ko: 피해량 90, 1,050 rpm의 한손 경장갑 관통 기관단총입니다.
+  - id: sta-52-assault-rifle
+    name:
+      en: StA-52 Assault Rifle
+      ko: StA-52 돌격소총
+    slot: primary
+    category: assault-rifle
+    armorPen: light
+    source: Righteous Revenants
+    icon: StA-52_Assault_Rifle_Primary_Render.png
+    notes:
+      en: Light pen automatic assault rifle with a 56-round magazine and 790 rpm fire rate.
+      ko: 56발 탄창과 790 rpm 연사 속도를 갖춘 경장갑 관통 자동 돌격소총입니다.
+  - id: vg-70-variable
+    name:
+      en: VG-70 Variable
+      ko: VG-70 배리어블
+    slot: primary
+    category: special
+    armorPen: light
+    source: Control Group
+    icon: VG-70_Variable_Primary_Render.png
+    notes:
+      en: Light pen rifle with three fire modes (300, 550 or 750 rpm) to trade accuracy for volume of fire.
+      ko: 세 가지 사격 모드(300, 550, 750 rpm)로 정확도와 화력의 양을 맞바꿀 수 있는 경장갑 관통 소총입니다.
+  - id: cqc-19-stun-lance
+    name:
+      en: CQC-19 Stun Lance
+      ko: CQC-19 기절 창
+    slot: secondary
+    category: melee
+    armorPen: medium
+    traits:
+      - one-handed
+      - stun
+      - melee
+    source: Urban Legends
+    icon: CQC-19_Stun_Lance_Secondary_Render.png
+    notes:
+      en: One-handed medium pen melee lance that stuns enemies on hit.
+      ko: 명중 시 적을 기절시키는 한손 중장갑 관통 근접 창입니다.
+  - id: cqc-2-saber
+    name:
+      en: CQC-2 Saber
+      ko: CQC-2 세이버
+    slot: secondary
+    category: melee
+    armorPen: medium
+    traits:
+      - one-handed
+      - melee
+    source: Masters of Ceremony
+    icon: CQC-2_Saber_Secondary_Render.png
+    notes:
+      en: One-handed medium pen melee sword with 188 damage per swing.
+      ko: 휘두를 때마다 피해량 188을 주는 한손 중장갑 관통 근접 검입니다.
+  - id: cqc-30-stun-baton
+    name:
+      en: CQC-30 Stun Baton
+      ko: CQC-30 기절 제압봉
+    slot: secondary
+    category: melee
+    armorPen: medium
+    traits:
+      - one-handed
+      - stun
+      - melee
+    source: Superstore
+    icon: CQC-30_Stun_Baton_Secondary_Render.png
+    notes:
+      en: One-handed medium pen melee baton that stuns enemies on hit.
+      ko: 명중 시 적을 기절시키는 한손 중장갑 관통 근접 진압봉입니다.
+  - id: cqc-42-machete
+    name:
+      en: CQC-42 Machete
+      ko: CQC-42 마체테
+    slot: secondary
+    category: melee
+    armorPen: medium
+    traits:
+      - one-handed
+      - melee
+    source: Superstore
+    icon: CQC-42_Machete_Secondary_Render.png
+    notes:
+      en: One-handed medium pen melee blade with high 300 damage per swing but slower swings.
+      ko: 휘두를 때마다 피해량이 300으로 높지만 휘두르는 속도가 느린 한손 중장갑 관통 근접 칼날입니다.
+  - id: cqc-5-combat-hatchet
+    name:
+      en: CQC-5 Combat Hatchet
+      ko: CQC-5 컴뱃 해칫
+    slot: secondary
+    category: melee
+    armorPen: medium
+    traits:
+      - one-handed
+      - melee
+    source: Superstore
+    icon: CQC-5_Combat_Hatchet_Secondary_Render.png
+    notes:
+      en: One-handed medium pen melee hatchet with 240 damage per swing.
+      ko: 휘두를 때마다 피해량 240을 주는 한손 중장갑 관통 근접 손도끼입니다.
+  - id: cqc-73-entrenchment-tool
+    name:
+      en: CQC-73 Entrenchment Tool
+      ko: CQC-73 참호 도구
+    slot: secondary
+    category: melee
+    armorPen: medium
+    traits:
+      - melee
+      - one-handed
+    source: Entrenched Division
+    icon: CQC-73_Entrenchment_Tool_Secondary_Render.png
+    notes:
+      en: One-handed medium pen shovel that doubles as a melee weapon and can dig through soft ground.
+      ko: 근접 무기로도 쓰이며 무른 지면을 파낼 수 있는 한손 중장갑 관통 삽입니다.
+  - id: gp-20-ultimatum
+    name:
+      en: GP-20 Ultimatum
+      ko: GP-20 얼티메이텀
+    slot: secondary
+    category: special
+    armorPen: anti-tank
+    traits:
+      - one-handed
+      - explosive
+    source: Servants of Freedom
+    icon: GP-20_Ultimatum_Secondary_Render.png
+    notes:
+      en: Single-shot anti-tank grenade pistol with a 2,000-damage explosion and only one spare round.
+      ko: 폭발 피해량 2,000의 단발 대전차 유탄 권총으로, 예비탄은 1발뿐입니다.
+  - id: gp-31-grenade-pistol
+    name:
+      en: GP-31 Grenade Pistol
+      ko: GP-31 유탄 권총
+    slot: secondary
+    category: special
+    armorPen: medium
+    traits:
+      - one-handed
+      - explosive
+    source: Democratic Detonation
+    icon: GP-31_Grenade_Pistol_Secondary_Render.png
+    notes:
+      en: Single-shot one-handed grenade launcher pistol with 400 explosion damage for demolition.
+      ko: 폭발 피해량 400의 단발 한손 유탄 발사 권총으로, 철거에 쓰입니다.
+  - id: las-58-talon
+    name:
+      en: LAS-58 Talon
+      ko: LAS-58 탈론
+    slot: secondary
+    category: special
+    armorPen: medium
+    traits:
+      - one-handed
+      - heat
+    source: Borderline Justice
+    icon: LAS-58_Talon_Secondary_Render.png
+    notes:
+      en: One-handed medium pen laser pistol with 200 damage per shot and heat-based ammo.
+      ko: 발당 피해량 200에 열 기반 탄약을 쓰는 한손 중장갑 관통 레이저 권총입니다.
+  - id: las-7-dagger
+    name:
+      en: LAS-7 Dagger
+      ko: LAS-7 대거
+    slot: secondary
+    category: special
+    armorPen: light
+    traits:
+      - one-handed
+      - beam
+      - heat
+    source: Cutting Edge
+    icon: LAS-7_Dagger_Secondary_Render.png
+    notes:
+      en: One-handed light pen laser beam pistol that uses heat instead of magazines.
+      ko: 탄창 대신 열을 사용하는 한손 경장갑 관통 레이저 빔 권총입니다.
+  - id: m6c-socom-pistol
+    name:
+      en: M6C/SOCOM Pistol
+      ko: M6C/SOCOM 권총
+    slot: secondary
+    category: pistol
+    armorPen: light
+    traits:
+      - one-handed
+      - suppressed
+    source: "Halo: ODST"
+    icon: M6C-SOCOM_Pistol_Secondary_Render.png
+    notes:
+      en: Suppressed one-handed light pen pistol (125 damage, 12 rounds) from the Halo ODST warbond.
+      ko: Halo ODST 전쟁채권의 소음 한손 경장갑 관통 권총(피해량 125, 12발)입니다.
+  - id: p-11-stim-pistol
+    name:
+      en: P-11 Stim Pistol
+      ko: P-11 각성제 권총
+    slot: secondary
+    category: special
+    traits:
+      - one-handed
+      - rounds-reload
+      - stimulative
+    source: Chemical Agents
+    icon: P-11_Stim_Pistol_Secondary_Render.png
+    notes:
+      en: Support pistol that fires stim darts to heal teammates from a distance; deals no damage.
+      ko: 스팀팩 다트를 쏴 멀리서 아군을 치료하는 지원용 권총으로, 피해는 주지 않습니다.
+  - id: p-113-verdict
+    name:
+      en: P-113 Verdict
+      ko: P-113 버딕트
+    slot: secondary
+    category: pistol
+    armorPen: medium
+    traits:
+      - one-handed
+    source: Polar Patriots
+    icon: P-113_Verdict_Secondary_Render.png
+    notes:
+      en: One-handed medium pen pistol with 140 damage per shot and a 10-round magazine.
+      ko: 발당 피해량 140, 10발 탄창을 갖춘 한손 중장갑 관통 권총입니다.
+  - id: p-19-redeemer
+    name:
+      en: P-19 Redeemer
+      ko: P-19 리디머
+    slot: secondary
+    category: pistol
+    armorPen: light
+    traits:
+      - one-handed
+    source: Helldivers Mobilize
+    icon: P-19_Redeemer_Secondary_Render.png
+    notes:
+      en: Fully automatic one-handed light pen machine pistol firing 1,100 rpm from a 31-round magazine.
+      ko: 31발 탄창으로 1,100 rpm을 쏘는 완전 자동 한손 경장갑 관통 기관권총입니다.
+  - id: p-2-peacemaker
+    name:
+      en: P-2 Peacemaker
+      ko: P-2 피스메이커
+    slot: secondary
+    category: pistol
+    armorPen: light
+    traits:
+      - one-handed
+    source: Starter equipment
+    icon: P-2_Peacemaker_Secondary_Render.png
+    notes:
+      en: Starter one-handed light pen pistol with 100 damage and a 15-round magazine.
+      ko: 피해량 100, 15발 탄창을 갖춘 기본 한손 경장갑 관통 권총입니다.
+  - id: p-33-missile-pistol
+    name:
+      en: P-33 Missile Pistol
+      ko: P-33 미사일 권총
+    slot: secondary
+    category: special
+    armorPen: anti-tank
+    traits:
+      - one-handed
+      - guided
+      - explosive
+    source: Exo Experts
+    icon: P-33_Missile_Pistol_Secondary_Render.png
+    notes:
+      en: Single-shot one-handed missile launcher with a guided lock-on mode and anti-tank projectile damage.
+      ko: 유도 락온 모드와 대전차 투사체 피해를 지닌 단발 한손 미사일 발사기입니다.
+  - id: p-34-breacher
+    name:
+      en: P-34 Breacher
+      ko: P-34 브리처
+    slot: secondary
+    category: special
+    armorPen: anti-tank
+    traits:
+      - one-handed
+      - sticky
+      - explosive
+    source: Ironclad Democracy
+    icon: P-34_Breacher_Secondary_Render.png
+    notes:
+      en: One-handed pistol firing sticky thermite projectiles that burn through armor before a 2,000-damage explosion.
+      ko: 장갑을 태워 뚫은 뒤 피해량 2,000으로 폭발하는 점착 테르밋 투사체를 쏘는 한손 권총입니다.
+  - id: p-35-re-educator
+    name:
+      en: P-35 Re-Educator
+      ko: P-35 리에듀케이터
+    slot: secondary
+    category: special
+    armorPen: heavy
+    traits:
+      - one-handed
+      - caustic
+    source: Redacted Regiment
+    icon: P-35_Re-Educator_Secondary_Render.png
+    notes:
+      en: Quiet dart revolver whose caustic gas confuses targets; heavy pen but low direct damage.
+      ko: 부식성 가스로 표적을 혼란에 빠뜨리는 저소음 다트 리볼버로, 고장갑 관통이지만 직접 피해는 낮습니다.
+  - id: p-4-senator
+    name:
+      en: P-4 Senator
+      ko: P-4 세너터
+    slot: secondary
+    category: pistol
+    armorPen: heavy
+    traits:
+      - one-handed
+      - rounds-reload
+    source: Steeled Veterans
+    icon: P-4_Senator_Secondary_Render.png
+    notes:
+      en: Heavy pen revolver with 225 damage per shot and a 6-round cylinder reloadable by single rounds.
+      ko: 발당 피해량 225, 6발 실린더를 갖춘 고장갑 관통 리볼버로, 한 발씩 장전할 수 있습니다.
+  - id: p-69-veto
+    name:
+      en: P-69 Veto
+      ko: P-69 비토
+    slot: secondary
+    category: pistol
+    armorPen: medium
+    traits:
+      - one-handed
+      - rounds-reload
+    source: Entrenched Division
+    icon: P-69_Veto_Secondary_Icon.png
+    notes:
+      en: One-handed medium pen pistol with a 12-round clip and 105 damage per shot.
+      ko: 12발 클립과 발당 피해량 105를 갖춘 한손 중장갑 관통 권총입니다.
+  - id: p-72-crisper
+    name:
+      en: P-72 Crisper
+      ko: P-72 크리스퍼
+    slot: secondary
+    category: special
+    armorPen: heavy
+    traits:
+      - incendiary
+      - one-handed
+    source: Freedom's Flame
+    icon: P-72_Crisper_Secondary_Render.png
+    notes:
+      en: One-handed flamethrower sidearm dealing 150 fire DPS with heavy armor penetration.
+      ko: 150의 화염 DPS를 내며 고장갑 관통을 지닌 한손 화염방사 보조무기입니다.
+  - id: p-92-warrant
+    name:
+      en: P-92 Warrant
+      ko: P-92 워런트
+    slot: secondary
+    category: pistol
+    armorPen: medium
+    traits:
+      - one-handed
+      - guided
+    source: Superstore
+    icon: P-92_Warrant_Secondary_Render.png
+    notes:
+      en: One-handed medium pen pistol with guided rounds that home in on targets at mid range.
+      ko: 중거리에서 표적을 추적하는 유도탄을 쏘는 한손 중장갑 관통 권총입니다.
+  - id: p-40-k-bolt-pistol
+    name:
+      en: P/40-K Bolt Pistol
+      ko: P/40-K 볼트 피스톨
+    slot: secondary
+    category: special
+    armorPen: heavy
+    traits:
+      - explosive
+      - one-handed
+    source: Castellan’s Creed
+    icon: P-40-K_Bolt_Pistol_Secondary_Render.png
+    notes:
+      en: Heavy pen explosive bolt pistol with 325 impact damage plus a small explosion per shot.
+      ko: 발당 충격 피해 325에 작은 폭발을 더하는 고장갑 관통 폭발 볼트 권총입니다.
+  - id: plas-15-loyalist
+    name:
+      en: PLAS-15 Loyalist
+      ko: PLAS-15 로열리스트
+    slot: secondary
+    category: special
+    armorPen: medium
+    traits:
+      - one-handed
+      - explosive
+      - chargeup
+    source: Truth Enforcers
+    icon: PLAS-15_Loyalist_Secondary_Render.png
+    notes:
+      en: One-handed plasma pistol whose shots can be charged for higher explosive damage.
+      ko: 사격을 충전해 더 높은 폭발 피해를 줄 수 있는 한손 플라즈마 권총입니다.
+  - id: sg-22-bushwhacker
+    name:
+      en: SG-22 Bushwhacker
+      ko: SG-22 부시웨커
+    slot: secondary
+    category: special
+    armorPen: light
+    traits:
+      - one-handed
+      - rounds-reload
+    source: Viper Commandos
+    icon: SG-22_Bushwhacker_Secondary_Render.png
+    notes:
+      en: One-handed three-barrel sawed-off shotgun that can fire all barrels at once for heavy close-range damage.
+      ko: 모든 총열을 한 번에 발사해 강력한 근거리 피해를 줄 수 있는 한손 3연장 소드오프 산탄총입니다.
+  - id: g-10-incendiary
+    name:
+      en: G-10 Incendiary
+      ko: G-10 소이
+    slot: throwable
+    category: standard
+    armorPen: medium
+    traits:
+      - incendiary
+      - explosive
+    source: Steeled Veterans
+    icon: G-10_Incendiary_Throwable_Render.png
+    notes:
+      en: Standard grenade that explodes and leaves a fire area dealing 100 fire DPS.
+      ko: 폭발 후 화염 DPS 100의 화염 지대를 남기는 일반 수류탄입니다.
+  - id: g-109-urchin
+    name:
+      en: G-109 Urchin
+      ko: G-109 어친
+    slot: throwable
+    category: special
+    armorPen: anti-tank
+    traits:
+      - sticky
+      - stun
+    source: Force of Law
+    icon: G-109_Urchin_Throwable_Render.png
+    notes:
+      en: Sticky special throwable that deals no damage but stuns enemies in a small area.
+      ko: 피해는 주지 않지만 좁은 범위의 적을 기절시키는 점착식 특수 투척 무기입니다.
+  - id: g-12-high-explosive
+    name:
+      en: G-12 High Explosive
+      ko: G-12 고폭
+    slot: throwable
+    category: standard
+    armorPen: heavy
+    traits:
+      - explosive
+    source: Starter equipment
+    icon: G-12_High_Explosive_Throwable_Render.png
+    notes:
+      en: Starter heavy pen grenade with 800 explosion damage in a 7 m radius.
+      ko: 7 m 반경에 폭발 피해량 800을 주는 기본 고장갑 관통 수류탄입니다.
+  - id: g-123-thermite
+    name:
+      en: G-123 Thermite
+      ko: G-123 테르밋
+    slot: throwable
+    category: special
+    armorPen: anti-tank
+    traits:
+      - sticky
+    source: Democratic Detonation
+    icon: G-123_Thermite_Throwable_Render.png
+    notes:
+      en: Sticky anti-tank grenade that burns through armor before exploding for 2,000 damage.
+      ko: 장갑을 태워 뚫은 뒤 피해량 2,000으로 폭발하는 점착식 대전차 수류탄입니다.
+  - id: g-13-incendiary-impact
+    name:
+      en: G-13 Incendiary Impact
+      ko: G-13 소이 충격
+    slot: throwable
+    category: special
+    armorPen: medium
+    traits:
+      - incendiary
+      - explosive
+    source: Polar Patriots
+    icon: G-13_Incendiary_Impact_Throwable_Render.png
+    notes:
+      en: Impact-fused incendiary grenade that bursts on contact and leaves a fire area.
+      ko: 접촉 시 터지며 화염 지대를 남기는 충격 신관 소이 수류탄입니다.
+  - id: g-142-pyrotech
+    name:
+      en: G-142 Pyrotech
+      ko: G-142 파이로테크
+    slot: throwable
+    category: special
+    armorPen: anti-tank
+    traits:
+      - incendiary
+      - explosive
+    source: Masters of Ceremony
+    icon: G-142_Pyrotech_Throwable_Render.png
+    notes:
+      en: Firework-style incendiary grenade that scatters fire and small explosions over a 5 m area.
+      ko: 5 m 범위에 불과 작은 폭발을 흩뿌리는 불꽃놀이식 소이 수류탄입니다.
+  - id: g-16-impact
+    name:
+      en: G-16 Impact
+      ko: G-16 충격
+    slot: throwable
+    category: special
+    armorPen: heavy
+    traits:
+      - explosive
+    source: Helldivers Mobilize
+    icon: G-16_Impact_Throwable_Render.png
+    notes:
+      en: Impact-fused heavy pen grenade with 400 explosion damage for instant detonation.
+      ko: 폭발 피해량 400의 충격 신관 고장갑 관통 수류탄으로, 즉시 폭발합니다.
+  - id: g-23-stun
+    name:
+      en: G-23 Stun
+      ko: G-23 기절
+    slot: throwable
+    category: special
+    armorPen: anti-tank
+    traits:
+      - explosive
+      - stun
+    source: Cutting Edge
+    icon: G-23_Stun_Throwable_Render.png
+    notes:
+      en: Grenade with no damage that stuns enemies in a 10 m radius, including large units.
+      ko: 피해는 없지만 대형 적을 포함해 10 m 반경의 적을 기절시키는 수류탄입니다.
+  - id: g-3-smoke
+    name:
+      en: G-3 Smoke
+      ko: G-3 연막
+    slot: throwable
+    category: special
+    traits:
+      - explosive
+    source: Helldivers Mobilize
+    icon: G-3_Smoke_Throwable_Render.png
+    notes:
+      en: Smoke grenade that blocks enemy line of sight in an 8 m radius; deals no damage.
+      ko: 8 m 반경에서 적의 시야를 가리는 연막 수류탄으로, 피해는 주지 않습니다.
+  - id: g-31-arc
+    name:
+      en: G-31 Arc
+      ko: G-31 아크
+    slot: throwable
+    category: special
+    armorPen: heavy
+    traits:
+      - explosive
+      - arc
+    source: Control Group
+    icon: G-31_ARC_Throwable_Render.png
+    notes:
+      en: Arc grenade that releases ten 100-damage arc strikes over a 10 m radius.
+      ko: 10 m 반경에 피해량 100의 아크 공격을 10번 방출하는 아크 수류탄입니다.
+  - id: g-4-gas
+    name:
+      en: G-4 Gas
+      ko: G-4 가스
+    slot: throwable
+    category: special
+    armorPen: anti-tank
+    traits:
+      - caustic
+      - explosive
+    source: Chemical Agents
+    icon: G-4_Gas_Throwable_Render.png
+    notes:
+      en: Gas grenade that leaves a caustic cloud dealing damage over time.
+      ko: 지속 피해를 주는 부식성 가스 구름을 남기는 가스 수류탄입니다.
+  - id: g-48-giga-grenade
+    name:
+      en: G-48 Giga Grenade
+      ko: G-48 기가 수류탄
+    slot: throwable
+    category: special
+    armorPen: anti-tank
+    traits:
+      - explosive
+    source: Entrenched Division
+    icon: G-48_Giga_Grenade_Throwable_Render.png
+    notes:
+      en: Impact-fused anti-tank bundle grenade with 2,000 explosion damage in a 12 m radius; carries only 2.
+      ko: 12 m 반경에 폭발 피해량 2,000을 주는 충격 신관 대전차 묶음 수류탄으로, 2개만 소지합니다.
+  - id: g-50-seeker
+    name:
+      en: G-50 Seeker
+      ko: G-50 시커
+    slot: throwable
+    category: special
+    armorPen: heavy
+    traits:
+      - explosive
+      - guided
+    source: Servants of Freedom
+    icon: G-50_Seeker_Throwable_Render.png
+    notes:
+      en: Guided grenade drone that follows the user and dives onto nearby enemies for 500 explosion damage.
+      ko: 사용자를 따라다니다 근처 적에게 돌진해 폭발 피해량 500을 주는 유도 수류탄 드론입니다.
+  - id: g-6-frag
+    name:
+      en: G-6 Frag
+      ko: G-6 세열
+    slot: throwable
+    category: standard
+    armorPen: medium
+    traits:
+      - explosive
+    source: Helldivers Mobilize
+    icon: G-6_Frag_Throwable_Render.png
+    notes:
+      en: Standard medium pen fragmentation grenade with a 10 m blast and shrapnel, good against groups.
+      ko: 10 m 폭발 범위와 파편을 지닌 일반 중장갑 관통 세열 수류탄으로, 적 무리에 효과적입니다.
+  - id: g-60-anti-tank-seeker
+    name:
+      en: G-60 Anti-Tank Seeker
+      ko: G-60 대전차 드론
+    slot: throwable
+    category: special
+    armorPen: anti-tank
+    traits:
+      - explosive
+      - guided
+    source: Ironclad Democracy
+    icon: G-60_Anti-Tank_Seeker_Throwable_Render.png
+    notes:
+      en: Guided anti-tank drone that follows the user and dives onto nearby enemies for 1,800 explosion damage.
+      ko: 사용자를 따라다니다 근처 적에게 돌진해 폭발 피해량 1,800을 주는 유도 대전차 드론입니다.
+  - id: g-7-pineapple
+    name:
+      en: G-7 Pineapple
+      ko: G-7 파인애플
+    slot: throwable
+    category: standard
+    armorPen: medium
+    traits:
+      - explosive
+    source: Dust Devils
+    icon: G-7_Pineapple_Throwable_Render.png
+    notes:
+      en: Standard grenade that explodes and scatters 18 bomblets over a 10 m area.
+      ko: 폭발하며 10 m 범위에 자탄 18개를 흩뿌리는 일반 수류탄입니다.
+  - id: g-8-immolation
+    name:
+      en: G-8 Immolation
+      ko: G-8 번제
+    slot: throwable
+    category: special
+    traits:
+      - incendiary
+    source: Ironclad Democracy
+    icon: G-8_Immolation_Throwable_Render.png
+    notes:
+      en: Impact-fused incendiary device that shatters into a lasting 10 m fire field without an explosion.
+      ko: 폭발 없이 깨지며 10 m 크기의 오래 지속되는 화염 지대를 만드는 충격 신관 소이 장치입니다.
+  - id: g-89-smokescreen
+    name:
+      en: G-89 Smokescreen
+      ko: G-89 연막
+    slot: throwable
+    category: special
+    traits:
+      - explosive
+    source: Superstore
+    icon: G-89_Smokescreen_Throwable_Render.png
+    notes:
+      en: Impact-fused smoke grenade that deploys a small 5 m smoke cloud instantly on contact.
+      ko: 접촉 즉시 5 m 크기의 작은 연막을 펼치는 충격 신관 연막 수류탄입니다.
+  - id: g-40-k-melta-mine
+    name:
+      en: G/40-K Melta Mine
+      ko: G/40-K 멜타마인
+    slot: throwable
+    category: special
+    armorPen: anti-tank
+    source: Castellan’s Creed
+    icon: G-40-K_Melta_Mine_Throwable_Render.png
+    notes:
+      en: Throwable anti-tank proximity mine with a 2,000-damage blast and a lingering fire wall.
+      ko: 피해량 2,000의 폭발과 함께 지속되는 화염 벽을 남기는 투척형 대전차 근접 신관 지뢰입니다.
+  - id: g-sh-39-shield
+    name:
+      en: G/SH-39 Shield
+      ko: G/SH-39 실드
+    slot: throwable
+    category: special
+    traits:
+      - sticky
+    source: Siege Breakers
+    icon: G-SH-39_Shield_Throwable_Render.png
+    notes:
+      en: Throwable that deploys a small 360-degree bubble shield blocking projectiles for a limited time.
+      ko: 일정 시간 동안 투사체를 막는 작은 360도 구체 방어막을 펼치는 투척 무기입니다.
+  - id: k-2-throwing-knife
+    name:
+      en: K-2 Throwing Knife
+      ko: K-2 투척 나이프
+    slot: throwable
+    category: special
+    armorPen: medium
+    source: Viper Commandos
+    icon: K-2_Throwing_Knife_Throwable_Render.png
+    notes:
+      en: Silent medium pen throwing knife dealing 300 damage, carried in stacks of 20 for stealth kills.
+      ko: 피해량 300을 주는 무음 중장갑 관통 투척 나이프로, 20개 묶음으로 소지하며 은밀 처치에 쓰입니다.
+  - id: ted-63-dynamite
+    name:
+      en: TED-63 Dynamite
+      ko: TED-63 다이너마이트
+    slot: throwable
+    category: standard
+    armorPen: heavy
+    traits:
+      - explosive
+    source: Borderline Justice
+    icon: TED-63_Dynamite_Throwable_Render.png
+    notes:
+      en: Standard heavy pen explosive with 1,000 damage in a 12 m radius and a selectable fuse.
+      ko: 12 m 반경에 피해량 1,000을 주는 일반 고장갑 관통 폭발물로, 신관 시간을 선택할 수 있습니다.
+  - id: tm-1-lure-mine
+    name:
+      en: TM-1 Lure Mine
+      ko: TM-1 유인 지뢰
+    slot: throwable
+    category: special
+    armorPen: anti-tank
+    traits:
+      - sticky
+      - explosive
+    source: Redacted Regiment
+    icon: TM-1_Lure_Mine_Throwable_Render.png
+    notes:
+      en: Sticky proximity mine that lures nearby enemies with light and sound, then explodes for 1,000 damage.
+      ko: 빛과 소리로 근처 적을 유인한 뒤 피해량 1,000으로 폭발하는 점착식 근접 신관 지뢰입니다.
