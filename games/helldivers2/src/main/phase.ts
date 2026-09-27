@@ -7,12 +7,26 @@ import type { Hd2State } from '../state';
  */
 export const CORNER: ScreenRegionSpec = { id: 'corner', x: 0, y: 0, width: 0.18, height: 0.1 };
 
-/** Where the player is, from the corner's text. Null when the corner is empty (loading, menus). */
+/** Frame counters (Steam, GPU tools) sit in the same corner and say nothing about the game. */
+const FPS_COUNTER = /\S*\d+\s*FPS/gi;
+// OCR sometimes reads the S as 5 or $; the ship name always starts with SES.
+const SHIP_NAME = /\b[S5$]E[S5$]\b/i;
+/**
+ * The mission HUD's stratagem list label, as OCR reads it: "스트라타젬" (also misread as
+ * "스트리다생"), "STRATAGEMS", "Stratagèmes", "Estratagemas", "Strategeme".
+ */
+const STRATAGEM_LABEL = /스트|strat/i;
+
+/**
+ * Where the player is, from the corner's text. Both answers need positive evidence: anything
+ * else (loading screens, the ESC menu that hides the HUD, only a frame counter) returns null,
+ * which keeps the current phase.
+ */
 export function phaseFromCorner(lines: readonly string[]): Hd2State['phase'] | null {
-  const text = lines.join(' ').trim();
-  if (!text) return null;
-  // OCR sometimes reads the S as 5 or $; the ship name always starts with SES.
-  return /\b[S5$]E[S5$]\b/i.test(text) ? 'lobby' : 'mission';
+  const text = lines.join(' ').replace(FPS_COUNTER, ' ').trim();
+  if (SHIP_NAME.test(text)) return 'lobby';
+  if (STRATAGEM_LABEL.test(text)) return 'mission';
+  return null;
 }
 
 /** Consecutive agreeing reads needed before the phase changes (reads are ~2 s apart). */
