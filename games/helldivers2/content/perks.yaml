@@ -1,0 +1,412 @@
+# Armor passives and boosters, from helldivers.wiki.gg.
+kind: perk-catalog
+schemaVersion: 1
+revision: 1
+updatedAt: 2026-09-27
+armorPassives:
+  - id: extra-padding
+    name:
+      en: Extra Padding
+      ko: 추가 완충제
+    effect:
+      en: Provides a higher armor rating.
+      ko: 더 높은 방어구 등급을 제공합니다.
+    icon: Extra_Padding_Armor_Passive_Icon.svg
+  - id: democracy-protects
+    name:
+      en: Democracy Protects
+      ko: 민주주의의 가호
+    effect:
+      en: 50% chance to not die when taking lethal damage; prevents all damage from bleeding if chest hemorrhages.
+      ko: 치명적인 피해를 입었을 때 50% 확률로 죽지 않습니다. 흉부 출혈 시 출혈로 인한 피해를 모두 막습니다.
+    icon: Democracy_Protects_Armor_Passive_Icon.svg
+  - id: servo-assisted
+    name:
+      en: Servo-Assisted
+      ko: 서보 보조
+    effect:
+      en: Increases throwing range by 30%; provides +50% limb health.
+      ko: 투척 거리가 30% 늘어납니다. 팔다리 체력이 50% 증가합니다.
+    icon: Servo-Assisted_Armor_Passive_Icon.svg
+  - id: med-kit
+    name:
+      en: Med-Kit
+      ko: 구급 키트
+    effect:
+      en: Increases initial inventory and holding capacity of stims by +2; increases stim effect duration by 2.0s.
+      ko: 스팀팩 초기 소지량과 최대 소지량이 2 증가합니다. 스팀팩 효과 지속 시간이 2.0초 늘어납니다.
+    icon: Med-Kit_Armor_Passive_Icon.svg
+  - id: engineering-kit
+    name:
+      en: Engineering Kit
+      ko: 공병 키트
+    effect:
+      en: Further reduces recoil when crouching or prone by 30%; increases initial inventory and holding capacity of throwables by +2.
+      ko: 웅크리거나 엎드렸을 때 반동이 추가로 30% 줄어듭니다. 투척 무기 초기 소지량과 최대 소지량이 2 증가합니다.
+    icon: Engineering_Kit_Armor_Passive_Icon.svg
+  - id: scout
+    name:
+      en: Scout
+      ko: 정찰
+    effect:
+      en: Markers placed on the map will generate radar scans every 2.0s; reduces range at which enemies can detect the wearer by 30%.
+      ko: 지도에 표시한 마커가 2.0초마다 레이더 스캔을 생성합니다. 적이 착용자를 감지하는 거리가 30% 줄어듭니다.
+    icon: Scout_Armor_Passive_Icon.svg
+  - id: fortified
+    name:
+      en: Fortified
+      ko: 강화
+    effect:
+      en: Further reduces recoil when crouching or prone by 30%; provides 50% resistance to explosive damage.
+      ko: 웅크리거나 엎드렸을 때 반동이 추가로 30% 줄어듭니다. 폭발 피해 저항 50%를 제공합니다.
+    icon: Fortified_Armor_Passive_Icon.svg
+  - id: electrical-conduit
+    name:
+      en: Electrical Conduit
+      ko: 전도성
+    effect:
+      en: Provides 95% resistance to arc damage.
+      ko: 아크 피해 저항 95%를 제공합니다.
+    icon: Electrical_Conduit_Armor_Passive_Icon.svg
+  - id: peak-physique
+    name:
+      en: Peak Physique
+      ko: 이상적인 체형
+    effect:
+      en: Increases melee damage by 40%; improves weapons handling with less drag on weapon movement.
+      ko: 근접 피해가 40% 증가합니다. 무기를 움직일 때 끌림이 줄어 무기 조작성이 향상됩니다.
+    icon: Peak_Physique_Armor_Passive_Icon.svg
+  - id: inflammable
+    name:
+      en: Inflammable
+      ko: 인화성 물질
+    effect:
+      en: Provides 75% resistance to fire damage.
+      ko: 화염 피해 저항 75%를 제공합니다.
+    icon: Inflammable_Armor_Passive_Icon.svg
+  - id: advanced-filtration
+    name:
+      en: Advanced Filtration
+      ko: 고급 여과
+    effect:
+      en: Provides 80% resistance to gas damage and effects.
+      ko: 가스 피해 및 효과에 대한 저항 80%를 제공합니다.
+    icon: Advanced_Filtration_Armor_Passive_Icon.svg
+  - id: unflinching
+    name:
+      en: Unflinching
+      ko: 결연함
+    effect:
+      en: Helps prevent Helldivers from flinching when hit; provides a higher armor rating; markers placed on the map will generate radar scans every 2.0s.
+      ko: 피격 시 헬다이버가 움찔하는 것을 막아 줍니다. 더 높은 방어구 등급을 제공합니다. 지도에 표시한 마커가 2.0초마다 레이더 스캔을 생성합니다.
+    icon: Unflinching_Armor_Passive_Icon.svg
+  - id: siege-ready
+    name:
+      en: Siege-Ready
+      ko: 포위 준비 완료
+    effect:
+      en: Increases reload speed of primary weapons by 30%; increases ammo capacity of all weapons by 20%; does not affect weapon backpacks.
+      ko: 주무기 재장전 속도가 30% 빨라집니다. 모든 무기의 탄약 소지량이 20% 증가합니다. 무기 배낭에는 적용되지 않습니다.
+    icon: Siege-Ready_Armor_Passive_Icon.svg
+  - id: acclimated
+    name:
+      en: Acclimated
+      ko: 적응력
+    effect:
+      en: Provides 50% resistance to fire, gas, acid, and electrical damage.
+      ko: 화염, 가스, 산성, 전기 피해에 대한 저항 50%를 제공합니다.
+    icon: Acclimated_Armor_Passive_Icon.svg
+  - id: integrated-explosives
+    name:
+      en: Integrated Explosives
+      ko: 통합 폭발물
+    effect:
+      en: Armor explodes 1.5s after the wearer dies; increases initial inventory and holding capacity of throwables by +2.
+      ko: 착용자가 사망하면 1.5초 후 방어구가 폭발합니다. 투척 무기 초기 소지량과 최대 소지량이 2 증가합니다.
+    icon: Integrated_Explosives_Armor_Passive_Icon.svg
+  - id: gunslinger
+    name:
+      en: Gunslinger
+      ko: 총잡이
+    effect:
+      en: Increases sidearms reload speed by 40%; sidearm draw/holster speed increased by 50%; sidearm recoil reduced by 70%.
+      ko: 보조무기 재장전 속도가 40% 빨라집니다. 보조무기를 꺼내고 집어넣는 속도가 50% 빨라집니다. 보조무기 반동이 70% 줄어듭니다.
+    icon: Gunslinger_Armor_Passive_Icon.svg
+  - id: reinforced-epaulettes
+    name:
+      en: Reinforced Epaulettes
+      ko: 강화된 견장
+    effect:
+      en: Increases reload speed of primary weapons by 30%; gives wearer a 50% chance to avoid grievous limb injury; increases melee damage by 20%.
+      ko: 주무기 재장전 속도가 30% 빨라집니다. 50% 확률로 팔다리 치명상을 피합니다. 근접 피해가 20% 증가합니다.
+    icon: Reinforced_Epaulettes_Armor_Passive_Icon.svg
+  - id: ballistic-padding
+    name:
+      en: Ballistic Padding
+      ko: 탄도 완충제
+    effect:
+      en: Provides 25% resistance to chest damage; provides 25% resistance to explosive damage; prevents all damage from bleeding if chest hemorrhages.
+      ko: 흉부 피해 저항 25%를 제공합니다. 폭발 피해 저항 25%를 제공합니다. 흉부 출혈 시 출혈로 인한 피해를 모두 막습니다.
+    icon: Ballistic_Padding_Armor_Passive_Icon.svg
+  - id: adreno-defibrillator
+    name:
+      en: Adreno-Defibrillator
+      ko: 아드레노-제세동기
+    effect:
+      en: Provides one-time, short-lived resuscitation upon death, given that the Helldiver's body is still intact; increases stim effect duration by 2.0s; provides 50% resistance to arc damage.
+      ko: 헬다이버의 몸이 온전하다면 사망 시 1회에 한해 잠시 소생합니다. 스팀팩 효과 지속 시간이 2.0초 늘어납니다. 아크 피해 저항 50%를 제공합니다.
+    icon: Adreno-Defibrillator_Armor_Passive_Icon.svg
+  - id: feet-first
+    name:
+      en: Feet First
+      ko: 발 먼저
+    effect:
+      en: Wearer makes 50% less noise when moving; increases point-of-interest identification range by 30%; provides immunity to leg injuries.
+      ko: 이동 시 소음이 50% 줄어듭니다. 관심 지점 식별 거리가 30% 늘어납니다. 다리 부상에 면역이 됩니다.
+    icon: Feet_First_Armor_Passive_Icon.svg
+  - id: desert-stormer
+    name:
+      en: Desert Stormer
+      ko: 사막 돌격대
+    effect:
+      en: Provides 40% resistance to fire, gas, acid, and electrical damage; increases throwing range by 20%.
+      ko: 화염, 가스, 산성, 전기 피해에 대한 저항 40%를 제공합니다. 투척 거리가 20% 늘어납니다.
+    icon: Desert_Stormer_Armor_Passive_Icon.svg
+  - id: rock-solid
+    name:
+      en: Rock Solid
+      ko: 굳건한 바위
+    effect:
+      en: Increases melee damage by 40%; bearer is more resistant to being knocked prone.
+      ko: 근접 피해가 40% 증가합니다. 넘어지는 것에 대한 저항력이 높아집니다.
+    icon: Rock_Solid_Armor_Passive_Icon.svg
+  - id: reduced-signature
+    name:
+      en: Reduced Signature
+      ko: 신호 감소
+    effect:
+      en: Wearer makes 50% less noise when moving; reduces range at which enemies can detect the wearer by 40%.
+      ko: 이동 시 소음이 50% 줄어듭니다. 적이 착용자를 감지하는 거리가 40% 줄어듭니다.
+    icon: Reduced_Signature_Armor_Passive_Icon.svg
+  - id: supplementary-adrenaline
+    name:
+      en: Supplementary Adrenaline
+      ko: 보급 아드레날린
+    effect:
+      en: When the wearer takes damage, they regain some stamina; provides a higher armor rating.
+      ko: 피해를 입으면 스태미나를 일부 회복합니다. 더 높은 방어구 등급을 제공합니다.
+    icon: Supplementary_Adrenaline_Armor_Passive_Icon.svg
+  - id: concussive-padding-reinforced
+    name:
+      en: Concussive Padding, Reinforced
+    effect:
+      en: Provides 50% resistance to explosive damage; provides a higher armor rating.
+      ko: 폭발 피해 저항 50%를 제공합니다. 더 높은 방어구 등급을 제공합니다.
+    icon: Concussive_Padding_Armor_Passive_Icon.svg
+  - id: concussive-padding-hazmat
+    name:
+      en: Concussive Padding, Hazmat
+    effect:
+      en: Provides 50% resistance to explosive damage; provides 25% resistance to gas damage and effects; sidearm recoil reduced by 30%.
+      ko: 폭발 피해 저항 50%를 제공합니다. 가스 피해 및 효과에 대한 저항 25%를 제공합니다. 보조무기 반동이 30% 줄어듭니다.
+    icon: Concussive_Padding_Armor_Passive_Icon.svg
+  - id: concussive-padding-grenadier
+    name:
+      en: Concussive Padding, Grenadier
+    effect:
+      en: Provides 50% resistance to explosive damage; increases initial inventory and holding capacity of throwables by +2.
+      ko: 폭발 피해 저항 50%를 제공합니다. 투척 무기 초기 소지량과 최대 소지량이 2 증가합니다.
+    icon: Concussive_Padding_Armor_Passive_Icon.svg
+  - id: oxygenator
+    name:
+      en: Oxygenator
+      ko: 산소 공급기
+    effect:
+      en: Increases the wearer's walking speed and running speed; increases the speed and duration of slides.
+      ko: 착용자의 걷기 속도와 달리기 속도가 증가합니다. 슬라이딩 속도와 지속 시간이 늘어납니다.
+    icon: Oxygenator_Armor_Passive_Icon.svg
+  - id: kinetic-displacement-mitigation
+    name:
+      en: Kinetic Displacement Mitigation
+      ko: 운동 에너지 변위 완화
+    effect:
+      en: Provides 50% damage resistance to fire, allowing bearer to rest assured in their inflammability; gives the wearer a 50% chance to avoid grievous limb injury; reduces damage taken from impact and collisions by 30%.
+      ko: 화염 피해 저항 50%를 제공해 불이 붙을 걱정을 덜어 줍니다. 50% 확률로 팔다리 치명상을 피합니다. 충격 및 충돌로 받는 피해가 30% 줄어듭니다.
+    icon: Kinetic_Displacement_Mitigation_Armor_Passive_Icon.svg
+  - id: true-grit
+    name:
+      en: True Grit
+      ko: 진정한 위용
+    effect:
+      en: Increases reload speed of support weapons by 30%; slightly increases weapon ergonomics to reduce drag on weapon movement.
+      ko: 지원 무기 재장전 속도가 30% 빨라집니다. 무기 조작성이 약간 향상되어 무기를 움직일 때 끌림이 줄어듭니다.
+    icon: True_Grit_Armor_Passive_Icon.svg
+  - id: blunt-force-mitigation
+    name:
+      en: Blunt-Force Mitigation
+      ko: 둔기 충격 완화
+    effect:
+      en: Bearer is more resistant to being knocked prone; reduces damage taken from impact and collisions by 30%; provides a higher armor rating.
+      ko: 넘어지는 것에 대한 저항력이 높아집니다. 충격 및 충돌로 받는 피해가 30% 줄어듭니다. 더 높은 방어구 등급을 제공합니다.
+    icon: Blunt-Force_Mitigation_Armor_Passive_Icon.png
+boosters:
+  - id: hellpod-space-optimization
+    name:
+      en: Hellpod Space Optimization
+      ko: 헬포드 공간 최적화
+    effect:
+      en: Helldivers come out of the Hellpod fully stocked on Ammo, Grenades and Stims.
+      ko: 헬다이버가 탄약, 수류탄, 스팀팩을 가득 채운 상태로 헬포드에서 나옵니다.
+    icon: Hellpod_Space_Optimization_Booster_Icon.svg
+  - id: vitality-enhancement
+    name:
+      en: Vitality Enhancement
+      ko: 생명력 증진
+    effect:
+      en: Provides minor damage reduction from all sources for all Helldivers.
+      ko: 모든 헬다이버가 모든 피해로부터 받는 피해를 약간 줄여 줍니다.
+    icon: Vitality_Enhancement_Booster_Icon.svg
+  - id: uav-recon-booster
+    name:
+      en: UAV Recon Booster
+      ko: UAV 정찰 부스터
+    effect:
+      en: Increases all Helldivers' effective radar range.
+      ko: 모든 헬다이버의 유효 레이더 범위가 늘어납니다.
+    icon: UAV_Recon_Booster_Booster_Icon.svg
+  - id: stamina-enhancement
+    name:
+      en: Stamina Enhancement
+      ko: 스태미나 증진
+    effect:
+      en: Increases all Helldivers' stamina capacity and recovery.
+      ko: 모든 헬다이버의 스태미나 최대치와 회복 속도가 증가합니다.
+    icon: Stamina_Enhancement_Booster_Icon.svg
+  - id: muscle-enhancement
+    name:
+      en: Muscle Enhancement
+      ko: 근육 증진
+    effect:
+      en: Allows Helldivers to traverse difficult terrain with ease.
+      ko: 헬다이버가 험한 지형을 쉽게 지나갈 수 있게 해 줍니다.
+    icon: Muscle_Enhancement_Booster_Icon.svg
+  - id: increased-reinforcement-budget
+    name:
+      en: Increased Reinforcement Budget
+      ko: 증원 예산 증액
+    effect:
+      en: Increases the number of available reinforcements.
+      ko: 사용 가능한 증원 횟수가 늘어납니다.
+    icon: Increased_Reinforcement_Budget_Booster_Icon.svg
+  - id: flexible-reinforcement-budget
+    name:
+      en: Flexible Reinforcement Budget
+      ko: 유동적 증원 예산
+    effect:
+      en: Reduces time until new reinforcements are granted once they've been depleted.
+      ko: 증원을 모두 소모한 뒤 새 증원이 지급되기까지의 시간이 줄어듭니다.
+    icon: Flexible_Reinforcement_Budget_Booster_Icon.svg
+  - id: localization-confusion
+    name:
+      en: Localization Confusion
+      ko: 위치 정보 교란
+    effect:
+      en: Increases the time between enemy encounters.
+      ko: 적과 조우하는 간격이 늘어납니다.
+    icon: Localization_Confusion_Booster_Icon.svg
+  - id: expert-extraction-pilot
+    name:
+      en: Expert Extraction Pilot
+      ko: 탈출 전문 파일럿
+    effect:
+      en: Lowers the time it takes for the extraction shuttle to reach the extraction beacon.
+      ko: 탈출 셔틀이 탈출 신호기에 도착하는 시간이 줄어듭니다.
+    icon: Expert_Extraction_Pilot_Booster_Icon.svg
+  - id: motivational-shocks
+    name:
+      en: Motivational Shocks
+      ko: 동기 부여 충격
+    effect:
+      en: Helldivers recover faster after being slowed by attacks such as acid, but not from area effects like EMS strikes.
+      ko: 산성 등의 공격으로 둔화된 뒤 더 빨리 회복합니다. 단, EMS 타격 같은 범위 효과에는 적용되지 않습니다.
+    icon: Motivational_Shocks_Booster_Icon.svg
+  - id: experimental-infusion
+    name:
+      en: Experimental Infusion
+      ko: 실험용 주입
+    effect:
+      en: In addition to restoring health, Stims temporarily increase movement speed and damage reduction.
+      ko: 스팀팩이 체력 회복 외에도 일시적으로 이동 속도와 피해 감소를 높여 줍니다.
+    icon: Experimental_Infusion_Booster_Icon.svg
+  - id: firebomb-hellpods
+    name:
+      en: Firebomb Hellpods
+      ko: 화염 폭탄 헬포드
+    effect:
+      en: Lines all Hellpods with volatile incendiaries that detonate upon impact, igniting any units in vicinity of the drop site.
+      ko: 모든 헬포드에 착지 시 폭발하는 휘발성 소이제를 채워, 투하 지점 주변의 모든 유닛에 불을 붙입니다.
+    icon: Firebomb_Hellpods_Booster_Icon.svg
+  - id: dead-sprint
+    name:
+      en: Dead Sprint
+      ko: 데드 스프린트
+    effect:
+      en: Allows Helldivers to keep sprinting even when they are out of stamina, draining their health instead.
+      ko: 스태미나가 바닥나도 체력을 소모하며 계속 전력 질주할 수 있게 해 줍니다.
+    icon: Dead_Sprint_Booster_Icon.svg
+  - id: armed-resupply-pods
+    name:
+      en: Armed Resupply Pods
+      ko: 무장 재보급 포드
+    effect:
+      en: Mounts a modified AR-23 Liberator to all resupply pods, allowing them to double as automatic turrets.
+      ko: 모든 재보급 포드에 개조된 AR-23 리버레이터를 장착해 자동 포탑으로도 쓸 수 있게 합니다.
+    icon: Armed_Resupply_Pods_Booster_Icon.svg
+  - id: sample-extricator
+    name:
+      en: Sample Extricator
+      ko: 샘플 해방자
+    effect:
+      en: Large enemies have a chance to drop samples on death, capped at 10 drops per mission.
+      ko: 대형 적이 처치될 때 일정 확률로 샘플을 떨어뜨리며, 임무당 최대 10회까지입니다.
+    icon: Sample_Extricator_Booster_Icon.svg
+  - id: sample-scanner
+    name:
+      en: Sample Scanner
+      ko: 샘플 스캐너
+    effect:
+      en: Gives a 15% chance to receive double samples on pickup.
+      ko: 샘플을 획득할 때 15% 확률로 2배를 얻습니다.
+    icon: Sample_Scanner_Booster_Icon.svg
+  - id: stun-pods
+    name:
+      en: Stun Pods
+      ko: 기절 포드
+    effect:
+      en: Exposes Hellpod wiring upon surface contact, stunning any units in the vicinity of the drop site.
+      ko: 헬포드가 지면에 닿으면 배선이 노출되어 투하 지점 주변의 모든 유닛을 기절시킵니다.
+    icon: Stun_Pods_Booster_Icon.svg
+  - id: concealed-insertion
+    name:
+      en: Concealed Insertion
+      ko: 투입 은폐
+    effect:
+      en: Equips Hellpods to deploy smokescreens on impact, obscuring Helldiver deployment.
+      ko: 헬포드가 착지 시 연막을 펼쳐 헬다이버의 투입을 가립니다.
+    icon: Concealed_Insertion_Booster_Icon.svg
+  - id: surplus-eat-allocation
+    name:
+      en: Surplus EAT Allocation
+      ko: 초과 EAT 할당
+    effect:
+      en: Grants two free uses of the EAT-17 Expendable Anti-Tank stratagem per mission.
+      ko: 임무마다 EAT-17 일회성 대전차 스트라타젬을 2회 무료로 사용할 수 있습니다.
+    icon: Surplus_EAT_Allocation_Booster_Icon.png
+  - id: integrated-extinguishers
+    name:
+      en: Integrated Extinguishers
+      ko: 통합 화재 진압기
+    effect:
+      en: Significantly reduces the time it takes for burning Helldivers to extinguish flames naturally.
+      ko: 불이 붙은 헬다이버의 불이 저절로 꺼지는 시간을 크게 줄여 줍니다.
+    icon: Integrated_Extinguishers_Booster_Icon.svg

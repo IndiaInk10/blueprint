@@ -1,0 +1,45 @@
+@import '../theme.css';
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* The overlay window is transparent; only panels are painted. */
+  background: transparent;
+  color: var(--gg-text);
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(35, 47, 62, 0.94) 0%, rgba(23, 26, 33, 0.94) 100%);
+  border: 1px solid rgba(102, 192, 244, 0.25);
+  border-radius: var(--gg-radius);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+}
+
+.overlay-panel-header {
+  padding: 8px 12px;
+  background: linear-gradient(90deg, rgba(62, 107, 140, 0.9) 0%, rgba(42, 71, 94, 0.6) 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gg-text-strong);
+}
+
+.overlay-panel-body {
+  flex: 1;
+  min-height: 0;
+  padding: 12px;
+  overflow: hidden;
+}

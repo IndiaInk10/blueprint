@@ -1,0 +1,3449 @@
+# Warbonds with every page and medal cost, Superstore equipment and campaign rewards, from helldivers.wiki.gg.
+# medalsToUnlock: null where the wiki does not know the page cost.
+kind: warbond-catalog
+schemaVersion: 1
+revision: 1
+updatedAt: 2026-09-27
+currencies:
+  - id: super-credits
+    name:
+      en: Super Credits
+      ko: 슈퍼 크레딧
+    text:
+      en: Buys warbonds (premium 1,000, legendary 1,500) and Superstore items. Picked up on missions, and each premium warbond pays back 300 of its price; legendary ones pay back none.
+      ko: 전쟁 채권(프리미엄 1,000, 레전더리 1,500)과 슈퍼 상점 아이템을 삽니다. 미션 중에 줍거나, 프리미엄 채권 안에서 300을 돌려받습니다. 레전더리 채권은 돌려주지 않습니다.
+  - id: medals
+    name:
+      en: Medals
+      ko: 메달
+    text:
+      en: Unlocks items inside a warbond; later pages open after enough medals are spent in that warbond. Capped at 250, so spend them before a Major Order pays out.
+      ko: 채권 안의 아이템을 여는 데 씁니다. 그 채권에 메달을 충분히 써야 다음 페이지가 열립니다. 최대 250개까지만 보유되니 주요 명령 보상 전에 써 두세요.
+  - id: requisition
+    name:
+      en: Requisition Slips
+      ko: 요청서
+    text:
+      en: Buys the ship's standard stratagems once you reach their level, plus ship upgrades and weapon attachments. Capped at 50,000.
+      ko: 레벨 조건을 채운 기본 스트라타젬과 함선 업그레이드, 무기 부착물을 삽니다. 최대 50,000까지 보유됩니다.
+warbonds:
+  - id: helldivers-mobilize
+    name:
+      en: Helldivers Mobilize!
+      ko: 헬다이버 출동!
+    type: free
+    superCredits: 0
+    released: 2024-02-08
+    icon: Helldivers_Mobilize_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: Independence Bringer
+            kind: player-card
+            medals: 1
+          - name:
+              en: G-6 Frag
+              ko: G-6 세열
+            kind: weapon
+            ref: g-6-frag
+            medals: 2
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 1
+          - name:
+              en: SG-8 Punisher
+              ko: SG-8 퍼니셔
+            kind: weapon
+            ref: sg-8-punisher
+            medals: 4
+          - name:
+              en: SC-34 Infiltrator
+            kind: armor
+            armorPassive: scout
+            medals: 3
+          - name:
+              en: SC-34 Infiltrator
+            kind: helmet
+            medals: 2
+          - name:
+              en: Clapping
+            kind: victory-pose
+            medals: 1
+          - name:
+              en: Independence Bringer
+            kind: cape
+            medals: 2
+      - page: 2
+        medalsToUnlock: 8
+        items:
+          - name:
+              en: Finger Guns
+            kind: victory-pose
+            medals: 2
+          - name:
+              en: FS-05 Marksman
+            kind: armor
+            armorPassive: fortified
+            medals: 6
+          - name:
+              en: FS-05 Marksman
+            kind: helmet
+            medals: 5
+          - name:
+              en: Liberty's Herald
+            kind: player-card
+            medals: 1
+          - name:
+              en: P-19 Redeemer
+              ko: P-19 리디머
+            kind: weapon
+            ref: p-19-redeemer
+            medals: 5
+          - name:
+              en: Liberty's Herald
+            kind: cape
+            medals: 3
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 2
+          - name:
+              en: R-63 Diligence
+              ko: R-63 딜리전스
+            kind: weapon
+            ref: r-63-diligence
+            medals: 8
+      - page: 3
+        medalsToUnlock: 35
+        items:
+          - name:
+              en: Tideturner
+            kind: player-card
+            medals: 2
+          - name:
+              en: Hellpod Space Optimization
+              ko: 헬포드 공간 최적화
+            kind: booster
+            ref: hellpod-space-optimization
+            medals: 15
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 3
+          - name:
+              en: SMG-37 Defender
+              ko: SMG-37 디펜더
+            kind: weapon
+            ref: smg-37-defender
+            medals: 15
+          - name:
+              en: CE-35 Trench Engineer
+            kind: armor
+            armorPassive: engineering-kit
+            medals: 10
+          - name:
+              en: CE-35 Trench Engineer
+            kind: helmet
+            medals: 7
+          - name:
+              en: Explosive Handshake
+            kind: emote
+            medals: 8
+          - name:
+              en: Tideturner
+            kind: cape
+            medals: 5
+      - page: 4
+        medalsToUnlock: 75
+        items:
+          - name:
+              en: Hug
+            kind: emote
+            medals: 20
+          - name:
+              en: CM-09 Bonesnapper
+            kind: armor
+            armorPassive: med-kit
+            medals: 15
+          - name:
+              en: CM-09 Bonesnapper
+            kind: helmet
+            medals: 12
+          - name:
+              en: Stars and Suffrage
+            kind: player-card
+            medals: 2
+          - name:
+              en: Vitality Enhancement
+              ko: 생명력 증진
+            kind: booster
+            ref: vitality-enhancement
+            medals: 20
+          - name:
+              en: Stars and Suffrage
+            kind: cape
+            medals: 8
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 6
+          - name:
+              en: SG-225 Breaker
+              ko: SG-225 브레이커
+            kind: weapon
+            ref: sg-225-breaker
+            medals: 20
+      - page: 5
+        medalsToUnlock: 150
+        items:
+          - name:
+              en: G-16 Impact
+              ko: G-16 충격
+            kind: weapon
+            ref: g-16-impact
+            medals: 20
+          - name:
+              en: Unblemished Allegiance
+            kind: player-card
+            medals: 4
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 10
+          - name:
+              en: LAS-5 Scythe
+              ko: LAS-5 사이스
+            kind: weapon
+            ref: las-5-scythe
+            medals: 30
+          - name:
+              en: DP-40 Hero of the Federation
+            kind: armor
+            armorPassive: democracy-protects
+            medals: 25
+          - name:
+              en: DP-40 Hero of the Federation
+            kind: helmet
+            medals: 20
+          - name:
+              en: High-Five
+            kind: emote
+            medals: 20
+          - name:
+              en: Unblemished Allegiance
+            kind: cape
+            medals: 12
+      - page: 6
+        medalsToUnlock: 260
+        items:
+          - name:
+              en: Flex
+            kind: victory-pose
+            medals: 10
+          - name:
+              en: FS-23 Battle Master
+            kind: armor
+            armorPassive: fortified
+            medals: 35
+          - name:
+              en: FS-23 Battle Master
+            kind: helmet
+            medals: 25
+          - name:
+              en: Judgment Day
+            kind: player-card
+            medals: 6
+          - name:
+              en: UAV Recon Booster
+              ko: UAV 정찰 부스터
+            kind: booster
+            ref: uav-recon-booster
+            medals: 40
+          - name:
+              en: Judgment Day
+            kind: cape
+            medals: 15
+          - name:
+              en: 50 Super Credits
+            kind: super-credits
+            medals: 15
+          - name:
+              en: AR-23P Liberator Penetrator
+              ko: AR-23P 리버레이터 페네트레이터
+            kind: weapon
+            ref: ar-23p-liberator-penetrator
+            medals: 40
+      - page: 7
+        medalsToUnlock: 420
+        items:
+          - name:
+              en: Stamina Enhancement
+              ko: 스태미나 증진
+            kind: booster
+            ref: stamina-enhancement
+            medals: 75
+          - name:
+              en: Cresting Honor
+            kind: player-card
+            medals: 7
+          - name:
+              en: 50 Super Credits
+            kind: super-credits
+            medals: 15
+          - name:
+              en: R-63CS Diligence Counter Sniper
+              ko: R-63CS 딜리전스 카운터 저격소총
+            kind: weapon
+            ref: r-63cs-diligence-counter-sniper
+            medals: 40
+          - name:
+              en: SC-30 Trailblazer Scout
+            kind: armor
+            armorPassive: scout
+            medals: 50
+          - name:
+              en: SC-30 Trailblazer Scout
+            kind: helmet
+            medals: 35
+          - name:
+              en: Scout Handshake
+            kind: emote
+            medals: 35
+          - name:
+              en: Cresting Honor
+            kind: cape
+            medals: 15
+      - page: 8
+        medalsToUnlock: 650
+        items:
+          - name:
+              en: Rock Paper Scissors
+            kind: emote
+            medals: 50
+          - name:
+              en: SA-04 Combat Technician
+            kind: armor
+            armorPassive: scout
+            medals: 60
+          - name:
+              en: SA-04 Combat Technician
+            kind: helmet
+            medals: 40
+          - name:
+              en: Mantle of True Citizenship
+            kind: player-card
+            medals: 10
+          - name:
+              en: G-3 Smoke
+              ko: G-3 연막
+            kind: weapon
+            ref: g-3-smoke
+            medals: 25
+          - name:
+              en: Mantle of True Citizenship
+            kind: cape
+            medals: 25
+          - name:
+              en: 50 Super Credits
+            kind: super-credits
+            medals: 20
+          - name:
+              en: SG-8S Slugger
+              ko: SG-8S 슬러거
+            kind: weapon
+            ref: sg-8s-slugger
+            medals: 60
+      - page: 9
+        medalsToUnlock: 850
+        items:
+          - name:
+              en: Muscle Enhancement
+              ko: 근육 증진
+            kind: booster
+            ref: muscle-enhancement
+            medals: 70
+          - name:
+              en: Blazing Samaritan
+            kind: player-card
+            medals: 15
+          - name:
+              en: 50 Super Credits
+            kind: super-credits
+            medals: 25
+          - name:
+              en: SG-225SP Breaker Spray&Pray
+              ko: SG-225SP 브레이커 스프레이 앤 프레이
+            kind: weapon
+            ref: sg-225sp-breaker-spray-and-pray
+            medals: 60
+          - name:
+              en: CM-14 Physician
+            kind: armor
+            armorPassive: med-kit
+            medals: 70
+          - name:
+              en: CM-14 Physician
+            kind: helmet
+            medals: 50
+          - name:
+              en: Loosen Up
+            kind: victory-pose
+            medals: 30
+          - name:
+              en: Blazing Samaritan
+            kind: cape
+            medals: 30
+      - page: 10
+        medalsToUnlock: 1200
+        items:
+          - name:
+              en: Big Whoop
+            kind: victory-pose
+            medals: 50
+          - name:
+              en: DP-11 Champion of the People
+            kind: armor
+            armorPassive: democracy-protects
+            medals: 100
+          - name:
+              en: DP-11 Champion of the People
+            kind: helmet
+            medals: 75
+          - name:
+              en: Increased Reinforcement Budget
+              ko: 증원 예산 증액
+            kind: booster
+            ref: increased-reinforcement-budget
+            medals: 150
+          - name:
+              en: Light of Eternal Liberty
+            kind: player-card
+            medals: 20
+          - name:
+              en: Light of Eternal Liberty
+            kind: cape
+            medals: 40
+          - name:
+              en: 50 Super Credits
+            kind: super-credits
+            medals: 50
+          - name:
+              en: PLAS-1 Scorcher
+              ko: PLAS-1 스코처
+            kind: weapon
+            ref: plas-1-scorcher
+            medals: 75
+  - id: steeled-veterans
+    name:
+      en: Steeled Veterans
+      ko: 결연한 베테랑
+    type: premium
+    superCredits: 1000
+    released: 2024-02-08
+    icon: Steeled_Veterans_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: Tyrant Hunter
+            kind: player-card
+            medals: 2
+          - name:
+              en: P-4 Senator
+              ko: P-4 세너터
+            kind: weapon
+            ref: p-4-senator
+            medals: 15
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: AR-23C Liberator Concussive
+              ko: AR-23C 리버레이터 컨커시브
+            kind: weapon
+            ref: ar-23c-liberator-concussive
+            medals: 20
+          - name:
+              en: SA-25 Steel Trooper
+            kind: armor
+            armorPassive: servo-assisted
+            medals: 18
+          - name:
+              en: SA-25 Steel Trooper
+            kind: helmet
+            medals: 12
+          - name:
+              en: Super Person
+            kind: victory-pose
+            medals: 8
+          - name:
+              en: Tyrant Hunter
+            kind: cape
+            medals: 8
+      - page: 2
+        medalsToUnlock: 60
+        items:
+          - name:
+              en: Roll 'Em
+            kind: victory-pose
+            medals: 15
+          - name:
+              en: G-10 Incendiary
+              ko: G-10 소이
+            kind: weapon
+            ref: g-10-incendiary
+            medals: 25
+          - name:
+              en: SA-12 Servo Assisted
+            kind: armor
+            armorPassive: servo-assisted
+            medals: 45
+          - name:
+              en: SA-12 Servo Assisted
+            kind: helmet
+            medals: 35
+          - name:
+              en: Cloak of Posterity's Gratitude
+            kind: player-card
+            medals: 5
+          - name:
+              en: Cloak of Posterity's Gratitude
+            kind: cape
+            medals: 16
+          - name:
+              en: Drape of Glory
+            kind: cape
+            medals: 16
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: SG-225IE Breaker Incendiary
+              ko: SG-225IE 브레이커 인센디어리
+            kind: weapon
+            ref: sg-225ie-breaker-incendiary
+            medals: 60
+      - page: 3
+        medalsToUnlock: 200
+        items:
+          - name:
+              en: Bastion of Integrity
+            kind: player-card
+            medals: 16
+          - name:
+              en: Flexible Reinforcement Budget
+              ko: 유동적 증원 예산
+            kind: booster
+            ref: flexible-reinforcement-budget
+            medals: 75
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: JAR-5 Dominator
+              ko: JAR-5 도미네이터
+            kind: weapon
+            ref: jar-5-dominator
+            medals: 80
+          - name:
+              en: SA-32 Dynamo
+            kind: armor
+            armorPassive: servo-assisted
+            medals: 64
+          - name:
+              en: SA-32 Dynamo
+            kind: helmet
+            medals: 48
+          - name:
+              en: You're Next
+            kind: victory-pose
+            medals: 32
+          - name:
+              en: Bastion of Integrity
+            kind: cape
+            medals: 20
+  - id: cutting-edge
+    name:
+      en: Cutting Edge
+      ko: 최첨단
+    type: premium
+    superCredits: 1000
+    released: 2024-03-14
+    icon: Cutting_Edge_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: Botslayer
+            kind: player-card
+            medals: 2
+          - name:
+              en: Botslayer
+            kind: cape
+            medals: 8
+          - name:
+              en: Localization Confusion
+              ko: 위치 정보 교란
+            kind: booster
+            ref: localization-confusion
+            medals: 18
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: LAS-16 Sickle
+              ko: LAS-16 시클
+            kind: weapon
+            ref: las-16-sickle
+            medals: 20
+          - name:
+              en: Head Tap
+            kind: victory-pose
+            medals: 8
+          - name:
+              en: EX-03 Prototype 3
+            kind: armor
+            armorPassive: electrical-conduit
+            medals: 18
+          - name:
+              en: EX-03 Prototype 3
+            kind: helmet
+            medals: 12
+      - page: 2
+        medalsToUnlock: 60
+        items:
+          - name:
+              en: Shotgun Show
+            kind: victory-pose
+            medals: 15
+          - name:
+              en: EX-16 Prototype 16
+            kind: armor
+            armorPassive: electrical-conduit
+            medals: 45
+          - name:
+              en: EX-16 Prototype 16
+            kind: helmet
+            medals: 35
+          - name:
+              en: Martyris Rex
+            kind: cape
+            medals: 20
+          - name:
+              en: Martyris Rex
+            kind: player-card
+            medals: 5
+          - name:
+              en: G-23 Stun
+              ko: G-23 기절
+            kind: weapon
+            ref: g-23-stun
+            medals: 25
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: SG-8P Punisher Plasma
+              ko: SG-8P 퍼니셔 플라즈마
+            kind: weapon
+            ref: sg-8p-punisher-plasma
+            medals: 60
+      - page: 3
+        medalsToUnlock: 230
+        items:
+          - name:
+              en: Agent of Oblivion
+            kind: player-card
+            medals: 16
+          - name:
+              en: Agent of Oblivion
+            kind: cape
+            medals: 30
+          - name:
+              en: LAS-7 Dagger
+              ko: LAS-7 대거
+            kind: weapon
+            ref: las-7-dagger
+            medals: 60
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: ARC-12 Blitzer
+              ko: ARC-12 블리처
+            kind: weapon
+            ref: arc-12-blitzer
+            medals: 80
+          - name:
+              en: Presentable
+            kind: victory-pose
+            medals: 32
+          - name:
+              en: EX-00 Prototype X
+            kind: armor
+            armorPassive: electrical-conduit
+            medals: 64
+          - name:
+              en: EX-00 Prototype X
+            kind: helmet
+            medals: 48
+  - id: democratic-detonation
+    name:
+      en: Democratic Detonation
+      ko: 민주적 폭파
+    type: premium
+    superCredits: 1000
+    released: 2024-04-11
+    icon: Democratic_Detonation_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: Squat
+            kind: victory-pose
+            medals: 8
+          - name:
+              en: Harbinger of True Equality
+            kind: player-card
+            medals: 2
+          - name:
+              en: G-123 Thermite
+              ko: G-123 테르밋
+            kind: weapon
+            ref: g-123-thermite
+            medals: 15
+          - name:
+              en: CE-27 Ground Breaker
+            kind: armor
+            armorPassive: engineering-kit
+            medals: 18
+          - name:
+              en: CE-27 Ground Breaker
+            kind: helmet
+            medals: 12
+          - name:
+              en: Harbinger of True Equality
+            kind: cape
+            medals: 8
+          - name:
+              en: BR-14 Adjudicator
+              ko: BR-14 어드주디케이터
+            kind: weapon
+            ref: br-14-adjudicator
+            medals: 20
+      - page: 2
+        medalsToUnlock: 60
+        items:
+          - name:
+              en: Eagle's Fury
+            kind: player-card
+            medals: 5
+          - name:
+              en: CE-07 Demolition Specialist
+            kind: armor
+            armorPassive: engineering-kit
+            medals: 45
+          - name:
+              en: CE-07 Demolition Specialist
+            kind: helmet
+            medals: 35
+          - name:
+              en: Expert Extraction Pilot
+              ko: 탈출 전문 파일럿
+            kind: booster
+            ref: expert-extraction-pilot
+            medals: 55
+          - name:
+              en: Eagle's Fury
+            kind: cape
+            medals: 20
+          - name:
+              en: R-36 Eruptor
+              ko: R-36 이럽터
+            kind: weapon
+            ref: r-36-eruptor
+            medals: 60
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: Courtly Bow
+            kind: victory-pose
+            medals: 15
+      - page: 3
+        medalsToUnlock: 230
+        items:
+          - name:
+              en: Boxer
+            kind: victory-pose
+            medals: 32
+          - name:
+              en: FS-55 Devastator
+            kind: armor
+            armorPassive: fortified
+            medals: 64
+          - name:
+              en: FS-55 Devastator
+            kind: helmet
+            medals: 48
+          - name:
+              en: Freedom's Tapestry
+            kind: player-card
+            medals: 16
+          - name:
+              en: GP-31 Grenade Pistol
+              ko: GP-31 유탄 권총
+            kind: weapon
+            ref: gp-31-grenade-pistol
+            medals: 60
+          - name:
+              en: Freedom's Tapestry
+            kind: cape
+            medals: 30
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: CB-9 Exploding Crossbow
+              ko: CB-9 익스플로딩 크로스보우
+            kind: weapon
+            ref: cb-9-exploding-crossbow
+            medals: 80
+  - id: polar-patriots
+    name:
+      en: Polar Patriots
+      ko: 극지의 애국자
+    type: premium
+    superCredits: 1000
+    released: 2024-05-09
+    icon: Polar_Patriots_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: CW-36 Winter Warrior
+            kind: armor
+            armorPassive: servo-assisted
+            medals: 18
+          - name:
+              en: CW-36 Winter Warrior
+            kind: helmet
+            medals: 12
+          - name:
+              en: Mime Instrumentation
+            kind: victory-pose
+            medals: 8
+          - name:
+              en: Dissident's Nightmare
+            kind: cape
+            medals: 8
+          - name:
+              en: Dissident's Nightmare
+            kind: player-card
+            medals: 2
+          - name:
+              en: Motivational Shocks
+              ko: 동기 부여 충격
+            kind: booster
+            ref: motivational-shocks
+            medals: 15
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: AR-61 Tenderizer
+              ko: AR-61 텐더라이저
+            kind: weapon
+            ref: ar-61-tenderizer
+            medals: 20
+      - page: 2
+        medalsToUnlock: 60
+        items:
+          - name:
+              en: SMG-72 Pummeler
+              ko: SMG-72 퍼멜러
+            kind: weapon
+            ref: smg-72-pummeler
+            medals: 60
+          - name:
+              en: Call the Helldivers
+            kind: victory-pose
+            medals: 15
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: G-13 Incendiary Impact
+              ko: G-13 소이 충격
+            kind: weapon
+            ref: g-13-incendiary-impact
+            medals: 25
+          - name:
+              en: CW-22 Kodiak
+            kind: helmet
+            medals: 35
+          - name:
+              en: CW-22 Kodiak
+            kind: armor
+            armorPassive: fortified
+            medals: 45
+          - name:
+              en: Pinions of Everlasting Glory
+            kind: player-card
+            medals: 5
+          - name:
+              en: Pinions of Everlasting Glory
+            kind: cape
+            medals: 20
+      - page: 3
+        medalsToUnlock: 230
+        items:
+          - name:
+              en: CW-4 Arctic Ranger
+            kind: armor
+            armorPassive: scout
+            medals: 64
+          - name:
+              en: CW-4 Arctic Ranger
+            kind: helmet
+            medals: 48
+          - name:
+              en: PLAS-101 Purifier
+              ko: PLAS-101 퓨리파이어
+            kind: weapon
+            ref: plas-101-purifier
+            medals: 80
+          - name:
+              en: Order of the Venerated Ballot
+            kind: cape
+            medals: 30
+          - name:
+              en: Order of the Venerated Ballot
+            kind: player-card
+            medals: 16
+          - name:
+              en: P-113 Verdict
+              ko: P-113 버딕트
+            kind: weapon
+            ref: p-113-verdict
+            medals: 60
+          - name:
+              en: Distribute Ballots
+            kind: victory-pose
+            medals: 32
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+  - id: viper-commandos
+    name:
+      en: Viper Commandos
+      ko: 독사 특공대
+    type: premium
+    superCredits: 1000
+    released: 2024-06-13
+    icon: Viper_Commandos_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: PH-9 Predator
+            kind: armor
+            armorPassive: peak-physique
+            medals: 40
+          - name:
+              en: PH-9 Predator
+            kind: helmet
+            medals: 30
+          - name:
+              en: Mark of the Crimson Fang
+            kind: player-card
+            medals: 2
+          - name:
+              en: Undergrowth Pattern
+            kind: other
+            medals: 20
+          - name:
+              en: Mark of the Crimson Fang
+            kind: cape
+            medals: 8
+          - name:
+              en: AR-23A Liberator Carbine
+              ko: AR-23A 리버레이터 카빈
+            kind: weapon
+            ref: ar-23a-liberator-carbine
+            medals: 20
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: Welcome Adoration
+            kind: victory-pose
+            medals: 8
+      - page: 2
+        medalsToUnlock: 60
+        items:
+          - name:
+              en: Guns of Liberty
+            kind: victory-pose
+            medals: 15
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: SG-22 Bushwhacker
+              ko: SG-22 부시웨커
+            kind: weapon
+            ref: sg-22-bushwhacker
+            medals: 50
+          - name:
+              en: Executioner's Canopy
+            kind: player-card
+            medals: 5
+          - name:
+              en: Executioner's Canopy
+            kind: cape
+            medals: 20
+          - name:
+              en: PH-202 Twigsnapper
+            kind: helmet
+            medals: 35
+          - name:
+              en: PH-202 Twigsnapper
+            kind: armor
+            armorPassive: peak-physique
+            medals: 45
+          - name:
+              en: Undergrowth Pattern
+            kind: other
+            medals: 50
+      - page: 3
+        medalsToUnlock: 275
+        items:
+          - name:
+              en: Viper Commando
+            kind: title
+            medals: 20
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: K-2 Throwing Knife
+              ko: K-2 투척 나이프
+            kind: weapon
+            ref: k-2-throwing-knife
+            medals: 60
+          - name:
+              en: Undergrowth Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: Test of Conviction
+            kind: emote
+            medals: 70
+          - name:
+              en: Experimental Infusion
+              ko: 실험용 주입
+            kind: booster
+            ref: experimental-infusion
+            medals: 80
+          - name:
+              en: Undergrowth Pattern
+            kind: other
+            medals: 55
+  - id: freedoms-flame
+    name:
+      en: Freedom's Flame
+      ko: 자유의 불길
+    type: premium
+    superCredits: 1000
+    released: 2024-08-08
+    icon: Freedom's_Flame_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: I-09 Heatseeker
+            kind: armor
+            armorPassive: inflammable
+            medals: 18
+          - name:
+              en: SG-451 Cookout
+              ko: SG-451 쿡아웃
+            kind: weapon
+            ref: sg-451-cookout
+            medals: 20
+          - name:
+              en: Big Stretch
+            kind: victory-pose
+            medals: 8
+          - name:
+              en: Safety Orange Pattern
+            kind: other
+            medals: 10
+          - name:
+              en: Purifying Eclipse
+            kind: player-card
+            medals: 2
+          - name:
+              en: Purifying Eclipse
+            kind: cape
+            medals: 8
+          - name:
+              en: I-09 Heatseeker
+            kind: helmet
+            medals: 12
+      - page: 2
+        medalsToUnlock: 60
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: Safety Orange Pattern
+            kind: other
+            medals: 25
+          - name:
+              en: The Breach
+            kind: player-card
+            medals: 5
+          - name:
+              en: FLAM-66 Torcher
+              ko: FLAM-66 토처
+            kind: weapon
+            ref: flam-66-torcher
+            medals: 40
+          - name:
+              en: Deep Reflection
+            kind: victory-pose
+            medals: 15
+          - name:
+              en: I-102 Draconaught
+            kind: helmet
+            medals: 35
+          - name:
+              en: The Breach
+            kind: cape
+            medals: 20
+          - name:
+              en: I-102 Draconaught
+            kind: armor
+            armorPassive: inflammable
+            medals: 45
+      - page: 3
+        medalsToUnlock: 230
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: Fire Safety Officer
+            kind: title
+            medals: 20
+          - name:
+              en: Thoracic Collision Exultation Maneuver
+            kind: emote
+            medals: 35
+          - name:
+              en: P-72 Crisper
+              ko: P-72 크리스퍼
+            kind: weapon
+            ref: p-72-crisper
+            medals: 45
+          - name:
+              en: Firebomb Hellpods
+              ko: 화염 폭탄 헬포드
+            kind: booster
+            ref: firebomb-hellpods
+            medals: 60
+          - name:
+              en: Safety Orange Pattern
+            kind: other
+            medals: 40
+          - name:
+              en: Safety Orange Pattern
+            kind: other
+            medals: 55
+  - id: chemical-agents
+    name:
+      en: Chemical Agents
+      ko: 화학 요원
+    type: premium
+    superCredits: 1000
+    released: 2024-09-19
+    icon: Chemical_Agents_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: AF-50 Noxious Ranger
+            kind: armor
+            armorPassive: advanced-filtration
+            medals: 40
+          - name:
+              en: G-4 Gas
+              ko: G-4 가스
+            kind: weapon
+            ref: g-4-gas
+            medals: 30
+          - name:
+              en: Standard of Safe Distance
+            kind: cape
+            medals: 8
+          - name:
+              en: AF-50 Noxious Ranger
+            kind: helmet
+            medals: 30
+          - name:
+              en: Ew
+            kind: victory-pose
+            medals: 8
+          - name:
+              en: Mustard Pattern
+            kind: other
+            medals: 20
+          - name:
+              en: Standard of Safe Distance
+            kind: player-card
+            medals: 2
+      - page: 2
+        medalsToUnlock: 110
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: Patient Zero's Remembrance
+            kind: player-card
+            medals: 5
+          - name:
+              en: TX-41 Sterilizer
+              ko: TX-41 스터릴라이저
+            kind: stratagem
+            ref: tx-41-sterilizer
+            medals: 85
+          - name:
+              en: AF-02 Haz-Master
+            kind: helmet
+            medals: 35
+          - name:
+              en: Patient Zero's Remembrance
+            kind: cape
+            medals: 20
+          - name:
+              en: AF-02 Haz-Master
+            kind: armor
+            armorPassive: advanced-filtration
+            medals: 45
+          - name:
+              en: Mustard Pattern
+            kind: other
+            medals: 50
+      - page: 3
+        medalsToUnlock: 300
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: Mustard Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: Mustard Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: P-11 Stim Pistol
+              ko: P-11 각성제 권총
+            kind: weapon
+            ref: p-11-stim-pistol
+            medals: 80
+          - name:
+              en: Natural Gas Extraction
+            kind: emote
+            medals: 70
+          - name:
+              en: Expert Exterminator
+            kind: title
+            medals: 20
+          - name:
+              en: AX/TX-13 "Guard Dog" Dog Breath
+              ko: AX/TX-13 '가드 독' 독 브레스
+            kind: stratagem
+            ref: ax-tx-13-guard-dog-dog-breath
+            medals: 110
+  - id: truth-enforcers
+    name:
+      en: Truth Enforcers
+      ko: 진리의 집행자
+    type: premium
+    superCredits: 1000
+    released: 2024-10-31
+    icon: Truth_Enforcers_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: Inconspicuous Black Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: SG-20 Halt
+              ko: SG-20 홀트
+            kind: weapon
+            ref: sg-20-halt
+            medals: 20
+          - name:
+              en: Dead Sprint
+              ko: 데드 스프린트
+            kind: booster
+            ref: dead-sprint
+            medals: 35
+          - name:
+              en: Inconspicuous Black Pattern
+            kind: other
+            medals: 10
+      - page: 2
+        medalsToUnlock: null
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: Inconspicuous Black Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: UF-50 Bloodhound
+            kind: armor
+            armorPassive: unflinching
+            medals: 45
+          - name:
+              en: Pride of the Whistleblower
+            kind: cape
+            medals: 20
+          - name:
+              en: UF-50 Bloodhound
+            kind: helmet
+            medals: 35
+          - name:
+              en: SMG-32 Reprimand
+              ko: SMG-32 레프리맨드
+            kind: weapon
+            ref: smg-32-reprimand
+            medals: 40
+          - name:
+              en: Pride of the Whistleblower
+            kind: player-card
+            medals: 5
+      - page: 3
+        medalsToUnlock: 250
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: At Ease
+            kind: emote
+            medals: 50
+          - name:
+              en: Proof of Faultless Virtue
+            kind: player-card
+            medals: 15
+          - name:
+              en: Proof of Faultless Virtue
+            kind: cape
+            medals: 30
+          - name:
+              en: PLAS-15 Loyalist
+              ko: PLAS-15 로열리스트
+            kind: weapon
+            ref: plas-15-loyalist
+            medals: 45
+          - name:
+              en: UF-16 Inspector
+            kind: helmet
+            medals: 45
+          - name:
+              en: Free of Thought
+            kind: title
+            medals: 20
+          - name:
+              en: Inconspicuous Black Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: UF-16 Inspector
+            kind: armor
+            armorPassive: unflinching
+            medals: 65
+  - id: urban-legends
+    name:
+      en: Urban Legends
+      ko: 도시 전설
+    type: premium
+    superCredits: 1000
+    released: 2024-12-13
+    icon: Urban_Legends_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: Rebar Resolve
+            kind: cape
+            medals: 8
+          - name:
+              en: SR-24 Street Scout
+            kind: helmet
+            medals: 30
+          - name:
+              en: SH-51 Directional Shield
+              ko: SH-51 방향 방패
+            kind: stratagem
+            ref: sh-51-directional-shield
+            medals: 75
+          - name:
+              en: Concrete Jungle Pattern
+            kind: other
+            medals: 20
+          - name:
+              en: CQC-19 Stun Lance
+              ko: CQC-19 기절 창
+            kind: weapon
+            ref: cqc-19-stun-lance
+            medals: 30
+          - name:
+              en: Rebar Resolve
+            kind: player-card
+            medals: 2
+          - name:
+              en: SR-24 Street Scout
+            kind: armor
+            armorPassive: siege-ready
+            medals: 40
+      - page: 2
+        medalsToUnlock: null
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: Holder of the Yellow Line
+            kind: cape
+            medals: 20
+          - name:
+              en: SR-18 Roadblock
+            kind: helmet
+            medals: 35
+          - name:
+              en: A/FLAM-40 Flame Sentry
+              ko: A/FLAM-40 화염 센트리
+            kind: stratagem
+            ref: a-flam-40-flame-sentry
+            medals: 85
+          - name:
+              en: Armed Resupply Pods
+              ko: 무장 재보급 포드
+            kind: booster
+            ref: armed-resupply-pods
+            medals: 55
+          - name:
+              en: Concrete Jungle Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: SR-18 Roadblock
+            kind: armor
+            armorPassive: siege-ready
+            medals: 45
+          - name:
+              en: Holder of the Yellow Line
+            kind: player-card
+            medals: 5
+      - page: 3
+        medalsToUnlock: 250
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: Concrete Jungle Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: Concrete Jungle Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: E/AT-12 Anti-Tank Emplacement
+              ko: E/AT-12 대전차 거치포
+            kind: stratagem
+            ref: e-at-12-anti-tank-emplacement
+            medals: 110
+          - name:
+              en: Super Pedestrian
+            kind: title
+            medals: 20
+          - name:
+              en: This Is Democracy
+            kind: emote
+            medals: 50
+  - id: servants-of-freedom
+    name:
+      en: Servants of Freedom
+      ko: 자유의 종복
+    type: premium
+    superCredits: 1000
+    released: 2025-02-06
+    icon: Servants_of_Freedom_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: Fre Liberam
+            kind: player-card
+            medals: 2
+          - name:
+              en: LAS-17 Double-Edge Sickle
+              ko: LAS-17 더블 엣지 시클
+            kind: weapon
+            ref: las-17-double-edge-sickle
+            medals: 35
+          - name:
+              en: IE-3 Martyr
+            kind: armor
+            armorPassive: integrated-explosives
+            medals: 45
+          - name:
+              en: IE-3 Martyr
+            kind: helmet
+            medals: 30
+          - name:
+              en: Fre Liberam
+            kind: cape
+            medals: 8
+      - page: 2
+        medalsToUnlock: null
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: GP-20 Ultimatum
+              ko: GP-20 얼티메이텀
+            kind: weapon
+            ref: gp-20-ultimatum
+            medals: 40
+          - name:
+              en: IE-12 Righteous
+            kind: armor
+            armorPassive: integrated-explosives
+            medals: 55
+          - name:
+              en: IE-12 Righteous
+            kind: helmet
+            medals: 45
+          - name:
+              en: Per Democrasum
+            kind: player-card
+            medals: 7
+          - name:
+              en: Per Democrasum
+            kind: cape
+            medals: 25
+      - page: 3
+        medalsToUnlock: 230
+        items:
+          - name:
+              en: G-50 Seeker
+              ko: G-50 시커
+            kind: weapon
+            ref: g-50-seeker
+            medals: 65
+          - name:
+              en: Raise Weapon
+            kind: emote
+            medals: 55
+          - name:
+              en: B-100 Portable Hellbomb
+              ko: B-100 휴대용 지옥폭탄
+            kind: stratagem
+            ref: b-100-portable-hellbomb
+            medals: 110
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: Servant of Freedom
+            kind: title
+            medals: 25
+  - id: borderline-justice
+    name:
+      en: Borderline Justice
+      ko: 정의의 경계선
+    type: premium
+    superCredits: 1000
+    released: 2025-03-20
+    icon: Borderline_Justice_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: Reaper of Bounties
+            kind: cape
+            medals: 8
+          - name:
+              en: GS-17 Frontier Marshal
+            kind: helmet
+            medals: 30
+          - name:
+              en: GS-17 Frontier Marshal
+            kind: armor
+            armorPassive: gunslinger
+            medals: 45
+          - name:
+              en: R-6 Deadeye
+              ko: R-6 데드아이
+            kind: weapon
+            ref: r-6-deadeye
+            medals: 35
+          - name:
+              en: Reaper of Bounties
+            kind: player-card
+            medals: 2
+      - page: 2
+        medalsToUnlock: 95
+        items:
+          - name:
+              en: GS-66 Lawmaker
+            kind: helmet
+            medals: 45
+          - name:
+              en: GS-66 Lawmaker
+            kind: armor
+            armorPassive: gunslinger
+            medals: 55
+          - name:
+              en: Way of the Bandolier
+            kind: cape
+            medals: 25
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: Way of the Bandolier
+            kind: player-card
+            medals: 7
+          - name:
+              en: LAS-58 Talon
+              ko: LAS-58 탈론
+            kind: weapon
+            ref: las-58-talon
+            medals: 40
+      - page: 3
+        medalsToUnlock: 230
+        items:
+          - name:
+              en: TED-63 Dynamite
+              ko: TED-63 다이너마이트
+            kind: weapon
+            ref: ted-63-dynamite
+            medals: 65
+          - name:
+              en: Tip Hat
+            kind: emote
+            medals: 55
+          - name:
+              en: LIFT-860 Hover Pack
+              ko: LIFT-860 호버 팩
+            kind: stratagem
+            ref: lift-860-hover-pack
+            medals: 110
+          - name:
+              en: Sample Extricator
+              ko: 샘플 해방자
+            kind: booster
+            ref: sample-extricator
+            medals: 65
+          - name:
+              en: Super Sheriff
+            kind: title
+            medals: 25
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+  - id: masters-of-ceremony
+    name:
+      en: Masters of Ceremony
+      ko: 의장의 달인
+    type: premium
+    superCredits: 1000
+    released: 2025-05-15
+    icon: Masters_of_Ceremony_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: Federation's Embrace
+            kind: player-card
+            medals: 2
+          - name:
+              en: R-2 Amendment
+              ko: R-2 어멘드멘트
+            kind: weapon
+            ref: r-2-amendment
+            medals: 35
+          - name:
+              en: RE-2310 Honorary Guard
+            kind: helmet
+            medals: 30
+          - name:
+              en: RE-2310 Honorary Guard
+            kind: armor
+            armorPassive: reinforced-epaulettes
+            medals: 45
+          - name:
+              en: Federation's Embrace
+            kind: cape
+            medals: 8
+      - page: 2
+        medalsToUnlock: null
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: Humble Regalia
+            kind: cape
+            medals: 8
+          - name:
+              en: RE-1861 Parade Commander
+            kind: helmet
+            medals: 45
+          - name:
+              en: CQC-2 Saber
+              ko: CQC-2 세이버
+            kind: weapon
+            ref: cqc-2-saber
+            medals: 40
+          - name:
+              en: RE-1861 Parade Commander
+            kind: armor
+            armorPassive: reinforced-epaulettes
+            medals: 55
+          - name:
+              en: Humble Regalia
+            kind: player-card
+            medals: 2
+      - page: 3
+        medalsToUnlock: 230
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: CQC-1 One True Flag
+              ko: CQC-1 원 트루 플래그
+            kind: stratagem
+            ref: cqc-1-one-true-flag
+            medals: 110
+          - name:
+              en: Lockstep
+            kind: emote
+            medals: 55
+          - name:
+              en: Decorated Hero
+            kind: title
+            medals: 25
+          - name:
+              en: Sample Scanner
+              ko: 샘플 스캐너
+            kind: booster
+            ref: sample-scanner
+            medals: 65
+          - name:
+              en: G-142 Pyrotech
+              ko: G-142 파이로테크
+            kind: weapon
+            ref: g-142-pyrotech
+            medals: 65
+  - id: force-of-law
+    name:
+      en: Force of Law
+      ko: 법의 위력
+    type: premium
+    superCredits: 1000
+    released: 2025-06-12
+    icon: Force_of_Law_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: Signal Hold
+            kind: emote
+            medals: 20
+          - name:
+              en: Miranda's Legacy
+            kind: player-card
+            medals: 2
+          - name:
+              en: True Blue Pattern
+            kind: other
+            medals: 20
+          - name:
+              en: AR-32 Pacifier
+              ko: AR-32 퍼시파이어
+            kind: weapon
+            ref: ar-32-pacifier
+            medals: 35
+          - name:
+              en: Miranda's Legacy
+            kind: cape
+            medals: 8
+          - name:
+              en: BP-20 Correct Officer
+            kind: helmet
+            medals: 30
+          - name:
+              en: BP-20 Correct Officer
+            kind: armor
+            armorPassive: ballistic-padding
+            medals: 45
+      - page: 2
+        medalsToUnlock: 125
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: Mother Eagle's Wings
+            kind: player-card
+            medals: 7
+          - name:
+              en: Signal Silence
+            kind: emote
+            medals: 20
+          - name:
+              en: Mother Eagle's Wings
+            kind: cape
+            medals: 25
+          - name:
+              en: BP-32 Jackboot
+            kind: helmet
+            medals: 45
+          - name:
+              en: BP-32 Jackboot
+            kind: armor
+            armorPassive: ballistic-padding
+            medals: 55
+          - name:
+              en: True Blue Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: GL-52 De-Escalator
+              ko: GL-52 디에스컬레이터
+            kind: stratagem
+            ref: gl-52-de-escalator
+            medals: 85
+          - name:
+              en: Stun Pods
+              ko: 기절 포드
+            kind: booster
+            ref: stun-pods
+            medals: 55
+      - page: 3
+        medalsToUnlock: 390
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: True Blue Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: G-109 Urchin
+              ko: G-109 어친
+            kind: weapon
+            ref: g-109-urchin
+            medals: 65
+          - name:
+              en: AX/ARC-3 "Guard Dog" K-9
+              ko: AX/ARC-3 '가드 독' K-9
+            kind: stratagem
+            ref: ax-arc-3-guard-dog-k-9
+            medals: 110
+          - name:
+              en: Extra Judicial
+            kind: title
+            medals: 20
+          - name:
+              en: Signal Group Up
+            kind: emote
+            medals: 20
+          - name:
+              en: True Blue Pattern
+            kind: other
+            medals: 50
+  - id: control-group
+    name:
+      en: Control Group
+      ko: 대조군
+    type: premium
+    superCredits: 1000
+    released: 2025-07-17
+    icon: Control_Group_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: AD-26 Bleeding Edge
+            kind: armor
+            armorPassive: adreno-defibrillator
+            medals: 45
+          - name:
+              en: AD-26 Bleeding Edge
+            kind: helmet
+            medals: 30
+          - name:
+              en: Conductor of Brilliance
+            kind: cape
+            medals: 8
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: PLAS-45 Epoch
+              ko: PLAS-45 에포크
+            kind: stratagem
+            ref: plas-45-epoch
+            medals: 75
+          - name:
+              en: VG-70 Variable
+              ko: VG-70 배리어블
+            kind: weapon
+            ref: vg-70-variable
+            medals: 35
+          - name:
+              en: Conductor of Brilliance
+            kind: player-card
+            medals: 2
+      - page: 2
+        medalsToUnlock: 150
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: AD-49 Apollonian
+            kind: helmet
+            medals: 45
+          - name:
+              en: AD-49 Apollonian
+            kind: armor
+            armorPassive: adreno-defibrillator
+            medals: 55
+          - name:
+              en: A/LAS-98 Laser Sentry
+              ko: A/LAS-98 레이저 센트리
+            kind: stratagem
+            ref: a-las-98-laser-sentry
+            medals: 85
+          - name:
+              en: Over Artifice Triumphant
+            kind: player-card
+            medals: 7
+          - name:
+              en: Over Artifice Triumphant
+            kind: cape
+            medals: 25
+      - page: 3
+        medalsToUnlock: 320
+        items:
+          - name:
+              en: Protect Eardrums
+            kind: emote
+            medals: 55
+          - name:
+              en: LIFT-182 Warp Pack
+              ko: LIFT-182 워프 팩
+            kind: stratagem
+            ref: lift-182-warp-pack
+            medals: 110
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: Exemplary Subject
+            kind: title
+            medals: 20
+          - name:
+              en: G-31 Arc
+              ko: G-31 아크
+            kind: weapon
+            ref: g-31-arc
+            medals: 65
+  - id: dust-devils
+    name:
+      en: Dust Devils
+      ko: 먼지 폭풍
+    type: premium
+    superCredits: 1000
+    released: 2025-09-04
+    icon: Dust_Devils_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: Rightful Occupier
+            kind: cape
+            medals: 8
+          - name:
+              en: DS-42 Federation's Blade
+            kind: helmet
+            medals: 30
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: Rattlesnake Pattern
+            kind: other
+            medals: 20
+          - name:
+              en: DS-42 Federation's Blade
+            kind: armor
+            armorPassive: desert-stormer
+            medals: 45
+          - name:
+              en: Rightful Occupier
+            kind: player-card
+            medals: 2
+          - name:
+              en: AR-2 Coyote
+              ko: AR-2 코요테
+            kind: weapon
+            ref: ar-2-coyote
+            medals: 35
+      - page: 2
+        medalsToUnlock: 110
+        items:
+          - name:
+              en: S-11 Speargun
+              ko: S-11 작살총
+            kind: stratagem
+            ref: s-11-speargun
+            medals: 85
+          - name:
+              en: DS-191 Scorpion
+            kind: helmet
+            medals: 45
+          - name:
+              en: DS-191 Scorpion
+            kind: armor
+            armorPassive: desert-stormer
+            medals: 55
+          - name:
+              en: Windswept Wayfinder
+            kind: player-card
+            medals: 7
+          - name:
+              en: Windswept Wayfinder
+            kind: cape
+            medals: 25
+          - name:
+              en: Rattlesnake Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: EAT-700 Expendable Napalm
+              ko: EAT-700 일회성 네이팜
+            kind: stratagem
+            ref: eat-700-expendable-napalm
+            medals: 85
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+      - page: 3
+        medalsToUnlock: 270
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: MS-11 Solo Silo
+              ko: MS-11 솔로 사일로
+            kind: stratagem
+            ref: ms-11-solo-silo
+            medals: 110
+          - name:
+              en: Raider's Cheer
+            kind: emote
+            medals: 20
+          - name:
+              en: Rattlesnake Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: Rattlesnake Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: G-7 Pineapple
+              ko: G-7 파인애플
+            kind: weapon
+            ref: g-7-pineapple
+            medals: 65
+          - name:
+              en: Burier of Heads
+            kind: title
+            medals: 20
+  - id: obedient-democracy-support-troopers
+    name:
+      en: Obedient Democracy Support Troopers
+      ko: 민주적 궤도 강하 타격대
+    type: legendary
+    superCredits: 1500
+    released: 2025-08-26
+    icon: Halo_ODST_Legendary_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: Honored Heirloom
+            kind: player-card
+            medals: 2
+          - name:
+              en: A-9 Helljumper
+            kind: armor
+            armorPassive: feet-first
+            medals: 45
+          - name:
+              en: MA5C Assault Rifle
+              ko: MA5C 어썰트 라이플
+            kind: weapon
+            ref: ma5c-assault-rifle
+            medals: 35
+          - name:
+              en: Mean Green Pattern
+            kind: other
+            medals: 20
+          - name:
+              en: A-9 Helljumper
+            kind: helmet
+            medals: 30
+          - name:
+              en: Honored Heirloom
+            kind: cape
+            medals: 8
+      - page: 2
+        medalsToUnlock: null
+        items:
+          - name:
+              en: M7S SMG
+              ko: M7S 기관단총
+            kind: weapon
+            ref: m7s-smg
+            medals: 50
+          - name:
+              en: Eye of the Clandestine
+            kind: player-card
+            medals: 7
+          - name:
+              en: A-35 Recon
+            kind: armor
+            armorPassive: feet-first
+            medals: 55
+          - name:
+              en: Mean Green Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: A-35 Recon
+            kind: helmet
+            medals: 45
+          - name:
+              en: Eye of the Clandestine
+            kind: cape
+            medals: 25
+      - page: 3
+        medalsToUnlock: 280
+        items:
+          - name:
+              en: Rookie
+            kind: title
+            medals: 20
+          - name:
+              en: M90A Shotgun
+              ko: M90A 샷건
+            kind: weapon
+            ref: m90a-shotgun
+            medals: 65
+          - name:
+              en: Mean Green Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: Mean Green Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: M6C/SOCOM Pistol
+              ko: M6C/SOCOM 권총
+            kind: weapon
+            ref: m6c-socom-pistol
+            medals: 75
+  - id: python-commandos
+    name:
+      en: Python Commandos
+      ko: 금사 특공대
+    type: premium
+    superCredits: 1000
+    released: 2025-12-02
+    icon: Python_Commandos_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: AX/FLAM-75 "Guard Dog" Hot Dog
+              ko: AX/FLAM-75 '가드 독' 핫 도그
+            kind: stratagem
+            ref: ax-flam-75-guard-dog-hot-dog
+            medals: 75
+          - name:
+              en: RS-20 Constrictor
+            kind: armor
+            armorPassive: rock-solid
+            medals: 45
+          - name:
+              en: AR/GL-21 One-Two
+              ko: AR/GL-21 원-투
+            kind: weapon
+            ref: ar-gl-21-one-two
+            medals: 35
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: RS-20 Constrictor
+            kind: helmet
+            medals: 30
+          - name:
+              en: Mark of the Constrictor
+            kind: cape
+            medals: 8
+          - name:
+              en: Mark of the Constrictor
+            kind: player-card
+            medals: 2
+          - name:
+              en: Chameleon Camo Pattern
+            kind: other
+            medals: 20
+      - page: 2
+        medalsToUnlock: 165
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: RS-40 Beast of Prey
+            kind: helmet
+            medals: 45
+          - name:
+              en: Foe Rent Asunder
+            kind: cape
+            medals: 25
+          - name:
+              en: RS-40 Beast of Prey
+            kind: armor
+            armorPassive: rock-solid
+            medals: 55
+          - name:
+              en: Foe Rent Asunder
+            kind: player-card
+            medals: 7
+          - name:
+              en: Chameleon Camo Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: CQC-9 Defoliation Tool
+              ko: CQC-9 고엽 도구
+            kind: stratagem
+            ref: cqc-9-defoliation-tool
+            medals: 85
+      - page: 3
+        medalsToUnlock: 205
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: Chameleon Camo Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: Front-Leaning Rest Position
+            kind: emote
+            medals: 20
+          - name:
+              en: M-1000 Maxigun
+              ko: M-1000 맥시건
+            kind: stratagem
+            ref: m-1000-maxigun
+            medals: 110
+          - name:
+              en: Python Commando
+            kind: title
+            medals: 20
+          - name:
+              en: Chameleon Camo Pattern
+            kind: other
+            medals: 55
+  - id: righteous-revenants
+    name:
+      en: Righteous Revenants
+      ko: 정의로운 망령
+    type: legendary
+    superCredits: 1500
+    released: 2025-12-18
+    icon: Righteous_Revenants_Legendary_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: Strength in Our Arms
+            kind: player-card
+            medals: 2
+          - name:
+              en: AC-1 Dutiful
+            kind: armor
+            armorPassive: acclimated
+            medals: 45
+          - name:
+              en: AC-1 Dutiful
+            kind: helmet
+            medals: 30
+          - name:
+              en: Strength in Our Arms
+            kind: cape
+            medals: 8
+          - name:
+              en: Extrasolar Ash Pattern
+            kind: other
+            medals: 20
+          - name:
+              en: StA-52 Assault Rifle
+              ko: StA-52 돌격소총
+            kind: weapon
+            ref: sta-52-assault-rifle
+            medals: 35
+      - page: 2
+        medalsToUnlock: null
+        items:
+          - name:
+              en: AC-2 Obedient
+            kind: armor
+            armorPassive: acclimated
+            medals: 55
+          - name:
+              en: Extrasolar Ash Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: Defender of Our Dream
+            kind: player-card
+            medals: 7
+          - name:
+              en: AC-2 Obedient
+            kind: helmet
+            medals: 45
+          - name:
+              en: Defender of Our Dream
+            kind: cape
+            medals: 25
+          - name:
+              en: PLAS-39 Accelerator Rifle
+              ko: PLAS-39 가속 소총
+            kind: weapon
+            ref: plas-39-accelerator-rifle
+            medals: 50
+      - page: 3
+        medalsToUnlock: 175
+        items:
+          - name:
+              en: Assault Infantry
+            kind: title
+            medals: 20
+          - name:
+              en: Extrasolar Ash Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: StA-11 SMG
+              ko: StA-11 기관단총
+            kind: weapon
+            ref: sta-11-smg
+            medals: 65
+          - name:
+              en: Extrasolar Ash Pattern
+            kind: other
+            medals: 50
+  - id: redacted-regiment
+    name:
+      en: Redacted Regiment
+      ko: 존재하지 않는 부대
+    type: premium
+    superCredits: 1000
+    released: 2026-01-22
+    icon: Redacted_Regiment_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: RS-89 Shadow Paragon
+            kind: armor
+            armorPassive: reduced-signature
+            medals: 45
+          - name:
+              en: P-35 Re-Educator
+              ko: P-35 리에듀케이터
+            kind: weapon
+            ref: p-35-re-educator
+            medals: 20
+          - name:
+              en: Pillar of the Abyss
+            kind: player-card
+            medals: 2
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: Pillar of the Abyss
+            kind: cape
+            medals: 8
+          - name:
+              en: RS-89 Shadow Paragon
+            kind: helmet
+            medals: 30
+          - name:
+              en: R-72 Censor
+              ko: R-72 센서
+            kind: weapon
+            ref: r-72-censor
+            medals: 35
+      - page: 2
+        medalsToUnlock: 145
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: Triangulation Veil
+            kind: player-card
+            medals: 7
+          - name:
+              en: RS-67 Null Cipher
+            kind: armor
+            armorPassive: reduced-signature
+            medals: 55
+          - name:
+              en: RS-67 Null Cipher
+            kind: helmet
+            medals: 45
+          - name:
+              en: Triangulation Veil
+            kind: cape
+            medals: 25
+          - name:
+              en: AR-59 Suppressor
+              ko: AR-59 서프레서
+            kind: weapon
+            ref: ar-59-suppressor
+            medals: 50
+      - page: 3
+        medalsToUnlock: 215
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: B/MD C4 Pack
+              ko: B/MD C4 팩
+            kind: stratagem
+            ref: b-md-c4-pack
+            medals: 110
+          - name:
+              en: Concealed Insertion
+              ko: 투입 은폐
+            kind: booster
+            ref: concealed-insertion
+            medals: 40
+          - name:
+              en: Target Sighted
+            kind: victory-pose
+            medals: 20
+          - name:
+              en: TM-1 Lure Mine
+              ko: TM-1 유인 지뢰
+            kind: weapon
+            ref: tm-1-lure-mine
+            medals: 65
+          - name:
+              en: "[REDACTED]"
+            kind: title
+            medals: 20
+  - id: siege-breakers
+    name:
+      en: Siege Breakers
+      ko: 공성 파괴자
+    type: premium
+    superCredits: 1000
+    released: 2026-02-03
+    icon: Siege_Breakers_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: SA-7 Headfirst
+            kind: armor
+            armorPassive: supplementary-adrenaline
+            medals: 45
+          - name:
+              en: LAS-13 Trident
+              ko: LAS-13 트라이던트
+            kind: weapon
+            ref: las-13-trident
+            medals: 35
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: SA-7 Headfirst
+            kind: helmet
+            medals: 30
+          - name:
+              en: Rags of the Fashionable
+            kind: cape
+            medals: 8
+          - name:
+              en: Rags of the Fashionable
+            kind: player-card
+            medals: 2
+          - name:
+              en: Churned Earth Pattern
+            kind: other
+            medals: 20
+          - name:
+              en: CQC-20 Breaching Hammer
+              ko: CQC-20 벽 폭파 망치
+            kind: stratagem
+            ref: cqc-20-breaching-hammer
+            medals: 75
+      - page: 2
+        medalsToUnlock: 165
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: EAT-411 Leveller
+              ko: EAT-411 평탄화기
+            kind: stratagem
+            ref: eat-411-leveller
+            medals: 85
+          - name:
+              en: Churned Earth Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: Wedgeful Tricorn
+            kind: player-card
+            medals: 7
+          - name:
+              en: SA-8 Ram
+            kind: helmet
+            medals: 45
+          - name:
+              en: SA-8 Ram
+            kind: armor
+            armorPassive: supplementary-adrenaline
+            medals: 55
+          - name:
+              en: Wedgeful Tricorn
+            kind: cape
+            medals: 25
+      - page: 3
+        medalsToUnlock: 210
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: GL-28 Belt-Fed Grenade Launcher
+              ko: GL-28 벨트식 유탄 발사기
+            kind: stratagem
+            ref: gl-28-belt-fed-grenade-launcher
+            medals: 110
+          - name:
+              en: Churned Earth Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: Churned Earth Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: G/SH-39 Shield
+              ko: G/SH-39 실드
+            kind: weapon
+            ref: g-sh-39-shield
+            medals: 65
+          - name:
+              en: Display of Brawn
+            kind: emote
+            medals: 20
+          - name:
+              en: Bunker Buster
+            kind: title
+            medals: 20
+  - id: entrenched-division
+    name:
+      en: Entrenched Division
+      ko: 견고한 참호 사단
+    type: premium
+    superCredits: 1000
+    released: 2026-03-17
+    icon: Entrenched_Division_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: SMG/FLAM-34 Stoker
+              ko: SMG/FLAM-34 스토커
+            kind: weapon
+            ref: smg-flam-34-stoker
+            medals: 35
+          - name:
+              en: CQC-73 Entrenchment Tool
+              ko: CQC-73 참호 도구
+            kind: weapon
+            ref: cqc-73-entrenchment-tool
+            medals: 20
+          - name:
+              en: Dignity of Toil
+            kind: player-card
+            medals: 2
+          - name:
+              en: Dignity of Toil
+            kind: cape
+            medals: 8
+          - name:
+              en: CPG-48 Sapper
+            kind: helmet
+            medals: 35
+          - name:
+              en: CPG-48 Sapper
+            kind: armor
+            armorPassive: concussive-padding-grenadier
+            medals: 45
+          - name:
+              en: Heritage Olive Pattern
+            kind: other
+            medals: 20
+      - page: 2
+        medalsToUnlock: null
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: CPH-26 Commandant
+            kind: helmet
+            medals: 45
+          - name:
+              en: CPH-26 Commandant
+            kind: armor
+            armorPassive: concussive-padding-hazmat
+            medals: 55
+          - name:
+              en: Crest of the Unsullied
+            kind: cape
+            medals: 25
+          - name:
+              en: Crest of the Unsullied
+            kind: player-card
+            medals: 7
+          - name:
+              en: G-48 Giga Grenade
+              ko: G-48 기가 수류탄
+            kind: weapon
+            ref: g-48-giga-grenade
+            medals: 50
+          - name:
+              en: A/GM-17 Gas Mortar Sentry
+              ko: A/GM-17 가스 박격포 센트리
+            kind: stratagem
+            ref: a-gm-17-gas-mortar-sentry
+            medals: 85
+          - name:
+              en: Heritage Olive Pattern
+            kind: other
+            medals: 50
+      - page: 3
+        medalsToUnlock: 370
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: B/FLAM-80 Cremator
+              ko: B/FLAM-80 크리메이터
+            kind: stratagem
+            ref: b-flam-80-cremator
+            medals: 110
+          - name:
+              en: Diplomatic Handshake
+            kind: emote
+            medals: 55
+          - name:
+              en: Mudskipper
+            kind: title
+            medals: 20
+          - name:
+              en: P-69 Veto
+              ko: P-69 비토
+            kind: weapon
+            ref: p-69-veto
+            medals: 65
+          - name:
+              en: Heritage Olive Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: Heritage Olive Pattern
+            kind: other
+            medals: 55
+  - id: exo-experts
+    name:
+      en: Exo Experts
+      ko: 외계 전문가
+    type: premium
+    superCredits: 1000
+    released: 2026-04-28
+    icon: Exo_Experts_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: SMG-203 Gallant
+              ko: SMG-203 갤런트
+            kind: weapon
+            ref: smg-203-gallant
+            medals: 35
+          - name:
+              en: MGX-42 Bullet Storm
+              ko: MGX-42 불릿 스톰
+            kind: stratagem
+            ref: mgx-42-bullet-storm
+            medals: 75
+          - name:
+              en: Free-Spirited Spangles
+            kind: player-card
+            medals: 2
+          - name:
+              en: Free-Spirited Spangles
+            kind: cape
+            medals: 8
+          - name:
+              en: O-3 Free Spirit
+            kind: helmet
+            medals: 30
+          - name:
+              en: O-3 Free Spirit
+            kind: armor
+            armorPassive: oxygenator
+            medals: 45
+          - name:
+              en: Mobile White Pattern
+            kind: other
+            medals: 20
+      - page: 2
+        medalsToUnlock: null
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: EXO-51 Lumberer Exosuit
+              ko: EXO-51 벌목꾼 엑소슈트
+            kind: stratagem
+            ref: exo-51-lumberer-exosuit
+            medals: 50
+          - name:
+              en: P-33 Missile Pistol
+              ko: P-33 미사일 권총
+            kind: weapon
+            ref: p-33-missile-pistol
+            medals: 50
+          - name:
+              en: Mobile White Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: O-2 Heavy Operator
+            kind: helmet
+            medals: 45
+          - name:
+              en: O-2 Heavy Operator
+            kind: armor
+            armorPassive: oxygenator
+            medals: 55
+          - name:
+              en: Watchful Compatriot
+            kind: cape
+            medals: 25
+          - name:
+              en: Watchful Compatriot
+            kind: player-card
+            medals: 7
+      - page: 3
+        medalsToUnlock: 220
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: Thumb of Approval
+            kind: emote
+            medals: 55
+          - name:
+              en: Exosuit Certified
+            kind: title
+            medals: 20
+          - name:
+              en: EXO-55 Breakthrough Exosuit
+              ko: EXO-55 돌파구 엑소슈트
+            kind: stratagem
+            ref: exo-55-breakthrough-exosuit
+            medals: 50
+          - name:
+              en: Mobile White Pattern
+            kind: other
+            medals: 55
+          - name:
+              en: Mobile White Pattern
+            kind: other
+            medals: 50
+  - id: castellans-creed
+    name:
+      en: Castellan's Creed
+      ko: 카스텔란의 신조
+    type: legendary
+    superCredits: 1500
+    released: 2026-08-12
+    icon: Castellan's_Creed_Legendary_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: Camo Cloak
+            kind: player-card
+            medals: 2
+          - name:
+              en: TG-8 Sharpshooter
+            kind: armor
+            armorPassive: true-grit
+            medals: 45
+          - name:
+              en: R/40-K Hot-Shot Marksman Rifle
+              ko: R/40-K 핫샷 마크맨 라이플
+            kind: weapon
+            ref: r-40-k-hot-shot-marksman-rifle
+            medals: 35
+          - name:
+              en: Castellans Green Hellpod Pattern
+            kind: other
+            medals: 20
+          - name:
+              en: Camo Cloak
+            kind: cape
+            medals: 8
+          - name:
+              en: TG-8 Sharpshooter
+            kind: helmet
+            medals: 30
+      - page: 2
+        medalsToUnlock: null
+        items:
+          - name:
+              en: G/40-K Melta Mine
+              ko: G/40-K 멜타마인
+            kind: weapon
+            ref: g-40-k-melta-mine
+            medals: 50
+          - name:
+              en: P/40-K Bolt Pistol
+              ko: P/40-K 볼트 피스톨
+            kind: weapon
+            ref: p-40-k-bolt-pistol
+            medals: 50
+          - name:
+              en: TG-122 Demo-Trooper
+            kind: armor
+            armorPassive: true-grit
+            medals: 55
+          - name:
+              en: Castellans Green Shuttle Pattern
+            kind: other
+            medals: 50
+          - name:
+              en: City Fighter's Resolve
+            kind: player-card
+            medals: 7
+          - name:
+              en: City Fighter's Resolve
+            kind: cape
+            medals: 25
+          - name:
+              en: TG-122 Demo-Trooper
+            kind: helmet
+            medals: 45
+      - page: 3
+        medalsToUnlock: 210
+        items:
+          - name:
+              en: Castellans Green Exosuit
+            kind: other
+            medals: 50
+          - name:
+              en: Castellans Green Vehicle
+            kind: other
+            medals: 55
+          - name:
+              en: Still Standing
+            kind: title
+            medals: 20
+          - name:
+              en: 40-K Meltagun
+              ko: 40-K 멜타건
+            kind: stratagem
+            ref: 40-k-meltagun
+            medals: 110
+  - id: ironclad-democracy
+    name:
+      en: Ironclad Democracy
+      ko: 철갑의 민주주의
+    type: premium
+    superCredits: 1000
+    released: 2026-09-22
+    icon: Ironclad_Democracy_Premium_Warbond_Cover.png
+    pages:
+      - page: 1
+        medalsToUnlock: 0
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 7
+          - name:
+              en: BFM-16 Tanker
+            kind: helmet
+            medals: 30
+          - name:
+              en: G-8 Immolation
+              ko: G-8 번제
+            kind: weapon
+            ref: g-8-immolation
+            medals: 35
+          - name:
+              en: BFM-16 Tanker
+            kind: armor
+            armorPassive: blunt-force-mitigation
+            medals: 45
+          - name:
+              en: Standard of Rapid Evacuation
+            kind: cape
+            medals: 8
+          - name:
+              en: Standard of Rapid Evacuation
+            kind: player-card
+            medals: 2
+          - name:
+              en: Verdant Camouflage
+            kind: other
+            medals: 20
+          - name:
+              en: AR-11 Arbitrator
+              ko: AR-11 아비트레이터
+            kind: weapon
+            ref: ar-11-arbitrator
+            medals: 35
+      - page: 2
+        medalsToUnlock: 135
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 12
+          - name:
+              en: BFM-220 Ironclad
+            kind: helmet
+            medals: 45
+          - name:
+              en: Surplus EAT Allocation
+              ko: 초과 EAT 할당
+            kind: booster
+            ref: surplus-eat-allocation
+            medals: 55
+          - name:
+              en: BFM-220 Ironclad
+            kind: armor
+            armorPassive: blunt-force-mitigation
+            medals: 55
+          - name:
+              en: Shroud of the Juggernaut
+            kind: cape
+            medals: 25
+          - name:
+              en: Shroud of the Juggernaut
+            kind: player-card
+            medals: 7
+          - name:
+              en: Glacial Polymer
+            kind: other
+            medals: 50
+          - name:
+              en: P-34 Breacher
+              ko: P-34 브리처
+            kind: weapon
+            ref: p-34-breacher
+            medals: 50
+      - page: 3
+        medalsToUnlock: 225
+        items:
+          - name:
+              en: 100 Super Credits
+            kind: super-credits
+            medals: 32
+          - name:
+              en: Treadhead
+            kind: title
+            medals: 20
+          - name:
+              en: Integrated Extinguishers
+              ko: 통합 화재 진압기
+            kind: booster
+            ref: integrated-extinguishers
+            medals: 65
+          - name:
+              en: G-60 Anti-Tank Seeker
+              ko: G-60 대전차 드론
+            kind: weapon
+            ref: g-60-anti-tank-seeker
+            medals: 65
+          - name:
+              en: Helmet Durability Check
+            kind: emote
+            medals: 20
+          - name:
+              en: Executive Onyx
+            kind: other
+            medals: 55
+          - name:
+              en: GL-15 Evictor
+              ko: GL-15 이빅터
+            kind: weapon
+            ref: gl-15-evictor
+            medals: 65
+superstore:
+  - kind: armor
+    ref: blunt-force-mitigation
+    name:
+      en: BFM-77 Reformer
+    superCredits: 250
+  - kind: weapon
+    ref: las-12-sai
+    name:
+      en: LAS-12 Sai
+      ko: LAS-12 사이
+    superCredits: 400
+  - kind: armor
+    ref: oxygenator
+    name:
+      en: O-44 Bonded Pilot
+    superCredits: 250
+  - kind: armor
+    ref: concussive-padding-reinforced
+    name:
+      en: CPR-80 Bulwark
+    superCredits: 250
+  - kind: weapon
+    ref: sg-97-sweeper
+    name:
+      en: SG-97 Sweeper
+      ko: SG-97 스위퍼
+    superCredits: 400
+  - kind: weapon
+    ref: g-89-smokescreen
+    name:
+      en: G-89 Smokescreen
+      ko: G-89 연막
+    superCredits: 300
+  - kind: weapon
+    ref: dbs-2-double-freedom
+    name:
+      en: DBS-2 Double Freedom
+      ko: DBS-2 더블 프리덤
+    superCredits: 400
+  - kind: armor
+    ref: rock-solid
+    name:
+      en: RS-6 Fiend Destroyer
+    superCredits: 300
+  - kind: weapon
+    ref: cqc-42-machete
+    name:
+      en: CQC-42 Machete
+      ko: CQC-42 마체테
+    superCredits: 200
+  - kind: armor
+    ref: desert-stormer
+    name:
+      en: DS-10 Big Game Hunter
+    superCredits: 300
+  - kind: weapon
+    ref: p-92-warrant
+    name:
+      en: P-92 Warrant
+      ko: P-92 워런트
+    superCredits: 300
+  - kind: armor
+    ref: ballistic-padding
+    name:
+      en: BP-77 Grand Juror
+    superCredits: 250
+  - kind: armor
+    ref: reinforced-epaulettes
+    name:
+      en: RE-824 Bearer of the Standard
+    superCredits: 400
+  - kind: armor
+    ref: siege-ready
+    name:
+      en: DP-8 Mountain-Scaled
+    superCredits: 250
+  - kind: armor
+    ref: gunslinger
+    name:
+      en: GS-11 Democracy's Deputy
+    superCredits: 300
+  - kind: weapon
+    ref: cqc-5-combat-hatchet
+    name:
+      en: CQC-5 Combat Hatchet
+      ko: CQC-5 컴뱃 해칫
+    superCredits: 200
+  - kind: armor
+    ref: integrated-explosives
+    name:
+      en: IE-57 Hell-Bent
+    superCredits: 250
+  - kind: weapon
+    ref: cqc-30-stun-baton
+    name:
+      en: CQC-30 Stun Baton
+      ko: CQC-30 기절 제압봉
+    superCredits: 200
+  - kind: armor
+    ref: siege-ready
+    name:
+      en: SR-64 Cinderblock
+    superCredits: 250
+  - kind: armor
+    ref: unflinching
+    name:
+      en: UF-84 Doubt Killer
+    superCredits: 400
+  - kind: armor
+    ref: advanced-filtration
+    name:
+      en: AF-52 Lockdown
+    superCredits: 400
+  - kind: armor
+    ref: advanced-filtration
+    name:
+      en: AF-91 Field Chemist
+    superCredits: 250
+  - kind: armor
+    ref: inflammable
+    name:
+      en: I-44 Salamander
+    superCredits: 250
+  - kind: armor
+    ref: inflammable
+    name:
+      en: I-92 Fire Fighter
+    superCredits: 250
+  - kind: armor
+    ref: peak-physique
+    name:
+      en: PH-56 Jaguar
+    superCredits: 150
+  - kind: armor
+    ref: engineering-kit
+    name:
+      en: CE-101 Guerilla Gorilla
+    superCredits: 250
+  - kind: armor
+    ref: extra-padding
+    name:
+      en: CW-9 White Wolf
+    superCredits: 300
+  - kind: armor
+    ref: med-kit
+    name:
+      en: CM-10 Clinician
+    superCredits: 250
+  - kind: armor
+    ref: engineering-kit
+    name:
+      en: FS-37 Ravager
+    superCredits: 250
+  - kind: armor
+    ref: engineering-kit
+    name:
+      en: CE-67 Titan
+    superCredits: 150
+  - kind: armor
+    ref: servo-assisted
+    name:
+      en: SC-37 Legionnaire
+    superCredits: 150
+  - kind: armor
+    ref: engineering-kit
+    name:
+      en: SC-15 Drone Master
+    superCredits: 250
+  - kind: armor
+    ref: engineering-kit
+    name:
+      en: CE-74 Breaker
+    superCredits: 250
+  - kind: armor
+    ref: extra-padding
+    name:
+      en: B-27 Fortified Commando
+    superCredits: 400
+  - kind: armor
+    ref: fortified
+    name:
+      en: FS-38 Eradicator
+    superCredits: 250
+  - kind: armor
+    ref: extra-padding
+    name:
+      en: B-08 Light Gunner
+    superCredits: 150
+  - kind: armor
+    ref: servo-assisted
+    name:
+      en: FS-61 Dreadnought
+    superCredits: 250
+  - kind: armor
+    ref: fortified
+    name:
+      en: FS-11 Executioner
+    superCredits: 150
+  - kind: armor
+    ref: med-kit
+    name:
+      en: CM-21 Trench Paramedic
+    superCredits: 250
+  - kind: armor
+    ref: engineering-kit
+    name:
+      en: CE-81 Juggernaut
+    superCredits: 250
+  - kind: armor
+    ref: fortified
+    name:
+      en: FS-34 Exterminator
+    superCredits: 400
+rewards:
+  - kind: stratagem
+    ref: eagle-gas-airstrike
+    name:
+      en: Eagle Gas Airstrike
+      ko: 이글 가스 타격
+    how:
+      en: "Campaign reward: Counterdissident Hammer"
+      ko: "캠페인 보상: Counterdissident Hammer"
+  - kind: stratagem
+    ref: m-103-supply-frv
+    name:
+      en: M-103 Supply FRV
+      ko: M-103 보급 고속 정찰 차량
+    how:
+      en: "Campaign reward: Census Thunder"
+      ko: "캠페인 보상: Census Thunder"
+  - kind: stratagem
+    ref: m-104-incinerator-frv
+    name:
+      en: M-104 Incinerator FRV
+      ko: M-104 소각형 고속 정찰 차량
+    how:
+      en: Operational Variation during the Census Thunder campaign; no permanent permit granted as of wiki.gg 1.007.100
+      ko: 센서스 썬더 캠페인 중에만 임시로 사용 가능, 영구 해금 없음
+  - kind: stratagem
+    ref: td-110-maelstrom
+    name:
+      en: TD-110 Maelstrom
+      ko: TD-110 마엘스트롬
+    how:
+      en: "Campaign reward: Armored Eagle"
+      ko: "캠페인 보상: Armored Eagle"
+  - kind: weapon
+    ref: mp-98-knight
+    name:
+      en: MP-98 Knight
+      ko: MP-98 나이트
+    how:
+      en: Super Citizen Edition
+      ko: 슈퍼 시티즌 에디션 특전
+  - kind: weapon
+    ref: r-2124-constitution
+    name:
+      en: R-2124 Constitution
+      ko: R-2124 콘스티튜션
+    how:
+      en: Liberty Day
+      ko: 리버티 데이 보상
+  - kind: weapon
+    ref: r-4-hyena
+    name:
+      en: R-4 Hyena
+      ko: R-4 하이에나
+    how:
+      en: "Campaign reward: Celestial Fence"
+      ko: "캠페인 보상: Celestial Fence"

@@ -1,0 +1,6 @@
+# Content release. version/updatedAt are written by `pnpm --filter @guide/game-ror2 content:stamp`.
+kind: manifest
+schemaVersion: 1
+version: 2026.09.27.1
+gameVersion: "v1.4.1 (Alloyed Collective)"
+updatedAt: 2026-09-27

@@ -1,0 +1,574 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: TreebotBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: strong
+sources:
+  - https://riskofrain2.wiki.gg/wiki/REX
+  - https://riskofrain2.wiki.gg/wiki/Tougher_Times
+  - https://rogueranker.com/risk-of-rain-2-rex/
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=1785364121
+  - https://www.reddit.com/r/riskofrain/comments/nzxk2w/rex_advanced_loadout_guide_and_item/
+  - https://exputer.com/guides/risk-of-rain-2-rex-guide/
+  - https://fpschampion.com/risk-of-rain-2-rex-build-and-gameplay-guide/
+builds:
+  - id: treebot-tangling-growth-sustain
+    title:
+      en: Tangling Growth Sustain
+      ko: 뒤엉킨 성장 회복 운영
+    difficulty: beginner
+    summary:
+      en: Spend HP on Seed Barrage, Bramble Volley and Tangling Growth, then heal it back with Inject and Bramble hits. Self-damage triggers items like Medkit and Razorwire, and healing items are worth more on REX than on anyone else.
+      ko: 씨앗 세례·검은딸기 투하·뒤엉킨 성장에 체력을 쓰고, 주입과 검은딸기 적중으로 되돌려 받습니다. 자해 피해가 의료 키트나 철조망 같은 아이템을 발동시키고, 회복 아이템의 가치가 다른 생존자보다 훨씬 큽니다.
+    loadout:
+      primary: TREEBOT_PRIMARY_NAME
+      secondary: TREEBOT_SECONDARY_NAME
+      utility: TREEBOT_UTILITY_ALT1_NAME
+      special: TREEBOT_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Early core
+          ko: 초반 핵심
+        when:
+          en: Stages 1-2. REX is the slowest survivor and pays HP for skills, so get safety and speed first.
+          ko: 1~2스테이지. 렉스는 가장 느린 생존자이고 스킬에 체력을 쓰니 안전과 이동 속도를 먼저 챙기세요.
+        items:
+          - id: Bear
+            priority: core
+            note:
+              en: The wiki notes REX's self-damage from plant skills can be blocked, so it saves HP as well as protecting you.
+              ko: 위키에 따르면 식물 스킬의 자해 피해도 막을 수 있어 방어와 체력 절약을 동시에 해 줍니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: hyperbolic, 5 = 43% block; after 5 each copy adds under 5.5%.
+              ko: 위키 기준 쌍곡선 중첩으로 5개면 43% 막기이며, 그 이후엔 개당 5.5% 미만만 늘어납니다.
+          - id: Medkit
+            priority: core
+            note:
+              en: Triggers from self-damage, making every HP-cost skill partly refunded.
+              ko: 자해 피해로도 발동해 체력 소모 스킬의 비용 일부를 돌려받습니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: +5% max HP heal per stack, but new damage delays it in fights, so 2.
+              ko: 개당 최대 체력 5% 회복이지만 교전 중엔 새 피해로 계속 늦춰지니 2개면 됩니다.
+          - id: BarrierOnKill
+            priority: optional
+            note:
+              en: Barrier soaks the HP cost before health does.
+              ko: 보호막이 체력보다 먼저 스킬 비용을 흡수합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +15 barrier per kill per stack; 3 soaks a skill's HP cost on each kill.
+              ko: 개당 처치 시 보호막 +15라 3개면 처치마다 스킬 체력 소모를 막아 줍니다.
+          - id: Hoof
+            priority: optional
+            note:
+              en: Positioning and escape for the slowest survivor.
+              ko: 가장 느린 생존자의 위치 선정과 도주를 돕습니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: optional here; 2 Hoofs give enough speed to reposition.
+              ko: 선택 아이템이라 2개면 위치 잡기에 충분합니다.
+        next:
+          - crowd
+          - heal
+      - id: crowd
+        phase: mid
+        label:
+          en: Rooted packs
+          ko: 묶인 무리 처리
+        when:
+          en: Take when you fight big groups. Tangling Growth pulls and roots them in one spot for chain kills.
+          ko: 큰 무리와 싸울 때 가져가세요. 뒤엉킨 성장이 적을 한곳에 끌어모아 묶어 연쇄 처치가 쉽습니다.
+        items:
+          - id: ExplodeOnDeath
+            priority: core
+            note:
+              en: Kills explode into the rest of the rooted group.
+              ko: 처치할 때마다 묶인 나머지 무리에 폭발이 터집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: each copy adds +280% damage and +2.4m radius; 3 clears most packs in one chain.
+              ko: 개당 피해 +280%, 반경 +2.4m라 3개면 대부분의 무리를 한 번에 정리합니다.
+          - id: IgniteOnKill
+            priority: core
+            note:
+              en: Burning chain kills across rooted enemies.
+              ko: 묶인 적들 사이로 화염 연쇄 처치가 이어집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: each Gasoline adds +4m radius and +75% burn; 3 makes the chain reach whole packs.
+              ko: 휘발유는 개당 반경 +4m, 화상 +75%라 3개면 무리 전체로 불이 번집니다.
+          - id: DeathMark
+            priority: optional
+            note:
+              en: REX already applies several debuffs, so Death Mark needs very little extra.
+              ko: 렉스는 이미 여러 디버프를 걸기 때문에 죽음의 표식이 쉽게 발동합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy enables the +50% damage mark; extras only lengthen its 7s duration.
+              ko: 1개로 피해 +50% 표식이 켜지고, 추가분은 7초 지속시간만 늘립니다.
+        next:
+          - late
+      - id: heal
+        phase: mid
+        label:
+          en: Self-damage engine
+          ko: 자해 연계
+        when:
+          en: Take when you are burning HP faster than you recover it.
+          ko: 회복보다 체력 소모가 빠르다고 느껴지면 가져가세요.
+        items:
+          - id: Thorns
+            priority: core
+            note:
+              en: Self-damage from skills triggers it, so it fires on your own casts.
+              ko: 스킬 자해 피해로 발동해 내가 스킬을 쓸 때마다 터집니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: damage stays 160%; each copy adds +2 targets and +10m, so 2 is enough.
+              ko: 피해는 160%로 고정이고 개당 대상 +2, 반경 +10m만 늘어 2개면 충분합니다.
+          - id: Seed
+            priority: optional
+            note:
+              en: Inject fires three syringes, each healing on hit.
+              ko: 주입이 세 발씩 나가 적중할 때마다 회복합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: side heal; 2 Seeds add steady healing from Inject's three syringes.
+              ko: 보조 회복용이라 2개면 주입기 세 발에서 꾸준히 회복합니다.
+          - id: HealOnCrit
+            priority: optional
+            note:
+              en: Passive crit healing between skill casts.
+              ko: 스킬 사이에도 치명타로 꾸준히 회복합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: REX has little crit chance, so 2 Scythes are enough.
+              ko: REX는 치명타율이 낮아 낫 2개면 충분합니다.
+          - id: Infusion
+            priority: optional
+            note:
+              en: Permanent max HP compounds early, which also raises HP-cost skill budgets.
+              ko: 최대 체력이 영구히 늘어 초반 효과가 크고, 쓸 수 있는 체력도 늘어납니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: Rogue Ranker says stack early; each adds up to +100 HP, so 3 = +300.
+              ko: Rogue Ranker는 일찍 쌓으라고 하며, 개당 최대 체력 +100이라 3개면 +300입니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Stage 5 onward, or from Legendary and boss drops.
+          ko: 5스테이지 이후나 전설·보스 아이템으로.
+        items:
+          - id: IncreaseHealing
+            priority: core
+            note:
+              en: Doubles all healing, which makes the HP-cost loop almost free.
+              ko: 모든 회복량이 두 배가 되어 체력 소모 순환이 거의 공짜가 됩니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: rated REX's best item and linear (+100% each); 2 triples healing.
+              ko: REX 최고의 아이템으로 평가되고 개당 +100%(선형)라 2개면 회복량이 세 배입니다.
+          - id: NovaOnHeal
+            priority: core
+            note:
+              en: Normally situational, but REX heals so often that it becomes steady damage.
+              ko: 보통은 상황용이지만 렉스는 회복이 잦아 꾸준한 피해원이 됩니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy already turns all your healing into skulls.
+              ko: 전설 아이템이며, 1개만으로도 모든 회복이 해골 공격으로 바뀝니다.
+          - id: Knurl
+            priority: optional
+            note:
+              en: Extra max HP and regen feed the HP economy directly.
+              ko: 최대 체력과 재생이 늘어 체력 운영에 바로 도움이 됩니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: boss item; one gives +40 HP and +1.6 HP/s regen.
+              ko: 보스 아이템이며 1개로 최대 체력 +40, 재생 +1.6/초를 얻습니다.
+          - id: BarrierOnOverHeal
+            priority: optional
+            note:
+              en: Overhealing becomes barrier that absorbs skill costs.
+              ko: 초과 회복이 보호막이 되어 스킬 비용을 대신 받아 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one turns half of Inject's overheal into barrier.
+              ko: 전설 아이템이며 1개로 주입기 초과 회복의 절반이 보호막이 됩니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: "Loop: heal loop and damage soak"
+          ko: "루프: 회복 순환과 피해 흡수"
+        when:
+          en: After the first loop, once Rejuvenation Rack is in place.
+          ko: 첫 루프 이후, 회춘의 선반을 갖춘 뒤.
+        items:
+          - id: IncreaseHealing
+            priority: core
+            stacks:
+              target: 2
+            note:
+              en: Keep stacking; every heal tick from Inject and Bramble Volley grows.
+              ko: "계속 중첩하세요. 명령: 주입과 검은딸기 투하의 모든 회복이 커집니다."
+            stacksReason:
+              en: rated REX's best item and linear (+100% each); 2 triples healing.
+              ko: REX 최고의 아이템으로 평가되고 개당 +100%(선형)라 2개면 회복량이 세 배입니다.
+          - id: NovaOnHeal
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: Turns the constant healing into homing skulls; pairs with Rack.
+              ko: 끊임없는 회복을 유도 해골로 바꿉니다. 회춘의 선반과 잘 맞습니다.
+            stacksReason:
+              en: legendary; one copy already turns all your healing into skulls.
+              ko: 전설 아이템이며, 1개만으로도 모든 회복이 해골 공격으로 바뀝니다.
+          - id: BarrierOnOverHeal
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: "Wiki: Aegis becomes viable on REX because Inject overheals often."
+              ko: "위키 기준 명령: 주입이 자주 초과 회복하므로 REX에게는 방패가 쓸 만합니다."
+            stacksReason:
+              en: legendary; one turns half of Inject's overheal into barrier.
+              ko: 전설 아이템이며 1개로 주입기 초과 회복의 절반이 보호막이 됩니다.
+          - id: ParentEgg
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: "Wiki: Planula heals 15 (+15 per stack) from every hit, including your own skill costs."
+              ko: 위키 기준 플라눌라는 자해를 포함한 모든 피격에서 15(중첩당 +15)를 회복합니다.
+            stacksReason:
+              en: boss item; one heals 15 on every hit, including your own skill costs.
+              ko: 보스 아이템이며 1개로 스킬 체력 소모를 포함한 모든 피격마다 15 회복합니다.
+          - id: ArmorPlate
+            priority: situational
+            stacks:
+              target: 5
+              min: 1
+            note:
+              en: "Wiki: Repulsion Armor Plate reduces REX's self-damage too (-5 per stack)."
+              ko: 위키 기준 반발성 방어구 철판은 REX의 자해 피해도 줄입니다(중첩당 -5).
+            stacksReason:
+              en: -5 damage per plate, linear; 5 (-25) removes a large share of small hits and self-damage.
+              ko: 개당 피해 -5(선형)라 5개(-25)면 작은 피격과 자해 피해가 크게 줄어듭니다.
+        next: []
+    pickOrder:
+      common:
+        - Bear
+        - Hoof
+        - Medkit
+        - Syringe
+        - IgniteOnKill
+        - BarrierOnKill
+      uncommon:
+        - Infusion
+        - ExplodeOnDeath
+        - DeathMark
+        - Thorns
+        - HealOnCrit
+      legendary:
+        - IncreaseHealing
+        - NovaOnHeal
+        - BarrierOnOverHeal
+    milestones:
+      - when:
+          en: Whenever you choose a lunar or elite item
+          ko: 달 아이템이나 엘리트 관련 아이템을 고를 때마다
+        advice:
+          en: "Never take Transcendence, Wake of Vultures or Brittle Crown: shields cannot be healed and every HP-cost skill costs gold with the Crown."
+          ko: 초월, 독수리 무리, 연약한 왕관은 절대 고르지 마세요. 보호막은 회복으로 채울 수 없고, 왕관이 있으면 체력 소모 스킬마다 골드를 잃습니다.
+        take: []
+        stop:
+          - ShieldOnly
+          - HeadHunter
+          - GoldOnHit
+      - when:
+          en: Once you have about 5 Tougher Times
+          ko: 힘들었던 시절이 5개쯤 되면
+        advice:
+          en: Each extra copy adds under 5.5% block. Keep taking them from free drops, but print other whites first.
+          ko: 추가 중첩마다 막기 확률이 5.5% 미만만 오릅니다. 그냥 얻는 것은 챙기되, 복사는 다른 흰색 아이템을 먼저 하세요.
+        take: []
+        stop: []
+      - when:
+          en: When fights become non-stop skill spam
+          ko: 전투가 끊임없는 스킬 연사가 되면
+        advice:
+          en: eXputer says Medkit is mostly useless at this point because new damage keeps delaying it. Stop adding Medkits and move to Razorwire, Planula and healing multipliers.
+          ko: eXputer는 이 시점부터 의료 키트가 거의 쓸모없다고 합니다. 새 피해가 계속 발동을 미루기 때문입니다. 의료 키트는 그만 모으고 철조망, 플라눌라, 회복 배율 아이템으로 넘어가세요.
+        take:
+          - Thorns
+          - ParentEgg
+        stop:
+          - Medkit
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Rejuvenation Rack is your first legendary pick every time; add N'kuhana's Opinion and Aegis to turn overhealing into damage and barrier.
+          ko: 전설 아이템은 항상 회춘의 선반부터 고르세요. 은쿠하나의 견해와 방패를 더해 초과 회복을 피해와 방벽으로 바꾸세요.
+        take:
+          - IncreaseHealing
+          - NovaOnHeal
+          - BarrierOnOverHeal
+        stop: []
+    avoid:
+      - id: ShieldOnly
+        reason:
+          en: Replaces health with shields, which healing cannot restore. It breaks REX's whole HP-for-damage loop.
+          ko: 체력이 회복으로 채울 수 없는 보호막으로 바뀌어 체력으로 딜하는 렉스의 순환이 무너집니다.
+      - id: HeadHunter
+        reason:
+          en: Some elite buffs convert health to shields, with the same problem as Transcendence.
+          ko: 일부 엘리트 버프가 체력을 보호막으로 바꿔 초월과 같은 문제가 생깁니다.
+      - id: GoldOnHit
+        reason:
+          en: "Called a run-killer: every HP-cost skill makes you lose gold."
+          ko: 런을 망치는 아이템으로 꼽힙니다. 체력 소모 스킬을 쓸 때마다 골드를 잃습니다.
+      - id: LunarPrimaryReplacement
+        reason:
+          en: Replaces Inject, losing both your main healing and the weaken debuff.
+          ko: 주입을 대체해 주요 회복 수단과 약화 디버프를 모두 잃습니다.
+      - id: HealingPotion
+        reason:
+          en: Your HP swings up and down constantly, so it triggers at bad times.
+          ko: 체력이 계속 오르내려서 원치 않는 때에 발동합니다.
+    evidence: |-
+      Wiki: self-damage triggers Medkit, Planula and Razorwire; N'kuhana's Opinion and Aegis become viable; Gasoline and Will-o'-the-wisp with Tangling Growth; shields and Brittle Crown to avoid. Tougher Times wiki: REX plant-skill self-damage can be blocked (eXputer and FPS Champion also rate it top). Rogue Ranker: Bramble Volley, Titanic Knurl, Rejuvenation Rack, Infusion, Hoof, Death Mark, avoid shields. Steam guide (2019, updated 2020): Medkit, Razorwire, N'kuhana's, Death Mark, avoid Brittle Crown, Transcendence and Visions of Heresy. r/riskofrain advanced guide: Bramble Volley healing is too good to skip; Tangling Growth beats Harvest solo. Disagreement on utility: Rogue Ranker and the Reddit guide prefer Bramble Volley, while eXputer and FPS Champion (2022) use DIRECTIVE: Disperse. Strong consensus on healing items and on avoiding shields and Brittle Crown. No REX changes since the Anniversary Update (which added Harvest).
+
+      Stack counts and progression: Wiki REX page (quoted directly): self-damage triggers Medkit, Planula and Razorwire and can be reduced by Repulsion Armor Plate or blocked by Tougher Times/Safer Spaces; Inject reliably activates N'kuhana's; Aegis becomes viable; avoid shield items and Brittle Crown. Tougher Times hyperbolic table: Tougher Times wiki page; the max of 5 is my own diminishing-returns cut from that table, which conflicts with eXputer (S-tier, 'indestructible') and a looping guide (take every one), so it is framed as deprioritize, not stop. Medkit falling off: eXputer; the wiki only says it triggers. Infusion early and Rack first legendary: Rogue Ranker. Rack best item: Rogue Ranker and eXputer. Pick order: Rogue Ranker (Hoof, Syringe, Gasoline; Infusion, Wisp, Death Mark; Rack, Knurl) plus eXputer (Tougher Times, Topaz Brooch, Scythe). Boss order not given: only Titanic Knurl (Rogue Ranker) and Planula (wiki) are named, too few to rank. The REX Steam guide 1785364121 could not be reopened (429/empty) and Reddit could not be fetched.
+  - id: treebot-free-skill-rex-eclipse-8-co-op
+    title:
+      en: Free-Skill REX (Eclipse 8 / Co-op)
+      ko: 무소모 스킬 렉스 (이클립스 8 / 협동)
+    difficulty: advanced
+    summary:
+      en: "Use only the skills that cost no HP: Inject, Drill, Disperse and Harvest. The wiki recommends this for Eclipse 8, where damage permanently lowers max HP. In co-op, Harvest fruit heals allies by % HP."
+      ko: 체력을 쓰지 않는 스킬(주입·드릴·분산·수확)만 사용합니다. 받은 피해가 최대 체력을 영구히 깎는 이클립스 8에서 위키가 권하는 방식이며, 협동에서는 수확 열매가 아군을 비율로 회복시킵니다.
+    loadout:
+      primary: TREEBOT_PRIMARY_NAME
+      secondary: TREEBOT_SECONDARY_ALT1_NAME
+      utility: TREEBOT_UTILITY_NAME
+      special: TREEBOT_SPECIAL_ALT1_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Early core
+          ko: 초반 핵심
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: SecondarySkillMagazine
+            priority: core
+            note:
+              en: "Stacked charges let you fire DIRECTIVE: Drill repeatedly for area damage."
+              ko: "충전을 쌓으면 명령: 드릴을 연달아 쏴 광역 피해를 낼 수 있습니다."
+            stacks:
+              target: 5
+              min: 2
+            stacksReason:
+              en: wiki says stacking greatly helps Drill with no limit given; 5 is a strong loop count.
+              ko: 위키는 드릴에 크게 도움 된다고만 하고 상한이 없으니 루프 기준 5개를 목표로 하세요.
+          - id: Syringe
+            priority: optional
+            note:
+              en: Faster Inject means more frequent healing.
+              ko: 주입이 빨라져 회복 빈도가 늘어납니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: side item; 3 (+45%) speeds Inject healing.
+              ko: 보조용이라 3개(+45%)면 주입기 회복이 빨라집니다.
+        next:
+          - mid
+      - id: mid
+        phase: mid
+        label:
+          en: Harvest support
+          ko: 수확 지원
+        when:
+          en: Once DLC items appear. Take Safer Spaces if you still carry Tangling Growth as an emergency tool.
+          ko: DLC 아이템이 나오기 시작하면 챙기세요. 비상용으로 뒤엉킨 성장을 쓴다면 더 안전한 공간을 챙기세요.
+        items:
+          - id: TriggerEnemyDebuffs
+            priority: core
+            note:
+              en: Spreads Harvest's fruiting debuff to other enemies, so more kills drop fruit.
+              ko: 수확의 결실 디버프를 다른 적에게 퍼뜨려 더 많은 처치에서 열매가 떨어집니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: each stack spreads to +1 enemy and +5m; 2 spreads fruiting well.
+              ko: 개당 대상 +1, 반경 +5m라 2개면 결실 디버프가 잘 퍼집니다.
+          - id: BearVoid
+            priority: situational
+            note:
+              en: "The wiki's Eclipse 8 exception: Tangling Growth used sparingly with Safer Spaces blocking hits."
+              ko: 위키의 이클립스 8 예외 운영입니다. 더 안전한 공간으로 피해를 막으며 뒤엉킨 성장을 가끔 사용합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one Safer Spaces blocks Tangling Growth's cost; extras only shorten its 13.5s recharge.
+              ko: 위키 기준 더 안전한 공간 1개로 덩굴 성장의 체력 소모를 막고, 추가분은 13.5초 재충전만 줄입니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Stage 5 onward.
+          ko: 5스테이지 이후.
+        items:
+          - id: UtilitySkillMagazine
+            priority: optional
+            note:
+              en: Chaining Disperse charges gives REX real mobility.
+              ko: 분산을 연속으로 써서 렉스에게 제대로 된 기동력을 줍니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: +2 Disperse charges per stack; 2 gives REX 5 dashes.
+              ko: 개당 분산 충전 +2라 2개면 REX가 5번 연속 이동합니다.
+          - id: IncreaseHealing
+            priority: optional
+            note:
+              en: Doubles Inject and fruit healing.
+              ko: 주입과 열매 회복량이 두 배가 됩니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one Rack already doubles all healing.
+              ko: 전설 아이템이며, 1개만으로도 모든 회복량이 두 배가 됩니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: "Loop: safer healing"
+          ko: "루프: 안전한 회복"
+        when:
+          en: After the first loop, when you still avoid HP-cost skills.
+          ko: 첫 루프 이후, 여전히 체력 소모 스킬을 쓰지 않을 때.
+        items:
+          - id: SecondarySkillMagazine
+            priority: core
+            stacks:
+              target: 5
+              min: 3
+            note:
+              en: Keep adding Drill charges for area damage.
+              ko: 광역 피해를 위해 드릴 충전을 계속 늘리세요.
+            stacksReason:
+              en: wiki says stacking greatly helps Drill with no limit given; 5 is a strong loop count.
+              ko: 위키는 드릴에 크게 도움 된다고만 하고 상한이 없으니 루프 기준 5개를 목표로 하세요.
+          - id: IncreaseHealing
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: Doubles Inject and Harvest fruit healing.
+              ko: "명령: 주입과 수확 열매의 회복을 2배로 늘립니다."
+            stacksReason:
+              en: legendary; one Rack already doubles all healing.
+              ko: 전설 아이템이며, 1개만으로도 모든 회복량이 두 배가 됩니다.
+          - id: NovaOnHeal
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: "Wiki: Inject reliably triggers it, even without self-damage skills."
+              ko: "위키 기준 자해 스킬 없이도 명령: 주입이 안정적으로 발동시킵니다."
+            stacksReason:
+              en: legendary; one copy already turns all your healing into skulls.
+              ko: 전설 아이템이며, 1개만으로도 모든 회복이 해골 공격으로 바뀝니다.
+        next: []
+    pickOrder:
+      common:
+        - SecondarySkillMagazine
+        - Syringe
+        - Hoof
+      legendary:
+        - IncreaseHealing
+        - UtilitySkillMagazine
+        - NovaOnHeal
+    milestones:
+      - when:
+          en: When a Void cradle offers Safer Spaces
+          ko: 공허 요람에서 더 안전한 공간이 나오면
+        advice:
+          en: Take it only if you carry Tangling Growth for emergencies; it corrupts all your Tougher Times.
+          ko: 비상용으로 뒤엉킨 성장을 들고 있을 때만 고르세요. 힘들었던 시절을 전부 오염시킵니다.
+        take:
+          - BearVoid
+        stop: []
+      - when:
+          en: In co-op, once Harvest fruit is dropping regularly
+          ko: 협동 플레이에서 수확 열매가 꾸준히 떨어지면
+        advice:
+          en: Take Noxious Thorn so the fruiting debuff spreads to more enemies.
+          ko: 결실 약화가 더 많은 적에게 퍼지도록 독가시를 챙기세요.
+        take:
+          - TriggerEnemyDebuffs
+        stop: []
+      - when:
+          en: Whenever you choose a lunar item
+          ko: 달 아이템을 고를 때마다
+        advice:
+          en: Avoid shield conversions (Transcendence) like any REX build.
+          ko: 다른 REX 빌드처럼 보호막 전환(초월)은 피하세요.
+        take: []
+        stop:
+          - ShieldOnly
+    avoid:
+      - id: GoldOnHit
+        reason:
+          en: Still a gold drain if you ever fall back on HP-cost skills.
+          ko: 체력 소모 스킬을 한 번이라도 쓰면 여전히 골드를 잃습니다.
+    evidence: |-
+      Thin. Wiki: avoid self-damaging skills on Eclipse 8 except sparing Tangling Growth with Safer Spaces; Backup Magazine for Drill; Noxious Thorn with Harvest; Hardlight Afterburner with Disperse. r/riskofrain guide: Harvest is weaker solo but strong in multiplayer because fruit heals allies by % HP. Rogue Ranker: Soldier's Syringe for Inject healing. Rogue Ranker says Seed Barrage out-bursts Drill.
+
+      Stack counts and progression: Thin. Wiki REX page: Eclipse 8 avoid self-damage except sparing Tangling Growth with Safer Spaces, Backup Magazine stacking for Drill, Noxious Thorn with Harvest, Inject reliably triggers N'kuhana's, avoid shield items. Safer Spaces recharge and Noxious Thorn numbers: wiki.gg item data. Syringe for Inject healing: Rogue Ranker. Co-op fruit healing: r/riskofrain guide cited in the build (Reddit could not be fetched this time). No source gives stack caps for this build, so only minimums are set; no uncommon or boss order.

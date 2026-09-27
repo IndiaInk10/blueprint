@@ -1,0 +1,344 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: RailgunnerBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: strong
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Railgunner
+  - https://gamerant.com/risk-of-rain-2-best-railgunner-build/
+  - https://rogueranker.com/railgunner-ror2/
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=2494553860
+  - https://riskofrain2.wiki.gg/wiki/Laser_Scope
+  - https://riskofrain2.wiki.gg/wiki/Lens-Maker%27s_Glasses
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.6
+  - https://choostgames.com/blog/risk-of-rain-2-tier-list/
+builds:
+  - id: railgunner-weak-point-supercharge
+    title:
+      en: Weak-point Supercharge
+      ko: 약점 슈퍼차지
+    difficulty: beginner
+    summary:
+      en: Railgunner only crits on weak points, and her passive turns all crit chance into crit damage. Crit chance, crit damage, and big single-hit items (Crowbar, Bands) scale her enormously. Supercharge's 3.0 proc coefficient makes it the best shot for procs.
+      ko: 레일거너는 약점에만 치명타가 나며, 패시브가 모든 치명타 확률을 치명타 피해로 바꿉니다. 치명타 확률·치명타 피해와 강한 단발 아이템(쇠지렛대, 반지)이 엄청나게 효율적입니다. 슈퍼차지는 프록 계수 3.0이라 발동 아이템에 가장 좋은 사격입니다.
+    loadout:
+      primary: RAILGUNNER_PRIMARY_NAME
+      secondary: RAILGUNNER_SECONDARY_NAME
+      utility: RAILGUNNER_UTILITY_NAME
+      special: RAILGUNNER_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Crit damage and first-hit damage
+          ko: 치명타 피해와 첫 타격
+        when:
+          en: "Stages 1-2: take these every time."
+          ko: "1~2스테이지: 항상 챙기세요."
+        items:
+          - id: Crowbar
+            priority: core
+            note:
+              en: Her big opening shots hit full-health enemies; often called her most important white.
+              ko: 강한 첫 사격이 체력이 가득 찬 적을 맞힙니다. 가장 중요한 흰색 아이템으로 꼽힙니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +75% per stack, linear; this build opens on healthy targets, so 5 (+375%) is worth reaching.
+              ko: 개당 +75%로 선형입니다. 이 빌드는 체력이 가득한 적을 먼저 치므로 5개(+375%)까지 모을 가치가 있습니다.
+          - id: CritGlasses
+            priority: core
+            note:
+              en: Becomes weak-point crit damage, and keeps scaling past 10 stacks.
+              ko: 약점 치명타 피해로 바뀌며 10개를 넘어도 계속 효과가 있습니다.
+            stacksReason:
+              en: no cap for her, each stack becomes +10% weak-point crit damage (wiki), so keep taking them; 15 is a loop-length goal.
+              ko: 위키 기준 그녀는 상한이 없고 개당 약점 치명타 피해 +10%로 바뀌므로 계속 챙기세요. 루프까지 가면 15개가 목표입니다.
+            stacks:
+              target: 15
+          - id: Syringe
+            priority: optional
+            note:
+              en: Faster reloads and a wider perfect-reload window.
+              ko: 재장전이 빨라지고 완벽 재장전 구간이 넓어집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +15% attack speed per stack, linear with no cap; she only reloads faster, so 3 (+45%) before damage whites.
+              ko: 개당 공격 속도 +15%로 선형이며 상한이 없습니다. 재장전만 빨라지므로 3개(+45%) 뒤에는 화력용 흰색을 고르세요.
+        next:
+          - bands
+          - safety
+      - id: bands
+        phase: mid
+        label:
+          en: Big-hit procs
+          ko: 고피해 발동
+        when:
+          en: "Any uncommon chest: her shots always clear the high-damage threshold."
+          ko: "녹색 상자를 열 때: 사격이 항상 높은 피해량 조건을 넘깁니다."
+        items:
+          - id: FireRing
+            priority: core
+            note:
+              en: Procs on nearly every scoped shot.
+              ko: 거의 모든 조준 사격에서 발동합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: Kjaro's Band damage grows linearly and she triggers it on nearly every shot; 3 before other greens.
+              ko: 캬로의 반지은 피해가 선형으로 늘고 거의 매 사격마다 발동하므로 3개까지 챙기세요.
+          - id: IceRing
+            priority: core
+            note:
+              en: Same trigger as Kjaro's Band.
+              ko: 캬로의 반지와 같은 조건입니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: Runald's Band damage grows linearly and she triggers it on nearly every shot; 3 before other greens.
+              ko: 루널드의 반지은 피해가 선형으로 늘고 거의 매 사격마다 발동하므로 3개까지 챙기세요.
+          - id: AttackSpeedOnCrit
+            priority: optional
+            note:
+              en: Weak-point hits grant attack speed for faster follow-up shots.
+              ko: 약점 적중 시 공격 속도가 올라 다음 사격이 빨라집니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: her crit chance is converted anyway, and extras only raise the attack speed cap, so one is enough.
+              ko: 치명타 확률은 어차피 전환되고 추가분은 공격 속도 상한만 올리므로 1개면 충분합니다.
+          - id: BossDamageBonus
+            priority: optional
+            note:
+              en: Extra damage against bosses.
+              ko: 보스에게 추가 피해를 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +20% boss damage per stack; 3 (+60%) before whites that help in every fight.
+              ko: 보스 피해 개당 +20%입니다. 3개(+60%) 뒤에는 모든 전투에 도움 되는 흰색이 낫습니다.
+        next:
+          - late
+      - id: safety
+        phase: mid
+        label:
+          en: Handling close threats
+          ko: 근접 위협 대처
+        when:
+          en: If fast or nearby enemies keep interrupting your scope.
+          ko: 빠르거나 가까운 적이 계속 조준을 방해한다면.
+        items:
+          - id: Hoof
+            priority: optional
+            note:
+              en: Movement speed to reposition; many stacks also offset recoil for heal fields.
+              ko: 위치를 옮길 이동 속도. 많이 쌓으면 반동도 상쇄됩니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +14% speed per stack; 3 (+42%) covers mobility, then whites are better spent on damage.
+              ko: 개당 이동 속도 +14%라 3개(+42%)면 기동력은 충분하고, 그 뒤 흰색은 화력에 쓰는 게 낫습니다.
+          - id: SlowOnHit
+            priority: optional
+            note:
+              en: Slows fast enemies so they are easier to hit.
+              ko: 빠른 적을 느리게 해 맞히기 쉬워집니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy gives the full 60% slow; extras only add 2 s of duration.
+              ko: 1개로 둔화 60%가 모두 적용되고, 추가분은 지속 시간만 2초씩 늘립니다.
+          - id: Thorns
+            priority: optional
+            note:
+              en: Punishes enemies that reach you.
+              ko: 다가온 적에게 반격 피해를 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: damage stays 160%; extras only add targets and radius, so one is enough.
+              ko: 피해는 160%로 고정이고 추가분은 대상 수와 반경만 늘리므로 1개면 충분합니다.
+          - id: ShockNearby
+            priority: optional
+            note:
+              en: Handles nearby enemies while you aim far.
+              ko: 멀리 조준하는 동안 주변 적을 처리합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy handles nearby enemies, and a second is a bonus rather than a goal.
+              ko: 전설 아이템입니다. 1개로 근처 적을 처리하고, 두 번째는 목표가 아니라 덤입니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Legendary multipliers
+          ko: 전설 배율 아이템
+        when:
+          en: Stage 4+ legendary chests or printers.
+          ko: 4스테이지 이후 전설 상자나 프린터.
+        items:
+          - id: CritDamage
+            priority: core
+            note:
+              en: Equal to about 10 Lens-Maker's Glasses for her.
+              ko: 레일거너에게는 렌즈 제작자의 안경 약 10개와 같습니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: +100% crit damage per stack, linear, and each copy equals about 10 Lens-Maker's Glasses for her; worth a second.
+              ko: 위키 기준 개당 치명타 피해 +100%로 선형이며, 그녀에겐 1개가 렌즈 제작자의 안경 약 10개와 같아 두 번째도 노릴 만합니다.
+          - id: Behemoth
+            priority: optional
+            note:
+              en: Adds AoE and damage to every shot.
+              ko: 모든 사격에 광역 피해와 추가 피해를 더합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy makes every shot explode, and a second is a bonus rather than a goal.
+              ko: 전설 아이템입니다. 1개로 모든 사격이 폭발하고, 두 번째는 목표가 아니라 덤입니다.
+          - id: Clover
+            priority: optional
+            note:
+              en: Raises luck for chance-based effects such as crits and on-hit items. The Bands trigger on big hits, not on a chance, so Clover does not affect them.
+              ko: 치명타나 적중 시 발동 같은 확률형 효과의 행운을 올립니다. 반지는 확률이 아니라 큰 피해로 발동하므로 클로버의 영향을 받지 않습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy rerolls every chance-based effect, and a second is a bonus rather than a goal.
+              ko: 전설 아이템입니다. 1개로 모든 확률 효과를 한 번 더 굴리고, 두 번째는 목표가 아니라 덤입니다.
+          - id: BleedOnHitAndExplode
+            priority: optional
+            note:
+              en: Best boss item for her weak-point crits.
+              ko: 약점 치명타와 가장 잘 맞는 보스 아이템입니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy gives the 5% crit and bleed on crit; extra copies only enlarge the death explosion, and boss items are rare.
+              ko: 1개로 치명타 5%와 치명타 출혈이 모두 생기고, 추가분은 처치 폭발 피해만 늘립니다. 보스 아이템이라 잘 나오지도 않습니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Void safety and glass
+          ko: 공허 생존과 유리
+        when:
+          en: After the first loop, once weak-point shots one-shot most enemies.
+          ko: 첫 루프 이후, 약점 사격이 대부분의 적을 한 방에 잡을 때.
+        items:
+          - id: BearVoid
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: GameRant's void pick for her safety; recharge shortens 10% per stack.
+              ko: GameRant가 생존용 공허 아이템으로 추천합니다. 개당 재충전이 10%씩 짧아집니다.
+            stacksReason:
+              en: recharge 13.5 s, -10% per stack; 2 blocks a hit a bit more often, and void items are rare.
+              ko: 재충전 13.5초가 개당 10%씩 줄어듭니다. 2개면 조금 더 자주 막고, 공허 아이템은 드뭅니다.
+          - id: MushroomVoid
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Heals while sprinting, unlike Bustling Fungus which her recoil breaks.
+              ko: 뿜뿜 버섯과 달리 질주 중에 회복하므로 반동 문제가 없습니다.
+            stacksReason:
+              en: +2% max HP healed per second per stack while sprinting; 2 (4%/s) refills between fights.
+              ko: 질주 중 초당 최대 체력 2%를 개당 회복합니다. 2개(초당 4%)면 전투 사이에 체력이 다 찹니다.
+          - id: ExplodeOnDeathVoid
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: GameRant rates it as a strong fit for her kill loop.
+              ko: GameRant가 처치 위주 플레이와 잘 맞는다고 평가합니다.
+            stacksReason:
+              en: +156% damage and +2.4 m radius per stack; 2 before other void picks.
+              ko: 개당 피해 +156%, 반경 +2.4m입니다. 2개까지 챙기고 다른 공허 아이템으로 넘어가세요.
+          - id: LunarDagger
+            priority: situational
+            stacks:
+              target: 1
+            note:
+              en: Doubles base damage before crits multiply it; halves max HP per stack, so only with safety items.
+              ko: 치명타 배율 전에 기본 피해를 두 배로 만듭니다. 개당 최대 체력이 절반이 되니 생존 아이템이 있을 때만 쓰세요.
+            stacksReason:
+              en: one copy doubles base damage before crits multiply it (wiki); each extra halves max HP again, so one unless safety is strong.
+              ko: 위키 기준 1개로 기본 피해가 두 배가 되어 치명타에 곱해집니다. 추가분마다 최대 체력이 다시 줄어드니 안전 장치가 탄탄할 때만 더 챙기세요.
+        next: []
+    pickOrder:
+      common:
+        - Crowbar
+        - CritGlasses
+        - Syringe
+        - Hoof
+        - AttackSpeedAndMoveSpeed
+      uncommon:
+        - FireRing
+        - IceRing
+        - AttackSpeedOnCrit
+        - JumpBoost
+      legendary:
+        - CritDamage
+        - Behemoth
+        - Clover
+    milestones:
+      - when:
+          en: Once you have a pair of Bands
+          ko: 반지 두 종류를 갖추면
+        advice:
+          en: Her scoped shots trigger them every time; keep stacking Crowbar and Glasses for the hits that feed them.
+          ko: 조준 사격마다 반지가 발동합니다. 쇠지렛대와 안경을 계속 쌓아 한 방 피해를 키우세요.
+        take:
+          - Crowbar
+          - CritGlasses
+        stop: []
+      - when:
+          en: When other survivors would stop at 10 Lens-Maker's Glasses
+          ko: 다른 생존자라면 안경 10개에서 멈출 시점
+        advice:
+          en: "Do not stop: each extra stack is +10% weak-point crit damage for her."
+          ko: 멈추지 마세요. 레일거너는 추가 안경마다 약점 치명타 피해가 10%씩 늘어납니다.
+        take:
+          - CritGlasses
+        stop: []
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Damage is rarely her problem; add void safety items so close threats do not kill you while scoped.
+          ko: 화력보다 생존이 문제입니다. 조준 중 근접 위협에 죽지 않도록 공허 생존 아이템을 챙기세요.
+        take:
+          - BearVoid
+          - MushroomVoid
+        stop: []
+    avoid:
+      - id: LunarSecondaryReplacement
+        reason:
+          en: Holding it together with Essence of Heresy stops her from landing any crits.
+          ko: 이단의 정수와 함께 가지면 치명타를 전혀 넣을 수 없습니다.
+      - id: Mushroom
+        reason:
+          en: Her weapon recoil interrupts standing still, so it rarely heals unless you have ~10 Goat Hoofs.
+          ko: 무기 반동 때문에 가만히 있기 어려워 폴의 염소발이 10개쯤 없으면 거의 회복하지 못합니다.
+      - id: CritGlassesVoid
+        reason:
+          en: Corrupts all Lens-Maker's Glasses, which are one of her best damage items.
+          ko: 그녀의 최고 딜 아이템인 렌즈 제작자의 안경을 모두 오염시킵니다.
+    evidence: |-
+      Strong consensus. Crowbar + both Bands + Laser Scope: GameRant (updated Oct 2024, post-SotS), Rogue Ranker, Steam 'Item Builds' guide, wiki. Lens-Maker's scaling past 10 and Laser Scope = 10 glasses: wiki item pages. Supercharge 3.0 proc coefficient, Heresy crit conflict, Bustling Fungus recoil, Chronobauble/Razorwire/Tesla Coil: wiki. Backup Magazine is disputed: Rogue Ranker recommends it for M99, but the wiki notes only the first shot after a perfect reload gets the bonus and it does nothing for HH44, so it is left out. GameRant lists Weeping Fungus and Safer Spaces as void options, not included for lack of corroboration. Lost Seer's avoid is inferred from the wiki corruption fact plus universal Glasses priority. Patch: V1.3.6 only fixed a Luminous Shot stacking bug on her; GameRant notes SotS items add little for her. 2026 tier lists keep her S-tier.
+
+      Stack counts and progression: Wiki Lens-Maker's page: 'can be stacked past 10'; wiki Laser Scope: 'equivalent to picking up 10 Lens-Maker's Glasses'; Predatory, Safer Spaces and Weeping Fungus stack values from wiki item data. Rogue Ranker Railgunner (glasses +10% crit damage per stack) and Rogue Ranker Laser Scope page (Shaped Glass doubles base before crit) agree. Void items and Mocha/Wax Quail: GameRant (Oct 2024). Pick order: Rogue Ranker and GameRant both lead with Crowbar, Glasses/Laser Scope and both Bands. Disagreement: Rogue Ranker says 57 Leaf Clover raises Band proc frequency, but the wiki Band descriptions have no proc chance (they trigger on any 400%+ hit and recharge every 10 s), so Clover mainly helps other chance items; it is kept low in the legendary order. Boss list left empty: only Shatterspleen is named. Steam guides returned HTTP 429; Reddit could not be fetched.

@@ -1,0 +1,235 @@
+# Generated from web research cross-checked with the installed game (RoR2.dll + localization).
+# id: internal ItemDef/EquipmentDef name. token/pickup: localization tokens. en: fallback name.
+# icon: image file name on the Risk of Rain 2 wiki; fetched and cached at runtime, never bundled.
+kind: item-catalog
+schemaVersion: 1
+revision: 2
+updatedAt: 2026-09-26
+items:
+  # common
+  - { id: BossDamageBonus, token: ITEM_BOSSDAMAGEBONUS_NAME, pickup: ITEM_BOSSDAMAGEBONUS_PICKUP, desc: ITEM_BOSSDAMAGEBONUS_DESC, tier: common, dlc: base, en: "Armor-Piercing Rounds", icon: "Armor-Piercing_Rounds.png" }
+  - { id: SecondarySkillMagazine, token: ITEM_SECONDARYSKILLMAGAZINE_NAME, pickup: ITEM_SECONDARYSKILLMAGAZINE_PICKUP, desc: ITEM_SECONDARYSKILLMAGAZINE_DESC, tier: common, dlc: base, en: "Backup Magazine", icon: "Backup_Magazine.png" }
+  - { id: FlatHealth, token: ITEM_FLATHEALTH_NAME, pickup: ITEM_FLATHEALTH_PICKUP, desc: ITEM_FLATHEALTH_DESC, tier: common, dlc: base, en: "Bison Steak", icon: "Bison_Steak.png" }
+  - { id: AttackSpeedPerNearbyAllyOrEnemy, token: ITEM_ATTACKSPEEDPERNEARBYALLYORENEMY_NAME, pickup: ITEM_ATTACKSPEEDPERNEARBYALLYORENEMY_PICKUP, desc: ITEM_ATTACKSPEEDPERNEARBYALLYORENEMY_DESC, tier: common, dlc: sots, en: "Bolstering Lantern", icon: "Bolstering_Lantern.png" }
+  - { id: Firework, token: ITEM_FIREWORK_NAME, pickup: ITEM_FIREWORK_PICKUP, desc: ITEM_FIREWORK_DESC, tier: common, dlc: base, en: "Bundle of Fireworks", icon: "Bundle_of_Fireworks.png" }
+  - { id: Mushroom, token: ITEM_MUSHROOM_NAME, pickup: ITEM_MUSHROOM_PICKUP, desc: ITEM_MUSHROOM_DESC, tier: common, dlc: base, en: "Bustling Fungus", icon: "Bustling_Fungus.png" }
+  - { id: HealWhileSafe, token: ITEM_HEALWHILESAFE_NAME, pickup: ITEM_HEALWHILESAFE_PICKUP, desc: ITEM_HEALWHILESAFE_DESC, tier: common, dlc: base, en: "Cautious Slug", icon: "Cautious_Slug.png" }
+  - { id: IncreaseDamageOnMultiKill, token: ITEM_INCREASEDAMAGEONMULTIKILL_NAME, pickup: ITEM_INCREASEDAMAGEONMULTIKILL_PICKUP, desc: ITEM_INCREASEDAMAGEONMULTIKILL_DESC, tier: common, dlc: sots, en: "Chronic Expansion", icon: "Chronic_Expansion.png" }
+  - { id: Crowbar, token: ITEM_CROWBAR_NAME, pickup: ITEM_CROWBAR_PICKUP, desc: ITEM_CROWBAR_DESC, tier: common, dlc: base, en: "Crowbar", icon: "Crowbar.png" }
+  - { id: FragileDamageBonus, token: ITEM_FRAGILEDAMAGEBONUS_NAME, pickup: ITEM_FRAGILEDAMAGEBONUS_PICKUP, desc: ITEM_FRAGILEDAMAGEBONUS_DESC, tier: common, dlc: sotv, en: "Delicate Watch", icon: "Delicate_Watch.png" }
+  - { id: BarrierOnCooldown, token: ITEM_BARRIERONCOOLDOWN_NAME, pickup: ITEM_BARRIERONCOOLDOWN_PICKUP, desc: ITEM_BARRIERONCOOLDOWN_DESC, tier: common, dlc: ac, en: "Eclipse Lite", icon: "Eclipse_Lite.png" }
+  - { id: SpeedBoostPickup, token: ITEM_SPEEDBOOSTPICKUP_NAME, pickup: ITEM_SPEEDBOOSTPICKUP_PICKUP, desc: ITEM_SPEEDBOOSTPICKUP_DESC, tier: common, dlc: sots, en: "Elusive Antlers", icon: "Elusive_Antlers.png" }
+  - { id: SprintBonus, token: ITEM_SPRINTBONUS_NAME, pickup: ITEM_SPRINTBONUS_PICKUP, desc: ITEM_SPRINTBONUS_DESC, tier: common, dlc: base, en: "Energy Drink", icon: "Energy_Drink.png" }
+  - { id: NearbyDamageBonus, token: ITEM_NEARBYDAMAGEBONUS_NAME, pickup: ITEM_NEARBYDAMAGEBONUS_PICKUP, desc: ITEM_NEARBYDAMAGEBONUS_DESC, tier: common, dlc: base, en: "Focus Crystal", icon: "Focus_Crystal.png" }
+  - { id: IgniteOnKill, token: ITEM_IGNITEONKILL_NAME, pickup: ITEM_IGNITEONKILL_PICKUP, desc: ITEM_IGNITEONKILL_DESC, tier: common, dlc: base, en: "Gasoline", icon: "Gasoline.png" }
+  - { id: CritAtLowerElevation, token: ITEM_CRITATLOWERELEVATION_NAME, pickup: ITEM_CRITATLOWERELEVATION_PICKUP, desc: ITEM_CRITATLOWERELEVATION_DESC, tier: common, dlc: ac, en: "Hiker's Boots", icon: "Hiker's_Boots.png" }
+  - { id: ScrapWhite, token: ITEM_SCRAPWHITE_NAME, pickup: ITEM_SCRAPWHITE_PICKUP, desc: ITEM_SCRAPWHITE_DESC, tier: common, dlc: base, en: "Item Scrap, White", icon: "Item_Scrap,_White.png" }
+  - { id: CritGlasses, token: ITEM_CRITGLASSES_NAME, pickup: ITEM_CRITGLASSES_PICKUP, desc: ITEM_CRITGLASSES_DESC, tier: common, dlc: base, en: "Lens-Maker's Glasses", icon: "Lens-Maker's_Glasses.png" }
+  - { id: Medkit, token: ITEM_MEDKIT_NAME, pickup: ITEM_MEDKIT_PICKUP, desc: ITEM_MEDKIT_DESC, tier: common, dlc: base, en: "Medkit", icon: "Medkit.png" }
+  - { id: AttackSpeedAndMoveSpeed, token: ITEM_ATTACKSPEEDANDMOVESPEED_NAME, pickup: ITEM_ATTACKSPEEDANDMOVESPEED_PICKUP, desc: ITEM_ATTACKSPEEDANDMOVESPEED_DESC, tier: common, dlc: sotv, en: "Mocha", icon: "Mocha.png" }
+  - { id: Tooth, token: ITEM_TOOTH_NAME, pickup: ITEM_TOOTH_PICKUP, desc: ITEM_TOOTH_DESC, tier: common, dlc: base, en: "Monster Tooth", icon: "Monster_Tooth.png" }
+  - { id: OutOfCombatArmor, token: ITEM_OUTOFCOMBATARMOR_NAME, pickup: ITEM_OUTOFCOMBATARMOR_PICKUP, desc: ITEM_OUTOFCOMBATARMOR_DESC, tier: common, dlc: sotv, en: "Oddly-shaped Opal", icon: "Oddly-shaped_Opal.png" }
+  - { id: Hoof, token: ITEM_HOOF_NAME, pickup: ITEM_HOOF_PICKUP, desc: ITEM_HOOF_DESC, tier: common, dlc: base, en: "Paul's Goat Hoof", icon: "Paul's_Goat_Hoof.png" }
+  - { id: PersonalShield, token: ITEM_PERSONALSHIELD_NAME, pickup: ITEM_PERSONALSHIELD_PICKUP, desc: ITEM_PERSONALSHIELD_DESC, tier: common, dlc: base, en: "Personal Shield Generator", icon: "Personal_Shield_Generator.png" }
+  - { id: HealingPotion, token: ITEM_HEALINGPOTION_NAME, pickup: ITEM_HEALINGPOTION_PICKUP, desc: ITEM_HEALINGPOTION_DESC, tier: common, dlc: sotv, en: "Power Elixir", icon: "Power_Elixir.png" }
+  - { id: ArmorPlate, token: ITEM_REPULSIONARMORPLATE_NAME, pickup: ITEM_REPULSIONARMORPLATE_PICKUP, desc: ITEM_REPULSIONARMORPLATE_DESC, tier: common, dlc: base, en: "Repulsion Armor Plate", icon: "Repulsion_Armor_Plate.png" }
+  - { id: GoldOnHurt, token: ITEM_GOLDONHURT_NAME, pickup: ITEM_GOLDONHURT_PICKUP, desc: ITEM_GOLDONHURT_DESC, tier: common, dlc: sotv, en: "Roll of Pennies", icon: "Roll_of_Pennies.png" }
+  - { id: TreasureCache, token: ITEM_TREASURECACHE_NAME, pickup: ITEM_TREASURECACHE_PICKUP, desc: ITEM_TREASURECACHE_DESC, tier: common, dlc: base, en: "Rusted Key", icon: "Rusted_Key.png" }
+  - { id: Syringe, token: ITEM_SYRINGE_NAME, pickup: ITEM_SYRINGE_PICKUP, desc: ITEM_SYRINGE_DESC, tier: common, dlc: base, en: "Soldier's Syringe", icon: "Soldier's_Syringe.png" }
+  - { id: StickyBomb, token: ITEM_STICKYBOMB_NAME, pickup: ITEM_STICKYBOMB_PICKUP, desc: ITEM_STICKYBOMB_DESC, tier: common, dlc: base, en: "Sticky Bomb", icon: "Sticky_Bomb.png" }
+  - { id: StunChanceOnHit, token: ITEM_STUNCHANCEONHIT_NAME, pickup: ITEM_STUNCHANCEONHIT_PICKUP, desc: ITEM_STUNCHANCEONHIT_DESC, tier: common, dlc: base, en: "Stun Grenade", icon: "Stun_Grenade.png" }
+  - { id: BarrierOnKill, token: ITEM_BARRIERONKILL_NAME, pickup: ITEM_BARRIERONKILL_PICKUP, desc: ITEM_BARRIERONKILL_DESC, tier: common, dlc: base, en: "Topaz Brooch", icon: "Topaz_Brooch.png" }
+  - { id: Bear, token: ITEM_BEAR_NAME, pickup: ITEM_BEAR_PICKUP, desc: ITEM_BEAR_DESC, tier: common, dlc: base, en: "Tougher Times", icon: "Tougher_Times.png" }
+  - { id: BleedOnHit, token: ITEM_BLEEDONHIT_NAME, pickup: ITEM_BLEEDONHIT_PICKUP, desc: ITEM_BLEEDONHIT_DESC, tier: common, dlc: base, en: "Tri-Tip Dagger", icon: "Tri-Tip_Dagger.png" }
+  - { id: WardOnLevel, token: ITEM_WARDONLEVEL_NAME, pickup: ITEM_WARDONLEVEL_PICKUP, desc: ITEM_WARDONLEVEL_DESC, tier: common, dlc: base, en: "Warbanner", icon: "Warbanner.png" }
+  - { id: DelayedDamage, token: ITEM_DELAYEDDAMAGE_NAME, pickup: ITEM_DELAYEDDAMAGE_PICKUP, desc: ITEM_DELAYEDDAMAGE_DESC, tier: common, dlc: sots, en: "Warped Echo", icon: "Warped_Echo.png" }
+  # uncommon
+  - { id: Missile, token: ITEM_MISSILE_NAME, pickup: ITEM_MISSILE_PICKUP, desc: ITEM_MISSILE_DESC, tier: uncommon, dlc: base, en: "AtG Missile Mk. 1", icon: "AtG_Missile_Mk._1.png" }
+  - { id: Bandolier, token: ITEM_BANDOLIER_NAME, pickup: ITEM_BANDOLIER_PICKUP, desc: ITEM_BANDOLIER_DESC, tier: uncommon, dlc: base, en: "Bandolier", icon: "Bandolier.png" }
+  - { id: WarCryOnMultiKill, token: ITEM_WARCRYONMULTIKILL_NAME, pickup: ITEM_WARCRYONMULTIKILL_PICKUP, desc: ITEM_WARCRYONMULTIKILL_DESC, tier: uncommon, dlc: base, en: "Berzerker's Pauldron", icon: "Berzerker's_Pauldron.png" }
+  - { id: DronesDropDynamite, token: ITEM_DRONESDROPDYNAMITE_NAME, pickup: ITEM_DRONESDROPDYNAMITE_PICKUP, desc: ITEM_DRONESDROPDYNAMITE_DESC, tier: uncommon, dlc: ac, en: "Box of Dynamite", icon: "Box_of_Dynamite.png" }
+  - { id: KnockBackHitEnemies, token: ITEM_KNOCKBACKHITENEMIES_NAME, pickup: ITEM_KNOCKBACKHITENEMIES_PICKUP, desc: ITEM_KNOCKBACKHITENEMIES_DESC, tier: uncommon, dlc: sots, en: "Breaching Fin", icon: "Breaching_Fin.png" }
+  - { id: ExtraShrineItem, token: ITEM_EXTRASHRINEITEM_NAME, pickup: ITEM_EXTRASHRINEITEM_PICKUP, desc: ITEM_EXTRASHRINEITEM_DESC, tier: uncommon, dlc: sots, en: "Chance Doll", icon: "Chance_Doll.png" }
+  - { id: SlowOnHit, token: ITEM_SLOWONHIT_NAME, pickup: ITEM_SLOWONHIT_PICKUP, desc: ITEM_SLOWONHIT_DESC, tier: uncommon, dlc: base, en: "Chronobauble", icon: "Chronobauble.png" }
+  - { id: SpeedOnPickup, token: ITEM_SPEEDONPICKUP_NAME, pickup: ITEM_SPEEDONPICKUP_PICKUP, desc: ITEM_SPEEDONPICKUP_DESC, tier: uncommon, dlc: ac, en: "Collector's Compulsion", icon: "Collector's_Compulsion.png" }
+  - { id: DeathMark, token: ITEM_DEATHMARK_NAME, pickup: ITEM_DEATHMARK_PICKUP, desc: ITEM_DEATHMARK_DESC, tier: uncommon, dlc: base, en: "Death Mark", icon: "Death_Mark.png" }
+  - { id: JumpDamageStrike, token: ITEM_JUMPDAMAGESTRIKE_NAME, pickup: ITEM_JUMPDAMAGESTRIKE_PICKUP, desc: ITEM_JUMPDAMAGESTRIKE_DESC, tier: uncommon, dlc: ac, en: "Faraday Spur", icon: "Faraday_Spur.png" }
+  - { id: EquipmentMagazine, token: ITEM_EQUIPMENTMAGAZINE_NAME, pickup: ITEM_EQUIPMENTMAGAZINE_PICKUP, desc: ITEM_EQUIPMENTMAGAZINE_DESC, tier: uncommon, dlc: base, en: "Fuel Cell", icon: "Fuel_Cell.png" }
+  - { id: BonusGoldPackOnKill, token: ITEM_BONUSGOLDPACKONKILL_NAME, pickup: ITEM_BONUSGOLDPACKONKILL_PICKUP, desc: ITEM_BONUSGOLDPACKONKILL_DESC, tier: uncommon, dlc: base, en: "Ghor's Tome", icon: "Ghor's_Tome.png" }
+  - { id: HealOnCrit, token: ITEM_HEALONCRIT_NAME, pickup: ITEM_HEALONCRIT_PICKUP, desc: ITEM_HEALONCRIT_DESC, tier: uncommon, dlc: base, en: "Harvester's Scythe", icon: "Harvester's_Scythe.png" }
+  - { id: Feather, token: ITEM_FEATHER_NAME, pickup: ITEM_FEATHER_PICKUP, desc: ITEM_FEATHER_DESC, tier: uncommon, dlc: base, en: "Hopoo Feather", icon: "Hopoo_Feather.png" }
+  - { id: MoveSpeedOnKill, token: ITEM_MOVESPEEDONKILL_NAME, pickup: ITEM_MOVESPEEDONKILL_PICKUP, desc: ITEM_MOVESPEEDONKILL_DESC, tier: uncommon, dlc: sotv, en: "Hunter's Harpoon", icon: "Hunter's_Harpoon.png" }
+  - { id: StrengthenBurn, token: ITEM_STRENGTHENBURN_NAME, pickup: ITEM_STRENGTHENBURN_PICKUP, desc: ITEM_STRENGTHENBURN_DESC, tier: uncommon, dlc: sotv, en: "Ignition Tank", icon: "Ignition_Tank.png" }
+  - { id: Infusion, token: ITEM_INFUSION_NAME, pickup: ITEM_INFUSION_PICKUP, desc: ITEM_INFUSION_DESC, tier: uncommon, dlc: base, en: "Infusion", icon: "Infusion.png" }
+  - { id: ScrapGreen, token: ITEM_SCRAPGREEN_NAME, pickup: ITEM_SCRAPGREEN_PICKUP, desc: ITEM_SCRAPGREEN_DESC, tier: uncommon, dlc: base, en: "Item Scrap, Green", icon: "Item_Scrap,_Green.png" }
+  - { id: ShieldBooster, token: ITEM_SHIELDBOOSTER_NAME, pickup: ITEM_SHIELDBOOSTER_PICKUP, desc: ITEM_SHIELDBOOSTER_DESC, tier: uncommon, dlc: ac, en: "Kinetic Dampener", icon: "Kinetic_Dampener.png" }
+  - { id: FireRing, token: ITEM_FIRERING_NAME, pickup: ITEM_FIRERING_PICKUP, desc: ITEM_FIRERING_DESC, tier: uncommon, dlc: base, en: "Kjaro's Band", icon: "Kjaro's_Band.png" }
+  - { id: Seed, token: ITEM_SEED_NAME, pickup: ITEM_SEED_PICKUP, desc: ITEM_SEED_DESC, tier: uncommon, dlc: base, en: "Leeching Seed", icon: "Leeching_Seed.png" }
+  - { id: TPHealingNova, token: ITEM_TPHEALINGNOVA_NAME, pickup: ITEM_TPHEALINGNOVA_PICKUP, desc: ITEM_TPHEALINGNOVA_DESC, tier: uncommon, dlc: base, en: "Lepton Daisy", icon: "Lepton_Daisy.png" }
+  - { id: IncreasePrimaryDamage, token: ITEM_INCREASEPRIMARYDAMAGE_NAME, pickup: ITEM_INCREASEPRIMARYDAMAGE_PICKUP, desc: ITEM_INCREASEPRIMARYDAMAGE_DESC, tier: uncommon, dlc: sots, en: "Luminous Shot", icon: "Luminous_Shot.png" }
+  - { id: TriggerEnemyDebuffs, token: ITEM_TRIGGERENEMYDEBUFFS_NAME, pickup: ITEM_TRIGGERENEMYDEBUFFS_PICKUP, desc: ITEM_TRIGGERENEMYDEBUFFS_DESC, tier: uncommon, dlc: sots, en: "Noxious Thorn", icon: "Noxious_Thorn.png" }
+  - { id: ExecuteLowHealthElite, token: ITEM_EXECUTELOWHEALTHELITE_NAME, pickup: ITEM_EXECUTELOWHEALTHELITE_PICKUP, desc: ITEM_EXECUTELOWHEALTHELITE_DESC, tier: uncommon, dlc: base, en: "Old Guillotine", icon: "Old_Guillotine.png" }
+  - { id: Phasing, token: ITEM_PHASING_NAME, pickup: ITEM_PHASING_PICKUP, desc: ITEM_PHASING_DESC, tier: uncommon, dlc: base, en: "Old War Stealthkit", icon: "Old_War_Stealthkit.png" }
+  - { id: ExtraStatsOnLevelUp, token: ITEM_EXTRASTATSONLEVELUP_NAME, pickup: ITEM_EXTRASTATSONLEVELUP_PICKUP, desc: ITEM_EXTRASTATSONLEVELUP_DESC, tier: uncommon, dlc: sots, en: "Prayer Beads", icon: "Prayer_Beads.png" }
+  - { id: AttackSpeedOnCrit, token: ITEM_ATTACKSPEEDONCRIT_NAME, pickup: ITEM_ATTACKSPEEDONCRIT_PICKUP, desc: ITEM_ATTACKSPEEDONCRIT_DESC, tier: uncommon, dlc: base, en: "Predatory Instincts", icon: "Predatory_Instincts.png" }
+  - { id: Thorns, token: ITEM_THORNS_NAME, pickup: ITEM_THORNS_PICKUP, desc: ITEM_THORNS_DESC, tier: uncommon, dlc: base, en: "Razorwire", icon: "Razorwire.png" }
+  - { id: SprintOutOfCombat, token: ITEM_SPRINTOUTOFCOMBAT_NAME, pickup: ITEM_SPRINTOUTOFCOMBAT_PICKUP, desc: ITEM_SPRINTOUTOFCOMBAT_DESC, tier: uncommon, dlc: base, en: "Red Whip", icon: "Red_Whip.png" }
+  - { id: RegeneratingScrap, token: ITEM_REGENERATINGSCRAP_NAME, pickup: ITEM_REGENERATINGSCRAP_PICKUP, desc: ITEM_REGENERATINGSCRAP_DESC, tier: uncommon, dlc: sotv, en: "Regenerating Scrap", icon: "Regenerating_Scrap.png" }
+  - { id: SprintArmor, token: ITEM_SPRINTARMOR_NAME, pickup: ITEM_SPRINTARMOR_PICKUP, desc: ITEM_SPRINTARMOR_DESC, tier: uncommon, dlc: base, en: "Rose Buckler", icon: "Rose_Buckler.png" }
+  - { id: IceRing, token: ITEM_ICERING_NAME, pickup: ITEM_ICERING_PICKUP, desc: ITEM_ICERING_DESC, tier: uncommon, dlc: base, en: "Runald's Band", icon: "Runald's_Band.png" }
+  - { id: LowerPricedChests, token: ITEM_LOWERPRICEDCHESTS_NAME, pickup: ITEM_LOWERPRICEDCHESTS_PICKUP, desc: ITEM_LOWERPRICEDCHESTS_DESC, tier: uncommon, dlc: sots, en: "Sale Star", icon: "Sale_Star.png" }
+  - { id: FreeChest, token: ITEM_FREECHEST_NAME, pickup: ITEM_FREECHEST_PICKUP, desc: ITEM_FREECHEST_DESC, tier: uncommon, dlc: sotv, en: "Shipping Request Form", icon: "Shipping_Request_Form.png" }
+  - { id: PrimarySkillShuriken, token: ITEM_PRIMARYSKILLSHURIKEN_NAME, pickup: ITEM_PRIMARYSKILLSHURIKEN_PICKUP, desc: ITEM_PRIMARYSKILLSHURIKEN_DESC, tier: uncommon, dlc: sotv, en: "Shuriken", icon: "Shuriken.png" }
+  - { id: Squid, token: ITEM_SQUIDTURRET_NAME, pickup: ITEM_SQUIDTURRET_PICKUP, desc: ITEM_SQUIDTURRET_DESC, tier: uncommon, dlc: base, en: "Squid Polyp", icon: "Squid_Polyp.png" }
+  - { id: ChainLightning, token: ITEM_CHAINLIGHTNING_NAME, pickup: ITEM_CHAINLIGHTNING_PICKUP, desc: ITEM_CHAINLIGHTNING_DESC, tier: uncommon, dlc: base, en: "Ukulele", icon: "Ukulele.png" }
+  - { id: TeleportOnLowHealth, token: ITEM_TELEPORTONLOWHEALTH_NAME, pickup: ITEM_TELEPORTONLOWHEALTH_PICKUP, desc: ITEM_TELEPORTONLOWHEALTH_DESC, tier: uncommon, dlc: sots, en: "Unstable Transmitter", icon: "Unstable_Transmitter.png" }
+  - { id: EnergizedOnEquipmentUse, token: ITEM_ENERGIZEDONEQUIPMENTUSE_NAME, pickup: ITEM_ENERGIZEDONEQUIPMENTUSE_PICKUP, desc: ITEM_ENERGIZEDONEQUIPMENTUSE_DESC, tier: uncommon, dlc: base, en: "War Horn", icon: "War_Horn.png" }
+  - { id: JumpBoost, token: ITEM_JUMPBOOST_NAME, pickup: ITEM_JUMPBOOST_PICKUP, desc: ITEM_JUMPBOOST_DESC, tier: uncommon, dlc: base, en: "Wax Quail", icon: "Wax_Quail.png" }
+  - { id: ExplodeOnDeath, token: ITEM_EXPLODEONDEATH_NAME, pickup: ITEM_EXPLODEONDEATH_PICKUP, desc: ITEM_EXPLODEONDEATH_DESC, tier: uncommon, dlc: base, en: "Will-o'-the-wisp", icon: "Will-o'-the-wisp.png" }
+  # legendary
+  - { id: Clover, token: ITEM_CLOVER_NAME, pickup: ITEM_CLOVER_PICKUP, desc: ITEM_CLOVER_DESC, tier: legendary, dlc: base, en: "57 Leaf Clover", icon: "57_Leaf_Clover.png" }
+  - { id: BarrierOnOverHeal, token: ITEM_BARRIERONOVERHEAL_NAME, pickup: ITEM_BARRIERONOVERHEAL_PICKUP, desc: ITEM_BARRIERONOVERHEAL_DESC, tier: legendary, dlc: base, en: "Aegis", icon: "Aegis.png" }
+  - { id: AlienHead, token: ITEM_ALIENHEAD_NAME, pickup: ITEM_ALIENHEAD_PICKUP, desc: ITEM_ALIENHEAD_DESC, tier: legendary, dlc: base, en: "Alien Head", icon: "Alien_Head.png" }
+  - { id: ImmuneToDebuff, token: ITEM_IMMUNETODEBUFF_NAME, pickup: ITEM_IMMUNETODEBUFF_PICKUP, desc: ITEM_IMMUNETODEBUFF_DESC, tier: legendary, dlc: sotv, en: "Ben's Raincoat", icon: "Ben's_Raincoat.png" }
+  - { id: RandomEquipmentTrigger, token: ITEM_RANDOMEQUIPMENTTRIGGER_NAME, pickup: ITEM_RANDOMEQUIPMENTTRIGGER_PICKUP, desc: ITEM_RANDOMEQUIPMENTTRIGGER_DESC, tier: legendary, dlc: sotv, en: "Bottled Chaos", icon: "Bottled_Chaos.png" }
+  - { id: KillEliteFrenzy, token: ITEM_KILLELITEFRENZY_NAME, pickup: ITEM_KILLELITEFRENZY_PICKUP, desc: ITEM_KILLELITEFRENZY_DESC, tier: legendary, dlc: base, en: "Brainstalks", icon: "Brainstalks.png" }
+  - { id: Behemoth, token: ITEM_BEHEMOTH_NAME, pickup: ITEM_BEHEMOTH_PICKUP, desc: ITEM_BEHEMOTH_DESC, tier: legendary, dlc: base, en: "Brilliant Behemoth", icon: "Brilliant_Behemoth.png" }
+  - { id: Dagger, token: ITEM_DAGGER_NAME, pickup: ITEM_DAGGER_PICKUP, desc: ITEM_DAGGER_DESC, tier: legendary, dlc: base, en: "Ceremonial Dagger", icon: "Ceremonial_Dagger.png" }
+  - { id: CaptainDefenseMatrix, token: ITEM_CAPTAINDEFENSEMATRIX_NAME, pickup: ITEM_CAPTAINDEFENSEMATRIX_PICKUP, desc: ITEM_CAPTAINDEFENSEMATRIX_DESC, tier: legendary, dlc: base, en: "Defensive Microbots", icon: "Defensive_Microbots.png" }
+  - { id: ExtraLife, token: ITEM_EXTRALIFE_NAME, pickup: ITEM_EXTRALIFE_PICKUP, desc: ITEM_EXTRALIFE_DESC, tier: legendary, dlc: base, en: "Dio's Best Friend", icon: "Dio's_Best_Friend.png" }
+  - { id: StunAndPierce, token: ITEM_STUNANDPIERCE_NAME, pickup: ITEM_STUNANDPIERCE_PICKUP, desc: ITEM_STUNANDPIERCE_DESC, tier: legendary, dlc: sots, en: "Electric Boomerang", icon: "Electric_Boomerang.png" }
+  - { id: Icicle, token: ITEM_ICICLE_NAME, pickup: ITEM_ICICLE_PICKUP, desc: ITEM_ICICLE_DESC, tier: legendary, dlc: base, en: "Frost Relic", icon: "Frost_Relic.png" }
+  - { id: BoostAllStats, token: ITEM_BOOSTALLSTATS_NAME, pickup: ITEM_BOOSTALLSTATS_PICKUP, desc: ITEM_BOOSTALLSTATS_DESC, tier: legendary, dlc: sots, en: "Growth Nectar", icon: "Growth_Nectar.png" }
+  - { id: FallBoots, token: ITEM_FALLBOOTS_NAME, pickup: ITEM_FALLBOOTS_PICKUP, desc: ITEM_FALLBOOTS_DESC, tier: legendary, dlc: base, en: "H3AD-5T v2", icon: "H3AD-5T_v2.png" }
+  - { id: GhostOnKill, token: ITEM_GHOSTONKILL_NAME, pickup: ITEM_GHOSTONKILL_PICKUP, desc: ITEM_GHOSTONKILL_DESC, tier: legendary, dlc: base, en: "Happiest Mask", icon: "Happiest_Mask.png" }
+  - { id: UtilitySkillMagazine, token: ITEM_UTILITYSKILLMAGAZINE_NAME, pickup: ITEM_UTILITYSKILLMAGAZINE_PICKUP, desc: ITEM_UTILITYSKILLMAGAZINE_DESC, tier: legendary, dlc: base, en: "Hardlight Afterburner", icon: "Hardlight_Afterburner.png" }
+  - { id: Plant, token: ITEM_INTERSTELLARDESKPLANT_NAME, pickup: ITEM_INTERSTELLARDESKPLANT_PICKUP, desc: ITEM_INTERSTELLARDESKPLANT_DESC, tier: legendary, dlc: base, en: "Interstellar Desk Plant", icon: "Interstellar_Desk_Plant.png" }
+  - { id: ScrapRed, token: ITEM_SCRAPRED_NAME, pickup: ITEM_SCRAPRED_PICKUP, desc: ITEM_SCRAPRED_DESC, tier: legendary, dlc: base, en: "Item Scrap, Red", icon: "Item_Scrap,_Red.png" }
+  - { id: CritDamage, token: ITEM_CRITDAMAGE_NAME, pickup: ITEM_CRITDAMAGE_PICKUP, desc: ITEM_CRITDAMAGE_DESC, tier: legendary, dlc: sotv, en: "Laser Scope", icon: "Laser_Scope.png" }
+  - { id: NovaOnHeal, token: ITEM_NOVAONHEAL_NAME, pickup: ITEM_NOVAONHEAL_PICKUP, desc: ITEM_NOVAONHEAL_DESC, tier: legendary, dlc: base, en: "N'kuhana's Opinion", icon: "N'kuhana's_Opinion.png" }
+  - { id: SharedSuffering, token: ITEM_SHAREDSUFFERING_NAME, pickup: ITEM_SHAREDSUFFERING_PICKUP, desc: ITEM_SHAREDSUFFERING_DESC, tier: legendary, dlc: ac, en: "Networked Suffering", icon: "Networked_Suffering.png" }
+  - { id: PhysicsProjectile, token: ITEM_PHYSICSPROJECTILE_NAME, pickup: ITEM_PHYSICSPROJECTILE_PICKUP, desc: ITEM_PHYSICSPROJECTILE_DESC, tier: legendary, dlc: ac, en: "Orphaned Core", icon: "Orphaned_Core.png" }
+  - { id: MoreMissile, token: ITEM_MOREMISSILE_NAME, pickup: ITEM_MOREMISSILE_PICKUP, desc: ITEM_MOREMISSILE_DESC, tier: legendary, dlc: sotv, en: "Pocket I.C.B.M.", icon: "Pocket_I.C.B.M..png" }
+  - { id: IncreaseHealing, token: ITEM_INCREASEHEALING_NAME, pickup: ITEM_INCREASEHEALING_PICKUP, desc: ITEM_INCREASEHEALING_DESC, tier: legendary, dlc: base, en: "Rejuvenation Rack", icon: "Rejuvenation_Rack.png" }
+  - { id: LaserTurbine, token: ITEM_LASERTURBINE_NAME, pickup: ITEM_LASERTURBINE_PICKUP, desc: ITEM_LASERTURBINE_DESC, tier: legendary, dlc: base, en: "Resonance Disc", icon: "Resonance_Disc.png" }
+  - { id: MeteorAttackOnHighDamage, token: ITEM_METEORATTACKONHIGHDAMAGE_NAME, pickup: ITEM_METEORATTACKONHIGHDAMAGE_PICKUP, desc: ITEM_METEORATTACKONHIGHDAMAGE_DESC, tier: legendary, dlc: sots, en: "Runic Lens", icon: "Runic_Lens.png" }
+  - { id: BounceNearby, token: ITEM_BOUNCENEARBY_NAME, pickup: ITEM_BOUNCENEARBY_PICKUP, desc: ITEM_BOUNCENEARBY_DESC, tier: legendary, dlc: base, en: "Sentient Meat Hook", icon: "Sentient_Meat_Hook.png" }
+  - { id: ArmorReductionOnHit, token: ITEM_ARMORREDUCTIONONHIT_NAME, pickup: ITEM_ARMORREDUCTIONONHIT_PICKUP, desc: ITEM_ARMORREDUCTIONONHIT_DESC, tier: legendary, dlc: base, en: "Shattering Justice", icon: "Shattering_Justice.png" }
+  - { id: ItemDropChanceOnKill, token: ITEM_ITEMDROPCHANCEONKILL_NAME, pickup: ITEM_ITEMDROPCHANCEONKILL_PICKUP, desc: ITEM_ITEMDROPCHANCEONKILL_DESC, tier: legendary, dlc: sots, en: "Sonorous Whispers", icon: "Sonorous_Whispers.png" }
+  - { id: Talisman, token: ITEM_TALISMAN_NAME, pickup: ITEM_TALISMAN_PICKUP, desc: ITEM_TALISMAN_DESC, tier: legendary, dlc: base, en: "Soulbound Catalyst", icon: "Soulbound_Catalyst.png" }
+  - { id: DroneWeapons, token: ITEM_DRONEWEAPONS_NAME, pickup: ITEM_DRONEWEAPONS_PICKUP, desc: ITEM_DRONEWEAPONS_DESC, tier: legendary, dlc: sotv, en: "Spare Drone Parts", icon: "Spare_Drone_Parts.png" }
+  - { id: Duplicator, token: ITEM_DUPLICATOR_NAME, pickup: ITEM_DUPLICATOR_PICKUP, desc: ITEM_DUPLICATOR_DESC, tier: legendary, dlc: ac, en: "Substandard Duplicator", icon: "Substandard_Duplicator.png" }
+  - { id: PermanentDebuffOnHit, token: ITEM_PERMANENTDEBUFFONHIT_NAME, pickup: ITEM_PERMANENTDEBUFFONHIT_PICKUP, desc: ITEM_PERMANENTDEBUFFONHIT_DESC, tier: legendary, dlc: sotv, en: "Symbiotic Scorpion", icon: "Symbiotic_Scorpion.png" }
+  - { id: ShockNearby, token: ITEM_SHOCKNEARBY_NAME, pickup: ITEM_SHOCKNEARBY_PICKUP, desc: ITEM_SHOCKNEARBY_DESC, tier: legendary, dlc: base, en: "Unstable Tesla Coil", icon: "Unstable_Tesla_Coil.png" }
+  - { id: HeadHunter, token: ITEM_HEADHUNTER_NAME, pickup: ITEM_HEADHUNTER_PICKUP, desc: ITEM_HEADHUNTER_DESC, tier: legendary, dlc: base, en: "Wake of Vultures", icon: "Wake_of_Vultures.png" }
+  - { id: BarrageOnBoss, token: ITEM_BARRAGEONBOSS_NAME, pickup: ITEM_BARRAGEONBOSS_PICKUP, desc: ITEM_BARRAGEONBOSS_DESC, tier: legendary, dlc: sots, en: "War Bonds", icon: "War_Bonds.png" }
+  # boss
+  - { id: ArtifactKey, token: ITEM_ARTIFACTKEY_NAME, pickup: ITEM_ARTIFACTKEY_PICKUP, desc: ITEM_ARTIFACTKEY_DESC, tier: boss, dlc: base, en: "Artifact Key", icon: "Artifact_Key.png" }
+  - { id: LightningStrikeOnHit, token: ITEM_LIGHTNINGSTRIKEONHIT_NAME, pickup: ITEM_LIGHTNINGSTRIKEONHIT_PICKUP, desc: ITEM_LIGHTNINGSTRIKEONHIT_DESC, tier: boss, dlc: base, en: "Charged Perforator", icon: "Charged_Perforator.png" }
+  - { id: MinorConstructOnKill, token: ITEM_MINORCONSTRUCTONKILL_NAME, pickup: ITEM_MINORCONSTRUCTONKILL_PICKUP, desc: ITEM_MINORCONSTRUCTONKILL_DESC, tier: boss, dlc: sotv, en: "Defense Nucleus", icon: "Defense_Nucleus.png" }
+  - { id: RoboBallBuddy, token: ITEM_ROBOBALLBUDDY_NAME, pickup: ITEM_ROBOBALLBUDDY_PICKUP, desc: ITEM_ROBOBALLBUDDY_DESC, tier: boss, dlc: base, en: "Empathy Cores", icon: "Empathy_Cores.png" }
+  - { id: MasterBattery, token: ITEM_MASTERBATTERY_NAME, pickup: ITEM_MASTERBATTERY_PICKUP, desc: ITEM_MASTERBATTERY_DESC, tier: boss, dlc: ac, en: "Encrypted Cerebellum", icon: "Encrypted_Cerebellum.png" }
+  - { id: MasterCore, token: ITEM_MASTERCORE_NAME, pickup: ITEM_MASTERCORE_PICKUP, desc: ITEM_MASTERCORE_DESC, tier: boss, dlc: ac, en: "Exposed Cerebellum", icon: "Exposed_Cerebellum.png" }
+  - { id: ShockDamageAura, token: ITEM_SHOCKDAMAGEAURA_NAME, pickup: ITEM_SHOCKDAMAGEAURA_PICKUP, desc: ITEM_SHOCKDAMAGEAURA_DESC, tier: boss, dlc: ac, en: "Faulty Conductor", icon: "Faulty_Conductor.png" }
+  - { id: ExtraEquipment, token: ITEM_EXTRAEQUIPMENT_NAME, pickup: ITEM_EXTRAEQUIPMENT_PICKUP, desc: ITEM_EXTRAEQUIPMENT_DESC, tier: boss, dlc: ac, en: "Functional Coupler", icon: "Functional_Coupler.png" }
+  - { id: NovaOnLowHealth, token: ITEM_NOVAONLOWHEALTH_NAME, pickup: ITEM_NOVAONLOWHEALTH_PICKUP, desc: ITEM_NOVAONLOWHEALTH_DESC, tier: boss, dlc: base, en: "Genesis Loop", icon: "Genesis_Loop.png" }
+  - { id: TitanGoldDuringTP, token: ITEM_TITANGOLDDURINGTP_NAME, pickup: ITEM_TITANGOLDDURINGTP_PICKUP, desc: ITEM_TITANGOLDDURINGTP_DESC, tier: boss, dlc: base, en: "Halcyon Seed", icon: "Halcyon_Seed.png" }
+  - { id: ShinyPearl, token: ITEM_SHINYPEARL_NAME, pickup: ITEM_SHINYPEARL_PICKUP, desc: ITEM_SHINYPEARL_DESC, tier: boss, dlc: base, en: "Irradiant Pearl", icon: "Irradiant_Pearl.png" }
+  - { id: ScrapYellow, token: ITEM_SCRAPYELLOW_NAME, pickup: ITEM_SCRAPYELLOW_PICKUP, desc: ITEM_SCRAPYELLOW_DESC, tier: boss, dlc: base, en: "Item Scrap, Yellow", icon: "Item_Scrap,_Yellow.png" }
+  - { id: SprintWisp, token: ITEM_SPRINTWISP_NAME, pickup: ITEM_SPRINTWISP_PICKUP, desc: ITEM_SPRINTWISP_DESC, tier: boss, dlc: base, en: "Little Disciple", icon: "Little_Disciple.png" }
+  - { id: SiphonOnLowHealth, token: ITEM_SIPHONONLOWHEALTH_NAME, pickup: ITEM_SIPHONONLOWHEALTH_PICKUP, desc: ITEM_SIPHONONLOWHEALTH_DESC, tier: boss, dlc: base, en: "Mired Urn", icon: "Mired_Urn.png" }
+  - { id: FireballsOnHit, token: ITEM_FIREBALLSONHIT_NAME, pickup: ITEM_FIREBALLSONHIT_PICKUP, desc: ITEM_FIREBALLSONHIT_DESC, tier: boss, dlc: base, en: "Molten Perforator", icon: "Molten_Perforator.png" }
+  - { id: Pearl, token: ITEM_PEARL_NAME, pickup: ITEM_PEARL_PICKUP, desc: ITEM_PEARL_DESC, tier: boss, dlc: base, en: "Pearl", icon: "Pearl.png" }
+  - { id: ParentEgg, token: ITEM_PARENTEGG_NAME, pickup: ITEM_PARENTEGG_PICKUP, desc: ITEM_PARENTEGG_DESC, tier: boss, dlc: base, en: "Planula", icon: "Planula.png" }
+  - { id: PowerCube, token: ITEM_POWERCUBE_NAME, pickup: ITEM_POWERCUBE_PICKUP, desc: ITEM_POWERCUBE_DESC, tier: boss, dlc: ac, en: "Prison Matrix", icon: "Prison_Matrix.png" }
+  - { id: BeetleGland, token: ITEM_BEETLEGLAND_NAME, pickup: ITEM_BEETLEGLAND_PICKUP, desc: ITEM_BEETLEGLAND_DESC, tier: boss, dlc: base, en: "Queen's Gland", icon: "Queen's_Gland.png" }
+  - { id: PowerPyramid, token: ITEM_POWERPYRAMID_NAME, pickup: ITEM_POWERPYRAMID_PICKUP, desc: ITEM_POWERPYRAMID_DESC, tier: boss, dlc: ac, en: "Sentry Key", icon: "Sentry_Key.png" }
+  - { id: BleedOnHitAndExplode, token: ITEM_BLEEDONHITANDEXPLODE_NAME, pickup: ITEM_BLEEDONHITANDEXPLODE_PICKUP, desc: ITEM_BLEEDONHITANDEXPLODE_DESC, tier: boss, dlc: base, en: "Shatterspleen", icon: "Shatterspleen.png" }
+  - { id: Knurl, token: ITEM_KNURL_NAME, pickup: ITEM_KNURL_PICKUP, desc: ITEM_KNURL_DESC, tier: boss, dlc: base, en: "Titanic Knurl", icon: "Titanic_Knurl.png" }
+  # lunar
+  - { id: LunarTrinket, token: ITEM_LUNARTRINKET_NAME, pickup: ITEM_LUNARTRINKET_PICKUP, desc: ITEM_LUNARTRINKET_DESC, tier: lunar, dlc: base, en: "Beads of Fealty", icon: "Beads_of_Fealty.png" }
+  - { id: GoldOnHit, token: ITEM_GOLDONHIT_NAME, pickup: ITEM_GOLDONHIT_PICKUP, desc: ITEM_GOLDONHIT_DESC, tier: lunar, dlc: base, en: "Brittle Crown", icon: "Brittle_Crown.png" }
+  - { id: RepeatHeal, token: ITEM_REPEATHEAL_NAME, pickup: ITEM_REPEATHEAL_PICKUP, desc: ITEM_REPEATHEAL_DESC, tier: lunar, dlc: base, en: "Corpsebloom", icon: "Corpsebloom.png" }
+  - { id: MonstersOnShrineUse, token: ITEM_MONSTERSONSHRINEUSE_NAME, pickup: ITEM_MONSTERSONSHRINEUSE_PICKUP, desc: ITEM_MONSTERSONSHRINEUSE_DESC, tier: lunar, dlc: base, en: "Defiant Gouge", icon: "Defiant_Gouge.png" }
+  - { id: LunarSun, token: ITEM_LUNARSUN_NAME, pickup: ITEM_LUNARSUN_PICKUP, desc: ITEM_LUNARSUN_DESC, tier: lunar, dlc: sotv, en: "Egocentrism", icon: "Egocentrism.png" }
+  - { id: LunarSpecialReplacement, token: ITEM_LUNARSPECIALREPLACEMENT_NAME, pickup: ITEM_LUNARSPECIALREPLACEMENT_PICKUP, desc: ITEM_LUNARSPECIALREPLACEMENT_DESC, tier: lunar, dlc: base, en: "Essence of Heresy", icon: "Essence_of_Heresy.png" }
+  - { id: RandomlyLunar, token: ITEM_RANDOMLYLUNAR_NAME, pickup: ITEM_RANDOMLYLUNAR_PICKUP, desc: ITEM_RANDOMLYLUNAR_DESC, tier: lunar, dlc: sotv, en: "Eulogy Zero", icon: "Eulogy_Zero.png" }
+  - { id: FocusConvergence, token: ITEM_FOCUSEDCONVERGENCE_NAME, pickup: ITEM_FOCUSEDCONVERGENCE_PICKUP, desc: ITEM_FOCUSEDCONVERGENCE_DESC, tier: lunar, dlc: base, en: "Focused Convergence", icon: "Focused_Convergence.png" }
+  - { id: AutoCastEquipment, token: ITEM_AUTOCASTEQUIPMENT_NAME, pickup: ITEM_AUTOCASTEQUIPMENT_PICKUP, desc: ITEM_AUTOCASTEQUIPMENT_DESC, tier: lunar, dlc: base, en: "Gesture of the Drowned", icon: "Gesture_of_the_Drowned.png" }
+  - { id: LunarSecondaryReplacement, token: ITEM_LUNARSECONDARYREPLACEMENT_NAME, pickup: ITEM_LUNARSECONDARYREPLACEMENT_PICKUP, desc: ITEM_LUNARSECONDARYREPLACEMENT_DESC, tier: lunar, dlc: base, en: "Hooks of Heresy", icon: "Hooks_of_Heresy.png" }
+  - { id: HalfAttackSpeedHalfCooldowns, token: ITEM_HALFATTACKSPEEDHALFCOOLDOWNS_NAME, pickup: ITEM_HALFATTACKSPEEDHALFCOOLDOWNS_PICKUP, desc: ITEM_HALFATTACKSPEEDHALFCOOLDOWNS_DESC, tier: lunar, dlc: sotv, en: "Light Flux Pauldron", icon: "Light_Flux_Pauldron.png" }
+  - { id: OnLevelUpFreeUnlock, token: ITEM_ONLEVELUPFREEUNLOCK_NAME, pickup: ITEM_ONLEVELUPFREEUNLOCK_PICKUP, desc: ITEM_ONLEVELUPFREEUNLOCK_DESC, tier: lunar, dlc: sots, en: "Longstanding Solitude", icon: "Longstanding_Solitude.png" }
+  - { id: RandomDamageZone, token: ITEM_RANDOMDAMAGEZONE_NAME, pickup: ITEM_RANDOMDAMAGEZONE_PICKUP, desc: ITEM_RANDOMDAMAGEZONE_DESC, tier: lunar, dlc: base, en: "Mercurial Rachis", icon: "Mercurial_Rachis.png" }
+  - { id: TransferDebuffOnHit, token: ITEM_TRANSFERDEBUFFONHIT_NAME, pickup: ITEM_TRANSFERDEBUFFONHIT_PICKUP, desc: ITEM_TRANSFERDEBUFFONHIT_DESC, tier: lunar, dlc: ac, en: "Neutronium Weight", icon: "Neutronium_Weight.png" }
+  - { id: LunarBadLuck, token: ITEM_LUNARBADLUCK_NAME, pickup: ITEM_LUNARBADLUCK_PICKUP, desc: ITEM_LUNARBADLUCK_DESC, tier: lunar, dlc: base, en: "Purity", icon: "Purity.png" }
+  - { id: LunarDagger, token: ITEM_LUNARDAGGER_NAME, pickup: ITEM_LUNARDAGGER_PICKUP, desc: ITEM_LUNARDAGGER_DESC, tier: lunar, dlc: base, en: "Shaped Glass", icon: "Shaped_Glass.png" }
+  - { id: HalfSpeedDoubleHealth, token: ITEM_HALFSPEEDDOUBLEHEALTH_NAME, pickup: ITEM_HALFSPEEDDOUBLEHEALTH_PICKUP, desc: ITEM_HALFSPEEDDOUBLEHEALTH_DESC, tier: lunar, dlc: sotv, en: "Stone Flux Pauldron", icon: "Stone_Flux_Pauldron.png" }
+  - { id: LunarUtilityReplacement, token: ITEM_LUNARUTILITYREPLACEMENT_NAME, pickup: ITEM_LUNARUTILITYREPLACEMENT_PICKUP, desc: ITEM_LUNARUTILITYREPLACEMENT_DESC, tier: lunar, dlc: base, en: "Strides of Heresy", icon: "Strides_of_Heresy.png" }
+  - { id: ShieldOnly, token: ITEM_SHIELDONLY_NAME, pickup: ITEM_SHIELDONLY_PICKUP, desc: ITEM_SHIELDONLY_DESC, tier: lunar, dlc: base, en: "Transcendence", icon: "Transcendence.png" }
+  - { id: LunarPrimaryReplacement, token: ITEM_LUNARPRIMARYREPLACEMENT_NAME, pickup: ITEM_LUNARPRIMARYREPLACEMENT_PICKUP, desc: ITEM_LUNARPRIMARYREPLACEMENT_DESC, tier: lunar, dlc: base, en: "Visions of Heresy", icon: "Visions_of_Heresy.png" }
+  # void
+  - { id: CloverVoid, token: ITEM_CLOVERVOID_NAME, pickup: ITEM_CLOVERVOID_PICKUP, desc: ITEM_CLOVERVOID_DESC, tier: void, dlc: sotv, en: "Benthic Bloom", icon: "Benthic_Bloom.png" }
+  - { id: TreasureCacheVoid, token: ITEM_TREASURECACHEVOID_NAME, pickup: ITEM_TREASURECACHEVOID_PICKUP, desc: ITEM_TREASURECACHEVOID_DESC, tier: void, dlc: sotv, en: "Encrusted Key", icon: "Encrusted_Key.png" }
+  - { id: CritGlassesVoid, token: ITEM_CRITGLASSESVOID_NAME, pickup: ITEM_CRITGLASSESVOID_PICKUP, desc: ITEM_CRITGLASSESVOID_DESC, tier: void, dlc: sotv, en: "Lost Seer's Lenses", icon: "Lost_Seer's_Lenses.png" }
+  - { id: EquipmentMagazineVoid, token: ITEM_EQUIPMENTMAGAZINEVOID_NAME, pickup: ITEM_EQUIPMENTMAGAZINEVOID_PICKUP, desc: ITEM_EQUIPMENTMAGAZINEVOID_DESC, tier: void, dlc: sotv, en: "Lysate Cell", icon: "Lysate_Cell.png" }
+  - { id: BleedOnHitVoid, token: ITEM_BLEEDONHITVOID_NAME, pickup: ITEM_BLEEDONHITVOID_PICKUP, desc: ITEM_BLEEDONHITVOID_DESC, tier: void, dlc: sotv, en: "Needletick", icon: "Needletick.png" }
+  - { id: VoidMegaCrabItem, token: ITEM_VOIDMEGACRABITEM_NAME, pickup: ITEM_VOIDMEGACRABITEM_PICKUP, desc: ITEM_VOIDMEGACRABITEM_DESC, tier: void, dlc: sotv, en: "Newly Hatched Zoea", icon: "Newly_Hatched_Zoea.png" }
+  - { id: MissileVoid, token: ITEM_MISSILEVOID_NAME, pickup: ITEM_MISSILEVOID_PICKUP, desc: ITEM_MISSILEVOID_DESC, tier: void, dlc: sotv, en: "Plasma Shrimp", icon: "Plasma_Shrimp.png" }
+  - { id: ExtraLifeVoid, token: ITEM_EXTRALIFEVOID_NAME, pickup: ITEM_EXTRALIFEVOID_PICKUP, desc: ITEM_EXTRALIFEVOID_DESC, tier: void, dlc: sotv, en: "Pluripotent Larva", icon: "Pluripotent_Larva.png" }
+  - { id: ChainLightningVoid, token: ITEM_CHAINLIGHTNINGVOID_NAME, pickup: ITEM_CHAINLIGHTNINGVOID_PICKUP, desc: ITEM_CHAINLIGHTNINGVOID_DESC, tier: void, dlc: sotv, en: "Polylute", icon: "Polylute.png" }
+  - { id: BearVoid, token: ITEM_BEARVOID_NAME, pickup: ITEM_BEARVOID_PICKUP, desc: ITEM_BEARVOID_DESC, tier: void, dlc: sotv, en: "Safer Spaces", icon: "Safer_Spaces.png" }
+  - { id: ElementalRingVoid, token: ITEM_ELEMENTALRINGVOID_NAME, pickup: ITEM_ELEMENTALRINGVOID_PICKUP, desc: ITEM_ELEMENTALRINGVOID_DESC, tier: void, dlc: sotv, en: "Singularity Band", icon: "Singularity_Band.png" }
+  - { id: SlowOnHitVoid, token: ITEM_SLOWONHITVOID_NAME, pickup: ITEM_SLOWONHITVOID_PICKUP, desc: ITEM_SLOWONHITVOID_DESC, tier: void, dlc: sotv, en: "Tentabauble", icon: "Tentabauble.png" }
+  - { id: ExplodeOnDeathVoid, token: ITEM_EXPLODEONDEATHVOID_NAME, pickup: ITEM_EXPLODEONDEATHVOID_PICKUP, desc: ITEM_EXPLODEONDEATHVOID_DESC, tier: void, dlc: sotv, en: "Voidsent Flame", icon: "Voidsent_Flame.png" }
+  - { id: MushroomVoid, token: ITEM_MUSHROOMVOID_NAME, pickup: ITEM_MUSHROOMVOID_PICKUP, desc: ITEM_MUSHROOMVOID_DESC, tier: void, dlc: sotv, en: "Weeping Fungus", icon: "Weeping_Fungus.png" }
+  # meal
+  - { id: Stew, token: ITEM_STEW_NAME, pickup: ITEM_STEW_PICKUP, desc: ITEM_STEW_DESC, tier: meal, dlc: ac, en: "Hearty Stew", icon: "Hearty_Stew.png" }
+  - { id: BonusHealthBoost, token: ITEM_BONUSHEALTHBOOST_NAME, pickup: ITEM_BONUSHEALTHBOOST_PICKUP, desc: ITEM_BONUSHEALTHBOOST_DESC, tier: meal, dlc: ac, en: "Quick Fix", icon: "Quick_Fix.png" }
+  - { id: WyrmOnHit, token: ITEM_WYRMONHIT_NAME, pickup: ITEM_WYRMONHIT_PICKUP, desc: ITEM_WYRMONHIT_DESC, tier: meal, dlc: ac, en: "Sautéed Worms", icon: "Sautéed_Worms.png" }
+  - { id: CookedSteak, token: ITEM_COOKEDSTEAK_NAME, pickup: ITEM_COOKEDSTEAK_PICKUP, desc: ITEM_COOKEDSTEAK_DESC, tier: meal, dlc: ac, en: "Seared Steak", icon: "Seared_Steak.png" }
+  - { id: UltimateMeal, token: ITEM_ULTIMATEMEAL_NAME, pickup: ITEM_ULTIMATEMEAL_PICKUP, desc: ITEM_ULTIMATEMEAL_DESC, tier: meal, dlc: ac, en: "Ultimate Meal", icon: "Ultimate_Meal.png" }
+  # equipment
+  - { id: Cleanse, token: EQUIPMENT_CLEANSE_NAME, pickup: EQUIPMENT_CLEANSE_PICKUP, desc: EQUIPMENT_CLEANSE_DESC, tier: equipment, dlc: base, en: "Blast Shower", icon: "Blast_Shower.png" }
+  - { id: Parry, token: EQUIPMENT_PARRY_NAME, pickup: EQUIPMENT_PARRY_PICKUP, desc: EQUIPMENT_PARRY_DESC, tier: equipment, dlc: ac, en: "Deus Ex Machina", icon: "Deus_Ex_Machina.png" }
+  - { id: CommandMissile, token: EQUIPMENT_COMMANDMISSILE_NAME, pickup: EQUIPMENT_COMMANDMISSILE_PICKUP, desc: EQUIPMENT_COMMANDMISSILE_DESC, tier: equipment, dlc: base, en: "Disposable Missile Launcher", icon: "Disposable_Missile_Launcher.png" }
+  - { id: Gateway, token: EQUIPMENT_GATEWAY_NAME, pickup: EQUIPMENT_GATEWAY_PICKUP, desc: EQUIPMENT_GATEWAY_DESC, tier: equipment, dlc: base, en: "Eccentric Vase", icon: "Eccentric_Vase.png" }
+  - { id: MultiShopCard, token: EQUIPMENT_MULTISHOPCARD_NAME, pickup: EQUIPMENT_MULTISHOPCARD_PICKUP, desc: EQUIPMENT_MULTISHOPCARD_DESC, tier: equipment, dlc: sotv, en: "Executive Card", icon: "Executive_Card.png" }
+  - { id: Fruit, token: EQUIPMENT_FRUIT_NAME, pickup: EQUIPMENT_FRUIT_PICKUP, desc: EQUIPMENT_FRUIT_DESC, tier: equipment, dlc: base, en: "Foreign Fruit", icon: "Foreign_Fruit.png" }
+  - { id: DeathProjectile, token: EQUIPMENT_DEATHPROJECTILE_NAME, pickup: EQUIPMENT_DEATHPROJECTILE_PICKUP, desc: EQUIPMENT_DEATHPROJECTILE_DESC, tier: equipment, dlc: base, en: "Forgive Me Please", icon: "Forgive_Me_Please.png" }
+  - { id: QuestVolatileBattery, token: EQUIPMENT_QUESTVOLATILEBATTERY_NAME, pickup: EQUIPMENT_QUESTVOLATILEBATTERY_PICKUP, desc: EQUIPMENT_QUESTVOLATILEBATTERY_DESC, tier: equipment, dlc: base, en: "Fuel Array", icon: "Fuel_Array.png" }
+  - { id: PassiveHealing, token: EQUIPMENT_PASSIVEHEALING_NAME, pickup: EQUIPMENT_PASSIVEHEALING_PICKUP, desc: EQUIPMENT_PASSIVEHEALING_DESC, tier: equipment, dlc: base, en: "Gnarled Woodsprite", icon: "Gnarled_Woodsprite.png" }
+  - { id: GummyClone, token: EQUIPMENT_GUMMYCLONE_NAME, pickup: EQUIPMENT_GUMMYCLONE_PICKUP, desc: EQUIPMENT_GUMMYCLONE_DESC, tier: equipment, dlc: sotv, en: "Goobo Jr.", icon: "Goobo_Jr..png" }
+  - { id: TeamWarCry, token: EQUIPMENT_TEAMWARCRY_NAME, pickup: EQUIPMENT_TEAMWARCRY_PICKUP, desc: EQUIPMENT_TEAMWARCRY_DESC, tier: equipment, dlc: base, en: "Gorag's Opus", icon: "Gorag's_Opus.png" }
+  - { id: GainArmor, token: EQUIPMENT_GAINARMOR_NAME, pickup: EQUIPMENT_GAINARMOR_PICKUP, desc: EQUIPMENT_GAINARMOR_DESC, tier: equipment, dlc: base, en: "Jade Elephant", icon: "Jade_Elephant.png" }
+  - { id: Jetpack, token: EQUIPMENT_JETPACK_NAME, pickup: EQUIPMENT_JETPACK_PICKUP, desc: EQUIPMENT_JETPACK_DESC, tier: equipment, dlc: base, en: "Milky Chrysalis", icon: "Milky_Chrysalis.png" }
+  - { id: Molotov, token: EQUIPMENT_MOLOTOV_NAME, pickup: EQUIPMENT_MOLOTOV_PICKUP, desc: EQUIPMENT_MOLOTOV_DESC, tier: equipment, dlc: sotv, en: "Molotov (6-Pack)", icon: "Molotov_(6-Pack).png" }
+  - { id: CritOnUse, token: EQUIPMENT_CRITONUSE_NAME, pickup: EQUIPMENT_CRITONUSE_PICKUP, desc: EQUIPMENT_CRITONUSE_DESC, tier: equipment, dlc: base, en: "Ocular HUD", icon: "Ocular_HUD.png" }
+  - { id: BFG, token: EQUIPMENT_BFG_NAME, pickup: EQUIPMENT_BFG_PICKUP, desc: EQUIPMENT_BFG_DESC, tier: equipment, dlc: base, en: "Preon Accumulator", icon: "Preon_Accumulator.png" }
+  - { id: Blackhole, token: EQUIPMENT_BLACKHOLE_NAME, pickup: EQUIPMENT_BLACKHOLE_PICKUP, desc: EQUIPMENT_BLACKHOLE_DESC, tier: equipment, dlc: base, en: "Primordial Cube", icon: "Primordial_Cube.png" }
+  - { id: Scanner, token: EQUIPMENT_SCANNER_NAME, pickup: EQUIPMENT_SCANNER_PICKUP, desc: EQUIPMENT_SCANNER_DESC, tier: equipment, dlc: base, en: "Radar Scanner", icon: "Radar_Scanner.png" }
+  - { id: Recycle, token: EQUIPMENT_RECYCLER_NAME, pickup: EQUIPMENT_RECYCLER_PICKUP, desc: EQUIPMENT_RECYCLER_DESC, tier: equipment, dlc: base, en: "Recycler", icon: "Recycler.png" }
+  - { id: VendingMachine, token: EQUIPMENT_VENDINGMACHINE_NAME, pickup: EQUIPMENT_VENDINGMACHINE_PICKUP, desc: EQUIPMENT_VENDINGMACHINE_DESC, tier: equipment, dlc: sotv, en: "Remote Caffeinator", icon: "Remote_Caffeinator.png" }
+  - { id: Lightning, token: EQUIPMENT_LIGHTNING_NAME, pickup: EQUIPMENT_LIGHTNING_PICKUP, desc: EQUIPMENT_LIGHTNING_DESC, tier: equipment, dlc: base, en: "Royal Capacitor", icon: "Royal_Capacitor.png" }
+  - { id: Saw, token: EQUIPMENT_SAWMERANG_NAME, pickup: EQUIPMENT_SAWMERANG_PICKUP, desc: EQUIPMENT_SAWMERANG_DESC, tier: equipment, dlc: base, en: "Sawmerang", icon: "Sawmerang.png" }
+  - { id: HealAndRevive, token: EQUIPMENT_HEALANDREVIVE_NAME, pickup: EQUIPMENT_HEALANDREVIVE_PICKUP, desc: EQUIPMENT_HEALANDREVIVE_DESC, tier: equipment, dlc: sots, en: "Seed of Life", icon: "Seed_of_Life.png" }
+  - { id: LifestealOnHit, token: EQUIPMENT_LIFESTEALONHIT_NAME, pickup: EQUIPMENT_LIFESTEALONHIT_PICKUP, desc: EQUIPMENT_LIFESTEALONHIT_DESC, tier: equipment, dlc: base, en: "Super Massive Leech", icon: "Super_Massive_Leech.png" }
+  - { id: DroneBackup, token: EQUIPMENT_DRONEBACKUP_NAME, pickup: EQUIPMENT_DRONEBACKUP_PICKUP, desc: EQUIPMENT_DRONEBACKUP_DESC, tier: equipment, dlc: base, en: "The Back-up", icon: "The_Back-up.png" }
+  - { id: GoldGat, token: EQUIPMENT_GOLDGAT_NAME, pickup: EQUIPMENT_GOLDGAT_PICKUP, desc: EQUIPMENT_GOLDGAT_DESC, tier: equipment, dlc: base, en: "The Crowdfunder", icon: "The_Crowdfunder.png" }
+  - { id: BossHunter, token: EQUIPMENT_BOSSHUNTER_NAME, pickup: EQUIPMENT_BOSSHUNTER_PICKUP, desc: EQUIPMENT_BOSSHUNTER_DESC, tier: equipment, dlc: sotv, en: "Trophy Hunter's Tricorn", icon: "Trophy_Hunter's_Tricorn.png" }
+  - { id: FireBallDash, token: EQUIPMENT_FIREBALLDASH_NAME, pickup: EQUIPMENT_FIREBALLDASH_PICKUP, desc: EQUIPMENT_FIREBALLDASH_DESC, tier: equipment, dlc: base, en: "Volcanic Egg", icon: "Volcanic_Egg.png" }
+  # lunar-equipment
+  - { id: CrippleWard, token: EQUIPMENT_CRIPPLEWARD_NAME, pickup: EQUIPMENT_CRIPPLEWARD_PICKUP, desc: EQUIPMENT_CRIPPLEWARD_DESC, tier: lunar-equipment, dlc: base, en: "Effigy of Grief", icon: "Effigy_of_Grief.png" }
+  - { id: Meteor, token: EQUIPMENT_METEOR_NAME, pickup: EQUIPMENT_METEOR_PICKUP, desc: EQUIPMENT_METEOR_DESC, tier: lunar-equipment, dlc: base, en: "Glowing Meteorite", icon: "Glowing_Meteorite.png" }
+  - { id: BurnNearby, token: EQUIPMENT_BURNNEARBY_NAME, pickup: EQUIPMENT_BURNNEARBY_PICKUP, desc: EQUIPMENT_BURNNEARBY_DESC, tier: lunar-equipment, dlc: base, en: "Helfire Tincture", icon: "Helfire_Tincture.png" }
+  - { id: Tonic, token: EQUIPMENT_TONIC_NAME, pickup: EQUIPMENT_TONIC_PICKUP, desc: EQUIPMENT_TONIC_DESC, tier: lunar-equipment, dlc: base, en: "Spinel Tonic", icon: "Spinel_Tonic.png" }
+  # elite-equipment
+  - { id: EliteAurelioniteEquipment, token: EQUIPMENT_AFFIXAURELIONITE_NAME, pickup: EQUIPMENT_AFFIXAURELIONITE_PICKUP, desc: EQUIPMENT_AFFIXAURELIONITE_DESC, tier: elite-equipment, dlc: sots, en: "Aurelionite's Blessing", icon: "Aurelionite's_Blessing.png" }
+  - { id: EliteIceEquipment, token: EQUIPMENT_AFFIXWHITE_NAME, pickup: EQUIPMENT_AFFIXWHITE_PICKUP, desc: EQUIPMENT_AFFIXWHITE_DESC, tier: elite-equipment, dlc: base, en: "Her Biting Embrace", icon: "Her_Biting_Embrace.png" }
+  - { id: EliteEarthEquipment, token: EQUIPMENT_AFFIXEARTH_NAME, pickup: EQUIPMENT_AFFIXEARTH_PICKUP, desc: EQUIPMENT_AFFIXEARTH_DESC, tier: elite-equipment, dlc: sotv, en: "His Reassurance", icon: "His_Reassurance.png" }
+  - { id: EliteBeadEquipment, token: EQUIPMENT_AFFIXBEAD_NAME, pickup: EQUIPMENT_AFFIXBEAD_PICKUP, desc: EQUIPMENT_AFFIXBEAD_DESC, tier: elite-equipment, dlc: sots, en: "His Spiteful Boon", icon: "His_Spiteful_Boon.png" }
+  - { id: EliteFireEquipment, token: EQUIPMENT_AFFIXRED_NAME, pickup: EQUIPMENT_AFFIXRED_PICKUP, desc: EQUIPMENT_AFFIXRED_DESC, tier: elite-equipment, dlc: base, en: "Ifrit's Distinction", icon: "Ifrit's_Distinction.png" }
+  - { id: ElitePoisonEquipment, token: EQUIPMENT_AFFIXPOISON_NAME, pickup: EQUIPMENT_AFFIXPOISON_PICKUP, desc: EQUIPMENT_AFFIXPOISON_DESC, tier: elite-equipment, dlc: base, en: "N'kuhana's Retort", icon: "N'kuhana's_Retort.png" }
+  - { id: EliteCollectiveEquipment, token: EQUIPMENT_AFFIXCOLLECTIVE_NAME, pickup: EQUIPMENT_AFFIXCOLLECTIVE_PICKUP, desc: EQUIPMENT_AFFIXCOLLECTIVE_DESC, tier: elite-equipment, dlc: ac, en: "Of One Mind", icon: "Of_One_Mind.png" }
+  - { id: EliteLunarEquipment, token: EQUIPMENT_AFFIXLUNAR_NAME, pickup: EQUIPMENT_AFFIXLUNAR_PICKUP, desc: EQUIPMENT_AFFIXLUNAR_DESC, tier: elite-equipment, dlc: base, en: "Shared Design", icon: "Shared_Design.png" }
+  - { id: EliteLightningEquipment, token: EQUIPMENT_AFFIXBLUE_NAME, pickup: EQUIPMENT_AFFIXBLUE_PICKUP, desc: EQUIPMENT_AFFIXBLUE_DESC, tier: elite-equipment, dlc: base, en: "Silence Between Two Strikes", icon: "Silence_Between_Two_Strikes.png" }
+  - { id: EliteHauntedEquipment, token: EQUIPMENT_AFFIXHAUNTED_NAME, pickup: EQUIPMENT_AFFIXHAUNTED_PICKUP, desc: EQUIPMENT_AFFIXHAUNTED_DESC, tier: elite-equipment, dlc: base, en: "Spectral Circlet", icon: "Spectral_Circlet.png" }

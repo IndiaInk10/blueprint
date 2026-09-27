@@ -1,0 +1,1999 @@
+# Editorial ratings (S-D) per enemy faction, from 2026 tier lists and patch notes (as of 2026-09-26 (patch 7.1.1)).
+# popularity: how commonly players take it, separate from how strong it is.
+kind: ratings
+schemaVersion: 1
+revision: 2
+updatedAt: 2026-09-27
+sources:
+  - https://fandomwire.com/helldivers-2-patch-7-1-enemy-weapon-changes-explain/
+  - https://patched.gg/games/helldivers-2
+  - https://twistedvoxel.com/helldivers-2-devoid-of-liberty-7-0-0-patch-notes/
+  - https://fandomwire.com/helldivers-2-patch-6-3-0-changes-explained/
+  - https://www.gamer.org/helldivers-2-patch-6-3-0-patch-notes-vehicle-armor-grenade-buffs-vox-engine-nerfs-and-every-change-explained/
+  - https://fandomwire.com/helldivers-2-patch-6-1-0-all-weapon-stratagem-changes-explained/
+  - https://timesaver.gg/blog/helldivers-2-best-support-weapons
+  - https://timesaver.gg/blog/helldivers-2-best-automaton-loadout
+  - https://timesaver.gg/blog/helldivers-2-best-terminid-loadout
+  - https://timesaver.gg/blog/helldivers-2-best-illuminate-loadout
+  - https://lfcarry.com/guides/helldivers-2-best-weapons
+  - https://www.switchbladegaming.com/helldivers-2/best-weapons-tier-list/
+  - https://www.switchbladegaming.com/helldivers-2/best-stratagems-tier-list/
+  - https://gamerant.com/helldivers-2-warhammer-40k-castellan-creed-warbond-weapons/
+  - https://gamerant.com/helldivers-2-crusher-wretch-illuminate-units/
+  - https://thedailyperspective.org/article/2026-03-03-helldivers-2-year-two-177-million-friendly-kills-and-counting-f097b3d6
+ratings:
+  - kind: weapon
+    id: ar-11-arbitrator
+    overall: B
+    popularity: low
+    verdict:
+      en: Very fast light-pen rifle whose medium-pen underbarrel shotgun covers close threats; solid but outclassed by the incendiary and plasma primaries.
+      ko: 빠른 연사의 경장갑 관통 소총에 중장갑 관통 하부 산탄총이 붙어 근접 대응은 되지만, 소이·플라즈마 주무기들에 밀립니다.
+  - kind: weapon
+    id: ar-2-coyote
+    overall: S
+    factions:
+      automatons: A
+    popularity: high
+    verdict:
+      en: Medium-pen incendiary rifle that sets swarms ablaze; the most forgiving top-tier primary, best on bugs and squids.
+      ko: 중장갑 관통 소이 소총으로 무리를 불태우는, 가장 무난한 최상위 주무기입니다. 테르미니드와 일루미닛에서 특히 강합니다.
+  - kind: weapon
+    id: ar-23-liberator
+    overall: C
+    popularity: medium
+    verdict:
+      en: Starter light-pen rifle; the 7.0 magazine buff helps, but anything unlocked later does the job better.
+      ko: 기본 경장갑 관통 소총입니다. 7.0 탄창 버프로 나아졌지만 나중에 얻는 무기들이 대부분 더 낫습니다.
+  - kind: weapon
+    id: ar-23a-liberator-carbine
+    overall: C
+    factions:
+      terminids: B
+    popularity: low
+    verdict:
+      en: Faster-firing Liberator for close chaff; fine on bugs, eats ammo and lacks pen elsewhere.
+      ko: 근거리 잡몹용으로 연사를 올린 리버레이터입니다. 테르미니드에선 쓸 만하지만 탄약 소모가 크고 관통력이 부족합니다.
+  - kind: weapon
+    id: ar-23c-liberator-concussive
+    overall: C
+    popularity: low
+    verdict:
+      en: Stagger rounds are a niche utility; low damage keeps it below other assault rifles.
+      ko: 경직을 주는 탄은 틈새 용도일 뿐이고, 낮은 피해량 때문에 다른 돌격소총보다 약합니다.
+  - kind: weapon
+    id: ar-23p-liberator-penetrator
+    overall: B
+    factions:
+      terminids: C
+    popularity: medium
+    verdict:
+      en: Medium-pen Liberator that handles Devastators and Overseers; a safe bot/squid pick but nothing special.
+      ko: 중장갑 관통 리버레이터로 데버스테이터·오버시어를 상대할 수 있어 오토마톤·일루미닛에서 무난하지만 특별하진 않습니다.
+  - kind: weapon
+    id: ar-32-pacifier
+    overall: B
+    popularity: low
+    verdict:
+      en: Medium-pen rifle with stun; steady crowd control, but the damage is modest.
+      ko: 기절 효과가 있는 중장갑 관통 소총으로 군중 제어는 꾸준하지만 피해량이 평범합니다.
+  - kind: weapon
+    id: ar-59-suppressor
+    overall: C
+    popularity: low
+    verdict:
+      en: Suppressed light-pen rifle for stealth play; weak damage for regular high-difficulty fights.
+      ko: 은신 플레이용 소음 경장갑 관통 소총입니다. 고난이도 정면 교전에는 화력이 부족합니다.
+  - kind: weapon
+    id: ar-61-tenderizer
+    overall: B
+    popularity: low
+    verdict:
+      en: Hard-hitting light-pen rifle with good handling; a respectable Liberator upgrade that lacks medium pen.
+      ko: 손맛 좋은 고화력 경장갑 관통 소총으로 리버레이터의 괜찮은 상위호환이지만 중장갑 관통이 없습니다.
+  - kind: weapon
+    id: ar-gl-21-one-two
+    overall: A
+    popularity: medium
+    verdict:
+      en: 7.1.0 raised underbarrel grenades to 3 start / 5 spare, turning it into a rifle plus a pocket grenade launcher for holes and fabricators.
+      ko: 7.1.0에서 하부 유탄이 시작 3발·예비 5발로 늘어, 둥지와 공장까지 처리하는 소총 겸 휴대 유탄 발사기가 됐습니다.
+  - kind: weapon
+    id: arc-12-blitzer
+    overall: B
+    factions:
+      terminids: A
+      automatons: C
+    popularity: medium
+    verdict:
+      en: Ammo-free arc shotgun that chains through bug swarms; weak range and pen vs bots.
+      ko: 탄약 걱정 없는 아크 산탄총으로 테르미니드 무리를 연쇄로 쓸지만, 오토마톤 상대로는 사거리·관통이 약합니다.
+  - kind: weapon
+    id: br-14-adjudicator
+    overall: A
+    factions:
+      terminids: B
+      illuminate: B
+    popularity: medium
+    verdict:
+      en: Punchy medium-pen battle rifle that is a recommended bot-front primary for Devastator headshots.
+      ko: 강력한 중장갑 관통 전투소총으로, 데버스테이터 헤드샷용 오토마톤 추천 주무기입니다.
+  - kind: weapon
+    id: cb-9-exploding-crossbow
+    overall: A
+    popularity: medium
+    verdict:
+      en: Explosive bolts close bug holes and fabricators while killing mediums; slow fire needs a backup for chaff.
+      ko: 폭발 화살로 둥지·공장을 닫고 중형 적을 잡습니다. 연사가 느려 잡몹 대응은 보조 무기가 필요합니다.
+  - kind: weapon
+    id: dbs-2-double-freedom
+    overall: B
+    popularity: low
+    verdict:
+      en: Burst-heavy double-barrel medium-pen shotgun; strong per shot but reload downtime hurts at high difficulty.
+      ko: 한 번에 몰아치는 중장갑 관통 더블배럴 산탄총입니다. 한 방은 세지만 고난이도에선 재장전 공백이 아픕니다.
+  - kind: weapon
+    id: flam-66-torcher
+    overall: A
+    factions:
+      automatons: C
+    popularity: medium
+    verdict:
+      en: Primary flamethrower that melts bugs and Voteless; nearly useless at bot ranges.
+      ko: 테르미니드와 보트리스를 녹이는 주무기 화염방사기지만, 오토마톤 교전 거리에선 거의 쓸모가 없습니다.
+  - kind: weapon
+    id: gl-15-evictor
+    overall: B
+    popularity: low
+    verdict:
+      en: Primary grenade launcher for groups and objectives; ammo-hungry and self-damage prone.
+      ko: 무리와 목표물을 노리는 주무기 유탄 발사기지만 탄약 소모와 자폭 위험이 큽니다.
+  - kind: weapon
+    id: jar-5-dominator
+    overall: A
+    factions:
+      terminids: B
+    popularity: medium
+    verdict:
+      en: Heavy-hitting medium-pen jet rifle that staggers Devastators and Overseers; excels on bots and squids.
+      ko: 데버스테이터와 오버시어를 경직시키는 고화력 중장갑 관통 제트 소총으로, 오토마톤·일루미닛에서 뛰어납니다.
+  - kind: weapon
+    id: las-12-sai
+    overall: B
+    popularity: low
+    verdict:
+      en: One-handed medium-pen laser pistol-carbine; useful with shields, middling otherwise.
+      ko: 한 손으로 쓰는 중장갑 관통 레이저 무기로 방패와 함께 쓰면 유용하지만, 그 외엔 평범합니다.
+  - kind: weapon
+    id: las-13-trident
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Laser shotgun whose 7.1.0 recoil fix (12→2) makes it usable again, but damage stays middling.
+      ko: 7.1.0 반동 수정(12→2)으로 다시 쓸 만해졌지만 피해량은 여전히 평범한 레이저 산탄총입니다.
+  - kind: weapon
+    id: las-16-sickle
+    overall: A
+    factions:
+      automatons: B
+    popularity: high
+    verdict:
+      en: Near-infinite-ammo laser rifle that shreds chaff all mission; a staple on bugs and squids.
+      ko: 사실상 무한 탄약으로 임무 내내 잡몹을 갈아내는 레이저 소총으로, 테르미니드·일루미닛의 단골 무기입니다.
+  - kind: weapon
+    id: las-17-double-edge-sickle
+    overall: B
+    popularity: low
+    verdict:
+      en: Heavy-pen Sickle that burns your own health for power; strong damage, risky upkeep.
+      ko: 체력을 대가로 화력을 얻는 고장갑 관통 시클입니다. 피해량은 강하지만 운용이 위험합니다.
+  - kind: weapon
+    id: las-5-scythe
+    overall: C
+    popularity: low
+    verdict:
+      en: Continuous light-pen beam; precise but low damage compared to the Sickle.
+      ko: 지속 경장갑 관통 빔으로 정밀하지만 시클에 비해 피해량이 낮습니다.
+  - kind: weapon
+    id: m7s-smg
+    overall: C
+    popularity: low
+    verdict:
+      en: Suppressed Halo SMG; fun for stealth but thin damage and pen for high difficulty.
+      ko: 소음 헤일로 기관단총으로 은신엔 재밌지만 고난이도에는 화력·관통이 부족합니다.
+  - kind: weapon
+    id: m90a-shotgun
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Halo pump shotgun with strong close spread; fine on bugs, poor at bot ranges.
+      ko: 근거리 확산이 강한 헤일로 펌프 산탄총으로, 테르미니드엔 괜찮지만 오토마톤 교전 거리에선 약합니다.
+  - kind: weapon
+    id: ma5c-assault-rifle
+    overall: B
+    popularity: low
+    verdict:
+      en: Medium-pen Halo rifle with a big magazine; dependable generalist without standout traits.
+      ko: 대용량 탄창의 중장갑 관통 헤일로 소총으로 믿을 만한 범용 무기지만 두드러진 장점은 없습니다.
+  - kind: weapon
+    id: mp-98-knight
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Very fast one-handed SMG for close chaff with a shield; runs dry quickly.
+      ko: 방패와 함께 근거리 잡몹을 쓰는 초고속 한 손 기관단총이지만 탄이 빨리 떨어집니다.
+  - kind: weapon
+    id: plas-1-scorcher
+    overall: A
+    factions:
+      terminids: B
+    popularity: medium
+    verdict:
+      en: Explosive medium-pen plasma that breaks Devastators, fabricator vents and Overseers; bot-front favorite.
+      ko: 폭발성 중장갑 관통 플라즈마로 데버스테이터·공장 환풍구·오버시어를 부수는 오토마톤 선호 무기입니다.
+  - kind: weapon
+    id: plas-101-purifier
+    overall: S
+    factions:
+      terminids: A
+    popularity: high
+    verdict:
+      en: Charged explosive plasma with stagger and splash; the consensus best all-faction primary on 7.x.
+      ko: 경직과 범위 피해를 갖춘 충전식 폭발 플라즈마로, 7.x 기준 모든 진영에서 최고로 꼽히는 주무기입니다.
+  - kind: weapon
+    id: plas-39-accelerator-rifle
+    overall: B
+    popularity: low
+    verdict:
+      en: Medium-pen explosive plasma rifle; decent all-round but eclipsed by Scorcher and Purifier.
+      ko: 중장갑 관통 폭발 플라즈마 소총으로 무난하지만 스코처·퓨리파이어에 가려집니다.
+  - kind: weapon
+    id: r-2-amendment
+    overall: B
+    factions:
+      terminids: C
+    popularity: low
+    verdict:
+      en: Light-pen marksman rifle with bayonet; accurate but lacks the pen other DMRs bring.
+      ko: 총검 달린 경장갑 관통 지정사수소총으로 정확하지만 다른 DMR만큼 관통력이 없습니다.
+  - kind: weapon
+    id: r-2124-constitution
+    overall: D
+    popularity: low
+    verdict:
+      en: Ceremonial bolt-action rifle; a novelty that can't keep up at any difficulty that matters.
+      ko: 의전용 볼트액션 소총으로, 의미 있는 난이도에선 따라가지 못하는 기념품입니다.
+  - kind: weapon
+    id: r-36-eruptor
+    overall: S
+    factions:
+      terminids: A
+      illuminate: A
+    popularity: high
+    verdict:
+      en: Heavy-pen explosive rifle that one-shots mediums and closes holes and fabricators; it hurts you up close, so pair it with a secondary for point-blank threats.
+      ko: 중형 적을 한 방에 잡고 둥지·공장까지 닫는 고장갑 관통 폭발 소총입니다. 가까이서 쏘면 나도 피해를 입으니 근거리용 보조무기와 함께 쓰세요.
+  - kind: weapon
+    id: r-4-hyena
+    overall: B
+    popularity: low
+    verdict:
+      en: Incendiary medium-pen marksman rifle; flexible but less punchy than Coyote or Diligence CS.
+      ko: 소이 중장갑 관통 지정사수소총으로 유연하지만 코요테나 딜리전스 CS보다 한 방이 약합니다.
+  - kind: weapon
+    id: r-6-deadeye
+    overall: B
+    factions:
+      terminids: C
+    popularity: low
+    verdict:
+      en: Lever-action medium-pen rifle with big per-shot damage; good for patient bot play.
+      ko: 한 발 피해가 큰 레버액션 중장갑 관통 소총으로, 신중한 오토마톤 플레이에 좋습니다.
+  - kind: weapon
+    id: r-63-diligence
+    overall: B
+    factions:
+      terminids: C
+    popularity: low
+    verdict:
+      en: Light-pen DMR for precise weak-point shots; outclassed by its Counter Sniper sibling.
+      ko: 약점 사격용 경장갑 관통 DMR이지만 카운터 저격소총 버전에 밀립니다.
+  - kind: weapon
+    id: r-63cs-diligence-counter-sniper
+    overall: A
+    factions:
+      terminids: C
+      illuminate: B
+    popularity: medium
+    verdict:
+      en: Medium-pen DMR that pops Devastator and Hulk eyes at range; a top bot-front precision pick.
+      ko: 원거리에서 데버스테이터·헐크 눈을 뚫는 중장갑 관통 DMR로, 오토마톤 전선 최상위 정밀 무기입니다.
+  - kind: weapon
+    id: r-72-censor
+    overall: C
+    popularity: low
+    verdict:
+      en: Suppressed light-pen marksman rifle for stealth; lacks power in open fights.
+      ko: 은신용 소음 경장갑 관통 지정사수소총으로 정면 교전 화력이 부족합니다.
+  - kind: weapon
+    id: r-40-k-hot-shot-marksman-rifle
+    overall: C
+    factions:
+      automatons: B
+    popularity: low
+    verdict:
+      en: Castellan's Creed las-rifle that is fine at range but handles poorly; the weakest item in its Warbond.
+      ko: 원거리에선 괜찮지만 조작감이 나빠 캐스텔란의 신조 전쟁채권에서 가장 약한 무기로 꼽힙니다.
+  - kind: weapon
+    id: sg-20-halt
+    overall: B
+    popularity: low
+    verdict:
+      en: Shotgun that toggles stun and flechette shells; flexible utility, average damage.
+      ko: 기절탄과 플레셰트탄을 전환하는 산탄총으로 활용성은 좋지만 피해량은 평범합니다.
+  - kind: weapon
+    id: sg-225-breaker
+    overall: B
+    factions:
+      automatons: C
+    popularity: medium
+    verdict:
+      en: Mag-fed light-pen shotgun with high close burst; solid on bugs and squids, weak vs armored bots.
+      ko: 근거리 폭딜이 높은 탄창식 경장갑 관통 산탄총으로 테르미니드·일루미닛에 좋지만 장갑 오토마톤엔 약합니다.
+  - kind: weapon
+    id: sg-225ie-breaker-incendiary
+    overall: A
+    factions:
+      terminids: S
+      automatons: C
+    popularity: high
+    verdict:
+      en: Incendiary Breaker that torches whole swarms; the top recommended bug primary on 7.0.2.
+      ko: 무리 전체를 불태우는 소이 브레이커로, 7.0.2 기준 테르미니드 최고 추천 주무기입니다.
+  - kind: weapon
+    id: sg-225sp-breaker-spray-and-pray
+    overall: C
+    factions:
+      terminids: B
+      automatons: D
+    popularity: low
+    verdict:
+      en: Wide-spread chaff shotgun; clears tiny bugs but falls off beyond that.
+      ko: 넓게 퍼지는 잡몹용 산탄총으로 작은 벌레는 쓸지만 그 이상은 힘듭니다.
+  - kind: weapon
+    id: sg-451-cookout
+    overall: A
+    factions:
+      automatons: C
+    popularity: medium
+    verdict:
+      en: Incendiary pump that staggers and burns; great close-range bug and squid control.
+      ko: 경직과 화상을 주는 소이 펌프 산탄총으로, 테르미니드·일루미닛 근거리 제어에 탁월합니다.
+  - kind: weapon
+    id: sg-8-punisher
+    overall: C
+    factions:
+      terminids: B
+    popularity: low
+    verdict:
+      en: Staggering pump shotgun; outpaced by Cookout and Breakers.
+      ko: 경직을 주는 펌프 산탄총이지만 쿡아웃과 브레이커에 밀립니다.
+  - kind: weapon
+    id: sg-8p-punisher-plasma
+    overall: B
+    factions:
+      automatons: A
+    popularity: low
+    verdict:
+      en: Arcing medium-pen plasma launcher that staggers and splashes; underrated on bots.
+      ko: 곡사로 날아가 경직과 범위 피해를 주는 중장갑 관통 플라즈마로, 오토마톤에서 저평가된 무기입니다.
+  - kind: weapon
+    id: sg-8s-slugger
+    overall: B
+    factions:
+      terminids: C
+    popularity: low
+    verdict:
+      en: Medium-pen slug shotgun with stagger; a decent bot sidegrade to marksman rifles.
+      ko: 경직을 주는 중장갑 관통 슬러그 산탄총으로, 오토마톤에서 지정사수소총의 괜찮은 대안입니다.
+  - kind: weapon
+    id: sg-97-sweeper
+    overall: B
+    popularity: low
+    verdict:
+      en: Medium-pen shotgun that handles mixed close targets; good but not a meta staple.
+      ko: 중장갑 관통으로 근거리 혼합 표적을 처리하는 좋은 산탄총이지만 메타 필수품은 아닙니다.
+  - kind: weapon
+    id: smg-203-gallant
+    overall: B
+    popularity: low
+    verdict:
+      en: One-handed medium-pen SMG; pairs well with shields and handles armored chaff.
+      ko: 방패와 잘 맞는 한 손 중장갑 관통 기관단총으로 장갑 잡몹도 처리합니다.
+  - kind: weapon
+    id: smg-32-reprimand
+    overall: B
+    popularity: low
+    verdict:
+      en: Heavy-hitting medium-pen SMG; reliable close-range generalist.
+      ko: 한 발이 묵직한 중장갑 관통 기관단총으로 믿을 만한 근거리 범용 무기입니다.
+  - kind: weapon
+    id: smg-37-defender
+    overall: C
+    factions:
+      terminids: B
+    popularity: medium
+    verdict:
+      en: One-handed light-pen SMG for shield users; 7.0 ammo buff helps but damage is low.
+      ko: 방패 사용자를 위한 한 손 경장갑 관통 기관단총입니다. 7.0 탄약 버프에도 피해량이 낮습니다.
+  - kind: weapon
+    id: smg-72-pummeler
+    overall: C
+    popularity: low
+    verdict:
+      en: Stagger-focused SMG; control is nice but damage lags.
+      ko: 경직 위주의 기관단총으로 제어력은 좋지만 화력이 뒤처집니다.
+  - kind: weapon
+    id: smg-flam-34-stoker
+    overall: A
+    factions:
+      terminids: S
+      automatons: C
+    popularity: high
+    verdict:
+      en: SMG with underbarrel flamer; 7.0 ammo and reload buffs made it a top bug and squid pick.
+      ko: 하부 화염방사기가 달린 기관단총으로, 7.0 탄약·재장전 버프로 테르미니드·일루미닛 최상위 선택지가 됐습니다.
+  - kind: weapon
+    id: sta-11-smg
+    overall: C
+    popularity: low
+    verdict:
+      en: Compact one-handed SMG; serviceable but unremarkable.
+      ko: 작은 한 손 기관단총으로 쓸 만은 하지만 특별하지 않습니다.
+  - kind: weapon
+    id: sta-52-assault-rifle
+    overall: C
+    popularity: low
+    verdict:
+      en: Light-pen assault rifle comparable to the Liberator; nothing stands out.
+      ko: 리버레이터와 비슷한 경장갑 관통 돌격소총으로 눈에 띄는 점이 없습니다.
+  - kind: weapon
+    id: vg-70-variable
+    overall: C
+    popularity: low
+    verdict:
+      en: Switchable-mode rifle that tries to do everything and excels at nothing.
+      ko: 모드를 바꾸는 소총으로 모든 걸 하려다 어느 것도 뛰어나지 못합니다.
+  - kind: weapon
+    id: cqc-19-stun-lance
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Reach-plus-stun melee weapon that pairs with a shield; niche but effective up close.
+      ko: 사거리와 기절을 갖춘 근접 무기로 방패와 어울립니다. 틈새지만 근접에선 효과적입니다.
+  - kind: weapon
+    id: cqc-2-saber
+    overall: C
+    popularity: low
+    verdict:
+      en: Ceremonial saber buffed by the 6.x melee overhaul; fun, but a gun secondary is usually better.
+      ko: 6.x 근접 개편으로 나아진 의전용 세이버지만, 대개 총기 보조무기가 낫습니다.
+  - kind: weapon
+    id: cqc-30-stun-baton
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Stun baton that locks down single targets; a decent shield-build sidearm.
+      ko: 단일 표적을 묶어두는 기절 제압봉으로 방패 빌드용 보조무기로 괜찮습니다.
+  - kind: weapon
+    id: cqc-42-machete
+    overall: C
+    popularity: low
+    verdict:
+      en: Fast melee chopper; adequate vs chaff, not worth the slot at high difficulty.
+      ko: 빠른 근접 무기로 잡몹엔 충분하지만 고난이도에선 슬롯 가치가 떨어집니다.
+  - kind: weapon
+    id: cqc-5-combat-hatchet
+    overall: C
+    popularity: low
+    verdict:
+      en: Heavy melee chop; similar niche to the machete.
+      ko: 묵직한 근접 무기로 마체테와 비슷한 틈새 용도입니다.
+  - kind: weapon
+    id: cqc-73-entrenchment-tool
+    overall: C
+    popularity: low
+    verdict:
+      en: Melee shovel with utility flavor; not a combat priority.
+      ko: 근접 삽으로 유틸 성격이 강하며 전투 우선순위는 낮습니다.
+  - kind: weapon
+    id: gp-20-ultimatum
+    overall: A
+    popularity: medium
+    verdict:
+      en: One-shot anti-tank pistol that kills heavies and structures in a pinch; one of the best emergency sidearms.
+      ko: 위기 때 대형 적과 구조물을 처리하는 단발 대전차 권총으로 최고의 비상용 보조무기 중 하나입니다.
+  - kind: weapon
+    id: gp-31-grenade-pistol
+    overall: S
+    factions:
+      automatons: A
+      illuminate: A
+    popularity: high
+    verdict:
+      en: Pocket grenade for closing bug holes and fabricators without spending grenades; a near-universal pick.
+      ko: 수류탄을 아끼면서 둥지·공장을 닫는 휴대 유탄 권총으로, 거의 모든 빌드에 들어갑니다.
+  - kind: weapon
+    id: las-58-talon
+    overall: A
+    popularity: high
+    verdict:
+      en: Ammo-free medium-pen laser pistol with great uptime; top-tier generalist sidearm.
+      ko: 탄약이 필요 없는 중장갑 관통 레이저 권총으로 꾸준히 쓸 수 있는 최상위 범용 보조무기입니다.
+  - kind: weapon
+    id: las-7-dagger
+    overall: C
+    popularity: low
+    verdict:
+      en: Light-pen beam pistol; eclipsed by the Talon.
+      ko: 경장갑 관통 빔 권총으로 탈론에 가려졌습니다.
+  - kind: weapon
+    id: m6c-socom-pistol
+    overall: C
+    popularity: low
+    verdict:
+      en: Suppressed Halo pistol; 7.0 ammo buff can't fix its low pen.
+      ko: 소음 헤일로 권총입니다. 7.0 탄약 버프로도 낮은 관통력은 해결되지 않습니다.
+  - kind: weapon
+    id: p-11-stim-pistol
+    overall: B
+    popularity: low
+    verdict:
+      en: After 6.1.0 spread and healing buffs it's a genuine team-support pick, but it deals no damage.
+      ko: 6.1.0 확산·회복량 버프로 진짜 지원용 선택지가 됐지만 피해를 주지 못합니다.
+  - kind: weapon
+    id: p-113-verdict
+    overall: B
+    popularity: low
+    verdict:
+      en: Medium-pen mag-fed pistol with more spare ammo since 7.0; reliable backup.
+      ko: 7.0부터 예비탄이 늘어난 중장갑 관통 탄창식 권총으로 믿을 만한 보조무기입니다.
+  - kind: weapon
+    id: p-19-redeemer
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Full-auto pistol for close emergencies; 7.0 added spare mags, still light pen.
+      ko: 근접 위기용 자동 권총으로 7.0에서 예비 탄창이 늘었지만 여전히 경장갑 관통입니다.
+  - kind: weapon
+    id: p-2-peacemaker
+    overall: D
+    popularity: low
+    verdict:
+      en: Starter pistol; replace as soon as possible.
+      ko: 기본 권총으로, 가능한 한 빨리 교체하세요.
+  - kind: weapon
+    id: p-33-missile-pistol
+    overall: B
+    popularity: low
+    verdict:
+      en: Guided anti-tank pistol missiles; useful for heavies, slow to deliver damage.
+      ko: 유도식 대전차 권총 미사일로 대형 적에 유용하지만 피해를 주는 속도가 느립니다.
+  - kind: weapon
+    id: p-34-breacher
+    overall: B
+    popularity: low
+    verdict:
+      en: Sticky anti-tank charges from a sidearm; good vs structures and armor, clunky timing.
+      ko: 보조무기로 쏘는 점착식 대전차 폭약으로 구조물·장갑에 좋지만 타이밍이 불편합니다.
+  - kind: weapon
+    id: p-35-re-educator
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Caustic heavy-pen sidearm that chips armor over time; niche.
+      ko: 시간에 걸쳐 장갑을 깎는 부식성 고장갑 관통 보조무기로 틈새 용도입니다.
+  - kind: weapon
+    id: p-4-senator
+    overall: A
+    factions:
+      terminids: B
+    popularity: high
+    verdict:
+      en: Heavy-pen revolver that handles Devastators, Overseers and panic moments; a classic bot/squid sidearm.
+      ko: 데버스테이터·오버시어·위기 상황을 처리하는 고장갑 관통 리볼버로, 오토마톤·일루미닛 대표 보조무기입니다.
+  - kind: weapon
+    id: p-69-veto
+    overall: C
+    popularity: low
+    verdict:
+      en: Medium-pen rounds-reload pistol; fine but has no niche over Verdict or Senator.
+      ko: 중장갑 관통 권총으로 무난하지만 버딕트나 세너터보다 나은 점이 없습니다.
+  - kind: weapon
+    id: p-72-crisper
+    overall: A
+    factions:
+      automatons: C
+    popularity: medium
+    verdict:
+      en: Pocket flamethrower that clears chaff and bug breaches; excellent vs bugs and Voteless.
+      ko: 잡몹과 벌레 출현을 정리하는 휴대 화염방사기로, 테르미니드·보트리스 상대로 탁월합니다.
+  - kind: weapon
+    id: p-92-warrant
+    overall: B
+    popularity: low
+    verdict:
+      en: Guided medium-pen pistol; easy hits, modest damage.
+      ko: 유도식 중장갑 관통 권총으로 명중은 쉽지만 피해량이 평범합니다.
+  - kind: weapon
+    id: p-40-k-bolt-pistol
+    overall: A
+    popularity: medium
+    verdict:
+      en: 500-damage explosive heavy-pen pistol that pops Crusher helmets and Devastators; nasty recoil keeps it just below S.
+      ko: 피해량 500의 폭발성 고장갑 관통 권총으로 크러셔 헬멧과 데버스테이터를 부숩니다. 강한 반동 탓에 S급 바로 아래입니다.
+  - kind: weapon
+    id: plas-15-loyalist
+    overall: B
+    popularity: low
+    verdict:
+      en: Charged plasma pistol buffed in 6.1.0 (faster charge); a decent Senator alternative.
+      ko: 6.1.0에서 충전이 빨라진 플라즈마 권총으로 세너터의 괜찮은 대안입니다.
+  - kind: weapon
+    id: sg-22-bushwhacker
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Triple-barrel sawn-off for point-blank emergencies; strong burst, short reach.
+      ko: 초근접 위기용 3연장 소드오프로 폭딜은 강하지만 사거리가 짧습니다.
+  - kind: weapon
+    id: g-10-incendiary
+    overall: B
+    factions:
+      terminids: A
+      automatons: C
+    popularity: low
+    verdict:
+      en: Fire grenade for bug patrols and breaches; weak versus bots.
+      ko: 벌레 순찰대와 출현 지점에 쓰는 소이 수류탄이지만 오토마톤엔 약합니다.
+  - kind: weapon
+    id: g-109-urchin
+    overall: B
+    popularity: low
+    verdict:
+      en: Sticky stun-spike grenade whose 6.3.0 carry buff (4 start) makes it a real crowd-control option.
+      ko: 6.3.0에서 시작 개수가 4개로 늘어 진짜 군중 제어 수단이 된 점착 기절 가시 수류탄입니다.
+  - kind: weapon
+    id: g-12-high-explosive
+    overall: B
+    popularity: medium
+    verdict:
+      en: Reliable all-purpose explosive for holes and fabricators; now carry 5 after 6.3.0.
+      ko: 둥지·공장용 믿을 만한 범용 폭발물로, 6.3.0 이후 5개까지 소지합니다.
+  - kind: weapon
+    id: g-123-thermite
+    overall: S
+    popularity: very-high
+    verdict:
+      en: Sticky anti-tank grenade that kills Chargers, Hulks, tanks and Harvesters; the best throwable on every front.
+      ko: 차저·헐크·탱크·하베스터까지 잡는 점착 대전차 수류탄으로, 모든 전선 최고의 투척물입니다.
+  - kind: weapon
+    id: g-13-incendiary-impact
+    overall: A
+    factions:
+      automatons: C
+    popularity: medium
+    verdict:
+      en: Instant fire splash that closes holes and burns swarms on impact; top bug and squid grenade after 6.3.0.
+      ko: 착탄 즉시 불을 퍼뜨려 둥지를 닫고 무리를 태우는, 6.3.0 이후 테르미니드·일루미닛 최상급 수류탄입니다.
+  - kind: weapon
+    id: g-142-pyrotech
+    overall: B
+    popularity: low
+    verdict:
+      en: Firework-style incendiary explosive; decent area damage, niche vs the standards.
+      ko: 폭죽형 소이 폭발물로 범위 피해는 괜찮지만 표준 수류탄 대비 틈새입니다.
+  - kind: weapon
+    id: g-16-impact
+    overall: A
+    popularity: high
+    verdict:
+      en: Explodes on contact for instant fabricator and bug-hole kills and Devastator clears; the precision all-rounder.
+      ko: 닿는 즉시 폭발해 공장·둥지·데버스테이터를 처리하는 정밀 만능 수류탄입니다.
+  - kind: weapon
+    id: g-23-stun
+    overall: A
+    popularity: medium
+    verdict:
+      en: Freezes Chargers, Hulks and groups for free kills or escapes; underrated team utility.
+      ko: 차저·헐크·무리를 멈춰 손쉬운 처치나 탈출을 만드는, 저평가된 팀 유틸리티입니다.
+  - kind: weapon
+    id: g-3-smoke
+    overall: C
+    factions:
+      automatons: B
+    popularity: low
+    verdict:
+      en: Breaks bot line-of-sight; niche outside Automaton objectives.
+      ko: 오토마톤의 시야를 차단합니다. 오토마톤 목표 외엔 틈새 용도입니다.
+  - kind: weapon
+    id: g-31-arc
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Arc burst that chains through tight groups; decent vs chaff and squids.
+      ko: 밀집한 적 사이로 연쇄하는 아크 폭발로 잡몹·일루미닛에 괜찮습니다.
+  - kind: weapon
+    id: g-4-gas
+    overall: A
+    factions:
+      automatons: B
+    popularity: medium
+    verdict:
+      en: Lingering caustic cloud that kills and confuses swarms; strong on bugs and Voteless.
+      ko: 오래 남는 부식성 구름으로 무리를 죽이고 혼란시킵니다. 테르미니드·보트리스에 강합니다.
+  - kind: weapon
+    id: g-48-giga-grenade
+    overall: B
+    popularity: low
+    verdict:
+      en: Huge single blast for objectives and heavies; 6.3.0 doubled resupply refill but carry stays tiny.
+      ko: 목표물과 대형 적용 거대 폭발입니다. 6.3.0에서 재보급량이 늘었지만 소지량은 여전히 적습니다.
+  - kind: weapon
+    id: g-50-seeker
+    overall: B
+    popularity: low
+    verdict:
+      en: Homing mini-drones that pick off stragglers; easy but low burst.
+      ko: 낙오한 적을 노리는 유도 드론으로 쉽지만 순간 화력이 낮습니다.
+  - kind: weapon
+    id: g-6-frag
+    overall: C
+    popularity: low
+    verdict:
+      en: Wide shrapnel grenade for chaff; outclassed by HE, Impact and Thermite.
+      ko: 잡몹용 파편 수류탄으로 고폭·충격·테르밋에 밀립니다.
+  - kind: weapon
+    id: g-60-anti-tank-seeker
+    overall: B
+    popularity: low
+    verdict:
+      en: Guided anti-tank drone; handy for heavies when you can't aim, but slower than Thermite.
+      ko: 유도식 대전차 드론으로 조준이 어려울 때 편하지만 테르밋보다 느립니다.
+  - kind: weapon
+    id: g-7-pineapple
+    overall: B
+    popularity: low
+    verdict:
+      en: Cluster-style grenade with good chaff coverage; fine sidegrade to HE.
+      ko: 파편 확산형 수류탄으로 잡몹 처리가 좋아 고폭의 괜찮은 대안입니다.
+  - kind: weapon
+    id: g-8-immolation
+    overall: C
+    factions:
+      terminids: B
+      automatons: D
+    popularity: low
+    verdict:
+      en: Fire-patch grenade; limited value beyond bug chaff.
+      ko: 화염 지대를 만드는 수류탄으로 벌레 잡몹 외엔 가치가 낮습니다.
+  - kind: weapon
+    id: g-89-smokescreen
+    overall: C
+    factions:
+      automatons: B
+    popularity: low
+    verdict:
+      en: Large smokescreen for bot objectives and revives; situational.
+      ko: 오토마톤 목표와 부활용 대형 연막으로 상황을 탑니다.
+  - kind: weapon
+    id: g-40-k-melta-mine
+    overall: B
+    popularity: medium
+    verdict:
+      en: Heavy-killing melta charge; 7.1.0 stopped it sticking to units and arms it on a timer, so it's now a placed trap, not a sticky bomb.
+      ko: 대형 적을 녹이는 멜타 폭약입니다. 7.1.0에서 유닛에 붙지 않고 타이머로 작동해 점착 폭탄이 아닌 설치형 함정이 됐습니다.
+  - kind: weapon
+    id: g-sh-39-shield
+    overall: B
+    popularity: low
+    verdict:
+      en: Deployable bubble shield for revives and objective holds; valuable utility, no damage.
+      ko: 부활과 목표 방어에 쓰는 설치형 방어막으로 유틸은 좋지만 피해는 없습니다.
+  - kind: weapon
+    id: k-2-throwing-knife
+    overall: D
+    popularity: low
+    verdict:
+      en: Silent knives with little practical damage; a meme pick at high difficulty.
+      ko: 조용하지만 실전 피해가 거의 없어 고난이도에선 장난용 선택입니다.
+  - kind: weapon
+    id: ted-63-dynamite
+    overall: B
+    popularity: low
+    verdict:
+      en: Big delayed blast that closes objectives; timing makes it clunkier than Impact.
+      ko: 목표를 닫는 큰 지연 폭발이지만 타이밍 때문에 충격 수류탄보다 불편합니다.
+  - kind: weapon
+    id: tm-1-lure-mine
+    overall: C
+    popularity: low
+    verdict:
+      en: Throwable decoy mine that pulls and blasts enemies; gimmicky.
+      ko: 적을 끌어들여 터지는 투척형 미끼 지뢰로 잔재주에 가깝습니다.
+  - kind: stratagem
+    id: orbital-120mm-he-barrage
+    overall: B
+    popularity: low
+    verdict:
+      en: Tight barrage buffed in 6.3.0 (3,500 shell damage); good for bases and breaches if the enemy stays put.
+      ko: 6.3.0에서 포탄 피해가 3,500으로 오른 밀집 포격으로, 적이 머무는 기지·출현 지점에 좋습니다.
+  - kind: stratagem
+    id: orbital-380mm-he-barrage
+    overall: B
+    popularity: medium
+    verdict:
+      en: Huge, long barrage for clearing outposts; buffed in 6.3.0 but slow and scattered.
+      ko: 거점 정리용 대규모 장시간 포격입니다. 6.3.0에서 강화됐지만 느리고 탄착이 흩어집니다.
+  - kind: stratagem
+    id: orbital-airburst-strike
+    overall: B
+    popularity: low
+    verdict:
+      en: Shrapnel airbursts that delete chaff groups; no answer to heavies.
+      ko: 잡몹 무리를 지우는 공중폭발 파편이지만 대형 적에겐 해답이 되지 못합니다.
+  - kind: stratagem
+    id: orbital-ems-strike
+    overall: B
+    factions:
+      illuminate: A
+    popularity: low
+    verdict:
+      en: Area stun that freezes breaches and drops for team follow-up; strong vs squid swarms.
+      ko: 출현·투하 지점을 멈춰 팀이 마무리하게 하는 광역 기절로, 일루미닛 무리에 강합니다.
+  - kind: stratagem
+    id: orbital-gas-strike
+    overall: A
+    factions:
+      terminids: S
+      automatons: B
+    popularity: high
+    verdict:
+      en: Short-cooldown caustic cloud that wipes bug breaches and Voteless; a core bug-front stratagem.
+      ko: 쿨다운이 짧은 부식성 구름으로 벌레 출현과 보트리스를 쓸어버리는 테르미니드 핵심 스트라타젬입니다.
+  - kind: stratagem
+    id: orbital-gatling-barrage
+    overall: B
+    popularity: low
+    verdict:
+      en: Fast-cooldown gatling that shreds small and medium groups; filler pick.
+      ko: 쿨다운이 빠른 개틀링으로 소형·중형 무리를 갈아내는 보조 선택지입니다.
+  - kind: stratagem
+    id: orbital-laser
+    overall: A
+    popularity: high
+    verdict:
+      en: Self-tracking laser that clears bases or saves a collapsing fight; limited uses but top panic button.
+      ko: 스스로 추적하며 기지를 정리하거나 무너지는 전투를 구하는 레이저로, 횟수 제한이 있지만 최고의 비상 버튼입니다.
+  - kind: stratagem
+    id: orbital-napalm-barrage
+    overall: A
+    factions:
+      automatons: C
+    popularity: medium
+    verdict:
+      en: Wide incendiary area denial that holds bug and squid breaches for a long time.
+      ko: 넓은 소이 지역 거부로 벌레·일루미닛 출현 지점을 오래 막아줍니다.
+  - kind: stratagem
+    id: orbital-precision-strike
+    overall: A
+    popularity: high
+    verdict:
+      en: Buffed in 6.3.0 (4,000 damage) and 7.1.0 (80 s cooldown); a cheap, reliable answer to structures and single heavies.
+      ko: 6.3.0(피해 4,000)과 7.1.0(쿨다운 80초)에서 강화돼, 구조물과 단일 대형 적에 대한 싸고 확실한 해답입니다.
+  - kind: stratagem
+    id: orbital-railcannon-strike
+    overall: S
+    factions:
+      terminids: A
+    popularity: very-high
+    verdict:
+      en: Near-instant 10,000-damage heavy kill after 6.3.0; the most reliable way to delete a Bile Titan, Factory Strider or Harvester.
+      ko: 6.3.0 이후 피해 10,000의 거의 즉발 대형 적 처치기로, 바일 타이탄·팩토리 스트라이더·하베스터를 가장 확실히 지웁니다.
+  - kind: stratagem
+    id: orbital-smoke-strike
+    overall: C
+    factions:
+      automatons: B
+    popularity: low
+    verdict:
+      en: Big smoke wall for bot objectives; rarely worth a slot elsewhere.
+      ko: 오토마톤 목표용 대형 연막 벽으로, 그 외엔 슬롯 가치가 거의 없습니다.
+  - kind: stratagem
+    id: orbital-walking-barrage
+    overall: B
+    popularity: low
+    verdict:
+      en: Rolling barrage for pushing into bases; 6.3.0 damage buff helps but it's hard to aim.
+      ko: 기지 진입용 이동 포격입니다. 6.3.0 피해 버프로 나아졌지만 조준이 어렵습니다.
+  - kind: stratagem
+    id: eagle-110mm-rocket-pods
+    overall: A
+    popularity: medium
+    verdict:
+      en: 6.3.0 made it heavy-pen with 300 damage and a tight pattern; now a quick multi-use heavy finisher.
+      ko: 6.3.0에서 고장갑 관통, 피해 300, 밀집 탄착으로 바뀌어 여러 번 쓰는 빠른 대형 적 마무리 수단이 됐습니다.
+  - kind: stratagem
+    id: eagle-500kg-bomb
+    overall: S
+    factions:
+      illuminate: A
+    popularity: very-high
+    verdict:
+      en: Arrowhead's 2nd most-used stratagem (after Reinforce); one bomb deletes heavies, nests and fabricators.
+      ko: 아군 증원 다음으로 가장 많이 쓰인 스트라타젬으로, 한 방에 대형 적·둥지·공장을 지웁니다.
+  - kind: stratagem
+    id: eagle-airstrike
+    overall: S
+    factions:
+      automatons: A
+    popularity: very-high
+    verdict:
+      en: Multi-use carpet bombing that closes objectives and clears groups on every front; the default red slot.
+      ko: 목표를 닫고 무리를 정리하는 다회용 융단폭격으로, 모든 전선의 기본 공격 슬롯입니다.
+  - kind: stratagem
+    id: eagle-cluster-bomb
+    overall: A
+    factions:
+      automatons: B
+    popularity: medium
+    verdict:
+      en: Wide chaff-clearing pattern for bug and squid swarms; weak vs armor.
+      ko: 테르미니드·일루미닛 무리를 쓰는 넓은 잡몹 정리 폭격이지만 장갑엔 약합니다.
+  - kind: stratagem
+    id: eagle-gas-airstrike
+    overall: B
+    factions:
+      terminids: A
+      automatons: C
+    popularity: low
+    verdict:
+      en: Eagle-delivered caustic cloud; decent on bugs but the orbital version is more flexible.
+      ko: 이글이 떨구는 부식성 구름으로 테르미니드엔 괜찮지만 궤도 버전이 더 유연합니다.
+  - kind: stratagem
+    id: eagle-napalm-airstrike
+    overall: A
+    factions:
+      automatons: C
+    popularity: medium
+    verdict:
+      en: 7.0 widened blasts to 10 m and spread the pattern; excellent bug and squid area denial.
+      ko: 7.0에서 폭발 반경이 10m로 늘고 탄착이 넓어져, 테르미니드·일루미닛 지역 거부에 탁월합니다.
+  - kind: stratagem
+    id: eagle-smoke-strike
+    overall: C
+    factions:
+      automatons: B
+    popularity: low
+    verdict:
+      en: Fast smoke line for bot objectives and revives; niche.
+      ko: 오토마톤 목표와 부활용 빠른 연막으로 틈새 용도입니다.
+  - kind: stratagem
+    id: eagle-strafing-run
+    overall: B
+    popularity: high
+    verdict:
+      en: "Instant, multi-use strafe for chaff lines; popular but light damage and the #1 team-kill source in Year Two stats."
+      ko: 즉발 다회용 기총소사로 잡몹 줄을 정리합니다. 인기는 많지만 화력이 약하고 2년 차 통계에서 아군 사살 1위입니다.
+  - kind: stratagem
+    id: 40-k-meltagun
+    overall: A
+    popularity: medium
+    verdict:
+      en: Castellan's Creed melta that instantly melts heavies at short range; great vs Chargers, Hulks and Crushers, weak at distance.
+      ko: 근거리에서 대형 적을 즉시 녹이는 멜타건으로 차저·헐크·크러셔에 강하지만 원거리에선 약합니다.
+  - kind: stratagem
+    id: ac-8-autocannon
+    overall: S
+    factions:
+      terminids: A
+    popularity: very-high
+    verdict:
+      en: 6.1.0 faster reload and flak mode keep it the best all-rounder; kills mediums, fabricators, flyers and Crusher helmets.
+      ko: 6.1.0 재장전 버프와 플랙 모드로 최고의 만능 지원무기입니다. 중형 적·공장·비행체·크러셔 헬멧을 모두 처리합니다.
+  - kind: stratagem
+    id: apw-1-anti-materiel-rifle
+    overall: B
+    factions:
+      terminids: C
+      automatons: A
+    popularity: medium
+    verdict:
+      en: Heavy-pen sniper that one-taps Devastators and Hulk eyes; a timesaver-recommended bot pick.
+      ko: 데버스테이터와 헐크 눈을 한 방에 뚫는 고장갑 관통 저격총으로, 오토마톤 추천 무기입니다.
+  - kind: stratagem
+    id: arc-3-arc-thrower
+    overall: A
+    factions:
+      automatons: B
+      illuminate: S
+    popularity: medium
+    verdict:
+      en: Ammo-free chaining arc that ignores Harvester shields and chews squid swarms; top Illuminate pick.
+      ko: 하베스터 방어막을 무시하고 일루미닛 무리를 갈아내는 탄약 불필요 연쇄 아크로, 일루미닛 최상위 선택입니다.
+  - kind: stratagem
+    id: b-flam-80-cremator
+    overall: A
+    factions:
+      terminids: S
+      automatons: C
+    popularity: medium
+    verdict:
+      en: Backpack flamer that burns down Chargers and Wretches; elite on bugs, poor on bots.
+      ko: 차저와 레치를 태워 없애는 배낭식 화염방사기로 테르미니드에서 최상급이지만 오토마톤엔 약합니다.
+  - kind: stratagem
+    id: b-md-c4-pack
+    overall: C
+    popularity: low
+    verdict:
+      en: Remote C4 for objectives and ambushes; slow and setup-heavy.
+      ko: 목표와 매복용 원격 C4로 느리고 준비가 번거롭습니다.
+  - kind: stratagem
+    id: cqc-1-one-true-flag
+    overall: D
+    popularity: low
+    verdict:
+      en: Ceremonial flag melee; 6.1.0 aggro change is fun but it's a meme weapon.
+      ko: 의전용 깃발 근접무기입니다. 6.1.0 어그로 변경은 재밌지만 장난용입니다.
+  - kind: stratagem
+    id: cqc-20-breaching-hammer
+    overall: C
+    popularity: low
+    verdict:
+      en: Anti-tank melee hammer; big hits but you must reach the target.
+      ko: 대전차 근접 망치로 한 방은 크지만 표적에 닿아야 합니다.
+  - kind: stratagem
+    id: cqc-9-defoliation-tool
+    overall: C
+    factions:
+      terminids: B
+      automatons: D
+    popularity: low
+    verdict:
+      en: Chainsaw-style melee tool; shreds bug chaff but risky at high difficulty.
+      ko: 전기톱형 근접 도구로 벌레 잡몹은 갈아내지만 고난이도에선 위험합니다.
+  - kind: stratagem
+    id: eat-17-expendable-anti-tank
+    overall: A
+    popularity: high
+    verdict:
+      en: Two free disposable AT rockets every call-in with no backpack; the easiest team anti-tank.
+      ko: 배낭 없이 호출마다 대전차 로켓 2발을 주는, 가장 쉬운 팀 대전차 수단입니다.
+  - kind: stratagem
+    id: eat-411-leveller
+    overall: B
+    popularity: low
+    verdict:
+      en: Disposable anti-structure/anti-tank launcher; EAT-17 is simpler for most jobs.
+      ko: 일회용 구조물·대전차 발사기지만 대부분 EAT-17이 더 간편합니다.
+  - kind: stratagem
+    id: eat-700-expendable-napalm
+    overall: B
+    factions:
+      terminids: A
+      automatons: D
+    popularity: low
+    verdict:
+      en: Disposable napalm launcher for burning bug breaches; little use vs bots.
+      ko: 벌레 출현을 태우는 일회용 네이팜 발사기로 오토마톤엔 쓸모가 적습니다.
+  - kind: stratagem
+    id: faf-14-spear
+    overall: B
+    factions:
+      automatons: A
+    popularity: low
+    verdict:
+      en: Lock-on AT missile that kills heavies and fabricators from long range; lock-on can be finicky.
+      ko: 원거리에서 대형 적과 공장을 잡는 유도 대전차 미사일이지만 락온이 까다롭습니다.
+  - kind: stratagem
+    id: flam-40-flamethrower
+    overall: A
+    factions:
+      terminids: S
+      automatons: C
+    popularity: medium
+    verdict:
+      en: 6.1.0 panic reactions make it a bug-front king that also cooks Chargers; useless vs bots.
+      ko: 6.1.0 공포 반응으로 차저까지 태우는 테르미니드 전선의 왕이 됐지만 오토마톤엔 쓸모없습니다.
+  - kind: stratagem
+    id: gl-21-grenade-launcher
+    overall: A
+    factions:
+      automatons: B
+    popularity: medium
+    verdict:
+      en: Clears chaff and closes holes; 6.1.0 reverted it to medium pen, so pair it with a heavy answer.
+      ko: 잡몹 정리와 둥지 폐쇄에 좋지만 6.1.0에서 중장갑 관통으로 되돌아가 대형 적 대책이 따로 필요합니다.
+  - kind: stratagem
+    id: gl-28-belt-fed-grenade-launcher
+    overall: B
+    popularity: low
+    verdict:
+      en: 120-round belt grenade launcher (6.1.0) for sustained area fire; heavy and ammo-hungry.
+      ko: 6.1.0에서 120발이 된 벨트식 유탄 발사기로 지속 범위 화력을 주지만 무겁고 탄약을 많이 먹습니다.
+  - kind: stratagem
+    id: gl-52-de-escalator
+    overall: C
+    popularity: low
+    verdict:
+      en: Non-lethal crowd-control launcher; faster reload since 6.1.0 but low kill value.
+      ko: 비살상 군중 제어 발사기로 6.1.0 이후 재장전이 빨라졌지만 처치 가치가 낮습니다.
+  - kind: stratagem
+    id: gr-8-recoilless-rifle
+    overall: S
+    factions:
+      terminids: A
+      illuminate: A
+    popularity: high
+    verdict:
+      en: Hardest-hitting reusable AT per shot; team-reload makes it the premier heavy killer.
+      ko: 재사용형 대전차 중 한 발 위력이 가장 높고, 팀 재장전으로 최고의 대형 적 처치 무기입니다.
+  - kind: stratagem
+    id: las-98-laser-cannon
+    overall: A
+    factions:
+      terminids: B
+    popularity: medium
+    verdict:
+      en: Ammo-free beam whose 6.1.0 range buff lets it snipe fabricators and Hulks across the map.
+      ko: 6.1.0 사거리 버프로 맵 반대편 공장과 헐크까지 저격하는 무탄약 빔 무기입니다.
+  - kind: stratagem
+    id: las-99-quasar-cannon
+    overall: S
+    factions:
+      terminids: A
+    popularity: very-high
+    verdict:
+      en: Backpack-free, ammo-free anti-tank that one-shots heavies; the most picked AT support weapon.
+      ko: 배낭도 탄약도 필요 없이 대형 적을 한 방에 잡는, 가장 많이 선택되는 대전차 지원무기입니다.
+  - kind: stratagem
+    id: m-1000-maxigun
+    overall: B
+    factions:
+      terminids: A
+      automatons: C
+    popularity: low
+    verdict:
+      en: 1,000-round minigun (6.1.0) that mows bug hordes; slow spin-up and poor vs armor.
+      ko: 6.1.0에서 1,000발이 된 미니건으로 벌레 떼를 쓸지만 예열이 느리고 장갑에 약합니다.
+  - kind: stratagem
+    id: m-105-stalwart
+    overall: A
+    factions:
+      automatons: C
+    popularity: medium
+    verdict:
+      en: Fast, backpack-free light MG for chaff; a bug and Voteless staple.
+      ko: 배낭 없이 빠르게 잡몹을 치우는 경기관총으로 테르미니드·보트리스 단골입니다.
+  - kind: stratagem
+    id: mg-206-heavy-machine-gun
+    overall: B
+    factions:
+      automatons: A
+    popularity: low
+    verdict:
+      en: Heavy-pen HMG that shreds Devastators and Hulk vents; strong on bots, heavy handling.
+      ko: 데버스테이터와 헐크 방열구를 갈아내는 고장갑 관통 중기관총으로 오토마톤에 강하지만 조작이 무겁습니다.
+  - kind: stratagem
+    id: mg-43-machine-gun
+    overall: A
+    popularity: medium
+    verdict:
+      en: Medium-pen MG that handles chaff and mediums on every front without a backpack.
+      ko: 배낭 없이 모든 전선에서 잡몹과 중형 적을 처리하는 중장갑 관통 기관총입니다.
+  - kind: stratagem
+    id: mgx-42-bullet-storm
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: High-capacity light MG for suppression; the Stalwart does the same job lighter.
+      ko: 고탄창 경기관총으로 제압용이지만 스털워트가 더 가볍게 같은 일을 합니다.
+  - kind: stratagem
+    id: mls-4x-commando
+    overall: B
+    factions:
+      automatons: A
+    popularity: medium
+    verdict:
+      en: Four laser-guided AT rockets with no backpack; great for fabricators and bot heavies.
+      ko: 배낭 없이 레이저 유도 대전차 로켓 4발을 쏴 공장과 오토마톤 대형 적에 좋습니다.
+  - kind: stratagem
+    id: ms-11-solo-silo
+    overall: B
+    popularity: low
+    verdict:
+      en: Personal ICBM silo for a massive single strike; powerful but slow to set up.
+      ko: 대규모 단발 타격용 개인 미사일 사일로로 강하지만 준비가 느립니다.
+  - kind: stratagem
+    id: plas-45-epoch
+    overall: B
+    popularity: low
+    verdict:
+      en: Charge-up plasma cannon with big splash; strong but overcharging kills you.
+      ko: 큰 범위 피해의 충전식 플라즈마 캐넌으로 강하지만 과충전하면 자폭합니다.
+  - kind: stratagem
+    id: rl-77-airburst-rocket-launcher
+    overall: C
+    factions:
+      terminids: B
+    popularity: low
+    verdict:
+      en: Airburst rockets for groups and flyers; team-kill risk and weak single-target damage.
+      ko: 무리와 비행체용 공중폭발 로켓이지만 아군 피해 위험과 약한 단일 화력이 문제입니다.
+  - kind: stratagem
+    id: rs-422-railgun
+    overall: B
+    factions:
+      automatons: A
+    popularity: low
+    verdict:
+      en: Charged heavy/AT-pen sniper that kills Hulks and Crusher helmets; takes skill and time.
+      ko: 헐크와 크러셔 헬멧을 잡는 충전식 저격 무기로 숙련과 시간이 필요합니다.
+  - kind: stratagem
+    id: s-11-speargun
+    overall: A
+    popularity: medium
+    verdict:
+      en: Dust Devils AT harpoon; 6.3.0 changed its damage type but it still kills heavies well on all fronts.
+      ko: 더스트 데빌 대전차 작살총으로 6.3.0에서 피해 유형이 바뀌었지만 여전히 모든 전선에서 대형 적을 잘 잡습니다.
+  - kind: stratagem
+    id: sta-x3-wasp-launcher
+    overall: A
+    factions:
+      automatons: B
+    popularity: medium
+    verdict:
+      en: Homing mini-missile salvos that handle flyers, mediums and Harvesters; recommended on the Void front.
+      ko: 비행체·중형 적·하베스터를 처리하는 유도 미사일 연사로, 일루미닛 전선 추천 무기입니다.
+  - kind: stratagem
+    id: tx-41-sterilizer
+    overall: C
+    factions:
+      terminids: B
+      automatons: D
+    popularity: low
+    verdict:
+      en: Gas sprayer buffed to 125-round mags in 6.3.0; confuses bugs but kills slowly.
+      ko: 6.3.0에서 탄창 125발로 강화된 가스 분무기로 벌레를 혼란시키지만 처치가 느립니다.
+  - kind: stratagem
+    id: ax-ar-23-guard-dog
+    overall: B
+    popularity: medium
+    verdict:
+      en: Liberator drone for chaff cleanup; decent, but Rover covers more and it has team-kill risk.
+      ko: 잡몹 정리용 리버레이터 드론으로 괜찮지만 로버가 더 넓게 커버하고 아군 피해 위험이 있습니다.
+  - kind: stratagem
+    id: ax-arc-3-guard-dog-k-9
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: "Arc drone that stuns chains of enemies; #3 friendly-fire killer in Year Two stats."
+      ko: 적을 연쇄 기절시키는 아크 드론이지만 2년 차 통계에서 아군 사살 3위입니다.
+  - kind: stratagem
+    id: ax-flam-75-guard-dog-hot-dog
+    overall: B
+    factions:
+      terminids: A
+      automatons: C
+    popularity: low
+    verdict:
+      en: Flame drone that burns bug chaff; weak and unreliable vs bots.
+      ko: 벌레 잡몹을 태우는 화염 드론이지만 오토마톤엔 약하고 불안정합니다.
+  - kind: stratagem
+    id: ax-las-5-guard-dog-rover
+    overall: A
+    factions:
+      terminids: S
+      automatons: B
+      illuminate: S
+    popularity: high
+    verdict:
+      en: Laser drone that melts chaff endlessly without ammo; a bug and squid-front staple.
+      ko: 탄약 없이 잡몹을 끝없이 녹이는 레이저 드론으로 테르미니드·일루미닛 단골입니다.
+  - kind: stratagem
+    id: ax-tx-13-guard-dog-dog-breath
+    overall: C
+    factions:
+      automatons: D
+    popularity: low
+    verdict:
+      en: Gas drone that confuses enemies; low kill speed.
+      ko: 적을 혼란시키는 가스 드론이지만 처치 속도가 느립니다.
+  - kind: stratagem
+    id: b-1-supply-pack
+    overall: A
+    popularity: high
+    verdict:
+      en: Carries team stims and ammo; strong on long missions and pairs with ammo-hungry primaries.
+      ko: 팀의 각성제와 탄약을 나르는 배낭으로 긴 임무와 탄 소모가 큰 무기에 잘 맞습니다.
+  - kind: stratagem
+    id: b-100-portable-hellbomb
+    overall: B
+    popularity: medium
+    verdict:
+      en: "Walk-in Hellbomb for deleting whole bases; powerful and fun, but #2 in team-kills."
+      ko: 기지를 통째로 지우는 휴대용 지옥폭탄으로 강력하지만 아군 사살 2위입니다.
+  - kind: stratagem
+    id: lift-182-warp-pack
+    overall: A
+    popularity: medium
+    verdict:
+      en: Short-range teleport that escapes pins and crosses gaps; one of the best mobility packs.
+      ko: 포위를 벗어나고 지형을 건너는 단거리 순간이동으로 최고의 이동 배낭 중 하나입니다.
+  - kind: stratagem
+    id: lift-850-jump-pack
+    overall: B
+    factions:
+      terminids: A
+    popularity: medium
+    verdict:
+      en: Jump to escape bug swarms and reach vantage points; solid mobility.
+      ko: 벌레 떼를 벗어나고 고지대에 오르는 점프로 좋은 이동 배낭입니다.
+  - kind: stratagem
+    id: lift-860-hover-pack
+    overall: B
+    popularity: low
+    verdict:
+      en: Hover for vertical positioning and aerial shots; niche but fun.
+      ko: 수직 위치 선정과 공중 사격용 호버로 틈새지만 재밌습니다.
+  - kind: stratagem
+    id: sh-20-ballistic-shield-backpack
+    overall: B
+    factions:
+      terminids: C
+      automatons: A
+    popularity: low
+    verdict:
+      en: 6.3.0 upgraded it to heavy armor; a strong bot-front cover tool with one-handed weapons.
+      ko: 6.3.0에서 고장갑으로 강화돼 한 손 무기와 함께 쓰는 오토마톤 전선 엄폐 수단입니다.
+  - kind: stratagem
+    id: sh-32-shield-generator-pack
+    overall: A
+    factions:
+      terminids: B
+      automatons: S
+    popularity: high
+    verdict:
+      en: Bubble that soaks bot fire and rockets; S-tier on the Automaton front.
+      ko: 오토마톤의 사격과 로켓을 흡수하는 방어막으로 오토마톤 전선에서 S급입니다.
+  - kind: stratagem
+    id: sh-51-directional-shield
+    overall: B
+    factions:
+      automatons: A
+    popularity: low
+    verdict:
+      en: Frontal energy shield that blocks bot fire; less flexible than the bubble.
+      ko: 전방 에너지 방패로 오토마톤 사격을 막지만 구형 방어막보다 유연성이 떨어집니다.
+  - kind: stratagem
+    id: a-ac-8-autocannon-sentry
+    overall: A
+    factions:
+      terminids: B
+    popularity: high
+    verdict:
+      en: Long-range heavy-hitting turret with doubled health since 6.3.0; the best all-round sentry.
+      ko: 6.3.0 이후 체력이 두 배가 된 장거리 고화력 포탑으로 최고의 만능 센트리입니다.
+  - kind: stratagem
+    id: a-arc-3-tesla-tower
+    overall: C
+    factions:
+      terminids: B
+    popularity: low
+    verdict:
+      en: Area arc tower that fries close swarms but also teammates.
+      ko: 근접한 무리를 태우지만 아군까지 태우는 아크 탑입니다.
+  - kind: stratagem
+    id: a-flam-40-flame-sentry
+    overall: B
+    factions:
+      terminids: A
+      automatons: C
+    popularity: low
+    verdict:
+      en: Flame turret buffed in 6.2.2; good for bug breach defense.
+      ko: 6.2.2에서 강화된 화염 포탑으로 벌레 출현 방어에 좋습니다.
+  - kind: stratagem
+    id: a-g-16-gatling-sentry
+    overall: B
+    factions:
+      terminids: A
+      automatons: C
+    popularity: high
+    verdict:
+      en: Short-cooldown chaff shredder; great vs bugs and Voteless, weak vs armor.
+      ko: 쿨다운이 짧은 잡몹 분쇄 포탑으로 테르미니드·보트리스엔 좋지만 장갑엔 약합니다.
+  - kind: stratagem
+    id: a-gm-17-gas-mortar-sentry
+    overall: B
+    factions:
+      terminids: A
+      automatons: C
+    popularity: low
+    verdict:
+      en: Gas mortar that confuses and chips crowds; decent bug-defense filler.
+      ko: 무리를 혼란시키고 깎는 가스 박격포로 괜찮은 벌레 방어용 보조입니다.
+  - kind: stratagem
+    id: a-las-98-laser-sentry
+    overall: B
+    popularity: low
+    verdict:
+      en: Ammo-free laser turret with sustained output; solid but overheats.
+      ko: 탄약이 필요 없는 지속 화력 레이저 포탑으로 좋지만 과열됩니다.
+  - kind: stratagem
+    id: a-m-12-mortar-sentry
+    overall: C
+    popularity: medium
+    verdict:
+      en: Indirect-fire mortar that clears groups but often hits teammates; C on bots per 7.0 guides.
+      ko: 무리를 정리하는 곡사 박격포지만 아군을 자주 맞힙니다. 7.0 가이드에서도 오토마톤 C급입니다.
+  - kind: stratagem
+    id: a-m-23-ems-mortar-sentry
+    overall: A
+    popularity: medium
+    verdict:
+      en: Stun mortar that slows everything near it; excellent defensive support.
+      ko: 주변 모든 적을 느리게 하는 기절 박격포로 방어 지원에 탁월합니다.
+  - kind: stratagem
+    id: a-mg-43-machine-gun-sentry
+    overall: B
+    popularity: medium
+    verdict:
+      en: Fast-cooldown medium-pen turret; reliable chaff and medium control.
+      ko: 쿨다운이 빠른 중장갑 관통 포탑으로 잡몹과 중형 적 제어에 믿을 만합니다.
+  - kind: stratagem
+    id: a-mls-4x-rocket-sentry
+    overall: B
+    popularity: medium
+    verdict:
+      en: Rocket turret that targets larger enemies; good complement to Gatling or MG sentries.
+      ko: 큰 적을 노리는 로켓 포탑으로 개틀링·기관총 센트리와 잘 어울립니다.
+  - kind: stratagem
+    id: e-at-12-anti-tank-emplacement
+    overall: B
+    popularity: low
+    verdict:
+      en: Manned AT cannon for defense missions; powerful but stationary.
+      ko: 방어 임무용 유인 대전차포로 강력하지만 고정식입니다.
+  - kind: stratagem
+    id: e-gl-21-grenadier-battlement
+    overall: C
+    popularity: low
+    verdict:
+      en: Grenade launcher behind heavy-armor wall (6.3.0); defensive niche only.
+      ko: 6.3.0에서 고장갑이 된 방벽 뒤 유탄 발사기로 방어용 틈새입니다.
+  - kind: stratagem
+    id: e-mg-101-hmg-emplacement
+    overall: C
+    popularity: low
+    verdict:
+      en: Stationary HMG nest; strong firepower but you're a sitting target.
+      ko: 고정식 중기관총 진지로 화력은 강하지만 표적이 되기 쉽습니다.
+  - kind: stratagem
+    id: fx-12-shield-generator-relay
+    overall: C
+    factions:
+      automatons: B
+    popularity: low
+    verdict:
+      en: Static dome shield for holding objectives vs bot fire.
+      ko: 오토마톤 사격 속에서 목표를 지키는 고정 방어막입니다.
+  - kind: stratagem
+    id: md-17-anti-tank-mines
+    overall: C
+    factions:
+      terminids: B
+    popularity: low
+    verdict:
+      en: 7.0 raised demolition strength to 40; good vs charging heavies on defense, niche otherwise.
+      ko: 7.0에서 파괴력이 40으로 올라 방어 시 돌진하는 대형 적에 좋지만 그 외엔 틈새입니다.
+  - kind: stratagem
+    id: md-6-anti-personnel-minefield
+    overall: C
+    popularity: low
+    verdict:
+      en: Chaff minefield for defense; top-5 team-killer in Year Two stats.
+      ko: 방어용 대인 지뢰밭으로 2년 차 통계 아군 사살 상위 5위에 들었습니다.
+  - kind: stratagem
+    id: md-8-gas-mines
+    overall: C
+    factions:
+      terminids: B
+    popularity: low
+    verdict:
+      en: Gas mines that confuse and damage bugs on defense.
+      ko: 방어 시 벌레를 혼란시키고 피해를 주는 가스 지뢰입니다.
+  - kind: stratagem
+    id: md-i4-incendiary-mines
+    overall: C
+    factions:
+      terminids: B
+    popularity: low
+    verdict:
+      en: Fire minefield for bug defense; weak elsewhere.
+      ko: 벌레 방어용 소이 지뢰밭으로 그 외엔 약합니다.
+  - kind: stratagem
+    id: exo-45-patriot-exosuit
+    overall: B
+    popularity: medium
+    verdict:
+      en: Rocket-and-minigun mech with 1,800 HP and 8-minute cooldown since 6.3.0; fun burst of power.
+      ko: 6.3.0 이후 체력 1,800·쿨다운 8분이 된 로켓·미니건 메크로 강력한 한 방을 줍니다.
+  - kind: stratagem
+    id: exo-49-emancipator-exosuit
+    overall: A
+    factions:
+      terminids: B
+    popularity: medium
+    verdict:
+      en: Twin autocannon mech; the strongest Exosuit after the 6.3.0 durability buffs.
+      ko: 쌍오토캐넌 메크로 6.3.0 내구도 버프 이후 가장 강한 엑소슈트입니다.
+  - kind: stratagem
+    id: exo-51-lumberer-exosuit
+    overall: B
+    popularity: low
+    verdict:
+      en: Exo Experts mech with heavy-hitting armament; sturdier after 6.3.0 but limited uses.
+      ko: 강한 무장을 가진 엑소 엑스퍼트 메크로 6.3.0 이후 튼튼해졌지만 사용 횟수가 제한됩니다.
+  - kind: stratagem
+    id: exo-55-breakthrough-exosuit
+    overall: B
+    popularity: low
+    verdict:
+      en: Assault Exosuit for breaking into bases; benefits from 6.3.0 armor buffs.
+      ko: 기지 돌파용 돌격 엑소슈트로 6.3.0 장갑 버프 덕을 봅니다.
+  - kind: stratagem
+    id: m-102-gunner-frv
+    overall: C
+    popularity: low
+    verdict:
+      en: Fast recon vehicle with turret gunner; 6.3.0 health buff helps, but only coordinated squads get value.
+      ko: 포탑 사수가 있는 고속 정찰 차량으로 6.3.0 체력 버프가 도움이 되지만 호흡이 맞는 분대만 효용을 봅니다.
+  - kind: stratagem
+    id: m-103-supply-frv
+    overall: C
+    popularity: low
+    verdict:
+      en: Supply-carrying FRV for mobile resupply; utility-only.
+      ko: 이동식 보급용 고속 정찰 차량으로 유틸 전용입니다.
+  - kind: stratagem
+    id: m-104-incinerator-frv
+    overall: C
+    factions:
+      terminids: B
+      automatons: D
+    popularity: rare
+    verdict:
+      en: Flame-armed FRV only seen as a campaign variation; can't be taken in normal loadouts.
+      ko: 캠페인 변형으로만 등장한 화염 장착 차량으로 일반 로드아웃에선 가져갈 수 없습니다.
+  - kind: stratagem
+    id: td-110-maelstrom
+    overall: B
+    popularity: low
+    verdict:
+      en: Campaign-reward vehicle with heavy firepower; strong but long cooldown and terrain-limited.
+      ko: 강한 화력의 캠페인 보상 차량이지만 쿨다운이 길고 지형 제약이 있습니다.
+  - kind: stratagem
+    id: td-220-bastion-mk-xvi
+    overall: B
+    popularity: low
+    verdict:
+      en: Tank now heavy-armored after 6.3.0; a strong mobile gun if the map allows.
+      ko: 6.3.0 이후 고장갑이 된 전차로, 지형만 맞으면 강력한 이동 포대입니다.
+  - kind: armor
+    id: extra-padding
+    overall: B
+    popularity: medium
+    verdict:
+      en: Flat armor bonus with no utility; safe but other passives give more.
+      ko: 유틸 없이 방어력만 올려 무난하지만 다른 패시브가 더 많은 걸 줍니다.
+  - kind: armor
+    id: democracy-protects
+    overall: A
+    popularity: high
+    verdict:
+      en: 50% chance to survive lethal hits and no chest bleed; one of the best survival passives.
+      ko: 치명타를 50% 확률로 버티고 흉부 출혈을 막는, 최고의 생존 패시브 중 하나입니다.
+  - kind: armor
+    id: servo-assisted
+    overall: A
+    popularity: high
+    verdict:
+      en: Longer throws for stratagems and grenades plus sturdier limbs; a strong all-round pick.
+      ko: 스트라타젬과 수류탄을 더 멀리 던지고 팔다리가 튼튼해지는 강력한 범용 패시브입니다.
+  - kind: armor
+    id: med-kit
+    overall: A
+    popularity: high
+    verdict:
+      en: Two extra stims and longer stim effect; the default pick for staying alive.
+      ko: 각성제 2개 추가와 효과 시간 증가로 생존의 기본 선택지입니다.
+  - kind: armor
+    id: engineering-kit
+    overall: A
+    popularity: high
+    verdict:
+      en: Two extra grenades and steadier crouched aim; great with Thermite and Impact builds.
+      ko: 수류탄 2개 추가와 앉아 쏘기 안정성으로 테르밋·충격 빌드에 좋습니다.
+  - kind: armor
+    id: scout
+    overall: B
+    popularity: low
+    verdict:
+      en: Radar pings from map markers and lower detection; good for stealthy or solo play.
+      ko: 지도 마커 레이더 스캔과 낮은 탐지 범위로 은신·솔로 플레이에 좋습니다.
+  - kind: armor
+    id: fortified
+    overall: A
+    factions:
+      terminids: C
+      illuminate: B
+    popularity: medium
+    verdict:
+      en: 50% explosive resistance counters rockets, artillery and your own blasts; strong vs bots.
+      ko: 폭발 피해 50% 저항으로 로켓·포격·자폭을 막아 오토마톤 상대로 강합니다.
+  - kind: armor
+    id: electrical-conduit
+    overall: C
+    popularity: low
+    verdict:
+      en: Arc immunity mostly protects you from teammates' arc weapons; niche.
+      ko: 아크 면역은 주로 아군 아크 무기로부터 지켜주는 틈새 패시브입니다.
+  - kind: armor
+    id: peak-physique
+    overall: B
+    popularity: low
+    verdict:
+      en: Better handling for heavy weapons and stronger melee; nice with support weapons.
+      ko: 무거운 무기 조작성과 근접 피해를 높여 지원무기와 잘 어울립니다.
+  - kind: armor
+    id: inflammable
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Fire resistance for flame builds and fire hazards; situational.
+      ko: 화염 빌드와 화재 환경용 화염 저항으로 상황을 탑니다.
+  - kind: armor
+    id: advanced-filtration
+    overall: B
+    factions:
+      automatons: C
+    popularity: low
+    verdict:
+      en: Gas resistance for gas builds and gas planets; situational.
+      ko: 가스 빌드와 가스 행성용 가스 저항으로 상황을 탑니다.
+  - kind: armor
+    id: unflinching
+    overall: B
+    factions:
+      automatons: A
+    popularity: low
+    verdict:
+      en: Less flinch plus armor and radar pings; good for holding lines vs bots.
+      ko: 피격 경직 감소와 방어력, 레이더 스캔으로 오토마톤 상대 전선 유지에 좋습니다.
+  - kind: armor
+    id: siege-ready
+    overall: A
+    popularity: medium
+    verdict:
+      en: Faster primary reloads and 20% more ammo; excellent for ammo-hungry primaries.
+      ko: 주무기 재장전 가속과 탄약 20% 증가로 탄 소모가 큰 주무기에 탁월합니다.
+  - kind: armor
+    id: acclimated
+    overall: B
+    popularity: low
+    verdict:
+      en: Split resistance to fire, gas, acid and arc; flexible for hazard planets.
+      ko: 화염·가스·산성·전기 피해를 나눠 막아 위험 행성에서 유연합니다.
+  - kind: armor
+    id: integrated-explosives
+    overall: C
+    popularity: low
+    verdict:
+      en: Extra grenades, but your corpse explodes on death — often on teammates.
+      ko: 수류탄이 늘지만 사망 시 시체가 폭발해 종종 아군을 휘말리게 합니다.
+  - kind: armor
+    id: gunslinger
+    overall: B
+    popularity: low
+    verdict:
+      en: Faster, steadier sidearm handling; good with Senator or Bolt Pistol builds.
+      ko: 보조무기 조작을 빠르고 안정적으로 만들어 세너터·볼트 피스톨 빌드에 좋습니다.
+  - kind: armor
+    id: reinforced-epaulettes
+    overall: B
+    popularity: low
+    verdict:
+      en: Faster reloads, limb-injury protection and melee bonus; a decent hybrid.
+      ko: 재장전 가속, 부상 방지, 근접 보너스를 섞은 괜찮은 복합 패시브입니다.
+  - kind: armor
+    id: ballistic-padding
+    overall: B
+    factions:
+      automatons: A
+    popularity: low
+    verdict:
+      en: Chest and explosive resistance with no chest bleed; solid vs bots.
+      ko: 흉부·폭발 저항과 흉부 출혈 방지로 오토마톤 상대로 좋습니다.
+  - kind: armor
+    id: adreno-defibrillator
+    overall: B
+    popularity: medium
+    verdict:
+      en: One-time revival after death plus longer stims; strong insurance for solo play.
+      ko: 사망 후 1회 부활과 각성제 지속시간 증가로 솔로 플레이에 강한 보험입니다.
+  - kind: armor
+    id: feet-first
+    overall: B
+    popularity: low
+    verdict:
+      en: Quiet movement and leg-injury immunity; good for stealth and mobility.
+      ko: 조용한 이동과 다리 부상 면역으로 은신과 기동에 좋습니다.
+  - kind: armor
+    id: desert-stormer
+    overall: B
+    popularity: low
+    verdict:
+      en: Hazard resistance plus longer throws; a softer Servo/Acclimated hybrid.
+      ko: 위험 저항과 투척 거리 증가를 섞은 서보 보조·적응력의 절충형입니다.
+  - kind: armor
+    id: rock-solid
+    overall: B
+    popularity: low
+    verdict:
+      en: Resists knockdown and boosts melee; helps vs staggering enemies.
+      ko: 넘어짐에 강해지고 근접 피해가 늘어 경직을 주는 적 상대에 도움이 됩니다.
+  - kind: armor
+    id: reduced-signature
+    overall: B
+    popularity: low
+    verdict:
+      en: Hard to detect and quiet; best for stealth or objective runners.
+      ko: 탐지가 어렵고 조용해 은신·목표 수행 담당에게 좋습니다.
+  - kind: armor
+    id: supplementary-adrenaline
+    overall: B
+    popularity: low
+    verdict:
+      en: Stamina back when hit plus armor; decent for aggressive play.
+      ko: 피격 시 스태미나 회복과 방어력으로 공격적인 플레이에 괜찮습니다.
+  - kind: armor
+    id: concussive-padding-reinforced
+    overall: A
+    factions:
+      terminids: B
+      illuminate: B
+    popularity: low
+    verdict:
+      en: "New 7.0 set: 50% explosive resistance with higher armor; a heavier Fortified for the bot front."
+      ko: 7.0 신규 세트로 폭발 저항 50%와 높은 방어력을 줘, 오토마톤 전선의 더 튼튼한 강화 패시브입니다.
+  - kind: armor
+    id: concussive-padding-hazmat
+    overall: B
+    factions:
+      automatons: A
+    popularity: low
+    verdict:
+      en: "New 7.0 set: explosive and some gas resistance plus steadier sidearms; a bot-front hybrid."
+      ko: 7.0 신규 세트로 폭발·일부 가스 저항과 보조무기 반동 감소를 주는 오토마톤용 복합 패시브입니다.
+  - kind: armor
+    id: concussive-padding-grenadier
+    overall: A
+    factions:
+      terminids: B
+      illuminate: B
+    popularity: low
+    verdict:
+      en: "New 7.0 set: 50% explosive resistance plus two extra grenades; Fortified and Engineering Kit in one."
+      ko: 7.0 신규 세트로 폭발 저항 50%와 수류탄 2개 추가를 줘 강화와 공병 키트를 합친 셈입니다.
+  - kind: armor
+    id: oxygenator
+    overall: B
+    factions:
+      terminids: A
+    popularity: low
+    verdict:
+      en: Faster movement and slides; useful for kiting bug swarms.
+      ko: 이동과 슬라이딩이 빨라져 벌레 떼를 따돌리기 좋습니다.
+  - kind: armor
+    id: kinetic-displacement-mitigation
+    overall: B
+    popularity: low
+    verdict:
+      en: Fire resistance, limb protection and collision damage reduction; a sturdy hybrid.
+      ko: 화염 저항, 부상 방지, 충돌 피해 감소를 섞은 튼튼한 복합 패시브입니다.
+  - kind: armor
+    id: true-grit
+    overall: B
+    popularity: low
+    verdict:
+      en: Faster support weapon reloads; good with Autocannon or Recoilless solo.
+      ko: 지원무기 재장전이 빨라져 오토캐넌·무반동포 솔로 운용에 좋습니다.
+  - kind: armor
+    id: blunt-force-mitigation
+    overall: B
+    popularity: low
+    verdict:
+      en: Knockdown and collision resistance with extra armor; decent vs Chargers and Crushers.
+      ko: 넘어짐·충돌 저항과 추가 방어력으로 차저·크러셔 상대에 괜찮습니다.
+  - kind: booster
+    id: hellpod-space-optimization
+    overall: S
+    popularity: very-high
+    verdict:
+      en: Everyone lands fully stocked on ammo, grenades and stims; the default first booster.
+      ko: 모두가 탄약·수류탄·각성제를 가득 채운 채 착지하는 기본 첫 번째 부스터입니다.
+  - kind: booster
+    id: vitality-enhancement
+    overall: S
+    popularity: very-high
+    verdict:
+      en: Team-wide damage reduction and injury resistance; always worth a slot.
+      ko: 팀 전체 피해 감소와 부상 저항으로 언제나 슬롯 가치가 있습니다.
+  - kind: booster
+    id: uav-recon-booster
+    overall: B
+    popularity: low
+    verdict:
+      en: Larger radar range for spotting patrols; nice but low impact.
+      ko: 순찰대를 발견하는 레이더 범위를 넓히지만 영향이 적습니다.
+  - kind: booster
+    id: stamina-enhancement
+    overall: A
+    popularity: high
+    verdict:
+      en: More stamina and faster regen; essential for kiting on bugs and repositioning everywhere.
+      ko: 스태미나와 회복을 늘려 벌레 따돌리기와 재배치에 필수적입니다.
+  - kind: booster
+    id: muscle-enhancement
+    overall: A
+    factions:
+      automatons: B
+    popularity: medium
+    verdict:
+      en: Ignore slowdown on snow, mud and swamp terrain; great on those planets.
+      ko: 눈·진흙·늪 지형 감속을 무시해 해당 행성에서 매우 좋습니다.
+  - kind: booster
+    id: increased-reinforcement-budget
+    overall: B
+    popularity: medium
+    verdict:
+      en: More reinforcements per mission; a safety net for less coordinated squads.
+      ko: 임무당 증원 횟수를 늘려 호흡이 덜 맞는 분대의 안전망이 됩니다.
+  - kind: booster
+    id: flexible-reinforcement-budget
+    overall: B
+    popularity: low
+    verdict:
+      en: Faster reinforcement regeneration after the pool is spent; niche safety net.
+      ko: 증원이 바닥난 뒤 회복 속도를 높이는 틈새 안전망입니다.
+  - kind: booster
+    id: localization-confusion
+    overall: B
+    popularity: low
+    verdict:
+      en: Longer gaps between enemy encounters; useful for objective-focused runs.
+      ko: 적 조우 간격을 늘려 목표 중심 플레이에 유용합니다.
+  - kind: booster
+    id: expert-extraction-pilot
+    overall: C
+    popularity: low
+    verdict:
+      en: Faster extraction shuttle; small value once the rest of the team has good boosters.
+      ko: 탈출선이 빨리 오지만 다른 좋은 부스터가 있다면 가치가 작습니다.
+  - kind: booster
+    id: motivational-shocks
+    overall: B
+    factions:
+      terminids: A
+      automatons: C
+    popularity: low
+    verdict:
+      en: Recover faster from slows like bile and acid; good on bugs.
+      ko: 담즙·산성 같은 감속에서 빨리 회복해 테르미니드에 좋습니다.
+  - kind: booster
+    id: experimental-infusion
+    overall: A
+    popularity: medium
+    verdict:
+      en: Stims add speed and damage reduction; strong for aggressive play.
+      ko: 각성제에 이동 속도와 피해 감소를 더해 공격적인 플레이에 강합니다.
+  - kind: booster
+    id: firebomb-hellpods
+    overall: C
+    popularity: low
+    verdict:
+      en: Hellpods ignite the landing zone; minor value.
+      ko: 헬포드가 착지 지점을 불태우지만 가치가 작습니다.
+  - kind: booster
+    id: dead-sprint
+    overall: B
+    popularity: low
+    verdict:
+      en: Keep sprinting at the cost of health; a desperate-escape tool.
+      ko: 체력을 대가로 계속 달리는 필사의 탈출 도구입니다.
+  - kind: booster
+    id: armed-resupply-pods
+    overall: C
+    popularity: low
+    verdict:
+      en: Resupply pods gain a Liberator turret; minor chaff help.
+      ko: 재보급 포드에 리버레이터 포탑이 달리지만 잡몹 처리 도움은 미미합니다.
+  - kind: booster
+    id: sample-extricator
+    overall: C
+    popularity: low
+    verdict:
+      en: Large enemies drop samples; only for sample farming.
+      ko: 대형 적이 샘플을 떨구는 샘플 파밍용 부스터입니다.
+  - kind: booster
+    id: sample-scanner
+    overall: D
+    popularity: low
+    verdict:
+      en: 15% double samples; negligible once you have samples to spare.
+      ko: 샘플 2배 확률 15%로, 샘플이 넉넉해지면 무의미합니다.
+  - kind: booster
+    id: stun-pods
+    overall: C
+    popularity: low
+    verdict:
+      en: Hellpods stun enemies on landing; small reinforcement safety.
+      ko: 헬포드 착지 시 적을 기절시켜 증원을 약간 안전하게 합니다.
+  - kind: booster
+    id: concealed-insertion
+    overall: C
+    popularity: low
+    verdict:
+      en: Smoke on Hellpod landing; minor.
+      ko: 헬포드 착지 시 연막을 뿌리지만 효과가 작습니다.
+  - kind: booster
+    id: surplus-eat-allocation
+    overall: B
+    popularity: low
+    verdict:
+      en: Two free EAT-17 calls per mission; useful if nobody brings anti-tank.
+      ko: 임무당 EAT-17 두 번을 무료로 줘 대전차 담당이 없을 때 유용합니다.
+  - kind: booster
+    id: integrated-extinguishers
+    overall: C
+    factions:
+      terminids: B
+    popularity: low
+    verdict:
+      en: Burn out faster; only matters with flame builds or fire planets.
+      ko: 불이 빨리 꺼져 화염 빌드나 화재 행성에서만 의미가 있습니다.
