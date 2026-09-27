@@ -1,0 +1,576 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: Bandit2Body
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: mixed
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Bandit
+  - https://rogueranker.com/risk-of-rain-2-bandit/
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=2494553860
+  - https://steamcommunity.com/app/632360/discussions/0/3076495389993149591
+  - https://steamcommunity.com/app/632360/discussions/0/3049485912454441286
+  - https://riskofrain2.wiki.gg/wiki/Noxious_Thorn
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.6
+builds:
+  - id: bandit2-lights-out-backstab-reset
+    title:
+      en: Lights Out backstab reset
+      ko: 소등 백스탭 초기화
+    difficulty: intermediate
+    summary:
+      en: Get behind enemies for guaranteed Backstab crits, then finish with Lights Out to reset every cooldown. Attack speed only shortens reload, so value comes from damage, on-kill and on-crit items.
+      ko: 적의 뒤를 잡아 백스탭 확정 치명타를 넣고 소등으로 마무리해 모든 쿨타임을 초기화합니다. 공격 속도는 재장전 속도에만 영향을 주므로 피해량, 처치 시, 치명타 시 아이템이 핵심입니다.
+    loadout:
+      primary: BANDIT2_PRIMARY_NAME
+      secondary: BANDIT2_SECONDARY_NAME
+      utility: BANDIT2_UTILITY_NAME
+      special: BANDIT2_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Damage and reload
+          ko: 피해량과 재장전
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: Crowbar
+            priority: core
+            note:
+              en: Pushes Lights Out over the kill line on healthy targets.
+              ko: 체력이 많은 대상에게 소등이 처치선을 넘기도록 도와줍니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +75% per stack, linear; this build opens on healthy targets, so 5 (+375%) is worth reaching.
+              ko: 개당 +75%로 선형입니다. 이 빌드는 체력이 가득한 적을 먼저 치므로 5개(+375%)까지 모을 가치가 있습니다.
+          - id: Syringe
+            priority: core
+            note:
+              en: Faster reloads and faster Lights Out firing.
+              ko: 재장전과 소등 발사가 빨라집니다.
+            stacks:
+              target: 4
+            stacksReason:
+              en: +15% attack speed per stack, linear with no cap; for Bandit it only shortens reloads and Lights Out's fire time, so 4 (+60%) is plenty.
+              ko: 개당 공격 속도 +15%로 선형이며 상한이 없습니다. 밴딧은 재장전과 소등 사격 시간만 줄어들므로 4개(+60%)면 충분합니다.
+          - id: Hoof
+            priority: optional
+            note:
+              en: Faster repositioning for backstabs.
+              ko: 백스탭 위치를 더 빨리 잡습니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +14% speed per stack; 3 (+42%) covers mobility, then whites are better spent on damage.
+              ko: 개당 이동 속도 +14%라 3개(+42%)면 기동력은 충분하고, 그 뒤 흰색은 화력에 쓰는 게 낫습니다.
+        next:
+          - onkill
+          - crit
+          - bleed
+      - id: onkill
+        phase: mid
+        label:
+          en: On-kill chain
+          ko: 처치 시 연쇄
+        when:
+          en: If Lights Out is killing small enemies reliably.
+          ko: 소등으로 작은 적을 안정적으로 처치하고 있다면.
+        items:
+          - id: Bandolier
+            priority: core
+            note:
+              en: Extra cooldown resets on kill.
+              ko: 처치 시 추가 쿨타임 초기화 기회가 됩니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 3
+            stacksReason:
+              en: 20.4% / 30.4% / 36.7% at 1-3 stacks, and each copy after the third adds under 5 points.
+              ko: 위키 드롭 확률표 기준 1~3개에서 20.4% / 30.4% / 36.7%이고, 3개 이후로는 개당 5%p도 늘지 않습니다.
+          - id: ExplodeOnDeath
+            priority: optional
+            note:
+              en: Kills spill damage to nearby enemies.
+              ko: 처치 피해가 주변 적에게 번집니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: damage +280% and radius +2.4 m per stack; 2 clear most packs, then other greens.
+              ko: 개당 피해 +280%, 반경 +2.4m입니다. 2개면 대부분의 무리를 정리하고, 그 뒤엔 다른 녹색 아이템을 고르세요.
+          - id: Dagger
+            priority: optional
+            note:
+              en: Kills launch homing daggers.
+              ko: 처치 시 유도 단검을 발사합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy fires 3 homing daggers per kill, and a second is a bonus rather than a goal.
+              ko: 전설 아이템입니다. 1개로 처치마다 유도 단검 3개가 나가고, 두 번째는 목표가 아니라 덤입니다.
+        next:
+          - late
+      - id: crit
+        phase: mid
+        label:
+          en: On-crit payoff
+          ko: 치명타 시 효과
+        when:
+          en: Backstab shotgun pellets all crit, so on-crit items trigger per pellet.
+          ko: 뒤에서 쏜 산탄은 모든 탄환이 치명타라 탄환마다 치명타 효과가 발동합니다.
+        items:
+          - id: HealOnCrit
+            priority: core
+            note:
+              en: Healing from guaranteed backstab crits.
+              ko: 확정 백스탭 치명타로 회복합니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +4 heal per crit per stack and this build crits constantly, so 3 (16 per crit) is worth it.
+              ko: 개당 치명타 회복 +4이고 이 빌드는 치명타가 끊임없이 터지므로 3개(치명타당 16)까지 챙기세요.
+          - id: AttackSpeedOnCrit
+            priority: situational
+            note:
+              en: Good early; the wiki warns late stacks can throw off your Lights Out timing.
+              ko: 초반엔 좋지만, 위키는 후반에 소등 타이밍이 흐트러질 수 있다고 경고합니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: only the first copy gives the 5% crit, and extra attack speed cap can throw off Lights Out timing, so keep one.
+              ko: 위키 기준 치명타 5%는 첫 개만 주고, 공격 속도 상한이 더 오르면 소등 타이밍이 어긋날 수 있어 1개만 두세요.
+          - id: SecondarySkillMagazine
+            priority: optional
+            note:
+              en: More Serrated Dagger uses.
+              ko: 톱니 단검을 더 자주 씁니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +1 Serrated Dagger charge per stack (wiki); 3 charges before whites that help Lights Out more.
+              ko: 위키 기준 개당 톱니 단검 충전 +1입니다. 충전 3회까지 챙기고, 그 뒤엔 소등에 더 도움 되는 흰색을 고르세요.
+        next:
+          - late
+      - id: bleed
+        phase: mid
+        label:
+          en: Hemorrhage spread
+          ko: 과다출혈 확산
+        when:
+          en: If you land Serrated Dagger crits often (Seekers of the Storm 2.0 item).
+          ko: 톱니 단검 치명타를 자주 넣는다면(SotS 2.0 아이템).
+        items:
+          - id: TriggerEnemyDebuffs
+            priority: optional
+            note:
+              en: Since the Dec 2024 rework, kills pass 33% of debuff stacks, including Hemorrhage, to a nearby enemy.
+              ko: 2024년 12월 개편 이후 처치 시 과다출혈 등 디버프 중첩의 33%를 주변 적에게 옮깁니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: each stack passes debuffs to one more enemy (+5 m range); 2 spreads Hemorrhage well enough.
+              ko: 개당 디버프를 넘길 적이 1명(+5m 범위)씩 늘어납니다. 2개면 과다출혈을 충분히 퍼뜨립니다.
+          - id: BleedOnHitVoid
+            priority: optional
+            note:
+              en: Void item; its delayed collapse lets Bandit take kills without allies stealing them.
+              ko: 공허 아이템. 지연되는 붕괴 피해로 아군에게 처치를 뺏기지 않습니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +10% collapse chance per stack; 3 (30%) makes collapses a regular kill source.
+              ko: 개당 붕괴 확률 +10%라 3개(30%)면 붕괴가 꾸준한 처치 수단이 됩니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late-game
+          ko: 후반
+        when:
+          en: Legendary and boss items.
+          ko: 전설·보스 아이템.
+        items:
+          - id: UtilitySkillMagazine
+            priority: core
+            note:
+              en: Extra Smoke Bomb charges give very high invisibility uptime.
+              ko: 연막탄 충전이 늘어 투명 유지 시간이 크게 늘어납니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: the 33% cooldown cut comes with the first copy; a second adds 2 more charges, which this build uses for chaining.
+              ko: 쿨타임 33% 감소는 첫 개에서 끝나고, 두 번째는 충전을 2회 더 줘서 연속 사용에 쓰입니다.
+          - id: EquipmentMagazineVoid
+            priority: optional
+            note:
+              en: Extra Lights Out charges; kills refresh all of them.
+              ko: 소등 충전이 늘고 처치 시 전부 초기화됩니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: +1 Lights Out charge per stack and kills refresh them all (wiki); 2 charges is a solid goal for a rare void item.
+              ko: 위키 기준 개당 소등 충전 +1이고 처치 시 모두 회복됩니다. 드문 공허 아이템이라 2개가 적당한 목표입니다.
+          - id: Behemoth
+            priority: optional
+            note:
+              en: Explosion kills still trigger on-kill effects.
+              ko: 폭발로 처치해도 처치 시 효과가 발동합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy makes every shot explode, and a second is a bonus rather than a goal.
+              ko: 전설 아이템입니다. 1개로 모든 공격이 폭발하고, 두 번째는 목표가 아니라 덤입니다.
+          - id: CritDamage
+            priority: optional
+            note:
+              en: Backstabs always crit, so crit damage always applies.
+              ko: 백스탭은 항상 치명타라 치명타 피해가 항상 적용됩니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy adds +100% crit damage, a big jump once crit is near 100%, and more are a bonus.
+              ko: 전설 아이템이라 1개로 치명타 피해 +100%를 얻습니다. 치명타가 100%에 가까우면 큰 상승이고, 더 나오면 덤입니다.
+          - id: BleedOnHitAndExplode
+            priority: situational
+            note:
+              en: "Take it once your crit chance is 30% or more: crit bleeds and on-death explosions chain kills, which feeds Lights Out resets. Below that, bleeds drop off during reloads."
+              ko: 치명타 확률이 30% 이상일 때 챙기세요. 치명타 출혈과 처치 시 폭발이 연쇄 처치를 만들어 소등 초기화와 잘 맞습니다. 그보다 낮으면 재장전 중에 출혈이 끊깁니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy gives the 5% crit and bleed on crit; extra copies only enlarge the death explosion, and boss items are rare.
+              ko: 1개로 치명타 5%와 치명타 출혈이 모두 생기고, 추가분은 처치 폭발 피해만 늘립니다. 보스 아이템이라 잘 나오지도 않습니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Elite chains and staying alive
+          ko: 정예 연쇄와 생존
+        when:
+          en: After the first loop, when most packs include elites.
+          ko: 첫 루프 이후, 대부분의 무리에 정예가 섞일 때.
+        items:
+          - id: KillEliteFrenzy
+            priority: core
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Elite kills drop all cooldowns to 0.5 s for 4 s (+4 s per stack); more elites spawn in long runs.
+              ko: 정예 처치 시 4초(+4초/개) 동안 모든 쿨타임이 0.5초가 됩니다. 긴 런일수록 정예가 많이 나옵니다.
+            stacksReason:
+              en: 4 s of 0.5 s cooldowns per stack, linear; a second copy doubles the window to 8 s, and more legendaries are rare.
+              ko: 개당 4초씩 선형으로 늘어나며, 2개면 8초로 두 배가 됩니다. 전설 아이템이라 그 이상은 드뭅니다.
+          - id: Bear
+            priority: core
+            stacks:
+              target: 10
+              min: 4
+            note:
+              en: Players who struggle past stage 7 add Tougher Times; 10 stacks = 60% block.
+              ko: 후반에 버티기 힘든 유저들이 힘들었던 시절을 추가합니다. 10개면 막기 60%입니다.
+            stacksReason:
+              en: hyperbolic block chance, 10 stacks = 60% and each copy past 10 adds under 2.5 points; loop guides stack it to about 10.
+              ko: 위키 기준 쌍곡선 중첩이라 10개면 막기 60%이고, 10개 이후로는 개당 2.5%p도 안 늘어납니다. 루프 공략들도 10개 정도를 목표로 합니다.
+          - id: MissileVoid
+            priority: situational
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Burst's pellets each fire a missile while you have shield (wiki notes Bandit's Burst as a good user).
+              ko: 보호막이 있는 동안 버스트의 산탄 한 발마다 미사일이 나갑니다(위키가 밴딧 버스트를 좋은 예로 듭니다).
+            stacksReason:
+              en: +40% missile damage per stack (wiki), and with no AtG in this tree it only comes from void cradles, so 2 is realistic.
+              ko: 위키 기준 개당 미사일 피해 +40%입니다. 이 빌드는 AtG를 모으지 않아 공허 요람에서만 얻으므로 2개가 현실적입니다.
+        next: []
+    pickOrder:
+      common:
+        - Crowbar
+        - Syringe
+        - Hoof
+        - CritGlasses
+        - SecondarySkillMagazine
+      uncommon:
+        - AttackSpeedOnCrit
+        - HealOnCrit
+        - Bandolier
+        - ExplodeOnDeath
+        - Missile
+      legendary:
+        - CritDamage
+        - UtilitySkillMagazine
+        - Behemoth
+    milestones:
+      - when:
+          en: Once you have 1 Predatory Instincts
+          ko: 포식 본능이 1개 생기면
+        advice:
+          en: Take no more; extra copies only add attack speed that can throw off Lights Out timing.
+          ko: 더 챙기지 마세요. 추가분은 소등 타이밍을 흐트러뜨릴 수 있는 공격 속도만 늘립니다.
+        take: []
+        stop:
+          - AttackSpeedOnCrit
+      - when:
+          en: When Lights Out reliably one-shots normal enemies
+          ko: 소등이 일반 적을 안정적으로 한 방에 잡으면
+        advice:
+          en: Shift from damage to on-kill items and extra Lights Out charges.
+          ko: 피해량보다 처치 시 아이템과 소등 추가 충전을 챙기세요.
+        take:
+          - Bandolier
+          - EquipmentMagazineVoid
+        stop: []
+      - when:
+          en: When you have 3 Bandoliers
+          ko: 탄약띠가 3개가 되면
+        advice:
+          en: Further copies add little drop chance; prefer other greens.
+          ko: 추가 탄약띠는 드롭 확률이 거의 안 늘어나니 다른 녹색 아이템을 고르세요.
+        take: []
+        stop:
+          - Bandolier
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: "Elites become common: Brainstalks turns each elite kill into a burst of free skills. Add Tougher Times for defense."
+          ko: 정예가 흔해집니다. 뇌줄기로 정예 처치마다 스킬을 난사하고, 방어용으로 힘들었던 시절을 추가하세요.
+        take:
+          - KillEliteFrenzy
+          - Bear
+        stop: []
+    avoid:
+      - id: BleedOnHit
+        reason:
+          en: Bleed stacks fall off during Bandit's reload animation unless you have a lot of attack speed.
+          ko: 공격 속도가 충분하지 않으면 재장전 중에 출혈 중첩이 사라집니다.
+      - id: CritGlassesVoid
+        reason:
+          en: Its instant-kill chance fits poorly with a crit-focused Bandit; better options exist.
+          ko: 즉사 확률이 치명타 중심인 도적과 맞지 않으며 더 좋은 선택지가 있습니다.
+      - id: WarCryOnMultiKill
+        reason:
+          en: Late-game attack speed bursts can throw off your Lights Out timing.
+          ko: 후반의 순간 공격 속도 증가가 소등 타이밍을 흐트러뜨릴 수 있습니다.
+    evidence: |-
+      Loadout: wiki recommends Serrated Dagger and Lights Out; Rogue Ranker uses Serrated Shiv instead (disagreement on secondary). Crowbar, Syringe, Goat Hoof, Predatory, Bandolier, Backup Magazine, Shatterspleen, Laser Scope, Lysate Cell: Rogue Ranker (undated). Afterburner, Behemoth, Lysate Cell, Needletick, Bandolier and all avoids: wiki. On-kill and Scythe: Rogue Ranker summary of Steam/Reddit comments. Noxious Thorn: wiki item page (Bandit Hemorrhage synergy) after the V1.3.6 rework, so it is patch-sensitive and not yet in community guides. Shatterspleen and Predatory Instincts are disputed between the wiki and community.
+
+      Stack counts and progression: Wiki item pages: Predatory crit not stacking and cap +24%; Scythe +4 per stack and 'guaranteed crits (Bandit)' synergy; Bandolier drop table; Afterburner cooldown not stacking; Lysate Cell 'more spammable with multiple stacks'; Brainstalks 4 s (+4 s); Tougher Times table; Plasma Shrimp page names Bandit's Burst. The 1-Predatory cap combines the non-stacking crit with the wiki's Bandit warning about late attack speed; it is a derivation. Pick order: Rogue Ranker (Syringe, Predatory, Shatterspleen, Laser Scope, Crowbar, Hoof, Lysate Cell, Bandolier, Backup Mag), md-eksperiment tier list (Crowbar/Syringe/Glasses S-tier; low quality, likely generated). Loop: Steam 'Lights Out or Desperado?' thread (Brainstalks; 2021), Steam mastery-help thread (Tougher Times; stage 7+ trouble), fandom Brainstalks page (more elites late). Boss order omitted: Shatterspleen is disputed between Rogue Ranker and the wiki. Steam guides returned HTTP 429; Reddit could not be fetched.
+  - id: bandit2-desperado-scaling
+    title:
+      en: Desperado scaling
+      ko: 데스페라도 스케일링
+    difficulty: advanced
+    summary:
+      en: Desperado gains damage per kill, but the tokens reset every stage, so farm kills early in each stage. It lacks Lights Out's cooldown reset, so use cooldown reduction and Bandolier instead.
+      ko: 데스페라도는 처치할 때마다 피해량이 쌓이지만 스테이지마다 초기화되므로, 매 스테이지 초반에 처치를 많이 쌓으세요. 소등처럼 쿨타임 초기화가 없으므로 쿨타임 감소와 탄약띠로 보완합니다.
+    loadout:
+      primary: BANDIT2_PRIMARY_ALT_NAME
+      secondary: BANDIT2_SECONDARY_NAME
+      utility: BANDIT2_UTILITY_NAME
+      special: BANDIT2_SPECIAL_ALT_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Stack Desperado early
+          ko: 초반 데스페라도 중첩
+        when:
+          en: "Stages 1-3: kill as much as possible with Desperado."
+          ko: "1~3스테이지: 데스페라도로 최대한 많이 처치하세요."
+        items:
+          - id: Crowbar
+            priority: core
+            note:
+              en: Multiplies Desperado's big single shots.
+              ko: 데스페라도의 강한 단발 피해를 크게 늘립니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +75% per stack, linear; this build opens on healthy targets, so 5 (+375%) is worth reaching.
+              ko: 개당 +75%로 선형입니다. 이 빌드는 체력이 가득한 적을 먼저 치므로 5개(+375%)까지 모을 가치가 있습니다.
+          - id: Syringe
+            priority: core
+            note:
+              en: Faster Desperado firing and reloads.
+              ko: 데스페라도 발사와 재장전이 빨라집니다.
+            stacks:
+              target: 4
+            stacksReason:
+              en: +15% attack speed per stack, linear with no cap; for Bandit it only shortens reloads and Desperado's fire time, so 4 (+60%) is plenty.
+              ko: 개당 공격 속도 +15%로 선형이며 상한이 없습니다. 밴딧은 재장전과 무법자 사격 시간만 줄어들므로 4개(+60%)면 충분합니다.
+        next:
+          - cdr
+      - id: cdr
+        phase: mid
+        label:
+          en: Replace the reset
+          ko: 초기화 대체
+        when:
+          en: When you see a Lunar pod or cooldown items.
+          ko: 달 캡슐이나 쿨타임 아이템이 보이면.
+        items:
+          - id: LunarBadLuck
+            priority: core
+            note:
+              en: Early Purity stacks let you fire Desperado constantly (guides use about 4).
+              ko: 초반 순수 중첩으로 데스페라도를 계속 쓸 수 있습니다(공략은 약 4개 사용).
+            stacks:
+              target: 4
+              min: 2
+              max: 4
+            stacksReason:
+              en: Steam 'Item Builds' guide runs about 4 Purities; cooldowns cannot go below 0.5 s, so more only costs luck.
+              ko: Steam 'Item Builds' 공략은 순수를 4개 정도 씁니다. 쿨타임은 0.5초 아래로 내려가지 않아 그 이상은 행운만 깎습니다.
+          - id: Bandolier
+            priority: core
+            note:
+              en: Makes up for Desperado having no reset on kill.
+              ko: 처치 시 초기화가 없는 데스페라도를 보완합니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 3
+            stacksReason:
+              en: 20.4% / 30.4% / 36.7% at 1-3 stacks, and each copy after the third adds under 5 points.
+              ko: 위키 드롭 확률표 기준 1~3개에서 20.4% / 30.4% / 36.7%이고, 3개 이후로는 개당 5%p도 늘지 않습니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late-game
+          ko: 후반
+        when:
+          en: Legendary and boss items.
+          ko: 전설·보스 아이템.
+        items:
+          - id: UtilitySkillMagazine
+            priority: optional
+            note:
+              en: Near-permanent Smoke Bomb invisibility.
+              ko: 연막탄 투명을 거의 계속 유지합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: the 33% cooldown cut does not stack; one copy already gives +2 charges, extras only add charges.
+              ko: 쿨타임 33% 감소는 중첩되지 않고 1개로 충전 +2가 생깁니다. 추가분은 충전만 늘립니다.
+          - id: ExecuteLowHealthElite
+            priority: optional
+            note:
+              en: Executes elites that Desperado leaves low.
+              ko: 데스페라도로 체력이 줄어든 정예를 처형합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +13% execute threshold per stack; 2 cover what Desperado leaves behind, then other greens.
+              ko: 개당 처형 기준 +13%입니다. 2개면 무법자가 남긴 엘리트를 정리하고, 그 뒤엔 다른 녹색 아이템을 고르세요.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Endless Desperado
+          ko: 무한 데스페라도
+        when:
+          en: Once Desperado one-shots most enemies, typically in long runs.
+          ko: 데스페라도가 대부분의 적을 한 방에 잡을 때, 주로 긴 런에서.
+        items:
+          - id: KillEliteFrenzy
+            priority: core
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: "Players call Desperado a straight upgrade once you have Brainstalks: elite kills let you spam it and stack tokens."
+              ko: 뇌줄기가 생기면 데스페라도가 확실한 상위호환이라는 평입니다. 정예를 잡으면 난사하며 토큰을 쌓을 수 있습니다.
+            stacksReason:
+              en: 4 s of 0.5 s cooldowns per stack, linear; a second copy doubles the window to 8 s, and more legendaries are rare.
+              ko: 개당 4초씩 선형으로 늘어나며, 2개면 8초로 두 배가 됩니다. 전설 아이템이라 그 이상은 드뭅니다.
+          - id: AlienHead
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Pairs with Purity; applies first, then Purity's flat reduction.
+              ko: 순수와 잘 맞습니다. 외계인 머리가 먼저 적용되고 순수의 고정 감소가 뒤에 붙습니다.
+            stacksReason:
+              en: "Rogue Ranker calls 1-2 Alien Heads the efficient range; wiki: two stacks cut cooldowns by 43.8%."
+              ko: Rogue Ranker는 외계인 머리 1~2개를 효율 구간으로 봅니다. 위키 기준 2개면 쿨타임이 43.8% 줄어듭니다.
+          - id: LunarDagger
+            priority: situational
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Players stack it with Crowbars for one-shots; halves max HP per stack, so only with Smoke Bomb uptime.
+              ko: 쇠지렛대와 함께 한 방을 노리는 유저들이 씁니다. 개당 최대 체력이 절반이 되므로 연막탄 유지율이 높을 때만 쓰세요.
+            stacksReason:
+              en: players stack it with Crowbars; 2 triples base damage (wiki) but cuts max HP hard, so only with Smoke Bomb uptime.
+              ko: 플레이어들이 쇠지렛대와 함께 쌓습니다. 위키 기준 2개면 기본 피해가 3배지만 최대 체력이 크게 줄어, 연막탄 유지가 될 때만 쓰세요.
+        next: []
+    pickOrder:
+      common:
+        - Crowbar
+        - Syringe
+        - Hoof
+      legendary:
+        - KillEliteFrenzy
+        - AlienHead
+        - CritDamage
+        - UtilitySkillMagazine
+    milestones:
+      - when:
+          en: At the start of every stage
+          ko: 매 스테이지 시작 시
+        advice:
+          en: Desperado tokens reset when you advance; farm kills early in each stage before the boss.
+          ko: 데스페라도 토큰은 다음 스테이지로 넘어가면 사라집니다. 보스 전에 스테이지 초반부터 처치를 쌓으세요.
+        take: []
+        stop: []
+      - when:
+          en: Once you have 2 Purities
+          ko: 순수가 2개가 되면
+        advice:
+          en: Desperado's missing reset is covered; go up to about 4 only if you still wait on cooldowns.
+          ko: 초기화가 없는 단점이 메워집니다. 그래도 쿨타임을 기다린다면 약 4개까지만 늘리세요.
+        take:
+          - AlienHead
+        stop: []
+      - when:
+          en: Once you have Brainstalks
+          ko: 뇌줄기를 얻으면
+        advice:
+          en: Keep killing elites to chain Desperado; Crowbars keep the first shot lethal.
+          ko: 정예를 계속 잡아 데스페라도를 연사하세요. 쇠지렛대가 첫 발을 치명적으로 만들어 줍니다.
+        take:
+          - Crowbar
+        stop: []
+      - when:
+          en: When Desperado one-shots nearly everything
+          ko: 데스페라도가 거의 모든 적을 한 방에 잡으면
+        advice:
+          en: Only then consider Shaped Glass; its HP loss is the main risk.
+          ko: 이때만 모양이 있는 유리를 고려하세요. 체력 감소가 가장 큰 위험입니다.
+        take:
+          - LunarDagger
+        stop: []
+    avoid: []
+    evidence: |-
+      Mixed/thin. Desperado + Purity: wiki (early stacking, gives up luck-based effects) and Steam 'Item Builds' guide (2022: 4 Purity + Crowbar, 'Targeted' variant with Old Guillotine). Crowbar scaling with Desperado and 'best for long games': Steam discussions (2021). Bandolier to replace the missing reset: wiki. Sources disagree on Lights Out vs Desperado; Lights Out is the more common recommendation.
+
+      Stack counts and progression: Wiki Desperado page: tokens give +10% damage each and are lost when advancing a stage, so the build's 'permanent damage' summary is inaccurate across stages. Purity counts: Steam 'Lights Out or Desperado?' (2021, '2 purity'), Steam late-game thread (2021, '2 purity, 1 alien head, crowbar'), and the Steam 'Item Builds' guide (4 Purity, from the existing build evidence; could not refetch, HTTP 429). Brainstalks: Steam thread ('straight upgrade'), search summaries of Bandit threads ('150-200 kills' token strategy; not verified on the page). Alien Head + Purity: TheGamer (May 2024) and Rogue Ranker Alien Head page (order of application). Shaped Glass: Steam thread original post only. Bandolier table: wiki. Sources are mostly 2021, so the loop advice is thin and old; no Desperado changes found since.

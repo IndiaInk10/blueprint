@@ -1,0 +1,275 @@
+# Editorial survivor ratings (S-D, a normal run up to looping, played well), from 2025-2026 tier lists and patch notes (as of 2026-09-26).
+kind: survivor-ratings
+schemaVersion: 1
+revision: 1
+updatedAt: 2026-09-26
+gameVersion: 1.4.1 (Alloyed Collective; no survivor balance patch found after 2025-12-09)
+sources:
+  - https://store.steampowered.com/news/app/632360/view/497214077375874959
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.4.1
+  - https://riskofrain2.wiki.gg/wiki/Alloyed_Collective_Update
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.8
+  - https://blog.rottenwifi.com/risk-of-rain-2-character-tier-list-full-rankings/
+  - https://rogueranker.com/risk-of-rain-2-character-tier-list/
+  - https://commonsensegamer.com/risk-of-rain-2-tier-list/
+  - https://choostgames.com/blog/risk-of-rain-2-tier-list/
+  - https://www.gamebrief.net/blog/risk-of-rain-2-survivors-guide-2026
+  - https://www.youtube.com/watch?v=JJNOXNWky6U
+  - https://tiermaker.com/categories/random/risk-of-rain-2-survivors-alloyed-collective-update-18858981
+  - https://namu.wiki/w/%EC%98%A4%ED%8D%BC%EB%A0%88%EC%9D%B4%ED%84%B0(Risk%20of%20Rain%202)
+  - https://namu.wiki/w/%EB%93%9C%EB%A6%AC%ED%94%84%ED%84%B0(Risk%20of%20Rain%202)
+  - https://namu.wiki/w/%EC%8B%9C%EC%BB%A4(Risk%20of%20Rain%202)
+  - https://namu.wiki/w/%EA%B1%B0%EC%A7%93%EB%90%9C%20%EC%9E%90%EC%86%90
+  - https://steamcommunity.com/app/632360/discussions/0/686365895955594256/
+  - https://steamcommunity.com/app/632360/discussions/0/770811991515285467/
+  - https://steamcommunity.com/app/632360/discussions/0/599662086417704402/
+  - https://www.youtube.com/watch?v=Ejeg0yV4rq8
+  - https://gamerant.com/risk-of-rain-2-ror2-best-operator-build-skills-playstyle-items-alloyed-collective/
+survivors:
+  - id: CommandoBody
+    rank: C
+    difficulty: easy
+    popularity: very-high
+    strengths:
+      en: simple, reliable kit; piercing Phase Round; fast on-hit procs from Double Tap; great for learning
+      ko: 단순하고 안정적인 스킬 구성, 관통하는 위상조정탄, 2연사의 빠른 프록, 입문용으로 최적
+    weaknesses:
+      en: no standout mechanic; modest mobility and defense; very item-dependent; falls off after looping
+      ko: 특출난 메커니즘이 없음, 평범한 기동성·생존력, 아이템 의존도가 큼, 루프 이후 힘이 빠짐
+    verdict:
+      en: Nothing in his kit is bad, but nothing stands out either, so he leans on items to keep up after the first loop. Best as a learning pick or for players who want a straightforward shooter.
+      ko: 스킬 중에 나쁜 건 없지만 특출난 것도 없어서 루프 이후엔 아이템빨에 크게 기댑니다. 입문용이나 단순한 슈터를 원하는 유저에게 추천합니다.
+  - id: HuntressBody
+    rank: A
+    difficulty: easy
+    popularity: very-high
+    strengths:
+      en: auto-aim Strafe while sprinting; Laser Glaive clears crowds; Blink mobility; strong crit and on-hit scaling
+      ko: 달리면서 쏘는 자동 조준 기동 사격, 광역 정리용 레이저 글레이브, 점멸 기동성, 치명타·적중 시 효과 아이템과 궁합
+    weaknesses:
+      en: lowest health pool; auto-targeting can pick the wrong enemy; short range; weaker burst against big bosses
+      ko: 최하위권 체력(물몸), 자동 조준이 엉뚱한 적을 노릴 때가 있음, 짧은 사거리, 대형 보스 상대 폭딜 부족
+    verdict:
+      en: Auto-targeting and Blink make her the safest ranged kit for most players, and she scales well with crit and on-hit items. Her paper-thin health is what keeps her out of S.
+      ko: 자동 조준과 점멸 덕분에 대부분의 유저에게 가장 무난한 원거리 캐릭터이고, 치명타·적중 시 효과 아이템을 먹을수록 잘 큽니다. 물몸이라는 약점 때문에 S까지는 아닙니다.
+  - id: Bandit2Body
+    rank: A
+    difficulty: hard
+    popularity: high
+    strengths:
+      en: Lights Out cooldown-reset chains; Desperado stacks without limit; Backstab crits; Smoke Bomb stealth
+      ko: 소등의 쿨타임 초기화 연계, 무한히 쌓이는 데스페라도, 뒤치기 확정 치명타, 연막탄 은신
+    weaknesses:
+      en: low health; needs precise kill timing and positioning; punishing when resets are missed
+      ko: 낮은 체력, 정확한 막타 타이밍과 위치 선정 필요, 초기화를 놓치면 크게 위험해짐
+    verdict:
+      en: Reset chains and huge burst make him one of the best boss killers in skilled hands, but low health and high execution demands punish mistakes. Pick him once you are comfortable with movement and timing.
+      ko: 쿨타임 초기화 연계와 폭딜로 숙련자 손에서는 최상위급 보스 킬러지만, 낮은 체력과 까다로운 조작 때문에 실수에 가혹합니다. 무빙과 타이밍에 익숙해진 뒤 잡는 걸 추천합니다.
+  - id: ToolbotBody
+    rank: B
+    difficulty: medium
+    popularity: medium
+    strengths:
+      en: highest base health; two equipment slots via Retool; Auto-Nailgun spams on-hit procs; Transport Mode
+      ko: 최고 수준의 기본 체력, 장비 교체로 장비 2개 운용, 자동 네일건의 프록 난사, 차량 모드 돌진
+    weaknesses:
+      en: slow and large; no vertical mobility; awkward on vertical maps and against flyers
+      ko: 느리고 큰 덩치, 수직 기동기 없음, 고저차 심한 맵과 공중 적 상대가 불편함
+    verdict:
+      en: Tanky and forgiving, with excellent proc scaling from the Nailgun, but his slow, ground-bound movement holds him back once runs speed up. Good for players who want durability over mobility.
+      ko: 튼튼하고 실수에 관대하며 네일건 프록 시너지가 좋지만, 느리고 땅에 묶인 기동성 때문에 루프로 갈수록 답답해집니다. 기동성보다 탱킹을 원하는 유저에게 맞습니다.
+  - id: EngiBody
+    rank: A
+    difficulty: easy
+    popularity: high
+    strengths:
+      en: turrets copy your items, multiplying procs; Bubble Shield; dominant in teleporter holdouts
+      ko: 포탑이 아이템을 복사해 프록이 배로 늘어남, 거품 방어막, 텔레포터 방어전에서 압도적
+    weaknesses:
+      en: poor personal mobility; stationary turrets lag behind on fast or open maps; turret setup slows tempo
+      ko: 본체 기동성 부족, 고정 포탑은 빠른 진행·넓은 맵에서 뒤처짐, 포탑 설치로 템포가 느림
+    verdict:
+      en: Turrets that inherit your items make teleporter fights easy and his damage scales strongly, but low mobility makes fast looping clunky. A strong, beginner-friendly pick.
+      ko: 아이템을 물려받는 포탑 덕분에 텔레포터 방어전이 쉽고 딜도 잘 크지만, 기동성이 낮아 빠른 루프 진행은 답답합니다. 입문자도 쓰기 좋은 강캐입니다.
+  - id: MageBody
+    rank: B
+    difficulty: medium
+    popularity: high
+    strengths:
+      en: ENV Suit hover; big area damage (Flamethrower, Charged Nano-Bomb); Ion Surge mobility; freeze executes
+      ko: ENV 슈트 공중 부양, 화염방사기·나노폭탄 충전의 강력한 광역딜, 이온 전류 기동, 빙결 처형
+    weaknesses:
+      en: fragile; damage tied to cooldowns and charge times; limited mobility without Ion Surge
+      ko: 낮은 체력, 쿨타임·충전 시간에 묶인 딜, 이온 전류 없이는 기동성 부족
+    verdict:
+      en: Excellent crowd damage and hover control, but fragile health and cooldown-bound damage make her less consistent than the top picks. Take Ion Surge if you want mobility.
+      ko: 광역딜과 공중 제어는 뛰어나지만 체력이 약하고 딜이 쿨타임에 묶여 있어 최상위권보다 안정성이 떨어집니다. 기동성이 필요하면 이온 전류를 추천합니다.
+  - id: MercBody
+    rank: A
+    difficulty: hard
+    popularity: very-high
+    strengths:
+      en: many invulnerability windows (Eviscerate, Blinding Assault); great mobility; huge attack-speed and on-hit scaling
+      ko: 내장 제거·눈부신 돌격 등 무적 시간이 많음, 뛰어난 기동성, 공격 속도·적중 시 효과 스케일링
+    weaknesses:
+      en: melee range; low health; mistakes are punished hard; weaker before items come online
+      ko: 근접 사거리, 낮은 체력, 실수 한 번이 치명적, 아이템이 갖춰지기 전엔 약함
+    verdict:
+      en: "One of the highest skill ceilings in the game: chaining i-frames and attack speed makes him nearly untouchable, but low health means sloppy play dies fast. For players who enjoy mechanical melee."
+      ko: 무적 시간 연계와 공속 스케일링으로 거의 맞지 않고 싸울 수 있는, 고점이 매우 높은 캐릭터지만 체력이 낮아 실수하면 바로 눕습니다. 손컨 근접 캐릭터를 좋아하는 유저용입니다.
+  - id: TreebotBody
+    rank: B
+    difficulty: medium
+    popularity: medium
+    strengths:
+      en: Tangling Growth crowd control; self-healing via Natural Toxins and Harvest; Weaken debuff; strong Seed Barrage burst
+      ko: "뒤엉킨 성장의 군중 제어, 명령: 수확 등을 통한 자가 회복, 약화 디버프, 씨앗 세례의 강한 한방"
+    weaknesses:
+      en: many skills cost health; risky on higher Eclipse levels; slow movement
+      ko: 많은 스킬이 체력을 소모함, 높은 이클립스 단계에서 위험, 느린 이동
+    verdict:
+      en: Strong crowd control and a healing loop, but spending health on skills makes him easy to kill yourself with, especially on Eclipse. Suits players who like managing a health budget.
+      ko: 군중 제어와 회복 순환은 강하지만 체력을 소모하는 스킬 탓에 자멸하기 쉽고, 특히 이클립스에서 위험합니다. 체력 관리를 즐기는 유저에게 맞습니다.
+  - id: LoaderBody
+    rank: S
+    difficulty: medium
+    popularity: high
+    strengths:
+      en: best-in-class grapple mobility; barrier on every hit; massive Charged Gauntlet burst; scales with nearly every item
+      ko: 최고 수준의 갈고리 주먹 기동성, 타격마다 방벽 획득, 충전 건틀릿의 엄청난 폭딜, 거의 모든 아이템과 시너지
+    weaknesses:
+      en: melee range; grapple takes practice; flyers need M551 Pylon; Nov 2025 exponential barrier decay means barrier management matters more
+      ko: 근접 사거리, 갈고리 조작 숙련 필요, 공중 적은 M551 철탑에 의존, 2025년 11월 방벽 지수 감소 변경으로 방벽 관리가 더 중요해짐
+    verdict:
+      en: "The most consistent top pick across every source: mobility, built-in barrier and huge burst, only slightly trimmed by the November 2025 barrier decay change. Pick her once you've learned the grapple."
+      ko: 모든 출처에서 가장 꾸준히 최상위권에 오르는 캐릭터로, 기동성·자체 방벽·폭딜을 모두 갖췄고 2025년 11월 방벽 감소 방식 변경의 영향도 작습니다. 갈고리 주먹에 익숙해졌다면 가장 믿을 만한 선택입니다.
+  - id: CrocoBody
+    rank: A
+    difficulty: medium
+    popularity: medium
+    strengths:
+      en: percent-health Poison ignores enemy scaling; Blight stacking option; strong regen; Epidemic spreads; Caustic Leap mobility
+      ko: 적 체력 비례 독성으로 적 스케일링 무시, 역병 중첩 옵션, 강한 체력 재생, 퍼지는 유행병, 부식 도약 기동
+    weaknesses:
+      en: damage-over-time is slow to delete priority threats; melee primary; low burst
+      ko: 지속 피해라 위협적인 적을 빨리 못 지움, 근접 기본 공격, 낮은 폭딜
+    verdict:
+      en: Percent-health poison and regeneration keep him relevant at any difficulty, but his damage-over-time is slow against urgent threats. A solid pick for patient players who like kiting.
+      ko: 체력 비례 독과 체력 재생 덕분에 난이도가 올라가도 성능이 유지되지만, 지속 피해 위주라 급한 적을 빨리 처리하기 어렵습니다. 도트 딜을 깔고 카이팅하는 플레이를 좋아하는 유저에게 좋습니다.
+  - id: CaptainBody
+    rank: A
+    difficulty: easy
+    popularity: medium
+    strengths:
+      en: Supply Beacons (Healing, Hacking) every stage; Defensive Microbots delete projectiles; Power Taser stun; Orbital Probe burst
+      ko: 매 스테이지 보급품 투하 신호기(치유·해킹), 투사체를 지우는 방어용 마이크로봇, 파워 테이저 마비, 탐사정 투하의 폭딜
+    weaknesses:
+      en: no movement skill; orbital skills unusable in Hidden Realms; slower looping
+      ko: 이동기 없음, 숨겨진 영역에서 궤도 스킬 사용 불가, 루프 진행이 느림
+    verdict:
+      en: Beacons give free healing or hacked chests every stage and microbots erase projectiles, which makes him very safe; the lack of a movement skill caps his speed. A relaxed, strong pick, great in co-op.
+      ko: 신호기로 매 스테이지 회복이나 상자 해킹을 공짜로 얻고 마이크로봇이 투사체를 지워 줘서 매우 안정적이지만, 이동기가 없어 진행 속도에 한계가 있습니다. 편하게 굴리기 좋은 강캐이며 멀티에서도 빛납니다.
+  - id: HereticBody
+    rank: C
+    difficulty: medium
+    popularity: low
+    strengths:
+      en: every skill is a powerful Heresy skill; high base damage and mobility once transformed
+      ko: 모든 스킬이 강력한 이단 스킬, 변신 후 높은 기본 피해량과 기동성
+    weaknesses:
+      en: not selectable at the start; requires all four Heresy items mid-run; constant health decay; inconsistent
+      ko: 시작 시 선택 불가, 런 도중 이단 아이템 4종을 모두 모아야 함, 지속적인 체력 감소, 운에 좌우됨
+    verdict:
+      en: You can't pick her in the lobby; you transform by collecting all four Heresy items, and her constant health drain makes the swap a gamble. Treat her as a novelty, not a main.
+      ko: 로비에서 고를 수 없고 이단의 예지·갈고리·발걸음·정수 4종을 모두 모아야 변신하며, 체력이 계속 줄어서 변신 자체가 도박에 가깝습니다. 메인보다는 재미용 선택지로 보세요.
+  - id: RailgunnerBody
+    rank: S
+    difficulty: medium
+    popularity: high
+    strengths:
+      en: guaranteed weak-point crits while scoped; highest reliable single-target damage; safe long range; Supercharge boss deletion; Concussion Device mobility
+      ko: 조준 시 약점 확정 치명타, 가장 믿을 만한 단일 대상 딜, 안전한 장거리 교전, 슈퍼차지로 보스 순삭, 충격 장치 기동
+    weaknesses:
+      en: weak crowd clearing; needs good aim and active reloads; vulnerable when enemies close in
+      ko: 약한 광역 정리, 에임과 수동 재장전 숙련 필요, 적이 붙으면 취약
+    verdict:
+      en: Weak-point crits give the best reliable boss damage in the game from a safe distance; weak horde clearing is the main trade-off. The top pick for players with good aim.
+      ko: 약점 치명타로 안전한 거리에서 게임 최고 수준의 보스딜을 뽑아내며, 광역 정리가 약하다는 것이 주요 단점입니다. 에임에 자신 있는 유저에게 최고의 선택입니다.
+  - id: VoidSurvivorBody
+    rank: A
+    difficulty: hard
+    popularity: high
+    strengths:
+      en: built-in healing via Suppress; strong corrupted-mode burst; Trespass invulnerability; good at both range and close range
+      ko: 억제를 통한 자체 회복, 오염 상태의 강력한 폭딜, 침입 무적, 원거리·근거리 모두 대응
+    weaknesses:
+      en: Corruption meter management is demanding; corrupted Suppress costs health; mistimed forms leave you exposed
+      ko: 오염 게이지 관리가 까다로움, 오염 상태 억제는 체력 소모, 형태 전환 타이밍을 놓치면 위험
+    verdict:
+      en: Self-healing and a powerful corrupted burst window give him a very high ceiling, but managing corruption takes practice. A strong pick once you know the basics.
+      ko: 자체 회복과 오염 상태 폭딜로 고점이 매우 높지만, 오염 게이지 관리에 연습이 필요합니다. 기본기를 익힌 뒤 고르면 강력한 선택입니다.
+  - id: SeekerBody
+    rank: A
+    difficulty: medium
+    popularity: medium
+    strengths:
+      en: built-in revive through Meditate and Tranquility; healing and barrier in her skills; Sojourn/Reprieve mobility; strong team support
+      ko: 명상과 평온으로 얻는 자체 부활, 스킬에 내장된 치유와 방벽, 체류·유예의 뛰어난 기동성, 강력한 팀 지원
+    weaknesses:
+      en: modest solo damage; Meditate slows tempo and leaves you exposed; Tranquility resets every stage
+      ko: 솔로 딜이 평범함, 명상이 템포를 늦추고 사용 중 무방비, 평온이 스테이지마다 초기화됨
+    verdict:
+      en: Since the May 2025 overhaul she has some of the best survivability in the game, with a built-in revive, healing and huge mobility, but her damage is only average. Great for safe clears and co-op support.
+      ko: 2025년 5월 개편 이후 자체 부활, 치유, 뛰어난 기동성을 갖춰 생존력은 게임 최상위권이지만 딜은 평범한 편입니다. 안전하게 클리어하고 싶거나 멀티에서 서포트하기에 좋습니다.
+  - id: FalseSonBody
+    rank: S
+    difficulty: easy
+    popularity: medium
+    strengths:
+      en: Growth turns max-health items into damage and armor; top base health; Laser of the Father and Lunar Spikes for range; simple, intuitive melee
+      ko: 성장 효과로 최대 체력 아이템이 딜과 방어력으로 전환, 최고 수준의 기본 체력, 아버지의 광선·달의 쐐기로 원거리 대응, 직관적인 근접 조작
+    weaknesses:
+      en: shaky first stages before health items; slow; limited answers to far-away flyers
+      ko: 체력 아이템을 모으기 전 초반이 불안함, 느린 이동, 멀리 있는 공중 적 대응이 제한적
+    verdict:
+      en: "Since the May 2025 overhaul he's widely called one of the strongest survivors: Bison Steak, Infusion and other max-health items make him an unkillable damage dealer, and his kit is easy to play. Survive the first stage or two and he snowballs."
+      ko: 2025년 5월 개편 이후 가장 강한 생존자 중 하나로 꼽히며, 들소 스테이크·주입 약물 같은 최대 체력 아이템을 먹을수록 딜과 탱킹이 함께 올라갑니다. 조작도 쉬워서 초반 1~2 스테이지만 버티면 굴러가기 시작합니다.
+  - id: ChefBody
+    rank: C
+    difficulty: medium
+    popularity: medium
+    strengths:
+      en: big burst from Ice Box and Yes, Chef! combos; fast Roll; freeze and Glaze crowd damage
+      ko: 아이스박스·예, 셰프! 연계의 높은 폭딜, 빠른 구르기, 빙결과 글레이징 광역딜
+    weaknesses:
+      en: Commando-level stats on a huge hitbox; wants close range without the durability for it; Nov 2025 fix removed over-procing default Cleavers; Searing is weak
+      ko: 큰 덩치에 코만도 수준의 능력치, 근거리를 강요하지만 버틸 내구력이 없음, 2025년 11월 기본 깍둑썰기 과다 프록 수정, 약한 시어링
+    verdict:
+      en: Playable after the 2025 rework, but he is fragile for a large close-range body, and the November 2025 fix to over-procing Cleavers weakened his proc builds. Pick him for fun, not for consistency.
+      ko: 2025년 개편 후 쓸 만해졌지만 근거리 캐릭터치고 큰 덩치에 비해 너무 약하고, 2025년 11월 깍둑썰기 과다 프록 수정으로 프록 빌드도 약해졌습니다. 안정성보다는 재미로 고르는 캐릭터입니다.
+  - id: DrifterBody
+    rank: B
+    difficulty: hard
+    popularity: medium
+    strengths:
+      en: big burst from dumping stored Junk; Tinker recycles and rerolls unwanted items; temporary items for the whole team; Tornado Slam buffed in 1.4.1
+      ko: 모아둔 잡동사니를 한번에 쏟아붓는 폭딜, 땜질로 필요 없는 아이템 재활용·리롤, 팀 전체에 임시 아이템 제공, 1.4.1에서 토네이도 격돌 상향
+    weaknesses:
+      en: poor answers to flyers (slow, hard-to-aim throws); fragile for a melee survivor mid-loop; 1.4.1 Junk Cube nerf cut her junk loop; complex resource management
+      ko: 공중 적 대응 부족(느리고 조준이 어려운 투척), 중후반 근접 캐릭터치고 낮은 생존력, 1.4.1 잡동사니 큐브 하향, 복잡한 자원 관리
+    verdict:
+      en: A unique scrap and temporary-item economy with big junk burst, held back by weak anti-air and melee fragility; the 1.4.1 Junk Cube nerf cut her engine while Tornado Slam got buffed. For players who enjoy resource management, especially in co-op.
+      ko: 고물과 임시 아이템을 다루는 독특한 운영과 잡동사니 폭딜이 강점이지만, 대공 능력이 부족하고 근접치고 약합니다. 1.4.1에서 잡동사니 큐브는 하향, 토네이도 격돌은 상향됐습니다. 자원 관리를 즐기는 유저, 특히 멀티에서 추천합니다.
+  - id: DroneTechBody
+    rank: B
+    difficulty: medium
+    popularity: medium
+    strengths:
+      en: snowballs into a drone army; ADMIN-OVERRIDE/CMD-SWARM burst scales with drone count; Ejection Core debuff; uses drone items teammates skip; Nov 2025 drone buffs
+      ko: 드론 군단으로 스노우볼링, 드론 수에 비례하는 관리자-오버라이드·CMD-스웜 폭딜, 사출 핵 디버프, 팀원이 안 먹는 드론 아이템 활용, 2025년 11월 드론 상향
+    weaknesses:
+      en: Huntress-level health; floaty, slow Ascension Protocol; late-loop AoE and bosses can wipe drones; gold- and drone-spawn-dependent
+      ko: 헌트리스 수준의 물몸, 느린 승천 프로토콜, 루프 후반 광역 공격과 보스에 드론이 전멸할 위험, 골드·드론 등장 운에 좌우됨
+    verdict:
+      en: Grows into a drone army that deals huge damage mid-run, helped by the November 2025 drone buffs, but fragile health and drone wipes late in a loop make him swingy. Good for players who enjoy economy and pet builds.
+      ko: 2025년 11월 드론 상향에 힘입어 중반엔 드론 군단으로 엄청난 딜을 내지만, 물몸인 데다 루프 후반 드론이 전멸하면 급격히 약해져 기복이 큽니다. 운영과 소환수 빌드를 좋아하는 유저에게 맞습니다.

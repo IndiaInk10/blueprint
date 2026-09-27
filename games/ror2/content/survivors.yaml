@@ -1,0 +1,24 @@
+kind: survivor-catalog
+schemaVersion: 1
+revision: 1
+updatedAt: 2026-09-26
+survivors:
+  - { id: CommandoBody, token: COMMANDO_BODY_NAME, en: "Commando", icon: "Commando.png" }
+  - { id: HuntressBody, token: HUNTRESS_BODY_NAME, en: "Huntress", icon: "Huntress.png" }
+  - { id: Bandit2Body, token: BANDIT2_BODY_NAME, en: "Bandit", icon: "Bandit.png" }
+  - { id: ToolbotBody, token: TOOLBOT_BODY_NAME, en: "MUL-T", icon: "MUL-T.png" }
+  - { id: EngiBody, token: ENGI_BODY_NAME, en: "Engineer", icon: "Engineer.png" }
+  - { id: MageBody, token: MAGE_BODY_NAME, en: "Artificer", icon: "Artificer.png" }
+  - { id: MercBody, token: MERC_BODY_NAME, en: "Mercenary", icon: "Mercenary.png" }
+  - { id: TreebotBody, token: TREEBOT_BODY_NAME, en: "REX", icon: "REX.png" }
+  - { id: LoaderBody, token: LOADER_BODY_NAME, en: "Loader", icon: "Loader.png" }
+  - { id: CrocoBody, token: CROCO_BODY_NAME, en: "Acrid", icon: "Acrid.png" }
+  - { id: CaptainBody, token: CAPTAIN_BODY_NAME, en: "Captain", icon: "Captain.png" }
+  - { id: HereticBody, token: HERETIC_BODY_NAME, en: "Heretic", icon: "Heretic.png" }
+  - { id: RailgunnerBody, token: RAILGUNNER_BODY_NAME, en: "Railgunner", icon: "Railgunner.png" }
+  - { id: VoidSurvivorBody, token: VOIDSURVIVOR_BODY_NAME, en: "「V??oid Fiend』", icon: "Void_Fiend.png" }
+  - { id: SeekerBody, token: SEEKER_BODY_NAME, en: "Seeker", icon: "Seeker.png" }
+  - { id: FalseSonBody, token: FALSESON_BODY_NAME, en: "False Son", icon: "False_Son.png" }
+  - { id: ChefBody, token: CHEF_BODY_NAME, en: "CHEF", icon: "CHEF.png" }
+  - { id: DrifterBody, token: DRIFTER_BODY_NAME, en: "Drifter", icon: "Drifter.png" }
+  - { id: DroneTechBody, token: DRONETECH_BODY_NAME, en: "Operator", icon: "Operator.png" }

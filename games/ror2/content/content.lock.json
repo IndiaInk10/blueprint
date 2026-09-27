@@ -1,0 +1,105 @@
+{
+  "version": "2026.09.27.1",
+  "documents": {
+    "builds/bandit2.yaml": {
+      "revision": 5,
+      "hash": "7339a9c1597dcb8e"
+    },
+    "builds/captain.yaml": {
+      "revision": 5,
+      "hash": "bc7e8b4a1cbbb56c"
+    },
+    "builds/chef.yaml": {
+      "revision": 5,
+      "hash": "6bcde881e3c4d42e"
+    },
+    "builds/commando.yaml": {
+      "revision": 5,
+      "hash": "26b890832ef6b437"
+    },
+    "builds/croco.yaml": {
+      "revision": 5,
+      "hash": "80f7b48695257e5d"
+    },
+    "builds/drifter.yaml": {
+      "revision": 5,
+      "hash": "c70783e79cb345fc"
+    },
+    "builds/dronetech.yaml": {
+      "revision": 5,
+      "hash": "79d1d0489b313f2b"
+    },
+    "builds/engi.yaml": {
+      "revision": 5,
+      "hash": "f25fa3d12627374f"
+    },
+    "builds/falseson.yaml": {
+      "revision": 5,
+      "hash": "d340fc87598520c3"
+    },
+    "builds/heretic.yaml": {
+      "revision": 5,
+      "hash": "20098cc6b17944a0"
+    },
+    "builds/huntress.yaml": {
+      "revision": 5,
+      "hash": "5ec18373fcaa7769"
+    },
+    "builds/loader.yaml": {
+      "revision": 5,
+      "hash": "8c86ed144c692975"
+    },
+    "builds/mage.yaml": {
+      "revision": 5,
+      "hash": "1491eb2375ddd604"
+    },
+    "builds/merc.yaml": {
+      "revision": 5,
+      "hash": "064558106c5df99e"
+    },
+    "builds/railgunner.yaml": {
+      "revision": 5,
+      "hash": "1dd50edd223226aa"
+    },
+    "builds/seeker.yaml": {
+      "revision": 5,
+      "hash": "cfd5195e1a0897e2"
+    },
+    "builds/toolbot.yaml": {
+      "revision": 5,
+      "hash": "01b53ef5c7c84bf1"
+    },
+    "builds/treebot.yaml": {
+      "revision": 5,
+      "hash": "4e086f06d6012deb"
+    },
+    "builds/voidsurvivor.yaml": {
+      "revision": 5,
+      "hash": "b23fa66c04dda85e"
+    },
+    "combos.yaml": {
+      "revision": 1,
+      "hash": "30908d803698dd91"
+    },
+    "items.yaml": {
+      "revision": 2,
+      "hash": "b81ceafd4aa7259c"
+    },
+    "ratings.yaml": {
+      "revision": 1,
+      "hash": "584c39e27c6a677e"
+    },
+    "survivor-ratings.yaml": {
+      "revision": 1,
+      "hash": "f2c0119bb5145f91"
+    },
+    "survivors.yaml": {
+      "revision": 1,
+      "hash": "76d351e8951dd3b8"
+    },
+    "manifest.yaml": {
+      "revision": 1,
+      "hash": "942167f8657e6da9"
+    }
+  }
+}

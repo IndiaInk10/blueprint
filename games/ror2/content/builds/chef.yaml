@@ -1,0 +1,456 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: ChefBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: thin
+sources:
+  - https://riskofrain2.wiki.gg/wiki/CHEF
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.8
+  - https://deltiasgaming.com/risk-of-rain-2-ror2-chef-build-guide-best-abilities-and-loadouts/
+  - https://rogueranker.com/chef-ror2/
+  - https://gamerant.com/risk-of-rain-2-ror-2-best-chef-build-items/
+builds:
+  - id: chef-glaze-sear-attack-speed-combo
+    title:
+      en: Glaze > Sear attack-speed combo
+      ko: 글레이징 > 시어링 공격 속도 콤보
+    difficulty: intermediate
+    summary:
+      en: Default kit. Chain Dice, Sear, Roll and Glaze on the same targets so kills trigger CHEF's Kiss healing meals, and stack attack speed so Dice and Sear's burn scale. Mobility and a little survivability come first because CHEF fights at short-to-mid range.
+      ko: 기본 스킬 구성입니다. 깍둑썰기, 시어링, 구르기, 글레이징을 같은 적에게 이어서 맞혀 처치 시 셰프의 키스 회복 음식을 떨어뜨리고, 공격 속도를 쌓아 깍둑썰기와 시어링 화상 피해를 키웁니다. 근~중거리에서 싸우므로 이동기와 약간의 생존 아이템을 먼저 챙기세요.
+    loadout:
+      primary: CHEF_PRIMARY_NAME
+      secondary: CHEF_SECONDARY_NAME
+      utility: CHEF_UTILITY_NAME
+      special: CHEF_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Attack speed and mobility core
+          ko: 공격 속도·기동성 핵심
+        when:
+          en: Stage 1-2, take whatever of these you find first.
+          ko: 1~2스테이지, 먼저 보이는 것부터 챙기세요.
+        items:
+          - id: Syringe
+            priority: core
+            note:
+              en: Speeds up Dice throws and Sear's burn ticks; the main scaling stat in current guides.
+              ko: 깍둑썰기 투척과 시어링 화상 틱을 빠르게 합니다. 최신 가이드들이 꼽는 핵심 성장 스탯입니다.
+            stacks:
+              target: 10
+              min: 6
+            stacksReason:
+              en: Deltia's suggests about 10 Syringes to keep stacking Burn on Mithrix; 6 already gives 20 Burn stacks per Sear, and there is no cap.
+              ko: Deltia's는 미스릭스전 화상 누적용으로 주사기 약 10개를 권합니다. 6개면 시어링 한 번에 화상 20중첩이고, 상한은 없습니다.
+          - id: Hoof
+            priority: core
+            note:
+              en: CHEF's range is short; extra move speed lets him get in and out of Sear range.
+              ko: 셰프는 사거리가 짧아 이동 속도가 있어야 시어링 사거리 안팎을 드나들 수 있습니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies give +42% move speed, enough to weave in and out of range; more still helps.
+              ko: 3개면 이동 속도 +42%로 사거리 안팎을 드나들기에 충분하며, 더 모아도 이득입니다.
+          - id: NearbyDamageBonus
+            priority: optional
+            note:
+              en: Close-range damage bonus fits how near CHEF has to stand.
+              ko: 근접 피해 보너스가 셰프의 교전 거리와 잘 맞습니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies give +60% damage within 13m, linear (wiki).
+              ko: 3개면 13m 안의 적에게 피해 +60%이며 선형으로 늘어납니다(위키).
+          - id: Crowbar
+            priority: optional
+            note:
+              en: Extra damage to healthy enemies helps Dice finish weak mobs early.
+              ko: 체력이 많은 적에게 추가 피해를 줘 초반 깍둑썰기로 잡몹 정리를 돕습니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies give +225% on healthy enemies, enough to open fights; linear (wiki).
+              ko: 3개면 체력이 많은 적에게 +225%로 첫 타가 충분히 강하며, 선형입니다(위키).
+        next:
+          - survive
+      - id: survive
+        phase: early
+        label:
+          en: Don't skip survivability
+          ko: 생존력도 챙기기
+        when:
+          en: Alongside the core; take one or two of these before going all-in on damage.
+          ko: 핵심 아이템과 함께, 딜 아이템에 몰빵하기 전에 1~2개 챙기세요.
+        items:
+          - id: Bear
+            priority: optional
+            note:
+              en: Guides warn against pure-damage CHEF builds; a block chance keeps close-range fights safer.
+              ko: 가이드들은 딜만 쌓는 셰프를 경계합니다. 막기 확률이 근거리 교전을 안전하게 해 줍니다.
+            stacks:
+              target: 4
+              min: 1
+            stacksReason:
+              en: 4 copies = 37.5% block, and each copy after adds under 6 points (math from wiki values).
+              ko: 쌍곡선형이라 4개면 막기 37.5%이고, 그 뒤로는 1개당 6%p도 오르지 않습니다(위키 수치로 계산).
+          - id: SprintBonus
+            priority: optional
+            note:
+              en: More sprint speed for repositioning between combos.
+              ko: 콤보 사이에 위치를 잡기 위한 달리기 속도입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies give +50% sprint speed for repositioning; linear, so more still helps.
+              ko: 2개면 달리기 속도 +50%로 위치 잡기에 충분하며, 선형이라 더 모아도 이득입니다.
+          - id: FlatHealth
+            priority: optional
+            note:
+              en: Flat health padding while you learn his close-range game.
+              ko: 근거리 운영에 익숙해지는 동안 체력 여유를 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies add 75 health as padding for close-range fights (+25 per copy, wiki).
+              ko: 3개면 체력 +75로 근거리 교전의 여유가 생깁니다(1개당 +25, 위키).
+        next:
+          - burn
+          - debuff
+          - cooldown
+      - id: burn
+        phase: mid
+        label:
+          en: Crowd-clear kill chains
+          ko: 광역 처치 연쇄
+        when:
+          en: Take when stages feel swarmed by small enemies.
+          ko: 잡몹이 몰려드는 스테이지가 버거울 때 선택하세요.
+        items:
+          - id: IgniteOnKill
+            priority: core
+            note:
+              en: Kills ignite nearby enemies, spreading CHEF's fire theme through packs.
+              ko: 처치 시 주변을 점화시켜 무리 전체로 불을 퍼뜨립니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies spread ignite 20m through packs and add burn damage (+4m, +75% per copy, wiki).
+              ko: 3개면 점화가 20m까지 퍼지고 화상 피해도 늘어납니다(1개당 +4m, +75%, 위키).
+          - id: StrengthenBurn
+            priority: optional
+            note:
+              en: Strengthens burns from Sear and Gasoline.
+              ko: 시어링과 휘발유의 화상을 강화합니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +300% ignite damage per copy, linear (wiki); 3 multiplies Sear's Burn by 10x and more keeps helping.
+              ko: 1개당 점화 피해 +300% 선형(위키)이라 3개면 시어링 화상이 10배가 되고, 더 모아도 계속 이득입니다.
+          - id: ExplodeOnDeath
+            priority: optional
+            note:
+              en: Chains explosions off kills in dense packs.
+              ko: 밀집된 적에게서 처치 폭발을 연쇄시킵니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies give a 14.4m, 630% pillar; each copy adds radius and damage (wiki).
+              ko: 2개면 반경 14.4m, 630% 용암 기둥이 되며, 1개당 범위와 피해가 늘어납니다(위키).
+          - id: ChainLightning
+            priority: optional
+            note:
+              en: Chain lightning on hit from Dice's multi-hitting cleavers.
+              ko: 여러 번 적중하는 깍둑썰기로 연쇄 번개를 자주 발동합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies chain to 5 targets; each copy adds +2 targets and +2m range (wiki).
+              ko: 2개면 5명까지 연쇄되며, 1개당 대상 +2, 범위 +2m씩 늘어납니다(위키).
+        next:
+          - late
+      - id: debuff
+        phase: mid
+        label:
+          en: Death Mark debuff stacking
+          ko: 죽음의 표식 디버프 누적
+        when:
+          en: Take once you have a Death Mark; CHEF's skills already apply several debuffs.
+          ko: 죽음의 표식을 얻었다면 선택하세요. 셰프 스킬 자체가 여러 디버프를 겁니다.
+        items:
+          - id: DeathMark
+            priority: core
+            note:
+              en: Sear and Glaze apply debuffs, so reaching the 4-debuff threshold is easy.
+              ko: 시어링과 글레이징이 디버프를 걸어 4중첩 조건을 쉽게 채웁니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: One copy gives the full +50% damage taken; extra copies only add +7s mark duration (wiki).
+              ko: 1개로 받는 피해 +50% 효과를 모두 얻고, 추가분은 표식 지속 시간만 7초씩 늘립니다(위키).
+          - id: BleedOnHit
+            priority: optional
+            note:
+              en: Bleed adds one more debuff type.
+              ko: 출혈로 디버프 종류를 하나 더 늘립니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 10
+            stacksReason:
+              en: 30% bleed per hit is enough to keep a bleed up for Death Mark on multi-hit attacks; 10 (100%) is the cap (wiki).
+              ko: 다단히트라면 출혈 30%로도 죽음의 표식용 출혈을 꾸준히 걸 수 있습니다. 10개(100%)가 상한입니다(위키).
+          - id: SlowOnHit
+            priority: optional
+            note:
+              en: Slow is another cheap debuff for Death Mark.
+              ko: 둔화 역시 죽음의 표식용 디버프가 됩니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: Taken only as a cheap debuff for Death Mark; extra copies just add +2s of slow (wiki).
+              ko: 죽음의 표식용 디버프로만 쓰며, 추가분은 둔화 시간만 2초씩 늘립니다(위키).
+        next:
+          - late
+      - id: cooldown
+        phase: mid
+        label:
+          en: More combo uptime
+          ko: 콤보 가동률 증가
+        when:
+          en: Take when you want to cycle the Glaze > Sear combo more often.
+          ko: 글레이징 > 시어링 콤보를 더 자주 돌리고 싶을 때 선택하세요.
+        items:
+          - id: SecondarySkillMagazine
+            priority: optional
+            note:
+              en: Extra secondary charge (Sear).
+              ko: 보조 스킬(시어링) 충전을 하나 더 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one extra Sear charge lets you re-cast when the first Sear does not finish the target.
+              ko: 시어링 충전 1개가 늘면 첫 시어링으로 못 끝냈을 때 바로 한 번 더 쓸 수 있습니다.
+          - id: Bandolier
+            priority: optional
+            note:
+              en: Ammo packs reset CHEF's skill cooldowns, cutting downtime.
+              ko: 탄약 상자로 스킬 쿨다운이 초기화되어 공백이 줄어듭니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies raise the ammo-pack chance from 18% to 28% on kill (wiki).
+              ko: 2개면 처치 시 탄약 상자 확률이 18%에서 28%로 오릅니다(위키).
+          - id: UtilitySkillMagazine
+            priority: situational
+            note:
+              en: Extra Roll charges for mobility and damage.
+              ko: 구르기 충전이 늘어 기동성과 딜이 늘어납니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one legendary copy gives +2 charges and -33% cooldown; extras only add charges.
+              ko: 전설 아이템 1개로 충전 +2와 쿨다운 -33%를 얻고, 추가분은 충전만 늘립니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late-game amplifiers
+          ko: 후반 증폭
+        when:
+          en: Stage 5+ and loops; pick up whichever appear.
+          ko: 5스테이지 이후 및 루프에서 나오는 대로 챙기세요.
+        items:
+          - id: Missile
+            priority: optional
+            note:
+              en: Frequent procs from multi-hit skills.
+              ko: 다단히트 스킬 덕분에 자주 발동합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: linear +300% missile damage per copy at a fixed 10% chance (wiki); 3 is a solid uncommon stack.
+              ko: 발동 확률 10%는 고정이고 1개당 미사일 피해가 +300%씩 선형으로 늘어나(위키) 3개면 든든합니다.
+          - id: CritGlasses
+            priority: optional
+            note:
+              en: Crit makes on-hit effects stronger; pairs with Laser Scope.
+              ko: 치명타로 적중 효과가 강해지며 레이저 스코프와 어울립니다.
+            stacks:
+              target: 10
+              min: 1
+              max: 10
+            stacksReason:
+              en: 10% crit per copy, so 10 = 100% crit and more does nothing; stop at 9 with Predatory Instincts or Harvester's Scythe (wiki).
+              ko: 1개당 치명타 10%라 10개면 100%이고 그 이상은 효과가 없습니다. 포식 본능이나 수확꾼의 낫이 있으면 9개에서 멈추세요(위키).
+          - id: CritDamage
+            priority: situational
+            note:
+              en: Only once you have meaningful crit chance.
+              ko: 치명타 확률을 충분히 확보했을 때만 가치가 있습니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: +100% crit damage per copy (wiki); only worth stacking once crit chance is high.
+              ko: 1개당 치명타 피해 +100%(위키)이며, 치명타 확률이 높을 때만 쌓을 가치가 있습니다.
+          - id: AlienHead
+            priority: optional
+            note:
+              en: Cooldown reduction on every skill in the combo.
+              ko: 콤보에 쓰는 모든 스킬의 쿨다운을 줄입니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: 3 copies cut cooldowns to 42% (0.75 per copy, wiki); Glaze's 12s stays far from the 0.5s floor, so more still helps.
+              ko: 3개면 쿨다운이 42%로 줄어듭니다(1개당 ×0.75, 위키). 글레이징 12초는 0.5초 하한과 멀어 더 모아도 이득입니다.
+          - id: PermanentDebuffOnHit
+            priority: situational
+            note:
+              en: Armor shred and one more debuff for Death Mark.
+              ko: 방어력 감소와 함께 죽음의 표식용 디버프를 하나 더 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy already shreds 2 armor on every hit and adds a debuff; extras shred faster.
+              ko: 1개만으로 매 적중마다 방어력을 2씩 깎고 디버프를 더합니다. 추가분은 더 빨리 깎습니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Keep scaling the burn
+          ko: 화상 계속 키우기
+        when:
+          en: After the first loop, or once the late items are in place.
+          ko: 첫 루프 이후, 또는 후반 아이템을 갖춘 뒤.
+        items:
+          - id: Syringe
+            priority: core
+            stacks:
+              target: 10
+            note:
+              en: "Keep stacking past 10: attack speed is still Sear's scaling stat and has no cap."
+              ko: 10개를 넘겨도 계속 쌓으세요. 공격 속도는 여전히 시어링의 성장 스탯이며 상한이 없습니다.
+            stacksReason:
+              en: Deltia's suggests about 10 Syringes to keep stacking Burn on Mithrix; 6 already gives 20 Burn stacks per Sear, and there is no cap.
+              ko: Deltia's는 미스릭스전 화상 누적용으로 주사기 약 10개를 권합니다. 6개면 시어링 한 번에 화상 20중첩이고, 상한은 없습니다.
+          - id: StrengthenBurn
+            priority: core
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: Multiplies every Burn tick Sear applies; linear stacking.
+              ko: 시어링이 거는 화상 틱 피해를 모두 키우며 선형으로 중첩됩니다.
+            stacksReason:
+              en: +300% ignite damage per copy, linear (wiki); 3 multiplies Sear's Burn by 10x and more keeps helping.
+              ko: 1개당 점화 피해 +300% 선형(위키)이라 3개면 시어링 화상이 10배가 되고, 더 모아도 계속 이득입니다.
+          - id: AlienHead
+            priority: optional
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: More combo cycles; Glaze stays far from the 0.5s floor.
+              ko: 콤보를 더 자주 돌립니다. 글레이징은 0.5초 하한과 거리가 멉니다.
+            stacksReason:
+              en: 3 copies cut cooldowns to 42% (0.75 per copy, wiki); Glaze's 12s stays far from the 0.5s floor, so more still helps.
+              ko: 3개면 쿨다운이 42%로 줄어듭니다(1개당 ×0.75, 위키). 글레이징 12초는 0.5초 하한과 멀어 더 모아도 이득입니다.
+          - id: ItemDropChanceOnKill
+            priority: situational
+            stacks:
+              target: 1
+            note:
+              en: Game Rant suggests it specifically when looping, for more item drops.
+              ko: Game Rant가 루프할 때 추천하는 아이템으로, 아이템 드롭을 늘립니다.
+            stacksReason:
+              en: one copy already makes every boss drop an item; extras only add +1% elite drop chance (wiki).
+              ko: 1개로 모든 보스가 아이템을 떨어뜨리고, 추가분은 엘리트 드롭 확률만 1%씩 올립니다(위키).
+        next: []
+    pickOrder:
+      common:
+        - Syringe
+        - Hoof
+        - NearbyDamageBonus
+        - Crowbar
+        - Bear
+        - SecondarySkillMagazine
+        - BleedOnHit
+      uncommon:
+        - DeathMark
+        - StrengthenBurn
+        - Missile
+        - ExplodeOnDeath
+        - Bandolier
+        - ChainLightning
+      legendary:
+        - AlienHead
+        - PermanentDebuffOnHit
+        - UtilitySkillMagazine
+        - CritDamage
+    milestones:
+      - when:
+          en: Once you have one Death Mark
+          ko: 죽음의 표식을 1개 얻으면
+        advice:
+          en: A second copy only adds duration. Spend greens on Ignition Tank or AtG Missile instead.
+          ko: 두 번째부터는 지속 시간만 늘어납니다. 초록 아이템은 점화 탱크나 AtG 미사일에 쓰세요.
+        take:
+          - StrengthenBurn
+          - Missile
+        stop:
+          - DeathMark
+      - when:
+          en: When you reach about 6 Soldier's Syringes
+          ko: 군인의 주사기가 6개쯤 모이면
+        advice:
+          en: One Glaze > Sear can now stack about 20 Burns. Keep taking Syringes, and add Ignition Tank so each Burn stack hits harder.
+          ko: 글레이징 > 시어링 한 번으로 화상을 약 20중첩 걸 수 있습니다. 주사기는 계속 챙기고, 점화 탱크로 화상 한 중첩의 피해를 키우세요.
+        take:
+          - StrengthenBurn
+        stop: []
+      - when:
+          en: When you have 4 Tougher Times
+          ko: 힘들었던 시절이 4개가 되면
+        advice:
+          en: Block chance is 37.5% and each extra copy adds less and less. Prefer other white items from here.
+          ko: 막기 확률이 37.5%이고 이후로는 1개당 증가량이 계속 줄어듭니다. 이제부터는 다른 흰색 아이템을 고르세요.
+        take: []
+        stop:
+          - Bear
+      - when:
+          en: Once crit chance reaches 100%
+          ko: 치명타 확률이 100%에 도달하면
+        advice:
+          en: Stop taking Lens-Maker's Glasses (10, or 9 with Predatory Instincts or Harvester's Scythe) and put reds into Laser Scope.
+          ko: 렌즈 제작자의 안경(10개, 포식 본능이나 수확꾼의 낫이 있으면 9개)은 그만 챙기고 빨간 아이템은 레이저 스코프에 쓰세요.
+        take:
+          - CritDamage
+        stop:
+          - CritGlasses
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Pick up Sonorous Whispers if offered for more drops, and keep feeding attack speed and Alien Heads to cycle the combo.
+          ko: 낭랑한 속삭임이 나오면 챙겨 드롭을 늘리고, 콤보를 계속 돌리도록 공격 속도와 외계인 머리를 계속 모으세요.
+        take:
+          - ItemDropChanceOnKill
+          - AlienHead
+        stop: []
+    avoid: []
+    evidence: |-
+      Loadout (Dice/Sear/Roll/Glaze) and core Soldier's Syringe + Paul's Goat Hoof + Death Mark come from Deltia's Gaming (Nov 2025, written after the V1.3.8 rework), which also lists Lens-Maker's Glasses and AtG Missile as optional. Rogue Ranker (undated) backs Soldier's Syringe, Bison Steak, Focus Crystal early; Gasoline, Will-o'-the-wisp, Ukulele, Backup Magazine mid; AtG Missile late, and suggests Yes, CHEF! as the special once unlocked. Game Rant (Sep 2024, PRE-rework) supplies Crowbar, Gasoline/Ignition Tank, Death Mark, Focus Crystal, Bandolier, Symbiotic Scorpion, Tri-Tip Dagger, Chronobauble, Hardlight Afterburner, Alien Head, Laser Scope and the Tougher Times/Energy Drink survivability advice. PATCH-SENSITIVE: CHEF was reworked in V1.3.8 (May 2025): Dice now has 3 charges at 200% each, Yes, CHEF! no longer refreshes cooldowns (it now boosts the next skill), Glaze cooldown went 10s->12s. Game Rant's Crowbar 'one-shot with Dice' and Bandolier reasoning predate this. Rogue Ranker says Backup Magazine adds a Glaze charge; Backup Magazine affects the secondary slot, so the note here says Sear. No source lists items to avoid. No source gives a worked Ice Box or Oil Spill build, so none is included. Sources are mostly thin SEO-style guides; no Reddit/Steam consensus thread was found.
+
+      Stack counts and progression: Syringe counts: Rogue Ranker ('~1.9x from ~6 Soldier's Syringe' needed for 20 Burn stacks in one Sear, for the 'It's Getting Hot In Here!' challenge) and Deltia's (Nov 2025, post-rework; 'around 10' Syringes to keep stacking Burn on Mithrix; Backup Magazine for a second Sear). Deltia's page returned HTTP 405 to direct fetch, so its quotes come from search snippets. Tougher Times, Alien Head (0.75^n, 0.5s floor), Lens-Maker's (10 = 100%, 9 with Predatory/Harvester), Death Mark, Chronobauble, Tri-Tip, Ignition Tank and Laser Scope limits are math from wiki item values. Sonorous Whispers for looping and the pick order's Crowbar/Bandolier/Scorpion/Afterburner come from Game Rant (Sep 2024, PRE-rework); its item advice is not skill-specific but its CHEF reasoning may be dated. Pick order puts Syringe and Hoof first because both post-rework sources name them as core. No source gives a boss-item order or CHEF-specific lunar/void advice, so none is included. Steam discussion threads found were complaints about CHEF, not build advice; Reddit not attempted. Glaze 12s cooldown is from the V1.3.8 notes cited in the build file.

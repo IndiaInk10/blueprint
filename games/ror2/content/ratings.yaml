@@ -1,0 +1,1772 @@
+# Editorial item ratings (S-D within each rarity), from 2025-2026 tier lists, patch notes and our own builds (as of 2026-09-26).
+# popularity: how commonly players take it, separate from rank. bestFor: survivors that especially want it.
+kind: item-ratings
+schemaVersion: 1
+revision: 1
+updatedAt: 2026-09-26
+gameVersion: v1.4.1 (Alloyed Collective)
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.4.1
+  - https://support.2k.com/hc/en-us/articles/47210814399123-Risk-of-Rain-2-Patch-Notes-December-9-2025
+  - https://riskofrain2.wiki.gg/wiki/Alloyed_Collective_Update
+  - https://support.2k.com/hc/en-us/articles/46614659423891-Risk-of-Rain-2-Alloyed-Collective-and-Patch-Notes-November-18-2025
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.8
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.7
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.6
+  - https://riskofrain2.wiki.gg/wiki/Warped_Echo
+  - https://riskofrain2.wiki.gg/wiki/Growth_Nectar
+  - https://riskofrain2.wiki.gg/wiki/Substandard_Duplicator
+  - https://riskofrain2.wiki.gg/wiki/Networked_Suffering
+  - https://riskofrain2.wiki.gg/wiki/Deus_Ex_Machina
+  - https://namu.wiki/w/Risk%20of%20Rain%202/%EC%95%84%EC%9D%B4%ED%85%9C/%ED%8B%B0%EC%96%B4%201
+  - https://namu.wiki/w/Risk%20of%20Rain%202/%EC%95%84%EC%9D%B4%ED%85%9C/%ED%8B%B0%EC%96%B4%202
+  - https://namu.wiki/w/Risk%20of%20Rain%202/%EC%95%84%EC%9D%B4%ED%85%9C/%ED%8B%B0%EC%96%B4%203
+  - https://namu.wiki/w/Risk%20of%20Rain%202/%EC%95%84%EC%9D%B4%ED%85%9C/%EB%B3%B4%EC%8A%A4
+  - https://namu.wiki/w/Risk%20of%20Rain%202/%EC%95%84%EC%9D%B4%ED%85%9C/%EB%A3%A8%EB%82%98
+  - https://namu.wiki/w/Risk%20of%20Rain%202/%EC%95%84%EC%9D%B4%ED%85%9C/%EA%B3%B5%ED%97%88
+  - https://namu.wiki/w/Risk%20of%20Rain%202/%EC%95%84%EC%9D%B4%ED%85%9C/%EC%9E%A5%EB%B9%84
+  - https://broadscopeentertainment.com/2025/12/07/risk-of-rain-2-is-so-back/
+  - https://x.com/Railgunner_ROR2/status/1995750033027686720
+  - https://steamcommunity.com/app/632360/discussions/0/588433456469419529/
+  - https://steamcommunity.com/app/632360/discussions/0/690868131878454092/
+  - https://md-eksperiment.org/en/post/20251128-risk-of-rain-2-alloyed-collective-full-guide-survivors-18-items-drone-builds-stage-secrets-100-unlocks
+  - https://rogueranker.com/risk-of-rain-2-red-items/
+  - https://pillarofgaming.com/risk-of-rain-2-item-tier-list/
+  - https://vortexgaming.io/en/postdetail/595843
+  - https://www.youtube.com/watch?v=6f-KFyLvHKo
+  - https://www.youtube.com/watch?v=sF0B7F-9jCA
+ratings:
+  - id: BossDamageBonus
+    rank: C
+    popularity: medium
+    bestFor:
+      - RailgunnerBody
+    verdict:
+      en: Only boosts damage against bosses, so it does nothing for clearing stages; fine to scrap unless you are a boss-melting Railgunner.
+      ko: 보스에게만 피해가 늘어 스테이지 정리에는 도움이 안 됩니다. 보스를 녹이는 레일거너가 아니라면 스크래퍼에 넣어도 됩니다.
+  - id: SecondarySkillMagazine
+    rank: A
+    popularity: high
+    bestFor:
+      - RailgunnerBody
+      - Bandit2Body
+      - CaptainBody
+      - HuntressBody
+    verdict:
+      en: Extra secondary charges are a straight damage and utility boost for survivors whose secondary is their main tool.
+      ko: 보조 스킬 충전이 늘어나 보조 스킬이 주력인 생존자에게는 그대로 화력과 유틸 상승입니다.
+  - id: FlatHealth
+    rank: C
+    popularity: medium
+    bestFor:
+      - FalseSonBody
+    verdict:
+      en: Flat +25 max health is barely felt past the early stages; only health-scaling survivors like False Son really want stacks.
+      ko: 최대 체력 +25는 초반 이후 체감이 거의 없습니다. 체력에 비례해 강해지는 거짓된 자손 정도만 여러 개를 원합니다.
+  - id: AttackSpeedPerNearbyAllyOrEnemy
+    rank: C
+    popularity: low
+    bestFor:
+      - MercBody
+      - LoaderBody
+    verdict:
+      en: Gives attack speed per nearby enemy or ally (up to 3 after the V1.3.8 rework); decent in melee brawls but a Syringe is simpler.
+      ko: 주변 적·아군 수만큼 공격 속도를 줍니다(V1.3.8 개편 후 최대 3명). 근접 난전에서는 쓸 만하지만 군인의 주사기가 더 확실합니다.
+  - id: Firework
+    rank: C
+    popularity: medium
+    verdict:
+      en: Chest-opening fireworks help a little early and fall off quickly; take it only when nothing better is offered.
+      ko: 상자를 열 때 폭죽이 나가 초반에 약간 도움이 되지만 금방 힘이 빠집니다. 더 나은 게 없을 때만 챙기세요.
+  - id: Mushroom
+    rank: C
+    popularity: medium
+    bestFor:
+      - EngiBody
+      - RailgunnerBody
+    verdict:
+      en: Standing-still healing is weak on most survivors but excellent on Engineer turrets and a scoped Railgunner.
+      ko: 가만히 서 있어야 회복되어 대부분에게는 약하지만, 엔지니어 포탑과 조준 중인 레일거너에게는 아주 좋습니다.
+  - id: HealWhileSafe
+    rank: D
+    popularity: low
+    verdict:
+      en: Regen only kicks in out of combat, which is exactly when you need it least.
+      ko: 전투를 벗어나야 재생이 켜져서, 정작 필요한 순간에는 도움이 안 됩니다.
+  - id: IncreaseDamageOnMultiKill
+    rank: B
+    popularity: medium
+    bestFor:
+      - CommandoBody
+      - HuntressBody
+      - ToolbotBody
+    verdict:
+      en: Chaining kills builds up to a solid damage bonus, so it shines on survivors that clear crowds quickly.
+      ko: 연속 처치로 피해 보너스가 쌓여서 무리를 빠르게 정리하는 생존자에게 특히 좋습니다.
+  - id: Crowbar
+    rank: S
+    popularity: very-high
+    verdict:
+      en: +75% damage to healthy enemies deletes fresh mobs and opens boss fights; one of the best white items to print.
+      ko: 체력이 90% 이상인 적에게 피해 +75%라 새로 나온 몹을 바로 지우고 보스전 초반도 빨라집니다. 3D 프린터로 뽑을 가치가 있는 최상급 흰템입니다.
+  - id: FragileDamageBonus
+    rank: B
+    popularity: medium
+    bestFor:
+      - MageBody
+      - VoidSurvivorBody
+    verdict:
+      en: +20% damage per stack is strong, but it breaks at low health, so it suits careful or ranged players.
+      ko: 스택당 피해 +20%로 강하지만 체력이 낮아지면 깨지므로 조심스럽게 싸우는 원거리 플레이에 어울립니다.
+  - id: BarrierOnCooldown
+    rank: B
+    popularity: medium
+    bestFor:
+      - MageBody
+      - RailgunnerBody
+      - SeekerBody
+    verdict:
+      en: Grants barrier whenever a skill comes off cooldown, scaling with long cooldowns; better than it looks since AC made barrier decay slower.
+      ko: 스킬 쿨이 돌 때마다 방벽을 주고, 기본 쿨이 긴 스킬일수록 양이 커집니다. AC 이후 방벽 감소가 느려져 생각보다 좋습니다.
+  - id: SpeedBoostPickup
+    rank: C
+    popularity: low
+    verdict:
+      en: Since V1.3.7 it only gives speed through orbs you pick up; fine for mobility but not reliable.
+      ko: V1.3.7 이후 바닥의 구슬을 주워야만 이동 속도를 주므로 기동성은 조금 오르지만 안정적이지 않습니다.
+  - id: SprintBonus
+    rank: B
+    popularity: high
+    bestFor:
+      - LoaderBody
+      - CrocoBody
+      - ChefBody
+    verdict:
+      en: Sprint speed is always welcome and stacks well; a safe pick for any survivor that sprints a lot.
+      ko: 질주 속도는 언제나 유용하고 잘 쌓입니다. 질주를 많이 하는 생존자라면 무난한 선택입니다.
+  - id: NearbyDamageBonus
+    rank: B
+    popularity: high
+    bestFor:
+      - MercBody
+      - LoaderBody
+      - CrocoBody
+      - SeekerBody
+      - FalseSonBody
+    verdict:
+      en: +15% damage to nearby enemies is excellent for melee survivors and nearly useless for ranged ones.
+      ko: 가까운 적에게 피해 +15%라 근접 생존자에게는 훌륭하고 원거리 생존자에게는 거의 쓸모가 없습니다.
+  - id: IgniteOnKill
+    rank: A
+    popularity: high
+    bestFor:
+      - MageBody
+      - ChefBody
+      - CrocoBody
+    verdict:
+      en: Kill explosions spread burn through whole packs and stack efficiently; great early wave clear, even better with Ignition Tank.
+      ko: 처치 시 폭발로 무리 전체에 화상을 퍼뜨리고 스택 효율도 좋습니다. 초반 웨이브 정리에 탁월하고 점화 탱크와 궁합이 좋습니다.
+  - id: CritAtLowerElevation
+    rank: B
+    popularity: medium
+    bestFor:
+      - DroneTechBody
+      - MageBody
+      - HuntressBody
+    verdict:
+      en: Hitting enemies from above ramps crit chance and crit damage; strong on fliers and hover-heavy survivors, awkward on grounded melee.
+      ko: 위에서 적을 때리면 치명타 확률과 치명타 피해가 쌓입니다. 공중에 오래 떠 있는 생존자에게 좋고 지상 근접에게는 애매합니다.
+  - id: ScrapWhite
+    rank: C
+    popularity: medium
+    verdict:
+      en: No effect on its own; printers spend scrap first, so keep a few to trade for the white item you actually want.
+      ko: 자체 효과는 없지만 3D 프린터는 재활용 아이템부터 소모하므로 원하는 흰템으로 바꿀 몇 개를 들고 다니세요.
+  - id: CritGlasses
+    rank: S
+    popularity: very-high
+    bestFor:
+      - HuntressBody
+      - CommandoBody
+      - ToolbotBody
+      - Bandit2Body
+    verdict:
+      en: Crit chance powers crit-synergy items like Predatory Instincts, Harvester's Scythe and Shatterspleen; always worth printing.
+      ko: 치명타 확률이 포식 본능, 수확꾼의 낫, 폭발하는 비장 같은 치명타 시너지의 기반이 됩니다. 언제든 3D 프린터로 뽑을 가치가 있습니다.
+  - id: Medkit
+    rank: B
+    popularity: medium
+    bestFor:
+      - TreebotBody
+      - SeekerBody
+    verdict:
+      en: Reliable burst healing after every hit, a solid sustain item that stacks well with regen builds.
+      ko: 피격 후마다 확실한 회복을 주는 안정적인 유지력 아이템으로, 재생 빌드와도 잘 어울립니다.
+  - id: AttackSpeedAndMoveSpeed
+    rank: B
+    popularity: medium
+    bestFor:
+      - LoaderBody
+      - MercBody
+    verdict:
+      en: Small attack and move speed boosts that are always useful; a safe filler white item.
+      ko: 공격 속도와 이동 속도를 조금씩 올려 주는 언제나 쓸모 있는 무난한 흰템입니다.
+  - id: Tooth
+    rank: B
+    popularity: medium
+    bestFor:
+      - TreebotBody
+      - EngiBody
+    verdict:
+      en: Healing orbs from kills give free sustain in crowded fights; good early and on REX.
+      ko: 처치 시 회복 구슬이 떨어져 난전에서 공짜 유지력을 줍니다. 초반과 렉스에게 좋습니다.
+  - id: OutOfCombatArmor
+    rank: B
+    popularity: medium
+    bestFor:
+      - DrifterBody
+    verdict:
+      en: +100 armor out of combat soaks the first hit of every fight; good on burst-and-reposition playstyles.
+      ko: 비전투 시 방어력 +100으로 매 전투 첫 피격을 크게 줄여 줍니다. 치고 빠지는 플레이에 좋습니다.
+  - id: Hoof
+    rank: A
+    popularity: high
+    verdict:
+      en: Flat movement speed that also works in combat; mobility is survival in RoR2, so stack it freely.
+      ko: 전투 중에도 적용되는 이동 속도라 리스크 오브 레인에서 곧 생존력입니다. 부담 없이 쌓으세요.
+  - id: PersonalShield
+    rank: C
+    popularity: medium
+    bestFor:
+      - VoidSurvivorBody
+      - HereticBody
+    verdict:
+      en: A small shield that only matters on shield or Transcendence builds, or with Plasma Shrimp.
+      ko: 작은 보호막이라 보호막/초월 빌드나 플라즈마 새우와 함께일 때만 의미가 있습니다.
+  - id: HealingPotion
+    rank: C
+    popularity: medium
+    bestFor:
+      - TreebotBody
+    verdict:
+      en: A one-time emergency heal per stage per stack; it can save a run but is consumed and gives nothing afterward.
+      ko: 스테이지마다 한 번 위급할 때 회복해 주지만 사용 후에는 아무 효과가 없습니다.
+  - id: ArmorPlate
+    rank: C
+    popularity: medium
+    bestFor:
+      - TreebotBody
+      - SeekerBody
+    verdict:
+      en: Flat damage reduction per hit is strong against swarms of weak hits but falls off against big hits in loops.
+      ko: 피격당 고정 피해 감소라 약한 다단히트에는 강하지만 루프 후반의 큰 한 방에는 약해집니다.
+  - id: GoldOnHurt
+    rank: D
+    popularity: low
+    verdict:
+      en: A little gold when hit is negligible; scrap it.
+      ko: 맞을 때 들어오는 약간의 골드는 의미가 거의 없습니다. 스크래퍼로 보내세요.
+  - id: TreasureCache
+    rank: C
+    popularity: medium
+    verdict:
+      en: Spawns a locked rusty box each stage with a chance at greens and reds; fine for looping, weak for a quick run.
+      ko: 스테이지마다 녹슨 잠금 상자가 생겨 초록·빨간템을 노릴 수 있습니다. 루프에는 괜찮지만 짧은 런에는 약합니다.
+  - id: Syringe
+    rank: S
+    popularity: very-high
+    bestFor:
+      - CommandoBody
+      - ToolbotBody
+      - HuntressBody
+    verdict:
+      en: +15% attack speed per stack boosts damage and every on-hit proc; the most reliable white item for nearly everyone.
+      ko: 스택당 공격 속도 +15%로 화력과 모든 적중 시 프록을 함께 올립니다. 거의 모든 생존자에게 가장 확실한 흰템입니다.
+  - id: StickyBomb
+    rank: B
+    popularity: medium
+    bestFor:
+      - CommandoBody
+      - CaptainBody
+    verdict:
+      en: A reliable on-hit bomb for 180% damage that scales with procs; solid filler for fast-hitting survivors.
+      ko: 적중 시 확률로 폭탄을 붙이는 믿을 만한 프록 아이템으로, 타수가 많은 생존자에게 무난합니다.
+  - id: StunChanceOnHit
+    rank: C
+    popularity: medium
+    verdict:
+      en: Random stuns are nice crowd control, but hyperbolic stacking and useless against bosses keep it low.
+      ko: 무작위 기절은 군중 제어로 괜찮지만 쌍곡선 스택이고 보스에게는 통하지 않아 평가가 낮습니다.
+  - id: BarrierOnKill
+    rank: B
+    popularity: medium
+    bestFor:
+      - TreebotBody
+      - HereticBody
+      - VoidSurvivorBody
+    verdict:
+      en: Barrier on kill gives steady mid-fight protection, and the AC barrier-decay change made it better.
+      ko: 처치 시 방벽으로 전투 중 꾸준히 버틸 수 있고, AC의 방벽 감소 변경으로 더 좋아졌습니다.
+  - id: Bear
+    rank: S
+    popularity: very-high
+    verdict:
+      en: Chance to fully block a hit stacks into huge survivability; the best defensive white and usually worth keeping over its void form.
+      ko: 피격을 확률로 완전히 막아 주고 스택할수록 생존력이 크게 오릅니다. 최고의 방어 흰템이라 공허 버전보다 유지할 때가 많습니다.
+  - id: BleedOnHit
+    rank: A
+    popularity: high
+    bestFor:
+      - CommandoBody
+      - ToolbotBody
+      - CaptainBody
+      - Bandit2Body
+    verdict:
+      en: Bleed on every hit gives strong boss damage on fast-hitting survivors; stacks well into loops.
+      ko: 적중마다 출혈 확률이 있어 타수가 많은 생존자의 보스 화력이 크게 늘고, 루프까지 잘 스택됩니다.
+  - id: WardOnLevel
+    rank: C
+    popularity: medium
+    verdict:
+      en: A banner on level-up and teleporter start helps boss fights a little; filler.
+      ko: 레벨업과 텔레포터 시작 시 깃발을 세워 보스전에 약간 도움이 되는 무난한 수준입니다.
+  - id: DelayedDamage
+    rank: C
+    popularity: low
+    verdict:
+      en: V1.4.1 cut its damage reduction to 10%, so it now mostly smooths big hits over time rather than preventing damage.
+      ko: V1.4.1에서 피해 감소가 10%로 줄어, 이제는 피해를 막기보다 큰 한 방을 나눠 받게 해 주는 정도입니다.
+  - id: Missile
+    rank: S
+    popularity: very-high
+    verdict:
+      en: A reliable 300% missile on hit that works on every survivor and scales with every proc chain; one of the best greens.
+      ko: 적중 시 300% 미사일을 쏘는 믿을 만한 프록 아이템으로, 모든 생존자와 프록 연쇄에 어울리는 최상급 초록템입니다.
+  - id: Bandolier
+    rank: B
+    popularity: medium
+    bestFor:
+      - Bandit2Body
+      - EngiBody
+      - CaptainBody
+      - HereticBody
+    verdict:
+      en: Ammo pack drops reset cooldowns, which is great for cooldown-limited survivors.
+      ko: 처치 시 탄약 상자가 떨어져 쿨이 초기화되어 쿨타임에 묶인 생존자에게 좋습니다.
+  - id: WarCryOnMultiKill
+    rank: B
+    popularity: medium
+    bestFor:
+      - MercBody
+      - ToolbotBody
+    verdict:
+      en: Multi-kills trigger a big attack and move speed frenzy; strong on AoE and wave-clear survivors.
+      ko: 다중 처치 시 공격·이동 속도가 크게 오르는 광란 상태가 되어 광역딜 생존자에게 좋습니다.
+  - id: DronesDropDynamite
+    rank: C
+    popularity: medium
+    bestFor:
+      - DroneTechBody
+      - CaptainBody
+    verdict:
+      en: Gives a dynamite-dropping drone and makes your drones drop dynamite; handy for Operator drone builds but minor elsewhere.
+      ko: 다이너마이트를 떨어뜨리는 드론을 주고 내 드론들도 폭탄을 떨굽니다. 오퍼레이터 드론 빌드에는 좋지만 그 외에는 소소한 보탬입니다.
+  - id: KnockBackHitEnemies
+    rank: C
+    popularity: low
+    verdict:
+      en: Launches grounded enemies for juggle damage, but the V1.3.7 nerf and aim disruption keep it niche.
+      ko: 지상의 적을 띄워 추가 피해를 주지만 V1.3.7 너프와 조준 방해 때문에 쓰임새가 좁습니다.
+  - id: ExtraShrineItem
+    rank: B
+    popularity: medium
+    verdict:
+      en: Better Shrine of Chance rewards, with a chance to upgrade the item's rarity; good if you gamble with gold anyway.
+      ko: 확률의 성소 보상이 좋아지고 등급이 오를 확률도 생깁니다. 골드로 성소를 자주 돌린다면 좋습니다.
+  - id: SlowOnHit
+    rank: B
+    popularity: medium
+    verdict:
+      en: A 60% slow on hit makes every fight safer with just one copy; extra copies only lengthen the slow.
+      ko: 적중 시 60% 감속을 걸어 하나만 있어도 전투가 훨씬 안전해집니다. 추가 스택은 지속 시간만 늘립니다.
+  - id: SpeedOnPickup
+    rank: B
+    popularity: low
+    bestFor:
+      - DrifterBody
+      - FalseSonBody
+    verdict:
+      en: Picking up items or pickups grants stacking all-stat buffs; great with Drifter and pickup-generating items, forgettable otherwise.
+      ko: 아이템이나 픽업을 주울 때 모든 능력치 버프가 쌓입니다. 드리프터와 픽업 생성 아이템과는 강하지만 그 외에는 존재감이 적습니다.
+  - id: DeathMark
+    rank: B
+    popularity: medium
+    bestFor:
+      - CrocoBody
+      - MageBody
+      - ChefBody
+      - TreebotBody
+    verdict:
+      en: +50% damage taken on enemies with 4+ debuffs; strong on debuff-heavy survivors, dead weight on others.
+      ko: 디버프가 4개 이상인 적이 받는 피해 +50%. 디버프를 많이 거는 생존자에게는 강하고 그 외에는 무용합니다.
+  - id: JumpDamageStrike
+    rank: A
+    popularity: medium
+    verdict:
+      en: Moving charges huge move speed and jump height, then jumping fires a big explosion; one copy transforms mobility.
+      ko: 움직이면 충전되어 이동 속도와 점프 높이가 크게 오르고, 점프 시 큰 폭발을 일으킵니다. 하나만으로도 기동성이 확 달라집니다.
+  - id: EquipmentMagazine
+    rank: B
+    popularity: medium
+    bestFor:
+      - ToolbotBody
+      - CaptainBody
+    verdict:
+      en: Extra equipment charge and cooldown reduction; core for equipment builds, weak without a good equipment.
+      ko: 장비 충전 횟수와 쿨감을 주어 장비 빌드의 핵심이지만 좋은 장비가 없으면 약합니다.
+  - id: BonusGoldPackOnKill
+    rank: C
+    popularity: medium
+    verdict:
+      en: Gold drops from kills help early economy but do nothing for combat; better on the first few stages.
+      ko: 처치 시 골드가 떨어져 초반 경제에 도움이 되지만 전투력에는 기여하지 않습니다. 초반 스테이지에서 더 좋습니다.
+  - id: HealOnCrit
+    rank: B
+    popularity: high
+    bestFor:
+      - HuntressBody
+      - CommandoBody
+      - Bandit2Body
+      - MercBody
+    verdict:
+      en: Healing on crit plus 5% crit chance; a staple sustain item for crit builds, but stacking only raises the heal.
+      ko: 치명타 시 회복과 치명타 확률 5%를 줍니다. 치명타 빌드의 필수 유지력 아이템이지만 추가 스택은 회복량만 늘립니다.
+  - id: Feather
+    rank: S
+    popularity: high
+    bestFor:
+      - MercBody
+      - CommandoBody
+      - HuntressBody
+    verdict:
+      en: An extra jump per stack gives huge dodging and map mobility for every survivor; many call it the best green.
+      ko: 스택당 점프 횟수가 늘어 회피와 이동이 크게 좋아집니다. 최강의 초록템으로 꼽는 사람도 많습니다.
+  - id: MoveSpeedOnKill
+    rank: B
+    popularity: medium
+    verdict:
+      en: Kills give a burst of move speed; great for tempo, though it can overshoot fights on tight maps.
+      ko: 처치 시 이동 속도가 폭발적으로 올라 템포를 살려 주지만, 좁은 맵에서는 몸이 너무 빨라 오히려 방해될 때도 있습니다.
+  - id: StrengthenBurn
+    rank: B
+    popularity: medium
+    bestFor:
+      - MageBody
+      - ChefBody
+      - CrocoBody
+    verdict:
+      en: Triples burn damage and makes stacking burns strong; a must for fire builds, useless without ignite sources.
+      ko: 화상 피해를 크게 증폭시켜 화염 빌드의 필수템이지만 화상 원천이 없으면 쓸모없습니다.
+  - id: Infusion
+    rank: C
+    popularity: medium
+    bestFor:
+      - TreebotBody
+      - EngiBody
+    verdict:
+      en: Permanent health from kills is slow and capped; fine early, weak late.
+      ko: 처치할 때마다 영구 체력을 얻지만 느리고 상한이 있어 초반에만 괜찮습니다.
+  - id: ScrapGreen
+    rank: C
+    popularity: medium
+    verdict:
+      en: No effect; hold it for green printers or Cauldrons, since printers spend scrap first.
+      ko: 자체 효과는 없습니다. 3D 프린터는 재활용 아이템부터 쓰니 초록 프린터나 콜드론용으로 들고 다니세요.
+  - id: ShieldBooster
+    rank: C
+    popularity: low
+    bestFor:
+      - HereticBody
+      - VoidSurvivorBody
+      - EngiBody
+    verdict:
+      en: Armor while shielded and a stun pulse when your shield breaks; only good on shield-heavy or Transcendence builds.
+      ko: 보호막이 있는 동안 방어력을 주고 보호막이 깨지면 기절 파동을 냅니다. 보호막 위주나 초월 빌드에서만 좋습니다.
+  - id: FireRing
+    rank: S
+    popularity: very-high
+    bestFor:
+      - RailgunnerBody
+      - MageBody
+      - CommandoBody
+      - ToolbotBody
+    verdict:
+      en: A huge fire tornado on big hits deletes bosses and pairs with Runald's; top-tier on high-damage survivors.
+      ko: 큰 한 방에 거대한 화염 회오리가 발동해 보스를 녹입니다. 루널드의 반지와 같이 쓰며, 한 방이 센 생존자에게 최상급입니다.
+  - id: Seed
+    rank: B
+    popularity: medium
+    bestFor:
+      - ToolbotBody
+      - CommandoBody
+      - MercBody
+    verdict:
+      en: Flat healing per hit is strong on very fast-hitting survivors and weak on slow hitters.
+      ko: 적중마다 고정 회복이라 타수가 아주 많은 생존자에게는 강하고 느린 생존자에게는 약합니다.
+  - id: TPHealingNova
+    rank: D
+    popularity: low
+    verdict:
+      en: Healing pulses only during the teleporter event; rarely worth a green slot.
+      ko: 텔레포터 이벤트 중에만 회복 파동이 나가 초록템 자리를 차지할 가치가 거의 없습니다.
+  - id: IncreasePrimaryDamage
+    rank: B
+    popularity: medium
+    bestFor:
+      - DrifterBody
+      - MercBody
+      - FalseSonBody
+    verdict:
+      en: Using your secondary charges your primary to fire lightning strikes; good on survivors who alternate secondary and primary often.
+      ko: 보조 스킬을 쓰면 충전이 쌓여 기본 공격이 번개를 쏩니다. 보조와 기본 공격을 번갈아 자주 쓰는 생존자에게 좋습니다.
+  - id: TriggerEnemyDebuffs
+    rank: C
+    popularity: low
+    bestFor:
+      - CrocoBody
+      - TreebotBody
+    verdict:
+      en: Spreads your debuffs to nearby enemies on kill; niche but fun on DoT survivors.
+      ko: 처치 시 디버프를 주변 적에게 옮깁니다. 지속 피해 생존자에게는 재미있지만 쓰임새가 좁습니다.
+  - id: ExecuteLowHealthElite
+    rank: B
+    popularity: medium
+    verdict:
+      en: Instantly kills elites below a health threshold; good in loops where elites are everywhere.
+      ko: 체력이 일정 이하인 엘리트를 즉사시킵니다. 엘리트가 넘쳐나는 루프에서 좋습니다.
+  - id: Phasing
+    rank: C
+    popularity: low
+    verdict:
+      en: Invisibility and speed at low health rarely saves you; generally scrapped.
+      ko: 체력이 낮을 때 은신과 이속을 주지만 생존에 큰 도움이 안 되어 보통 스크래퍼행입니다.
+  - id: ExtraStatsOnLevelUp
+    rank: B
+    popularity: medium
+    verdict:
+      en: Stores experience and converts it into permanent base stats when you remove it; excellent value for looping, but it cannot be printed.
+      ko: 경험치를 모아 빼낼 때 영구 기본 능력치로 바꿔 줍니다. 루프 시 가치가 높지만 3D 프린터로는 뽑을 수 없습니다.
+  - id: AttackSpeedOnCrit
+    rank: B
+    popularity: medium
+    bestFor:
+      - CommandoBody
+      - ToolbotBody
+      - Bandit2Body
+      - RailgunnerBody
+    verdict:
+      en: Crits grant stacking attack speed; strong on crit builds with glasses.
+      ko: 치명타 시 공격 속도가 쌓여 안경을 갖춘 치명타 빌드에서 강합니다.
+  - id: Thorns
+    rank: C
+    popularity: low
+    bestFor:
+      - TreebotBody
+      - SeekerBody
+    verdict:
+      en: Retaliates when hit; fine on tanky melee or REX, weak for most.
+      ko: 피격 시 반격하는 아이템으로 단단한 근접이나 렉스에게는 괜찮지만 대부분에게는 약합니다.
+  - id: SprintOutOfCombat
+    rank: C
+    popularity: medium
+    bestFor:
+      - EngiBody
+    verdict:
+      en: Big speed out of combat; great for Engineer rotations and exploring, useless mid-fight.
+      ko: 비전투 시 이동 속도가 크게 올라 엔지니어나 탐색에는 좋지만 전투 중에는 쓸모없습니다.
+  - id: RegeneratingScrap
+    rank: B
+    popularity: medium
+    verdict:
+      en: Reusable green scrap that returns each stage; great value if you use green printers every stage.
+      ko: 스테이지마다 재생되는 초록 재활용 아이템입니다. 매 스테이지 초록 3D 프린터를 쓴다면 가치가 높습니다.
+  - id: SprintArmor
+    rank: C
+    popularity: medium
+    bestFor:
+      - CrocoBody
+      - HuntressBody
+    verdict:
+      en: Armor while sprinting helps kiting survivors but does nothing while you stand and shoot.
+      ko: 질주 중 방어력을 주어 카이팅하는 생존자에게 도움이 되지만 서서 쏠 때는 효과가 없습니다.
+  - id: IceRing
+    rank: A
+    popularity: high
+    bestFor:
+      - RailgunnerBody
+      - MageBody
+      - CommandoBody
+      - ToolbotBody
+    verdict:
+      en: "Kjaro's partner: freezes and slows on big hits and adds solid damage; take both bands on high-damage survivors."
+      ko: 캬로의 반지 짝으로, 큰 한 방에 빙결 폭발과 감속을 걸고 피해도 준수합니다. 한 방이 센 생존자는 두 반지를 함께 챙기세요.
+  - id: LowerPricedChests
+    rank: A
+    popularity: high
+    verdict:
+      en: The first chest each stage gives extra items, compounding over a run; one of the best economy greens (not duplicable).
+      ko: 스테이지 첫 상자에서 아이템을 추가로 줘 런 전체로 보면 이득이 큽니다. 최상급 경제 초록템입니다(복제 불가).
+  - id: FreeChest
+    rank: B
+    popularity: medium
+    verdict:
+      en: A free delivery chest every stage adds up over long runs and loops.
+      ko: 매 스테이지 무료 배송 상자가 생겨 긴 런과 루프에서 이득이 쌓입니다.
+  - id: PrimarySkillShuriken
+    rank: A
+    popularity: high
+    bestFor:
+      - DrifterBody
+      - HereticBody
+    verdict:
+      en: Primary-skill uses throw shurikens that stack very efficiently; great filler damage on any survivor.
+      ko: 기본 스킬 사용 시 슈리켄을 던지며 중첩 효율이 매우 높아 어떤 생존자에게도 좋은 추가 화력입니다.
+  - id: Squid
+    rank: C
+    popularity: medium
+    verdict:
+      en: A stationary turret on interact; decent early chip damage that does not scale well.
+      ko: 상호작용 시 고정 포탑을 소환합니다. 초반 견제딜은 괜찮지만 성장성이 낮습니다.
+  - id: ChainLightning
+    rank: S
+    popularity: very-high
+    verdict:
+      en: Chain lightning on hit is great wave clear and a core proc-chain item for every survivor.
+      ko: 적중 시 체인 라이트닝으로 몹 정리가 뛰어나고 모든 생존자에게 프록 연쇄의 핵심입니다.
+  - id: TeleportOnLowHealth
+    rank: C
+    popularity: low
+    verdict:
+      en: Once per stage it saves you at low health with barrier and a teleport; a panic button, not a damage item.
+      ko: 스테이지당 한 번 위급할 때 방벽과 순간이동으로 살려 주는 비상 버튼이지 딜템은 아닙니다.
+  - id: EnergizedOnEquipmentUse
+    rank: C
+    popularity: low
+    bestFor:
+      - ToolbotBody
+    verdict:
+      en: Attack speed after using equipment; only worth it with a short-cooldown equipment.
+      ko: 장비 사용 후 공격 속도가 오릅니다. 쿨이 짧은 장비가 있어야 의미가 있습니다.
+  - id: JumpBoost
+    rank: B
+    popularity: medium
+    bestFor:
+      - CaptainBody
+      - CommandoBody
+    verdict:
+      en: Sprint-jumps launch you far, a big mobility boost for survivors lacking movement skills.
+      ko: 질주 점프로 멀리 날아가 이동기가 부족한 생존자의 기동성을 크게 보완합니다.
+  - id: ExplodeOnDeath
+    rank: A
+    popularity: high
+    bestFor:
+      - MageBody
+      - ChefBody
+      - DrifterBody
+    verdict:
+      en: Enemies explode on death for big AoE damage that stacks very efficiently; excellent wave clear on anyone.
+      ko: 적이 죽으면 크게 폭발해 광역 피해를 주고 중첩 효율도 매우 좋습니다. 누구에게나 훌륭한 몹 정리템입니다.
+  - id: Clover
+    rank: S
+    popularity: high
+    bestFor:
+      - CaptainBody
+      - CommandoBody
+      - ToolbotBody
+      - MageBody
+    verdict:
+      en: +1 luck rerolls every random effect in your favour, supercharging all proc items; the strongest red for proc builds.
+      ko: 행운 +1로 모든 확률 효과를 한 번 더 굴려 프록 아이템 전체를 강화합니다. 프록 빌드 최강의 빨간템입니다.
+  - id: BarrierOnOverHeal
+    rank: B
+    popularity: medium
+    bestFor:
+      - TreebotBody
+      - HereticBody
+      - CrocoBody
+    verdict:
+      en: Overhealing becomes barrier; strong with plenty of healing, weak without it.
+      ko: 초과 회복을 방벽으로 바꿔 줍니다. 회복원이 많으면 강하고 없으면 약합니다.
+  - id: AlienHead
+    rank: S
+    popularity: high
+    bestFor:
+      - Bandit2Body
+      - HuntressBody
+      - MercBody
+      - MageBody
+      - LoaderBody
+    verdict:
+      en: 25% cooldown reduction on every skill boosts almost any survivor's damage and mobility.
+      ko: 모든 스킬 쿨감 25%로 거의 모든 생존자의 화력과 기동성이 오릅니다.
+  - id: ImmuneToDebuff
+    rank: B
+    popularity: medium
+    verdict:
+      en: Blocks debuffs and grants barrier; a strong defensive pickup against elites and DoT-heavy enemies.
+      ko: 디버프를 막고 방벽을 줍니다. 엘리트와 지속 피해가 많은 적 상대로 든든한 방어템입니다.
+  - id: RandomEquipmentTrigger
+    rank: C
+    popularity: low
+    bestFor:
+      - ToolbotBody
+      - CaptainBody
+    verdict:
+      en: Triggers random equipment effects when you use equipment; great with Fuel Cells and Gesture, weak otherwise.
+      ko: 장비 사용 시 무작위 장비 효과를 추가로 발동합니다. 연료 전지나 익사자들의 손짓과는 강하지만 그 외에는 약합니다.
+  - id: KillEliteFrenzy
+    rank: A
+    popularity: medium
+    bestFor:
+      - Bandit2Body
+      - MercBody
+      - MageBody
+      - LoaderBody
+    verdict:
+      en: Killing an elite removes all cooldowns for a few seconds; explosive with skill-spam survivors in loops.
+      ko: 엘리트 처치 시 몇 초간 모든 스킬 쿨이 사라집니다. 스킬을 난사하는 생존자에게 루프에서 폭발적입니다.
+  - id: Behemoth
+    rank: S
+    popularity: high
+    bestFor:
+      - CommandoBody
+      - ToolbotBody
+      - HuntressBody
+      - MercBody
+    verdict:
+      en: Every hit explodes in an area, turning single-target attacks into wave clear and spreading procs.
+      ko: 모든 공격이 광역 폭발을 일으켜 단일 대상 공격을 몹 정리로 바꾸고 프록도 퍼뜨립니다.
+  - id: Dagger
+    rank: S
+    popularity: high
+    bestFor:
+      - HuntressBody
+      - MageBody
+      - Bandit2Body
+      - CrocoBody
+    verdict:
+      en: Kills launch homing daggers that chain into more kills; outstanding wave clear on every survivor.
+      ko: 처치 시 유도 단검이 날아가 연쇄 처치를 일으킵니다. 모든 생존자에게 뛰어난 몹 정리템입니다.
+  - id: CaptainDefenseMatrix
+    rank: B
+    popularity: medium
+    bestFor:
+      - CaptainBody
+    verdict:
+      en: Shoots down enemy projectiles near you; excellent against projectile-heavy enemies, and Captain starts with it.
+      ko: 주변 적 투사체를 격추합니다. 투사체가 많은 적 상대로 탁월하며 캡틴은 기본으로 갖고 시작합니다.
+  - id: ExtraLife
+    rank: A
+    popularity: high
+    bestFor:
+      - EngiBody
+      - HuntressBody
+      - MercBody
+    verdict:
+      en: A second life per copy; turns into Dio's Best Friend (Consumed) after use but safety for long runs.
+      ko: 스택당 한 번 부활합니다. 쓰면 소모되지만 긴 런에서 가장 확실한 보험입니다.
+  - id: StunAndPierce
+    rank: B
+    popularity: medium
+    verdict:
+      en: A boomerang that stuns and pierces on hit; solid crowd control and damage, though not a carry item.
+      ko: 적중 시 기절과 관통을 주는 부메랑을 날립니다. 군중 제어와 화력이 준수하지만 캐리템은 아닙니다.
+  - id: Icicle
+    rank: A
+    popularity: medium
+    bestFor:
+      - SeekerBody
+      - CrocoBody
+      - MercBody
+    verdict:
+      en: Kills build an orbiting ice storm that shreds nearby enemies; great for melee and close-range survivors.
+      ko: 처치할수록 주변을 도는 얼음 폭풍이 커져 근처 적을 갈아 버립니다. 근접·근거리 생존자에게 좋습니다.
+  - id: BoostAllStats
+    rank: B
+    popularity: medium
+    bestFor:
+      - FalseSonBody
+    verdict:
+      en: All stats rise per active buff; the V1.3.7 nerf to 4% per buff made it good rather than great.
+      ko: 활성 버프 수만큼 모든 능력치가 오릅니다. V1.3.7에서 버프당 4%로 너프되어 이제는 좋은 정도입니다.
+  - id: FallBoots
+    rank: B
+    popularity: medium
+    bestFor:
+      - LoaderBody
+    verdict:
+      en: Removes fall damage and adds a ground-slam; strong on vertical survivors like Loader but awkward elsewhere.
+      ko: 낙하 피해를 없애고 내려찍기를 줍니다. 로더처럼 위아래로 움직이는 생존자에게 강하고 그 외에는 애매합니다.
+  - id: GhostOnKill
+    rank: C
+    popularity: low
+    verdict:
+      en: Random ghost allies on kill; fun but unreliable and widely seen as a weak red.
+      ko: 처치 시 확률로 유령 아군이 나오지만 불안정해 약한 빨간템으로 꼽힙니다.
+  - id: UtilitySkillMagazine
+    rank: A
+    popularity: high
+    bestFor:
+      - LoaderBody
+      - MercBody
+      - CrocoBody
+      - TreebotBody
+      - Bandit2Body
+    verdict:
+      en: Two extra utility charges and cooldown reduction; huge for survivors whose utility is mobility or damage.
+      ko: 유틸리티 스킬 충전 +2와 쿨감을 줍니다. 유틸이 이동기나 딜 스킬인 생존자에게 매우 큽니다.
+  - id: Plant
+    rank: D
+    popularity: low
+    verdict:
+      en: Healing fruit plants on kill are too slow for a red; one of the weakest legendaries.
+      ko: 처치 시 회복 식물이 자라지만 빨간템치고 너무 느립니다. 가장 약한 빨간템 중 하나입니다.
+  - id: ScrapRed
+    rank: C
+    popularity: medium
+    verdict:
+      en: No effect; keep it only if you plan to use a red printer.
+      ko: 자체 효과는 없습니다. 빨간 3D 프린터를 쓸 계획이 있을 때만 들고 다니세요.
+  - id: CritDamage
+    rank: A
+    popularity: medium
+    bestFor:
+      - RailgunnerBody
+      - Bandit2Body
+      - HuntressBody
+      - MercBody
+    verdict:
+      en: +100% crit damage per stack; excellent once you have high crit chance, and brutal on Railgunner.
+      ko: 스택당 치명타 피해 +100%. 치명타 확률이 높으면 매우 강하고, 레일거너에게는 특히 강력합니다.
+  - id: NovaOnHeal
+    rank: C
+    popularity: low
+    bestFor:
+      - TreebotBody
+      - CrocoBody
+    verdict:
+      en: Healing charges soul skulls that damage enemies; needs heavy healing like REX to be worthwhile.
+      ko: 회복량을 모아 해골 투사체로 공격합니다. 렉스처럼 회복량이 많아야 제값을 합니다.
+  - id: SharedSuffering
+    rank: B
+    popularity: medium
+    bestFor:
+      - MageBody
+      - ChefBody
+      - CrocoBody
+    verdict:
+      en: Links several enemies so damage to one is pooled and dealt to all every 3s (45% after V1.4.1); good with AoE, but the pooled hit cannot crit or proc.
+      ko: 여러 적을 감염시켜 받은 피해를 모아 3초마다 전원에게 나눠 줍니다(V1.4.1 이후 45%). 광역딜과 좋지만 모인 피해는 치명타·프록이 없습니다.
+  - id: PhysicsProjectile
+    rank: C
+    popularity: medium
+    bestFor:
+      - DroneTechBody
+    verdict:
+      en: A pettable Solus buddy that rams enemies and scales with your move speed; fun and cleanses debuffs, but its damage is unreliable.
+      ko: 적을 들이받는 솔루스 동료를 얻고 이동 속도 아이템에 비례해 강해집니다. 쓰다듬으면 디버프를 해제해 주지만 딜은 불안정합니다.
+  - id: MoreMissile
+    rank: B
+    popularity: medium
+    bestFor:
+      - VoidSurvivorBody
+    verdict:
+      en: Makes every missile item fire two extra missiles; incredible with AtG, Plasma Shrimp and War Bonds (since V1.4.1), weak without missiles.
+      ko: 모든 미사일 아이템이 미사일을 2발 더 쏘게 합니다. AtG, 플라즈마 새우, 전쟁 채권(V1.4.1 이후)과는 엄청나지만 미사일이 없으면 약합니다.
+  - id: IncreaseHealing
+    rank: B
+    popularity: medium
+    bestFor:
+      - TreebotBody
+      - HereticBody
+      - VoidSurvivorBody
+    verdict:
+      en: Doubles all healing; a multiplier that shines with Harvester's Scythe, Leeching Seed or REX.
+      ko: 모든 회복량을 2배로 늘립니다. 수확꾼의 낫, 흡혈 씨앗, 렉스처럼 회복원이 있을 때 빛납니다.
+  - id: LaserTurbine
+    rank: B
+    popularity: medium
+    verdict:
+      en: Kills charge a disc that fires piercing lasers; steady damage that is decent but unspectacular.
+      ko: 처치하면 원반이 충전되어 관통 레이저를 쏩니다. 꾸준하지만 두드러지지는 않는 화력입니다.
+  - id: MeteorAttackOnHighDamage
+    rank: B
+    popularity: medium
+    bestFor:
+      - RailgunnerBody
+      - MageBody
+    verdict:
+      en: Big hits can call meteors for massive damage; good on high-damage single hits and with luck items.
+      ko: 큰 한 방에 확률로 운석을 불러 막대한 피해를 줍니다. 한 방이 센 생존자와 행운 아이템과 잘 맞습니다.
+  - id: BounceNearby
+    rank: S
+    popularity: high
+    bestFor:
+      - CommandoBody
+      - ToolbotBody
+      - HuntressBody
+      - CaptainBody
+    verdict:
+      en: Hits fire hooks that drag and damage many enemies, providing premier wave clear for fast-hitting survivors.
+      ko: 적중 시 갈고리가 여러 적을 끌어오며 피해를 줘, 타수 많은 생존자에게 최고 수준의 몹 정리를 제공합니다.
+  - id: ArmorReductionOnHit
+    rank: B
+    popularity: medium
+    bestFor:
+      - CrocoBody
+      - CaptainBody
+      - EngiBody
+    verdict:
+      en: Stacking armor shred helps boss damage, especially against armored enemies; solid but not a carry.
+      ko: 방어력 감소를 쌓아 보스딜을 올리고 방어력 높은 적에게 특히 좋습니다. 준수하지만 캐리템은 아닙니다.
+  - id: ItemDropChanceOnKill
+    rank: B
+    popularity: medium
+    bestFor:
+      - ChefBody
+    verdict:
+      en: Elite and boss kills can drop extra items; good value for longer runs.
+      ko: 엘리트·보스 처치 시 아이템이 추가로 떨어질 수 있어 긴 런에서 이득입니다.
+  - id: Talisman
+    rank: B
+    popularity: medium
+    bestFor:
+      - ToolbotBody
+      - CaptainBody
+    verdict:
+      en: Kills reduce equipment cooldown; build-defining with Forgive Me Please or strong equipment, mediocre otherwise.
+      ko: 처치 시 장비 쿨이 줄어듭니다. 제발 용서해줘나 좋은 장비와 함께면 빌드 핵심이지만 그 외에는 평범합니다.
+  - id: DroneWeapons
+    rank: B
+    popularity: medium
+    bestFor:
+      - DroneTechBody
+      - CaptainBody
+      - EngiBody
+    verdict:
+      en: Drone buff item that was cut 50% in the AC update; still valuable for Operator and drone-heavy runs.
+      ko: 드론 강화 아이템으로 AC 업데이트에서 성능이 50% 너프됐지만, 오퍼레이터와 드론 위주 런에서는 여전히 좋습니다.
+  - id: Duplicator
+    rank: C
+    popularity: medium
+    bestFor:
+      - DrifterBody
+    verdict:
+      en: Each pickup also gives a temporary copy, which lasts longer with stacks; strong for Drifter's temporary items but the copies fade quickly otherwise.
+      ko: 아이템을 주울 때마다 임시 복사본을 주고 스택 시 지속 시간이 늘어납니다. 임시 아이템을 쓰는 드리프터에게는 좋지만 그 외에는 금방 사라집니다.
+  - id: PermanentDebuffOnHit
+    rank: A
+    popularity: medium
+    bestFor:
+      - CommandoBody
+      - ToolbotBody
+      - CaptainBody
+      - MageBody
+      - ChefBody
+      - VoidSurvivorBody
+    verdict:
+      en: Permanent armor reduction on hit that never expires; devastating on fast-hitting survivors against bosses.
+      ko: 적중 시 영구적으로 방어력을 깎아 타수가 많은 생존자의 보스딜이 크게 늘어납니다.
+  - id: ShockNearby
+    rank: B
+    popularity: medium
+    bestFor:
+      - MageBody
+      - RailgunnerBody
+      - SeekerBody
+    verdict:
+      en: Periodic lightning zaps nearby enemies; reliable passive damage that turns off every few seconds.
+      ko: 주변 적에게 번개를 주기적으로 쏘는 꾸준한 패시브 딜입니다. 몇 초마다 꺼지는 구간이 있습니다.
+  - id: HeadHunter
+    rank: C
+    popularity: low
+    bestFor:
+      - EngiBody
+      - TreebotBody
+      - HereticBody
+    verdict:
+      en: Stealing elite powers is fun but short-lived; widely rated a weak red.
+      ko: 엘리트 능력을 잠시 빼앗는 재미는 있지만 지속이 짧아 약한 빨간템으로 평가됩니다.
+  - id: BarrageOnBoss
+    rank: C
+    popularity: low
+    verdict:
+      en: Missiles hit bosses at a gold cost per missile; the V1.3.7 nerf made it expensive, though Pocket I.C.B.M. now multiplies it.
+      ko: 보스에게 골드를 소모해 미사일을 퍼붓습니다. V1.3.7 너프로 비싸졌지만 이제 포켓 I.C.B.M.과 시너지가 있습니다.
+  - id: ArtifactKey
+    rank: D
+    popularity: low
+    verdict:
+      en: A quest item used to open the Artifact Reliquary; it has no combat effect.
+      ko: 유물 성소를 여는 퀘스트 아이템으로 전투 효과는 없습니다.
+  - id: LightningStrikeOnHit
+    rank: A
+    popularity: medium
+    bestFor:
+      - CommandoBody
+      - ToolbotBody
+      - CaptainBody
+    verdict:
+      en: Lightning strikes on hit for big proc damage; one of the best damage yellows.
+      ko: 적중 시 번개를 내리꽂아 큰 프록 피해를 줍니다. 최고의 화력 보스 아이템 중 하나입니다.
+  - id: MinorConstructOnKill
+    rank: B
+    popularity: medium
+    verdict:
+      en: Elite kills spawn Alpha Construct allies; good distraction and chip damage.
+      ko: 엘리트 처치 시 알파 구조물 아군을 소환해 어그로와 견제딜을 담당합니다.
+  - id: RoboBallBuddy
+    rank: C
+    popularity: low
+    bestFor:
+      - DroneTechBody
+    verdict:
+      en: Two support probes that heal and fight; decent for drone and ally builds.
+      ko: 회복과 공격을 하는 탐사기 둘을 얻습니다. 드론·아군 빌드에 괜찮습니다.
+  - id: MasterBattery
+    rank: D
+    popularity: low
+    verdict:
+      en: An AC quest item that must be decrypted to progress the Collective route; no combat effect.
+      ko: 집합체 루트 진행을 위해 해독해야 하는 AC 퀘스트 아이템으로 전투 효과는 없습니다.
+  - id: MasterCore
+    rank: D
+    popularity: low
+    verdict:
+      en: The decrypted AC quest item that you hand in to progress the Collective route; no combat effect.
+      ko: 해독된 AC 퀘스트 아이템으로 집합체 루트를 진행할 때 넘겨주며, 전투 효과는 없습니다.
+  - id: ShockDamageAura
+    rank: B
+    popularity: low
+    bestFor:
+      - DroneTechBody
+      - CaptainBody
+    verdict:
+      en: Periodic energize pulses give allies attack and move speed and guaranteed crits on electric items; strong with Ukulele or drones.
+      ko: 주기적으로 아군을 활성화해 공격·이동 속도와 전기 아이템 확정 치명타를 줍니다. 우쿨렐레나 드론과 궁합이 좋습니다.
+  - id: ExtraEquipment
+    rank: B
+    popularity: low
+    bestFor:
+      - ToolbotBody
+      - CaptainBody
+    verdict:
+      en: Hold an extra equipment and cycle between them; powerful for equipment builds and utility swaps.
+      ko: 장비를 하나 더 들고 바꿔 쓸 수 있습니다. 장비 빌드와 상황별 교체에 강력합니다.
+  - id: NovaOnLowHealth
+    rank: B
+    popularity: medium
+    verdict:
+      en: An emergency nova at low health that clears nearby enemies; solid defensive yellow.
+      ko: 체력이 낮을 때 주변 적을 쓸어버리는 폭발을 일으키는 준수한 방어용 보스 아이템입니다.
+  - id: TitanGoldDuringTP
+    rank: B
+    popularity: medium
+    verdict:
+      en: Summons Aurelionite during the teleporter event; a strong tank and damage ally in boss fights.
+      ko: 텔레포터 이벤트 중 오릴리오나이트를 소환해 보스전에서 든든한 탱커 겸 딜러가 됩니다.
+  - id: ShinyPearl
+    rank: S
+    popularity: medium
+    bestFor:
+      - FalseSonBody
+      - HereticBody
+    verdict:
+      en: Boosts every stat by 10%; the best general-purpose yellow when a Cleansing Pool gives it.
+      ko: 모든 능력치를 10% 올리는 최고의 범용 보스 아이템입니다. 정화 웅덩이에서 얻습니다.
+  - id: ScrapYellow
+    rank: C
+    popularity: low
+    verdict:
+      en: No effect; used to print a boss item from a yellow printer or Cauldron.
+      ko: 자체 효과는 없고 노란 3D 프린터나 콜드론에서 보스 아이템으로 바꿀 때 씁니다.
+  - id: SprintWisp
+    rank: C
+    popularity: medium
+    bestFor:
+      - CrocoBody
+    verdict:
+      en: Wisps fire while you sprint; weak damage unless you sprint constantly with speed items.
+      ko: 질주 중 위습이 공격하지만 이동 속도 아이템과 계속 질주하지 않으면 딜이 약합니다.
+  - id: SiphonOnLowHealth
+    rank: C
+    popularity: medium
+    bestFor:
+      - CrocoBody
+      - MercBody
+    verdict:
+      en: A tether that drains nearby enemies to heal you at low health; good on melee, weak otherwise.
+      ko: 체력이 낮을 때 주변 적의 체력을 흡수합니다. 근접에게는 좋지만 그 외에는 약합니다.
+  - id: FireballsOnHit
+    rank: A
+    popularity: medium
+    bestFor:
+      - CommandoBody
+      - ToolbotBody
+    verdict:
+      en: Magma balls on hit deal solid proc damage; one of the better yellows.
+      ko: 적중 시 용암 구체를 떨어뜨려 준수한 프록 피해를 주는 좋은 보스 아이템입니다.
+  - id: Pearl
+    rank: B
+    popularity: medium
+    bestFor:
+      - FalseSonBody
+      - TreebotBody
+    verdict:
+      en: +10% max health from a Cleansing Pool; modest but never wasted.
+      ko: 정화 웅덩이에서 얻는 최대 체력 +10%로 소박하지만 손해는 없습니다.
+  - id: ParentEgg
+    rank: C
+    popularity: medium
+    bestFor:
+      - TreebotBody
+      - SeekerBody
+    verdict:
+      en: Flat healing per hit taken; strong early, falls off as damage scales.
+      ko: 피격마다 고정 회복을 주어 초반에 강하고 적 피해가 커질수록 약해집니다.
+  - id: PowerCube
+    rank: C
+    popularity: low
+    verdict:
+      en: +50% armor while carried, and it doubles as an AC terminal key; decent on armored survivors.
+      ko: 소지 중 방어력 +50%를 주고 AC 터미널 열쇠로도 씁니다. 방어력이 있는 생존자에게 괜찮습니다.
+  - id: BeetleGland
+    rank: D
+    popularity: low
+    verdict:
+      en: Beetle Guard allies are weak and die fast; widely considered a dud.
+      ko: 딱정벌레 경비병 아군은 약하고 금방 죽어 꽝으로 여겨집니다.
+  - id: PowerPyramid
+    rank: C
+    popularity: low
+    verdict:
+      en: +15% move speed plus a terminal key for AC decryption; minor on its own.
+      ko: 이동 속도 +15%와 AC 해독용 터미널 열쇠 기능을 줍니다. 단독 효과는 소소합니다.
+  - id: BleedOnHitAndExplode
+    rank: S
+    popularity: medium
+    bestFor:
+      - Bandit2Body
+      - HuntressBody
+      - MercBody
+      - CommandoBody
+    verdict:
+      en: Crits cause bleed and bleeding enemies explode on death; a top yellow on crit builds.
+      ko: 치명타 시 출혈을 걸고 출혈 상태의 적이 죽으면 폭발합니다. 치명타 빌드 최고의 보스 아이템입니다.
+  - id: Knurl
+    rank: C
+    popularity: medium
+    bestFor:
+      - FalseSonBody
+      - TreebotBody
+    verdict:
+      en: Health and regen boost that falls off late; better on health-scaling survivors.
+      ko: 체력과 재생을 올리지만 후반에 약해집니다. 체력 비례 생존자에게 더 좋습니다.
+  - id: LunarTrinket
+    rank: D
+    popularity: low
+    verdict:
+      en: No stats; it only unlocks a secret interaction, so it is purely for curiosity.
+      ko: 능력치가 없고 숨겨진 상호작용용일 뿐이라 호기심으로만 챙기는 아이템입니다.
+  - id: GoldOnHit
+    rank: C
+    popularity: low
+    verdict:
+      en: Gold on hit but gold lost when hit; risky and rarely worth a lunar coin.
+      ko: 적중 시 골드를 얻지만 피격 시 잃습니다. 위험하고 루나 코인 값을 하기 어렵습니다.
+  - id: RepeatHeal
+    rank: B
+    popularity: medium
+    bestFor:
+      - CrocoBody
+      - VoidSurvivorBody
+    verdict:
+      en: Turns burst healing into a steady heal-over-time and boosts it; good on high-heal survivors like Acrid.
+      ko: 순간 회복을 지속 회복으로 바꾸고 증폭합니다. 애크리드처럼 회복량이 많은 생존자에게 좋습니다.
+  - id: MonstersOnShrineUse
+    rank: D
+    popularity: low
+    verdict:
+      en: Extra monsters from shrines mean more XP but more risk; skip it once the run gets going.
+      ko: 성소 사용 시 몬스터가 추가로 나와 경험치와 위험이 함께 늘어납니다. 게임이 진행되면 먹지 않는 게 좋습니다.
+  - id: LunarSun
+    rank: A
+    popularity: medium
+    bestFor:
+      - HereticBody
+    verdict:
+      en: A growing swarm of homing bombs that slowly eats your other items; strong if you accept losing items, or grab early.
+      ko: 유도 폭탄이 계속 늘어나지만 다른 아이템을 서서히 잡아먹습니다. 아이템 손실을 감수하거나 초반에 먹는다면 강합니다.
+  - id: LunarSpecialReplacement
+    rank: B
+    popularity: medium
+    bestFor:
+      - HereticBody
+      - ToolbotBody
+    verdict:
+      en: Replaces your special with ruin-stack detonation; strong, and a core Heretic part.
+      ko: 특수 스킬을 파멸 스택 폭발로 바꿉니다. 강력하며 이단자의 핵심 파츠입니다.
+  - id: RandomlyLunar
+    rank: C
+    popularity: low
+    verdict:
+      en: Items can turn into lunars; only good if you want more lunar items.
+      ko: 아이템이 확률로 루나 아이템으로 바뀝니다. 루나 아이템을 원할 때만 좋습니다.
+  - id: FocusConvergence
+    rank: B
+    popularity: low
+    verdict:
+      en: Charges the teleporter much faster in a smaller zone; great for speedruns and low difficulties.
+      ko: 좁은 범위에서 텔레포터를 훨씬 빠르게 충전합니다. 스피드런과 낮은 난이도에 좋습니다.
+  - id: AutoCastEquipment
+    rank: S
+    popularity: medium
+    bestFor:
+      - ToolbotBody
+      - CaptainBody
+    verdict:
+      en: Equipment fires automatically with big cooldown reduction; broken with damage equipment and Fuel Cells, risky with Recycler or Tonic.
+      ko: 장비가 자동으로 발동되고 쿨감이 크게 들어갑니다. 공격 장비와 연료 전지로 강력하지만 재활용기나 토닉과는 위험합니다.
+  - id: LunarSecondaryReplacement
+    rank: A
+    popularity: medium
+    bestFor:
+      - HereticBody
+      - RailgunnerBody
+    verdict:
+      en: Replaces your secondary with a rooting shot that detonates for big damage; scales well.
+      ko: 보조 스킬을 적을 묶은 뒤 크게 폭발하는 투사체로 바꾸며 성장성이 좋습니다.
+  - id: HalfAttackSpeedHalfCooldowns
+    rank: A
+    popularity: medium
+    bestFor:
+      - MercBody
+      - MageBody
+      - SeekerBody
+    verdict:
+      en: Halves cooldowns at the cost of attack speed; excellent for skill-reliant survivors like Mercenary.
+      ko: 공격 속도를 잃는 대신 쿨이 절반이 됩니다. 머셔너리처럼 스킬 의존도가 높은 생존자에게 탁월합니다.
+  - id: OnLevelUpFreeUnlock
+    rank: C
+    popularity: low
+    verdict:
+      en: Converts gold to experience and gives items on level-up; decent for strong base survivors, weak for most runs.
+      ko: 골드를 경험치로 바꾸고 레벨업 시 아이템을 줍니다. 기본 성능이 좋은 생존자에겐 괜찮지만 보통은 약합니다.
+  - id: RandomDamageZone
+    rank: C
+    popularity: low
+    bestFor:
+      - CrocoBody
+    verdict:
+      en: Random buff zones help you and enemies alike; can backfire late.
+      ko: 무작위 강화 구역은 적에게도 적용되어 후반에는 역적이 될 수 있습니다.
+  - id: TransferDebuffOnHit
+    rank: D
+    popularity: low
+    verdict:
+      en: A cursed hot potato that cuts your stats until you pass it to an enemy; not worth a lunar coin.
+      ko: 적에게 넘기기 전까지 능력치를 깎는 저주받은 뜨거운 감자입니다. 루나 코인 값을 못하니 거르세요.
+  - id: LunarBadLuck
+    rank: B
+    popularity: medium
+    bestFor:
+      - Bandit2Body
+      - EngiBody
+      - ToolbotBody
+    verdict:
+      en: Big cooldown reduction for bad luck; strong for skill spam, but it ruins proc and crit chance builds.
+      ko: 운이 나빠지는 대신 쿨감이 큽니다. 스킬 난사에는 강하지만 프록·치명타 빌드를 망칩니다.
+  - id: LunarDagger
+    rank: S
+    popularity: medium
+    bestFor:
+      - HuntressBody
+      - RailgunnerBody
+      - Bandit2Body
+      - LoaderBody
+    verdict:
+      en: Doubles damage but halves max health per stack; the highest damage gain in the game if you can avoid hits.
+      ko: 스택마다 피해가 2배, 최대 체력이 절반이 됩니다. 맞지 않을 자신이 있다면 게임 최고의 딜 증가입니다.
+  - id: HalfSpeedDoubleHealth
+    rank: B
+    popularity: low
+    bestFor:
+      - FalseSonBody
+    verdict:
+      en: Double health for half speed; offset with speed items on tanky survivors.
+      ko: 이동 속도가 절반이 되는 대신 체력이 2배가 됩니다. 탱커형 생존자가 이속템으로 상쇄하면 좋습니다.
+  - id: LunarUtilityReplacement
+    rank: A
+    popularity: medium
+    bestFor:
+      - HereticBody
+      - LoaderBody
+    verdict:
+      en: A shadow-form utility that heals and makes you intangible; a top survival tool.
+      ko: 무적 상태로 이동하며 회복하는 유틸리티로 바꿔 줍니다. 최상급 생존 도구입니다.
+  - id: ShieldOnly
+    rank: A
+    popularity: medium
+    bestFor:
+      - HereticBody
+      - EngiBody
+      - VoidSurvivorBody
+      - TreebotBody
+    verdict:
+      en: Converts health to shields with 50% extra; excellent on higher Eclipse levels and with shield items.
+      ko: 체력을 보호막으로 바꾸고 50% 늘려 줍니다. 높은 일식 단계와 보호막 아이템과 궁합이 좋습니다.
+  - id: LunarPrimaryReplacement
+    rank: A
+    popularity: medium
+    bestFor:
+      - HereticBody
+      - EngiBody
+      - TreebotBody
+    verdict:
+      en: Replaces your primary with rapid homing shard volleys; a big upgrade for survivors with weak primaries.
+      ko: 기본 공격을 유도 파편 연사로 바꿉니다. 기본 공격이 약한 생존자에게 큰 업그레이드입니다.
+  - id: CloverVoid
+    rank: B
+    popularity: medium
+    verdict:
+      en: Upgrades a few random items to higher rarity every stage; excellent for long runs but disrupts planned builds.
+      ko: 스테이지마다 무작위 아이템 몇 개를 상위 등급으로 올립니다. 긴 런에 좋지만 계획된 빌드를 흐트러뜨립니다.
+  - id: TreasureCacheVoid
+    rank: C
+    popularity: low
+    verdict:
+      en: Opens void cradles for a choice of void items; fine for loops, slow for normal runs.
+      ko: 공허 요람을 열어 공허 아이템을 고를 수 있게 합니다. 루프에는 괜찮지만 일반 런에는 느립니다.
+  - id: CritGlassesVoid
+    rank: A
+    popularity: medium
+    bestFor:
+      - Bandit2Body
+      - HuntressBody
+      - RailgunnerBody
+      - MercBody
+    verdict:
+      en: Chance on hit to instantly kill non-boss enemies; powerful in loops, though it corrupts Lens-Maker's Glasses.
+      ko: 보스가 아닌 적을 확률로 즉사시킵니다. 루프에서 강력하지만 렌즈 제작자의 안경을 오염시킵니다.
+  - id: EquipmentMagazineVoid
+    rank: B
+    popularity: medium
+    bestFor:
+      - CaptainBody
+      - EngiBody
+      - Bandit2Body
+    verdict:
+      en: Extra special charges and cooldown reduction; strong for special-reliant survivors, at the cost of Fuel Cell.
+      ko: 특수 스킬 충전과 쿨감을 주어 특수 스킬 의존 생존자에게 강하지만 연료 전지를 오염시킵니다.
+  - id: BleedOnHitVoid
+    rank: A
+    popularity: medium
+    bestFor:
+      - Bandit2Body
+      - CrocoBody
+      - CommandoBody
+    verdict:
+      en: Collapse stacks deal big burst damage; a strong alternative to Tri-Tip for high-damage hits.
+      ko: 붕괴 스택이 큰 폭딜을 넣어 한 방이 센 공격에서는 삼각 단검의 강력한 대안이 됩니다.
+  - id: VoidMegaCrabItem
+    rank: C
+    popularity: low
+    bestFor:
+      - DrifterBody
+    verdict:
+      en: Spawns random void allies that corrupt your other items over time; unpredictable.
+      ko: 무작위 공허 아군을 소환하지만 다른 아이템을 점차 오염시켜 예측하기 어렵습니다.
+  - id: MissileVoid
+    rank: A
+    popularity: medium
+    bestFor:
+      - VoidSurvivorBody
+      - HereticBody
+      - EngiBody
+    verdict:
+      en: Missiles on every hit while you have shield; incredible with Transcendence or Personal Shield Generator.
+      ko: 보호막이 있는 동안 적중마다 미사일을 쏩니다. 초월이나 개인용 방어막 생성기와 함께면 엄청납니다.
+  - id: ExtraLifeVoid
+    rank: B
+    popularity: medium
+    verdict:
+      en: An extra life that corrupts your items into void versions on revive; strong safety if you like void items.
+      ko: 부활하면서 아이템을 공허 버전으로 바꿉니다. 공허 아이템을 선호한다면 좋은 보험입니다.
+  - id: ChainLightningVoid
+    rank: S
+    popularity: high
+    bestFor:
+      - VoidSurvivorBody
+      - CommandoBody
+      - ToolbotBody
+      - CaptainBody
+    verdict:
+      en: Repeated single-target lightning hits scale massively and are often better than Ukulele for bosses.
+      ko: 단일 대상 번개를 반복해서 치며 성장폭이 커 보스전에서는 우쿨렐레보다 나을 때가 많습니다.
+  - id: BearVoid
+    rank: A
+    popularity: medium
+    bestFor:
+      - TreebotBody
+      - RailgunnerBody
+      - CrocoBody
+    verdict:
+      en: A guaranteed block on a cooldown; more reliable than Tougher Times at low stacks, weaker at high stacks.
+      ko: 쿨타임마다 확정 방어를 주어 적은 스택에서는 힘들었던 시절보다 안정적이지만 많이 쌓으면 역전됩니다.
+  - id: ElementalRingVoid
+    rank: C
+    popularity: low
+    bestFor:
+      - VoidSurvivorBody
+      - CommandoBody
+    verdict:
+      en: A black hole on big hits that corrupts both bands; longer cooldown makes it weaker than the originals.
+      ko: 큰 한 방에 블랙홀을 만들지만 두 반지를 모두 오염시키고 쿨이 길어 원본보다 약합니다.
+  - id: SlowOnHitVoid
+    rank: B
+    popularity: low
+    verdict:
+      en: Chance to root enemies on hit; strong crowd control when stacked, weak as one copy.
+      ko: 적중 시 확률로 적을 묶습니다. 스택하면 강력한 군중 제어지만 하나로는 약합니다.
+  - id: ExplodeOnDeathVoid
+    rank: A
+    popularity: medium
+    bestFor:
+      - RailgunnerBody
+    verdict:
+      en: Enemies explode when hit at high health, chaining big AoE; strong wave clear.
+      ko: 체력이 높은 적을 맞히면 폭발해 광역 피해를 연쇄시키는 강력한 몹 정리템입니다.
+  - id: MushroomVoid
+    rank: A
+    popularity: medium
+    bestFor:
+      - EngiBody
+      - RailgunnerBody
+      - SeekerBody
+      - VoidSurvivorBody
+    verdict:
+      en: Heals while sprinting instead of standing still; much better than Bustling Fungus for most survivors.
+      ko: 가만히 있지 않고 질주 중에 회복합니다. 대부분의 생존자에게 뿜뿜 버섯보다 훨씬 좋습니다.
+  - id: Stew
+    rank: A
+    popularity: medium
+    bestFor:
+      - ChefBody
+    verdict:
+      en: Big regeneration that also adds to damage at full health; one of the best Wandering CHEF recipes to prioritise.
+      ko: 큰 재생을 주고 체력이 가득 차면 재생량만큼 피해도 오릅니다. 떠돌이 셰프 요리 중 우선순위가 높습니다.
+  - id: BonusHealthBoost
+    rank: C
+    popularity: low
+    bestFor:
+      - FalseSonBody
+    verdict:
+      en: Increases bonus health and regen from items by 50%; niche outside health-stacking builds.
+      ko: 아이템으로 얻는 추가 체력과 재생을 50% 늘립니다. 체력 스택 빌드가 아니면 쓰임새가 좁습니다.
+  - id: WyrmOnHit
+    rank: B
+    popularity: low
+    verdict:
+      en: On-hit chance to summon a burning wyrm for heavy damage; a solid offensive recipe.
+      ko: 적중 시 확률로 불타는 용을 소환해 큰 피해를 주는 준수한 공격용 요리입니다.
+  - id: CookedSteak
+    rank: B
+    popularity: low
+    bestFor:
+      - FalseSonBody
+    verdict:
+      en: +50 health plus 5% max health per stack; a stronger Bison Steak for tanky builds.
+      ko: 스택당 체력 +50과 최대 체력 5%를 줍니다. 탱커 빌드용 강화판 들소 스테이크입니다.
+  - id: UltimateMeal
+    rank: S
+    popularity: low
+    bestFor:
+      - CaptainBody
+      - CommandoBody
+      - ToolbotBody
+    verdict:
+      en: At full health, random effects roll two extra times; like two extra clovers for careful players.
+      ko: 체력이 가득 차 있으면 확률 효과를 두 번 더 굴립니다. 조심스럽게 싸운다면 57잎 클로버 두 개와 같습니다.
+  - id: Cleanse
+    rank: B
+    popularity: medium
+    verdict:
+      en: Removes debuffs and destroys nearby projectiles; a solid safety button against elites and bosses.
+      ko: 디버프를 지우고 주변 투사체를 없애는 든든한 비상 버튼으로 엘리트·보스 상대로 좋습니다.
+  - id: Parry
+    rank: B
+    popularity: low
+    verdict:
+      en: A parry that cuts equipment cooldown on success and guarantees on-hit effects on your next attack; strong but timing-dependent.
+      ko: 성공하면 장비 쿨이 줄고 다음 공격의 적중 시 효과가 확정 발동하는 패링입니다. 강하지만 타이밍을 타는 장비입니다.
+  - id: CommandMissile
+    rank: B
+    popularity: medium
+    verdict:
+      en: A volley of 12 homing missiles; reliable burst damage on a short cooldown.
+      ko: 유도 미사일 12발을 퍼붓는 장비로 쿨이 짧고 폭딜이 안정적입니다.
+  - id: Gateway
+    rank: C
+    popularity: low
+    verdict:
+      en: Creates a quantum tunnel for travel; handy mobility but no combat value.
+      ko: 이동용 양자 터널을 만들어 줍니다. 이동에는 편하지만 전투 가치는 없습니다.
+  - id: MultiShopCard
+    rank: S
+    popularity: high
+    verdict:
+      en: Buying from a multishop terminal buys every item in it and refunds some gold; the best economy equipment.
+      ko: 멀티샵 단말기에서 하나를 사면 모든 칸을 다 사고 골드도 일부 돌려받습니다. 최고의 경제 장비입니다.
+  - id: Fruit
+    rank: B
+    popularity: medium
+    verdict:
+      en: A large instant heal on a moderate cooldown; simple and dependable sustain.
+      ko: 쿨이 적당한 즉시 대량 회복 장비로 단순하고 믿을 만합니다.
+  - id: DeathProjectile
+    rank: B
+    popularity: medium
+    bestFor:
+      - ToolbotBody
+      - CaptainBody
+    verdict:
+      en: A doll that triggers on-kill effects repeatedly; build-defining with Soulbound Catalyst and on-kill items.
+      ko: 처치 시 효과를 반복 발동시키는 인형입니다. 영혼이 속박된 촉매와 처치 시 아이템과 함께면 빌드의 핵심이 됩니다.
+  - id: QuestVolatileBattery
+    rank: D
+    popularity: low
+    verdict:
+      en: A quest item for powering the Artifact Reliquary route; it can explode on you and has no combat use.
+      ko: 퀘스트용 장비로 체력이 낮으면 폭발할 수 있고 전투에는 쓸모가 없습니다.
+  - id: PassiveHealing
+    rank: C
+    popularity: low
+    verdict:
+      en: Passive healing plus an on-use heal burst; decent early sustain that falls off.
+      ko: 지속 회복과 사용 시 순간 회복을 줍니다. 초반 유지력은 괜찮지만 금방 떨어집니다.
+  - id: GummyClone
+    rank: B
+    popularity: medium
+    verdict:
+      en: Spawns a copy of an enemy as an ally; good distraction and damage with strong targets.
+      ko: 적을 복제해 아군으로 만듭니다. 강한 적을 복제하면 어그로와 딜 모두 좋습니다.
+  - id: TeamWarCry
+    rank: A
+    popularity: medium
+    verdict:
+      en: Team-wide frenzy of attack and movement speed; excellent in multiplayer and boss fights.
+      ko: 팀 전체에 공격·이동 속도 광란을 겁니다. 멀티플레이와 보스전에서 탁월합니다.
+  - id: GainArmor
+    rank: C
+    popularity: low
+    verdict:
+      en: A big temporary armor burst; fine against burst damage but a long cooldown limits it.
+      ko: 일시적으로 방어력을 크게 올리지만 쿨이 길어 쓰임새가 제한됩니다.
+  - id: Jetpack
+    rank: B
+    popularity: medium
+    bestFor:
+      - CommandoBody
+      - CaptainBody
+    verdict:
+      en: Temporary flight for crossing maps and avoiding ground threats.
+      ko: 일시적으로 비행해 맵 이동과 지상 위협 회피에 좋습니다.
+  - id: Molotov
+    rank: B
+    popularity: medium
+    bestFor:
+      - MageBody
+      - ChefBody
+    verdict:
+      en: Six firebombs that leave burning pools; good area denial that synergises with burn items.
+      ko: 불바다를 남기는 화염병 6개로 지역 장악에 좋고 화상 아이템과 시너지가 있습니다.
+  - id: CritOnUse
+    rank: B
+    popularity: medium
+    bestFor:
+      - HuntressBody
+      - Bandit2Body
+      - CommandoBody
+    verdict:
+      en: Guaranteed crits for a few seconds; excellent with crit-synergy items.
+      ko: 몇 초 동안 치명타 100%가 되어 치명타 시너지 아이템과 궁합이 매우 좋습니다.
+  - id: BFG
+    rank: A
+    popularity: medium
+    verdict:
+      en: A huge charged plasma ball that wrecks bosses and packs.
+      ko: 충전 후 거대한 플라즈마 구체를 발사해 보스와 무리를 동시에 박살냅니다.
+  - id: Blackhole
+    rank: S
+    popularity: medium
+    verdict:
+      en: Pulls enemies together for AoE and crowd control; one of the best combat equipment.
+      ko: 적을 한곳으로 빨아들여 광역딜과 군중 제어를 동시에 합니다. 최상급 전투 장비입니다.
+  - id: Scanner
+    rank: C
+    popularity: low
+    verdict:
+      en: Reveals interactables on the map; nice for looping and finding chests.
+      ko: 맵의 상호작용 대상을 표시합니다. 루프나 상자 찾기에 편합니다.
+  - id: Recycle
+    rank: S
+    popularity: medium
+    verdict:
+      en: Rerolls an item into another of the same tier; lets you fix your build and farm the items you want.
+      ko: 아이템을 같은 등급의 다른 아이템으로 바꿉니다. 빌드를 원하는 방향으로 맞출 수 있는 최상급 장비입니다.
+  - id: VendingMachine
+    rank: C
+    popularity: low
+    verdict:
+      en: Drops a vending machine that heals and hits enemies; decent group utility.
+      ko: 적에게 피해를 주고 회복 음료를 뽑는 자판기를 떨어뜨립니다. 팀 유틸로 괜찮습니다.
+  - id: Lightning
+    rank: A
+    popularity: medium
+    verdict:
+      en: A massive lightning strike on a single target; great boss damage on a short cooldown.
+      ko: 단일 대상에 거대한 번개를 내리꽂아 쿨이 짧고 보스딜이 뛰어납니다.
+  - id: Saw
+    rank: B
+    popularity: medium
+    verdict:
+      en: Piercing saw blades that bleed and slow enemies; strong wave clear.
+      ko: 관통하는 톱날로 출혈과 감속을 주며 몹 정리가 강합니다.
+  - id: HealAndRevive
+    rank: B
+    popularity: medium
+    verdict:
+      en: Heals you or revives a fallen ally; strong insurance, especially in multiplayer.
+      ko: 자신을 회복하거나 쓰러진 동료를 부활시킵니다. 멀티플레이에서 특히 좋은 보험입니다.
+  - id: LifestealOnHit
+    rank: B
+    popularity: medium
+    bestFor:
+      - MercBody
+      - LoaderBody
+    verdict:
+      en: Temporary lifesteal on all damage; strong for aggressive melee survivors.
+      ko: 모든 피해에 일시적으로 흡혈을 주어 공격적인 근접 생존자에게 강합니다.
+  - id: DroneBackup
+    rank: B
+    popularity: medium
+    bestFor:
+      - DroneTechBody
+    verdict:
+      en: Calls strike drones that now scale with level after the AC buff; solid distraction and damage.
+      ko: 스트라이크 드론을 부르며 AC 버프로 레벨에 따라 강해져 어그로와 딜 모두 준수합니다.
+  - id: GoldGat
+    rank: C
+    popularity: low
+    verdict:
+      en: A gun that spends gold to shoot; weak unless you are rich with nothing to buy.
+      ko: 골드를 소모해 사격하는 무기로 돈이 남아도는 상황이 아니면 약합니다.
+  - id: BossHunter
+    rank: B
+    popularity: medium
+    verdict:
+      en: One-use instant kill on a boss for an extra boss item; great value on a tough boss.
+      ko: 보스를 한 번 즉사시키고 추가 보스 아이템을 줍니다. 까다로운 보스에게 쓰면 가치가 큽니다.
+  - id: FireBallDash
+    rank: A
+    popularity: medium
+    bestFor:
+      - LoaderBody
+      - MercBody
+    verdict:
+      en: A fiery dash that damages enemies in its path; excellent mobility and damage in one.
+      ko: 경로의 적에게 피해를 주는 화염 돌진으로 기동성과 딜을 동시에 줍니다.
+  - id: CrippleWard
+    rank: B
+    popularity: low
+    verdict:
+      en: A totem that slows and shreds armor of everything nearby, including you; good for boss fights when placed well.
+      ko: 주변 모든 대상의 속도와 방어력을 깎는 조각상으로 자신도 영향을 받습니다. 잘 박으면 보스전에 좋습니다.
+  - id: Meteor
+    rank: B
+    popularity: low
+    verdict:
+      en: Rains meteors across the area, hurting enemies and you; strong clear if you can dodge.
+      ko: 넓은 범위에 운석을 떨어뜨려 적과 나 모두에게 피해를 줍니다. 피할 수 있다면 강력한 청소 도구입니다.
+  - id: BurnNearby
+    rank: C
+    popularity: low
+    verdict:
+      en: Burns everything nearby including you; strong against tough enemies but dangerous.
+      ko: 주변의 모든 것을 태우고 자신도 탑니다. 강한 적 상대로 유용하지만 위험합니다.
+  - id: Tonic
+    rank: A
+    popularity: low
+    verdict:
+      en: A huge temporary all-stat boost with a chance of a permanent affliction afterward; powerful if you accept the risk.
+      ko: 모든 능력치를 크게 올리지만 이후 영구 부작용이 생길 수 있습니다. 위험을 감수하면 강력합니다.
+  - id: EliteAurelioniteEquipment
+    rank: C
+    popularity: rare
+    verdict:
+      en: The Gilded elite aspect; interesting but rarely obtained and not a major power spike.
+      ko: 금빛 엘리트 속성으로 흥미롭지만 얻기 어렵고 큰 힘이 되진 않습니다.
+  - id: EliteIceEquipment
+    rank: B
+    popularity: rare
+    verdict:
+      en: The Glacial aspect slows enemies on hit; solid crowd control if you land a drop.
+      ko: 빙하의 엘리트 속성으로 적중 시 적을 감속시킵니다. 얻는다면 준수한 군중 제어입니다.
+  - id: EliteEarthEquipment
+    rank: C
+    popularity: rare
+    verdict:
+      en: The Mending aspect; its healing support is modest for a solo player.
+      ko: 수리 중인 엘리트 속성으로 솔로 플레이에서는 회복 효과가 소소합니다.
+  - id: EliteBeadEquipment
+    rank: C
+    popularity: rare
+    verdict:
+      en: The Twisted elite aspect; niche and seldom seen in normal runs.
+      ko: 뒤틀린 엘리트 속성으로 일반 런에서는 보기 드물고 쓰임새가 좁습니다.
+  - id: EliteFireEquipment
+    rank: S
+    popularity: rare
+    verdict:
+      en: The Blazing aspect leaves fire trails and ignites on hit; the best elite aspect for most players.
+      ko: 불타는 엘리트 속성으로 불길을 남기고 적중 시 화상을 겁니다. 대부분에게 최고의 엘리트 속성입니다.
+  - id: ElitePoisonEquipment
+    rank: B
+    popularity: rare
+    verdict:
+      en: The Malachite aspect blocks enemy healing and fires spikes; good but less impactful than Blazing.
+      ko: 공작석 엘리트 속성으로 적 회복을 막고 가시를 발사합니다. 좋지만 불타는 속성보다는 덜합니다.
+  - id: EliteCollectiveEquipment
+    rank: C
+    popularity: rare
+    verdict:
+      en: The Collective elite aspect from AC; little data yet on how it performs for players.
+      ko: AC의 집합체 엘리트 속성으로, 아직 플레이어 성능에 대한 자료가 적습니다.
+  - id: EliteLunarEquipment
+    rank: B
+    popularity: rare
+    verdict:
+      en: The Perfected aspect; only obtainable in special cases, with defensive shield bonuses.
+      ko: 완성된 엘리트 속성으로 특수한 경우에만 얻으며 보호막 위주의 방어 효과가 있습니다.
+  - id: EliteLightningEquipment
+    rank: A
+    popularity: rare
+    verdict:
+      en: The Overloading aspect adds shields and sticks lightning bombs on hit; strong defence and damage.
+      ko: 과전하 엘리트 속성으로 보호막을 주고 적중 시 번개 폭탄을 붙여 공수 모두 강합니다.
+  - id: EliteHauntedEquipment
+    rank: C
+    popularity: rare
+    verdict:
+      en: The Celestine aspect makes nearby allies invisible; mostly useful for drones or teammates.
+      ko: 천청석 엘리트 속성으로 주변 아군을 투명하게 만듭니다. 주로 드론이나 동료에게만 유용합니다.

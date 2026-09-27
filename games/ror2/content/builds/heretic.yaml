@@ -1,0 +1,420 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: HereticBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: mixed
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Heretic
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=2455236455
+  - https://steamcommunity.com/app/632360/discussions/0/3076495389985368189/
+  - https://en.namu.wiki/w/%EC%9D%B4%EB%8B%A8%EC%9E%90(Risk%20of%20Rain%202)
+  - https://deltiasgaming.com/risk-of-rain-2-ror2-how-to-play-as-heretic/
+  - https://riskofrain2.wiki.gg/wiki/Seekers_of_the_Storm_-_First_Patch
+builds:
+  - id: heretic-heresy-transformation
+    title:
+      en: Heresy Transformation
+      ko: 이단 변신
+    difficulty: advanced
+    summary:
+      en: Heretic is not picked at character select. Any survivor becomes her mid-run by holding all four Heresy lunar items, usually bought in the Bazaar Between Time. Your old skill loadout no longer matters. She has the highest base health and damage, 8 m/s speed and a triple jump, but her health drains constantly. The tree starts at transformation, then fixes the drain with healing or shields, then adds cooldown and mobility.
+      ko: 이단자는 캐릭터 선택 화면에서 고를 수 없습니다. 어떤 생존자든 런 도중 이단 아이템 4종을 모두 가지면 변신하며, 보통 시장(Bazaar Between Time)에서 구매합니다. 기존 스킬 구성은 의미가 없어집니다. 기본 체력과 공격력이 가장 높고 속도 8m/s에 3단 점프가 있지만 체력이 계속 감소합니다. 트리는 변신에서 시작해 회복이나 실드로 체력 감소를 막고, 그다음 대기시간과 기동성을 더합니다.
+    loadout: {}
+    root: assemble
+    nodes:
+      - id: assemble
+        phase: early
+        label:
+          en: Assemble the Heresy set
+          ko: 이단 세트 모으기
+        when:
+          en: Any time you can reach the Bazaar with enough lunar coins; Artifact of Command makes it easier. Requires the Blockade Breaker challenge for some pieces.
+          ko: 달 동전이 충분할 때 시장(Bazaar Between Time)에서 모으세요. Artifact of Command를 켜면 더 쉽습니다. 일부 조각은 Blockade Breaker 도전 과제로 해금해야 합니다.
+        items:
+          - id: LunarPrimaryReplacement
+            priority: core
+            note:
+              en: "Primary: Hungering Gaze, tracking shards."
+              ko: 주 스킬이 추적 파편을 쏘는 스킬로 바뀝니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: Extra copies add 12 charges but +2 s reload each (wiki), so one is enough.
+              ko: 추가분은 충전 12발을 늘리지만 재장전이 개당 2초 늘어납니다(위키). 1개면 충분합니다.
+          - id: LunarSecondaryReplacement
+            priority: core
+            note:
+              en: "Secondary: Slicing Maelstrom, damaging orb that roots."
+              ko: 보조 스킬이 피해를 주고 속박하는 구체로 바뀝니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: Extra copies add +3 s root but +5 s cooldown each (wiki), so one is enough.
+              ko: 추가분은 속박을 3초 늘리지만 대기시간이 개당 5초 늘어납니다(위키). 1개면 충분합니다.
+          - id: LunarUtilityReplacement
+            priority: core
+            note:
+              en: "Utility: Shadowfade, intangible and heals 18.2% per stack. Your main survival tool."
+              ko: 유틸리티가 무형화 상태로 중첩당 18.2% 회복하는 스킬로 바뀝니다. 핵심 생존 수단입니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 3
+            stacksReason:
+              en: Rogue Ranker's route uses 3 (+18.2% heal and +3 s fade each, no cooldown penalty); the wiki warns more keeps you out of reality too long.
+              ko: Rogue Ranker는 3개를 씁니다(개당 회복 18.2%, 사라지기 3초, 대기시간 불이익 없음). 위키는 더 쌓으면 현실 밖에 너무 오래 머문다고 경고합니다.
+          - id: LunarSpecialReplacement
+            priority: core
+            note:
+              en: "Special: Ruin, detonates Ruin stacks at any range."
+              ko: 특수 스킬이 사거리 제한 없이 Ruin 중첩을 터뜨리는 스킬로 바뀝니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: Extra copies add +10 s Ruin duration but +8 s cooldown each (wiki), so one is enough.
+              ko: 추가분은 파멸 지속 시간을 10초 늘리지만 대기시간이 개당 8초 늘어납니다(위키). 1개면 충분합니다.
+        next:
+          - regen
+          - shield
+      - id: regen
+        phase: mid
+        label:
+          en: "Offset the drain: healing"
+          ko: "체력 감소 상쇄: 회복"
+        when:
+          en: Take if Cautious Slugs or crit healing show up. Gnarled Woodsprite (equipment) also offsets the drain.
+          ko: 신중한 민달팽이나 치명타 회복이 나오면 고르세요. 장비 주름진 나무의 정령도 감소를 상쇄합니다.
+        items:
+          - id: HealWhileSafe
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+              max: 3
+            note:
+              en: 2 stacks stop the drain out of combat, 3 let you regenerate normally.
+              ko: 2개면 비전투 시 감소가 멈추고, 3개면 정상적으로 재생됩니다.
+            stacksReason:
+              en: +3/s per slug against a -6/s drain, so 2 break even and 3 regenerate out of combat.
+              ko: 민달팽이 개당 +3/초, 체력 감소 -6/초라 2개면 상쇄, 3개면 비전투 시 회복됩니다.
+          - id: HealOnCrit
+            priority: optional
+            note:
+              en: Crit healing works well with Lens-Maker's Glasses.
+              ko: 렌즈 제작자의 안경과 함께 쓰면 치명타 회복이 잘 됩니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +4 heal per crit per stack and 5% crit each (wiki); 2 plus 9 glasses reach 100% crit.
+              ko: 개당 치명타 회복 +4, 치명타 5%(위키). 2개와 안경 9개면 치명타 100%입니다.
+          - id: CritGlasses
+            priority: optional
+            note:
+              en: Crit chance to feed Harvester's Scythe.
+              ko: 수확꾼의 낫에 필요한 치명타 확률을 줍니다.
+            stacks:
+              target: 9
+              max: 10
+            stacksReason:
+              en: 10% crit per stack caps at 100% (wiki); with 2 Harvester's Scythes (10%), 9 glasses are enough.
+              ko: 개당 치명타 10%로 100%가 상한입니다(위키). 수확꾼의 낫 2개(10%)가 있으면 안경 9개면 됩니다.
+          - id: Seed
+            priority: optional
+            note:
+              en: Heal on hit; Hungering Gaze fires many shards.
+              ko: 적중 시 회복되며, 주 스킬은 파편을 많이 쏩니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +1 HP per hit per stack (wiki); Hungering Gaze fires many shards, so 3 steadily offset the drain.
+              ko: 적중당 개당 체력 +1(위키). 굶주린 시선은 파편을 많이 쏘므로 3개면 체력 감소를 꾸준히 상쇄합니다.
+        next:
+          - cooldowns
+      - id: shield
+        phase: mid
+        label:
+          en: "Offset the drain: shields"
+          ko: "체력 감소 상쇄: 실드"
+        when:
+          en: "Take Transcendence if it drops. Beware: against Mithrix you sit at 1 HP with negative regen."
+          ko: "초월이 나오면 고르세요. 주의: 미스릭스전에서 체력 1에 음수 재생 상태가 됩니다."
+        items:
+          - id: ShieldOnly
+            priority: core
+            note:
+              en: Converts all but 1 health into regenerating shields and removes the drain problem.
+              ko: 체력 1을 제외한 전부를 재생되는 실드로 바꿔 체력 감소 문제를 없앱니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one converts health to regenerating shields and removes the drain; extras only add +25% health (wiki).
+              ko: 1개로 체력이 재생 실드로 바뀌어 체력 감소 문제가 사라집니다. 추가분은 체력 +25%만 늘립니다(위키).
+          - id: BarrierOnKill
+            priority: optional
+            note:
+              en: Barrier on kill absorbs damage before health.
+              ko: 처치 시 보호막이 체력보다 먼저 피해를 받습니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +15 barrier per kill per stack (wiki); 5 (75) absorb chip damage before your shields.
+              ko: 처치당 보호막 개당 +15(위키). 5개(75)면 실드 전에 작은 피해를 흡수합니다.
+          - id: BarrierOnOverHeal
+            priority: situational
+            note:
+              en: Overheal becomes barrier, another layer before health.
+              ko: 초과 회복이 보호막이 되어 체력 앞에 한 겹을 더합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one turns 50% of overheal into barrier, extras add +50% each (wiki).
+              ko: 전설 아이템입니다. 1개로 초과 회복의 50%가 보호막이 되고, 추가분은 개당 +50%입니다(위키).
+        next:
+          - cooldowns
+      - id: cooldowns
+        phase: mid
+        label:
+          en: More Shadowfade
+          ko: 유틸리티 더 자주
+        when:
+          en: Once the drain is under control; more Shadowfade means more healing and invulnerability.
+          ko: 체력 감소가 안정되면 챙기세요. 유틸리티를 자주 쓸수록 회복과 무적이 늘어납니다.
+        items:
+          - id: UtilitySkillMagazine
+            priority: core
+            note:
+              en: "Often named the best item on Heretic: 3 Shadowfade charges and a shorter cooldown."
+              ko: 이단자 최고의 아이템으로 자주 꼽힙니다. 유틸리티 충전 3회와 대기시간 감소를 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one gives 3 Shadowfade charges and the 33% cooldown cut, which does not stack (wiki); extras only add charges.
+              ko: 1개로 그림자 사라지기 충전 3회와 대기시간 33% 감소를 얻고, 감소는 중첩되지 않아(위키) 추가분은 충전만 늘립니다.
+          - id: Bandolier
+            priority: core
+            note:
+              en: "A 'must grab': kills reset cooldowns."
+              ko: "'반드시 챙길 것'으로 평가됩니다. 처치 시 대기시간이 초기화됩니다."
+            stacks:
+              target: 4
+              min: 1
+              max: 4
+            stacksReason:
+              en: 20.4% at 1, 36.7% at 3, 41.2% at 4; past 4 each copy adds only about 3 points.
+              ko: 1개 20.4%, 3개 36.7%, 4개 41.2%. 4개를 넘으면 개당 약 3%p만 오릅니다.
+          - id: AlienHead
+            priority: optional
+            note:
+              en: 25% cooldown reduction on all skills.
+              ko: 모든 스킬 대기시간 25% 감소.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: cooldown x0.75 per stack (wiki); 2 cut every Heretic cooldown to about 56%, and legendaries are rare.
+              ko: 개당 대기시간 x0.75(위키). 2개면 이단자의 모든 대기시간이 약 56%가 되며, 전설은 드뭅니다.
+          - id: LunarBadLuck
+            priority: optional
+            note:
+              en: Flat 2-second reduction on every skill; all Heretic skills have cooldowns.
+              ko: 모든 스킬 대기시간이 2초 고정으로 줄어듭니다. 이단자 스킬은 모두 대기시간이 있습니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: The first copy cuts 2 s from every cooldown; extras cut only 1 s and add an unlucky roll that also weakens Bandolier (wiki).
+              ko: 1개째가 모든 대기시간을 2초 줄입니다. 추가분은 1초만 줄이고 탄약띠까지 약하게 하는 불운 판정을 붙입니다(위키).
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Mobility and damage
+          ko: 기동성과 딜
+        when:
+          en: Late stages and loops.
+          ko: 후반 스테이지와 루프.
+        items:
+          - id: JumpBoost
+            priority: optional
+            note:
+              en: Huge air mobility with her triple jump.
+              ko: 3단 점프와 함께 공중 기동성이 크게 늘어납니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +10 m sprint-jump boost per stack (wiki); 2 with her triple jump cover huge distances.
+              ko: 개당 질주 점프 거리 +10m(위키). 삼단 점프와 함께 2개면 먼 거리를 이동합니다.
+          - id: KillEliteFrenzy
+            priority: optional
+            note:
+              en: Free skill spam after elite kills.
+              ko: 엘리트 처치 후 스킬을 대기시간 없이 난사합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one gives a 4 s frenzy per elite kill, extras only add +4 s (wiki).
+              ko: 전설 아이템입니다. 1개로 엘리트 처치마다 4초간 폭주하고, 추가분은 4초씩만 늘립니다(위키).
+          - id: FireRing
+            priority: optional
+            note:
+              en: The Heretic guide lists the Bands among its damage picks.
+              ko: 이단자 가이드가 딜 아이템으로 반지를 추천합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: fixed 10 s recharge, +300% per stack (wiki); 2 as a damage side pick.
+              ko: 10초 고정 재충전에 개당 +300%(위키). 보조 딜용으로 2개.
+          - id: PrimarySkillShuriken
+            priority: situational
+            note:
+              en: Still fires if a Cleansing Pool or Shrine of Order removes Visions of Heresy.
+              ko: Cleansing Pool이나 Shrine of Order로 이단의 예지를 잃어도 발동합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: insurance if Visions of Heresy is removed; one gives 3 shurikens, extras add +1 each (wiki).
+              ko: 이단의 예지를 잃었을 때의 보험입니다. 1개로 슈리켄 3개, 추가분은 개당 +1개(위키).
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Shadowfade sustain
+          ko: 유틸리티 유지력
+        when:
+          en: After the first loop, when the drain outpaces your healing.
+          ko: 첫 루프 이후, 체력 감소가 회복을 앞지를 때.
+        items:
+          - id: IncreaseHealing
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: "Rogue Ranker calls it the single most impactful item: doubles Shadowfade's 18.2% heal. Useless on the Transcendence route, where you have 1 HP."
+              ko: Rogue Ranker가 가장 영향력 큰 아이템으로 꼽습니다. 유틸리티의 18.2% 회복이 두 배가 됩니다. 체력이 1인 초월 경로에서는 쓸모없습니다.
+            stacksReason:
+              en: "Rogue Ranker calls it the single most impactful item: one doubles Shadowfade's heal; extras add +100% each (wiki)."
+              ko: Rogue Ranker는 가장 영향력 큰 아이템으로 꼽습니다. 1개로 그림자 사라지기 회복이 두 배, 추가분은 개당 +100%(위키).
+          - id: LunarUtilityReplacement
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+              max: 3
+            note:
+              en: Extra Strides add heal and fade time with no cooldown penalty (wiki); 3 give 9 s fades (Rogue Ranker).
+              ko: 추가 이단의 발걸음은 대기시간 패널티 없이 회복과 지속 시간을 늘립니다(위키). 3개면 9초입니다(Rogue Ranker).
+            stacksReason:
+              en: Rogue Ranker's route uses 3 (+18.2% heal and +3 s fade each, no cooldown penalty); the wiki warns more keeps you out of reality too long.
+              ko: Rogue Ranker는 3개를 씁니다(개당 회복 18.2%, 사라지기 3초, 대기시간 불이익 없음). 위키는 더 쌓으면 현실 밖에 너무 오래 머문다고 경고합니다.
+          - id: EquipmentMagazineVoid
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: "Rogue Ranker: an extra Ruin charge lets you detonate twice per cooldown when stacks are high."
+              ko: "Rogue Ranker: Ruin 충전이 늘어 중첩이 높을 때 대기시간마다 두 번 터뜨릴 수 있습니다."
+            stacksReason:
+              en: one extra Ruin charge lets you detonate twice per cooldown; the 33% cut does not stack (wiki).
+              ko: 파멸 충전 1회가 늘어 대기시간마다 두 번 터뜨릴 수 있습니다. 33% 감소는 중첩되지 않습니다(위키).
+        next: []
+    pickOrder:
+      common:
+        - HealWhileSafe
+        - CritGlasses
+        - BarrierOnKill
+        - Syringe
+        - BleedOnHit
+      uncommon:
+        - Bandolier
+        - HealOnCrit
+        - Seed
+        - JumpBoost
+        - FireRing
+        - IceRing
+        - ChainLightning
+      legendary:
+        - UtilitySkillMagazine
+        - IncreaseHealing
+        - AlienHead
+        - KillEliteFrenzy
+        - BarrierOnOverHeal
+    milestones:
+      - when:
+          en: Right after transforming.
+          ko: 변신 직후.
+        advice:
+          en: "Don't add more Visions, Hooks or Essence: each extra copy lengthens that skill's reload or cooldown. Extra Strides of Heresy are the exception."
+          ko: 이단의 예지, 갈고리, 정수는 더 모으지 마세요. 추가 중첩마다 재장전이나 대기시간이 늘어납니다. 이단의 발걸음만은 예외입니다.
+        take: []
+        stop:
+          - LunarPrimaryReplacement
+          - LunarSecondaryReplacement
+          - LunarSpecialReplacement
+      - when:
+          en: Once you have 3 Cautious Slugs.
+          ko: 신중한 민달팽이가 3개가 되면.
+        advice:
+          en: The drain is beaten out of combat. Put whites into crit or Topaz Brooch instead.
+          ko: 비전투 시 체력 감소를 이깁니다. 흰색은 치명타나 황옥 브로치로 돌리세요.
+        take:
+          - CritGlasses
+          - BarrierOnKill
+        stop:
+          - HealWhileSafe
+      - when:
+          en: If you pick up Transcendence.
+          ko: 초월을 얻었다면.
+        advice:
+          en: Healing now only tops up 1 HP, so skip Rejuvenation Rack and slugs. Get 3 Strides or 1 Strides plus Hardlight so fades cover the shield's 7 s recharge delay.
+          ko: 회복은 체력 1만 채우므로 회춘의 선반과 민달팽이는 건너뛰세요. 이단의 발걸음 3개 또는 발걸음 1개와 고형광선 재연소장으로 실드 재충전 대기 7초를 덮으세요.
+        take:
+          - LunarUtilityReplacement
+          - UtilitySkillMagazine
+        stop:
+          - IncreaseHealing
+          - HealWhileSafe
+      - when:
+          en: Once you have 3 Strides of Heresy.
+          ko: 이단의 발걸음이 3개가 되면.
+        advice:
+          en: Stop. Fades now last 9 s and cannot be cancelled or used to attack; the wiki warns more leaves you out of the fight too long.
+          ko: 그만 모으세요. 9초 동안 취소도 공격도 못 하며, 위키는 더 쌓으면 전투에서 너무 오래 빠진다고 경고합니다.
+        take: []
+        stop:
+          - LunarUtilityReplacement
+      - when:
+          en: Before Commencement or any Cleansing Pool / Shrine of Order.
+          ko: Commencement나 Cleansing Pool, Shrine of Order 전.
+        advice:
+          en: Cleansing or Order can remove Heresy pieces and leave a dead skill (wiki). On the Transcendence route, a Steam report says Mithrix's item steal can leave you at 1 HP with negative regen.
+          ko: 정화나 질서의 성소가 이단 아이템을 없애 스킬이 사라질 수 있습니다(위키). 초월 경로라면 미스릭스의 아이템 강탈로 체력 1에 음수 재생이 될 수 있다는 스팀 보고가 있습니다.
+        take: []
+        stop: []
+    avoid:
+      - id: LunarDagger
+        reason:
+          en: Halves max health, but the drain is a flat amount, so Shadowfade healing can no longer keep up.
+          ko: 최대 체력이 절반이 되지만 감소량은 고정값이라 유틸리티 회복이 따라가지 못합니다.
+      - id: LunarSun
+        reason:
+          en: Converts other items, including your Heresy pieces, which strips your skills.
+          ko: 이단 아이템을 포함한 다른 아이템을 바꿔 버려 스킬이 사라집니다.
+      - id: HeadHunter
+        reason:
+          en: The Heretic guide warns stolen elite traits can overwhelm the build.
+          ko: 이단자 가이드는 빼앗은 엘리트 특성이 빌드를 망칠 수 있다고 경고합니다.
+      - id: ShinyPearl
+        reason:
+          en: Its regen bonus is only a flat +0.1 hp/s per stack on Heretic, negligible against the drain.
+          ko: 이단자에게는 재생 보너스가 중첩당 +0.1 hp/s뿐이라 감소량에 비해 무의미합니다.
+    evidence: |-
+      Why a normal skill tree does not apply: Heretic has no selectable loadout. The Heresy items replace all four skills of whichever survivor you started as, and local-survivors.json lists no HERETIC skill tokens, so loadout is null and the tree begins at the Heresy items. Transformation, stats, degeneration, Cautious Slug 2/3 thresholds, Transcendence, Backup Mag/Hardlight/Lysate charges, Shaped Glass, Spinel Tonic (equipment, not in the item list, so it is not in avoid), Shuriken, Irradiant Pearl and Captain's Microbots persisting: wiki.gg Heretic (strong). Harvester + Lens-Maker, Leeching Seed, Topaz/Aegis, Bandolier 'must grab', Alien Head, Brainstalks, Wax Quail, Kjaro/Runald, Wake of Vultures warning: Steam 'Kur-skan' guide 2455236455 (updated March 2022 for v1.1.1.4). Hardlight 'best item by far': Deltia's Gaming / Steam guide. Egocentrism, Purity, Gesture of the Drowned + Helfire Tincture option: NamuWiki. Disagreement: a Steam discussion reports Transcendence leaves you at 1 HP with negative regen during Mithrix's item steal, so it is situational rather than universal. Patch notes: Seekers of the Storm fixed an infinite Warped Echo stack bug on Heretic and a Mithrix freeze. Source quality: mixed, since most detailed guides are 2021-2022, though the mechanics are unchanged.
+
+      Stack counts and progression: Heresy stacking values (Visions +12 charges/+2 s reload, Hooks +3 s root/+5 s cooldown, Essence +10 s/+8 s cooldown, Strides +18.2% heal/+3 s with no cooldown increase) and 'high stacks leave you out of reality too long': wiki.gg item data and Strides of Heresy page. Degeneration per difficulty (-9/-6/-3.6 per s, scaling per level), 'at least two' Cautious Slugs, Transcendence removing the drain, Shrine/Cleansing Pool removing Heresy items: wiki Heretic. The 2-vs-3 slug math (+3/s per slug vs Rainstorm -6/s; Monsoon -3.6/s with its -40% player regen modifier) is my calculation from wiki values. Rejuvenation Rack 'single most impactful', Lysate extra Ruin charge, 3 Strides or 1 Strides + Hardlight covering Transcendence's 7 s: Rogue Ranker (Heretic and Strides pages). Bandolier 'must grab', Alien Head, Brainstalks, Wax Quail, Bands, Harvester + Lens-Maker: Steam 'Kur-skan' guide 2455236455 as summarized in the build file (the page returned HTTP 429 this time). Ukulele, Tri-Tip, Syringe and Purity: NamuWiki. Mithrix/Transcendence warning: Steam discussion cited in the build. Disagreement: Rogue Ranker pushes healing (Rack) while the Transcendence route makes healing useless; they are alternatives, not a combination. No boss pick order: no source ranks boss items for Heretic.

@@ -1,0 +1,642 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: CaptainBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: strong
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Captain
+  - https://riskofrain2.wiki.gg/wiki/Spare_Drone_Parts
+  - https://riskofrain2.wiki.gg/wiki/Alloyed_Collective_Update
+  - https://steamcommunity.com/app/632360/discussions/0/591776528523605857/
+  - https://rogueranker.com/captain-ror2/
+  - https://www.thegamer.com/risk-of-rain-2-captain-tips-best-items/
+  - https://exputer.com/guides/risk-of-rain-2-captain/
+  - https://nerdlodge.com/risk-of-rain-2-captain-guide/
+builds:
+  - id: captain-shotgun-proc-captain
+    title:
+      en: Shotgun Proc Captain
+      ko: 샷건 발동 캡틴
+    difficulty: beginner
+    summary:
+      en: Vulcan Shotgun fires 8 pellets at 0.75 proc coefficient each, so on-hit items trigger constantly. Orbital Probe for reliable burst, Hacking + Healing beacons solo (Hacking is roughly two free items per stage). Captain has no mobility skill, so movement items come first.
+      ko: 벌컨 샷건은 발동 계수 0.75짜리 탄환 8발을 한 번에 쏘기 때문에 적중 시 효과가 계속 터집니다. 탐사정 투하로 안정적인 폭딜을 넣고, 솔로라면 보급품 투하 신호기는 해킹 + 치유를 고릅니다(해킹은 스테이지당 무료 아이템 약 2개). 캡틴은 이동 스킬이 없으므로 이동 아이템을 가장 먼저 챙깁니다.
+    loadout:
+      primary: CAPTAIN_PRIMARY_NAME
+      secondary: CAPTAIN_SECONDARY_NAME
+      utility: CAPTAIN_UTILITY_NAME
+      special: CAPTAIN_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Mobility and first procs
+          ko: 기동성과 첫 발동 아이템
+        when:
+          en: "Stages 1-2. Also buy any drones you find: they inherit Defensive Microbots."
+          ko: 1~2스테이지. 드론은 방어용 마이크로봇을 물려받으니 보이는 대로 구매하세요.
+        items:
+          - id: Hoof
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+              max: 3
+            note:
+              en: Captain has zero mobility skills; guides say get 2-3 speed items.
+              ko: 캡틴은 이동 스킬이 전혀 없어 속도 아이템 2~3개를 권장합니다.
+            stacksReason:
+              en: A 2025 Steam thread says 2-3 speed items will do; aim for 3, counting Energy Drinks toward the total.
+              ko: 2025년 스팀 토론은 속도 아이템 2~3개면 된다고 합니다. 에너지 드링크를 포함해 3개를 목표로 하세요.
+          - id: SprintBonus
+            priority: optional
+            note:
+              en: Alternative or addition to Goat Hoof for sprint speed.
+              ko: 폴의 염소발 대신 또는 함께 질주 속도를 올립니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: The Steam thread's 2-3 speed items count Hoofs and Energy Drinks together, so 1 on top of Hoofs is enough.
+              ko: 스팀 토론의 속도 아이템 2~3개에는 염소발과 에너지 드링크가 함께 포함되므로, 염소발에 더해 1개면 충분합니다.
+          - id: Syringe
+            priority: core
+            note:
+              en: Attack speed raises DPS and the Microbots' recharge rate.
+              ko: 공격 속도가 딜과 방어용 마이크로봇의 재충전 속도를 함께 올립니다.
+            stacks:
+              target: 10
+              min: 1
+            stacksReason:
+              en: +15% attack speed per stack (wiki) speeds both the shotgun and Microbots; 10 (+150%) once movement is covered.
+              ko: 개당 공격 속도 +15%(위키)로 샷건과 마이크로봇이 함께 빨라집니다. 기동성을 갖춘 뒤 10개(+150%)를 목표로 하세요.
+          - id: BleedOnHit
+            priority: core
+            note:
+              en: 8 pellets per shot stack Bleed fast.
+              ko: 한 발에 8개의 탄환이 나가 출혈이 빠르게 쌓입니다.
+            stacks:
+              target: 14
+              min: 1
+              max: 14
+            stacksReason:
+              en: "10% per stack at 0.75 proc per pellet (Steam thread: ~33% more stacks); 14 give 100% per pellet (wiki math)."
+              ko: "탄환은 발동 계수 0.75로 개당 10%를 판정합니다(스팀 토론: 약 33% 더 필요). 14개면 탄환당 100%입니다(위키 수치 계산)."
+          - id: StickyBomb
+            priority: optional
+            note:
+              en: Cheap proc damage that triggers often off the shotgun.
+              ko: 샷건으로 자주 터지는 값싼 발동 피해입니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: 5% per stack at 0.75 per pellet (wiki); 5 give about 19% per pellet, several bombs per shot.
+              ko: 탄환당 0.75 계수로 개당 5%(위키). 5개면 탄환당 약 19%라 한 발에 폭탄이 여러 개 붙습니다.
+        next:
+          - movement
+          - proc
+          - orbital
+      - id: movement
+        phase: mid
+        label:
+          en: Extra movement
+          ko: 추가 기동성
+        when:
+          en: Take if you still get caught by melee elites or can't reach the teleporter safely.
+          ko: 여전히 근접 엘리트에게 잡히거나 텔레포터까지 안전하게 가기 어렵다면 고르세요.
+        items:
+          - id: JumpBoost
+            priority: core
+            note:
+              en: Sprint-jump boost; several guides pick it as Captain's mobility fix.
+              ko: 질주 점프로 앞으로 밀어 줍니다. 여러 가이드가 캡틴의 기동성 해결책으로 꼽습니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +10 m sprint-jump boost per stack (wiki); 2 (20 m) are enough to cross most gaps.
+              ko: 개당 질주 점프 거리 +10m(위키). 2개(20m)면 대부분의 거리를 건널 수 있습니다.
+          - id: SprintOutOfCombat
+            priority: optional
+            note:
+              en: +30% speed out of combat for repositioning.
+              ko: 비전투 시 속도 30%로 위치 조정이 쉬워집니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one gives +30% speed out of combat (wiki), enough for repositioning between fights.
+              ko: 1개로 비전투 시 이동 속도 +30%(위키)를 얻어 전투 사이 위치 조정에 충분합니다.
+          - id: Feather
+            priority: optional
+            note:
+              en: Extra jumps; a 2025 Steam thread recommends 2-3.
+              ko: 추가 점프를 줍니다. 2025년 스팀 토론에서 2~3개를 권합니다.
+            stacks:
+              target: 3
+              min: 2
+              max: 3
+            stacksReason:
+              en: A 2025 Steam thread recommends 2-3 extra jumps; aim for 3.
+              ko: 2025년 스팀 토론이 추가 점프 2~3개를 권합니다. 3개를 목표로 하세요.
+        next:
+          - late
+      - id: proc
+        phase: mid
+        label:
+          en: On-hit damage
+          ko: 적중 시 피해
+        when:
+          en: Default damage branch for most runs.
+          ko: 대부분의 판에서 기본 딜 갈래입니다.
+        items:
+          - id: ChainLightning
+            priority: core
+            note:
+              en: Chain lightning procs constantly off the pellets.
+              ko: 탄환마다 번개 연쇄가 자주 터집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +2 targets and +2 m per stack (wiki); 3 chain to 7 enemies off every pellet.
+              ko: 개당 대상 +2명, 범위 +2m(위키). 3개면 탄환마다 7명에게 연쇄됩니다.
+          - id: Missile
+            priority: core
+            note:
+              en: High uptime from many pellets.
+              ko: 탄환 수가 많아 가동률이 높습니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +300% missile damage per stack at a fixed 10% chance (wiki); 3 (900%) with 8 pellets fire constantly.
+              ko: 확률 10% 고정에 개당 미사일 피해 +300%(위키). 탄환 8발이라 3개(900%)면 끊임없이 발사됩니다.
+          - id: FireRing
+            priority: optional
+            note:
+              en: Burst items fit orbital strikes and charged slugs.
+              ko: 궤도 타격과 충전 슬러그 같은 폭딜에 잘 맞습니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: recharge is fixed at 10 s but damage is +300% per stack (wiki); 2 for charged-slug and strike burst.
+              ko: 재충전은 10초로 고정이고 피해가 개당 +300%(위키)입니다. 충전 슬러그와 궤도 폭딜용으로 2개.
+          - id: IceRing
+            priority: optional
+            note:
+              en: Paired with Kjaro's for burst and a freeze.
+              ko: 캬로의 반지와 함께 폭딜과 빙결을 더합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +250% damage and +3 s slow per stack on a fixed 10 s recharge (wiki); 2 to match Kjaro's.
+              ko: 10초 고정 재충전에 개당 피해 +250%, 감속 +3초(위키). 캬로의 반지에 맞춰 2개.
+          - id: ChainLightningVoid
+            priority: situational
+            note:
+              en: One guide calls it possibly the best DLC item on Captain; it replaces your Ukuleles.
+              ko: 캡틴에게 최고의 DLC 아이템일 수 있다는 가이드가 있습니다. 우쿨렐레를 대체합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: picking it up corrupts all Ukuleles, so your 3 Ukuleles become 3 Polylutes (9 hits per proc, wiki).
+              ko: 획득하면 우쿨렐레가 모두 변환되므로 우쿨렐레 3개가 폴리류트 3개(발동당 9회 타격, 위키)가 됩니다.
+        next:
+          - late
+      - id: orbital
+        phase: mid
+        label:
+          en: Orbital uptime
+          ko: 궤도 스킬 가동률
+        when:
+          en: Take when you rely on Orbital Probe and beacons for damage and control.
+          ko: 탐사정 투하와 신호기로 딜과 제어를 한다면 고르세요.
+        items:
+          - id: Bandolier
+            priority: core
+            note:
+              en: Kills refill Orbital Probe charges between fights.
+              ko: 처치로 전투 사이에 탐사정 투하 충전이 채워집니다.
+            stacks:
+              target: 4
+              min: 1
+              max: 4
+            stacksReason:
+              en: 20.4% at 1, 36.7% at 3, 41.2% at 4; past 4 each copy adds only about 3 points.
+              ko: 1개 20.4%, 3개 36.7%, 4개 41.2%. 4개를 넘으면 개당 약 3%p만 오릅니다.
+          - id: UtilitySkillMagazine
+            priority: core
+            note:
+              en: +2 utility charges and a shorter cooldown.
+              ko: 유틸리티 충전 +2와 재사용 대기시간 감소를 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy already lets you call 9 Orbital Probes in a row; extras only add 2 charges.
+              ko: 1개만으로 탐사정 투하를 연속 9회 부를 수 있고, 추가분은 충전 2회만 늘립니다.
+          - id: EquipmentMagazineVoid
+            priority: situational
+            note:
+              en: Extra beacon use per stage, per a 2025 Steam thread.
+              ko: 2025년 스팀 토론에 따르면 스테이지마다 신호기를 한 번 더 씁니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one gives an extra beacon use per stage, and the 33% cooldown cut does not stack (wiki).
+              ko: 1개로 스테이지마다 신호기를 한 번 더 쓰고, 대기시간 33% 감소는 중첩되지 않습니다(위키).
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Red chests (Hacking beacon can open them for free) and boss drops.
+          ko: 빨간 상자(해킹 신호기로 무료 개방 가능)와 보스 보상에서 챙깁니다.
+        items:
+          - id: BleedOnHitAndExplode
+            priority: core
+            note:
+              en: With enough attack speed Bleed reaches huge stacks and enemies explode.
+              ko: 공격 속도가 충분하면 출혈이 크게 쌓이고 적이 폭발합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: boss item; one makes every bleeding enemy explode, extras only add +400% explosion damage (wiki).
+              ko: 보스 아이템입니다. 1개로 출혈 중인 모든 적이 터지고, 추가분은 폭발 피해 +400%만 늘립니다(위키).
+          - id: ArmorReductionOnHit
+            priority: optional
+            note:
+              en: Many pellets apply its armor shred in one shot.
+              ko: 탄환이 많아 한 발로 방어력 감소를 적용합니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: The -60 armor does not stack; extra copies only add +8 s, and hits re-apply it anyway (wiki).
+              ko: 방어력 -60은 중첩되지 않고 추가분은 지속 시간 8초만 늘리는데, 공격하면 계속 다시 걸립니다(위키).
+          - id: Clover
+            priority: optional
+            note:
+              en: More procs from every on-hit item.
+              ko: 모든 적중 시 아이템의 발동이 늘어납니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary, and one already adds a re-roll to every proc; equal Purity stacks cancel it (wiki).
+              ko: 전설 아이템이고 1개로도 모든 발동에 재판정이 붙습니다. 같은 수의 순수가 있으면 상쇄됩니다(위키).
+          - id: BounceNearby
+            priority: optional
+            note:
+              en: Community pick for on-hit chaining.
+              ko: 적중 시 연쇄용으로 커뮤니티가 추천합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary optional; one gives 20% (15% per pellet) hook chains to 10 enemies (wiki).
+              ko: 선택 전설 아이템입니다. 1개로 20%(탄환당 15%) 확률로 적 10명에게 갈고리가 연쇄됩니다(위키).
+          - id: DroneWeapons
+            priority: situational
+            note:
+              en: Buffs drones that already carry your Microbots; halved in the Alloyed Collective update.
+              ko: 마이크로봇을 공유받는 드론을 강화합니다. 얼로이드 컬렉티브 업데이트에서 수치가 절반으로 줄었습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary, halved in Alloyed Collective; one gives drones the chaingun and missiles, extras only +25% speed.
+              ko: 얼로이드 컬렉티브에서 절반으로 약해진 전설 아이템입니다. 1개로 드론에 기관총과 미사일이 붙고, 추가분은 속도 25%만 올립니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Loop scaling
+          ko: 루프 스케일링
+        when:
+          en: After the first loop, once Shatterspleen or armor shred is online.
+          ko: 첫 루프 이후, 폭발하는 비장이나 방어력 감소가 갖춰진 뒤.
+        items:
+          - id: PermanentDebuffOnHit
+            priority: core
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Steam thread picks it for bosses; wiki says it outperforms Shattering Justice on proc-heavy builds.
+              ko: 스팀 토론이 보스용으로 추천하고, 위키는 발동이 많은 빌드에서 부서진 정의보다 낫다고 합니다.
+            stacksReason:
+              en: core red here; two strip 4 armor per hit, and negative armor keeps adding damage toward a +100% ceiling (wiki).
+              ko: 이 빌드의 핵심 빨간 아이템입니다. 2개면 적중마다 방어력 4를 깎고, 음수 방어력은 최대 +100%까지 피해를 늘립니다(위키).
+          - id: UtilitySkillMagazine
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: "TheGamer and eXputer: prioritize it in extended runs; 9 Probes per cycle with one copy."
+              ko: TheGamer와 eXputer는 긴 런에서 우선하라고 합니다. 하나로 한 번에 탐사정 9회.
+            stacksReason:
+              en: one copy already lets you call 9 Orbital Probes in a row; extras only add 2 charges.
+              ko: 1개만으로 탐사정 투하를 연속 9회 부를 수 있고, 추가분은 충전 2회만 늘립니다.
+          - id: CritGlasses
+            priority: optional
+            stacks:
+              target: 9
+              min: 1
+              max: 10
+            note:
+              en: Shatterspleen's own bleed needs crits (wiki); crit is useless past 100% (10 stacks).
+              ko: 폭발하는 비장 자체 출혈은 치명타가 필요합니다(위키). 치명타는 100%(10개)를 넘으면 의미가 없습니다.
+            stacksReason:
+              en: 10% crit per stack caps at 100% (wiki); with Shatterspleen's 5%, 9 glasses reach 100% (10 without it).
+              ko: 개당 치명타 10%로 100%가 상한입니다(위키). 폭발하는 비장의 5%가 있으면 9개로 100%(없으면 10개).
+          - id: DroneWeapons
+            priority: situational
+            stacks:
+              target: 1
+            note:
+              en: Drones inherit Microbots (wiki); still strong but halved in Alloyed Collective. Take it if you have bought many drones.
+              ko: 드론은 마이크로봇을 물려받습니다(위키). 얼로이드 컬렉티브에서 절반으로 약해졌지만 여전히 강하니 드론을 많이 샀다면 챙기세요.
+            stacksReason:
+              en: legendary, halved in Alloyed Collective; one gives drones the chaingun and missiles, extras only +25% speed.
+              ko: 얼로이드 컬렉티브에서 절반으로 약해진 전설 아이템입니다. 1개로 드론에 기관총과 미사일이 붙고, 추가분은 속도 25%만 올립니다.
+        next: []
+    pickOrder:
+      common:
+        - Hoof
+        - SprintBonus
+        - Syringe
+        - BleedOnHit
+        - StickyBomb
+        - SecondarySkillMagazine
+      uncommon:
+        - JumpBoost
+        - ChainLightning
+        - Missile
+        - Bandolier
+        - SprintOutOfCombat
+        - Feather
+        - FireRing
+        - IceRing
+      legendary:
+        - UtilitySkillMagazine
+        - ArmorReductionOnHit
+        - Clover
+        - BounceNearby
+        - PermanentDebuffOnHit
+        - DroneWeapons
+    milestones:
+      - when:
+          en: Once you have 2-3 speed items (Goat Hoof or Energy Drink).
+          ko: 이동 속도 아이템(염소발, 에너지 드링크)이 2~3개가 되면.
+        advice:
+          en: Movement is covered. Move whites into Soldier's Syringe and Tri-Tip Dagger.
+          ko: 기동성은 충분합니다. 흰색은 군인의 주사기와 삼각 단검으로 옮기세요.
+        take:
+          - Syringe
+          - BleedOnHit
+        stop:
+          - Hoof
+          - SprintBonus
+      - when:
+          en: Once you have about 14 Tri-Tip Daggers.
+          ko: 삼각 단검이 약 14개가 되면.
+        advice:
+          en: Every pellet now bleeds. Stop adding daggers and look for Shatterspleen so bleeding enemies explode.
+          ko: 모든 탄환이 출혈을 겁니다. 단검은 그만 챙기고 출혈 적을 터뜨리는 폭발하는 비장을 노리세요.
+        take:
+          - BleedOnHitAndExplode
+        stop:
+          - BleedOnHit
+      - when:
+          en: Once you have one Shattering Justice.
+          ko: 부서진 정의가 1개 생기면.
+        advice:
+          en: More copies only lengthen the debuff. Take Symbiotic Scorpion for further armor shred.
+          ko: 추가 중첩은 지속 시간만 늘립니다. 방어력을 더 깎으려면 공생 전갈을 챙기세요.
+        take:
+          - PermanentDebuffOnHit
+        stop:
+          - ArmorReductionOnHit
+      - when:
+          en: After the first loop.
+          ko: 첫 루프 이후.
+        advice:
+          en: Keep buying drones, since they carry Microbots, and spend Hacking beacons on large and legendary chests. Look for Hardlight Afterburner.
+          ko: 드론은 마이크로봇을 물려받으니 계속 사고, 해킹 신호기는 큰 상자와 전설 상자에 쓰세요. 고형광선 재연소장을 노리세요.
+        take:
+          - UtilitySkillMagazine
+        stop: []
+      - when:
+          en: When the route leads into a Hidden Realm.
+          ko: 숨겨진 영역으로 들어갈 때.
+        advice:
+          en: Orbital skills and beacons do not work there (wiki), so your shotgun procs and items must carry the fight.
+          ko: 그곳에서는 궤도 스킬과 신호기가 작동하지 않으므로(위키) 샷건과 아이템 발동으로 싸워야 합니다.
+        take: []
+        stop: []
+    avoid: []
+    evidence: |-
+      8 pellets x 0.75 proc coefficient, Tri-Tip/Shatterspleen/Shattering Justice, Microbots scaling with attack speed and applying to drones: wiki.gg Captain tips. Movement items, AtG/Ukulele/Meat Hook/Sticky Bomb, Bands, Clover, Syringe, Lysate Cell, 'buy any drones': Steam discussion 591776528523605857 (July 2025, most recent source). Orbital Probe over DIABLO and Hacking + Healing solo, Bandolier refreshing Probe: Rogue Ranker. Wax Quail, Red Whip, Hardlight, Bandolier: eXputer (2023) and TheGamer (Jan 2024). Polylute: Nerd Lodge (2022). Spare Drone Parts: wiki.gg; the Alloyed Collective update (Nov 2025) cut its stats by 50%, so older guides overrate it. No source names specific items to avoid, so the avoid list is empty; TheGamer only advises skipping the Resupply beacon and not using Hacking under Artifact of Sacrifice. Consensus on Captain's items is strong; his kit has had no balance changes since the Anniversary Update.
+
+      Stack counts and progression: Strong for early/mid, moderate for loops. '2-3 hoofs and/or energy drinks', '2-3 Hopoo', 'each on-hit roll is multiplied by .75, so ~33% more stacks', Lysate Cell for beacons, drones inherit Microbots, Scorpion/Shattering Justice for bosses: Steam discussion 591776528523605857 (2025). Tri-Tip 100% at 10 stacks on full proc coefficient: wiki Tri-Tip; the ~14 target is my calculation from 10% x 0.75 per stack, which the Steam 'multiplied by .75' note supports. Bandolier formula/table, Shattering Justice +8 s only, Scorpion better for proc builds, Shatterspleen needing crits and one bleed per hit with Tri-Tip, Lens-Maker's effective limit of 10, Hardlight '9 Orbital Probes', Hidden Realms disabling orbital skills: wiki.gg. Hardlight for extended runs: eXputer and TheGamer. Spare Drone Parts halved: Alloyed Collective patch notes. No boss pick order: only Shatterspleen is named by sources. Steam guide 2210653083 returned HTTP 429; Reddit was not tried.
+  - id: captain-diablo-burst
+    title:
+      en: DIABLO Burst
+      ko: 디아블로 폭딜
+    difficulty: intermediate
+    summary:
+      en: Swap Orbital Probe for OGM-72 'DIABLO' Strike, a slow but huge nuke. Use Power Tazer or a Shocking beacon to hold enemies in place, then call the strike. Build for burst and for resetting its 40-second cooldown.
+      ko: 탐사정 투하 대신 느리지만 강력한 OGM-72 '디아블로' 타격을 씁니다. 파워 테이저나 충격 신호기로 적을 묶어 두고 타격을 부릅니다. 폭딜과 40초 대기시간 초기화 위주로 아이템을 맞춥니다.
+    loadout:
+      primary: CAPTAIN_PRIMARY_NAME
+      secondary: CAPTAIN_SECONDARY_NAME
+      utility: CAPTAIN_UTILITY_ALT1_NAME
+      special: CAPTAIN_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Opening items
+          ko: 초반 아이템
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: Crowbar
+            priority: core
+            note:
+              en: DIABLO hits enemies above 90% health, so Crowbar applies to the strike.
+              ko: 디아블로는 체력 90% 이상인 적을 맞히므로 쇠지렛대가 적용됩니다.
+            stacks:
+              target: 10
+              min: 1
+            stacksReason:
+              en: +75% per stack to enemies above 90% health (wiki), which DIABLO usually hits; 10 (+750%) is a solid goal.
+              ko: 체력 90% 이상 적에게 개당 +75%(위키)이고 디아블로는 대개 그런 적을 맞힙니다. 10개(+750%)를 목표로 하세요.
+          - id: Hoof
+            priority: core
+            note:
+              en: Mobility is still Captain's main weakness.
+              ko: 기동성은 여전히 캡틴의 가장 큰 약점입니다.
+            stacks:
+              target: 3
+              max: 3
+            stacksReason:
+              en: A 2025 Steam thread says 2-3 speed items will do for Captain; aim for 3.
+              ko: 2025년 스팀 토론은 캡틴에게 속도 아이템 2~3개면 된다고 합니다. 3개를 목표로 하세요.
+          - id: Syringe
+            priority: optional
+            note:
+              en: Shotgun DPS and faster Microbots between strikes.
+              ko: 타격 사이 샷건 딜과 마이크로봇 재충전을 올립니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +15% attack speed per stack (wiki); the shotgun only fills gaps between strikes, so 5 (+75%).
+              ko: 개당 공격 속도 +15%(위키). 샷건은 타격 사이만 채우므로 5개(+75%).
+        next:
+          - burst
+          - reset
+      - id: burst
+        phase: mid
+        label:
+          en: Burst amplifiers
+          ko: 폭딜 증폭
+        when:
+          en: Take when bosses survive a full strike.
+          ko: 보스가 타격 한 번을 버틴다면 고르세요.
+        items:
+          - id: FireRing
+            priority: core
+            note:
+              en: Single huge hits trigger the Bands reliably.
+              ko: 한 번에 큰 피해를 주므로 반지가 확실히 발동합니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: fixed 10 s recharge, +300% per stack (wiki); every strike triggers it, so 3 (900%).
+              ko: 10초 고정 재충전에 개당 +300%(위키). 타격마다 발동하므로 3개(900%).
+          - id: IceRing
+            priority: core
+            note:
+              en: Pairs with Kjaro's for extra burst.
+              ko: 캬로의 반지와 함께 추가 폭딜을 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: fixed 10 s recharge, +250% per stack (wiki); 3 to match Kjaro's on every strike.
+              ko: 10초 고정 재충전에 개당 +250%(위키). 타격마다 캬로의 반지와 함께 터지도록 3개.
+        next:
+          - loop
+      - id: reset
+        phase: mid
+        label:
+          en: Cooldown resets
+          ko: 대기시간 초기화
+        when:
+          en: Take when you spend most fights waiting on the strike.
+          ko: 대부분의 전투를 타격 대기로 보낸다면 고르세요.
+        items:
+          - id: Bandolier
+            priority: core
+            note:
+              en: The wiki recommends it to reset the 40-second cooldown more often.
+              ko: 위키가 40초 대기시간을 더 자주 초기화하는 용도로 추천합니다.
+            stacks:
+              target: 4
+              min: 1
+              max: 4
+            stacksReason:
+              en: 20.4% at 1, 36.7% at 3, 41.2% at 4; past 4 each copy adds only about 3 points.
+              ko: 1개 20.4%, 3개 36.7%, 4개 41.2%. 4개를 넘으면 개당 약 3%p만 오릅니다.
+          - id: UtilitySkillMagazine
+            priority: core
+            note:
+              en: Extra utility charges and a shorter cooldown.
+              ko: 유틸리티 충전이 늘고 대기시간이 짧아집니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy lets you call 3 DIABLO strikes in quick succession; extras only add 2 charges.
+              ko: 1개로 디아블로 타격을 연속 3회 부를 수 있고, 추가분은 충전 2회만 늘립니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Loop scaling
+          ko: 루프 스케일링
+        when:
+          en: After the first loop, once you have both burst and reset items.
+          ko: 첫 루프 이후, 폭딜 아이템과 초기화 아이템을 모두 갖춘 뒤.
+        items:
+          - id: EquipmentMagazineVoid
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: "A 2025 Steam thread: one more beacon per stage. Shocking beacons pin targets for the strike (wiki)."
+              ko: "2025년 스팀 토론: 스테이지당 신호기 하나 더. 충격 신호기로 적을 묶어 타격을 맞힙니다(위키)."
+            stacksReason:
+              en: one gives an extra beacon per stage; the 33% cooldown cut does not stack (wiki).
+              ko: 1개로 스테이지마다 신호기가 하나 늘고, 대기시간 33% 감소는 중첩되지 않습니다(위키).
+          - id: ArmorReductionOnHit
+            priority: optional
+            stacks:
+              target: 1
+              max: 1
+            note:
+              en: Wiki says burst builds may prefer it over Scorpion; the shotgun's 8 pellets apply it fast before the strike lands.
+              ko: 위키는 폭딜 빌드에는 공생 전갈보다 이쪽이 나을 수 있다고 합니다. 샷건 8발로 타격 전에 빠르게 겁니다.
+            stacksReason:
+              en: The -60 armor does not stack; extra copies only add +8 s, and hits re-apply it anyway (wiki).
+              ko: 방어력 -60은 중첩되지 않고 추가분은 지속 시간 8초만 늘리는데, 공격하면 계속 다시 걸립니다(위키).
+        next: []
+    pickOrder:
+      common:
+        - Crowbar
+        - Hoof
+        - SprintBonus
+        - Syringe
+      uncommon:
+        - Bandolier
+        - FireRing
+        - IceRing
+        - JumpBoost
+    milestones:
+      - when:
+          en: Once you have one Hardlight Afterburner.
+          ko: 고형광선 재연소장이 1개 생기면.
+        advice:
+          en: You can drop 3 strikes in a row. From here, Bandolier is how you reset them; aim for about 4.
+          ko: 타격을 연속 3번 떨어뜨릴 수 있습니다. 이제 탄약띠로 초기화하며 4개 정도를 목표로 하세요.
+        take:
+          - Bandolier
+        stop: []
+      - when:
+          en: Once you have 4 Bandoliers.
+          ko: 탄약띠가 4개가 되면.
+        advice:
+          en: Each extra copy adds only ~3 points of reset chance. Put greens into Kjaro's and Runald's Bands.
+          ko: 추가 개당 초기화 확률이 약 3%p뿐입니다. 녹색은 캬로의 반지와 루널드의 반지에 쓰세요.
+        take:
+          - FireRing
+          - IceRing
+        stop:
+          - Bandolier
+      - when:
+          en: After the first loop.
+          ko: 첫 루프 이후.
+        advice:
+          en: Look for Lysate Cell for extra beacons and pin targets with Power Tazer or a Shocking beacon before each strike.
+          ko: 용해물 전지로 신호기를 늘리고, 매 타격 전에 파워 테이저나 충격 신호기로 적을 묶으세요.
+        take:
+          - EquipmentMagazineVoid
+        stop: []
+    avoid: []
+    evidence: |-
+      Thinner than the Probe build. Crowbar and Bandolier with DIABLO, and Tazer/beacon/Primordial Cube to group targets: wiki.gg Captain tips. DIABLO preferred: Nerd Lodge (2022) and TheGamer (2024) call it higher damage; Rogue Ranker says Orbital Probe is 'almost always better for practical play', so the sources disagree on which utility is stronger. Hardlight: eXputer. Bands for orbital burst: Steam discussion (2025). No 2024+ source gives a full DIABLO item list, so no late node is given.
+
+      Stack counts and progression: Thin. No 2024+ source gives a DIABLO loop plan, and sources disagree on DIABLO itself: TheGamer (2024) and Nerd Lodge say it hits harder, while Rogue Ranker and TheGamer both call the 20 s delay impractical. Numbers come from wiki values: Crowbar +75%/stack, Bandolier formula and table, Kjaro's +300%/stack with a fixed 10 s recharge, Hardlight '3 DIABLO strikes in quick succession', Shattering Justice +8 s per stack only, and the Symbiotic Scorpion page noting burst builds may prefer Shattering Justice. Lysate Cell for extra beacons: 2025 Steam discussion 591776528523605857. Tazer/Shocking beacon to pin targets: wiki Captain. Legendary and boss pick orders omitted: sources do not rank reds for DIABLO beyond Hardlight.

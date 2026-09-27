@@ -1,0 +1,559 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: SeekerBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: mixed
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Seeker
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.8
+  - https://gamerant.com/risk-of-rain-2-ror-2-best-seeker-build-items/
+  - https://itemlevel.net/risk-of-rain-2-seeker-complete-guide-seekers-of-the-storm-dlc/
+  - https://rogueranker.com/seeker-ror2/
+  - https://steamcommunity.com/app/632360/discussions/0/594035856760931881/
+builds:
+  - id: seeker-soul-spiral-sojourn-brawler
+    title:
+      en: Soul Spiral + Sojourn brawler
+      ko: 영혼의 나선 + 체류 근접 난투
+    difficulty: intermediate
+    summary:
+      en: Spam Meditate to build Tranquility, fight up close with Soul Spiral for barrier, and use Sojourn for big burst. Sojourn trades health for damage, so the build leans on damage reduction and healing to keep it running, then on-hit and band items to cash in its high per-hit damage.
+      ko: 명상으로 평정을 쌓고, 영혼의 나선의 보호막을 받으며 근접전을 펼치고, 체류로 큰 폭딜을 넣습니다. 체류는 체력을 대가로 피해를 올리므로 피해 감소·회복 아이템으로 버티고, 높은 한 방 피해를 활용할 적중 효과·반지 아이템으로 마무리합니다.
+    loadout:
+      primary: SEEKER_PRIMARY_NAME
+      secondary: SEEKER_SECONDARY_ALT1_NAME
+      utility: SEEKER_UTILITY_NAME
+      special: SEEKER_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Close-range core
+          ko: 근접전 핵심
+        when:
+          en: Stage 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: NearbyDamageBonus
+            priority: core
+            note:
+              en: Seeker fights best at close range; boosts both Soul Spiral and Sojourn.
+              ko: 시커는 근거리에서 가장 강하며, 영혼의 나선과 체류 모두 강화됩니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: core for a close-range fighter; 5 copies give +100% damage within 13m (wiki).
+              ko: 근접 전투 핵심 아이템으로, 5개면 13m 안에서 피해 +100%입니다(위키).
+          - id: Bear
+            priority: core
+            note:
+              en: Damage prevention for a risky, self-damaging playstyle.
+              ko: 자해가 있는 위험한 운영을 받쳐 주는 피해 방지입니다.
+            stacks:
+              target: 4
+              min: 1
+            stacksReason:
+              en: 4 copies = 37.5% block, and each copy after adds under 6 points (math from wiki values).
+              ko: 쌍곡선형이라 4개면 막기 37.5%이고, 그 뒤로는 1개당 6%p도 오르지 않습니다(위키 수치로 계산).
+          - id: Syringe
+            priority: optional
+            note:
+              en: Speeds up the slow Spirit Punch and its barrier generation.
+              ko: 느린 혼령권과 보호막 생성을 빠르게 합니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: 5 copies give +75% attack speed to speed up Spirit Punch and its barrier gain.
+              ko: 5개면 공격 속도 +75%로 혼령권과 보호막 획득이 빨라집니다.
+          - id: Crowbar
+            priority: optional
+            note:
+              en: Big first hits to one-shot mobs and help trigger the bands later.
+              ko: 첫 타 피해를 올려 잡몹을 한 방에 처리하고 이후 반지 발동을 돕습니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: Steam players say to stack Crowbars for the big Sojourn hit; 5 copies give +375%, linear with no cap (wiki).
+              ko: Steam 플레이어들은 체류의 큰 한 방을 위해 쇠지렛대를 쌓으라고 합니다. 5개면 +375%이며 상한이 없습니다(위키).
+        next:
+          - sustain
+      - id: sustain
+        phase: mid
+        label:
+          en: Keep Sojourn running
+          ko: 체류 유지력
+        when:
+          en: Once you rely on Sojourn for damage; take before stacking offense.
+          ko: 체류를 주 딜링기로 쓰기 시작하면, 공격 아이템보다 먼저 챙기세요.
+        items:
+          - id: ArmorPlate
+            priority: core
+            note:
+              en: Flat damage reduction makes Sojourn much safer.
+              ko: 고정 피해 감소로 체류가 훨씬 안전해집니다.
+            stacks:
+              target: 4
+              min: 1
+            stacksReason:
+              en: Sojourn ticks for 5% of base health, about 20 per tick by mid levels, so 4 plates (-20) cut it to near 1; flat reduction falls off later.
+              ko: 체류는 틱마다 기본 체력의 5%, 중반 레벨에서 약 20을 깎으므로 철판 4개(-20)면 거의 1까지 줄어듭니다. 고정 감소라 후반엔 효율이 떨어집니다.
+          - id: ParentEgg
+            priority: core
+            note:
+              en: Heals when you take damage, offsetting Sojourn's health cost.
+              ko: 피해를 받을 때 회복해 체류의 체력 소모를 상쇄합니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: heals 15 per copy on every hit taken, including each Sojourn tick (wiki); 2 is a realistic boss-item count.
+              ko: 체류 틱을 포함해 피해를 받을 때마다 1개당 15를 회복합니다(위키). 보스 아이템이라 2개가 현실적입니다.
+          - id: SprintArmor
+            priority: optional
+            note:
+              en: More damage reduction.
+              ko: 추가 피해 감소입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies give +60 armor while sprinting (+30 per copy, wiki).
+              ko: 2개면 달리는 동안 방어력 +60입니다(1개당 +30, 위키).
+          - id: IncreaseHealing
+            priority: optional
+            note:
+              en: Doubles healing from Meditate and other sources.
+              ko: 명상 등 모든 회복량을 두 배로 늘립니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: +100% healing per copy (wiki); 2 triples Meditate and Planula healing, which keeps up with Sojourn's drain.
+              ko: 1개당 회복 +100%(위키)라 2개면 명상과 플라눌라 회복이 3배가 되어 체류의 체력 소모를 따라잡습니다.
+          - id: Medkit
+            priority: optional
+            note:
+              en: Cheap healing to recover after a Sojourn.
+              ko: 체류 후 체력을 회복하는 저렴한 회복 수단입니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies heal 20 + 15% max health after each hit (+5% per copy, wiki).
+              ko: 3개면 피격 후 20 + 최대 체력 15%를 회복합니다(1개당 +5%, 위키).
+        next:
+          - onhit
+          - bands
+      - id: onhit
+        phase: mid
+        label:
+          en: On-hit procs
+          ko: 적중 효과
+        when:
+          en: Take when you have many small hits (Soul Spiral) to spread damage.
+          ko: 영혼의 나선처럼 잦은 타격으로 광역 피해를 퍼뜨리고 싶을 때.
+        items:
+          - id: ChainLightning
+            priority: optional
+            note:
+              en: Chain lightning from Soul Spiral's frequent hits.
+              ko: 영혼의 나선의 잦은 타격으로 연쇄 번개를 냅니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies chain to 5 targets; each copy adds +2 targets and +2m range (wiki).
+              ko: 2개면 5명까지 연쇄되며, 1개당 대상 +2, 범위 +2m씩 늘어납니다(위키).
+          - id: Missile
+            priority: optional
+            note:
+              en: Extra missile damage on hit.
+              ko: 적중 시 미사일로 추가 피해를 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: linear +300% missile damage per copy at a fixed 10% chance (wiki); 3 is a solid uncommon stack.
+              ko: 발동 확률 10%는 고정이고 1개당 미사일 피해가 +300%씩 선형으로 늘어나(위키) 3개면 든든합니다.
+          - id: Thorns
+            priority: situational
+            note:
+              en: Triggers while you absorb damage; guides pair it with Soul Spiral's barrier.
+              ko: 피해를 받을 때 발동하며, 영혼의 나선 보호막과 함께 추천됩니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy enables the 160% razor burst on every hit taken; extras only add targets and radius (wiki).
+              ko: 1개로 피격 시 160% 칼날 폭발이 생기고, 추가분은 대상 수와 범위만 늘립니다(위키).
+          - id: ShockNearby
+            priority: optional
+            note:
+              en: Close-range AoE damage.
+              ko: 근거리 광역 피해입니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one legendary copy gives the full close-range zap; extras only add +2 targets (wiki).
+              ko: 전설 아이템 1개로 근거리 전기 공격을 모두 얻고, 추가분은 대상만 2명씩 늘립니다(위키).
+        next:
+          - late
+      - id: bands
+        phase: mid
+        label:
+          en: Burst with the bands
+          ko: 반지로 폭딜
+        when:
+          en: Take when Sojourn and charged hits regularly land 400%+ damage.
+          ko: 체류나 강한 타격이 꾸준히 400% 이상 피해를 낼 때.
+        items:
+          - id: FireRing
+            priority: core
+            note:
+              en: Procs off a single big hit; Sojourn's explosion triggers it easily.
+              ko: 한 방이 큰 공격에 발동하며 체류 폭발로 쉽게 발동합니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +300% per copy on a fixed 10s recharge (wiki), so every copy adds to each Sojourn blast; 3 is a solid loop stack.
+              ko: 재충전 10초 고정에 1개당 +300%(위키)라 모든 복사본이 체류 폭발 피해를 키웁니다. 루프 기준 3개면 든든합니다.
+          - id: IceRing
+            priority: core
+            note:
+              en: Same trigger as Kjaro's; adds freeze-slow burst.
+              ko: 캬로의 반지와 같은 조건으로 발동해 폭딜과 둔화를 더합니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +250% per copy on the same fixed 10s recharge (wiki); 3 matches your Kjaro's Band stack.
+              ko: 같은 10초 고정 재충전에 1개당 +250%(위키)라 캬로의 반지와 같은 3개를 목표로 하세요.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late scaling and safety
+          ko: 후반 성장과 안전
+        when:
+          en: Stage 5+ and loops.
+          ko: 5스테이지 이후 및 루프.
+        items:
+          - id: Clover
+            priority: optional
+            note:
+              en: More reliable on-hit procs.
+              ko: 적중 효과 발동을 더 안정적으로 만듭니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one legendary copy adds a luck reroll; extras add one more each (wiki).
+              ko: 전설 아이템 1개로 행운 재굴림 1회를 얻고, 추가분은 1회씩 더합니다(위키).
+          - id: Icicle
+            priority: optional
+            note:
+              en: Kill-scaling close-range AoE.
+              ko: 처치로 커지는 근거리 광역 피해입니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy gives the full ice storm damage; extras only raise its max radius (wiki).
+              ko: 1개로 얼음 폭풍 피해를 모두 얻고, 추가분은 최대 반경만 늘립니다(위키).
+          - id: SecondarySkillMagazine
+            priority: optional
+            note:
+              en: More Soul Spiral charges means more orbs and barrier.
+              ko: 영혼의 나선 충전이 늘어 구체와 보호막이 늘어납니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: each copy adds a Soul Spiral charge (wiki); 3 gives four casts of orbs and barrier per cycle.
+              ko: 1개당 영혼의 나선 충전 +1(위키)이라 3개면 한 주기에 네 번 구체와 보호막을 쓸 수 있습니다.
+          - id: MushroomVoid
+            priority: situational
+            note:
+              en: Extra sustain if you find a void cradle.
+              ko: 공허 요람을 찾았다면 유지력을 더해 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy heals 2% max health per second while sprinting (wiki); extras add 2% each.
+              ko: 1개면 달리는 동안 초당 최대 체력 2%를 회복하고(위키), 추가분은 2%씩 더합니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Bands and sustain for long runs
+          ko: 장기전용 반지와 유지력
+        when:
+          en: After the first loop, when enemy hits outgrow flat damage reduction.
+          ko: 첫 루프 이후, 적의 피해가 고정 피해 감소를 넘어설 때.
+        items:
+          - id: FireRing
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+            note:
+              en: "Keep stacking: fixed recharge, linear damage off each big Sojourn hit."
+              ko: 계속 쌓으세요. 재사용 시간은 고정이고 체류 한 방마다 피해가 선형으로 늘어납니다.
+            stacksReason:
+              en: +300% per copy on a fixed 10s recharge (wiki), so every copy adds to each Sojourn blast; 3 is a solid loop stack.
+              ko: 재충전 10초 고정에 1개당 +300%(위키)라 모든 복사본이 체류 폭발 피해를 키웁니다. 루프 기준 3개면 든든합니다.
+          - id: IceRing
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+            note:
+              en: Same trigger as Kjaro's; the longer slow also helps you land Sojourn.
+              ko: 캬로의 반지와 같은 조건이며, 늘어나는 둔화로 체류를 맞히기도 쉬워집니다.
+            stacksReason:
+              en: +250% per copy on the same fixed 10s recharge (wiki); 3 matches your Kjaro's Band stack.
+              ko: 같은 10초 고정 재충전에 1개당 +250%(위키)라 캬로의 반지와 같은 3개를 목표로 하세요.
+          - id: IncreaseHealing
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Healing scales in percent, unlike Armor Plate, so it keeps up with Sojourn's level-scaled drain.
+              ko: 회복량은 비율로 늘어나 방어구 철판과 달리 레벨에 비례하는 체류 자해를 따라갑니다.
+            stacksReason:
+              en: +100% healing per copy (wiki); 2 triples Meditate and Planula healing, which keeps up with Sojourn's drain.
+              ko: 1개당 회복 +100%(위키)라 2개면 명상과 플라눌라 회복이 3배가 되어 체류의 체력 소모를 따라잡습니다.
+          - id: ParentEgg
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: More heal per hit taken; each Sojourn tick triggers it.
+              ko: 피해를 받을 때마다 회복량이 늘며, 체류 자해 틱마다 발동합니다.
+            stacksReason:
+              en: heals 15 per copy on every hit taken, including each Sojourn tick (wiki); 2 is a realistic boss-item count.
+              ko: 체류 틱을 포함해 피해를 받을 때마다 1개당 15를 회복합니다(위키). 보스 아이템이라 2개가 현실적입니다.
+          - id: Icicle
+            priority: situational
+            stacks:
+              target: 1
+            note:
+              en: Game Rant's Soul Spiral pick for close-range clear; more copies only raise the max radius.
+              ko: Game Rant가 영혼의 나선 빌드에 추천하는 근거리 광역기입니다. 추가로 얻으면 최대 반경만 늘어납니다.
+            stacksReason:
+              en: one copy gives the full ice storm damage; extras only raise its max radius (wiki).
+              ko: 1개로 얼음 폭풍 피해를 모두 얻고, 추가분은 최대 반경만 늘립니다(위키).
+        next: []
+    pickOrder:
+      common:
+        - ArmorPlate
+        - NearbyDamageBonus
+        - Bear
+        - Crowbar
+        - Syringe
+        - Medkit
+      uncommon:
+        - FireRing
+        - IceRing
+        - SprintArmor
+        - ChainLightning
+        - Missile
+        - Thorns
+      legendary:
+        - IncreaseHealing
+        - Clover
+        - ShockNearby
+        - Icicle
+    milestones:
+      - when:
+          en: Before you rely on Sojourn for damage
+          ko: 체류를 주력 딜로 쓰기 전
+        advice:
+          en: Have at least one Repulsion Armor Plate and one healing-on-damage item (Planula or Medkit). Game Rant says plate plus healing lets you use Sojourn almost indefinitely.
+          ko: 반발성 방어구 철판 1개와 피격 시 회복 아이템(플라눌라나 의료 키트) 1개는 갖추세요. Game Rant는 철판과 회복 아이템이 있으면 체류를 거의 무한히 쓸 수 있다고 봅니다.
+        take:
+          - ArmorPlate
+          - ParentEgg
+        stop: []
+      - when:
+          en: Once Sojourn or charged hits regularly deal 400%+
+          ko: 체류나 강한 타격이 꾸준히 400% 이상 피해를 내면
+        advice:
+          en: Take every Kjaro's and Runald's Band you see; the recharge stays at 10s, so each copy is pure extra damage.
+          ko: 캬로의 반지와 루널드의 반지는 보이는 대로 챙기세요. 재사용 시간은 10초 그대로라 1개마다 순수하게 피해가 늘어납니다.
+        take:
+          - FireRing
+          - IceRing
+        stop: []
+      - when:
+          en: When you have 4 Tougher Times
+          ko: 힘들었던 시절이 4개가 되면
+        advice:
+          en: Block chance is 37.5% and later copies add little. Put white picks into Focus Crystal or Crowbar instead.
+          ko: 막기 확률이 37.5%이고 이후로는 효율이 크게 떨어집니다. 흰색 아이템은 초점 크리스털이나 쇠지렛대로 고르세요.
+        take:
+          - NearbyDamageBonus
+          - Crowbar
+        stop:
+          - Bear
+      - when:
+          en: As your level climbs (usually after the first loop)
+          ko: 레벨이 높아지면(보통 첫 루프 이후)
+        advice:
+          en: Sojourn's self-damage is a percent of base health, which rises with level, and it ramps the longer you fly. Flat Armor Plates no longer carry it, so switch to percent healing (Rejuvenation Rack) and keep Sojourns short.
+          ko: 체류의 자해는 레벨에 따라 오르는 기본 체력의 비율이고, 오래 날수록 점점 커집니다. 고정 감소인 철판만으로는 버티기 어려우니 회춘의 선반 같은 비율 회복으로 바꾸고 체류는 짧게 끊으세요.
+        take:
+          - IncreaseHealing
+        stop: []
+    avoid: []
+    evidence: |-
+      Loadout (Spirit Punch/Soul Spiral/Sojourn/Meditate) is shared by Item Level (Sep 2024), Game Rant (May 2025), Rogue Ranker and a Steam discussion (Oct 2024) that calls Soul Spiral 'way better' than Unseen Hand. Focus Crystal, Tougher Times, Repulsion Armor Plate, Rose Buckler, Rejuvenation Rack, Planula, Weeping Fungus: Item Level + Game Rant. Crowbar, Soldier's Syringe, Kjaro's/Runald's Band, Razorwire, Ukulele, AtG Missile, 57 Leaf Clover, Tesla Coil, Frost Relic, Medkit: Game Rant; bands and damage reduction also in the Steam thread; Backup Magazine: wiki + Rogue Ranker. PATCH-SENSITIVE: Game Rant's claim that Repulsion Armor Plate cuts Sojourn self-damage to 1 per hit was not verified against the current wiki, which describes Sojourn as spending 25% health per second; one search snippet also reports a Sojourn self-damage ramp nerf. V1.3.8 (May 2025) buffed Sojourn to 500%/s, added the 7-Tranquility self-revive, and added Reprieve and Palm Blast, so Item Level's and the Steam thread's advice predates those. No source lists items to avoid (Game Rant says 'every item is useful').
+
+      Stack counts and progression: Stack targets are mostly wiki math: Tougher Times hyperbolic table, band damage/recharge, Planula 15/stack, Rejuvenation Rack +100%/stack, Backup Magazine and Soul Spiral mobility (Seeker wiki). Sojourn self-damage (5% of base health every 0.2s, ramping after 4.4s) is from the Seeker wiki; the WebFetch summary also said it is 'not reduced by armor', but a Steam thread (May 2025, post-nerf) says a single plate lowers the self-damage and that 7 plates at level 20 went from 140s of flight to ~12s after the ramp nerf, and that levelling up raises self-damage. So plates help but no longer carry Sojourn; the exact armor interaction is uncertain. Repulsion Armor Plate falling off late is from the wiki item page. Game Rant (May 2025) backs 'plate + healing = Sojourn indefinitely', Crowbar, bands, Tesla Coil/Frost Relic, Clover; the Steam thread backs stacking Crowbars. Pick order follows those two sources' emphasis (plate 'nearly required' per the wiki/search snippets) but no source gives an explicit ranked list. The wiki notes Transcendence caps Sojourn self-damage at 1 per tick, but no guide recommends it for Seeker, so it is left out. No source for a boss-tier order.
+  - id: seeker-palm-blast-burst
+    title:
+      en: Palm Blast burst
+      ko: 폭발 장법 폭딜
+    difficulty: advanced
+    summary:
+      en: Swap Meditate for Palm Blast, a charged piercing palm that damages enemies and heals allies. Build on-kill damage and extra special charges on top of the Soul Spiral items.
+      ko: 명상 대신 폭발 장법을 씁니다. 충전해서 관통하는 손바닥으로 적을 공격하고 아군을 치유합니다. 영혼의 나선 빌드 아이템 위에 처치 효과와 특수 스킬 충전 아이템을 더합니다.
+    loadout:
+      primary: SEEKER_PRIMARY_NAME
+      secondary: SEEKER_SECONDARY_ALT1_NAME
+      utility: SEEKER_UTILITY_NAME
+      special: SEEKER_SPECIAL_ALT1_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Burst core
+          ko: 폭딜 핵심
+        when:
+          en: Stage 1-2, after unlocking Palm Blast.
+          ko: 폭발 장법 해금 후 1~2스테이지.
+        items:
+          - id: Crowbar
+            priority: core
+            note:
+              en: Palm Blast is a single big hit; Crowbar multiplies it.
+              ko: 폭발 장법은 한 방이 큰 공격이라 쇠지렛대가 크게 작용합니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: Palm Blast is one big hit and Crowbar is linear +75% with no cap (wiki); 5 gives +375%.
+              ko: 폭발 장법은 큰 한 방이고 쇠지렛대는 상한 없는 +75% 선형(위키)이라 5개면 +375%입니다.
+          - id: IgniteOnKill
+            priority: optional
+            note:
+              en: Kills from the piercing palm ignite packs.
+              ko: 관통하는 손바닥으로 처치하면 무리 전체를 점화합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies widen the ignite to 16m and add burn damage (+4m, +75% per copy, wiki).
+              ko: 2개면 점화 범위가 16m가 되고 화상 피해도 늘어납니다(1개당 +4m, +75%, 위키).
+          - id: ExplodeOnDeath
+            priority: optional
+            note:
+              en: More on-kill explosions through packs.
+              ko: 무리 속에서 처치 폭발을 더합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies give a 14.4m, 630% pillar; each copy adds radius and damage (wiki).
+              ko: 2개면 반경 14.4m, 630% 용암 기둥이 되며, 1개당 범위와 피해가 늘어납니다(위키).
+        next:
+          - charges
+      - id: charges
+        phase: mid
+        label:
+          en: More Palm Blasts
+          ko: 폭발 장법 횟수 늘리기
+        when:
+          en: Mid game, once the core is online.
+          ko: 핵심 아이템을 갖춘 뒤 중반.
+        items:
+          - id: EquipmentMagazineVoid
+            priority: core
+            note:
+              en: Extra special charge = one more Palm Blast.
+              ko: 특수 스킬 충전이 늘어 폭발 장법을 한 번 더 씁니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +1 Palm Blast charge per copy, linear (wiki); 3 lets you fire four in a row.
+              ko: 1개당 폭발 장법 충전 +1 선형(위키)이라 3개면 네 번 연속으로 쏠 수 있습니다.
+          - id: HalfAttackSpeedHalfCooldowns
+            priority: situational
+            note:
+              en: Halves cooldowns at the cost of attack speed.
+              ko: 공격 속도를 대가로 쿨다운을 절반으로 줄입니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: One halves cooldowns; a second divides attack speed again and slows Spirit Punch (wiki math).
+              ko: 1개로 쿨다운이 절반이 되고, 2개째는 공격 속도를 또 나눠 혼령권까지 느려집니다(위키 수치로 계산).
+          - id: ArmorPlate
+            priority: optional
+            note:
+              en: Carries over from the Soul Spiral build to keep Sojourn safe.
+              ko: 영혼의 나선 빌드와 마찬가지로 체류를 안전하게 합니다.
+            stacks:
+              target: 4
+              min: 1
+            stacksReason:
+              en: Sojourn ticks for 5% of base health, about 20 per tick by mid levels, so 4 plates (-20) cut it to near 1; flat reduction falls off later.
+              ko: 체류는 틱마다 기본 체력의 5%, 중반 레벨에서 약 20을 깎으므로 철판 4개(-20)면 거의 1까지 줄어듭니다. 고정 감소라 후반엔 효율이 떨어집니다.
+        next: []
+    pickOrder:
+      common:
+        - Crowbar
+        - IgniteOnKill
+        - ArmorPlate
+      uncommon:
+        - ExplodeOnDeath
+        - FireRing
+        - IceRing
+    milestones:
+      - when:
+          en: Before you rely on Sojourn for damage
+          ko: 체류를 주력 딜로 쓰기 전
+        advice:
+          en: Palm Blast replaces Meditate's healing, so get a Repulsion Armor Plate and a heal-on-damage item first (Game Rant's shared Seeker core).
+          ko: 폭발 장법은 명상의 회복을 포기하는 구성이니, 반발성 방어구 철판과 피격 시 회복 아이템을 먼저 챙기세요(Game Rant의 시커 공통 핵심).
+        take:
+          - ArmorPlate
+          - ParentEgg
+        stop: []
+      - when:
+          en: Once Palm Blast or Sojourn regularly deals 400%+
+          ko: 폭발 장법이나 체류가 꾸준히 400% 이상 피해를 내면
+        advice:
+          en: Take Kjaro's and Runald's Bands; they trigger off those big single hits on a fixed 10s recharge.
+          ko: 캬로의 반지와 루널드의 반지를 챙기세요. 이런 큰 한 방에 10초 고정 재사용으로 발동합니다.
+        take:
+          - FireRing
+          - IceRing
+        stop: []
+      - when:
+          en: Once you hold one Light Flux Pauldron
+          ko: 빛의 흐름 견갑을 1개 얻으면
+        advice:
+          en: Do not take a second; more cooldown cuts should come from Lysate Cell charges instead.
+          ko: 두 번째는 가져가지 마세요. 추가 쿨다운 감소는 용해물 전지 충전으로 챙기세요.
+        take:
+          - EquipmentMagazineVoid
+        stop:
+          - HalfAttackSpeedHalfCooldowns
+    avoid: []
+    evidence: |-
+      Only Game Rant (May 2025) gives a Palm Blast item list (Crowbar, Gasoline, Will-o'-the-Wisp, Lysate Cell, Light Flux Pauldron, plus all Soul Spiral items); Item Level and Rogue Ranker mention Palm Blast only as an aggressive option. Thin, single-source tree. Note: Game Rant's page mislabels Sojourn as a primary skill.
+
+      Stack counts and progression: Single-source build: only Game Rant (May 2025) lists Palm Blast items (Crowbar, Gasoline, Will-o'-the-Wisp, Lysate Cell, Light Flux Pauldron, plus all Soul Spiral items). Stack limits are wiki math (Crowbar linear; Lysate Cell +1 charge per stack; Light Flux Pauldron cooldown x0.5 per stack but attack speed divided by 1+n). No source covers loops for Palm Blast, so there is no loop node; follow the Soul Spiral build's loop advice if you switch back. Pick order only lists tiers with three source-backed items; band items come from Game Rant's shared Seeker core.

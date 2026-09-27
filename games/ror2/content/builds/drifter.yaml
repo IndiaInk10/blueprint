@@ -1,0 +1,519 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: DrifterBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: thin
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Drifter
+  - https://gamerant.com/risk-of-rain-2-ror2-how-get-unlock-drifter-best-build/
+  - https://deltiasgaming.com/risk-of-rain-2-ror2-drifter-build-guide-best-abilities-and-loadouts/
+  - https://vortexgaming.io/en/postdetail/600208
+  - https://vortexgaming.io/en/postdetail/604560
+  - https://rogueranker.com/drifter-ror2/
+builds:
+  - id: drifter-salvage-temporary-item-hoarder
+    title:
+      en: Salvage temporary-item hoarder
+      ko: 인양 임시 아이템 수집
+    difficulty: intermediate
+    summary:
+      en: Bag enemies with Repossess and bash them to generate Junk, spend 8 Junk on Salvage for temporary items, and dump extra Junk into Cleanup. Temporary items only start decaying once picked up, so stockpile them before boss fights. Attack speed feeds Junk generation.
+      ko: 수습으로 적을 자루에 담아 두들겨 잡동사니를 모으고, 8개로 인양을 써 임시 아이템을 만들고, 남는 잡동사니는 청소에 씁니다. 임시 아이템은 주워야 줄어들기 시작하니 보스전 전에 모아 두세요. 공격 속도가 잡동사니 생성량을 늘립니다.
+    loadout:
+      primary: DRIFTER_PRIMARY_NAME
+      secondary: DRIFTER_SECONDARY_NAME
+      utility: DRIFTER_UTILITY_NAME
+      special: DRIFTER_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Junk engine
+          ko: 잡동사니 엔진
+        when:
+          en: Stage 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: Syringe
+            priority: core
+            note:
+              en: "Attack speed is her key stat: more hits, more Junk."
+              ko: 공격 속도가 핵심 스탯입니다. 타격이 늘면 잡동사니도 늘어납니다.
+            stacks:
+              target: 8
+            stacksReason:
+              en: attack speed is her key stat for Junk; 8 copies give +120%, linear with no cap. No source gives a number.
+              ko: 공격 속도가 잡동사니 생성의 핵심 능력치라 8개(+120%)를 목표로 하세요. 상한은 없고, 수치를 제시한 출처는 없습니다.
+          - id: Crowbar
+            priority: core
+            note:
+              en: Burst on tanky enemies and on her third-hit combo.
+              ko: 단단한 적과 3타 콤보에 폭딜을 더합니다.
+            stacks:
+              target: 4
+            stacksReason:
+              en: core burst item; 4 copies give +300% on healthy enemies, linear (wiki).
+              ko: 핵심 폭딜 아이템으로, 4개면 체력이 많은 적에게 +300%입니다(위키).
+          - id: SecondarySkillMagazine
+            priority: optional
+            note:
+              en: Extra secondary charge.
+              ko: 보조 스킬 충전이 늘어납니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +1 secondary charge per copy (wiki); 2 extra charges cover most fights.
+              ko: 1개당 보조 스킬 충전 +1(위키)이라 2개면 대부분의 교전을 버팁니다.
+          - id: Hoof
+            priority: optional
+            note:
+              en: She wants move speed; also helps against fliers.
+              ko: 이동 속도가 중요하며 비행 적 대응에도 도움이 됩니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies give +42% move speed, enough to weave in and out of range; more still helps.
+              ko: 3개면 이동 속도 +42%로 사거리 안팎을 드나들기에 충분하며, 더 모아도 이득입니다.
+        next:
+          - pickup
+          - clear
+      - id: pickup
+        phase: mid
+        label:
+          en: Temporary-item synergies
+          ko: 임시 아이템 시너지
+        when:
+          en: Default path once Salvage is producing items every fight.
+          ko: 매 교전마다 인양으로 아이템이 나오기 시작하면 기본 경로.
+        items:
+          - id: SpeedOnPickup
+            priority: core
+            note:
+              en: Every pickup (including her temporary items) buffs all stats.
+              ko: 임시 아이템을 포함한 모든 획득이 전 능력치를 올립니다.
+            stacks:
+              target: 4
+              min: 1
+            stacksReason:
+              en: 4 copies cap the buff at 9 stacks (+27% all stats), which Junk pickups keep full; +2 stacks per copy (wiki).
+              ko: 4개면 버프 상한이 9중첩(모든 능력치 +27%)이 되고 잡동사니 줍기로 계속 유지됩니다(1개당 +2중첩, 위키).
+          - id: Clover
+            priority: optional
+            note:
+              en: Improves random rolls on Junk generation.
+              ko: 잡동사니 생성의 무작위 판정을 유리하게 합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one legendary copy adds a luck reroll to Junk generation; extras add one reroll each (wiki).
+              ko: 전설 아이템 1개로 잡동사니 생성에 행운 재굴림 1회가 붙고, 추가분은 1회씩 더합니다(위키).
+          - id: IncreasePrimaryDamage
+            priority: optional
+            note:
+              en: Secondary use builds charges; Drifter spams her secondary with spare Junk.
+              ko: 보조 스킬 사용으로 충전이 쌓이며, 드리프터는 남는 잡동사니로 보조 스킬을 연타합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: each copy adds +1 max charge and +50% lightning damage (wiki); 2 is plenty for an off-role green.
+              ko: 1개당 최대 충전 +1, 번개 피해 +50%(위키)라 보조 역할이면 2개로 충분합니다.
+          - id: NearbyDamageBonus
+            priority: optional
+            note:
+              en: She is melee; bonus damage up close.
+              ko: 근접 캐릭터라 근거리 피해 보너스가 좋습니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies give +60% damage within 13m, linear (wiki).
+              ko: 3개면 13m 안의 적에게 피해 +60%이며 선형으로 늘어납니다(위키).
+        next:
+          - late
+      - id: clear
+        phase: mid
+        label:
+          en: AoE and safety
+          ko: 광역 피해와 안전
+        when:
+          en: Take when packs or flying enemies are giving you trouble.
+          ko: 무리나 비행 적이 까다로울 때.
+        items:
+          - id: IgniteOnKill
+            priority: optional
+            note:
+              en: On-kill AoE for packs.
+              ko: 무리 처리를 위한 처치 시 광역 피해입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies widen the ignite to 16m and add burn damage (+4m, +75% per copy, wiki).
+              ko: 2개면 점화 범위가 16m가 되고 화상 피해도 늘어납니다(1개당 +4m, +75%, 위키).
+          - id: ExplodeOnDeath
+            priority: optional
+            note:
+              en: On-kill explosions.
+              ko: 처치 시 폭발합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies give a 14.4m, 630% pillar; each copy adds radius and damage (wiki).
+              ko: 2개면 반경 14.4m, 630% 용암 기둥이 되며, 1개당 범위와 피해가 늘어납니다(위키).
+          - id: OutOfCombatArmor
+            priority: optional
+            note:
+              en: Armor for a melee survivor.
+              ko: 근접 캐릭터에게 방어력을 줍니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies give +200 armor out of danger (+100 each, wiki), about two-thirds damage reduction on the first hit.
+              ko: 2개면 위험하지 않을 때 방어력 +200(1개당 +100, 위키)으로 첫 피격 피해를 약 2/3 줄입니다.
+          - id: SprintBonus
+            priority: optional
+            note:
+              en: Mobility.
+              ko: 기동성입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies give +50% sprint speed for repositioning; linear, so more still helps.
+              ko: 2개면 달리기 속도 +50%로 위치 잡기에 충분하며, 선형이라 더 모아도 이득입니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Double the loot
+          ko: 전리품 두 배
+        when:
+          en: Grab these whenever they appear; Substandard Duplicator is her best pickup.
+          ko: 보이면 바로 챙기세요. 하급 복제 장치는 드리프터 최고의 아이템입니다.
+        items:
+          - id: Duplicator
+            priority: core
+            note:
+              en: Each Salvage item gives an extra temporary copy and lasts longer.
+              ko: 인양 아이템마다 임시 사본이 하나 더 생기고 지속 시간도 늘어납니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: The first copy doubles each Salvage (4 to 8 temporary items); extras only add +10s duration (wiki).
+              ko: 1개째로 인양 결과가 두 배(임시 아이템 4개→8개)가 되고, 추가분은 지속 시간만 10초씩 늘립니다(위키).
+          - id: EquipmentMagazineVoid
+            priority: core
+            note:
+              en: Extra Salvage charge.
+              ko: 인양 충전이 하나 더 생깁니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +1 Salvage charge per copy (wiki), each doubled by the Duplicator; 3 gives four Salvages per fight.
+              ko: 1개당 인양 충전 +1(위키)이고 복제 장치로 두 배가 되므로, 3개면 전투마다 네 번 쓸 수 있습니다.
+          - id: UtilitySkillMagazine
+            priority: optional
+            note:
+              en: Extra Repossess charges.
+              ko: 수습 충전이 늘어납니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one legendary copy gives +2 charges and -33% cooldown; extras only add charges.
+              ko: 전설 아이템 1개로 충전 +2와 쿨다운 -33%를 얻고, 추가분은 충전만 늘립니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: More Salvage, more stats
+          ko: 인양과 능력치 계속 늘리기
+        when:
+          en: After the first loop, once Substandard Duplicator is in hand.
+          ko: 첫 루프 이후, 하급 복제 장치를 얻은 뒤.
+        items:
+          - id: SpeedOnPickup
+            priority: core
+            stacks:
+              target: 4
+              min: 2
+            note:
+              en: Each copy raises the buff cap by 2 stacks, and Junk keeps it full.
+              ko: 1개마다 버프 상한이 2중첩씩 늘고, 잡동사니 덕분에 항상 가득 찹니다.
+            stacksReason:
+              en: 4 copies cap the buff at 9 stacks (+27% all stats), which Junk pickups keep full; +2 stacks per copy (wiki).
+              ko: 4개면 버프 상한이 9중첩(모든 능력치 +27%)이 되고 잡동사니 줍기로 계속 유지됩니다(1개당 +2중첩, 위키).
+          - id: EquipmentMagazineVoid
+            priority: core
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: More Salvage casts per fight, each doubled by the Duplicator.
+              ko: 교전마다 인양을 더 쓰고, 그만큼 복제 장치로 두 배가 됩니다.
+            stacksReason:
+              en: +1 Salvage charge per copy (wiki), each doubled by the Duplicator; 3 gives four Salvages per fight.
+              ko: 1개당 인양 충전 +1(위키)이고 복제 장치로 두 배가 되므로, 3개면 전투마다 네 번 쓸 수 있습니다.
+          - id: Clover
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: More Junk from luck-based rolls.
+              ko: 행운 판정으로 잡동사니가 더 나옵니다.
+            stacksReason:
+              en: one legendary copy adds a luck reroll to Junk generation; extras add one reroll each (wiki).
+              ko: 전설 아이템 1개로 잡동사니 생성에 행운 재굴림 1회가 붙고, 추가분은 1회씩 더합니다(위키).
+          - id: Bandolier
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: "Vortex: helps generate more items with Salvage."
+              ko: "Vortex: 인양으로 아이템을 더 많이 만드는 데 도움이 됩니다."
+            stacksReason:
+              en: 2 copies raise the ammo-pack chance from 18% to 28% on kill (wiki).
+              ko: 2개면 처치 시 탄약 상자 확률이 18%에서 28%로 오릅니다(위키).
+        next: []
+    pickOrder:
+      common:
+        - Syringe
+        - Crowbar
+        - Hoof
+        - SecondarySkillMagazine
+        - NearbyDamageBonus
+        - OutOfCombatArmor
+      uncommon:
+        - SpeedOnPickup
+        - IncreasePrimaryDamage
+        - Bandolier
+        - ExplodeOnDeath
+      legendary:
+        - Duplicator
+        - Clover
+        - UtilitySkillMagazine
+    milestones:
+      - when:
+          en: Every stage
+          ko: 매 스테이지
+        advice:
+          en: Temporary items only start decaying once picked up. Leave Salvage drops on the ground and grab them right before the teleporter boss. Leave temporary Rusted Keys and Shipping Request Forms until you are about to leave the stage.
+          ko: 임시 아이템은 주운 뒤부터 줄어듭니다. 인양으로 나온 아이템은 바닥에 두었다가 텔레포터 보스 직전에 주우세요. 임시 녹슨 열쇠와 배송 요청 양식은 스테이지를 떠나기 직전까지 남겨 두세요.
+        take: []
+        stop: []
+      - when:
+          en: Once you have one Substandard Duplicator
+          ko: 하급 복제 장치를 1개 얻으면
+        advice:
+          en: Each Salvage now gives 8 temporary items. More Duplicators only add 10s of duration, so spend reds elsewhere.
+          ko: 인양 1회에 임시 아이템이 8개 나옵니다. 더 얻어도 지속 시간만 10초 늘어나니 빨간 아이템은 다른 곳에 쓰세요.
+        take:
+          - EquipmentMagazineVoid
+        stop:
+          - Duplicator
+      - when:
+          en: Whenever you hold scrap
+          ko: 재활용 아이템을 들고 있을 때
+        advice:
+          en: "Trash to Treasure turns carried scrap into buffs: white +6% move speed, green +3 HP/s, red +30% attack speed, yellow -15% skill cooldowns, per stack. Keep scrap you don't need to print."
+          ko: 고물에서 보물로 패시브 덕분에 들고 있는 재활용 아이템이 버프가 됩니다. 1개당 흰색 이동 속도 +6%, 녹색 재생 +3/초, 빨간색 공격 속도 +30%, 노란색 스킬 쿨다운 -15%. 프린터에 쓸 일이 없는 재활용 아이템은 그냥 들고 다니세요.
+        take: []
+        stop: []
+      - when:
+          en: If a void cradle or Lunar pod offers luck items
+          ko: 공허 요람이나 달 포드에 행운 관련 아이템이 나오면
+        advice:
+          en: "Take 57 Leaf Clover, and skip Purity: luck drives Junk generation. Also skip Pluripotent Larva, which can spawn Newly Hatched Zoea and eat yellow scrap."
+          ko: 57잎 클로버는 챙기고 순수는 피하세요. 잡동사니 생성은 행운의 영향을 받습니다. 다능성 유충도 피하세요. 갓 부화한 조에아가 생겨 노란색 재활용 아이템을 먹어 버릴 수 있습니다.
+        take:
+          - Clover
+        stop:
+          - LunarBadLuck
+          - ExtraLifeVoid
+          - VoidMegaCrabItem
+    avoid:
+      - id: VoidMegaCrabItem
+        reason:
+          en: Corrupts her yellow Item Scrap, removing the cooldown-reduction buff yellow scrap gives her.
+          ko: 노란색 재활용 아이템을 오염시켜, 노란 찌꺼기로 얻는 쿨다운 감소 버프를 잃게 합니다.
+    evidence: |-
+      Core Soldier's Syringe/Crowbar/Backup Magazine and Hoof/Energy Drink: Deltia's (Nov 2025) and Rogue Ranker (attack speed is her most important stat). Salvage loop, Focus Crystal, Luminous Shot, Gasoline, Will-o'-the-Wisp, Oddly-shaped Opal, Hardlight Afterburner, Lysate Cell, Substandard Duplicator: Game Rant (Nov 2025). Collector's Compulsion and 57 Leaf Clover: wiki; Collector's Compulsion also both Vortex articles. Substandard Duplicator is the strongest consensus pick (Game Rant, Vortex x2, Rogue Ranker). Avoid Newly Hatched Zoea: wiki only. Disagreement on secondary: Deltia's uses Junk Cube with Salvage; Game Rant/Vortex 'fun' loadout use Cleanup. PATCH-SENSITIVE: V1.4.1 buffed Tornado Slam (170->220%/hit, final 400->600%, more Junk); Vortex's 'avoid Tornado Slam' advice predates it. DLC name confirmed as Alloyed Collective.
+
+      Stack counts and progression: Salvage/Duplicator math: wiki (8 Junk -> 4 temporary items; Duplicator +10s per extra stack; 80s temporary duration from the wiki Items page) and a search snippet summarising Vortex/wiki that Duplicator doubles Salvage to 8. Trash to Treasure scrap buffs, luck affecting Junk, avoiding Purity, the Zoea/Pluripotent Larva warning, and the leave-on-ground / Rusted Key / Shipping Request Form tips: Drifter wiki. Collector's Compulsion '9% with one stack, up 24/7': Vortex 604560. Pick order follows Rogue Ranker's ranked list (Duplicator, Syringe, Crowbar, Hoof, Backup Mag, Focus Crystal, Opal, Clover, Lysate) plus Vortex (Luminous Shot, Bandolier/Lysate) and Game Rant (Will-o'-the-wisp). Vortex/Rogue Ranker pages are undated but post-DLC (Nov 2025+). No source gives numbers for Syringe; the wiki notes a bug where Tornado Slam's hit rate is divided by attack speed, which does not affect this build's Cleanup secondary. The milestone stop list includes Pluripotent Larva by wiki inference (it can create Zoea), not a guide.
+  - id: drifter-tinker-junk-cube-min-max
+    title:
+      en: Tinker junk-cube min-max
+      ko: 땜질 잡동사니 큐브 최적화
+    difficulty: advanced
+    summary:
+      en: Use Tinker to shockwave enemies with random debuffs and reroll item pickups and interactables, with Junk Cube for burst damage and mobility. Rated the stronger, more controlled setup by Vortex Gaming.
+      ko: 땜질로 충격파를 일으켜 적에게 무작위 디버프를 걸고 아이템·상호작용 오브젝트를 새로 굴리며, 잡동사니 큐브로 폭딜과 기동성을 챙깁니다. Vortex Gaming이 더 강하고 안정적인 구성으로 평가했습니다.
+    loadout:
+      primary: DRIFTER_PRIMARY_NAME
+      secondary: DRIFTER_SECONDARY_ALT_NAME
+      utility: DRIFTER_UTILITY_NAME
+      special: DRIFTER_SPECIAL_ALT_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Spam and anti-air
+          ko: 연타와 대공
+        when:
+          en: Stage 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: IncreasePrimaryDamage
+            priority: core
+            note:
+              en: Rewards constant secondary spam.
+              ko: 보조 스킬 연타를 보상합니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: secondary spam keeps it charged; 3 copies give 7 max charges and +100% lightning damage (wiki).
+              ko: 보조 스킬을 계속 쓰니 늘 충전되어 있습니다. 3개면 최대 7충전, 번개 피해 +100%입니다(위키).
+          - id: PrimarySkillShuriken
+            priority: optional
+            note:
+              en: Ranged damage against flying enemies, her weak spot.
+              ko: 약점인 비행 적에게 원거리 피해를 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy covers flying enemies; extras add +1 shuriken and +100% damage each (wiki).
+              ko: 1개로 공중 적에 대응할 수 있고, 추가분은 슈리켄 +1, 피해 +100%씩 더합니다(위키).
+          - id: SecondarySkillMagazine
+            priority: optional
+            note:
+              en: Extra Junk Cube charge.
+              ko: 잡동사니 큐브 충전이 늘어납니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +1 secondary charge per copy (wiki); 2 extra charges cover most fights.
+              ko: 1개당 보조 스킬 충전 +1(위키)이라 2개면 대부분의 교전을 버팁니다.
+        next:
+          - scale
+      - id: scale
+        phase: mid
+        label:
+          en: Stats from pickups
+          ko: 획득으로 능력치 증가
+        when:
+          en: Mid game onward.
+          ko: 중반 이후.
+        items:
+          - id: SpeedOnPickup
+            priority: core
+            note:
+              en: Junk pickups count, keeping the all-stats buff up.
+              ko: 잡동사니 획득도 포함되어 전 능력치 버프가 유지됩니다.
+            stacks:
+              target: 4
+              min: 1
+            stacksReason:
+              en: 4 copies cap the buff at 9 stacks (+27% all stats), which Junk pickups keep full; +2 stacks per copy (wiki).
+              ko: 4개면 버프 상한이 9중첩(모든 능력치 +27%)이 되고 잡동사니 줍기로 계속 유지됩니다(1개당 +2중첩, 위키).
+          - id: EquipmentMagazineVoid
+            priority: optional
+            note:
+              en: More Tinker casts.
+              ko: 땜질을 더 자주 씁니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +1 Tinker charge per copy (wiki); 3 gives four Tinker casts to reroll items and printers.
+              ko: 1개당 땜질 충전 +1(위키)이라 3개면 아이템과 프린터를 네 번 바꿀 수 있습니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Tinker engine for long runs
+          ko: 장기전용 땜질 엔진
+        when:
+          en: After the first loop.
+          ko: 첫 루프 이후.
+        items:
+          - id: SpeedOnPickup
+            priority: core
+            stacks:
+              target: 4
+              min: 2
+            note:
+              en: Keep raising the all-stats buff cap.
+              ko: 모든 능력치 버프 상한을 계속 올리세요.
+            stacksReason:
+              en: 4 copies cap the buff at 9 stacks (+27% all stats), which Junk pickups keep full; +2 stacks per copy (wiki).
+              ko: 4개면 버프 상한이 9중첩(모든 능력치 +27%)이 되고 잡동사니 줍기로 계속 유지됩니다(1개당 +2중첩, 위키).
+          - id: EquipmentMagazineVoid
+            priority: optional
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: More Tinker casts to reroll items and printers.
+              ko: 땜질을 더 자주 써서 아이템과 프린터를 새로 굴립니다.
+            stacksReason:
+              en: +1 Tinker charge per copy (wiki); 3 gives four Tinker casts to reroll items and printers.
+              ko: 1개당 땜질 충전 +1(위키)이라 3개면 아이템과 프린터를 네 번 바꿀 수 있습니다.
+          - id: Clover
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: Luck raises Junk generation, which fuels every Tinker.
+              ko: 행운이 잡동사니 생성을 늘려 땜질 연료가 됩니다.
+            stacksReason:
+              en: one legendary copy adds a luck reroll to Junk generation; extras add one reroll each (wiki).
+              ko: 전설 아이템 1개로 잡동사니 생성에 행운 재굴림 1회가 붙고, 추가분은 1회씩 더합니다(위키).
+        next: []
+    pickOrder:
+      uncommon:
+        - SpeedOnPickup
+        - IncreasePrimaryDamage
+        - PrimarySkillShuriken
+    milestones:
+      - when:
+          en: Whenever an item isn't worth carrying
+          ko: 가치가 낮은 아이템이 나올 때마다
+        advice:
+          en: Tinker it into a temporary copy plus scrap. Carried scrap becomes a permanent buff through Trash to Treasure, often better than weak healing greens.
+          ko: 땜질로 임시 아이템과 재활용 아이템으로 바꾸세요. 들고 있는 재활용 아이템은 고물에서 보물로 패시브로 영구 버프가 되어, 약한 초록 회복 아이템보다 나은 경우가 많습니다.
+        take: []
+        stop: []
+      - when:
+          en: When you reach a 3D Printer you want
+          ko: 원하는 3D 프린터를 찾으면
+        advice:
+          en: Tinker the printed item for two temporary copies instead of one. In co-op, tell teammates before rerolling a printer.
+          ko: 프린터에서 뽑은 아이템에 땜질을 쓰면 임시 사본이 2개 나옵니다. 협동 플레이에서는 프린터를 새로 굴리기 전에 팀원에게 알리세요.
+        take: []
+        stop: []
+      - when:
+          en: If luck items are offered
+          ko: 행운 관련 아이템이 나오면
+        advice:
+          en: Take 57 Leaf Clover and skip Purity; luck drives Junk generation.
+          ko: 57잎 클로버는 챙기고 순수는 피하세요. 잡동사니 생성은 행운의 영향을 받습니다.
+        take:
+          - Clover
+        stop:
+          - LunarBadLuck
+    avoid:
+      - id: Duplicator
+        reason:
+          en: Vortex notes it is only worth it with the default special (Salvage), not Tinker.
+          ko: Vortex는 이 아이템이 기본 특수 스킬(인양)에서만 가치가 있고 땜질에는 맞지 않는다고 봅니다.
+    evidence: |-
+      Vortex Gaming 600208 gives the 'minmax' loadout (Junk Cube/Repossess/Tinker) and Collector's Compulsion, Lysate Cell, Shuriken (anti-air). Vortex 604560 prefers Tinker for dealing with fliers but pairs it with Cleanup rather than Junk Cube, and recommends Collector's Compulsion and Luminous Shot, saying Substandard Duplicator only fits Salvage. Backup Magazine for Junk Cube charges: Deltia's. Thin: two articles from one outlet, no community threads found.
+
+      Stack counts and progression: Thin: Vortex Gaming (two undated post-DLC articles) is the only build source (Collector's Compulsion, Luminous Shot, Shuriken, Lysate Cell); Deltia's adds Backup Magazine. Tinker mechanics (scrap + temporary copy, two copies from printer items, scrap buffs, luck and Junk) and item stack values are from the Drifter wiki and item data. No source ranks white or red items for this variant, so only an uncommon pick order is given. The loop node is inferred from the same sources' items plus the wiki luck note; no guide discusses Tinker in loops.

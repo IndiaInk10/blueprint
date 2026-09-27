@@ -1,0 +1,862 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: MageBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: mixed
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Artificer
+  - https://riskofrain2.wiki.gg/wiki/Kjaro%27s_Band
+  - https://rogueranker.com/artificer-ror2/
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=2964000208
+  - https://steamcommunity.com/app/632360/discussions/0/5963323773750109878
+  - https://steamcommunity.com/app/632360/discussions/0/3275813923393782800
+  - https://steamcommunity.com/app/632360/discussions/2/1768134097429439036
+builds:
+  - id: mage-nano-bomb-burst-bands
+    title:
+      en: Nano-Bomb Burst (Bands)
+      ko: 나노폭탄 폭딜 (반지)
+    difficulty: beginner
+    summary:
+      en: "Build around Charged Nano-Bomb as the main damage source: every fully charged bomb is a 400%+ hit that triggers both elemental bands, and Artificer's AoE and executes make on-kill items very efficient."
+      ko: 나노폭탄 충전을 주력 딜로 삼는 빌드입니다. 완충한 폭탄은 400% 이상의 피해라 두 반지를 모두 발동시키고, 광역기와 마무리 능력 덕분에 처치 시 발동 아이템의 효율도 높습니다.
+    loadout:
+      primary: MAGE_PRIMARY_FIRE_NAME
+      secondary: MAGE_SECONDARY_LIGHTNING_NAME
+      utility: MAGE_UTILITY_ICE_NAME
+      special: MAGE_SPECIAL_FIRE_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Early core
+          ko: 초반 핵심
+        when:
+          en: Stages 1-2, take whatever of these you find first.
+          ko: 1~2스테이지에서 먼저 보이는 것부터 챙기세요.
+        items:
+          - id: Hoof
+            priority: core
+            note:
+              en: Artificer has no mobility skill, so early move speed is how she dodges.
+              ko: 아티피셔는 이동기가 없어서 초반 이동 속도가 곧 회피 수단입니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: no mobility skill, so ~3 Hoofs (+42% speed) is the point to switch to damage items.
+              ko: 이동기가 없으니 염소발 3개(이속 +42%)까지 챙긴 뒤 딜 아이템으로 넘어가세요.
+          - id: Crowbar
+            priority: core
+            note:
+              en: One or two early Crowbars let Nano-Bomb and Nano-Spear one-shot full-health enemies.
+              ko: 초반 쇠지렛대 1~2개면 체력이 가득 찬 적을 나노폭탄·나노창 한 방에 처리할 수 있습니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: 1-2 Crowbars make charged bombs one-shot fresh enemies; more costs AoE slots.
+              ko: 쇠지렛대 1~2개면 충전 폭탄으로 체력이 가득 찬 적을 한 방에 잡고, 더 모으면 광역 아이템 자리를 뺏깁니다.
+          - id: SecondarySkillMagazine
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+              max: 3
+            note:
+              en: A second Nano-Bomb charge doubles her biggest burst window. 2-3 stacks are enough.
+              ko: 나노폭탄을 연속 두 번 쏠 수 있어 최대 폭딜 구간이 두 배가 됩니다. 2~3개면 충분합니다.
+            stacksReason:
+              en: Guides say 2-3 Backup Magazines are enough; aim for 3.
+              ko: 공략에서 보조 탄창은 2~3개면 충분하다고 하니 3개를 목표로 하세요.
+          - id: CritGlasses
+            priority: optional
+            note:
+              en: A crit on a fully charged bomb doubles an already huge hit.
+              ko: 완충 폭탄이 치명타로 터지면 이미 큰 피해가 두 배가 됩니다.
+            stacks:
+              target: 10
+              min: 1
+              max: 10
+            stacksReason:
+              en: 10% crit per stack, so 10 glasses is 100% crit and more do nothing.
+              ko: 위키 기준 개당 치명타 10%라 10개면 100%가 되고, 그 이상은 효과가 없습니다.
+        next:
+          - bands
+          - onkill
+      - id: bands
+        phase: mid
+        label:
+          en: Band burst
+          ko: 반지 폭딜
+        when:
+          en: When you find Uncommons, especially if bosses and elites are the threat. Bands have a 10s cooldown and need a 400%+ hit, which every charged bomb meets.
+          ko: 녹색 아이템이 나올 때, 특히 보스·엘리트가 위협일 때 가져가세요. 반지는 400% 이상의 피해에 발동하고 재사용 대기시간이 10초인데, 충전 폭탄은 항상 조건을 넘깁니다.
+        items:
+          - id: FireRing
+            priority: core
+            note:
+              en: Procs on every charged Nano-Bomb or Nano-Spear for a large fire tornado.
+              ko: 나노폭탄·나노창을 쓸 때마다 불꽃 회오리가 발동해 큰 추가 피해를 줍니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: 1 turns the tornado on and the 10s recharge never shortens; a 2nd copy doubles its damage (+300%).
+              ko: 1개로 효과가 켜지고 10초 재충전은 줄지 않으니, 2개째로 피해량(+300%)을 두 배로 늘리세요.
+          - id: IceRing
+            priority: core
+            note:
+              en: Procs on the same hits as Kjaro's Band and slows the target.
+              ko: 캬로의 반지와 같은 공격에 함께 발동하고 적을 둔화시킵니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: 1 turns the ice blast on; a 2nd copy adds +250% damage and +3s slow on the same 10s recharge.
+              ko: 1개로 효과가 켜지고, 2개째는 같은 10초 재충전에 피해 +250%와 둔화 +3초를 더합니다.
+          - id: ChainLightning
+            priority: optional
+            note:
+              en: Community players pair it with the bands for extra chain damage.
+              ko: 커뮤니티에서는 반지와 함께 연쇄 번개 피해를 더하려고 챙깁니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: each Ukulele adds +2 targets and +2m range; 2 covers typical packs.
+              ko: 우쿨렐레는 개당 대상 +2, 사거리 +2m라 2개면 보통 무리를 커버합니다.
+          - id: DeathMark
+            priority: situational
+            note:
+              en: Flame Bolt ignite plus freezes stack debuffs quickly, so Death Mark activates easily.
+              ko: 불꽃 화살의 점화와 빙결로 디버프가 빨리 쌓여 죽음의 표식이 쉽게 발동합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy enables the +50% damage mark; extras only lengthen its 7s duration.
+              ko: 1개로 피해 +50% 표식이 켜지고, 추가분은 7초 지속시간만 늘립니다.
+        next:
+          - late
+      - id: onkill
+        phase: mid
+        label:
+          en: On-kill chain
+          ko: 처치 연쇄
+        when:
+          en: Take when stages are full of groups, or in multiplayer where you can execute enemies teammates have weakened.
+          ko: 적 무리가 많은 스테이지나, 팀원이 깎아 둔 적을 마무리할 수 있는 멀티플레이에서 가져가세요.
+        items:
+          - id: IgniteOnKill
+            priority: core
+            note:
+              en: Her AoE turns one kill into a chain of burning kills.
+              ko: 광역 공격 덕분에 한 번의 처치가 연쇄 화염 처치로 이어집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: each Gasoline adds +4m radius and +75% burn; 3 makes the chain reach whole packs.
+              ko: 휘발유는 개당 반경 +4m, 화상 +75%라 3개면 무리 전체로 불이 번집니다.
+          - id: ExplodeOnDeath
+            priority: core
+            note:
+              en: "Same idea as Gasoline: kills explode into nearby packs."
+              ko: 휘발유와 같은 원리로, 처치할 때마다 주변 무리에 폭발이 터집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: each copy adds +280% damage and +2.4m radius; 3 clears most packs in one chain.
+              ko: 개당 피해 +280%, 반경 +2.4m라 3개면 대부분의 무리를 한 번에 정리합니다.
+          - id: Dagger
+            priority: optional
+            note:
+              en: Rated top tier for her on-kill style; the daggers help clean up stragglers.
+              ko: 처치 위주 운영에서 최상위 평가를 받으며, 남은 적을 단검이 정리해 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: each copy adds +150% dagger damage; 3 lets the daggers kill stragglers.
+              ko: 개당 단검 피해 +150%라 3개면 남은 적을 단검이 처리합니다.
+          - id: Bandolier
+            priority: optional
+            note:
+              en: Ammo packs reset Nano-Bomb, so kills feed more bombs.
+              ko: 탄약 상자가 나노폭탄 재사용 대기시간을 초기화해 처치가 곧 추가 폭탄이 됩니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 1 = 20%, 3 = 37%, 5 = 45%; 3 is where later copies start adding little.
+              ko: 위키 드롭 확률은 1개 20%, 3개 37%, 5개 45%라 3개 이후로는 추가 효율이 작아집니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: From stage 5 onward, or from Legendary chests and printers.
+          ko: 5스테이지 이후나 전설 상자·프린터에서 챙기세요.
+        items:
+          - id: AlienHead
+            priority: core
+            note:
+              en: Her damage is cooldown-bound, so cooldown reduction is a straight damage increase.
+              ko: 딜이 재사용 대기시간에 묶여 있어서 쿨감이 곧 딜 증가입니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 8
+            stacksReason:
+              en: "Derived from wiki x0.75 per stack: 3 cuts the 5s cooldown by 58%; about 8 hit the 0.5s floor."
+              ko: "위키의 개당 x0.75 계산: 3개면 재사용 대기시간 5초가 58% 줄고, 8개쯤에서 0.5초 하한에 닿습니다."
+          - id: Clover
+            priority: optional
+            note:
+              en: Raises luck for chance-based effects such as crits and on-hit items. The Bands trigger on big hits, not on a chance, so Clover does not affect them.
+              ko: 치명타나 적중 시 발동 같은 확률형 효과의 행운을 올립니다. 반지는 확률이 아니라 큰 피해로 발동하므로 클로버의 영향을 받지 않습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary and rare; one reroll already makes chance effects far more reliable.
+              ko: 드문 전설 아이템이고, 1개만으로도 확률 효과를 한 번 더 굴려 훨씬 안정적입니다.
+          - id: ArmorReductionOnHit
+            priority: situational
+            note:
+              en: Armor shred helps against high-armor late bosses.
+              ko: 방어력 감소로 방어력이 높은 후반 보스를 상대하기 쉬워집니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: extra copies only lengthen an 8s armor shred that reapplies every 5 hits anyway.
+              ko: 추가 개수는 8초 방어력 감소의 지속시간만 늘리는데, 5번 맞히면 어차피 다시 걸립니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: "Loop: cooldowns and boss damage"
+          ko: "루프: 쿨타임과 보스 피해"
+        when:
+          en: After the first loop, once both bands and at least one Alien Head are in place.
+          ko: 첫 루프 이후, 두 반지와 외계인 머리를 1개 이상 갖춘 뒤.
+        items:
+          - id: AlienHead
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+              max: 8
+            note:
+              en: "Keep stacking: her damage is cooldown-bound. Stops helping Nano-Bomb at about 8 (0.5s floor)."
+              ko: 계속 중첩하세요. 딜이 쿨타임에 묶여 있습니다. 나노폭탄 기준 약 8개(0.5초 하한)부터는 효과가 없습니다.
+            stacksReason:
+              en: "Derived from wiki x0.75 per stack: 3 cuts the 5s cooldown by 58%; about 8 hit the 0.5s floor."
+              ko: "위키의 개당 x0.75 계산: 3개면 재사용 대기시간 5초가 58% 줄고, 8개쯤에서 0.5초 하한에 닿습니다."
+          - id: HalfAttackSpeedHalfCooldowns
+            priority: situational
+            stacks:
+              target: 1
+              max: 1
+            note:
+              en: "Wiki: halves cooldowns and Artificer benefits a lot, but a Steam thread notes Nano-Bomb and Nano-Spear charge much more slowly with it. Take it only if you rarely use Flamethrower."
+              ko: 위키 기준 쿨타임이 절반이 되어 아티피셔에게 이득이 크지만, 스팀 토론에서는 나노폭탄과 나노창 충전이 크게 느려진다고 합니다. 화염방사기를 거의 쓰지 않을 때만 고르세요.
+            stacksReason:
+              en: each extra copy halves attack speed again, so one is the only useful count.
+              ko: 위키 기준 추가로 가질 때마다 공격 속도가 다시 절반이 되므로 1개만 쓰세요.
+          - id: KillEliteFrenzy
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: Named as an Alien Head alternative in TheGamer's guide. Elites become common after looping, but a Steam thread says her long cast animations waste much of the frenzy.
+              ko: TheGamer 가이드에서 외계인 머리 대신 쓸 수 있는 아이템으로 꼽습니다. 루프 후에는 엘리트가 많아지지만, 스팀 토론에서는 시전 동작이 길어 광란 시간을 많이 흘려보낸다고 합니다.
+            stacksReason:
+              en: legendary; one gives a 4s no-cooldown frenzy per elite kill, extras only add 4s.
+              ko: 전설 아이템이며, 1개로 엘리트 처치마다 4초간 재사용 대기시간이 사라지고 추가분은 4초씩만 늘립니다.
+          - id: BossDamageBonus
+            priority: optional
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: "TheGamer: Armor-Piercing Rounds greatly help her melt bosses. +20% per stack (linear) against bosses."
+              ko: TheGamer 기준 장갑관통탄은 보스를 녹이는 데 큰 도움이 됩니다. 보스 상대로 중첩당 +20%(선형)입니다.
+            stacksReason:
+              en: +20% boss damage per stack, linear; 3 gives +60% on bosses.
+              ko: 개당 보스 피해 +20%(선형)라 3개면 보스에게 +60%입니다.
+        next: []
+    pickOrder:
+      common:
+        - Hoof
+        - SecondarySkillMagazine
+        - Crowbar
+        - CritGlasses
+        - Syringe
+      uncommon:
+        - FireRing
+        - IceRing
+        - Bandolier
+        - DeathMark
+        - ExplodeOnDeath
+        - ChainLightning
+      legendary:
+        - AlienHead
+        - Dagger
+        - Clover
+        - ArmorReductionOnHit
+    milestones:
+      - when:
+          en: Once you hold 2-3 Backup Magazines
+          ko: 보조 탄창이 2~3개가 되면
+        advice:
+          en: Stop printing Backup Magazine. Put white picks into Crowbar, Lens-Maker's and move speed instead.
+          ko: 보조 탄창은 더 복사하지 마세요. 흰색 아이템은 쇠지렛대, 렌즈 제작자의 안경, 이동 속도 쪽으로 돌리세요.
+        take:
+          - Crowbar
+          - CritGlasses
+        stop:
+          - SecondarySkillMagazine
+      - when:
+          en: Once you have one Kjaro's Band and one Runald's Band
+          ko: 캬로의 반지와 루널드의 반지를 1개씩 갖추면
+        advice:
+          en: "Take both bands before stacking either one: the first copy of each adds a whole new proc, while a second copy only adds damage to a proc you already have. Do not take Singularity Band from a Void cradle or Void Potential: it corrupts every Kjaro's and Runald's Band you hold."
+          ko: 한쪽 반지를 중첩하기 전에 두 반지를 먼저 모두 챙기세요. 각 반지의 첫 개는 발동을 하나 새로 추가하지만, 두 번째 개는 이미 있는 발동의 피해만 올립니다. 공허 요람이나 잠재 공허에서 특이점 반지를 고르지 마세요. 가진 캬로의 반지와 루널드의 반지를 전부 오염시킵니다.
+        take: []
+        stop:
+          - ElementalRingVoid
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Enemy packs get bigger. Take on-kill AoE (Will-o'-the-wisp, Gasoline, Ceremonial Dagger) so one bomb clears a pack, and add Alien Heads whenever a legendary shows up.
+          ko: 적 무리가 커집니다. 폭탄 한 발로 무리를 정리할 수 있게 처치 시 광역 아이템(도깨비불, 휘발유, 의식용 단검)을 챙기고, 전설 아이템이 나오면 외계인 머리를 더하세요.
+        take:
+          - ExplodeOnDeath
+          - IgniteOnKill
+          - Dagger
+          - AlienHead
+        stop: []
+      - when:
+          en: When crit chance reaches 100%
+          ko: 치명타 확률이 100%에 도달하면
+        advice:
+          en: Stop taking Lens-Maker's Glasses; any extra crit chance is wasted.
+          ko: 렌즈 제작자의 안경은 그만 챙기세요. 넘치는 치명타 확률은 낭비됩니다.
+        take: []
+        stop:
+          - CritGlasses
+      - when:
+          en: When you have about 8 Alien Heads
+          ko: 외계인 머리가 8개쯤 되면
+        advice:
+          en: Nano-Bomb is at the 0.5s cooldown floor. Take other legendaries instead of more Alien Heads.
+          ko: 나노폭탄 쿨타임이 0.5초 하한에 닿았습니다. 외계인 머리 대신 다른 전설 아이템을 고르세요.
+        take: []
+        stop:
+          - AlienHead
+    avoid:
+      - id: BleedOnHit
+        reason:
+          en: Her skills hit too rarely for bleed to stack.
+          ko: 공격 빈도가 낮아 출혈이 제대로 쌓이지 않습니다.
+      - id: PermanentDebuffOnHit
+        reason:
+          en: Rated near useless on her; it needs dozens of hits to match Shattering Justice.
+          ko: 아티피셔에게는 거의 쓸모없다는 평가입니다. 부서진 정의만큼 효과를 보려면 수십 번 적중해야 합니다.
+    evidence: |-
+      Crowbar, Lens-Maker's, AtG and both bands: wiki strategy section. Paul's Goat Hoof, Backup Magazine, bands, Bandolier and 57 Leaf Clover: Rogue Ranker (undated, mentions SotS). On-kill priority (Gasoline, Will-o'-the-wisp, Ceremonial Dagger) and F-tier for Tri-Tip and Symbiotic Scorpion: Steam 'Artificer: Items Tier List' (updated Mar 2024). Crowbar, Death Mark, Alien Head, Backup Magazine (2-3 stacks), Shattering Justice: Steam threads from 2021 and later. The bands have not changed since Early Access Content Update 5, so band advice is not patch-sensitive. Disagreements: the tier list rates Soldier's Syringe low, while the wiki and Rogue Ranker say it speeds Nano-Bomb charging and adds Flamethrower ticks (so it sits in the burn build instead). Tri-Tip is F-tier in the 2024 list but liked in a 2021 thread.
+
+      Stack counts and progression: Stack caps are math from wiki.gg item data: Lens-Maker's (10 = 100%), Alien Head (x0.75 per stack, 0.5s floor, Nano-Bomb 5s cooldown from the Artificer page), Kjaro's/Runald's (damage per stack, fixed 10s recharge, no luck interaction), Crowbar +75% linear. Backup Magazine 2-3 comes from the Steam threads already cited in the build. Singularity Band corrupting both bands is wiki item data. Loop items: Alien Head or Brainstalks and Armor-Piercing Rounds from TheGamer (May 2021); Light Flux Pauldron benefit from the wiki's Light Flux page, slower Nano-Bomb charging and Brainstalks being weak on her from a Steam discussion found in search results (not opened in full). On-kill AoE after looping: 20-stage Steam thread. Pick order follows Rogue Ranker (Hoof > Backup Magazine > Syringe > Lens-Maker's, bands > Bandolier) with wiki Crowbar; legendary order uses the build tree and the 2024 Steam tier list cited in the build (Ceremonial Dagger top tier). No boss-item order: no source ranks boss items for her. Disagreement: Rogue Ranker says Clover raises band procs, but the wiki says bands ignore luck. The Steam tier list page returned 429/empty during this research, so its placements are taken from the build's existing evidence.
+  - id: mage-flamethrower-ignite
+    title:
+      en: Flamethrower Ignite
+      ko: 화염방사기 점화
+    difficulty: intermediate
+    summary:
+      en: Lean on Flamethrower and Flame Bolt burns. Attack speed adds Flamethrower damage ticks and shortens its windup, and Ignition Tank multiplies all burn damage.
+      ko: 화염방사기와 불꽃 화살의 화상 피해에 집중합니다. 공격 속도가 화염방사기의 피해 횟수를 늘리고 시전 준비를 줄이며, 점화 탱크가 모든 화상 피해를 크게 늘립니다.
+    loadout:
+      primary: MAGE_PRIMARY_FIRE_NAME
+      secondary: MAGE_SECONDARY_LIGHTNING_NAME
+      utility: MAGE_UTILITY_ICE_NAME
+      special: MAGE_SPECIAL_FIRE_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Early core
+          ko: 초반 핵심
+        when:
+          en: Stages 1-2. Flamethrower is short range and you cannot sprint while using it, so get speed and attack speed first.
+          ko: 1~2스테이지. 화염방사기는 사거리가 짧고 사용 중에 달릴 수 없으니 이동 속도와 공격 속도를 먼저 챙기세요.
+        items:
+          - id: Syringe
+            priority: core
+            note:
+              en: More attack speed means more Flamethrower damage ticks, a shorter windup and faster Nano-Bomb charging.
+              ko: 공격 속도가 오르면 화염방사기 피해 횟수가 늘고 시전 준비와 나노폭탄 충전이 빨라집니다.
+            stacks:
+              target: 10
+              min: 1
+            stacksReason:
+              en: Rogue Ranker says keep stacking; each +15% adds Flamethrower ticks. 10 is a strong late count.
+              ko: Rogue Ranker는 계속 쌓으라고 하며, 개당 +15%마다 화염방사기 타격 횟수가 늘어납니다. 후반에 10개가 좋은 목표입니다.
+          - id: Hoof
+            priority: core
+            note:
+              en: Lets you get into and out of Flamethrower range safely.
+              ko: 화염방사기 사거리에 안전하게 들어갔다 빠질 수 있게 해 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 Hoofs (+42% speed) let you kite in and out of Flamethrower range.
+              ko: 염소발 3개(이속 +42%)면 화염방사기 사거리 안팎을 안정적으로 드나듭니다.
+          - id: Crowbar
+            priority: optional
+            note:
+              en: Helps the opening burst on fresh targets.
+              ko: 체력이 가득 찬 적에게 들어가는 첫 폭딜을 높여 줍니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: opener only; 2 copies (+150%) are enough before burn items matter more.
+              ko: 첫 타 보조용이라 2개(+150%)면 충분하고, 이후엔 화상 아이템이 더 중요합니다.
+        next:
+          - burn
+      - id: burn
+        phase: mid
+        label:
+          en: Burn scaling
+          ko: 화상 강화
+        when:
+          en: As soon as you see Ignition Tank. Community players call it her top-priority item for this style.
+          ko: 점화 탱크가 보이면 바로 챙기세요. 커뮤니티에서는 이 운영의 최우선 아이템으로 꼽습니다.
+        items:
+          - id: StrengthenBurn
+            priority: core
+            note:
+              en: Ignite damage +300% per stack, and it scales with every other damage increase you pick up later.
+              ko: 점화 피해가 개당 300% 증가하고, 이후 얻는 모든 피해 증가와 함께 커집니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: stacks keep scaling (+300% ignite each, linear); 5 is a solid loop target.
+              ko: 개당 점화 +300%로 계속 강해지니 루프 기준 5개를 목표로 하세요.
+          - id: BleedOnHit
+            priority: optional
+            note:
+              en: The wiki lists it with Syringe for Flamethrower; the 2024 tier list disagrees for her other skills.
+              ko: 위키는 화염방사기용으로 주사기와 함께 추천하지만, 2024년 티어표는 다른 스킬 기준으로 낮게 봅니다.
+            stacks:
+              target: 10
+              min: 1
+              max: 10
+            stacksReason:
+              en: 10% bleed chance per stack, so 10 is a 100% chance and the cap.
+              ko: 위키 기준 개당 출혈 확률 10%라 10개면 100%로 상한입니다.
+          - id: FragileDamageBonus
+            priority: situational
+            note:
+              en: Players stacking watches report a solid damage bonus for burn builds, but it breaks when you drop low.
+              ko: 여러 개 쌓으면 화상 빌드에 좋은 피해 보너스가 된다는 후기가 있지만, 체력이 낮아지면 깨집니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: +20% per watch, linear, and burns scale with it; 5 (+100%) before the break risk outweighs it.
+              ko: 개당 +20%(선형)이고 화상도 함께 강해지니, 파손 위험을 감안해 5개(+100%)를 목표로 하세요.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Stage 5 onward.
+          ko: 5스테이지 이후.
+        items:
+          - id: AlienHead
+            priority: core
+            note:
+              en: Shorter Flamethrower and Nano-Bomb cooldowns mean more burn uptime.
+              ko: 화염방사기와 나노폭탄 대기시간이 줄어 화상 유지 시간이 늘어납니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 8
+            stacksReason:
+              en: "Derived from wiki x0.75 per stack: 3 cuts the 5s cooldown by 58%; about 8 hit the 0.5s floor."
+              ko: "위키의 개당 x0.75 계산: 3개면 재사용 대기시간 5초가 58% 줄고, 8개쯤에서 0.5초 하한에 닿습니다."
+          - id: Clover
+            priority: optional
+            note:
+              en: Flamethrower's chance to ignite is affected by luck.
+              ko: 화염방사기의 점화 확률은 행운의 영향을 받습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary and rare; one reroll already makes chance effects far more reliable.
+              ko: 드문 전설 아이템이고, 1개만으로도 확률 효과를 한 번 더 굴려 훨씬 안정적입니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: "Loop: stack burn multipliers"
+          ko: "루프: 화상 배율 쌓기"
+        when:
+          en: After the first loop, once Ignition Tank is in place.
+          ko: 첫 루프 이후, 점화 탱크를 갖춘 뒤.
+        items:
+          - id: StrengthenBurn
+            priority: core
+            stacks:
+              target: 5
+              min: 2
+            note:
+              en: Keep taking every Ignition Tank; each one adds another +300% burn damage.
+              ko: 점화 탱크는 보이는 대로 챙기세요. 하나마다 화상 피해가 +300%씩 늘어납니다.
+            stacksReason:
+              en: stacks keep scaling (+300% ignite each, linear); 5 is a solid loop target.
+              ko: 개당 점화 +300%로 계속 강해지니 루프 기준 5개를 목표로 하세요.
+          - id: FragileDamageBonus
+            priority: optional
+            stacks:
+              target: 5
+              min: 2
+            note:
+              en: Every damage increase also raises burn damage. Watches are cheap to stack but break below 25% health.
+              ko: 모든 피해 증가가 화상 피해도 올립니다. 섬세한 시계는 쌓기 쉽지만 체력 25% 아래에서 깨집니다.
+            stacksReason:
+              en: +20% per watch, linear, and burns scale with it; 5 (+100%) before the break risk outweighs it.
+              ko: 개당 +20%(선형)이고 화상도 함께 강해지니, 파손 위험을 감안해 5개(+100%)를 목표로 하세요.
+          - id: Syringe
+            priority: optional
+            stacks:
+              target: 10
+              min: 1
+            note:
+              en: More ticks per Flamethrower and faster Nano-Bomb charging.
+              ko: 화염방사기 타격 횟수와 나노폭탄 충전 속도를 올립니다.
+            stacksReason:
+              en: Rogue Ranker says keep stacking; each +15% adds Flamethrower ticks. 10 is a strong late count.
+              ko: Rogue Ranker는 계속 쌓으라고 하며, 개당 +15%마다 화염방사기 타격 횟수가 늘어납니다. 후반에 10개가 좋은 목표입니다.
+          - id: AlienHead
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+              max: 8
+            note:
+              en: More Flamethrower casts means more burn uptime, up to the 0.5s floor.
+              ko: 화염방사기를 더 자주 써서 화상 유지 시간이 늘어납니다. 0.5초 하한까지 유효합니다.
+            stacksReason:
+              en: "Derived from wiki x0.75 per stack: 3 cuts the 5s cooldown by 58%; about 8 hit the 0.5s floor."
+              ko: "위키의 개당 x0.75 계산: 3개면 재사용 대기시간 5초가 58% 줄고, 8개쯤에서 0.5초 하한에 닿습니다."
+        next: []
+    pickOrder:
+      common:
+        - Syringe
+        - Hoof
+        - FragileDamageBonus
+        - BleedOnHit
+        - Crowbar
+      uncommon:
+        - StrengthenBurn
+        - HealOnCrit
+        - Seed
+      legendary:
+        - AlienHead
+        - Clover
+        - Dagger
+    milestones:
+      - when:
+          en: As soon as Ignition Tank appears
+          ko: 점화 탱크가 보이면 바로
+        advice:
+          en: Take it over any other Uncommon; it multiplies every burn you apply.
+          ko: 다른 고급 아이템보다 먼저 고르세요. 모든 화상 피해를 배로 올립니다.
+        take:
+          - StrengthenBurn
+        stop: []
+      - when:
+          en: When Flamethrower range starts getting you killed
+          ko: 화염방사기 사거리 때문에 자꾸 죽기 시작하면
+        advice:
+          en: "Pick up a little sustain: TheGamer lists Leeching Seed or Harvester's Scythe for Flamethrower, but says not to overdo it."
+          ko: 회복을 조금 챙기세요. TheGamer는 화염방사기에 흡혈 씨앗이나 수확꾼의 낫을 추천하지만, 과하게 챙기지는 말라고 합니다.
+        take:
+          - Seed
+          - HealOnCrit
+        stop: []
+      - when:
+          en: If Light Flux Pauldron is offered
+          ko: 빛의 흐름 견갑을 얻을 수 있을 때
+        advice:
+          en: Skip it. The wiki says it cripples Flamethrower, whose damage ticks come from attack speed.
+          ko: 고르지 마세요. 위키에 따르면 공격 속도로 타격 횟수가 정해지는 화염방사기가 크게 약해집니다.
+        take: []
+        stop:
+          - HalfAttackSpeedHalfCooldowns
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Close range gets more dangerous. A Steam thread says some players swap Flamethrower for Ion Surge in late loops; if you stay, keep stacking Ignition Tank and Alien Head.
+          ko: 근접 거리가 더 위험해집니다. 스팀 토론에서는 후반 루프에서 화염방사기를 이온 전류로 바꾸는 플레이어도 있다고 합니다. 계속 쓴다면 점화 탱크와 외계인 머리를 계속 쌓으세요.
+        take:
+          - StrengthenBurn
+          - AlienHead
+        stop: []
+    avoid:
+      - id: PermanentDebuffOnHit
+        reason:
+          en: Rated near useless on Artificer in the 2024 tier list.
+          ko: 2024년 티어표에서 아티피셔에게는 거의 쓸모없다는 평가입니다.
+    evidence: |-
+      Wiki: Flamethrower ticks and windup scale with attack speed, Nano-Bomb charge time scales with attack speed, Soldier's Syringe and Tri-Tip for Flamethrower, Ignition Tank for fire builds. Steam thread (Apr 2022, after the burn rework): Ignition Tank as priority, Delicate Watch stacking. Rogue Ranker: Syringe and Flamethrower as the default special. The 2024 Steam tier list rates attack speed items low because they do not cut cooldowns, so sources disagree on this whole branch. Treat it as intermediate and not the default.
+
+      Stack counts and progression: Flamethrower 22 ticks, attack-speed scaling and 5s cooldown: wiki Artificer page. Stack math from wiki.gg item data (Ignition Tank +300% linear, Delicate Watch +20% linear with 25% break, Tri-Tip 10% linear, Alien Head x0.75 with 0.5s floor). Ignition Tank as top pick and stacking Delicate Watches: Steam thread 3275813923393782800 (burn rework era). Syringe stacking: Rogue Ranker. Seed/Scythe with Flamethrower 'don't go overboard': TheGamer (May 2021). Light Flux hampering Flamethrower: wiki Light Flux Pauldron page. Late-loop swap to Ion Surge: Steam thread 5963323773750109878. Legendary order is thin: Alien Head and Clover come from the build tree, Ceremonial Dagger from the 2024 tier list cited in the build. The 2024 tier list rates attack speed low for her overall, so this whole branch stays contested.
+  - id: mage-ion-surge-mobility
+    title:
+      en: Ion Surge Mobility
+      ko: 이온 전류 기동
+    difficulty: intermediate
+    summary:
+      en: Swap Flamethrower for Ion Surge to get a movement skill. You deal less damage but dodge far better, which helps against bosses and Mithrix.
+      ko: 화염방사기 대신 이온 전류를 들어 이동기를 얻습니다. 딜은 줄지만 회피가 훨씬 쉬워져 보스와 미스릭스전에 유리합니다.
+    loadout:
+      primary: MAGE_PRIMARY_LIGHTNING_NAME
+      secondary: MAGE_SECONDARY_LIGHTNING_NAME
+      utility: MAGE_UTILITY_ICE_NAME
+      special: MAGE_SPECIAL_LIGHTNING_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Early core
+          ko: 초반 핵심
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: SprintBonus
+            priority: core
+            note:
+              en: The wiki suggests it over Paul's Goat Hoof with Ion Surge, since you sprint between casts.
+              ko: 위키는 이온 전류를 쓸 때 스킬 사이에 달리는 시간이 많아 폴의 염소발보다 이쪽을 권합니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +25% sprint per stack, linear; 3 (+75%) makes sprinting between Surges fast.
+              ko: 개당 달리기 속도 +25%(선형)라 3개(+75%)면 이온 서지 사이 이동이 빨라집니다.
+          - id: SecondarySkillMagazine
+            priority: core
+            note:
+              en: Extra Nano-Bombs make up for the damage lost by dropping Flamethrower.
+              ko: 나노폭탄 충전 횟수가 늘어 화염방사기를 뺀 만큼의 딜을 메워 줍니다.
+            stacks:
+              target: 3
+              min: 2
+              max: 3
+            stacksReason:
+              en: Guides say 2-3 Backup Magazines are enough; aim for 3.
+              ko: 공략에서 보조 탄창은 2~3개면 충분하다고 하니 3개를 목표로 하세요.
+          - id: Crowbar
+            priority: optional
+            note:
+              en: Keeps Nano-Bomb one-shots going.
+              ko: 나노폭탄 한 방 처치를 유지해 줍니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies (+150%) keep Nano-Bomb one-shots; beyond that other damage items pay more.
+              ko: 2개(+150%)면 나노폭탄 한 방이 유지되고, 그 이상은 다른 딜 아이템이 낫습니다.
+        next:
+          - mid
+      - id: mid
+        phase: mid
+        label:
+          en: Burst and anti-air
+          ko: 폭딜과 대공
+        when:
+          en: Once Uncommons show up. Take Unstable Tesla Coil if flying enemies are giving you trouble.
+          ko: 녹색 아이템이 나오기 시작하면 챙기세요. 공중 적이 까다롭다면 불안정한 테슬라 코일을 노리세요.
+        items:
+          - id: FireRing
+            priority: core
+            note:
+              en: Nano-Bomb, Nano-Spear and Ion Surge can all trigger the bands.
+              ko: 나노폭탄·나노창·이온 전류 모두 반지를 발동시킬 수 있습니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: 1 turns the tornado on and the 10s recharge never shortens; a 2nd copy doubles its damage (+300%).
+              ko: 1개로 효과가 켜지고 10초 재충전은 줄지 않으니, 2개째로 피해량(+300%)을 두 배로 늘리세요.
+          - id: IceRing
+            priority: core
+            note:
+              en: Pairs with Kjaro's Band on the same big hits.
+              ko: 같은 큰 피해에 캬로의 반지와 함께 발동합니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: 1 turns the ice blast on; a 2nd copy adds +250% damage and +3s slow on the same 10s recharge.
+              ko: 1개로 효과가 켜지고, 2개째는 같은 10초 재충전에 피해 +250%와 둔화 +3초를 더합니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Stage 5 onward.
+          ko: 5스테이지 이후.
+        items:
+          - id: AlienHead
+            priority: core
+            note:
+              en: More Ion Surge casts means more dodges and more band procs.
+              ko: 이온 전류를 더 자주 써서 회피와 반지 발동이 늘어납니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 10
+            stacksReason:
+              en: "Derived from wiki x0.75 per stack: 3 cuts the 8s cooldown by 58%; about 10 hit the 0.5s floor."
+              ko: "위키의 개당 x0.75 계산: 3개면 재사용 대기시간 8초가 58% 줄고, 10개쯤에서 0.5초 하한에 닿습니다."
+          - id: ShockNearby
+            priority: situational
+            note:
+              en: The wiki recommends it for small flying enemies that are hard to hit.
+              ko: 위키는 맞히기 힘든 소형 공중 적 대책으로 추천합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one coil already shocks 3 enemies every 0.5s, extras add +2 targets.
+              ko: 전설 아이템이며, 1개로 0.5초마다 적 3명을 감전시키고 추가분은 대상 +2입니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: "Loop: more surges"
+          ko: "루프: 이온 전류 더 자주"
+        when:
+          en: After the first loop, once Alien Head is in place.
+          ko: 첫 루프 이후, 외계인 머리를 갖춘 뒤.
+        items:
+          - id: AlienHead
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+              max: 10
+            note:
+              en: Each stack means more Ion Surge dodges and more band-eligible hits.
+              ko: 중첩할수록 이온 전류 회피가 늘고 반지를 발동시킬 타격도 늘어납니다.
+            stacksReason:
+              en: "Derived from wiki x0.75 per stack: 3 cuts the 8s cooldown by 58%; about 10 hit the 0.5s floor."
+              ko: "위키의 개당 x0.75 계산: 3개면 재사용 대기시간 8초가 58% 줄고, 10개쯤에서 0.5초 하한에 닿습니다."
+          - id: HalfAttackSpeedHalfCooldowns
+            priority: situational
+            stacks:
+              target: 1
+              max: 1
+            note:
+              en: "Wiki: good for Artificer because Ion Surge and Flame Bolt are cooldown skills. Nano-Bomb charges slower with it (Steam thread)."
+              ko: 위키 기준 이온 전류와 불꽃 화살이 쿨타임 기술이라 아티피셔에게 좋습니다. 대신 나노폭탄 충전이 느려집니다(스팀 토론).
+            stacksReason:
+              en: each extra copy halves attack speed again, so one is the only useful count.
+              ko: 위키 기준 추가로 가질 때마다 공격 속도가 다시 절반이 되므로 1개만 쓰세요.
+          - id: ShockNearby
+            priority: situational
+            stacks:
+              target: 1
+            note:
+              en: Wiki pick against small flyers, which grow in number on later loops.
+              ko: 위키가 작은 비행 적 대책으로 꼽는 아이템입니다. 루프가 쌓일수록 비행 적이 늘어납니다.
+            stacksReason:
+              en: legendary; one coil already shocks 3 enemies every 0.5s, extras add +2 targets.
+              ko: 전설 아이템이며, 1개로 0.5초마다 적 3명을 감전시키고 추가분은 대상 +2입니다.
+          - id: SecondarySkillMagazine
+            priority: optional
+            stacks:
+              target: 3
+              min: 2
+              max: 3
+            note:
+              en: Top up to 2-3 if you have fewer.
+              ko: 2~3개가 안 되면 채우세요.
+            stacksReason:
+              en: Guides say 2-3 Backup Magazines are enough; aim for 3.
+              ko: 공략에서 보조 탄창은 2~3개면 충분하다고 하니 3개를 목표로 하세요.
+        next: []
+    pickOrder:
+      common:
+        - SprintBonus
+        - SecondarySkillMagazine
+        - Hoof
+        - Crowbar
+      uncommon:
+        - FireRing
+        - IceRing
+        - Bandolier
+      legendary:
+        - AlienHead
+        - KillEliteFrenzy
+        - ShockNearby
+    milestones:
+      - when:
+          en: Once you have one of each band
+          ko: 반지를 한 종류씩 갖추면
+        advice:
+          en: "Take both bands before stacking either one: the first copy of each adds a whole new proc, while a second copy only adds damage to a proc you already have. Do not take Singularity Band from a Void cradle or Void Potential: it corrupts every Kjaro's and Runald's Band you hold."
+          ko: 한쪽 반지를 중첩하기 전에 두 반지를 먼저 모두 챙기세요. 각 반지의 첫 개는 발동을 하나 새로 추가하지만, 두 번째 개는 이미 있는 발동의 피해만 올립니다. 공허 요람이나 잠재 공허에서 특이점 반지를 고르지 마세요. 가진 캬로의 반지와 루널드의 반지를 전부 오염시킵니다.
+        take: []
+        stop:
+          - ElementalRingVoid
+      - when:
+          en: When flying enemies start chipping you down
+          ko: 비행 적에게 계속 체력이 깎이기 시작하면
+        advice:
+          en: Take Unstable Tesla Coil; the wiki recommends it for small flyers that are hard to hit.
+          ko: 불안정한 테슬라 코일을 챙기세요. 위키가 맞히기 어려운 작은 비행 적 대책으로 추천합니다.
+        take:
+          - ShockNearby
+        stop: []
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Prioritize Alien Head from every legendary source; Ion Surge is your only escape and the cooldown is the limit.
+          ko: 전설 아이템은 외계인 머리를 최우선으로 고르세요. 이온 전류가 유일한 탈출기이고 쿨타임이 한계입니다.
+        take:
+          - AlienHead
+        stop: []
+      - when:
+          en: When you have about 10 Alien Heads
+          ko: 외계인 머리가 10개쯤 되면
+        advice:
+          en: Ion Surge is at the 0.5s floor. Switch to other legendaries.
+          ko: 이온 전류가 0.5초 하한에 닿았습니다. 다른 전설 아이템으로 바꾸세요.
+        take: []
+        stop:
+          - AlienHead
+    avoid: []
+    evidence: |-
+      Wiki: Ion Surge trades damage for mobility and is good for bosses and Mithrix; Energy Drink over Paul's Goat Hoof with Ion Surge; Unstable Tesla Coil against flyers. Steam threads (2021 and later) use Flame Bolt/Nano-Bomb/Ion Surge and say Ion Surge procs bands. Rogue Ranker disagrees and says Ion Surge gives up too much damage in most runs. Smaller tree because fewer sources cover it.
+
+      Stack counts and progression: Ion Surge 8s cooldown and Nano-Bomb 5s: wiki Artificer page. Stack math from wiki.gg item data (Alien Head x0.75 with 0.5s floor, Energy Drink +25% linear, bands fixed 10s). Energy Drink over Hoof and Tesla Coil for flyers: wiki. Backup Magazine 2-3: Steam threads cited in the build. Light Flux: wiki (benefit) vs Steam thread (slower Nano-Bomb charge). Brainstalks as Alien Head alternative: TheGamer (2021), while a Steam discussion says it underperforms on her. Rogue Ranker says Ion Surge gives up too much damage in most runs. Thin sources for this build, so fewer stack entries and no boss order.
