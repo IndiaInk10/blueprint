@@ -1,0 +1,15 @@
+{
+  "name": "blueprint",
+  "private": true,
+  "packageManager": "pnpm@11.4.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build:native": "pnpm --filter @guide/overlay-native build",
+    "dev": "pnpm build:native && pnpm --filter @guide/desktop dev",
+    "build": "pnpm build:native && pnpm --filter @guide/desktop build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test"
+  }
+}
