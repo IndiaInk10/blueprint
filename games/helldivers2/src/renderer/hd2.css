@@ -624,6 +624,63 @@
   white-space: nowrap;
 }
 
+.hd2-panel-weapons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin: 8px 0 4px;
+  padding-top: 8px;
+  border-top: 1px solid var(--gg-border);
+}
+
+.hd2-panel-weapon {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.hd2-panel-weapon-frame {
+  display: grid;
+  place-items: center;
+  height: 50px;
+  /* Tall renders (grenades) are scaled up with the rest; keep them inside the frame. */
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 2px;
+  background: radial-gradient(ellipse at 50% 55%, #4a5563 0%, #2a323c 60%, #1b2129 100%);
+}
+
+/* Same lift and crop as the app's weapon tiles (see img.is-weapon). */
+.hd2-panel-weapon-image {
+  width: 100%;
+  /* An explicit height: a percentage does not resolve inside the grid frame, and square renders overflowed. */
+  height: 50px;
+  object-fit: contain;
+  clip-path: inset(11.5%);
+}
+
+/* Grenade renders are tall and already fill the height; enlarging them would cut them off. */
+.hd2-panel-weapon-image.tall {
+  transform: none;
+  clip-path: none;
+}
+
+.hd2-panel-weapon-slot {
+  font-size: 10px;
+  color: var(--gg-text-muted);
+}
+
+.hd2-panel-weapon-name {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 11px;
+  line-height: 1.3;
+  color: var(--gg-text);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .hd2-panel-auto {
   margin-left: 8px;
   padding: 1px 6px;

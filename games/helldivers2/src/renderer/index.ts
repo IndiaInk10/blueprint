@@ -26,7 +26,7 @@ export const hd2Renderer: GameRendererModule<Hd2State> = {
       component: LoadoutPanel,
       // Only on the ship while picking equipment; missions keep the HUD clear.
       showWhen: (state) => state.phase === 'lobby',
-      defaultAnchor: { edge: 'right', offset: { x: 24, y: 160 }, size: { width: 280 } },
+      defaultAnchor: { edge: 'right', offset: { x: 24, y: 160 }, size: { width: 300 } },
       visibility: 'pinned',
     },
   ],
