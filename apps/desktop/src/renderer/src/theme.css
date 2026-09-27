@@ -1,0 +1,49 @@
+/*
+ * Design tokens shared by the main window, the overlay and game modules.
+ * Game module components should style themselves with these variables only.
+ */
+
+/* Pretendard (SIL Open Font License 1.1, see assets/fonts/Pretendard-LICENSE.txt), bundled locally. */
+@font-face {
+  font-family: 'Pretendard Variable';
+  src: url('./assets/fonts/PretendardVariable.woff2') format('woff2-variations');
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  --gg-bg: #1b2838;
+  --gg-bg-deep: #171a21;
+  --gg-surface: #1e2329;
+  --gg-surface-raised: #2a2f38;
+  --gg-surface-hover: #3d4450;
+  --gg-border: rgba(255, 255, 255, 0.08);
+
+  --gg-text: #dcdedf;
+  --gg-text-strong: #ffffff;
+  --gg-text-muted: #8f98a0;
+  --gg-text-dim: #5e6873;
+
+  --gg-accent: #1a9fff;
+  --gg-accent-soft: #66c0f4;
+  --gg-positive: #5ba32b;
+  --gg-positive-bright: #a4d007;
+
+  --gg-tier-common: #e9e9e9;
+  --gg-tier-uncommon: #77c14c;
+  --gg-tier-legendary: #e5494b;
+  --gg-tier-boss: #f0d54a;
+  --gg-tier-lunar: #4b8df2;
+  --gg-tier-void: #c162c6;
+  --gg-tier-meal: #e89a6b;
+  --gg-tier-equipment: #f39c33;
+  --gg-tier-elite: #d6c34e;
+
+  --gg-radius: 3px;
+  --gg-tabs-height: 46px;
+  --gg-font: 'Pretendard Variable', 'Segoe UI', 'Malgun Gothic', system-ui, sans-serif;
+
+  color-scheme: dark;
+  font-family: var(--gg-font);
+}
