@@ -1,7 +1,7 @@
 import type { BrowserWindow, IpcMainEvent } from 'electron';
 import type { Logger } from '@guide/sdk';
 import { areKeysDown } from '@guide/overlay-native';
-import { IpcChannel, type OverlayStatus, type OverlayTestResult, type PanelRegistration } from '../../shared/ipc';
+import { IpcChannel, type OverlayStatus, type OverlayTestResult, type PanelRegistration, type VisiblePanels } from '../../shared/ipc';
 import { isOverlayEnabledFor, isPanelAlwaysShown, isPanelEnabled } from '../../shared/settings';
 import type { GameRegistry } from '../core/GameRegistry';
 import { HotkeyService } from '../core/HotkeyService';
@@ -238,7 +238,8 @@ export class OverlayManager {
       ? this.registrations.map((panel) => panel.panelId).filter(enabled)
       : this.panels.visible(enabled);
     const { window } = current.backend;
-    if (!window.isDestroyed()) window.webContents.send(IpcChannel.OverlayVisiblePanels, panelIds);
+    const shown: VisiblePanels = { panelIds, testing };
+    if (!window.isDestroyed()) window.webContents.send(IpcChannel.OverlayVisiblePanels, shown);
 
     const { focused, minimized, hasBounds } = this.gameWindow;
     // A test shows even while this app is in front, so the user can switch to the game and look.
