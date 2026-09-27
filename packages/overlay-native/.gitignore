@@ -1,0 +1,5 @@
+target/
+*.node
+# Left behind by napi build when the old binary is locked by a running app.
+.napi-rs-filesystem-transaction.swp/
+*.retired.tmp*

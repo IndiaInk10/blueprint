@@ -1,0 +1,23 @@
+{
+  "name": "@guide/overlay-native",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "os": [
+    "win32"
+  ],
+  "napi": {
+    "binaryName": "overlay-native",
+    "targets": [
+      "x86_64-pc-windows-msvc"
+    ]
+  },
+  "scripts": {
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^3.10.5"
+  }
+}
