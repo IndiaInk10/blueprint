@@ -1,6 +1,6 @@
 import { useEffect, useState, type CSSProperties } from 'react';
 import { localize, type Anchor, type OverlayPanel } from '@guide/sdk';
-import type { GameStatus } from '../../../shared/ipc';
+import type { GameStatus, VisiblePanels } from '../../../shared/ipc';
 import { GameUiHost, useContentBundle } from '../components/GameUiHost';
 import { rendererModules } from '../games';
 import { useResolvedLocale, useSettings } from '../hooks';
@@ -19,7 +19,7 @@ function anchorStyle({ edge, offset, size }: Anchor): CSSProperties {
 
 export function OverlayApp({ gameId }: { gameId: string }) {
   const module = rendererModules.get(gameId);
-  const [visibleIds, setVisibleIds] = useState<string[]>([]);
+  const [shown, setShown] = useState<VisiblePanels>({ panelIds: [], testing: false });
   const [status, setStatus] = useState<GameStatus | null>(null);
   const locale = useResolvedLocale(useSettings());
 
@@ -28,7 +28,7 @@ export function OverlayApp({ gameId }: { gameId: string }) {
     window.desktop.overlay.registerPanels(
       module.overlayPanels.map((panel) => ({ panelId: panel.id, visibility: panel.visibility, keys: panel.hotkey })),
     );
-    return window.desktop.overlay.onVisiblePanelsChanged(setVisibleIds);
+    return window.desktop.overlay.onVisiblePanelsChanged(setShown);
   }, [module]);
 
   useEffect(() => {
@@ -47,7 +47,8 @@ export function OverlayApp({ gameId }: { gameId: string }) {
   return (
     <GameUiHost gameId={gameId} locale={locale} bundle={bundle}>
       {module.overlayPanels
-        .filter((panel) => visibleIds.includes(panel.id) && (panel.showWhen?.(state) ?? true))
+        // The settings test shows every panel, even ones limited to some game states.
+        .filter((panel) => shown.panelIds.includes(panel.id) && (shown.testing || (panel.showWhen?.(state) ?? true)))
         .map((panel: OverlayPanel) => (
           <section key={panel.id} className="overlay-panel" style={anchorStyle(panel.defaultAnchor)}>
             <header className="overlay-panel-header">{localize(panel.title, locale)}</header>

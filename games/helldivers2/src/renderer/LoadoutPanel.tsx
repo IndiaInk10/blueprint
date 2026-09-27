@@ -20,10 +20,12 @@ export function LoadoutPanel({ state }: { state: Hd2State }) {
   const kit = pinned ?? generalists.find((l) => l.faction === profile?.faction) ?? generalists[0] ?? content.loadouts[0];
   if (!kit) return <p className="hd2-panel-empty">{t.overlay.empty}</p>;
 
-  const gear = [
-    { label: t.slots.primary, kind: 'weapon' as const, id: kit.primary, name: content.weapons[kit.primary]?.name },
-    { label: t.slots.secondary, kind: 'weapon' as const, id: kit.secondary, name: content.weapons[kit.secondary]?.name },
-    { label: t.slots.throwable, kind: 'weapon' as const, id: kit.throwable, name: content.weapons[kit.throwable]?.name },
+  const weapons = [
+    { label: t.slots.primary, id: kit.primary, tall: false },
+    { label: t.slots.secondary, id: kit.secondary, tall: false },
+    { label: t.slots.throwable, id: kit.throwable, tall: true },
+  ];
+  const perks = [
     { label: t.slots.armorPassive, kind: 'armor' as const, id: kit.armorPassive, name: content.armorPassives[kit.armorPassive]?.name },
     ...(kit.booster ? [{ label: t.slots.booster, kind: 'booster' as const, id: kit.booster, name: content.boosters[kit.booster]?.name }] : []),
   ];
@@ -43,11 +45,28 @@ export function LoadoutPanel({ state }: { state: Hd2State }) {
           </li>
         ))}
       </ul>
-      <ul className="hd2-panel-list hd2-panel-gear">
-        {gear.map((item) => (
-          <li key={item.label} className="hd2-panel-row">
-            <span className="hd2-panel-slot">{item.label}</span>
-            <span className="hd2-panel-name">{tr(item.name) || item.id}</span>
+      {/* Weapons as pictures: names alone are hard to match to what the armory shows. */}
+      <div className="hd2-panel-weapons">
+        {weapons.map((weapon) => (
+          <div key={weapon.label} className="hd2-panel-weapon">
+            <span className="hd2-panel-weapon-frame">
+              <Icon
+                src={icon('weapon', weapon.id)}
+                className={weapon.tall ? 'hd2-panel-weapon-image tall' : 'hd2-panel-weapon-image'}
+                kind="weapon"
+              />
+            </span>
+            <span className="hd2-panel-weapon-slot">{weapon.label}</span>
+            <span className="hd2-panel-weapon-name">{tr(content.weapons[weapon.id]?.name) || weapon.id}</span>
+          </div>
+        ))}
+      </div>
+      <ul className="hd2-panel-list">
+        {perks.map((perk) => (
+          <li key={perk.label} className="hd2-panel-row">
+            <Icon src={icon(perk.kind, perk.id)} className="hd2-panel-icon" kind={perk.kind} />
+            <span className="hd2-panel-slot">{perk.label}</span>
+            <span className="hd2-panel-name">{tr(perk.name) || perk.id}</span>
           </li>
         ))}
       </ul>

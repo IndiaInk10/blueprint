@@ -36,6 +36,12 @@ export interface OverlayStatus {
   testUntil: number | null;
 }
 
+/** Which panels the overlay should draw. During a test, panels also ignore their own showWhen. */
+export interface VisiblePanels {
+  panelIds: string[];
+  testing: boolean;
+}
+
 export type OverlayTestResult = 'started' | 'not-running' | 'disabled' | 'no-window';
 
 export interface SessionInfo {
@@ -80,7 +86,7 @@ export interface DesktopApi {
     /** Only honored when called from the overlay window. */
     registerPanels(panels: PanelRegistration[]): void;
     /** Returns an unsubscribe function. */
-    onVisiblePanelsChanged(listener: (panelIds: string[]) => void): () => void;
+    onVisiblePanelsChanged(listener: (shown: VisiblePanels) => void): () => void;
     /** Shows every enabled panel of a running game for a few seconds, ignoring hotkeys and focus. */
     test(gameId: string): Promise<OverlayTestResult>;
     status(gameId: string): Promise<OverlayStatus>;
