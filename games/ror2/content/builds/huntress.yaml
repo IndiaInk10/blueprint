@@ -1,0 +1,614 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: HuntressBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: strong
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Huntress
+  - https://rogueranker.com/huntress-ror2/
+  - https://nerdlodge.com/risk-of-rain-2-huntress-guide/
+  - https://exputer.com/guides/risk-of-rain-2-huntress/
+  - https://steamcommunity.com/app/632360/discussions/0/3039354010654409061
+  - https://choostgames.com/blog/risk-of-rain-2-tier-list/
+  - https://riskofrain2.wiki.gg/wiki/Hardlight_Afterburner
+  - https://riskofrain2.wiki.gg/wiki/Lens-Maker%27s_Glasses
+builds:
+  - id: huntress-crit-flurry-on-hit
+    title:
+      en: Crit Flurry on-hit
+      ko: 치명타 광풍 온힛
+    difficulty: intermediate
+    summary:
+      en: Flurry fires 3 arrows, or 6 on a crit, so crit chance doubles both damage and proc rolls. It overtakes Strafe at roughly 16-21% crit. Stack Backup Magazine for Laser Glaive and add crit and on-hit items.
+      ko: 광풍은 화살 3발, 치명타 시 6발을 쏘기 때문에 치명타 확률이 피해량과 발동 횟수를 모두 늘립니다. 치명타 확률 약 16~21%부터 기동 사격보다 강해집니다. 레이저 글레이브용 보조 탄창을 쌓고 치명타·온힛 아이템을 더하세요.
+    loadout:
+      primary: HUNTRESS_PRIMARY_ALT_NAME
+      secondary: HUNTRESS_SECONDARY_NAME
+      utility: HUNTRESS_UTILITY_ALT1_NAME
+      special: HUNTRESS_SPECIAL_ALT1_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Crit, speed, glaive charges
+          ko: 치명타, 공속, 글레이브 충전
+        when:
+          en: Stages 1-2. Until you reach about 20% crit, Strafe can still outperform Flurry.
+          ko: 1~2스테이지. 치명타 확률 약 20% 전까지는 기동 사격이 광풍보다 나을 수 있습니다.
+        items:
+          - id: CritGlasses
+            priority: core
+            note:
+              en: Flurry doubles its arrows on crit, so crit scales it twice.
+              ko: 광풍은 치명타 시 화살이 두 배라 치명타 효율이 이중으로 붙습니다.
+            stacks:
+              target: 9
+              min: 2
+              max: 10
+            stacksReason:
+              en: 10 = 100% crit; with a 5% crit item such as Predatory Instincts or Harvester's Scythe, 9 already reaches 100%.
+              ko: 위키 기준 10개면 치명타 100%입니다. 포식 본능이나 수확꾼의 낫 같은 5% 치명타 아이템이 있으면 9개로 100%가 됩니다.
+          - id: Syringe
+            priority: core
+            note:
+              en: Faster Flurry volleys.
+              ko: 광풍 발사 속도가 빨라집니다.
+            stacks:
+              target: 6
+            stacksReason:
+              en: +15% attack speed per stack, linear with no cap; whites also go to glasses and Backup Magazine, so 6 (+90%) is a fair share.
+              ko: 개당 공격 속도 +15%로 선형이며 상한이 없습니다. 흰색은 안경과 보조 탄창에도 써야 하므로 6개(+90%)가 적당합니다.
+          - id: SecondarySkillMagazine
+            priority: core
+            note:
+              en: "Often called one of Huntress's best items: multiple Laser Glaives clear packs."
+              ko: 헌트리스 최고의 아이템 중 하나로 꼽힙니다. 레이저 글레이브를 여러 번 던져 무리를 정리합니다.
+            stacks:
+              target: 4
+              min: 2
+            stacksReason:
+              en: linear +1 charge with no cap (wiki); loop players want 'a few stacks', so 4 charges is a solid goal.
+              ko: 위키 기준 개당 충전 +1로 상한이 없습니다. 루프 플레이어들이 '몇 개'는 원하므로 4개를 목표로 잡았습니다.
+        next:
+          - crit
+          - aoe
+          - defense
+      - id: crit
+        phase: mid
+        label:
+          en: Crit scaling
+          ko: 치명타 스케일링
+        when:
+          en: "Once your crit chance is around 20%+: each arrow now procs on-crit effects."
+          ko: "치명타 확률이 20% 정도 되면: 화살 하나하나가 치명타 효과를 발동합니다."
+        items:
+          - id: AttackSpeedOnCrit
+            priority: core
+            note:
+              en: Triggers per arrow, so it reaches full stacks almost instantly.
+              ko: 화살마다 발동해 거의 즉시 최대 중첩에 도달합니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: the first copy gives 5% crit and a 36% attack speed cap; a second raises the cap to 60%, then other greens give more.
+              ko: 첫 개가 치명타 5%와 공격 속도 상한 36%를, 두 번째가 상한 60%를 줍니다. 그 뒤로는 다른 녹색 아이템이 더 이득입니다.
+          - id: HealOnCrit
+            priority: core
+            note:
+              en: Main healing source for the squishiest survivor.
+              ko: 가장 약한 생존자의 주 회복 수단입니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +4 heal per crit per stack and this build crits constantly, so 3 (16 per crit) is worth it.
+              ko: 개당 치명타 회복 +4이고 이 빌드는 치명타가 끊임없이 터지므로 3개(치명타당 16)까지 챙기세요.
+          - id: Missile
+            priority: optional
+            note:
+              en: Flurry fires many arrows, so missiles proc often. A solid green pick once your crit items are in place.
+              ko: 광풍은 화살 수가 많아 미사일이 자주 발동합니다. 치명타 아이템을 갖춘 뒤 챙길 만한 녹색 아이템입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +300% damage per stack. Flurry's many arrows proc it often, so 2 is plenty; after that take other greens.
+              ko: 개당 피해 +300%입니다. 광풍은 화살 수가 많아 자주 발동하니 2개면 충분하고, 그 뒤로는 다른 녹색 아이템을 챙기세요.
+        next:
+          - late
+      - id: aoe
+        phase: mid
+        label:
+          en: Pack clear
+          ko: 무리 정리
+        when:
+          en: If enemies survive your Glaive in groups.
+          ko: 글레이브 후에도 적 무리가 살아남는다면.
+        items:
+          - id: ChainLightning
+            priority: core
+            note:
+              en: Chain lightning finishes what the Glaive leaves.
+              ko: 연쇄 번개가 글레이브가 남긴 적을 마무리합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 stacks reach 7 targets and 24 m; after that other greens add more.
+              ko: 3개면 대상 7명, 범위 24m가 되고, 그 이후로는 다른 녹색 아이템이 더 이득입니다.
+          - id: ExplodeOnDeath
+            priority: optional
+            note:
+              en: On-kill explosions cascade through packs.
+              ko: 처치 시 폭발이 무리 전체로 연쇄됩니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: damage +280% and radius +2.4 m per stack; 2 clear most packs, then other greens.
+              ko: 개당 피해 +280%, 반경 +2.4m입니다. 2개면 대부분의 무리를 정리하고, 그 뒤엔 다른 녹색 아이템을 고르세요.
+          - id: Dagger
+            priority: optional
+            note:
+              en: Kills leave daggers that clear the next spawn.
+              ko: 처치 시 단검이 남아 다음 적까지 정리합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy fires 3 homing daggers per kill, and a second is a bonus rather than a goal.
+              ko: 전설 아이템입니다. 1개로 처치마다 유도 단검 3개가 나가고, 두 번째는 목표가 아니라 덤입니다.
+          - id: IgniteOnKill
+            priority: optional
+            note:
+              en: Cheap early AoE.
+              ko: 초반에 얻기 쉬운 광역 피해입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +4 m radius and +75% burn per stack; 2 is enough early AoE before better items arrive.
+              ko: 개당 반경 +4m, 화상 +75%입니다. 초반 광역용으로 2개면 충분하고, 이후엔 더 좋은 아이템이 나옵니다.
+        next:
+          - late
+      - id: defense
+        phase: mid
+        label:
+          en: Staying alive
+          ko: 생존
+        when:
+          en: "If you keep getting caught: Huntress has the lowest health scaling."
+          ko: "자주 잡힌다면: 헌트리스는 체력 성장이 가장 낮습니다."
+        items:
+          - id: SprintArmor
+            priority: core
+            note:
+              en: All her primaries fire while sprinting, so the sprint armor is always on.
+              ko: 모든 기본 공격이 질주 중에 가능해 질주 방어력이 항상 유지됩니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +30 armor per stack while sprinting; 3 (90 armor) cuts damage taken by about 47%.
+              ko: 질주 중 개당 방어력 +30이라 3개(방어력 90)면 받는 피해가 약 47% 줄어듭니다.
+          - id: Phasing
+            priority: optional
+            note:
+              en: Invisibility and speed when you drop low.
+              ko: 체력이 낮아지면 투명화와 이동 속도를 얻습니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: the 30 s recharge drops 50% per stack; 2 makes the escape available twice as often.
+              ko: 재충전 30초가 개당 50%씩 줄어 2개면 탈출기를 두 배로 자주 씁니다.
+          - id: Bear
+            priority: optional
+            note:
+              en: Flat block chance for a fragile survivor.
+              ko: 허약한 생존자에게 확률 방어를 줍니다.
+            stacks:
+              target: 10
+              min: 1
+            stacksReason:
+              en: hyperbolic block chance, 10 stacks = 60% and each copy past 10 adds under 2.5 points; loop guides stack it to about 10.
+              ko: 위키 기준 쌍곡선 중첩이라 10개면 막기 60%이고, 10개 이후로는 개당 2.5%p도 안 늘어납니다. 루프 공략들도 10개 정도를 목표로 합니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late-game
+          ko: 후반
+        when:
+          en: Legendary and boss items after stage 4.
+          ko: 4스테이지 이후 전설·보스 아이템.
+        items:
+          - id: BleedOnHitAndExplode
+            priority: core
+            note:
+              en: Crit-triggered bleed and explosions on a crit-heavy survivor.
+              ko: 치명타가 많은 생존자에게 치명타 출혈과 폭발을 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy gives the 5% crit and bleed on crit; extra copies only enlarge the death explosion, and boss items are rare.
+              ko: 1개로 치명타 5%와 치명타 출혈이 모두 생기고, 추가분은 처치 폭발 피해만 늘립니다. 보스 아이템이라 잘 나오지도 않습니다.
+          - id: CritDamage
+            priority: optional
+            note:
+              en: Extra crit damage once crit is near 100%.
+              ko: 치명타 확률이 100%에 가까우면 치명타 피해를 크게 올립니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy adds +100% crit damage, a big jump once crit is near 100%, and more are a bonus.
+              ko: 전설 아이템이라 1개로 치명타 피해 +100%를 얻습니다. 치명타가 100%에 가까우면 큰 상승이고, 더 나오면 덤입니다.
+          - id: AlienHead
+            priority: optional
+            note:
+              en: More Glaive and Ballista uses.
+              ko: 글레이브와 발리스타를 더 자주 씁니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: "Rogue Ranker calls 1-2 Alien Heads the efficient range; wiki: two stacks cut cooldowns by 43.8%."
+              ko: Rogue Ranker는 외계인 머리 1~2개를 효율 구간으로 봅니다. 위키 기준 2개면 쿨타임이 43.8% 줄어듭니다.
+          - id: UtilitySkillMagazine
+            priority: optional
+            note:
+              en: Makes Blink much more spammable.
+              ko: 점멸을 훨씬 자주 쓸 수 있습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: the 33% cooldown cut does not stack; one copy already gives +2 charges, extras only add charges.
+              ko: 쿨타임 33% 감소는 중첩되지 않고 1개로 충전 +2가 생깁니다. 추가분은 충전만 늘립니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Surviving long runs
+          ko: 긴 런 생존
+        when:
+          en: After the first loop, with crit near 100%.
+          ko: 첫 루프 이후, 치명타가 100% 가까이 됐을 때.
+        items:
+          - id: Bear
+            priority: core
+            stacks:
+              target: 10
+              min: 4
+            note:
+              en: Huntress has the lowest health scaling; block chance is the loop guides' first defensive pick.
+              ko: 헌트리스는 체력 성장이 가장 낮아서, 루프 공략이 첫 방어 아이템으로 꼽는 막기 확률이 중요합니다.
+            stacksReason:
+              en: hyperbolic block chance, 10 stacks = 60% and each copy past 10 adds under 2.5 points; loop guides stack it to about 10.
+              ko: 위키 기준 쌍곡선 중첩이라 10개면 막기 60%이고, 10개 이후로는 개당 2.5%p도 안 늘어납니다. 루프 공략들도 10개 정도를 목표로 합니다.
+          - id: ChainLightningVoid
+            priority: optional
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: Listed for Huntress by Nerd Lodge; corrupts all Ukuleles and focuses damage on one target.
+              ko: Nerd Lodge가 헌트리스용으로 꼽은 아이템입니다. 우쿨렐레를 모두 오염시키고 피해를 한 대상에 집중합니다.
+            stacksReason:
+              en: it corrupts every Ukulele, so it inherits the 3 you were aiming for; each stack adds 3 more hits on one target (wiki).
+              ko: 우쿨렐레를 모두 오염시키므로 목표였던 3개가 그대로 넘어옵니다. 위키 기준 개당 단일 대상 타격이 3회씩 늘어납니다.
+          - id: LunarDagger
+            priority: situational
+            stacks:
+              target: 1
+              max: 1
+            note:
+              en: Players pair it with Topaz Brooch barrier; it halves her already low max HP, so only with barrier or strong defense.
+              ko: 황옥 브로치 보호막과 함께 쓰는 유저들이 있습니다. 가뜩이나 낮은 최대 체력이 절반이 되므로 보호막이나 방어가 충분할 때만 챙기세요.
+            stacksReason:
+              en: each stack halves max HP again (wiki) on the lowest-HP survivor, so stop at one.
+              ko: 위키 기준 개당 최대 체력이 다시 절반이 되는데, 헌트리스는 체력이 가장 낮으므로 1개에서 멈추세요.
+          - id: ExtraLife
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: A spare life for the fragile late game.
+              ko: 쉽게 죽는 후반을 위한 목숨 하나입니다.
+            stacksReason:
+              en: each copy is one extra life; one legendary slot is a realistic goal, and any more are a bonus.
+              ko: 1개당 목숨 하나입니다. 전설 아이템이라 1개가 현실적인 목표이고, 더 나오면 덤입니다.
+        next: []
+    pickOrder:
+      common:
+        - SecondarySkillMagazine
+        - CritGlasses
+        - Syringe
+        - Hoof
+        - Bear
+      uncommon:
+        - AttackSpeedOnCrit
+        - HealOnCrit
+        - ChainLightning
+        - ExplodeOnDeath
+        - SprintArmor
+        - Missile
+      legendary:
+        - AlienHead
+        - CritDamage
+        - UtilitySkillMagazine
+        - Dagger
+    milestones:
+      - when:
+          en: Once crit passes about 20%
+          ko: 치명타가 약 20%를 넘으면
+        advice:
+          en: Flurry now beats Strafe; on-crit items trigger per arrow.
+          ko: 이제 광풍이 기동 사격보다 강합니다. 치명타 시 효과가 화살마다 발동합니다.
+        take:
+          - AttackSpeedOnCrit
+          - HealOnCrit
+        stop: []
+      - when:
+          en: When crit reaches 100%
+          ko: 치명타가 100%에 도달하면
+        advice:
+          en: Stop taking Lens-Maker's Glasses and turn to crit damage.
+          ko: 렌즈 제작자의 안경은 그만 챙기고 치명타 피해로 넘어가세요.
+        take:
+          - CritDamage
+          - BleedOnHitAndExplode
+        stop:
+          - CritGlasses
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Her low HP makes one-shots the main risk; stack Tougher Times and keep Rose Buckler since she attacks while sprinting.
+          ko: 낮은 체력 때문에 한 방에 죽는 게 가장 큰 위험입니다. 힘들었던 시절을 쌓고, 질주 중에도 공격하므로 장미 버클러도 유지하세요.
+        take:
+          - Bear
+          - SprintArmor
+        stop: []
+      - when:
+          en: When you have 2+ Alien Heads
+          ko: 외계인 머리가 2개 이상이면
+        advice:
+          en: Glaive and Blink cooldowns drop by over 40%; extra Backup Magazines turn the Glaive into a near-constant attack.
+          ko: 레이저 글레이브와 점멸 쿨타임이 40% 넘게 줄어듭니다. 보조 탄창을 더하면 글레이브를 거의 계속 던질 수 있습니다.
+        take:
+          - SecondarySkillMagazine
+        stop: []
+    avoid:
+      - id: CritGlassesVoid
+        reason:
+          en: Corrupts all Lens-Maker's Glasses, gutting the crit Flurry depends on.
+          ko: 렌즈 제작자의 안경을 모두 오염시켜 광풍이 의존하는 치명타가 사라집니다.
+      - id: Behemoth
+        reason:
+          en: "Not bad, but weaker on Flurry: its 0.7 proc coefficient shrinks the explosion radius."
+          ko: 나쁘진 않지만 광풍의 프록 계수 0.7 때문에 폭발 범위가 줄어듭니다.
+    evidence: |-
+      Wiki gives the Flurry vs Strafe crit threshold (~16-21%), Predatory Instincts per-arrow triggering, Rose Buckler, Phase Blink preference, Ballista over Arrow Rain for single target, and Flurry's 0.7 proc coefficient penalty. Backup Magazine and Lens-Maker's are near-universal (Rogue Ranker, Nerd Lodge 2022, eXputer 2023, Steam discussion 2021). Crit/Scythe/Shatterspleen: Steam discussion (several posters), Nerd Lodge. Disagreements: Nerd Lodge prefers Blink over Phase Blink; the Steam thread disagrees on AtG and Ukulele (one poster dismisses them, another defends them). Lost Seer's avoid: Nerd Lodge + wiki. Stealthkit/Dio's: eXputer. 2026 tier lists (Choost, RottenWifi) still rate Huntress S-tier with Flurry proc items. No Huntress changes in the 2024-2025 patch notes checked.
+
+      Stack counts and progression: Crit threshold 16-21% and Flurry 0.7 proc coefficient: wiki Huntress page. Lens-Maker's 10 = 100% and stop-at-9: wiki item page; Rogue Ranker also gives '10 stacks = 100% crit, 6 arrows'. Predatory/Scythe/Afterburner non-stacking parts, Alien Head math, Tougher Times table: wiki item pages. 'A few stacks of Backup Magazine': Steam looping thread; Nerd Lodge calls Backup Magazine better than most legendaries on her. Pick order: Rogue Ranker core order (Backup Mag, Syringe, Lens-Maker's, Predatory, Ukulele, Wisp, AtG, Hoof), Nerd Lodge (Alien Head, Afterburner), Steam discussion (Scythe, Ceremonial Dagger, Shatterspleen). Loop items: GameDataCentral (Tougher Times, Dio's), Nerd Lodge (Polylute listed without detail), Steam discussion (Topaz Brooch + Shaped Glass, single poster). No boss pick order beyond Shatterspleen, so boss is left empty. Disagreement: Steam posters split on AtG and Ukulele. Steam guides returned HTTP 429 and Reddit could not be fetched.
+  - id: huntress-strafe-glaive-starter
+    title:
+      en: Strafe glaive starter
+      ko: 기동 사격 글레이브 입문
+    difficulty: beginner
+    summary:
+      en: Before you have crit (or before unlocking Flurry), Strafe's homing shots are stronger and let you keep moving. Lean on Laser Glaive for waves and move to Flurry once crit passes about 20%.
+      ko: 치명타가 없거나 광풍을 해금하기 전에는 유도되는 기동 사격이 더 강하고 계속 움직이며 싸울 수 있습니다. 레이저 글레이브로 적 무리를 처리하다가 치명타가 약 20%를 넘으면 광풍으로 바꾸세요.
+    loadout:
+      primary: HUNTRESS_PRIMARY_NAME
+      secondary: HUNTRESS_SECONDARY_NAME
+      utility: HUNTRESS_UTILITY_NAME
+      special: HUNTRESS_SPECIAL_ALT1_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Glaive starter
+          ko: 글레이브 기본
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: SecondarySkillMagazine
+            priority: core
+            note:
+              en: Extra Glaives are the backbone of this build.
+              ko: 추가 글레이브가 이 빌드의 핵심입니다.
+            stacks:
+              target: 4
+              min: 2
+            stacksReason:
+              en: linear +1 charge with no cap (wiki); loop players want 'a few stacks', so 4 charges is a solid goal.
+              ko: 위키 기준 개당 충전 +1로 상한이 없습니다. 루프 플레이어들이 '몇 개'는 원하므로 4개를 목표로 잡았습니다.
+          - id: Syringe
+            priority: core
+            note:
+              en: Faster Strafe.
+              ko: 기동 사격이 빨라집니다.
+            stacks:
+              target: 6
+            stacksReason:
+              en: +15% attack speed per stack, linear with no cap; whites also go to Backup Magazine and later glasses, so 6 (+90%) is a fair share.
+              ko: 개당 공격 속도 +15%로 선형이며 상한이 없습니다. 흰색은 보조 탄창과 나중의 안경에도 써야 하므로 6개(+90%)가 적당합니다.
+          - id: Crowbar
+            priority: optional
+            note:
+              en: Big first hits; pairs with on-kill items.
+              ko: 첫 타격 피해가 커지고 처치 시 아이템과 어울립니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +75% per stack against enemies above 90% health; 3 (+225%) before other whites.
+              ko: 체력 90% 이상 적에게 개당 +75%라 3개(+225%)까지 챙기고, 그 뒤엔 다른 흰색을 고르세요.
+        next:
+          - glaive
+      - id: glaive
+        phase: mid
+        label:
+          en: Glaive bounce payoff
+          ko: 글레이브 튕김 활용
+        when:
+          en: "If you find Bands: the Glaive's last bounces are strong enough to trigger them."
+          ko: "반지를 얻었다면: 글레이브의 마지막 튕김은 반지를 발동시킬 만큼 강합니다."
+        items:
+          - id: FireRing
+            priority: optional
+            note:
+              en: Triggers on late Glaive bounces.
+              ko: 글레이브 후반 튕김에서 발동합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: Kjaro's Band damage grows linearly but the 10 s recharge never shrinks, so 2 before other greens.
+              ko: 캬로의 반지은 피해가 선형으로 늘지만 재충전 10초는 줄지 않아, 2개 뒤에는 다른 녹색 아이템이 낫습니다.
+          - id: IceRing
+            priority: optional
+            note:
+              en: Same trigger as Kjaro's.
+              ko: 캬로의 반지와 같은 조건입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: Runald's Band damage grows linearly but the 10 s recharge never shrinks, so 2 before other greens.
+              ko: 루널드의 반지은 피해가 선형으로 늘지만 재충전 10초는 줄지 않아, 2개 뒤에는 다른 녹색 아이템이 낫습니다.
+          - id: ExplodeOnDeath
+            priority: optional
+            note:
+              en: Chains kills through packs.
+              ko: 처치가 무리 전체로 이어집니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: damage +280% and radius +2.4 m per stack; 2 clear most packs, then other greens.
+              ko: 개당 피해 +280%, 반경 +2.4m입니다. 2개면 대부분의 무리를 정리하고, 그 뒤엔 다른 녹색 아이템을 고르세요.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Cooldowns and mobility
+          ko: 쿨타임과 기동력
+        when:
+          en: Legendary picks; switch to Flurry once crit reaches about 20%.
+          ko: 전설 아이템. 치명타가 약 20%가 되면 광풍으로 전환하세요.
+        items:
+          - id: AlienHead
+            priority: optional
+            note:
+              en: More frequent Glaives and Ballista.
+              ko: 글레이브와 발리스타를 더 자주 씁니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: "Rogue Ranker calls 1-2 Alien Heads the efficient range; wiki: two stacks cut cooldowns by 43.8%."
+              ko: Rogue Ranker는 외계인 머리 1~2개를 효율 구간으로 봅니다. 위키 기준 2개면 쿨타임이 43.8% 줄어듭니다.
+          - id: UtilitySkillMagazine
+            priority: optional
+            note:
+              en: Much more frequent Blink.
+              ko: 점멸을 훨씬 자주 씁니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: the 33% cooldown cut does not stack; one copy already gives +2 charges, extras only add charges.
+              ko: 쿨타임 33% 감소는 중첩되지 않고 1개로 충전 +2가 생깁니다. 추가분은 충전만 늘립니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Switch to crit Flurry
+          ko: 치명타 광풍으로 전환
+        when:
+          en: Once crit reaches about 20%, and before the first loop ends.
+          ko: 치명타가 약 20%에 도달하면, 늦어도 첫 루프 중에.
+        items:
+          - id: CritGlasses
+            priority: core
+            stacks:
+              target: 9
+              min: 2
+              max: 10
+            note:
+              en: About 2 stacks puts Flurry ahead of Strafe; 10 = 100% crit.
+              ko: 약 2개면 광풍이 기동 사격을 앞서고, 10개면 치명타 100%입니다.
+            stacksReason:
+              en: 10 = 100% crit; with a 5% crit item such as Predatory Instincts or Harvester's Scythe, 9 already reaches 100%.
+              ko: 위키 기준 10개면 치명타 100%입니다. 포식 본능이나 수확꾼의 낫 같은 5% 치명타 아이템이 있으면 9개로 100%가 됩니다.
+          - id: AttackSpeedOnCrit
+            priority: core
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Triggers per Flurry arrow once you crit.
+              ko: 치명타가 뜨면 광풍 화살마다 발동합니다.
+            stacksReason:
+              en: the first copy gives 5% crit and a 36% attack speed cap; a second raises the cap to 60%, then other greens give more.
+              ko: 첫 개가 치명타 5%와 공격 속도 상한 36%를, 두 번째가 상한 60%를 줍니다. 그 뒤로는 다른 녹색 아이템이 더 이득입니다.
+          - id: Bear
+            priority: optional
+            stacks:
+              target: 10
+              min: 4
+            note:
+              en: Loop defense for the lowest-HP survivor; 10 stacks = 60% block.
+              ko: 체력이 가장 낮은 생존자의 루프 방어용입니다. 10개면 막기 60%입니다.
+            stacksReason:
+              en: hyperbolic block chance, 10 stacks = 60% and each copy past 10 adds under 2.5 points; loop guides stack it to about 10.
+              ko: 위키 기준 쌍곡선 중첩이라 10개면 막기 60%이고, 10개 이후로는 개당 2.5%p도 안 늘어납니다. 루프 공략들도 10개 정도를 목표로 합니다.
+        next: []
+    pickOrder:
+      common:
+        - SecondarySkillMagazine
+        - Syringe
+        - Crowbar
+        - CritGlasses
+      uncommon:
+        - FireRing
+        - IceRing
+        - ExplodeOnDeath
+        - ChainLightning
+    milestones:
+      - when:
+          en: If you find Kjaro's or Runald's Band
+          ko: 캬로의 반지나 루널드의 반지를 얻었다면
+        advice:
+          en: The Glaive's final bounces hit hard enough to trigger Bands; take the other Band too.
+          ko: 레이저 글레이브의 마지막 튕김은 반지를 발동시킬 만큼 강합니다. 다른 반지도 챙기세요.
+        take:
+          - FireRing
+          - IceRing
+        stop: []
+      - when:
+          en: Once crit reaches about 20%
+          ko: 치명타 확률이 약 20%가 되면
+        advice:
+          en: Swap Strafe for Flurry and follow the crit Flurry build from here.
+          ko: 기동 사격을 광풍으로 바꾸고, 이후로는 치명타 광풍 빌드를 따르세요.
+        take:
+          - CritGlasses
+          - AttackSpeedOnCrit
+        stop:
+          - Crowbar
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Keep stacking Backup Magazine and add Tougher Times.
+          ko: 보조 탄창을 계속 쌓고 힘들었던 시절을 추가하세요.
+        take:
+          - SecondarySkillMagazine
+          - Bear
+        stop: []
+    avoid: []
+    evidence: |-
+      Strafe better until ~20% crit and 'Strafe for glaive builds': wiki and Steam discussion 2021. Glaive + Bands: wiki (final bounces trigger Bands) and Steam discussion. Backup Magazine: every source. Crowbar/Wisp: Steam 'Item Builds' guide (2022) and Steam discussion. Alien Head/Afterburner: Nerd Lodge and wiki item page. Mostly pre-SotS but no relevant changes found.
+
+      Stack counts and progression: This build is a starter that the tree itself says to leave at ~20% crit, so its loop node is the transition to the crit Flurry build (wiki crit threshold, Steam discussion 'Strafe for glaive builds'). Backup Magazine 'a few stacks': Steam looping thread. Afterburner non-stacking cooldown and Alien Head math: wiki. Stopping Crowbar after the switch is my inference (Flurry scales with crit, not first-hit damage), not a source number. Legendary order has only 2 ids because sources name no others for this variant.

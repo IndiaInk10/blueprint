@@ -1,0 +1,595 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: DroneTechBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: thin
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Operator
+  - https://riskofrain2.wiki.gg/wiki/Spare_Drone_Parts
+  - https://gamerant.com/risk-of-rain-2-ror2-best-operator-build-skills-playstyle-items-alloyed-collective/
+  - https://deltiasgaming.com/risk-of-rain-2-ror2-operator-build-guide-best-abilities-and-loadouts/
+  - https://rogueranker.com/operator-ror2/
+builds:
+  - id: dronetech-default-drone-commander
+    title:
+      en: Default drone commander
+      ko: 기본 드론 지휘관
+    difficulty: beginner
+    summary:
+      en: "Keep the default kit: Ascent Protocol is Operator's only real mobility, ADMIN-OVERRIDE makes drones use their specials with your items, and Ejection Core's Nano-Bug counts as a debuff. Buy extra Gunner drones early (start with two), then scale drones with Spare Drone Parts."
+      ko: 기본 스킬을 유지합니다. 승천 프로토콜은 오퍼레이터의 유일한 이동기이고, 관리자-오버라이드는 드론이 내 아이템을 들고 특수 스킬을 쓰게 하며, 사출 핵의 나노 버그는 디버프로 취급됩니다. 초반에 거너 드론을 추가로 사고(시작은 거너 2기), 드론 예비 부품으로 드론을 키우세요.
+    loadout:
+      primary: DRONETECH_PRIMARY_NAME
+      secondary: DRONETECH_SECONDARY_NAME
+      utility: DRONETECH_UTILITY_NAME
+      special: DRONETECH_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Fix the weak early game
+          ko: 약한 초반 보완
+        when:
+          en: Stage 1-2. Also spend gold on Gunner drones.
+          ko: 1~2스테이지. 골드는 거너 드론 구매에도 쓰세요.
+        items:
+          - id: Crowbar
+            priority: core
+            note:
+              en: Consensus core pick for burst on healthy enemies.
+              ko: 여러 가이드가 공통으로 꼽는 핵심 아이템으로, 체력이 많은 적에게 폭딜을 줍니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: every source's core pick; 5 copies give +375% on healthy enemies, linear (wiki).
+              ko: 모든 출처가 꼽는 핵심 아이템으로, 5개면 체력이 많은 적에게 +375%입니다(위키).
+          - id: SecondarySkillMagazine
+            priority: core
+            note:
+              en: Extra ADMIN-OVERRIDE charge.
+              ko: 관리자-오버라이드 충전을 늘립니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +1 ADMIN-OVERRIDE charge per copy (wiki); 3 lets you trigger drone specials four times in a row.
+              ko: 1개당 관리자-오버라이드 충전 +1(위키)이라 3개면 드론 특수 스킬을 네 번 연속 발동할 수 있습니다.
+          - id: CritAtLowerElevation
+            priority: optional
+            note:
+              en: Crit chance; Lens-Maker's Glasses does the same job.
+              ko: 치명타 확률을 줍니다. 렌즈 제작자의 안경으로 대체 가능합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: each copy adds 1% crit per buff, up to 10 buffs (wiki); 3 copies reach up to +30% crit.
+              ko: 1개당 버프마다 치명타 1%, 최대 10버프(위키)라 3개면 치명타가 최대 +30%입니다.
+          - id: StickyBomb
+            priority: optional
+            note:
+              en: Extra on-hit damage.
+              ko: 적중 시 추가 피해입니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies give a 15% bomb chance on hit (+5% each, wiki).
+              ko: 3개면 적중 시 폭탄 확률 15%입니다(1개당 +5%, 위키).
+          - id: Syringe
+            priority: optional
+            note:
+              en: Faster primary fire.
+              ko: 주 무기 연사가 빨라집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: optional here; 3 copies give +45% primary fire rate.
+              ko: 선택 아이템이라 3개(공격 속도 +45%)면 충분합니다.
+        next:
+          - bands
+          - deathmark
+      - id: bands
+        phase: mid
+        label:
+          en: Bands and drone count
+          ko: 반지와 드론 수
+        when:
+          en: Default mid-game path.
+          ko: 기본 중반 경로.
+        items:
+          - id: IceRing
+            priority: core
+            note:
+              en: Named as one of three core items by Deltia's.
+              ko: Deltia's가 꼽은 세 가지 핵심 아이템 중 하나입니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: Deltia's core item; +250% per copy on a fixed 10s recharge (wiki), so 3 is a solid stack.
+              ko: Deltia's 핵심 아이템이며, 10초 고정 재충전에 1개당 +250%(위키)라 3개면 든든합니다.
+          - id: FireRing
+            priority: optional
+            note:
+              en: Same big-hit trigger as Runald's.
+              ko: 루널드의 반지와 같은 강타 조건으로 발동합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +300% per copy on a fixed 10s recharge (wiki); 2 as a second band behind Runald's.
+              ko: 10초 고정 재충전에 1개당 +300%(위키)이며, 루널드의 반지 다음 보조 반지로 2개면 됩니다.
+          - id: DronesDropDynamite
+            priority: optional
+            note:
+              en: Grants an extra drone ally (Alloyed Collective item).
+              ko: 추가 드론 아군을 줍니다(Alloyed Collective 아이템).
+            stacks:
+              target: 2
+            stacksReason:
+              en: one copy grants Lt. Droneboy; each extra adds +85% dynamite damage for every drone (wiki).
+              ko: 1개로 Lt. 드론보이를 얻고, 추가분은 모든 드론의 다이너마이트 피해를 85%씩 올립니다(위키).
+          - id: ChainLightning
+            priority: optional
+            note:
+              en: Chain lightning from many drone hits.
+              ko: 많은 드론 타격으로 연쇄 번개를 냅니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies chain to 5 targets; each copy adds +2 targets and +2m range (wiki).
+              ko: 2개면 5명까지 연쇄되며, 1개당 대상 +2, 범위 +2m씩 늘어납니다(위키).
+        next:
+          - late
+      - id: deathmark
+        phase: mid
+        label:
+          en: Nano-Bug Death Mark
+          ko: 나노 버그 죽음의 표식
+        when:
+          en: "Take when you find Death Mark: Ejection Core already supplies one debuff."
+          ko: 죽음의 표식을 찾았을 때. 사출 핵이 디버프 하나를 이미 걸어 줍니다.
+        items:
+          - id: DeathMark
+            priority: core
+            note:
+              en: Nano-Bugged counts, so you only need three more debuffs.
+              ko: 나노 버그가 포함되어 디버프 3개만 더 있으면 됩니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: Nano-Bug already counts as one debuff; extra copies only add +7s mark duration (wiki).
+              ko: 나노 버그가 이미 디버프 하나로 계산되며, 추가분은 표식 지속 시간만 7초씩 늘립니다(위키).
+          - id: BleedOnHit
+            priority: optional
+            note:
+              en: Bleed debuff.
+              ko: 출혈 디버프입니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 10
+            stacksReason:
+              en: 30% bleed per hit is enough to keep a bleed up for Death Mark on multi-hit attacks; 10 (100%) is the cap (wiki).
+              ko: 다단히트라면 출혈 30%로도 죽음의 표식용 출혈을 꾸준히 걸 수 있습니다. 10개(100%)가 상한입니다(위키).
+          - id: SlowOnHit
+            priority: optional
+            note:
+              en: Slow debuff.
+              ko: 둔화 디버프입니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: Taken only as a cheap debuff for Death Mark; extra copies just add +2s of slow (wiki).
+              ko: 죽음의 표식용 디버프로만 쓰며, 추가분은 둔화 시간만 2초씩 늘립니다(위키).
+          - id: IgniteOnKill
+            priority: optional
+            note:
+              en: Burn debuff on kills.
+              ko: 처치 시 화상 디버프입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies widen the ignite to 16m and add burn damage (+4m, +75% per copy, wiki).
+              ko: 2개면 점화 범위가 16m가 되고 화상 피해도 늘어납니다(1개당 +4m, +75%, 위키).
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Drone army scaling
+          ko: 드론 부대 성장
+        when:
+          en: Red and boss items; Spare Drone Parts is the key legendary.
+          ko: 빨간·보스 아이템. 드론 예비 부품이 핵심 전설 아이템입니다.
+        items:
+          - id: DroneWeapons
+            priority: core
+            note:
+              en: Col. Droneman plus attack speed, missiles and a chaingun for every drone. Nerfed 50% in Alloyed Collective but still top priority.
+              ko: Col. 드론맨과 함께 모든 드론에 공격 속도·미사일·체인건을 줍니다. Alloyed Collective에서 50% 너프됐지만 여전히 최우선입니다.
+            stacks:
+              target: 4
+              min: 1
+            stacksReason:
+              en: 4 stacks = +100% drone attack speed after the 50% nerf, and more is still worth it.
+              ko: 50% 너프 후 4개면 드론 공격 속도 +100%이며, 그 이상도 가치가 있습니다.
+          - id: PermanentDebuffOnHit
+            priority: optional
+            note:
+              en: Permanent armor reduction per hit.
+              ko: 타격마다 영구 방어력 감소를 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy already shreds 2 armor on every hit and adds a debuff; extras shred faster.
+              ko: 1개만으로 매 적중마다 방어력을 2씩 깎고 디버프를 더합니다. 추가분은 더 빨리 깎습니다.
+          - id: RoboBallBuddy
+            priority: situational
+            note:
+              en: Boss item that summons more allies.
+              ko: 아군을 더 소환하는 보스 아이템입니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: probes gain +100% damage per ally per copy (wiki), so each copy scales with your drone count; 2 is realistic for a boss item.
+              ko: 1개당 아군 1명마다 탐사선 피해 +100%(위키)라 드론이 많을수록 강합니다. 보스 아이템이라 2개가 현실적입니다.
+          - id: CritDamage
+            priority: situational
+            note:
+              en: Only with crit from Hiker's Boots or glasses.
+              ko: 하이커 장화나 안경으로 치명타를 확보했을 때만.
+            stacks:
+              target: 1
+            stacksReason:
+              en: situational without high crit; one copy is enough unless crit chance is near 100%.
+              ko: 치명타 확률이 높지 않으면 상황용이라, 100% 근처가 아니면 1개로 충분합니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Scale the whole fleet
+          ko: 드론 부대 전체 키우기
+        when:
+          en: After the first loop, once Spare Drone Parts is in hand.
+          ko: 첫 루프 이후, 드론 예비 부품을 얻은 뒤.
+        items:
+          - id: DroneWeapons
+            priority: core
+            stacks:
+              target: 4
+              min: 2
+            note:
+              en: Keep stacking; every drone, probe and Col. Droneman gets the attack speed and cooldowns.
+              ko: 계속 쌓으세요. 모든 드론, 탐사선, Col. 드론맨이 공격 속도와 쿨다운 감소를 받습니다.
+            stacksReason:
+              en: 4 stacks = +100% drone attack speed after the 50% nerf, and more is still worth it.
+              ko: 50% 너프 후 4개면 드론 공격 속도 +100%이며, 그 이상도 가치가 있습니다.
+          - id: RoboBallBuddy
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Probes get Spare Drone Parts buffs and scale with ally count.
+              ko: 탐사선도 드론 예비 부품 버프를 받고 아군 수에 비례해 강해집니다.
+            stacksReason:
+              en: probes gain +100% damage per ally per copy (wiki), so each copy scales with your drone count; 2 is realistic for a boss item.
+              ko: 1개당 아군 1명마다 탐사선 피해 +100%(위키)라 드론이 많을수록 강합니다. 보스 아이템이라 2개가 현실적입니다.
+          - id: DronesDropDynamite
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Another drone ally (Lt. Droneboy) and dynamite from every drone.
+              ko: 드론 아군(Lt. 드론보이)이 하나 늘고 모든 드론이 다이너마이트를 떨어뜨립니다.
+            stacksReason:
+              en: one copy grants Lt. Droneboy; each extra adds +85% dynamite damage for every drone (wiki).
+              ko: 1개로 Lt. 드론보이를 얻고, 추가분은 모든 드론의 다이너마이트 피해를 85%씩 올립니다(위키).
+          - id: PermanentDebuffOnHit
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: Permanent armor shred from every hit keeps bosses soft.
+              ko: 모든 타격이 방어력을 영구히 깎아 보스를 무르게 만듭니다.
+            stacksReason:
+              en: one copy already shreds 2 armor on every hit and adds a debuff; extras shred faster.
+              ko: 1개만으로 매 적중마다 방어력을 2씩 깎고 디버프를 더합니다. 추가분은 더 빨리 깎습니다.
+        next: []
+    pickOrder:
+      common:
+        - Crowbar
+        - SecondarySkillMagazine
+        - CritAtLowerElevation
+        - CritGlasses
+        - StickyBomb
+        - Syringe
+      uncommon:
+        - IceRing
+        - FireRing
+        - DronesDropDynamite
+        - DeathMark
+        - ChainLightning
+        - Missile
+      legendary:
+        - DroneWeapons
+        - PermanentDebuffOnHit
+        - CritDamage
+    milestones:
+      - when:
+          en: Early stages
+          ko: 초반 스테이지
+        advice:
+          en: Spend gold on Gunner drones as well as items. Guides agree drones amplify your items, so don't skip them.
+          ko: 골드를 아이템뿐 아니라 거너 드론에도 쓰세요. 가이드들은 드론이 아이템 효과를 키워 준다며 드론을 거르지 말라고 합니다.
+        take: []
+        stop: []
+      - when:
+          en: Once you have about 8 drones
+          ko: 드론이 8기 정도 모이면
+        advice:
+          en: Spare Drone Parts becomes the top red pick and a big power spike (Rogue Ranker).
+          ko: 드론 예비 부품이 최우선 빨간 아이템이 되며 큰 전력 상승을 줍니다(Rogue Ranker).
+        take:
+          - DroneWeapons
+        stop: []
+      - when:
+          en: Once crit chance reaches 100%
+          ko: 치명타 확률이 100%에 도달하면
+        advice:
+          en: Stop taking Lens-Maker's Glasses (10, or 9 with Predatory Instincts or Harvester's Scythe) and put reds into Laser Scope.
+          ko: 렌즈 제작자의 안경(10개, 포식 본능이나 수확꾼의 낫이 있으면 9개)은 그만 챙기고 빨간 아이템은 레이저 스코프에 쓰세요.
+        take:
+          - CritDamage
+        stop:
+          - CritGlasses
+      - when:
+          en: When you approach about 15 allies
+          ko: 아군이 15기 가까이 되면
+        advice:
+          en: Past the ally cap, items can't spawn new allies and stronger drones can't come back once destroyed. Combine matching drones at a Drone Combiner Station, but note it lowers the ally count Empathy Cores scales with.
+          ko: 아군 상한을 넘으면 아이템이 새 아군을 소환하지 못하고, 파괴된 강한 드론도 다시 나오지 않습니다. 드론 결합 스테이션에서 같은 드론을 합치되, 아군 수가 줄어 공감 코어가 약해진다는 점은 감안하세요.
+        take: []
+        stop: []
+    avoid: []
+    evidence: |-
+      Default loadout: Game Rant (Nov 2025) and Deltia's (Nov 2025). Crowbar is in every source; Runald's Band + Spare Drone Parts: Deltia's; Backup Magazine, Hiker's Boots/Lens-Maker's, Sticky Bomb, Box of Dynamite, Kjaro's/Runald's Band, Symbiotic Scorpion, Empathy Cores, Laser Scope, Ukulele and the Death Mark + Tri-Tip/Chronobauble/Gasoline combo: Game Rant. Two Gunner drones at start: Game Rant + Rogue Ranker. Soldier's Syringe: Rogue Ranker. PATCH-SENSITIVE: Spare Drone Parts was cut 50% in Alloyed Collective (wiki); the Deltia's claim that it is irreplaceable predates any follow-up tuning. V1.4.1 stopped items from proccing on Amp Core damage and fixed excess Bolstering Lantern stacks. A Nov 2025 aggregator (md-eksperiment) rates Orphaned Core S-tier, but its item descriptions did not match the wiki, so it is not used. No source lists items to avoid.
+
+      Stack counts and progression: Spare Drone Parts values (25% linear attack speed, 25% exponential cooldown reduction after the Alloyed Collective 50% cut) and the ~15 ally cap: wiki item page. Rogue Ranker (undated, post-DLC): 8+ drones power spike, 'do not neglect drones for items', 4 stacks = +100% attack speed, Spare Drone Parts still worth stacking. Empathy Cores scaling, which allies count, and Spare Drone Parts applying to probes: wiki. Drone Combiner tiers and the note that fewer allies weaken Empathy Cores: wiki Drone Combiner Station page. Pick order follows Game Rant (Nov 21 2025) core/rarity lists with Crowbar first (every source) and Runald's Band first among greens (Deltia's core three). Deltia's pages blocked direct fetch (HTTP 405). A search snippet claimed '20+ unit armies by loop 2'; its source was unclear (possibly the md-eksperiment aggregator the build file already rejects), so it is not used. No boss-tier order: only Empathy Cores is source-backed.
+  - id: dronetech-cmd-swarm-crit-amp-core
+    title:
+      en: CMD-SWARM crit + Amp Core
+      ko: CMD-스웜 치명타 + 증폭 핵
+    difficulty: intermediate
+    summary:
+      en: "Rogue Ranker's higher-ceiling setup: CMD-SWARM rams drones into painted targets (crits also ignite), and Amp Core stores damage and explodes for up to 2000%. Build crit and drone scaling."
+      ko: Rogue Ranker가 제시한 고점형 구성입니다. CMD-스웜은 표시한 적에게 드론을 돌진시키고(치명타 시 점화), 증폭 핵은 피해를 흡수해 최대 2000%로 폭발합니다. 치명타와 드론 성장 아이템을 모읍니다.
+    loadout:
+      primary: DRONETECH_PRIMARY_NAME
+      secondary: DRONETECH_SECONDARY_ALT_NAME
+      utility: DRONETECH_UTILITY_NAME
+      special: DRONETECH_SPECIAL_ALT_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Damage and crit
+          ko: 피해와 치명타
+        when:
+          en: Stage 1-2; prioritize Gunner drones before items.
+          ko: 1~2스테이지. 아이템보다 거너 드론을 먼저 사세요.
+        items:
+          - id: Crowbar
+            priority: core
+            note:
+              en: The wiki notes Amp Core scales strongly with Crowbar.
+              ko: 위키에 따르면 증폭 핵은 쇠지렛대로 크게 강해집니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: the wiki notes Amp Core scales strongly with Crowbar; 5 copies give +375%, linear.
+              ko: 위키에 따르면 증폭 핵는 쇠지렛대와 잘 맞습니다. 5개면 +375% 선형입니다.
+          - id: Syringe
+            priority: optional
+            note:
+              en: Faster primary.
+              ko: 주 무기 속도를 올립니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: optional here; 3 copies give +45% primary fire rate.
+              ko: 선택 아이템이라 3개(공격 속도 +45%)면 충분합니다.
+          - id: Hoof
+            priority: optional
+            note:
+              en: Mobility.
+              ko: 기동성입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: optional mobility; 2 copies give +28% move speed.
+              ko: 선택 기동성 아이템이라 2개(이동 속도 +28%)면 됩니다.
+        next:
+          - crit
+      - id: crit
+        phase: mid
+        label:
+          en: Crit on-hit
+          ko: 치명타 적중 효과
+        when:
+          en: Mid game.
+          ko: 중반.
+        items:
+          - id: AttackSpeedOnCrit
+            priority: optional
+            note:
+              en: Crit chance and attack speed on crit.
+              ko: 치명타 확률과 치명타 시 공격 속도입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: its 5% crit does not stack, but each copy raises the attack-speed cap by 24% (wiki); 2 gives a 60% cap.
+              ko: 치명타 5%는 중첩되지 않지만 1개당 공격 속도 상한이 24%씩 오릅니다(위키). 2개면 상한 60%입니다.
+          - id: HealOnCrit
+            priority: optional
+            note:
+              en: Healing on crit.
+              ko: 치명타 시 회복합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: the 5% crit only comes once; extras add just +4 heal per crit (wiki).
+              ko: 치명타 5%는 1개에서만 얻고, 추가분은 치명타당 회복만 4씩 늘립니다(위키).
+          - id: ChainLightning
+            priority: optional
+            note:
+              en: Chain lightning.
+              ko: 연쇄 번개입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies chain to 5 targets; each copy adds +2 targets and +2m range (wiki).
+              ko: 2개면 5명까지 연쇄되며, 1개당 대상 +2, 범위 +2m씩 늘어납니다(위키).
+          - id: Missile
+            priority: optional
+            note:
+              en: Extra on-hit damage.
+              ko: 적중 시 추가 피해입니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: linear +300% missile damage per copy at a fixed 10% chance (wiki); 3 is a solid uncommon stack.
+              ko: 발동 확률 10%는 고정이고 1개당 미사일 피해가 +300%씩 선형으로 늘어나(위키) 3개면 든든합니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Drone legendary
+          ko: 드론 전설 아이템
+        when:
+          en: Whenever a red appears.
+          ko: 빨간 아이템이 나오면.
+        items:
+          - id: DroneWeapons
+            priority: core
+            note:
+              en: Called the single most important item for Operator (now nerfed 50%).
+              ko: 오퍼레이터에게 가장 중요한 아이템으로 꼽힙니다(현재 50% 너프됨).
+            stacks:
+              target: 4
+              min: 1
+            stacksReason:
+              en: 4 stacks = +100% drone attack speed after the 50% nerf, and more is still worth it.
+              ko: 50% 너프 후 4개면 드론 공격 속도 +100%이며, 그 이상도 가치가 있습니다.
+          - id: CritDamage
+            priority: situational
+            note:
+              en: Game Rant's general Operator list; scales the crits this loadout builds.
+              ko: Game Rant의 오퍼레이터 공통 추천 아이템으로, 이 구성이 쌓는 치명타를 키웁니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: once crit is capped, each copy is +100% damage on every hit (wiki); 3 is a strong legendary stack.
+              ko: 치명타가 100%가 되면 1개마다 모든 공격 피해가 +100%입니다(위키). 3개면 강력합니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Guaranteed crits
+          ko: 치명타 확정
+        when:
+          en: After the first loop, when you want every CMD-SWARM ram to crit and ignite.
+          ko: 첫 루프 이후, CMD-스웜 돌진이 모두 치명타로 점화되게 하고 싶을 때.
+        items:
+          - id: CritGlasses
+            priority: core
+            stacks:
+              target: 10
+              min: 9
+              max: 10
+            note:
+              en: CMD-SWARM crits also ignite (wiki). 10 = 100% crit, or 9 with Predatory Instincts or Harvester's Scythe.
+              ko: CMD-스웜은 치명타 시 점화도 겁니다(위키). 10개면 치명타 100%, 포식 본능이나 수확꾼의 낫이 있으면 9개입니다.
+            stacksReason:
+              en: "CMD-SWARM crits also ignite, so aim for 100% crit: 10 copies, or 9 with Predatory Instincts or Harvester's Scythe (wiki)."
+              ko: CMD-SWARM 치명타는 점화도 걸기 때문에 치명타 100%를 노리세요. 10개, 포식 본능이나 수확꾼의 낫이 있으면 9개입니다(위키).
+          - id: CritDamage
+            priority: core
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: Once crit is capped, every Laser Scope is pure damage.
+              ko: 치명타가 가득 차면 레이저 스코프 1개가 모두 순수 피해 증가입니다.
+            stacksReason:
+              en: once crit is capped, each copy is +100% damage on every hit (wiki); 3 is a strong legendary stack.
+              ko: 치명타가 100%가 되면 1개마다 모든 공격 피해가 +100%입니다(위키). 3개면 강력합니다.
+          - id: DroneWeapons
+            priority: core
+            stacks:
+              target: 4
+              min: 2
+            note:
+              en: Keep stacking for the whole fleet.
+              ko: 드론 부대 전체를 위해 계속 쌓으세요.
+            stacksReason:
+              en: 4 stacks = +100% drone attack speed after the 50% nerf, and more is still worth it.
+              ko: 50% 너프 후 4개면 드론 공격 속도 +100%이며, 그 이상도 가치가 있습니다.
+        next: []
+    pickOrder:
+      common:
+        - Crowbar
+        - Syringe
+        - Hoof
+        - CritGlasses
+      uncommon:
+        - ChainLightning
+        - Missile
+        - AttackSpeedOnCrit
+        - HealOnCrit
+    milestones:
+      - when:
+          en: Once you have about 8 drones
+          ko: 드론이 8기 정도 모이면
+        advice:
+          en: Spare Drone Parts becomes the top red pick (Rogue Ranker).
+          ko: 드론 예비 부품이 최우선 빨간 아이템이 됩니다(Rogue Ranker).
+        take:
+          - DroneWeapons
+        stop: []
+      - when:
+          en: Once crit chance reaches 100%
+          ko: 치명타 확률이 100%에 도달하면
+        advice:
+          en: Stop taking Lens-Maker's Glasses and put reds into Laser Scope.
+          ko: 렌즈 제작자의 안경은 그만 챙기고 빨간 아이템은 레이저 스코프에 쓰세요.
+        take:
+          - CritDamage
+        stop:
+          - CritGlasses
+      - when:
+          en: When choosing items for Amp Core
+          ko: 증폭 핵용 아이템을 고를 때
+        advice:
+          en: Since V1.4.1, Amp Core's explosion no longer procs on-hit items. Build its damage with flat multipliers such as Crowbar, not proc items.
+          ko: V1.4.1부터 증폭 핵 폭발은 적중 효과 아이템을 발동하지 않습니다. 발동형 아이템보다 쇠지렛대 같은 피해 배율 아이템으로 키우세요.
+        take:
+          - Crowbar
+        stop: []
+    avoid: []
+    evidence: |-
+      Single source for the loadout: Rogue Ranker (undated, post-DLC) recommends CMD-SWARM and Amp Core once unlocked, plus Spare Drone Parts, Soldier's Syringe, Crowbar, Ukulele, AtG Missile, Paul's Goat Hoof, Predatory Instincts, Harvester's Scythe. Crowbar/Amp Core scaling: wiki. Game Rant and Deltia's instead recommend the default kit, so sources disagree on skills. PATCH-SENSITIVE: V1.4.1 prevents item procs on Amp Core damage. Laser Scope in the late node is borrowed from Game Rant's general Operator list, not from a CMD-SWARM-specific source.
+
+      Stack counts and progression: Thin, single-source loadout (Rogue Ranker, undated post-DLC). CMD-SWARM crits igniting, Amp Core scaling with Crowbar: Operator wiki. V1.4.1 'no item procs on Amp Core damage': patch notes cited in the build file. Glasses cap (10, or 9 with Predatory/Harvester): wiki. Pick order follows Rogue Ranker's order (Syringe, Ukulele, AtG, Predatory; Crowbar, Hoof, Harvester), Crowbar first because every source names it. Pushing crit to 100% in loops is an inference from the wiki crit-ignite mechanic plus Rogue Ranker's crit items, not a guide's explicit advice. No legendary or boss order: only Spare Drone Parts and Laser Scope are backed.

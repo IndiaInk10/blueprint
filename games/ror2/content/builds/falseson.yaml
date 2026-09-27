@@ -1,0 +1,635 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: FalseSonBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: mixed
+sources:
+  - https://riskofrain2.wiki.gg/wiki/False_Son
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.8
+  - https://gamerant.com/risk-of-rain-2-ror-2-best-false-son-build-items/
+  - https://rogueranker.com/false-son-ror2/
+builds:
+  - id: falseson-bonus-health-growth-tank
+    title:
+      en: Bonus-health Growth tank
+      ko: 추가 체력 성장 탱커
+    difficulty: beginner
+    summary:
+      en: False Son's Growth turns bonus max health (not base or level health) into extra Lunar Spike stocks, which feeds his passive and longer Laser of the Father. Stack health, add strong on-hit/proc items that exploit his high proc coefficients, and finish bosses with the laser.
+      ko: 거짓된 자손의 성장은 추가 최대 체력(기본·레벨 체력 제외)을 달의 쐐기 충전으로 바꾸고, 이것이 패시브와 더 긴 아버지의 광선으로 이어집니다. 체력을 쌓고, 높은 발동 계수를 활용하는 적중 효과 아이템을 더해, 보스는 광선으로 마무리합니다.
+    loadout:
+      primary: FALSESON_PRIMARY_NAME
+      secondary: FALSESON_SECONDARY_NAME
+      utility: FALSESON_UTILITY_NAME
+      special: FALSESON_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Early health and clear
+          ko: 초반 체력과 정리력
+        when:
+          en: Stage 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: FlatHealth
+            priority: core
+            note:
+              en: Flat bonus health feeds Growth directly.
+              ko: 고정 추가 체력이 곧바로 성장으로 이어집니다.
+            stacks:
+              target: 6
+              min: 1
+            stacksReason:
+              en: Rogue Ranker says to stack health early; 6 copies add 150 bonus health for Growth, linear (+25 each, wiki).
+              ko: Rogue Ranker는 초반부터 체력을 쌓으라고 합니다. 6개면 성장에 쓰이는 추가 체력 +150입니다(1개당 +25, 위키).
+          - id: BleedOnHit
+            priority: core
+            note:
+              en: Club and Lunar Spikes have good proc coefficients, so bleeds apply often.
+              ko: 둔기와 달의 쐐기는 발동 계수가 좋아 출혈이 자주 걸립니다.
+            stacks:
+              target: 5
+              min: 1
+              max: 10
+            stacksReason:
+              en: Club and Lunar Spikes proc well, so 50% bleed keeps bleeds up; 10 (100%) is the cap (wiki).
+              ko: 곤봉과 달의 쐐기는 발동 계수가 좋아 출혈 50%면 꾸준히 걸립니다. 10개(100%)가 상한입니다(위키).
+          - id: Crowbar
+            priority: optional
+            note:
+              en: Amplifies the big Club swings and slams.
+              ko: 강력한 둔기 휘두르기와 내려찍기를 강화합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 copies give +225% on healthy enemies, enough to open fights; linear (wiki).
+              ko: 3개면 체력이 많은 적에게 +225%로 첫 타가 충분히 강하며, 선형입니다(위키).
+          - id: IncreasePrimaryDamage
+            priority: optional
+            note:
+              en: Charges from secondary use are spent by primary slams as lightning strikes.
+              ko: 보조 스킬 사용으로 쌓인 충전이 둔기 공격에서 번개로 나갑니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: each copy adds +1 max charge and +50% lightning damage (wiki); 2 is plenty for an off-role green.
+              ko: 1개당 최대 충전 +1, 번개 피해 +50%(위키)라 보조 역할이면 2개로 충분합니다.
+          - id: Feather
+            priority: optional
+            note:
+              en: He is slow; extra jumps help mobility.
+              ko: 느린 캐릭터라 추가 점프가 기동성을 보완합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: he is slow, and 2 copies give two extra jumps for mobility (+1 per copy, wiki).
+              ko: 느린 생존자라 2개면 추가 점프 2회로 기동성이 생깁니다(1개당 +1, 위키).
+        next:
+          - health
+          - damage
+      - id: health
+        phase: mid
+        label:
+          en: Stack bonus health
+          ko: 추가 체력 쌓기
+        when:
+          en: Default path; take health whenever offered.
+          ko: 기본 경로입니다. 체력 아이템은 보이면 챙기세요.
+        items:
+          - id: Infusion
+            priority: core
+            note:
+              en: Kills permanently raise max health.
+              ko: 처치할 때마다 최대 체력이 영구히 오릅니다.
+            stacks:
+              target: 2
+              min: 1
+              max: 2
+            stacksReason:
+              en: A Steam player says one or two is enough before it falls off; each copy needs 100 more kills to fill.
+              ko: Steam 플레이어 의견으로 1~2개면 충분하고, 1개 늘 때마다 100킬을 더 해야 다 찹니다.
+          - id: BonusHealthBoost
+            priority: optional
+            note:
+              en: Boosts bonus health gains by 50% (Alloyed Collective item).
+              ko: 추가 체력 획득량을 50% 늘립니다(Alloyed Collective 아이템).
+            stacks:
+              target: 1
+            stacksReason:
+              en: the first copy gives +50% bonus health, extras only +15% each (wiki).
+              ko: 1개째가 추가 체력 +50%를 주고, 이후로는 1개당 +15%뿐입니다(위키).
+          - id: CookedSteak
+            priority: optional
+            note:
+              en: Flat plus percent health (Alloyed Collective cooked item).
+              ko: 고정+비율 체력을 줍니다(Alloyed Collective 요리 아이템).
+            stacks:
+              target: 2
+            stacksReason:
+              en: +50 health and +5% max health per copy, linear (wiki); 2 is realistic for a cooked item.
+              ko: 1개당 체력 +50과 최대 체력 +5% 선형(위키)이며, 요리 아이템이라 2개가 현실적입니다.
+          - id: SpeedOnPickup
+            priority: optional
+            note:
+              en: "Wiki lists it as a synergy: stat buffs on pickups."
+              ko: 위키가 시너지로 꼽는 아이템으로, 획득 시 능력치가 오릅니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies allow 5 buff stacks (+15% all stats, including health); +2 stacks per copy (wiki).
+              ko: 2개면 버프가 5중첩(체력 포함 모든 능력치 +15%)까지 쌓입니다(1개당 +2중첩, 위키).
+        next:
+          - late
+      - id: damage
+        phase: mid
+        label:
+          en: Proc damage
+          ko: 발동형 피해
+        when:
+          en: Take when clear speed or boss damage is lagging.
+          ko: 정리 속도나 보스 딜이 부족할 때.
+        items:
+          - id: IgniteOnKill
+            priority: optional
+            note:
+              en: Kill chains in packs, pairs with Ignition Tank.
+              ko: 무리 처치 연쇄를 일으키며 점화 탱크와 어울립니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies widen the ignite to 16m and add burn damage (+4m, +75% per copy, wiki).
+              ko: 2개면 점화 범위가 16m가 되고 화상 피해도 늘어납니다(1개당 +4m, +75%, 위키).
+          - id: ChainLightning
+            priority: optional
+            note:
+              en: Proc damage from high-coefficient hits.
+              ko: 높은 계수 타격으로 발동하는 추가 피해입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies chain to 5 targets; each copy adds +2 targets and +2m range (wiki).
+              ko: 2개면 5명까지 연쇄되며, 1개당 대상 +2, 범위 +2m씩 늘어납니다(위키).
+          - id: Missile
+            priority: optional
+            note:
+              en: Secondary damage source.
+              ko: 보조 피해원입니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: linear +300% missile damage per copy at a fixed 10% chance (wiki); 3 is a solid uncommon stack.
+              ko: 발동 확률 10%는 고정이고 1개당 미사일 피해가 +300%씩 선형으로 늘어나(위키) 3개면 든든합니다.
+          - id: BossDamageBonus
+            priority: optional
+            note:
+              en: Boss damage for his laser-reliant single-target phase.
+              ko: 광선에 의존하는 단일 대상 보스전 피해를 올립니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: 5 copies give +100% boss damage for the laser phase, linear (+20% each, wiki).
+              ko: 5개면 레이저로 마무리하는 보스전에서 보스 피해 +100%입니다(1개당 +20%, 위키).
+          - id: DeathMark
+            priority: situational
+            note:
+              en: Lunar Spikes' Lunar Ruin plus bleed/burn reach the debuff threshold.
+              ko: 달의 쐐기의 달의 파멸과 출혈·화상으로 디버프 조건을 채웁니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: One copy gives the full +50% damage taken; extra copies only add +7s mark duration (wiki).
+              ko: 1개로 받는 피해 +50% 효과를 모두 얻고, 추가분은 표식 지속 시간만 7초씩 늘립니다(위키).
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late health and boss killers
+          ko: 후반 체력과 보스 처치
+        when:
+          en: Boss items and red chests from stage 4-5 on.
+          ko: 4~5스테이지부터 보스 아이템·빨간 상자.
+        items:
+          - id: Knurl
+            priority: core
+            note:
+              en: Large health and regen boost for Growth.
+              ko: 성장에 도움이 되는 큰 체력과 재생입니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +40 health and +1.6 hp/s per copy, linear (wiki); 3 is a good boss-item count for a health-stacking build.
+              ko: 1개당 체력 +40, 재생 +1.6 선형(위키)이라 체력을 쌓는 빌드에서는 보스 아이템 3개를 목표로 하세요.
+          - id: Pearl
+            priority: situational
+            note:
+              en: Percent max health from the Cleansing Pool.
+              ko: 정화의 웅덩이에서 얻는 비율 최대 체력입니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: +10% max health per copy, linear (wiki); 2 is realistic from Cleansing Pools.
+              ko: 1개당 최대 체력 +10% 선형(위키)이며, 정화의 웅덩이에서는 2개가 현실적입니다.
+          - id: PermanentDebuffOnHit
+            priority: optional
+            note:
+              en: His rapid laser hits shred armor quickly.
+              ko: 빠르게 적중하는 광선으로 방어력을 빨리 깎습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy already shreds 2 armor on every hit and adds a debuff; extras shred faster.
+              ko: 1개만으로 매 적중마다 방어력을 2씩 깎고 디버프를 더합니다. 추가분은 더 빨리 깎습니다.
+          - id: IncreaseHealing
+            priority: optional
+            note:
+              en: Doubles healing including Lunar Tampering regen.
+              ko: 달의 간섭 재생을 포함한 모든 회복을 두 배로 합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one legendary copy already doubles healing and Lunar Tampering regen (+100% each, wiki).
+              ko: 전설 아이템 1개로 회복과 달의 간섭 재생이 두 배가 됩니다(1개당 +100%, 위키).
+          - id: BoostAllStats
+            priority: situational
+            note:
+              en: Buffs boost all stats; the wiki lists it as a synergy.
+              ko: 버프가 모든 능력치를 올리며 위키가 시너지로 꼽습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy lets 4 buffs each add 4% to all stats; extras only raise the buff cap by 4 (wiki).
+              ko: 1개로 버프 4개가 각각 모든 능력치 +4%를 주고, 추가분은 버프 상한만 4씩 늘립니다(위키).
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Health multipliers for long runs
+          ko: 장기전용 체력 배수
+        when:
+          en: After the first loop, or once flat health items stop moving Growth much.
+          ko: 첫 루프 이후, 또는 고정 체력 아이템으로 성장이 잘 오르지 않을 때.
+        items:
+          - id: HalfSpeedDoubleHealth
+            priority: core
+            stacks:
+              target: 1
+              max: 1
+            note:
+              en: Doubles max health, which feeds Growth; Rogue Ranker calls the speed cost worth it on False Son. A second copy cuts speed to a third (wiki), so stop at one.
+              ko: 최대 체력을 두 배로 늘려 성장으로 이어집니다. Rogue Ranker는 이동 속도 손해를 감수할 가치가 있다고 봅니다. 2개째는 이동 속도가 1/3이 되니(위키) 1개에서 멈추세요.
+            stacksReason:
+              en: One doubles health, which feeds Growth; a second cuts speed to a third (wiki math), so stop at one.
+              ko: 1개로 체력이 두 배가 되어 성장에 이어지고, 2개째는 이동 속도가 1/3이 되므로(위키 수치로 계산) 1개에서 멈추세요.
+          - id: Knurl
+            priority: core
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: Keep stacking; flat health plus regen that scales with level.
+              ko: 계속 쌓으세요. 고정 체력에 레벨에 따라 커지는 재생까지 줍니다.
+            stacksReason:
+              en: +40 health and +1.6 hp/s per copy, linear (wiki); 3 is a good boss-item count for a health-stacking build.
+              ko: 1개당 체력 +40, 재생 +1.6 선형(위키)이라 체력을 쌓는 빌드에서는 보스 아이템 3개를 목표로 하세요.
+          - id: Pearl
+            priority: situational
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Trade unwanted lunars at a Cleansing Pool; percent health scales with the rest.
+              ko: 필요 없는 달 아이템을 정화의 웅덩이에 바꿔 얻습니다. 비율 체력이라 다른 체력과 함께 커집니다.
+            stacksReason:
+              en: +10% max health per copy, linear (wiki); 2 is realistic from Cleansing Pools.
+              ko: 1개당 최대 체력 +10% 선형(위키)이며, 정화의 웅덩이에서는 2개가 현실적입니다.
+          - id: ShinyPearl
+            priority: situational
+            stacks:
+              target: 1
+            note:
+              en: "Rare Cleansing Pool result: +10% to all stats including health; the wiki lists it as a synergy."
+              ko: 정화의 웅덩이에서 드물게 나오며 체력을 포함한 모든 능력치를 10% 올립니다. 위키가 시너지로 꼽습니다.
+            stacksReason:
+              en: a rare Cleansing Pool result; one gives +10% to every stat including health (wiki).
+              ko: 정화의 웅덩이에서 드물게 나오며, 1개로 체력을 포함한 모든 능력치이 +10%입니다(위키).
+          - id: SpeedOnPickup
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: "Wiki synergy: the all-stats buff includes health."
+              ko: 위키가 꼽는 시너지로, 모든 능력치 버프에 체력도 포함됩니다.
+            stacksReason:
+              en: 2 copies allow 5 buff stacks (+15% all stats, including health); +2 stacks per copy (wiki).
+              ko: 2개면 버프가 5중첩(체력 포함 모든 능력치 +15%)까지 쌓입니다(1개당 +2중첩, 위키).
+        next: []
+    pickOrder:
+      common:
+        - FlatHealth
+        - BleedOnHit
+        - BossDamageBonus
+        - Crowbar
+        - SecondarySkillMagazine
+      uncommon:
+        - Infusion
+        - ChainLightning
+        - Missile
+        - DeathMark
+        - StrengthenBurn
+      legendary:
+        - IncreaseHealing
+        - PermanentDebuffOnHit
+        - BoostAllStats
+      boss:
+        - Knurl
+        - Pearl
+        - ShinyPearl
+    milestones:
+      - when:
+          en: From the start
+          ko: 시작부터
+        advice:
+          en: Take health items in every shop, even when they look boring (Rogue Ranker). Only bonus health counts; base and level health do not.
+          ko: 상점마다 체력 아이템을 챙기세요. 심심해 보여도 마찬가지입니다(Rogue Ranker). 기본·레벨 체력은 제외되고 추가 체력만 성장에 들어갑니다.
+        take:
+          - FlatHealth
+        stop: []
+      - when:
+          en: After 2 Infusions
+          ko: 주입 약물이 2개가 되면
+        advice:
+          en: Further Infusions fall off hard. Spend greens on proc items instead.
+          ko: 그 이상은 효율이 크게 떨어집니다. 초록 아이템은 발동형 아이템에 쓰세요.
+        take:
+          - ChainLightning
+          - Missile
+        stop:
+          - Infusion
+      - when:
+          en: When a Lunar pod or shop offers Stone Flux Pauldron
+          ko: 달 포드나 상점에 돌의 흐름 견갑이 나오면
+        advice:
+          en: Take one; doubled health means more Lunar Spike stocks. Players report it scales him hard despite the slow.
+          ko: 1개 챙기세요. 체력이 두 배가 되어 달의 쐐기 충전이 늘어납니다. 느려지는 대신 크게 강해진다는 평이 많습니다.
+        take:
+          - HalfSpeedDoubleHealth
+        stop: []
+      - when:
+          en: Once you have many Lunar Spike stocks
+          ko: 달의 쐐기 충전이 많이 쌓이면
+        advice:
+          en: Each new stock needs more bonus health than the last, and Laser of the Father's extra duration grows in smaller steps (wiki formulas). Shift picks toward boss damage and armor shred.
+          ko: 다음 충전에 필요한 추가 체력이 점점 많아지고, 아버지의 광선 추가 지속 시간도 점점 적게 늘어납니다(위키 공식). 보스 피해와 방어력 감소 아이템 쪽으로 옮기세요.
+        take:
+          - BossDamageBonus
+          - PermanentDebuffOnHit
+        stop: []
+      - when:
+          en: Whenever you look for more laser damage
+          ko: 광선 딜을 늘리고 싶을 때
+        advice:
+          en: "Don't count on attack speed: the wiki says Laser of the Father is almost unaffected by it."
+          ko: 공격 속도에 기대지 마세요. 위키에 따르면 아버지의 광선은 공격 속도의 영향을 거의 받지 않습니다.
+        take: []
+        stop: []
+    avoid:
+      - id: ShieldOnly
+        reason:
+          en: Converts health to shields, which removes Growth entirely.
+          ko: 체력을 보호막으로 바꿔 성장을 완전히 없앱니다.
+      - id: LunarDagger
+        reason:
+          en: Cuts maximum health, working against his whole mechanic.
+          ko: 최대 체력을 줄여 캐릭터 메커니즘 전체와 충돌합니다.
+      - id: PersonalShield
+        reason:
+          en: Shields do not count toward Growth (Rogue Ranker recommends it, the wiki contradicts this).
+          ko: 보호막은 성장에 포함되지 않습니다(Rogue Ranker는 추천하지만 위키 설명과 모순됩니다).
+    evidence: |-
+      Health-stacking core (Bison Steak, Infusion, Titanic Knurl, Pearl, Quick Fix, Seared Steak, Growth Nectar, Collector's Compulsion) and the avoid list (Transcendence, Shaped Glass, shields not counting) come from the wiki; Rogue Ranker agrees on Bison Steak, Infusion, Titanic Knurl, Rejuvenation Rack, Armor-Piercing Rounds. Game Rant (updated Dec 2024) supplies Tri-Tip Dagger, Luminous Shot, Crowbar, Hopoo Feather, Gasoline/Ignition Tank, Ukulele, AtG Missile, Death Mark, Symbiotic Scorpion. Disagreement: Rogue Ranker lists Personal Shield Generator as an HP item, but the wiki says shield items do not add Growth, so it is marked avoid. Game Rant also suggests Plasma Shrimp (needs shields) - omitted for the same reason. PATCH-SENSITIVE: V1.3.8 (May 2025) changed base damage 13->12 with scaling 2.0->2.4, slam proc coefficient 3.0->1.0 (weakens proc items on charged slams), and Lunar Spikes to 200%. Alloyed Collective set his armor 20->0. Wiki notes a bug where Laser of the Father barely benefits from attack speed.
+
+      Stack counts and progression: Growth formulas (rising bonus-health cost per stock; Laser of the Father bonus duration = 2*sum(1/n)+2, harmonic) and the attack-speed note are from the False Son wiki page; the wiki also lists Stone Flux Pauldron, Pearl, Irradiant Pearl, Collector's Compulsion, Growth Nectar, Knurl, Quick Fix and Seared Steak as synergies. Rogue Ranker (undated) backs 'HP items in every shop', Stone Flux 'often worth it', Knurl, Rejuvenation Rack, Armor-Piercing Rounds, Backup Magazine. The Infusion 1-2 limit is one Steam player (Aug 2024, pre-V1.3.8); another player in the same thread said health stacking 'isn't worth it', so this is opinion. Titanic Knurl values are from the wiki item page (a search snippet quoted +50 and +5%, which the page does not show). Stone Flux max 1 and Tri-Tip/Death Mark limits are wiki math. Pick-order for proc items follows Game Rant (Dec 2024). Rogue Ranker's Personal Shield Generator is ignored because shields do not add Growth (wiki).
+  - id: falseson-stone-flux-laser-burst
+    title:
+      en: Stone Flux Laser Burst
+      ko: 돌의 흐름 광선 파열
+    difficulty: advanced
+    summary:
+      en: Laser Burst gains extra stocks from bonus health and refills Lunar Spikes. Stone Flux Pauldron doubles health (feeding stocks) at the cost of half your move speed, so pair it with speed items.
+      ko: 광선 파열은 추가 체력에 따라 충전이 늘고 달의 쐐기를 채워 줍니다. 돌의 흐름 견갑은 이동 속도를 절반으로 줄이는 대신 체력을 두 배로 늘려 충전을 불려 주므로 이동 속도 아이템과 함께 씁니다.
+    loadout:
+      primary: FALSESON_PRIMARY_NAME
+      secondary: FALSESON_SECONDARY_NAME
+      utility: FALSESON_UTILITY_NAME
+      special: FALSESON_SPECIAL_ALT1_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Health and speed first
+          ko: 체력과 이동 속도 먼저
+        when:
+          en: Stage 1-2, before you find a Stone Flux Pauldron.
+          ko: 돌의 흐름 견갑을 얻기 전 1~2스테이지.
+        items:
+          - id: FlatHealth
+            priority: core
+            note:
+              en: More bonus health = more Laser Burst stocks.
+              ko: 추가 체력이 늘수록 광선 파열 충전이 늘어납니다.
+            stacks:
+              target: 6
+              min: 1
+            stacksReason:
+              en: Rogue Ranker says to stack health early; 6 copies add 150 bonus health for Growth, linear (+25 each, wiki).
+              ko: Rogue Ranker는 초반부터 체력을 쌓으라고 합니다. 6개면 성장에 쓰이는 추가 체력 +150입니다(1개당 +25, 위키).
+          - id: Hoof
+            priority: optional
+            note:
+              en: Offsets the Pauldron's speed penalty.
+              ko: 견갑의 이동 속도 페널티를 보완합니다.
+            stacks:
+              target: 4
+            stacksReason:
+              en: with the Pauldron halving speed, 4 copies (+56%) win back most of it; about 7 would fully offset it (wiki math).
+              ko: 견갑으로 이동 속도가 절반이 되니 4개(+56%)면 대부분을 되찾습니다. 완전히 상쇄하려면 약 7개가 필요합니다(위키 수치로 계산).
+          - id: SprintBonus
+            priority: optional
+            note:
+              en: Same job as the Hoof while sprinting.
+              ko: 달리기 중 염소발과 같은 역할을 합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 copies give +50% sprint speed for repositioning; linear, so more still helps.
+              ko: 2개면 달리기 속도 +50%로 위치 잡기에 충분하며, 선형이라 더 모아도 이득입니다.
+        next:
+          - flux
+      - id: flux
+        phase: mid
+        label:
+          en: Stone Flux and extra charges
+          ko: 돌의 흐름과 추가 충전
+        when:
+          en: When a Lunar pod offers Stone Flux Pauldron.
+          ko: 달 포드에서 돌의 흐름 견갑이 나왔을 때.
+        items:
+          - id: HalfSpeedDoubleHealth
+            priority: core
+            note:
+              en: Doubles health, greatly increasing Laser Burst and Lunar Spike stocks.
+              ko: 체력을 두 배로 늘려 광선 파열과 달의 쐐기 충전을 크게 늘립니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: One doubles health; a second only reaches 3x health but cuts speed to a third (wiki math).
+              ko: 1개로 체력이 두 배가 되고, 2개째는 체력 3배에 이동 속도가 1/3로 떨어집니다(위키 수치로 계산).
+          - id: EquipmentMagazineVoid
+            priority: optional
+            note:
+              en: One more Laser Burst charge.
+              ko: 광선 파열 충전을 하나 더 줍니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +1 Laser Burst charge per copy, linear (wiki); direct charges beat health once Growth costs rise.
+              ko: 1개당 광선 파열 충전 +1 선형(위키)이라, 성장 비용이 오른 뒤에는 체력보다 효율적입니다.
+          - id: SecondarySkillMagazine
+            priority: optional
+            note:
+              en: Extra Lunar Spike charge.
+              ko: 달의 쐐기 충전을 하나 더 줍니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +1 Lunar Spike charge per copy (wiki); 3 extra spikes keep Laser Burst refills flowing.
+              ko: 1개당 달의 쐐기 충전 +1(위키)이라 3개면 광선 파열 재충전이 끊기지 않습니다.
+          - id: DeathMark
+            priority: optional
+            note:
+              en: Pairs with Lunar Ruin and other debuffs.
+              ko: 달의 파멸 등 디버프와 어울립니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: One copy gives the full +50% damage taken; extra copies only add +7s mark duration (wiki).
+              ko: 1개로 받는 피해 +50% 효과를 모두 얻고, 추가분은 표식 지속 시간만 7초씩 늘립니다(위키).
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: More health, more bursts
+          ko: 체력을 늘려 광선 파열 늘리기
+        when:
+          en: After the first loop, once Stone Flux is in place.
+          ko: 첫 루프 이후, 돌의 흐름 견갑을 갖춘 뒤.
+        items:
+          - id: Knurl
+            priority: core
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: Flat health that Stone Flux then doubles.
+              ko: 돌의 흐름 견갑이 두 배로 불려 주는 고정 체력입니다.
+            stacksReason:
+              en: +40 health and +1.6 hp/s per copy, linear (wiki); 3 is a good boss-item count for a health-stacking build.
+              ko: 1개당 체력 +40, 재생 +1.6 선형(위키)이라 체력을 쌓는 빌드에서는 보스 아이템 3개를 목표로 하세요.
+          - id: Infusion
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+              max: 2
+            note:
+              en: Game Rant's pick for this variant; one or two is enough.
+              ko: Game Rant가 이 빌드에 꼽은 아이템입니다. 1~2개면 충분합니다.
+            stacksReason:
+              en: A Steam player says one or two is enough before it falls off; each copy needs 100 more kills to fill.
+              ko: Steam 플레이어 의견으로 1~2개면 충분하고, 1개 늘 때마다 100킬을 더 해야 다 찹니다.
+          - id: Pearl
+            priority: situational
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Percent health from the Cleansing Pool.
+              ko: 정화의 웅덩이에서 얻는 비율 체력입니다.
+            stacksReason:
+              en: +10% max health per copy, linear (wiki); 2 is realistic from Cleansing Pools.
+              ko: 1개당 최대 체력 +10% 선형(위키)이며, 정화의 웅덩이에서는 2개가 현실적입니다.
+          - id: EquipmentMagazineVoid
+            priority: optional
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: Keeps adding Laser Burst charges directly.
+              ko: 광선 파열 충전을 직접 계속 늘립니다.
+            stacksReason:
+              en: +1 Laser Burst charge per copy, linear (wiki); direct charges beat health once Growth costs rise.
+              ko: 1개당 광선 파열 충전 +1 선형(위키)이라, 성장 비용이 오른 뒤에는 체력보다 효율적입니다.
+        next: []
+    pickOrder:
+      common:
+        - FlatHealth
+        - Hoof
+        - SprintBonus
+        - SecondarySkillMagazine
+    milestones:
+      - when:
+          en: Before you find Stone Flux Pauldron
+          ko: 돌의 흐름 견갑을 얻기 전
+        advice:
+          en: Grab movement speed now so the pauldron's -50% speed is bearable later.
+          ko: 나중에 견갑의 이동 속도 -50%를 버틸 수 있도록 지금 이동 속도를 챙겨 두세요.
+        take:
+          - Hoof
+          - SprintBonus
+        stop: []
+      - when:
+          en: Once you hold one Stone Flux Pauldron
+          ko: 돌의 흐름 견갑을 1개 얻으면
+        advice:
+          en: Don't take another; grow health with Titanic Knurl and Infusion instead, which the pauldron doubles.
+          ko: 더 가져가지 마세요. 대신 거인의 혹과 주입 약물로 체력을 늘리면 견갑이 그만큼 두 배로 불려 줍니다.
+        take:
+          - Knurl
+          - Infusion
+        stop:
+          - HalfSpeedDoubleHealth
+      - when:
+          en: Once Growth is high
+          ko: 성장 수치가 높아지면
+        advice:
+          en: Each new Growth level needs more bonus health than the last (wiki formula), and Laser Burst only gets a quarter of the Lunar Spike rate. Lysate Cell adds Laser Burst charges directly, so favor it over more health at this point.
+          ko: 성장 1단계를 올리는 데 필요한 추가 체력이 점점 많아지고(위키 공식), 광선 파열은 달의 쐐기의 1/4 속도로만 충전이 늘어납니다. 이때부터는 체력보다 광선 파열 충전을 직접 늘리는 용해물 전지를 우선하세요.
+        take:
+          - EquipmentMagazineVoid
+        stop: []
+    avoid:
+      - id: ShieldOnly
+        reason:
+          en: Removes Growth, which is where Laser Burst's extra stocks come from.
+          ko: 광선 파열 추가 충전의 원천인 성장을 없앱니다.
+    evidence: |-
+      Game Rant (Dec 2024) gives the Laser Burst item list: Stone Flux Pauldron, Paul's Goat Hoof/Energy Drink, Bison Steak and 'Transfusion' (interpreted as Infusion), Lysate Cell, Death Mark. Backup Magazine for Lunar Spike charges is from Rogue Ranker. Game Rant calls Laser of the Father 'significantly stronger' than Laser Burst, but V1.3.8 (May 2025) later buffed Laser Burst to 1250% and 50% spike refill, so that ranking may be outdated. Small tree because only one source details this variant.
+
+      Stack counts and progression: Thin: Game Rant (Dec 2024) is the only guide for this variant (Stone Flux, Hoof/Energy Drink, Bison Steak, Infusion, Lysate Cell, Death Mark). Laser Burst charge rate (a quarter of Lunar Spikes) is from the False Son wiki. Stone Flux max 1 is math from wiki values (health +100% linear, speed reciprocal 1/(1+n)). Infusion 1-2 comes from a Steam player (Aug 2024) about False Son in general. V1.3.8 buffed Laser Burst after Game Rant's article, so the ranking of this variant vs Laser of the Father is uncertain. No uncommon/legendary/boss pick order because no source ranks them for this variant.

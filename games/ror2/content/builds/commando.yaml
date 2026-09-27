@@ -1,0 +1,558 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: CommandoBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: mixed
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Commando
+  - https://rogueranker.com/commando-ror2/
+  - https://www.thegamer.com/risk-of-rain-2-commando-tips-guide/
+  - https://nerdlodge.com/risk-of-rain-2-commando-guide/
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=2494553860
+  - https://riskofrain2.wiki.gg/wiki/Update_Notes_V1.3.6
+  - https://riskofrain2.wiki.gg/wiki/Alloyed_Collective_Update
+builds:
+  - id: commando-on-hit-double-tap
+    title:
+      en: On-hit Double Tap
+      ko: 온힛 2연사
+    difficulty: beginner
+    summary:
+      en: Commando's Double Tap fires fast with a 1.0 proc coefficient, so every attack speed and on-hit item multiplies his damage. Build attack speed first, patch his lack of mobility and sustain, then pile on proc items.
+      ko: 코만도의 2연사는 빠른 연사 속도에 프록 계수 1.0이라 공격 속도와 적중 시 발동 아이템을 모두 곱연산처럼 살려 줍니다. 공격 속도를 먼저 챙기고, 부족한 기동력과 회복을 보완한 뒤 발동 아이템을 쌓으세요.
+    loadout:
+      primary: COMMANDO_PRIMARY_NAME
+      secondary: COMMANDO_SECONDARY_ALT1_NAME
+      utility: COMMANDO_UTILITY_ALT_NAME
+      special: COMMANDO_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Attack speed foundation
+          ko: 공격 속도 기반
+        when:
+          en: "Stages 1-2: take these whenever offered."
+          ko: "1~2스테이지: 보이면 바로 챙기세요."
+        items:
+          - id: Syringe
+            priority: core
+            note:
+              en: More shots per second means more procs from every on-hit item; also speeds up Suppressive Fire.
+              ko: 초당 사격 횟수가 늘어 모든 적중 시 효과의 발동 횟수가 늘고, 제압 사격도 빨라집니다.
+            stacks:
+              target: 8
+              min: 2
+            stacksReason:
+              en: +15% attack speed per stack, linear with no cap; Double Tap turns every extra shot into more procs, so 8 (+120%) is a good goal alongside the glasses.
+              ko: 개당 공격 속도 +15%로 선형이며 상한이 없습니다. 2연사는 사격이 늘수록 발동도 늘어나므로 안경과 함께 8개(+120%)를 목표로 하세요.
+          - id: BleedOnHit
+            priority: optional
+            note:
+              en: Bleed stacks quickly with Double Tap's fire rate.
+              ko: 2연사의 빠른 연사로 출혈이 금방 쌓입니다.
+            stacks:
+              target: 10
+              min: 1
+              max: 10
+            stacksReason:
+              en: +10% bleed chance per stack, so 10 bleeds on every Double Tap hit (proc coefficient 1.0); more does nothing.
+              ko: 위키 기준 개당 출혈 확률 +10%라 10개면 2연사(프록 계수 1.0)가 매번 출혈을 겁니다. 그 이상은 효과가 없습니다.
+          - id: Hoof
+            priority: optional
+            note:
+              en: Commando has no built-in mobility; movement speed covers that gap.
+              ko: 코만도는 기본 기동력이 없어서 이동 속도로 보완합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +14% speed per stack; 3 (+42%) covers mobility, then whites are better spent on damage.
+              ko: 개당 이동 속도 +14%라 3개(+42%)면 기동력은 충분하고, 그 뒤 흰색은 화력에 쓰는 게 낫습니다.
+          - id: CritGlasses
+            priority: optional
+            note:
+              en: Crit chance is the base for Harvester's Scythe and Predatory Instincts later. If on-hit items show up first, take those before more Glasses.
+              ko: 나중에 수확꾼의 낫·포식 본능을 쓰기 위한 치명타 기반입니다. 적중 시 발동 아이템이 먼저 보이면 그쪽을 우선하세요.
+            stacks:
+              target: 9
+              min: 1
+              max: 10
+            stacksReason:
+              en: 10 = 100% crit; with a 5% crit item such as Predatory Instincts or Harvester's Scythe, 9 already reaches 100%.
+              ko: 위키 기준 10개면 치명타 100%입니다. 포식 본능이나 수확꾼의 낫 같은 5% 치명타 아이템이 있으면 9개로 100%가 됩니다.
+        next:
+          - sustain
+          - procs
+          - phase
+      - id: sustain
+        phase: mid
+        label:
+          en: Mobility and sustain
+          ko: 기동력과 회복
+        when:
+          en: "If you are taking a lot of damage or struggle to dodge: Commando has no armor or healing of his own."
+          ko: "피해를 많이 받거나 회피가 어렵다면: 코만도는 자체 방어력과 회복 수단이 없습니다."
+        items:
+          - id: Seed
+            priority: core
+            note:
+              en: Heals on every hit, and Commando hits constantly.
+              ko: 적중할 때마다 회복하는데, 코만도는 쉬지 않고 적중합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +1 heal per hit per stack; with his many hits, 3 gives steady sustain before other greens.
+              ko: 개당 적중 시 회복 +1입니다. 타격 수가 많아 3개면 꾸준히 회복되고, 그 뒤엔 다른 녹색 아이템이 낫습니다.
+          - id: HealOnCrit
+            priority: situational
+            note:
+              en: Strong once you have several Lens-Maker's Glasses.
+              ko: 렌즈 제작자의 안경이 여러 개 쌓였을 때 강력합니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: the first copy gives the 5% crit, a second raises healing to 12 per crit; then other greens give more.
+              ko: 첫 개가 치명타 5%를 주고 두 번째로 치명타당 회복이 12가 됩니다. 그 뒤엔 다른 녹색 아이템이 낫습니다.
+          - id: Feather
+            priority: optional
+            note:
+              en: Extra jumps to escape and reposition.
+              ko: 추가 점프로 탈출과 위치 조정이 쉬워집니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +1 jump per stack; 2 extra jumps cover dodging and repositioning, and further jumps matter little.
+              ko: 개당 점프 +1입니다. 추가 점프 2회면 회피와 위치 조정에 충분하고, 그 이상은 체감이 적습니다.
+          - id: JumpBoost
+            priority: optional
+            note:
+              en: Jump distance while sprinting, paired with Tactical Slide.
+              ko: 질주 중 점프 거리가 늘어 전술 슬라이딩과 잘 어울립니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +10 m sprint jump per stack; 2 (20 m) is plenty to cross gaps and escape.
+              ko: 개당 질주 점프 +10m입니다. 2개(20m)면 틈을 건너고 빠져나가기에 충분합니다.
+        next:
+          - late
+      - id: procs
+        phase: mid
+        label:
+          en: On-hit proc engine
+          ko: 적중 시 발동 엔진
+        when:
+          en: "Once you have 2+ Soldier's Syringes: every extra attack now rolls these procs."
+          ko: "군인의 주사기가 2개 이상이면: 늘어난 공격마다 이 효과들이 발동을 굴립니다."
+        items:
+          - id: Missile
+            priority: core
+            note:
+              en: Fires often thanks to Double Tap's 1.0 proc coefficient and fire rate.
+              ko: 2연사의 프록 계수 1.0과 연사력 덕분에 자주 발사됩니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +300% missile damage per stack at a fixed 10% chance; 3 before other greens.
+              ko: 발동 확률 10%는 고정이고 개당 미사일 피해가 +300%씩 늘어납니다. 3개 뒤엔 다른 녹색 아이템을 고르세요.
+          - id: ChainLightning
+            priority: core
+            note:
+              en: Chain lightning covers Commando's weak crowd clear.
+              ko: 연쇄 번개가 코만도의 약한 광역 처리를 메워 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 stacks reach 7 targets and 24 m; after that other greens add more.
+              ko: 3개면 대상 7명, 범위 24m가 되고, 그 이후로는 다른 녹색 아이템이 더 이득입니다.
+          - id: StickyBomb
+            priority: optional
+            note:
+              en: Another reliable on-hit damage source.
+              ko: 안정적인 적중 시 추가 피해원입니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +5% chance per stack; 5 (25%) makes bombs stick constantly at Double Tap's fire rate.
+              ko: 개당 확률 +5%라 5개(25%)면 2연사의 연사력으로 폭탄이 끊임없이 붙습니다.
+          - id: AttackSpeedOnCrit
+            priority: situational
+            note:
+              en: Take if you have crit; Phase Blast pellets can stack it fast.
+              ko: 치명타가 있다면 선택하세요. 위상 폭발 탄환이 빠르게 중첩시킵니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: the first copy gives 5% crit and a 36% attack speed cap; a second raises the cap to 60%, then other greens give more.
+              ko: 첫 개가 치명타 5%와 공격 속도 상한 36%를, 두 번째가 상한 60%를 줍니다. 그 뒤로는 다른 녹색 아이템이 더 이득입니다.
+        next:
+          - late
+      - id: phase
+        phase: mid
+        label:
+          en: Phase Blast charges
+          ko: 위상 폭발 충전
+        when:
+          en: "With Phase Blast equipped: extra charges turn it into your main burst."
+          ko: "위상 폭발을 쓴다면: 추가 충전으로 주력 폭딜이 됩니다."
+        items:
+          - id: SecondarySkillMagazine
+            priority: core
+            note:
+              en: Doubles up Phase Blast uses for burst at close range.
+              ko: 근거리 폭딜인 위상 폭발을 여러 번 쓸 수 있습니다.
+            stacks:
+              target: 4
+            stacksReason:
+              en: +1 Phase Blast charge per stack with no cap (wiki); 4 charges give a full close-range burst.
+              ko: 위키 기준 개당 위상 폭발 충전 +1로 상한이 없습니다. 충전 4회면 근거리 폭딜로 충분합니다.
+          - id: Bandolier
+            priority: optional
+            note:
+              en: Commando kills often, so cooldown resets trigger frequently.
+              ko: 처치가 잦아 쿨타임 초기화가 자주 발동합니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 3
+            stacksReason:
+              en: 20.4% / 30.4% / 36.7% at 1-3 stacks, and each copy after the third adds under 5 points.
+              ko: 위키 드롭 확률표 기준 1~3개에서 20.4% / 30.4% / 36.7%이고, 3개 이후로는 개당 5%p도 늘지 않습니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late-game scaling
+          ko: 후반 스케일링
+        when:
+          en: Stage 5+ or after the first loop.
+          ko: 5스테이지 이후 또는 첫 루프 이후.
+        items:
+          - id: BleedOnHitAndExplode
+            priority: situational
+            note:
+              en: Boss item; strong if your crit chance is already high.
+              ko: 보스 아이템. 치명타 확률이 이미 높다면 강력합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy gives the 5% crit and bleed on crit; extra copies only enlarge the death explosion, and boss items are rare.
+              ko: 1개로 치명타 5%와 치명타 출혈이 모두 생기고, 추가분은 처치 폭발 피해만 늘립니다. 보스 아이템이라 잘 나오지도 않습니다.
+          - id: IncreaseHealing
+            priority: optional
+            note:
+              en: Doubles Leeching Seed and other healing, which Commando's low HP needs.
+              ko: 흡혈 씨앗 등의 회복량을 두 배로 늘려 낮은 체력을 보완합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy doubles all healing, and a second is a bonus rather than a goal.
+              ko: 전설 아이템입니다. 1개로 모든 회복량이 두 배가 되고, 두 번째는 목표가 아니라 덤입니다.
+          - id: LunarBadLuck
+            priority: situational
+            note:
+              en: "Lunar: near-zero cooldowns; costs luck, which weakens proc chances."
+              ko: "달 아이템: 쿨타임이 거의 사라지지만 행운이 줄어 발동 확률이 떨어집니다."
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: each Purity costs 1 luck (a 10% proc drops to 1%, then 0.1%), so stop at one.
+              ko: 위키 행운 계산 기준 순수는 개당 행운 -1이라 10% 발동이 1%, 다시 0.1%로 떨어집니다. 1개에서 멈추세요.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Loop scaling and void swaps
+          ko: 루프 스케일링과 공허 교체
+        when:
+          en: After the first loop, once enemies start hitting hard enough to burst you down.
+          ko: 첫 루프 이후, 적 공격에 순식간에 녹기 시작할 때.
+        items:
+          - id: Bear
+            priority: core
+            stacks:
+              target: 10
+              min: 4
+            note:
+              en: "Loop guides put block chance first. Hyperbolic: 4 stacks = 37.5%, 10 = 60%; past 10 each copy adds under 2.5 points."
+              ko: 루프 공략들은 막기 확률을 최우선으로 봅니다. 쌍곡선 중첩이라 4개 37.5%, 10개 60%이고, 10개 이후로는 개당 2.5%p도 안 늘어납니다.
+            stacksReason:
+              en: hyperbolic block chance, 10 stacks = 60% and each copy past 10 adds under 2.5 points; loop guides stack it to about 10.
+              ko: 위키 기준 쌍곡선 중첩이라 10개면 막기 60%이고, 10개 이후로는 개당 2.5%p도 안 늘어납니다. 루프 공략들도 10개 정도를 목표로 합니다.
+          - id: ChainLightningVoid
+            priority: situational
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: Corrupts all Ukuleles. Hits one target 3 (+3 per stack) times, which is better on bosses and feeds Plasma Shrimp.
+              ko: 우쿨렐레를 전부 오염시킵니다. 한 대상을 3회(+3/개) 때려 보스전에 강하고, 플라즈마 새우를 추가로 발동시킵니다.
+            stacksReason:
+              en: it corrupts every Ukulele, so it inherits the 3 you were aiming for; each stack adds 3 more hits on one target (wiki).
+              ko: 우쿨렐레를 모두 오염시키므로 목표였던 3개가 그대로 넘어옵니다. 위키 기준 개당 단일 대상 타격이 3회씩 늘어납니다.
+          - id: MissileVoid
+            priority: situational
+            stacks:
+              target: 3
+              min: 1
+            note:
+              en: Corrupts all AtG Missiles. While you have shield, every hit fires a missile; Double Tap's fire rate keeps it busy.
+              ko: AtG 미사일을 전부 오염시킵니다. 보호막이 있는 동안 모든 적중에 미사일이 나가므로 2연사의 연사력과 잘 맞습니다.
+            stacksReason:
+              en: it corrupts every AtG Missile, so it inherits the 3 you were aiming for; damage is +40% per stack (wiki), linear.
+              ko: AtG 미사일을 모두 오염시키므로 목표였던 3개가 그대로 넘어옵니다. 위키 기준 개당 피해 +40%로 선형입니다.
+          - id: Clover
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: +1 luck per stack rerolls every proc chance; one Clover cancels one Purity's luck penalty.
+              ko: 개당 행운 +1로 모든 발동 확률을 한 번 더 굴립니다. 클로버 1개가 순수 1개의 행운 감소를 상쇄합니다.
+            stacksReason:
+              en: legendary; one copy cancels one Purity's luck penalty (wiki), and extra luck is a bonus.
+              ko: 전설 아이템입니다. 위키 기준 1개로 순수 1개의 행운 감소를 상쇄하고, 추가 행운은 덤입니다.
+        next: []
+    pickOrder:
+      common:
+        - Syringe
+        - BleedOnHit
+        - Hoof
+        - StickyBomb
+        - CritGlasses
+        - Bear
+      uncommon:
+        - Missile
+        - ChainLightning
+        - Seed
+        - AttackSpeedOnCrit
+        - HealOnCrit
+        - Feather
+        - JumpBoost
+        - Bandolier
+      legendary:
+        - BounceNearby
+        - IncreaseHealing
+        - Clover
+    milestones:
+      - when:
+          en: Once you have 2+ Soldier's Syringes
+          ko: 군인의 주사기가 2개 이상이면
+        advice:
+          en: Spend green picks on on-hit procs; every shot now rolls them more often.
+          ko: 녹색 아이템은 적중 시 발동 아이템에 쓰세요. 이제 사격마다 더 자주 발동합니다.
+        take:
+          - Missile
+          - ChainLightning
+        stop: []
+      - when:
+          en: When you reach 10 Tri-Tip Daggers
+          ko: 삼각 단검이 10개가 되면
+        advice:
+          en: Double Tap now bleeds on every hit; scrap or skip further daggers.
+          ko: 2연사가 매번 출혈을 겁니다. 이후 삼각 단검은 고철로 만들거나 건너뛰세요.
+        take: []
+        stop:
+          - BleedOnHit
+      - when:
+          en: When crit reaches 100% (usually 9 glasses plus a 5% crit item)
+          ko: 치명타가 100%에 도달하면(보통 안경 9개 + 5% 치명타 아이템)
+        advice:
+          en: Stop taking glasses; Shatterspleen becomes a strong boss pick.
+          ko: 안경은 그만 챙기세요. 이때부터 폭발하는 비장이 좋은 보스 아이템이 됩니다.
+        take:
+          - BleedOnHitAndExplode
+        stop:
+          - CritGlasses
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Enemy scaling outpaces a glass-cannon build; add Tougher Times until about 10 stacks.
+          ko: 적 성장 속도가 유리대포 빌드를 앞지릅니다. 힘들었던 시절을 10개 정도까지 모으세요.
+        take:
+          - Bear
+        stop: []
+      - when:
+          en: When you have several AtG Missiles and Ukuleles and find a void cradle or void items
+          ko: AtG 미사일과 우쿨렐레가 여럿이고 공허 요람이나 공허 아이템을 만났을 때
+        advice:
+          en: Polylute plus Plasma Shrimp is a known late-game combo on fast hitters, but it replaces both originals; only switch if single-target damage is lacking.
+          ko: 폴리류트 + 플라즈마 새우는 빠르게 때리는 생존자의 유명한 후반 조합이지만 원본 아이템을 모두 대체합니다. 단일 대상 화력이 부족할 때만 바꾸세요.
+        take:
+          - ChainLightningVoid
+          - MissileVoid
+        stop:
+          - Missile
+          - ChainLightning
+      - when:
+          en: If you took Purity
+          ko: 순수를 챙겼다면
+        advice:
+          en: Keep it to one stack and pick up a 57 Leaf Clover to cancel the luck penalty.
+          ko: 1개만 유지하고, 57잎 클로버로 행운 감소를 상쇄하세요.
+        take:
+          - Clover
+        stop:
+          - LunarBadLuck
+    avoid:
+      - id: CritGlassesVoid
+        reason:
+          en: Void item that corrupts all your Lens-Maker's Glasses, removing the crit your on-crit items rely on.
+          ko: 렌즈 제작자의 안경을 모두 오염시키는 공허 아이템이라, 치명타 기반 아이템이 힘을 잃습니다.
+    evidence: |-
+      Wiki (Commando tips) establishes Double Tap's high proc potential and Phase skills resetting Double Tap spread. Soldier's Syringe + AtG core: wiki-adjacent guides (TheGamer 2022, Rogue Ranker, Steam 'Item Builds' guide 2022), all agree. Leeching Seed/Hopoo/Wax Quail/Rejuvenation Rack: TheGamer and Nerd Lodge (2022). Tri-Tip, Goat Hoof, Backup Magazine, Bandolier, Predatory Instincts: Rogue Ranker (undated). Lens-Maker's: recommended by Steam guide and most search summaries, but Nerd Lodge deliberately skips generic crit items. Shatterspleen/Harvester's: Steam guide crit variant. Purity: Steam discussion ('bonus points for purities'), single source. Lost Seer's Lenses avoid: Nerd Lodge + wiki corruption fact. Most Commando guides predate Seekers of the Storm; wiki patch notes (V1.3.6, Alloyed Collective) list no Commando changes, and none of these items were changed there, so advice should still hold.
+
+      Stack counts and progression: Stack values and caps are from wiki item pages: Tri-Tip 100% at 10 with 1.0 proc coefficient; Lens-Maker's 10 = 100% and 'stop at 9' advice; Predatory/Scythe crit not stacking; Bandolier formula and per-stack table; Purity luck math (10% -> 1% -> 0.1%); Tougher Times hyperbolic table (10 = 60%, 15 = 69.2%); Polylute and Plasma Shrimp mechanics. Double Tap's proc potential: wiki Commando page. Loop defense-first and Tougher Times priority: GameDataCentral looping guide and a Steam looping thread ('15 bears ~70%'); GameDataCentral's claim that 10 Tougher Times make you 'nearly immune' is wrong by wiki math (60%). Polylute + Plasma Shrimp: Steam discussion 'High polylute stacks + plasma shrimp = deletion', Rogue Ranker Plasma Shrimp page, and Nerd Lodge listing both for Commando. Pick order: Rogue Ranker (Syringe, Tri-Tip, Hoof priority), Nerd Lodge (Hopoo, Quail, Sticky, AtG, Ukulele, Meat Hook, Seed, Scythe), TheGamer (Rejuvenation Rack). Sources disagree on Lens-Maker's (Nerd Lodge skips it). The Purity 1-stack cap is my derivation from wiki luck math, not a guide number. No Commando-specific loop guide was found; Steam guide pages returned HTTP 429 and Reddit could not be fetched.
+  - id: commando-frag-grenade-band-procs
+    title:
+      en: Frag Grenade band procs
+      ko: 수류탄 반지 발동
+    difficulty: intermediate
+    summary:
+      en: Frag Grenade is Commando's only AoE and hits hard enough to trigger high-damage threshold items such as the Bands, which Phase Round cannot do reliably. A small variant for runs that roll Bands.
+      ko: 수류탄은 코만도의 유일한 광역기이며, 반지류처럼 높은 피해량 조건이 붙은 아이템을 발동시킬 만큼 강합니다. 위상조정탄은 이런 발동이 불안정합니다. 반지가 나온 런에서 쓰는 작은 변형 빌드입니다.
+    loadout:
+      primary: COMMANDO_PRIMARY_NAME
+      secondary: COMMANDO_SECONDARY_ALT1_NAME
+      utility: COMMANDO_UTILITY_ALT_NAME
+      special: COMMANDO_SPECIAL_ALT1_NAME
+    root: bands
+    nodes:
+      - id: bands
+        phase: mid
+        label:
+          en: Band triggers
+          ko: 반지 발동
+        when:
+          en: "If you find Kjaro's or Runald's Band (or Brilliant Behemoth): swap to Frag Grenade to trigger them in crowds."
+          ko: "캬로의 반지나 루널드의 반지(또는 눈부신 베히모스)를 얻었다면: 수류탄으로 바꿔 적 무리에게 발동시키세요."
+        items:
+          - id: FireRing
+            priority: core
+            note:
+              en: Grenade hits clear the damage threshold reliably.
+              ko: 수류탄은 피해량 조건을 안정적으로 넘깁니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: Kjaro's Band damage grows linearly but the 10 s recharge never shrinks, so 2 before other greens.
+              ko: 캬로의 반지은 피해가 선형으로 늘지만 재충전 10초는 줄지 않아, 2개 뒤에는 다른 녹색 아이템이 낫습니다.
+          - id: IceRing
+            priority: core
+            note:
+              en: Same trigger as Kjaro's Band.
+              ko: 캬로의 반지와 같은 조건으로 발동합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: Runald's Band damage grows linearly but the 10 s recharge never shrinks, so 2 before other greens.
+              ko: 루널드의 반지은 피해가 선형으로 늘지만 재충전 10초는 줄지 않아, 2개 뒤에는 다른 녹색 아이템이 낫습니다.
+          - id: ElementalRingVoid
+            priority: situational
+            note:
+              en: Void alternative; corrupts both Bands, so choose one path.
+              ko: 공허 대체품. 두 반지를 모두 오염시키므로 한쪽만 선택하세요.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy enables the black hole pull; extras only add +100% collapse damage while the 20 s recharge stays.
+              ko: 1개로 블랙홀 흡입이 생깁니다. 추가분은 붕괴 피해만 +100%씩 늘고 재충전 20초는 그대로입니다.
+          - id: Behemoth
+            priority: optional
+            note:
+              en: "Legendary: each grenade bounce explodes, adding steady AoE."
+              ko: "전설: 수류탄이 튈 때마다 폭발해 광역 피해가 꾸준히 늘어납니다."
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: radius grows 4 m +2.5 m per stack, linear; 2 (6.5 m) is a realistic goal for a legendary.
+              ko: 폭발 반경이 4m에서 개당 +2.5m씩 선형으로 늘어납니다. 전설 아이템이라 2개(6.5m)가 현실적인 목표입니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: More grenades
+          ko: 수류탄 더 자주
+        when:
+          en: In longer runs, once the Bands are in place.
+          ko: 긴 런에서 반지를 갖춘 뒤.
+        items:
+          - id: EquipmentMagazineVoid
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: "Frag Grenade is a Special: +1 charge per stack and -33% Special cooldown."
+              ko: 수류탄은 특수 스킬이라 용해물 전지 1개당 충전 +1, 특수 스킬 쿨타임 -33%를 받습니다.
+            stacksReason:
+              en: +1 Special charge per stack while the 33% cooldown cut does not stack; 2 charges is a solid goal for a rare void item.
+              ko: 개당 특수 스킬 충전 +1이고 쿨타임 33% 감소는 중첩되지 않습니다. 드문 공허 아이템이라 2개가 적당한 목표입니다.
+          - id: AlienHead
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Cuts every cooldown by 25% per stack (multiplicative), so more grenades and more Behemoth bounces.
+              ko: 외계인 머리는 개당 모든 쿨타임을 25%씩(곱연산) 줄여 수류탄과 베히모스 폭발이 늘어납니다.
+            stacksReason:
+              en: "Rogue Ranker calls 1-2 Alien Heads the efficient range; wiki: two stacks cut cooldowns by 43.8%."
+              ko: Rogue Ranker는 외계인 머리 1~2개를 효율 구간으로 봅니다. 위키 기준 2개면 쿨타임이 43.8% 줄어듭니다.
+          - id: Bear
+            priority: situational
+            stacks:
+              target: 10
+              min: 4
+            note:
+              en: General loop defense; hyperbolic, 10 stacks = 60% block.
+              ko: 루프용 기본 방어 아이템입니다. 쌍곡선 중첩으로 10개면 막기 60%입니다.
+            stacksReason:
+              en: hyperbolic block chance, 10 stacks = 60% and each copy past 10 adds under 2.5 points; loop guides stack it to about 10.
+              ko: 위키 기준 쌍곡선 중첩이라 10개면 막기 60%이고, 10개 이후로는 개당 2.5%p도 안 늘어납니다. 루프 공략들도 10개 정도를 목표로 합니다.
+        next: []
+    pickOrder: {}
+    milestones:
+      - when:
+          en: Once you hold Kjaro's and Runald's Bands
+          ko: 캬로의 반지와 루널드의 반지를 모두 가졌다면
+        advice:
+          en: "Skip Singularity Band: it would corrupt both and has a longer 20s recharge."
+          ko: 특이점 반지는 건너뛰세요. 두 반지를 모두 오염시키고 재충전도 20초로 깁니다.
+        take: []
+        stop:
+          - ElementalRingVoid
+      - when:
+          en: Once you have Brilliant Behemoth
+          ko: 눈부신 베히모스를 얻으면
+        advice:
+          en: Every grenade bounce explodes; further Behemoths widen the blast by 2.5 m each.
+          ko: 수류탄이 튈 때마다 폭발합니다. 베히모스를 더 얻으면 폭발 반경이 개당 2.5m씩 넓어집니다.
+        take:
+          - Behemoth
+        stop: []
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Add cooldown items so grenades come out more often, and some Tougher Times for defense.
+          ko: 쿨타임 아이템으로 수류탄을 더 자주 던지고, 방어용으로 힘들었던 시절도 챙기세요.
+        take:
+          - EquipmentMagazineVoid
+          - AlienHead
+          - Bear
+        stop: []
+    avoid: []
+    evidence: |-
+      Thin: supported only by the wiki's Commando tips (Frag Grenade as sole AoE, triggers Bands/Singularity Band/Brilliant Behemoth, Phase Round unreliable for Bands) and Rogue Ranker listing Frag Grenade for AoE. No community guide builds around it, so the tree is kept small.
+
+      Stack counts and progression: Thin. Only the wiki supports this variant (Commando page: Frag Grenade is his only AoE and a reliable Band/Singularity Band/Behemoth trigger). Stack facts are wiki item values: Singularity Band +100% damage per stack, 20s recharge, corrupts both Bands; Behemoth radius 4 m +2.5 m; Lysate Cell +1 Special charge and -33% Special cooldown; Alien Head 0.75^n cooldown; Tougher Times hyperbolic table. The loop node is inferred from these values (Frag Grenade is the Special and the Band trigger), not from a guide. No source gives a pick order for this variant (the only same-tier choice, Kjaro's vs Runald's Band, is unranked), so pickOrder is empty.

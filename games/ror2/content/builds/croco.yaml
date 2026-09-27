@@ -1,0 +1,721 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: CrocoBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: mixed
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Acrid
+  - https://riskofrain2.wiki.gg/wiki/Death_Mark
+  - https://riskofrain2.wiki.gg/wiki/Noxious_Thorn
+  - https://gamerant.com/risk-of-rain-2-ror-2-best-acrid-build-items/
+  - https://rogueranker.com/acrid-ror2/
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=2824596082
+  - https://steamcommunity.com/app/632360/discussions/0/6192985336598815362
+  - https://steamcommunity.com/app/632360/discussions/0/4085282327473548495
+  - https://steamcommunity.com/app/632360/discussions/0/7179373376266646956
+builds:
+  - id: croco-poison-hit-and-run
+    title:
+      en: Poison Hit-and-Run
+      ko: 독 치고 빠지기
+    difficulty: beginner
+    summary:
+      en: Default Poison passive. Spit Neurotoxin into groups, leap away and let Poison tick, then use Epidemic to spread it. Poison scales with enemy max health, so it melts bosses, but it cannot kill (it stops at 1 HP), so the build adds on-kill and execute items to finish targets.
+      ko: 기본 패시브인 독(Poison)을 사용합니다. 신경독을 적 무리에 뱉고 부식 도약으로 빠진 뒤 독이 들어가게 두고, 유행병으로 독을 퍼뜨립니다. 독은 적 최대 체력 비례라 보스에게 강하지만 적을 죽이지는 못하고 체력 1에서 멈추므로, 처치 시 효과와 처형 아이템으로 마무리를 보완합니다.
+    loadout:
+      primary: CROCO_PRIMARY_NAME
+      secondary: CROCO_SECONDARY_NAME
+      utility: CROCO_UTILITY_NAME
+      special: CROCO_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Poison core
+          ko: 독 핵심
+        when:
+          en: Stages 1-2. Grab these from any white chest or printer.
+          ko: 1~2스테이지. 흰색 상자나 프린터에서 먼저 챙기세요.
+        items:
+          - id: BossDamageBonus
+            priority: core
+            note:
+              en: Boosts Poison damage against bosses; players suggest stacking it hard.
+              ko: 보스에게 들어가는 독 피해를 늘립니다. 많이 쌓으라는 의견이 많습니다.
+            stacks:
+              target: 10
+              min: 1
+            stacksReason:
+              en: a Steam thread says stack it hard; +20% boss damage per stack (wiki), so 10 (+200%) is a solid goal.
+              ko: 스팀 토론은 많이 쌓으라고 하고, 개당 보스 피해 +20%(위키)라 10개(+200%)를 목표로 합니다.
+          - id: SecondarySkillMagazine
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+              max: 3
+            note:
+              en: Extra Neurotoxin charges; 2-3 let you spit steadily to sweep up wisp swarms.
+              ko: 신경독 충전이 늘어납니다. 2~3개면 위습 떼를 계속 뱉어 정리할 수 있습니다.
+            stacksReason:
+              en: A Steam thread says 2-3 give a steady Neurotoxin rhythm; past 3 other whites help more.
+              ko: 스팀 토론에 따르면 2~3개면 신경독을 꾸준히 뱉을 수 있고, 3개를 넘으면 다른 흰색 아이템이 더 낫습니다.
+          - id: IgniteOnKill
+            priority: core
+            note:
+              en: Poisoned enemies that die burst into fire, chaining kills through packs.
+              ko: 독에 걸린 적이 죽을 때 불이 붙어 무리 전체로 연쇄 처치가 이어집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: radius grows 12 m +4 m per stack (wiki); 3 cover a whole pack at 20 m.
+              ko: 범위가 12m에서 개당 4m씩 늘어(위키) 3개면 20m로 적 무리 전체를 덮습니다.
+          - id: Hoof
+            priority: optional
+            note:
+              en: Acrid is a kiter; speed keeps you out of melee trades.
+              ko: 애크리드는 카이팅 캐릭터라 이동 속도가 근접 교전을 피하게 해 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +14% speed per stack (wiki); 3 (+42%) keep a kiting Acrid out of melee range.
+              ko: 개당 이동 속도 +14%(위키). 3개(+42%)면 치고 빠지는 아크리드가 근접 공격을 피하기 충분합니다.
+          - id: SprintBonus
+            priority: optional
+            note:
+              en: Alternative to Goat Hoof; some players prefer it for hit-and-run.
+              ko: 폴의 염소발 대신 쓸 수 있습니다. 치고 빠지기에 더 낫다는 의견도 있습니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +25% sprint speed per stack (wiki); 2 on top of Goat Hoofs are enough for hit-and-run.
+              ko: 개당 질주 속도 +25%(위키). 염소발에 더해 2개면 치고 빠지기에 충분합니다.
+        next:
+          - crowd
+          - finish
+      - id: crowd
+        phase: mid
+        label:
+          en: Crowd chain reactions
+          ko: 무리 연쇄 처치
+        when:
+          en: Take this branch when trash mobs and wisp swarms are what is killing you.
+          ko: 잡몹이나 위습 떼 때문에 고전한다면 이 갈래를 고르세요.
+        items:
+          - id: StrengthenBurn
+            priority: core
+            note:
+              en: Multiplies burn damage, so Gasoline fires actually finish poisoned packs.
+              ko: 화상 피해를 크게 늘려 휘발유 불길이 독에 걸린 무리를 실제로 마무리하게 합니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: +300% burn damage per stack (wiki); 2 make Gasoline fires finish poisoned packs.
+              ko: 개당 화상 피해 +300%(위키). 2개면 휘발유 불길이 독에 걸린 무리를 마무리합니다.
+          - id: ExplodeOnDeath
+            priority: core
+            note:
+              en: On-kill explosions spread damage to nearby poisoned enemies.
+              ko: 처치 시 폭발이 주변의 독 걸린 적에게 피해를 퍼뜨립니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +280% damage and +2.4 m radius per stack (wiki); 3 chain through packs reliably.
+              ko: 개당 피해 +280%, 범위 +2.4m(위키). 3개면 무리 전체로 안정적으로 연쇄됩니다.
+          - id: ChainLightning
+            priority: situational
+            note:
+              en: Epidemic has a 1.0 proc coefficient so it chains lightning well; one guide rates it low for Acrid, so treat it as a filler.
+              ko: 유행병은 발동 계수가 1.0이라 번개 연쇄가 잘 터집니다. 다만 애크리드에게 가치가 낮다는 가이드도 있어 보조 선택입니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: filler only (one guide rates it low on Acrid); 2 reach 5 targets per chain (wiki).
+              ko: 아크리드에게는 보조용입니다(한 가이드는 낮게 평가). 2개면 연쇄 대상이 5명이 됩니다(위키).
+          - id: BleedOnHit
+            priority: optional
+            note:
+              en: Adds Bleed as another damage-over-time layer.
+              ko: 출혈을 추가해 지속 피해를 한 겹 더 얹습니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +10% bleed chance per stack (wiki); 5 give a 50% extra DoT layer without crowding out core whites.
+              ko: 개당 출혈 확률 +10%(위키). 5개(50%)면 핵심 흰색 아이템을 밀어내지 않고 지속 피해를 한 겹 더합니다.
+        next:
+          - late
+      - id: finish
+        phase: mid
+        label:
+          en: Finishers and debuffs
+          ko: 마무리와 디버프
+        when:
+          en: Take this when elites and bosses sit at low health because Poison cannot kill them.
+          ko: 독이 적을 죽이지 못해 엘리트와 보스가 빈사 상태로 버틸 때 고르세요.
+        items:
+          - id: ExecuteLowHealthElite
+            priority: core
+            note:
+              en: Executes low-health elites that Poison leaves at 1 HP.
+              ko: 독이 체력 1에 남겨 둔 엘리트를 처형합니다.
+            stacks:
+              target: 1
+              max: 2
+            stacksReason:
+              en: Poison drags elites to 1 HP, so one execute (11.5%) finishes them; past 2 each copy adds less (wiki table).
+              ko: 독이 엘리트를 체력 1까지 깎으므로 1개(11.5%)로 마무리됩니다. 2개를 넘으면 효율이 떨어집니다(위키 표).
+          - id: DeathMark
+            priority: core
+            note:
+              en: Poison counts as a debuff; with 4+ debuffs the target takes +50% damage from all sources.
+              ko: 독도 디버프로 계산됩니다. 디버프가 4개 이상이면 대상이 모든 피해를 50% 더 받습니다.
+            stacks:
+              target: 1
+              max: 2
+            stacksReason:
+              en: The +50% damage-taken bonus is fixed; a second copy only adds +7 s to the mark, and more does nothing useful (wiki).
+              ko: 받는 피해 +50%는 고정이고, 2개째는 표식 시간만 7초 늘리며 그 이상은 의미가 없습니다(위키).
+          - id: SlowOnHit
+            priority: optional
+            note:
+              en: Slow is an extra debuff for Death Mark and keeps enemies in acid pools.
+              ko: 둔화는 죽음의 표식용 디버프 수를 채우고 적을 산성 웅덩이에 붙잡아 둡니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one applies the 60% slow and counts as a debuff for Death Mark; extras only add +2 s (wiki).
+              ko: 1개로 60% 감속이 걸리고 죽음의 표식용 약화 효과로 셉니다. 추가분은 지속 시간 2초만 늘립니다(위키).
+          - id: SprintArmor
+            priority: optional
+            note:
+              en: Recommended defensive green; armor while sprinting fits hit-and-run.
+              ko: 추천되는 방어용 녹색 아이템입니다. 달리는 동안 방어력이 올라 치고 빠지기에 맞습니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +30 armor per stack while sprinting (wiki); 3 (+90) make hit-and-run much safer.
+              ko: 질주 중 개당 방어력 +30(위키). 3개(+90)면 치고 빠지기가 훨씬 안전해집니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game scaling
+          ko: 후반 스케일링
+        when:
+          en: Stage 5 and loops, from red chests, boss drops or the Void.
+          ko: 5스테이지 이후와 루프 구간. 빨간 상자, 보스 보상, 공허 아이템에서 챙깁니다.
+        items:
+          - id: ArmorReductionOnHit
+            priority: core
+            note:
+              en: Armor reduction makes Poison tick harder on armored bosses.
+              ko: 방어력을 깎아 방어력 높은 보스에게 독이 더 세게 들어갑니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: The -60 armor does not stack; extra copies only add +8 s, and hits re-apply it anyway (wiki).
+              ko: 방어력 -60은 중첩되지 않고 추가분은 지속 시간 8초만 늘리는데, 공격하면 계속 다시 걸립니다(위키).
+          - id: PermanentDebuffOnHit
+            priority: optional
+            note:
+              en: Permanent armor reduction; the wiki lists it with Poison damage amplifiers.
+              ko: 영구 방어력 감소로 위키가 독 피해 증폭 아이템으로 꼽습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary optional; one already strips 2 armor per hit with no cap (wiki).
+              ko: 선택 전설 아이템이며, 1개로도 적중마다 방어력 2를 상한 없이 깎습니다(위키).
+          - id: Dagger
+            priority: optional
+            note:
+              en: On-kill daggers clean up the packs Poison has weakened.
+              ko: 처치 시 단검이 독으로 약해진 무리를 정리합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary optional; one fires 3 homing daggers per kill, extras only add damage (wiki).
+              ko: 선택 전설 아이템입니다. 1개로 처치마다 유도 단검 3개가 나가고 추가분은 피해만 늘립니다(위키).
+          - id: SprintWisp
+            priority: optional
+            note:
+              en: Boss item that gives steady damage while you sprint around.
+              ko: 달리는 동안 꾸준히 피해를 주는 보스 아이템입니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: boss drop; one gives the sprinting wisp, extras only add +300% damage (wiki).
+              ko: 보스 보상입니다. 1개로 질주 중 도깨비불이 나가고 추가분은 피해 +300%만 늘립니다(위키).
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Loop scaling
+          ko: 루프 스케일링
+        when:
+          en: After the first loop, once your Poison core and armor shred are in place.
+          ko: 첫 루프 이후, 독 핵심과 방어력 감소 아이템을 갖춘 뒤.
+        items:
+          - id: UtilitySkillMagazine
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: "Listed as essential by Deltia's and as a top red in a Steam thread: more leaps for mobility and Caustic pools."
+              ko: Deltia's 가이드가 필수로, 스팀 토론이 최고의 빨간 아이템으로 꼽습니다. 도약 횟수가 늘어 기동성과 부식 웅덩이가 늘어납니다.
+            stacksReason:
+              en: one gives +2 leap charges and the 33% cooldown cut, which does not stack (wiki); extras only add charges.
+              ko: 1개로 도약 충전 +2와 대기시간 33% 감소를 얻고, 감소 효과는 중첩되지 않아(위키) 추가분은 충전만 늘립니다.
+          - id: EquipmentMagazineVoid
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: Extra Epidemic charge and 33% shorter cooldown per the wiki; GameRant lists it as a void pick for Acrid.
+              ko: 위키 기준 유행병 충전 +1, 대기시간 33% 감소입니다. GameRant가 애크리드용 공허 아이템으로 꼽습니다.
+            stacksReason:
+              en: void legendary; one gives +1 Epidemic charge and the 33% cooldown cut, which does not stack (wiki).
+              ko: 공허 전설 아이템입니다. 1개로 유행병 충전 +1과 대기시간 33% 감소를 얻고, 감소 효과는 중첩되지 않습니다(위키).
+          - id: Clover
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: Rogue Ranker names it a top legendary for Acrid; more luck for every on-hit item. Equal Purity stacks cancel it (wiki).
+              ko: Rogue Ranker가 애크리드 최고의 빨간 아이템으로 꼽습니다. 모든 적중 시 효과의 행운이 오릅니다. 순수와 같은 수만큼 있으면 상쇄됩니다(위키).
+            stacksReason:
+              en: legendary, and one already adds a re-roll to every proc; equal Purity stacks cancel it (wiki).
+              ko: 전설 아이템이고 1개로도 모든 발동에 재판정이 붙습니다. 같은 수의 순수가 있으면 상쇄됩니다(위키).
+          - id: BearVoid
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: GameRant's void pick for defense in long runs. It corrupts all your Tougher Times.
+              ko: GameRant가 꼽은 방어용 공허 아이템입니다. 힘들었던 시절을 모두 변환시킵니다.
+            stacksReason:
+              en: one gives a block every 13.5 s; extras only shorten the recharge by 10% each (wiki).
+              ko: 1개로 13.5초마다 공격을 한 번 막고, 추가분은 재충전을 10%씩만 줄입니다(위키).
+          - id: RandomDamageZone
+            priority: situational
+            stacks:
+              target: 1
+              max: 1
+            note:
+              en: A Steam thread notes its +50% damage zone also boosts Poison; it is a lunar with its own risks, so take one only if you can fight inside the zone.
+              ko: 스팀 토론에 따르면 피해 +50% 구역이 독 피해에도 적용됩니다. 달 아이템이라 위험도 있으니 구역 안에서 싸울 수 있을 때만 하나 챙기세요.
+            stacksReason:
+              en: A Steam thread notes the zone boosts Poison; extra copies only widen a zone that also buffs enemies, so one only.
+              ko: 스팀 토론에 따르면 구역이 독 피해도 올립니다. 추가분은 적도 강화하는 구역만 넓히므로 1개만 챙기세요.
+        next: []
+    pickOrder:
+      common:
+        - IgniteOnKill
+        - BossDamageBonus
+        - SecondarySkillMagazine
+        - Hoof
+        - FragileDamageBonus
+        - SprintBonus
+      uncommon:
+        - ExecuteLowHealthElite
+        - DeathMark
+        - StrengthenBurn
+        - ExplodeOnDeath
+        - SprintArmor
+        - Feather
+        - SlowOnHit
+      legendary:
+        - UtilitySkillMagazine
+        - ArmorReductionOnHit
+        - PermanentDebuffOnHit
+        - Dagger
+        - Clover
+    milestones:
+      - when:
+          en: Once you hold 3 Backup Magazines.
+          ko: 보조 탄창이 3개가 되면.
+        advice:
+          en: Stop printing Backup Magazines and put whites into Armor-Piercing Rounds, which keep raising Poison damage on bosses.
+          ko: 보조 탄창은 그만 뽑고 흰색은 장갑관통탄에 넣으세요. 보스 대상 독 피해가 계속 오릅니다.
+        take:
+          - BossDamageBonus
+        stop:
+          - SecondarySkillMagazine
+      - when:
+          en: When elites keep surviving at 1 HP.
+          ko: 엘리트가 체력 1로 계속 버틸 때.
+        advice:
+          en: "Take one Old Guillotine: Poison already drags them to 1 HP, so a single copy finishes them. Stop at 2."
+          ko: 낡은 단두대를 하나 챙기세요. 독이 이미 체력 1까지 깎으므로 하나로도 처형됩니다. 2개에서 멈추세요.
+        take:
+          - ExecuteLowHealthElite
+        stop: []
+      - when:
+          en: Once you have one Shattering Justice.
+          ko: 부서진 정의가 1개 생기면.
+        advice:
+          en: Further copies only lengthen the debuff. Put later reds into Symbiotic Scorpion or Ceremonial Dagger instead.
+          ko: 추가 중첩은 지속 시간만 늘립니다. 이후 빨간 아이템은 공생 전갈이나 의식용 단검에 쓰세요.
+        take:
+          - PermanentDebuffOnHit
+          - Dagger
+        stop:
+          - ArmorReductionOnHit
+      - when:
+          en: After the first loop.
+          ko: 첫 루프 이후.
+        advice:
+          en: Look for Hardlight Afterburner and Lysate Cell to cast leaps and Epidemic more often, and keep adding mobility.
+          ko: 고형광선 재연소장과 용해물 전지로 도약과 유행병을 더 자주 쓰고, 이동 아이템도 계속 챙기세요.
+        take:
+          - UtilitySkillMagazine
+          - EquipmentMagazineVoid
+        stop: []
+      - when:
+          en: In long loops when fights drag on against huge enemies.
+          ko: 긴 루프에서 거대한 적과의 전투가 길어질 때.
+        advice:
+          en: Rogue Ranker says Acrid falls off slightly in very late loops because direct-damage items scale faster. Keep adding kill items and damage-taken multipliers rather than more Poison appliers.
+          ko: Rogue Ranker는 아주 후반 루프에서 직접 피해 아이템이 더 빨리 성장해 애크리드가 약간 뒤처진다고 합니다. 독 부여 수단보다 처치 아이템과 받는 피해 증폭 아이템을 계속 챙기세요.
+        take:
+          - Dagger
+          - SprintWisp
+          - DeathMark
+        stop: []
+    avoid:
+      - id: Seed
+        reason:
+          en: Poison and Blight ticks do not heal, only direct hits do, so the healing is tiny on Acrid.
+          ko: 독과 블라이트 지속 피해로는 회복되지 않고 직접 타격만 회복되어 애크리드에게는 회복량이 미미합니다.
+      - id: RepeatHeal
+        reason:
+          en: The wiki notes it does not work as intended with the Regenerative buff from Vicious Wounds and Ravenous Bite.
+          ko: 위키에 따르면 사나운 상처와 베어 물기의 재생 버프와 의도대로 연동되지 않습니다.
+      - id: NovaOnHeal
+        reason:
+          en: Same Regenerative-buff interaction problem noted by the wiki.
+          ko: 위키가 지적한 재생 버프 연동 문제가 똑같이 있습니다.
+      - id: BarrierOnOverHeal
+        reason:
+          en: Same Regenerative-buff interaction problem noted by the wiki.
+          ko: 위키가 지적한 재생 버프 연동 문제가 똑같이 있습니다.
+    evidence: |-
+      Loadout and Poison-first advice: wiki.gg Acrid strategy ('Poison is almost always the better pick, especially when looping'). AP Rounds, Goat Hoof, Rose Buckler, Old Guillotine: Steam discussion 6192985336598815362 (2021) and GameRant (updated Dec 2024). Backup Magazine: Steam discussions and GameRant. Gasoline + Ignition Tank as the key pair: GameRant. Death Mark, Chronobauble, Tri-Tip, Shattering Justice: Rogue Ranker, wiki Death Mark tips (Poison/Blight count as debuffs). Scorpion and Shattering Justice as Poison amplifiers: wiki. Ceremonial Dagger and Little Disciple: GameRant. Disagreements: GameRant calls Ukulele, Lens-Maker's Glasses and Soldier's Syringe low value for Acrid, while wiki.gg and the 2022 Steam 'Ultimate Acrid Guide' recommend Ukulele via Epidemic's 1.0 proc coefficient (kept as situational). A 2021 Steam thread says avoid Shaped Glass, but wiki.gg says it raises base damage and therefore Poison's minimum damage, so it is left out of both lists. Leeching Seed advice comes from a 2020 thread but matches Poison mechanics. Patch notes: Seekers of the Storm patches only fixed leap/Epidemic bugs; Alloyed Collective lists no Acrid changes. Most community item lists predate 2024 but the mechanics they rely on are unchanged.
+
+      Stack counts and progression: Stack math from riskofrain2.wiki.gg item data: Armor-Piercing Rounds +20%/stack, Ignition Tank +300%/stack, Old Guillotine hyperbolic table (11.5/20.6/28.1%), Death Mark +7 s per extra stack with a fixed +50%, Shattering Justice +8 s per stack with a fixed -60 armor, Symbiotic Scorpion -2 armor per stack with negative armor capped asymptotically at +100% damage taken, Purity cancelling Clover. Poison formula (1% max HP/s or 100% base damage/s, capped at 5000% base damage/s): wiki Acrid. 'Stack AP rounds hard', Rose Buckler, Guillotine, Hardlight, Shattering Justice, Little Disciple, Mercurial Rachis boosting Poison: Steam discussion 6192985336598815362. '2 or 3 Backup Magazines': Steam discussion 4085282327473548495. Hardlight as essential: Deltia's Gaming. Lysate Cell, Safer Spaces, Ceremonial Dagger, Delicate Watch, Hopoo Feather: GameRant. Clover, Death Mark, late-loop falloff: Rogue Ranker. Disagreements: Shaped Glass is 'avoid' in one Steam thread (it only raises Poison's minimum), 'recommended' in another, and the wiki notes it raises base damage, which also raises the 5000% base damage cap; left out of the loop node because no source recommends it for loops specifically. Old Guillotine and Death Mark max values are my reading of wiki tables, not a source's stated number. No boss pick order: sources name only Little Disciple and Mired Urn. Reddit was not tried; Steam guide pages returned HTTP 429, so the 2022 'Ultimate Acrid Guide' was not re-read.
+  - id: croco-blight-brawler
+    title:
+      en: Blight Brawler
+      ko: 블라이트 난타
+    difficulty: intermediate
+    summary:
+      en: Blight passive with Ravenous Bite and Frenzied Leap. Blight stacks and can kill, which rewards using every skill often. Its stacks share one duration that does not refresh, so cooldown reduction and extra charges raise its damage ceiling.
+      ko: Blight(블라이트) 패시브에 베어 물기와 광란 도약을 씁니다. 블라이트는 중첩되고 적을 죽일 수 있어 모든 스킬을 자주 쓸수록 강합니다. 중첩의 지속 시간이 갱신되지 않으므로 재사용 대기시간 감소와 추가 충전이 피해 상한을 올려 줍니다.
+    loadout:
+      primary: CROCO_PRIMARY_NAME
+      secondary: CROCO_SECONDARY_ALT_NAME
+      utility: CROCO_UTILITY_ALT1_NAME
+      special: CROCO_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Blight stacking core
+          ko: 블라이트 중첩 핵심
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: SecondarySkillMagazine
+            priority: core
+            note:
+              en: More secondary charges means more Blight stacks on bosses.
+              ko: 보조 스킬 충전이 늘어 보스에게 블라이트를 더 많이 쌓습니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: a Steam discussion says load up for Blight on bosses; +1 bite charge each (wiki), so 5 is a solid goal.
+              ko: 스팀 토론은 보스에게 역병을 쌓으려면 많이 챙기라고 합니다. 개당 물기 충전 +1(위키)이라 5개를 목표로 합니다.
+          - id: BleedOnHit
+            priority: core
+            note:
+              en: Bleed adds a second stacking DoT and another debuff.
+              ko: 출혈로 중첩되는 지속 피해와 디버프가 하나 더 붙습니다.
+            stacks:
+              target: 10
+              min: 1
+              max: 10
+            stacksReason:
+              en: +10% per stack reaches 100% at 10 on 1.0-proc hits like Ravenous Bite (wiki); more does nothing.
+              ko: 개당 10%라 흉포한 물어뜯기 같은 발동 계수 1.0 공격에서 10개면 100%가 됩니다(위키). 그 이상은 의미가 없습니다.
+          - id: IgniteOnKill
+            priority: optional
+            note:
+              en: Chain kills in packs, since Blight actually kills.
+              ko: 블라이트는 실제로 적을 죽이므로 무리에서 연쇄 처치가 잘 일어납니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: radius grows 12 m +4 m per stack (wiki); 3 cover a pack, and Blight actually kills to trigger it.
+              ko: 범위가 12m에서 개당 4m씩 늘어(위키) 3개면 무리를 덮고, 역병은 실제로 적을 죽여 발동시킵니다.
+          - id: NearbyDamageBonus
+            priority: optional
+            note:
+              en: Blight Acrid fights up close, where Focus Crystal's bonus applies.
+              ko: 블라이트 애크리드는 근접에서 싸우므로 초점 크리스털 보너스가 적용됩니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +20% damage within 13 m per stack (wiki); Blight Acrid fights up close, so 3 (+60%) pay off.
+              ko: 13m 안의 적에게 개당 피해 +20%(위키). 근접전을 하는 역병 아크리드라 3개(+60%)가 효과적입니다.
+        next:
+          - cdr
+          - debuff
+      - id: cdr
+        phase: mid
+        label:
+          en: Cooldown reduction
+          ko: 재사용 대기시간 감소
+        when:
+          en: Take when your Blight stacks fall off between skill casts.
+          ko: 스킬 사이에 블라이트 중첩이 끊긴다면 고르세요.
+        items:
+          - id: AlienHead
+            priority: core
+            note:
+              en: "The wiki names it for Blight: shorter cooldowns keep stacks up."
+              ko: 위키가 블라이트용으로 꼽는 아이템입니다. 대기시간이 짧아져 중첩이 유지됩니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: cooldown x0.75 per stack (wiki); 2 cut Leap and Epidemic to about 56%, and legendaries are rare.
+              ko: 개당 대기시간 x0.75(위키). 2개면 도약과 유행병 대기시간이 약 56%가 되며, 전설은 드뭅니다.
+          - id: LunarBadLuck
+            priority: situational
+            note:
+              en: Flat cooldown cut on every skill; lunar, so weigh its luck penalty.
+              ko: 모든 스킬 대기시간이 고정으로 줄어듭니다. 달 아이템이라 행운 감소 패널티를 고려하세요.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: The first copy cuts 2 s from every cooldown; each extra cuts only 1 s more and adds another unlucky roll (wiki).
+              ko: 1개째가 모든 대기시간을 2초 줄이고, 추가분은 1초만 더 줄이면서 불운 판정을 하나 더 붙입니다(위키).
+          - id: EquipmentMagazineVoid
+            priority: optional
+            note:
+              en: Extra Epidemic charge; also named by the wiki for Blight.
+              ko: 유행병 충전이 하나 늘어납니다. 위키가 블라이트용으로 꼽습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: void legendary; one gives +1 Epidemic charge and the 33% cooldown cut, which does not stack (wiki).
+              ko: 공허 전설 아이템입니다. 1개로 유행병 충전 +1과 대기시간 33% 감소를 얻고, 감소 효과는 중첩되지 않습니다(위키).
+          - id: UtilitySkillMagazine
+            priority: optional
+            note:
+              en: More Frenzied Leaps for mobility and more Blight applications.
+              ko: 광란 도약을 더 자주 써서 기동성과 블라이트 부여가 늘어납니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one gives +2 leap charges and the 33% cooldown cut, which does not stack (wiki); extras only add charges.
+              ko: 1개로 도약 충전 +2와 대기시간 33% 감소를 얻고, 감소 효과는 중첩되지 않아(위키) 추가분은 충전만 늘립니다.
+        next:
+          - late
+      - id: debuff
+        phase: mid
+        label:
+          en: Debuff spreading
+          ko: 디버프 확산
+        when:
+          en: Take when fighting large groups; these turn Blight kills into chains.
+          ko: 큰 무리를 상대할 때 고르세요. 블라이트 처치를 연쇄로 바꿔 줍니다.
+        items:
+          - id: TriggerEnemyDebuffs
+            priority: core
+            note:
+              en: On kill, moves part of the victim's debuff stacks (including Blight and Poison) to a nearby enemy.
+              ko: 적을 처치하면 블라이트와 독을 포함한 디버프 중첩 일부를 근처 적에게 옮깁니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: each stack spreads debuffs to 1 more enemy and +5 m range (wiki); 3 chain Blight through packs.
+              ko: 개당 약화 효과를 1명 더, 5m 더 멀리 옮깁니다(위키). 3개면 역병이 무리 전체로 이어집니다.
+          - id: DeathMark
+            priority: core
+            note:
+              en: Blight, Bleed and slows quickly reach 4 debuffs for +50% damage taken.
+              ko: 블라이트, 출혈, 둔화로 디버프 4개를 금방 채워 받는 피해를 50% 늘립니다.
+            stacks:
+              target: 1
+              max: 2
+            stacksReason:
+              en: The +50% damage-taken bonus is fixed; a second copy only adds +7 s to the mark, and more does nothing useful (wiki).
+              ko: 받는 피해 +50%는 고정이고, 2개째는 표식 시간만 7초 늘리며 그 이상은 의미가 없습니다(위키).
+          - id: SlowOnHit
+            priority: optional
+            note:
+              en: Another debuff and keeps targets in melee range.
+              ko: 디버프 하나를 더하고 대상을 근접 거리에 묶어 둡니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one applies the slow and adds a debuff for Death Mark; extras only add +2 s (wiki).
+              ko: 1개로 감속이 걸리고 죽음의 표식용 약화 효과가 하나 늘어납니다. 추가분은 2초만 늘립니다(위키).
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Red chests, void cradles, stage 5 onward.
+          ko: 5스테이지 이후 빨간 상자와 공허 요람에서 챙깁니다.
+        items:
+          - id: BleedOnHitVoid
+            priority: optional
+            note:
+              en: Void Tri-Tip; guides list it for Acrid's debuff stacking.
+              ko: 삼각 단검의 공허 버전으로, 애크리드 디버프 중첩용으로 추천됩니다.
+            stacks:
+              target: 10
+              max: 10
+            stacksReason:
+              en: picking it up corrupts all Tri-Tips, so your 10 daggers become 10 Needleticks = 100% collapse chance (wiki).
+              ko: 획득하면 삼각 단검이 모두 변환되므로 단검 10개가 니들틱 10개(붕괴 확률 100%)가 됩니다(위키).
+          - id: BleedOnHitAndExplode
+            priority: optional
+            note:
+              en: Bleed items pair with Acrid; bleeding enemies explode on death.
+              ko: 출혈 계열과 잘 맞으며 출혈 걸린 적이 죽으면 폭발합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: boss item; one makes bleeding enemies explode, extras only add explosion damage (wiki).
+              ko: 보스 아이템입니다. 1개로 출혈 중인 적이 터지고 추가분은 폭발 피해만 늘립니다(위키).
+          - id: PermanentDebuffOnHit
+            priority: optional
+            note:
+              en: Armor reduction amplifies all of your damage-over-time.
+              ko: 방어력 감소로 모든 지속 피해가 강해집니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary optional; one already strips 2 armor per hit with no cap (wiki).
+              ko: 선택 전설 아이템이며, 1개로도 적중마다 방어력 2를 상한 없이 깎습니다(위키).
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Loop scaling
+          ko: 루프 스케일링
+        when:
+          en: After the first loop, once cooldown and debuff items are running.
+          ko: 첫 루프 이후, 대기시간 감소와 디버프 아이템이 갖춰진 뒤.
+        items:
+          - id: UtilitySkillMagazine
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: +2 Frenzied Leap charges and 33% shorter utility cooldown (wiki); Deltia's calls it essential for Acrid.
+              ko: 광란 도약 충전 +2와 유틸리티 대기시간 33% 감소(위키). Deltia's 가이드가 애크리드 필수로 꼽습니다.
+            stacksReason:
+              en: one gives +2 leap charges and the 33% cooldown cut, which does not stack (wiki); extras only add charges.
+              ko: 1개로 도약 충전 +2와 대기시간 33% 감소를 얻고, 감소 효과는 중첩되지 않아(위키) 추가분은 충전만 늘립니다.
+          - id: Clover
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: Rogue Ranker's top red for Acrid; more bleed rolls. Equal Purity stacks cancel it (wiki).
+              ko: Rogue Ranker가 꼽은 애크리드 최고의 빨간 아이템으로 출혈 판정이 늘어납니다. 순수와 같은 수만큼 있으면 상쇄됩니다(위키).
+            stacksReason:
+              en: legendary, and one already adds a re-roll to every proc; equal Purity stacks cancel it (wiki).
+              ko: 전설 아이템이고 1개로도 모든 발동에 재판정이 붙습니다. 같은 수의 순수가 있으면 상쇄됩니다(위키).
+          - id: BearVoid
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: GameRant's void defense pick for Acrid; Blight Acrid fights up close. Corrupts all Tougher Times.
+              ko: GameRant가 꼽은 애크리드용 방어 공허 아이템입니다. 역병 애크리드는 근접전을 합니다. 힘들었던 시절을 모두 변환합니다.
+            stacksReason:
+              en: one gives a block every 13.5 s for close-range fights; extras only shorten the recharge 10% each (wiki).
+              ko: 1개로 근접전에서 13.5초마다 공격을 한 번 막고, 추가분은 재충전을 10%씩만 줄입니다(위키).
+        next: []
+    pickOrder:
+      common:
+        - BleedOnHit
+        - SecondarySkillMagazine
+        - IgniteOnKill
+        - NearbyDamageBonus
+        - Hoof
+      uncommon:
+        - DeathMark
+        - TriggerEnemyDebuffs
+        - SlowOnHit
+        - Feather
+      legendary:
+        - AlienHead
+        - UtilitySkillMagazine
+        - PermanentDebuffOnHit
+        - Clover
+    milestones:
+      - when:
+          en: Once you hold 10 Tri-Tip Daggers.
+          ko: 삼각 단검이 10개가 되면.
+        advice:
+          en: Bleed chance is 100% on your 1.0 proc-coefficient skills; more daggers add nothing. Put whites elsewhere.
+          ko: 발동 계수 1.0 스킬로 출혈 확률 100%가 되어 더 쌓아도 이득이 없습니다. 흰색은 다른 곳에 쓰세요.
+        take: []
+        stop:
+          - BleedOnHit
+      - when:
+          en: When you have 3+ Alien Heads, or Alien Head plus Purity.
+          ko: 외계인 머리가 3개 이상이거나 외계인 머리와 순수가 함께 있을 때.
+        advice:
+          en: Ravenous Bite is near its 0.5 s floor (2 s x 0.75^3 = 0.84 s). Keep Alien Heads for Frenzied Leap and Epidemic, but do not add more Purity.
+          ko: 베어 물기가 0.5초 하한에 가까워집니다(2초 x 0.75^3 = 0.84초). 외계인 머리는 광란 도약과 유행병을 위해 계속 챙기되 순수는 더 늘리지 마세요.
+        take: []
+        stop:
+          - LunarBadLuck
+      - when:
+          en: Before picking up a Needletick.
+          ko: 니들틱을 줍기 전.
+        advice:
+          en: It corrupts every Tri-Tip Dagger you hold (wiki), so it replaces your bleed rather than adding to it. Decide before walking over it.
+          ko: 보유한 삼각 단검을 모두 변환하므로(위키) 출혈에 더해지는 게 아니라 대체됩니다. 줍기 전에 결정하세요.
+        take: []
+        stop: []
+      - when:
+          en: After the first loop.
+          ko: 첫 루프 이후.
+        advice:
+          en: Blight's stacks do not refresh their duration, so extra charges and cooldowns decide your damage. Prioritize Hardlight Afterburner and Lysate Cell.
+          ko: 역병 중첩은 지속 시간이 갱신되지 않아 충전과 대기시간이 딜을 결정합니다. 고형광선 재연소장과 용해물 전지를 우선하세요.
+        take:
+          - UtilitySkillMagazine
+          - EquipmentMagazineVoid
+        stop: []
+    avoid:
+      - id: Seed
+        reason:
+          en: DoT ticks do not heal, so on-hit healing is minimal.
+          ko: 지속 피해로는 회복되지 않아 적중 시 회복량이 미미합니다.
+    evidence: |-
+      Blight + Ravenous Bite + Frenzied Leap loadout: Rogue Ranker. Blight's non-refreshing duration and the Purity / Alien Head / Lysate Cell cooldown picks: wiki.gg Acrid strategy. 'Load up on backup mags to stack blights on bosses': Steam discussion summary. Noxious Thorn transferring Blight/Poison: wiki.gg Noxious Thorn (Seekers of the Storm item). Death Mark with Acrid debuffs: wiki.gg and Rogue Ranker. Needletick: 2022 Steam Ultimate Acrid Guide; Shatterspleen: 2021 Steam thread. Disagreement: wiki.gg and a 2024 Steam thread favor Poison for most runs, especially loops; Blight is judged viable but weaker against flyers. Community Blight item lists are thinner than Poison ones.
+
+      Stack counts and progression: Thinner than the Poison build. Stack values from wiki.gg item data: Tri-Tip +10%/stack reaching 100% at 10 on proc-coefficient 1.0 hits (wiki Tri-Tip page), Alien Head 0.75^n with a 0.5 s floor and Purity applied after it (wiki Alien Head/Purity), Death Mark +7 s per stack, Scorpion armor-damage asymptote. Skill cooldowns (Bite 2 s, Frenzied Leap 10 s, Epidemic 10 s) and Blight's non-refreshing 5 s duration: wiki Acrid. 'Load up on backup mags for Blight': Steam discussion summary already cited in the build. Hardlight: Deltia's; Clover: Rogue Ranker; Safer Spaces and Lysate Cell: GameRant. Needletick corrupting Tri-Tip: wiki item data. Disagreement: wiki.gg and a Steam thread say Poison, not Blight, is the better pick for loops, so this build's loop advice is modest. No boss pick order: no Blight source ranks boss items. Steam guide pages returned HTTP 429; Reddit was not tried.

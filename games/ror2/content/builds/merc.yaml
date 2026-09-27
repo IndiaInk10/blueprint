@@ -1,0 +1,590 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: MercBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: mixed
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Mercenary
+  - https://rogueranker.com/mercenary-ror2/
+  - https://www.thegamer.com/risk-of-rain-2-mercenary-tips-guide/
+  - https://nerdlodge.com/risk-of-rain-2-mercenary-guide/
+  - https://exputer.com/guides/risk-of-rain-2-mercenary/
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=2987639899
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=2494553860
+  - https://riskofrain2.wiki.gg/wiki/Luminous_Shot
+  - https://riskofrain2.wiki.gg/wiki/Hardlight_Afterburner
+  - https://riskofrain2.wiki.gg/wiki/Alloyed_Collective_Update
+builds:
+  - id: merc-expose-skill-chaining
+    title:
+      en: Expose skill chaining
+      ko: 노출 스킬 연계
+    difficulty: intermediate
+    summary:
+      en: Every Mercenary skill has a 1.0 proc coefficient, and Expose cuts cooldowns. Build around more skill charges and cooldown items so you can chain invulnerable dashes. Cap Soldier's Syringe at about 3-4, since too much attack speed shortens his dashes and Laser Sword extensions.
+      ko: 머셔너리의 모든 스킬은 프록 계수 1.0이며, 노출은 쿨타임을 줄여 줍니다. 스킬 충전과 쿨타임 아이템을 모아 무적 돌진을 계속 이어 가세요. 공격 속도가 너무 높으면 돌진 거리와 레이저 검 연장 타이밍이 짧아지므로 군인의 주사기는 3~4개 정도가 적당합니다.
+    loadout:
+      primary: MERC_PRIMARY_NAME
+      secondary: MERC_SECONDARY_NAME
+      utility: MERC_UTILITY_NAME
+      special: MERC_SPECIAL_ALT1_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Melee basics
+          ko: 근접 기본기
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: NearbyDamageBonus
+            priority: core
+            note:
+              en: He is always in melee range, so it is a permanent damage bonus.
+              ko: 항상 근접 거리라 상시 피해량 증가입니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +20% damage per stack within 13 m, linear, and a melee survivor is always in range; 5 = +100%.
+              ko: 13m 안의 적에게 개당 +20%로 선형이고 근접 생존자는 항상 범위 안이라 5개면 +100%입니다.
+          - id: Syringe
+            priority: core
+            stacks:
+              target: 3
+              max: 4
+            note:
+              en: Stop around 3-4 stacks; more narrows his combo timing.
+              ko: 3~4개에서 멈추세요. 더 쌓으면 연계 타이밍이 좁아집니다.
+            stacksReason:
+              en: "'3-4 stacks is a strong stopping point'; the wiki says more attack speed narrows his combo timing."
+              ko: Rogue Ranker는 '3~4개가 좋은 멈춤 지점'이라 합니다. 위키도 공격 속도가 더 오르면 콤보 타이밍이 좁아진다고 설명합니다.
+          - id: Bear
+            priority: optional
+            note:
+              en: Survivability for close-range fighting.
+              ko: 근접전 생존력을 올려 줍니다.
+            stacks:
+              target: 10
+              min: 1
+            stacksReason:
+              en: hyperbolic block chance, 10 stacks = 60% and each copy past 10 adds under 2.5 points; loop guides stack it to about 10.
+              ko: 위키 기준 쌍곡선 중첩이라 10개면 막기 60%이고, 10개 이후로는 개당 2.5%p도 안 늘어납니다. 루프 공략들도 10개 정도를 목표로 합니다.
+          - id: Hoof
+            priority: optional
+            note:
+              en: Longer dashes and better repositioning.
+              ko: 돌진 거리와 위치 조정이 좋아집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +14% speed per stack; 3 (+42%) covers mobility, then whites are better spent on damage.
+              ko: 개당 이동 속도 +14%라 3개(+42%)면 기동력은 충분하고, 그 뒤 흰색은 화력에 쓰는 게 낫습니다.
+        next:
+          - charges
+          - sustain
+      - id: charges
+        phase: mid
+        label:
+          en: More skill uses
+          ko: 스킬 사용 횟수 증가
+        when:
+          en: If you rely on Whirlwind and Blinding Assault for damage and safety.
+          ko: 돌개바람과 눈부신 돌격으로 딜과 생존을 챙긴다면.
+        items:
+          - id: SecondarySkillMagazine
+            priority: core
+            note:
+              en: "Often called one of his best items: many more Whirlwinds."
+              ko: 그의 최고 아이템 중 하나로 꼽히며 돌개바람을 훨씬 많이 씁니다.
+            stacks:
+              target: 4
+            stacksReason:
+              en: linear +1 charge with no cap (wiki); loop players want 'a few stacks', so 4 charges is a solid goal.
+              ko: 위키 기준 개당 충전 +1로 상한이 없습니다. 루프 플레이어들이 '몇 개'는 원하므로 4개를 목표로 잡았습니다.
+          - id: Feather
+            priority: optional
+            note:
+              en: Extra jumps for aerial combos and dodging.
+              ko: 추가 점프로 공중 연계와 회피가 쉬워집니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: +1 jump per stack; 2 extra jumps cover dodging and repositioning, and further jumps matter little.
+              ko: 개당 점프 +1입니다. 추가 점프 2회면 회피와 위치 조정에 충분하고, 그 이상은 체감이 적습니다.
+          - id: IncreasePrimaryDamage
+            priority: optional
+            note:
+              en: "Seekers of the Storm item: its lightning is multiplied by Expose, which makes it unusually strong on him."
+              ko: "SotS 아이템: 번개 피해가 노출 효과로 증폭되어 머셔너리에게 특히 강합니다."
+            stacks:
+              target: 2
+            stacksReason:
+              en: +1 stored charge and +50% strike damage per stack; 2 before other greens.
+              ko: 개당 저장 충전 +1, 번개 피해 +50%입니다. 2개까지 챙기고 다른 녹색 아이템으로 넘어가세요.
+          - id: Bandolier
+            priority: optional
+            note:
+              en: His high kill rate triggers full cooldown resets.
+              ko: 처치가 많아 쿨타임 전체 초기화가 자주 발동합니다.
+            stacks:
+              target: 3
+              min: 1
+              max: 3
+            stacksReason:
+              en: 20.4% / 30.4% / 36.7% at 1-3 stacks, and each copy after the third adds under 5 points.
+              ko: 위키 드롭 확률표 기준 1~3개에서 20.4% / 30.4% / 36.7%이고, 3개 이후로는 개당 5%p도 늘지 않습니다.
+        next:
+          - late
+      - id: sustain
+        phase: mid
+        label:
+          en: Sustain
+          ko: 회복
+        when:
+          en: If you keep taking chip damage in melee.
+          ko: 근접전에서 계속 피해가 쌓인다면.
+        items:
+          - id: HealOnCrit
+            priority: core
+            note:
+              en: Healing on crit for long fights.
+              ko: 치명타 시 회복으로 긴 전투를 버팁니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: the first copy gives the 5% crit, a second raises healing to 12 per crit; then other greens give more.
+              ko: 첫 개가 치명타 5%를 주고 두 번째로 치명타당 회복이 12가 됩니다. 그 뒤엔 다른 녹색 아이템이 낫습니다.
+          - id: Seed
+            priority: optional
+            note:
+              en: Heals on every one of his many hits.
+              ko: 많은 타격마다 회복합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +1 heal per hit per stack; with his many hits, 3 gives steady sustain before other greens.
+              ko: 개당 적중 시 회복 +1입니다. 타격 수가 많아 3개면 꾸준히 회복되고, 그 뒤엔 다른 녹색 아이템이 낫습니다.
+          - id: AttackSpeedOnCrit
+            priority: optional
+            note:
+              en: Frequent crits keep attack speed stacks up.
+              ko: 잦은 치명타로 공격 속도 중첩을 유지합니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: only the first copy gives the 5% crit; extras only raise the attack speed cap, which this build does not want.
+              ko: 위키 기준 치명타 5%는 첫 개만 주고 추가분은 공격 속도 상한만 올리는데, 이 빌드는 그게 필요 없습니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Near-permanent skills
+          ko: 스킬 상시 사용
+        when:
+          en: Legendary, boss, or lunar items.
+          ko: 전설, 보스, 달 아이템.
+        items:
+          - id: UtilitySkillMagazine
+            priority: core
+            note:
+              en: Extra Blinding Assault charges for chained invulnerable dashes.
+              ko: 눈부신 돌격 충전이 늘어 무적 돌진을 연속으로 씁니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: the 33% cooldown cut comes with the first copy; a second adds 2 more charges, which this build uses for chaining.
+              ko: 쿨타임 33% 감소는 첫 개에서 끝나고, 두 번째는 충전을 2회 더 줘서 연속 사용에 쓰입니다.
+          - id: KillEliteFrenzy
+            priority: optional
+            note:
+              en: Elite kills remove cooldowns, letting you chain Slicing Winds.
+              ko: 정예 처치 시 쿨타임이 사라져 칼바람을 연속으로 씁니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: 4 s of 0.5 s cooldowns per stack, linear; a second copy doubles the window to 8 s, and more legendaries are rare.
+              ko: 개당 4초씩 선형으로 늘어나며, 2개면 8초로 두 배가 됩니다. 전설 아이템이라 그 이상은 드뭅니다.
+          - id: LunarBadLuck
+            priority: situational
+            note:
+              en: "Lunar: one stack lets Whirlwind or Rising Thunder be used almost continuously."
+              ko: "달 아이템: 1개만으로 돌개바람이나 천둥오름을 거의 계속 쓸 수 있습니다."
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: one Purity already lets Whirlwind or Rising Thunder run almost nonstop; more mainly shortens Eviscerate and costs luck.
+              ko: 위키 기준 순수 1개면 회오리바람이나 상승 천둥을 거의 계속 쓸 수 있습니다. 더 쌓으면 주로 적출만 짧아지고 행운이 깎입니다.
+          - id: Behemoth
+            priority: optional
+            note:
+              en: Explosions spread extra Expose stacks.
+              ko: 폭발로 노출을 추가로 퍼뜨립니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one copy spreads Expose through explosions, and a second is a bonus rather than a goal.
+              ko: 전설 아이템입니다. 1개로 폭발로 노출을 퍼뜨리고, 두 번째는 목표가 아니라 덤입니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Near-zero cooldowns
+          ko: 쿨타임 거의 0
+        when:
+          en: After the first loop, once Purity or Brainstalks are in place.
+          ko: 첫 루프 이후, 순수나 뇌줄기를 갖춘 뒤.
+        items:
+          - id: AlienHead
+            priority: core
+            stacks:
+              target: 3
+              min: 1
+              max: 4
+            note:
+              en: "Rogue Ranker: 1-2 is efficient, 3-4 is justified with Purity. Applies before Purity's flat cut; 0.5 s floor."
+              ko: Rogue Ranker 기준 1~2개가 효율적이고, 순수가 있으면 3~4개까지 괜찮습니다. 순수보다 먼저 적용되며 최소 0.5초입니다.
+            stacksReason:
+              en: 1-2 is efficient and 3-4 is justified with Purity; cooldowns hit the 0.5 s floor past that.
+              ko: Rogue Ranker 기준 1~2개가 효율적이고 순수가 있으면 3~4개도 괜찮습니다. 그 이상은 쿨타임이 0.5초 하한에 걸립니다.
+          - id: HalfAttackSpeedHalfCooldowns
+            priority: situational
+            stacks:
+              target: 1
+              max: 1
+            note:
+              en: "Listed for him by Nerd Lodge: halves cooldowns and attack speed. He already wants little attack speed, so the downside hurts less."
+              ko: Nerd Lodge가 꼽은 아이템으로 쿨타임과 공격 속도를 모두 절반으로 만듭니다. 원래 공격 속도를 적게 원하므로 단점이 덜 아픕니다.
+            stacksReason:
+              en: the second stack halves attack speed again, which even Mercenary cannot afford.
+              ko: 두 번째부터는 공격 속도가 다시 절반이 되어 용병도 감당하기 어렵습니다.
+          - id: ExtraLife
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: A generic loop safety net for a melee survivor.
+              ko: 근접 생존자를 위한 루프용 안전장치입니다.
+            stacksReason:
+              en: each copy is one extra life; one legendary slot is a realistic goal, and any more are a bonus.
+              ko: 1개당 목숨 하나입니다. 전설 아이템이라 1개가 현실적인 목표이고, 더 나오면 덤입니다.
+        next: []
+    pickOrder:
+      common:
+        - SecondarySkillMagazine
+        - NearbyDamageBonus
+        - Syringe
+        - Bear
+        - Hoof
+        - BossDamageBonus
+      uncommon:
+        - HealOnCrit
+        - Feather
+        - Bandolier
+        - Seed
+        - AttackSpeedOnCrit
+        - ChainLightning
+      legendary:
+        - KillEliteFrenzy
+        - UtilitySkillMagazine
+        - AlienHead
+        - CritDamage
+        - Behemoth
+    milestones:
+      - when:
+          en: Once you have 3-4 Soldier's Syringes
+          ko: 군인의 주사기가 3~4개가 되면
+        advice:
+          en: Stop taking attack speed; scrap extra Syringes for Backup Magazine or Focus Crystal.
+          ko: 공격 속도는 그만 챙기세요. 남는 주사기는 고철로 바꿔 보조 탄창이나 초점 크리스털을 뽑으세요.
+        take:
+          - SecondarySkillMagazine
+          - NearbyDamageBonus
+        stop:
+          - Syringe
+          - AttackSpeedOnCrit
+      - when:
+          en: When you get your first Purity
+          ko: 첫 순수를 얻으면
+        advice:
+          en: Whirlwind or Rising Thunder become near-permanent; now Alien Heads are worth stacking to 3-4.
+          ko: 돌개바람이나 천둥오름을 거의 계속 쓸 수 있습니다. 이제 외계인 머리를 3~4개까지 쌓을 가치가 있습니다.
+        take:
+          - AlienHead
+        stop: []
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Elites spawn more often, so Brainstalks gains value; keep Tougher Times rising toward 10.
+          ko: 정예가 더 자주 나와 뇌줄기의 가치가 올라갑니다. 힘들었던 시절도 10개를 향해 계속 쌓으세요.
+        take:
+          - KillEliteFrenzy
+          - Bear
+        stop: []
+      - when:
+          en: When you have 3 Bandoliers
+          ko: 탄약띠가 3개가 되면
+        advice:
+          en: Further Bandoliers add little; prefer Backup Magazine and Hopoo Feather.
+          ko: 탄약띠는 더 챙겨도 효과가 적습니다. 보조 탄창과 Hopoo 깃털을 우선하세요.
+        take:
+          - Feather
+        stop:
+          - Bandolier
+    avoid: []
+    evidence: |-
+      Loadout: wiki and Rogue Ranker favor Slicing Winds; older guides (TheGamer 2023, Nerd Lodge Jan 2023) prefer Eviscerate, so Eviscerate is a valid swap. Whirlwind vs Rising Thunder is preference; the wiki gives Rising Thunder more damage and Whirlwind smoother combos. Attack speed cap (3-4 Syringes): Rogue Ranker, wiki, TheGamer. Backup Magazine, Hopoo, Scythe, Bandolier, Brainstalks, Tougher Times: Nerd Lodge + TheGamer + Rogue Ranker + eXputer. Afterburner: TheGamer + Rogue Ranker + wiki item page. Purity and Behemoth: wiki. Luminous Shot: wiki item page (post-V1.3.6 rework), a single source and patch-sensitive. Pre-SotS Blinding Assault push-off exploit on flying enemies was patched out (wiki); Alloyed Collective only fixed Whirlwind fall damage. eXputer (2023) also recommends Berzerker's Pauldron, which conflicts with the attack speed cap advice, so it is omitted.
+
+      Stack counts and progression: Syringe 3-4 cap: Rogue Ranker (explicit), wiki Mercenary page (attack speed downsides; ~4 Syringes for Eviscerate to match Slicing Winds). Purity (1 = continuous Whirlwind/Rising Thunder) and Brainstalks chaining: wiki Mercenary page. Alien Head 1-2 / 3-4 with Purity and application order: Rogue Ranker Alien Head page; floor 0.5 s: wiki. Brainstalks becoming stronger late as more elites spawn: fandom Brainstalks page via search snippet (page itself returned 402). Tougher Times, Bandolier, Afterburner, Predatory math: wiki item pages. Pick order: Nerd Lodge order (Backup Mag, Focus Crystal, Syringe, Tougher Times, Hopoo, Brainstalks, Scythe, Bandolier), Rogue Ranker (Focus Crystal, Syringe, Scythe, Backup Mag/Afterburner, Bandolier, AP Rounds), TheGamer (Seed, Ukulele, Laser Scope, Afterburner). Light Flux Pauldron is only listed by Nerd Lodge without explanation; the reasoning about attack speed is my inference. Rogue Ranker's numbers for Focus Crystal (16%) and AP Rounds (30%) disagree with the wiki (20% each). Steam guides returned HTTP 429; Reddit could not be fetched.
+  - id: merc-crit-bleed-mercenary
+    title:
+      en: Crit bleed Mercenary
+      ko: 치명타 출혈 머셔너리
+    difficulty: intermediate
+    summary:
+      en: "A crit-stacking variant: about 9 Lens-Maker's Glasses plus Predatory Instincts reach ~100% crit, then Shatterspleen and Laser Scope turn his many hits into bleed and explosions."
+      ko: 치명타를 쌓는 변형 빌드입니다. 렌즈 제작자의 안경 약 9개와 포식 본능으로 치명타 확률을 약 100%로 맞춘 뒤, 폭발하는 비장과 레이저 스코프로 수많은 타격을 출혈과 폭발로 바꿉니다.
+    loadout:
+      primary: MERC_PRIMARY_NAME
+      secondary: MERC_SECONDARY_NAME
+      utility: MERC_UTILITY_NAME
+      special: MERC_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Crit stacking
+          ko: 치명타 쌓기
+        when:
+          en: "Stages 1-3: take every Lens-Maker's Glasses."
+          ko: "1~3스테이지: 렌즈 제작자의 안경을 모두 챙기세요."
+        items:
+          - id: CritGlasses
+            priority: core
+            stacks:
+              target: 9
+              max: 10
+            note:
+              en: About 9 stacks, then two 5% crit items (Predatory Instincts, Harvester's Scythe or Shatterspleen) take you to 100%. One of them alone only reaches 95%.
+              ko: 약 9개. 나머지는 5%짜리 치명타 아이템(포식 본능, 수확꾼의 낫, 폭발하는 비장) 두 개로 채워야 100%가 됩니다. 하나만으로는 95%입니다.
+            stacksReason:
+              en: stop at 9; with Predatory Instincts and Harvester's Scythe (5% each) that is 100%. 10 is the hard cap.
+              ko: 위키 권장대로 9개에서 멈추세요. 포식 본능과 수확꾼의 낫(각 5%)을 더하면 100%이고, 10개가 상한입니다.
+          - id: NearbyDamageBonus
+            priority: optional
+            note:
+              en: Melee damage bonus.
+              ko: 근접 피해량 증가입니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +20% damage per stack within 13 m, linear, and a melee survivor is always in range; 5 = +100%.
+              ko: 13m 안의 적에게 개당 +20%로 선형이고 근접 생존자는 항상 범위 안이라 5개면 +100%입니다.
+          - id: Crowbar
+            priority: optional
+            note:
+              en: Bonus damage on healthy targets.
+              ko: 체력이 많은 적에게 추가 피해를 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +75% per stack against enemies above 90% health; 3 (+225%) before other whites.
+              ko: 체력 90% 이상 적에게 개당 +75%라 3개(+225%)까지 챙기고, 그 뒤엔 다른 흰색을 고르세요.
+          - id: BossDamageBonus
+            priority: optional
+            note:
+              en: Boss damage.
+              ko: 보스 피해 증가입니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +20% boss damage per stack; 3 (+60%) before whites that help in every fight.
+              ko: 보스 피해 개당 +20%입니다. 3개(+60%) 뒤에는 모든 전투에 도움 되는 흰색이 낫습니다.
+        next:
+          - crit
+      - id: crit
+        phase: mid
+        label:
+          en: On-crit items
+          ko: 치명타 시 아이템
+        when:
+          en: Once crit is around 50%+.
+          ko: 치명타가 50% 정도 이상일 때.
+        items:
+          - id: AttackSpeedOnCrit
+            priority: core
+            note:
+              en: Crit chance plus attack speed on crit.
+              ko: 치명타 확률과 치명타 시 공격 속도를 줍니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: only the first copy gives the 5% crit; extras only raise the attack speed cap, which this build does not want.
+              ko: 위키 기준 치명타 5%는 첫 개만 주고 추가분은 공격 속도 상한만 올리는데, 이 빌드는 그게 필요 없습니다.
+          - id: HealOnCrit
+            priority: core
+            note:
+              en: Healing on every crit.
+              ko: 치명타마다 회복합니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: +4 heal per crit per stack and this build crits constantly, so 3 (16 per crit) is worth it.
+              ko: 개당 치명타 회복 +4이고 이 빌드는 치명타가 끊임없이 터지므로 3개(치명타당 16)까지 챙기세요.
+          - id: ChainLightning
+            priority: optional
+            note:
+              en: Extra chain damage for crowds.
+              ko: 무리에게 연쇄 피해를 더합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 stacks reach 5 targets and 22 m, enough for crowds in a crit-focused build.
+              ko: 2개면 대상 5명, 범위 22m로 치명타 중심 빌드의 광역용으로 충분합니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Crit payoff
+          ko: 치명타 마무리
+        when:
+          en: Legendary and boss items.
+          ko: 전설·보스 아이템.
+        items:
+          - id: BleedOnHitAndExplode
+            priority: core
+            note:
+              en: Bleed on crit and explosions on kill.
+              ko: 치명타 시 출혈, 처치 시 폭발.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one copy gives the 5% crit and bleed on crit; extra copies only enlarge the death explosion, and boss items are rare.
+              ko: 1개로 치명타 5%와 치명타 출혈이 모두 생기고, 추가분은 처치 폭발 피해만 늘립니다. 보스 아이템이라 잘 나오지도 않습니다.
+          - id: CritDamage
+            priority: core
+            note:
+              en: With near-100% crit, every hit gets the bonus damage.
+              ko: 치명타가 거의 100%라 모든 타격이 추가 피해를 받습니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: +100% crit damage per stack, linear (wiki); this build crits on nearly every hit, so a second copy is worth chasing.
+              ko: 위키 기준 개당 치명타 피해 +100%로 선형입니다. 거의 매번 치명타가 나오는 빌드라 두 번째도 노릴 만합니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Defense and elite chains
+          ko: 방어와 정예 연쇄
+        when:
+          en: After the first loop, with crit at 100%.
+          ko: 첫 루프 이후, 치명타 100%를 맞춘 뒤.
+        items:
+          - id: Bear
+            priority: core
+            stacks:
+              target: 10
+              min: 4
+            note:
+              en: Guides list Tougher Times for squishy melee Mercenary; 10 stacks = 60% block.
+              ko: 공략들이 연약한 근접 머셔너리에게 힘들었던 시절을 추천합니다. 10개면 막기 60%입니다.
+            stacksReason:
+              en: hyperbolic block chance, 10 stacks = 60% and each copy past 10 adds under 2.5 points; loop guides stack it to about 10.
+              ko: 위키 기준 쌍곡선 중첩이라 10개면 막기 60%이고, 10개 이후로는 개당 2.5%p도 안 늘어납니다. 루프 공략들도 10개 정도를 목표로 합니다.
+          - id: KillEliteFrenzy
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+            note:
+              en: Elite kills give 0.5 s cooldowns; more elites spawn in long runs.
+              ko: 정예 처치 시 쿨타임이 0.5초가 됩니다. 긴 런일수록 정예가 많습니다.
+            stacksReason:
+              en: 4 s of 0.5 s cooldowns per stack, linear; a second copy doubles the window to 8 s, and more legendaries are rare.
+              ko: 개당 4초씩 선형으로 늘어나며, 2개면 8초로 두 배가 됩니다. 전설 아이템이라 그 이상은 드뭅니다.
+          - id: AlienHead
+            priority: optional
+            stacks:
+              target: 2
+              min: 1
+              max: 2
+            note:
+              en: "Rogue Ranker: 1-2 is the efficient range without Purity."
+              ko: Rogue Ranker 기준 순수가 없으면 1~2개가 효율적입니다.
+            stacksReason:
+              en: 1-2 is the efficient range without Purity; this build has no Purity, so stop at 2.
+              ko: Rogue Ranker 기준 순수가 없으면 1~2개가 효율 구간입니다. 이 빌드는 순수를 쓰지 않으니 2개에서 멈추세요.
+        next: []
+    pickOrder:
+      common:
+        - CritGlasses
+        - NearbyDamageBonus
+        - Crowbar
+        - BossDamageBonus
+        - Bear
+      uncommon:
+        - AttackSpeedOnCrit
+        - HealOnCrit
+        - ChainLightning
+      legendary:
+        - CritDamage
+        - KillEliteFrenzy
+        - AlienHead
+    milestones:
+      - when:
+          en: Once crit is around 50%
+          ko: 치명타가 약 50%가 되면
+        advice:
+          en: On-crit items start paying off; take one Predatory Instincts and Harvester's Scythe.
+          ko: 치명타 시 효과가 제값을 하기 시작합니다. 포식 본능과 수확꾼의 낫을 하나씩 챙기세요.
+        take:
+          - AttackSpeedOnCrit
+          - HealOnCrit
+        stop: []
+      - when:
+          en: When crit reaches 100% (9 glasses + two 5% items)
+          ko: 치명타가 100%에 도달하면(안경 9개 + 5% 아이템 2개)
+        advice:
+          en: Stop taking glasses; spend on Laser Scope and Shatterspleen.
+          ko: 안경은 그만 챙기고 레이저 스코프와 폭발하는 비장에 투자하세요.
+        take:
+          - CritDamage
+          - BleedOnHitAndExplode
+        stop:
+          - CritGlasses
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Add Tougher Times toward 10 and look for Brainstalks.
+          ko: 힘들었던 시절을 10개를 향해 모으고 뇌줄기를 노리세요.
+        take:
+          - Bear
+          - KillEliteFrenzy
+        stop: []
+    avoid:
+      - id: CritGlassesVoid
+        reason:
+          en: Corrupts the Lens-Maker's Glasses this build depends on.
+          ko: 이 빌드의 핵심인 렌즈 제작자의 안경을 오염시킵니다.
+    evidence: |-
+      Mixed: from the Steam guide 'OP Mercenary Build' (last updated June 2025, but written assuming Artifact of Command) and the Steam 'Item Builds' guide ('Bleeding Strike': 9 glasses + Predatory + Shatterspleen). The 9-glasses + Predatory tip is also on the wiki's Lens-Maker's page. Harvester's/Predatory also in Rogue Ranker and eXputer. The loadout is not specified by the guide ('any works'), so the tree uses the default Eviscerate, which scales with attack speed. The guide's Gesture of the Drowned + Spinel Tonic lunar combo is equipment and not listed here.
+
+      Stack counts and progression: 9 glasses + 5% items: wiki Lens-Maker's page ('wise to stop stacking at 9'; each of Predatory, Scythe, Shatterspleen gives 5% that does not stack). The build note says Predatory alone covers the last 5%, but by wiki values 9 glasses + one 5% item is 95%, so two are needed. Steam 'Item Builds' guide ('Bleeding Strike': 9 glasses + Predatory + Shatterspleen) and 'OP Mercenary Build' come from the existing build evidence; both returned HTTP 429 on refetch. Attack speed ceiling: Rogue Ranker and wiki Mercenary page. Loop items: Nerd Lodge (Tougher Times, Brainstalks), Rogue Ranker Alien Head page, GameDataCentral looping guide. Sources for this variant's long-run play are thin; no boss order beyond Shatterspleen. Reddit could not be fetched.

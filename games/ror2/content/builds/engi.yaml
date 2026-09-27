@@ -1,0 +1,637 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: EngiBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: strong
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Engineer
+  - https://riskofrain2.wiki.gg/wiki/Bustling_Fungus
+  - https://riskofrain2.wiki.gg/wiki/Lysate_Cell
+  - https://rogueranker.com/engineer-ror2/
+  - https://steamcommunity.com/app/632360/discussions/0/4754200917403941398
+  - https://exputer.com/guides/risk-of-rain-2-engineer/
+  - https://segmentnext.com/risk-of-rain-2-engineer-guide/
+builds:
+  - id: engi-bungus-gauss-turrets
+    title:
+      en: Bungus Gauss Turrets
+      ko: 뿜뿜 버섯 가우스 포탑
+    difficulty: beginner
+    summary:
+      en: TR12 turrets never move, so Bustling Fungus heals them all the time. Turrets copy your items when placed, so every item you pick up is counted up to three times. Re-place turrets after picking up an item.
+      ko: TR12 포탑은 움직이지 않아 뿜뿜 버섯의 회복을 항상 받습니다. 포탑은 설치할 때 아이템을 복사하므로 아이템 하나가 최대 세 번 효과를 냅니다. 아이템을 얻으면 포탑을 다시 설치하세요.
+    loadout:
+      primary: ENGI_PRIMARY_NAME
+      secondary: ENGI_SECONDARY_NAME
+      utility: ENGI_UTILITY_NAME
+      special: ENGI_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Early core
+          ko: 초반 핵심
+        when:
+          en: Stages 1-2. Place both turrets close together so their Fungus zones overlap.
+          ko: 1~2스테이지. 두 포탑을 붙여 설치해 버섯 회복 범위가 겹치게 하세요.
+        items:
+          - id: Mushroom
+            priority: core
+            stacks:
+              target: 10
+              min: 5
+            note:
+              en: Engineer's key item. Stationary turrets heal constantly, and more stacks widen the zone so turrets can sit further apart.
+              ko: 엔지니어의 핵심 아이템입니다. 고정 포탑이 계속 회복하고, 겹칠수록 범위가 넓어져 포탑 간격을 벌릴 수 있습니다.
+            stacksReason:
+              en: "Steam 'past stage 20' thread: at least 5, more is better; 10 after the loop."
+              ko: 최소 5개, 많을수록 좋으니 루프 후엔 10개를 목표로 하세요.
+          - id: Syringe
+            priority: core
+            note:
+              en: Turrets inherit it, so it raises the fire rate and proc rate of three guns.
+              ko: 포탑도 물려받아 세 개의 총구 모두 연사력과 발동 빈도가 오릅니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +15% linear and all turrets copy it; 5 (+75%) before other procs pay more.
+              ko: 개당 +15%(선형)이고 포탑이 모두 복사하니 5개(+75%)까지 모으세요.
+          - id: BleedOnHit
+            priority: optional
+            note:
+              en: Every turret shot can bleed; TR12 has a 1.0 proc coefficient.
+              ko: TR12는 발동 계수가 1.0이라 포탑 한 발 한 발이 출혈을 걸 수 있습니다.
+            stacks:
+              target: 10
+              min: 1
+              max: 10
+            stacksReason:
+              en: 10% bleed chance per stack, so 10 is a 100% chance and the cap.
+              ko: 위키 기준 개당 출혈 확률 10%라 10개면 100%로 상한입니다.
+          - id: Bear
+            priority: optional
+            note:
+              en: Extra durability for Engineer and turrets on top of healing.
+              ko: 회복에 더해 엔지니어와 포탑의 생존력을 올려 줍니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: hyperbolic, 5 = 43% block; build notes treat it as filler after 5.
+              ko: 위키 기준 쌍곡선 중첩으로 5개면 43% 막기이며, 빌드에선 5개 이후엔 채우기용으로 봅니다.
+        next:
+          - onhit
+          - cooldown
+      - id: onhit
+        phase: mid
+        label:
+          en: Turret on-hit
+          ko: 포탑 적중 효과
+        when:
+          en: Default mid-game path once turrets are surviving on Fungus.
+          ko: 버섯으로 포탑이 버틸 수 있게 되면 가는 기본 중반 경로입니다.
+        items:
+          - id: Missile
+            priority: core
+            note:
+              en: Both turrets fire missiles from their own hits.
+              ko: 두 포탑이 각자 적중해 미사일을 쏩니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +300% missile damage per stack on every turret; 3 is a good uncommon count.
+              ko: 개당 미사일 피해 +300%가 모든 포탑에 적용되니 3개가 좋은 목표입니다.
+          - id: HealOnCrit
+            priority: optional
+            note:
+              en: Crits heal, and turrets fire often enough to trigger it constantly.
+              ko: 치명타가 회복으로 이어지고, 포탑이 자주 쏘기 때문에 꾸준히 발동합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: Fungus is the main heal here, so 2 Scythes (+4 heal each after the first) are enough.
+              ko: 이 빌드의 주 회복은 버섯이라 낫 2개면 충분합니다.
+          - id: NearbyDamageBonus
+            priority: optional
+            note:
+              en: The wiki notes it works on both turret types when enemies come close.
+              ko: 위키는 적이 가까이 올 때 두 포탑 모두에게 효과가 있다고 설명합니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +20% per stack within 13m; turrets only sometimes have enemies that close, so 3.
+              ko: 13m 안에서 개당 +20%인데, 포탑 근처에 적이 늘 있지는 않아 3개면 됩니다.
+        next:
+          - late
+      - id: cooldown
+        phase: mid
+        label:
+          en: Redeploy and extra turret
+          ko: 재설치와 추가 포탑
+        when:
+          en: Take when you keep losing turrets, or when a Void chest offers Lysate Cell.
+          ko: 포탑이 자주 파괴되거나 공허 상자에서 용해물 전지가 나올 때 가져가세요.
+        items:
+          - id: Bandolier
+            priority: core
+            note:
+              en: "Ammo packs reset all cooldowns: redeploy turrets and refresh Bubble Shield."
+              ko: 탄약 상자가 모든 재사용 대기시간을 초기화해 포탑 재설치와 거품 방어막 재사용이 가능합니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: stacking gives constant Bubble Shield uptime; 5 = 45% drop chance.
+              ko: 위키 기준 쌓을수록 버블 실드를 계속 유지할 수 있고, 5개면 드롭 확률 45%입니다.
+          - id: EquipmentMagazineVoid
+            priority: situational
+            note:
+              en: Lets you have three turrets out at once. It corrupts every Fuel Cell you hold.
+              ko: 포탑을 동시에 세 개까지 설치할 수 있습니다. 가진 연료 전지는 모두 변질됩니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: one Lysate Cell raises the turret limit to 3; more never add a 4th turret.
+              ko: 위키 기준 용해물 전지 1개로 포탑 한도가 3개가 되고, 더 가져도 4번째 포탑은 생기지 않습니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Stage 5 onward, or from Legendary chests.
+          ko: 5스테이지 이후나 전설 상자에서 챙기세요.
+        items:
+          - id: NovaOnHeal
+            priority: core
+            note:
+              en: Every turret gets a copy. With stacked Fungus, the constant healing becomes constant homing skulls.
+              ko: 포탑마다 복사됩니다. 버섯을 쌓았다면 끊임없는 회복이 끊임없는 유도 해골 공격이 됩니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; each turret copies it, so one already means three skull launchers.
+              ko: 전설 아이템이며 포탑마다 복사되니 1개로도 해골 발사대 세 개가 됩니다.
+          - id: IncreaseHealing
+            priority: optional
+            note:
+              en: Doubles Fungus healing, which also feeds N'kuhana's Opinion.
+              ko: 버섯 회복량이 두 배가 되어 은쿠하나의 견해에도 힘을 보탭니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one Rack already doubles all healing.
+              ko: 전설 아이템이며, 1개만으로도 모든 회복량이 두 배가 됩니다.
+          - id: ExtraLife
+            priority: optional
+            note:
+              en: Turrets get a copy and revive once per deployment without using up yours.
+              ko: 포탑도 복사본을 받아 설치할 때마다 한 번 부활하며, 내 것은 소모되지 않습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; turrets regain it every deployment, so one copy covers them.
+              ko: 전설 아이템이며 포탑은 배치할 때마다 다시 얻으니 1개면 충분합니다.
+          - id: UtilitySkillMagazine
+            priority: situational
+            note:
+              en: Extra utility charges give near-permanent Bubble Shield uptime.
+              ko: 보조 스킬 충전이 늘어 거품 방어막을 거의 상시 유지할 수 있습니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: one Hardlight gives near-permanent Bubble Shield; its cooldown cut does not stack.
+              ko: 위키 기준 고형광선 재연소장치 1개면 버블 실드를 거의 항상 켤 수 있고, 쿨감은 중첩되지 않습니다.
+          - id: ArmorReductionOnHit
+            priority: situational
+            note:
+              en: Armor shred lets turrets chew through tanky bosses.
+              ko: 방어력 감소로 포탑이 단단한 보스를 빨리 녹입니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: extra copies only lengthen an 8s armor shred that reapplies every 5 hits anyway.
+              ko: 추가 개수는 8초 방어력 감소의 지속시간만 늘리는데, 5번 맞히면 어차피 다시 걸립니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: "Loop: healing into damage"
+          ko: "루프: 회복을 딜로"
+        when:
+          en: After the first loop, once turrets survive on Fungus and you hold N'kuhana's Opinion.
+          ko: 첫 루프 이후, 포탑이 버섯만으로 버티고 은쿠하나의 견해를 갖춘 뒤.
+        items:
+          - id: Mushroom
+            priority: core
+            stacks:
+              target: 10
+              min: 5
+            note:
+              en: Keep stacking. More healing means more N'kuhana skulls, and a wider zone lets turrets sit apart.
+              ko: 계속 중첩하세요. 회복이 늘수록 은쿠하나 해골도 늘고, 범위가 넓어져 포탑을 떨어뜨려 놓을 수 있습니다.
+            stacksReason:
+              en: "Steam 'past stage 20' thread: at least 5, more is better; 10 after the loop."
+              ko: 최소 5개, 많을수록 좋으니 루프 후엔 10개를 목표로 하세요.
+          - id: NovaOnHeal
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: Every turret gets a copy and fires its own skulls. Damage scales with healing and max HP, not your damage stat.
+              ko: 포탑마다 복사되어 각자 해골을 쏩니다. 피해는 공격력이 아니라 회복량과 최대 체력에 비례합니다.
+            stacksReason:
+              en: legendary; each turret copies it, so one already means three skull launchers.
+              ko: 전설 아이템이며 포탑마다 복사되니 1개로도 해골 발사대 세 개가 됩니다.
+          - id: IncreaseHealing
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: "Wiki: Rack doubles healing, which doubles skull fire rate."
+              ko: 위키 기준 회춘의 선반이 회복을 2배로 올려 해골 발사 빈도도 2배가 됩니다.
+            stacksReason:
+              en: legendary; one Rack already doubles all healing.
+              ko: 전설 아이템이며, 1개만으로도 모든 회복량이 두 배가 됩니다.
+          - id: LunarPrimaryReplacement
+            priority: situational
+            stacks:
+              target: 1
+            note:
+              en: "Wiki: with Purity, turret damage becomes about 4x. Hungering Gaze replaces the turret gun."
+              ko: 위키 기준 순수와 함께 쓰면 포탑 피해가 약 4배가 됩니다. 포탑 총이 굶주린 시선으로 바뀝니다.
+            stacksReason:
+              en: one replaces the turret gun; extra copies add charges but also lengthen the reload.
+              ko: 1개로 포탑 총이 바뀌고, 추가분은 충전 수와 함께 재장전 시간도 늘립니다.
+          - id: LunarBadLuck
+            priority: situational
+            stacks:
+              target: 1
+              max: 1
+            note:
+              en: "Only together with Visions of Heresy. Wiki: one Purity already puts Hungering Gaze at the 0.5s floor, and the bad luck cuts AtG and Tri-Tip procs hard."
+              ko: 이단의 예지와 함께일 때만 고르세요. 위키 기준 순수 1개로 굶주린 시선이 이미 0.5초 하한에 닿고, 불운 때문에 AtG와 삼각 단검 발동률이 크게 떨어집니다.
+            stacksReason:
+              en: one Purity already brings the key cooldown to the 0.5s floor; more only add bad luck.
+              ko: 위키 기준 순수 1개로 핵심 스킬 쿨이 이미 0.5초 하한에 닿고, 더 가지면 불운만 늘어납니다.
+        next: []
+    pickOrder:
+      common:
+        - Mushroom
+        - Syringe
+        - BleedOnHit
+        - Bear
+        - NearbyDamageBonus
+      uncommon:
+        - Missile
+        - Bandolier
+        - HealOnCrit
+      legendary:
+        - NovaOnHeal
+        - IncreaseHealing
+        - UtilitySkillMagazine
+        - ExtraLife
+        - ArmorReductionOnHit
+    milestones:
+      - when:
+          en: Every time you pick up an item
+          ko: 아이템을 주울 때마다
+        advice:
+          en: Re-place your turrets. They copy your items only when placed.
+          ko: 포탑을 다시 설치하세요. 포탑은 설치하는 순간의 아이템만 복사합니다.
+        take: []
+        stop: []
+      - when:
+          en: Until you have 5 Bustling Fungus
+          ko: 뿜뿜 버섯이 5개가 될 때까지
+        advice:
+          en: Print and take Fungus first. Never take Weeping Fungus; it corrupts all of them.
+          ko: 버섯을 먼저 복사하고 챙기세요. 눈물 버섯은 절대 고르지 마세요. 버섯을 전부 오염시킵니다.
+        take:
+          - Mushroom
+        stop:
+          - MushroomVoid
+      - when:
+          en: Once you have one Hardlight Afterburner and one Lysate Cell
+          ko: 고형광선 재연소장치와 용해물 전지를 1개씩 갖추면
+        advice:
+          en: "Stop taking more of either: the Bubble Shield is already near-permanent and the turret limit does not go past 3."
+          ko: 둘 다 더 챙기지 마세요. 거품 방어막은 이미 거의 상시 유지되고 포탑 수도 3개를 넘지 않습니다.
+        take: []
+        stop:
+          - UtilitySkillMagazine
+          - EquipmentMagazineVoid
+      - when:
+          en: When a boss item drops
+          ko: 보스 아이템이 나올 때
+        advice:
+          en: Turrets do not inherit Queen's Gland, Empathy Cores or Halcyon Seed, so those help only you. Stat items like Titanic Knurl do reach the turrets.
+          ko: 여왕의 분비샘, 공감 코어, 평화 씨앗은 포탑이 물려받지 않아 본인에게만 도움이 됩니다. 거인의 혹 같은 능력치 아이템은 포탑에도 적용됩니다.
+        take: []
+        stop: []
+      - when:
+          en: After the first loop, once you hold N'kuhana's Opinion
+          ko: 첫 루프 이후 은쿠하나의 견해를 가졌다면
+        advice:
+          en: Take Rejuvenation Rack and more Fungus over other reds; the heal-skull loop is the build's late-game damage. Never take Transcendence.
+          ko: 다른 빨간 아이템보다 회춘의 선반과 버섯을 우선하세요. 회복-해골 순환이 후반 딜의 핵심입니다. 초월은 절대 고르지 마세요.
+        take:
+          - IncreaseHealing
+          - Mushroom
+          - NovaOnHeal
+        stop:
+          - ShieldOnly
+    avoid:
+      - id: MushroomVoid
+        reason:
+          en: It corrupts all your Bustling Fungus, removing the core of the turret build.
+          ko: 가진 뿜뿜 버섯이 모두 변질되어 포탑 빌드의 핵심이 사라집니다.
+      - id: ShieldOnly
+        reason:
+          en: Turns health into shields, and percentage healing from Fungus stops working.
+          ko: 체력이 보호막으로 바뀌어 버섯의 비율 회복이 소용없어집니다.
+      - id: Infusion
+        reason:
+          en: Turrets start their own Infusion stacks from zero each time they are placed, so the stacks are wasted.
+          ko: 포탑은 설치할 때마다 주입 약물 중첩이 0부터 시작하므로 효율이 떨어집니다.
+      - id: HeadHunter
+        reason:
+          en: Turrets can pick up elite buffs, but shield-type buffs undermine the healing strategy.
+          ko: 포탑도 엘리트 버프를 얻지만 보호막형 버프는 회복 전략을 망칩니다.
+    evidence: |-
+      Wiki strategy section: Bustling Fungus, N'kuhana's + Rejuvenation Rack, Bandolier, Hardlight Afterburner, Focus Crystal, Dio's Best Friend, turret inheritance blacklist (Infusion, Warbanner, Queen's Gland, etc.), avoid Weeping Fungus and Transcendence. Steam thread (Sep 2024): Fungus first, avoid Weeping Fungus, Tougher Times. Rogue Ranker: Syringe, Tri-Tip, AtG, Bandolier, Lysate Cell, re-place turrets after pickups. eXputer (2022): Fungus, Hardlight, Bandolier, Harvester's Scythe, Shattering Justice. Strong consensus on Fungus and on-hit via turrets. Anniversary Update: turrets now also hold your equipment but never activate it. No Engineer changes in Seekers of the Storm or Alloyed Collective except a fix that stops turrets being placed more than once per charge.
+
+      Stack counts and progression: Engineer wiki (quoted directly): Hardlight single copy = near-100% Bubble Shield, stacking Bandolier = constant uptime, Lysate Cell = up to 3 turrets (more stacks add charges only, also Lysate Cell page), Dio's regained per deployment, Visions + Purity about 4x turret damage, Purity puts Hungering Gaze at 0.5s, avoid Transcendence, inheritance blacklist. Fungus 5+ minimum: Steam thread 1768134097434174811 ('at least 5 fungi items (more is better)', one player to stage 35). 177-stack soft cap: Bustling Fungus wiki page. N'kuhana/Rack scaling: N'kuhana and Rack wiki pages. Weeping Fungus warning: Steam thread 4754200917403941398 (Sep 2024). Tri-Tip, Bandolier and Tougher Times numbers: wiki.gg item data. Pick order: Rogue Ranker (Fungus, Lysate, Hardlight tier 1; Tri-Tip, AtG, Bandolier tier 2; Syringe tier 3) and the wiki; Rogue Ranker puts Syringe lower than the build tree does. Purity conflicts with the build's luck-based on-hit items; that is inference from the Purity wiki page (chance becomes p^(x+1)). No source ranks boss items for Engineer, so only the inheritance blacklist is given.
+  - id: engi-mobile-carbonizer-turrets
+    title:
+      en: Mobile Carbonizer Turrets
+      ko: 이동형 탄화 포탑
+    difficulty: intermediate
+    summary:
+      en: TR58 turrets follow you, so they cannot use the Fungus trick. They survive through crit healing and by picking up Monster Tooth orbs as they move.
+      ko: TR58 포탑은 나를 따라다녀서 버섯 전략을 쓸 수 없습니다. 대신 치명타 회복과 이동 중 몬스터 이빨 회복 구슬 줍기로 버팁니다.
+    loadout:
+      primary: ENGI_PRIMARY_NAME
+      secondary: ENGI_SPIDERMINE_NAME
+      utility: ENGI_SKILL_HARPOON_NAME
+      special: ENGI_SPECIAL_ALT1_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Early core
+          ko: 초반 핵심
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: CritGlasses
+            priority: core
+            note:
+              en: Crit chance is the base of the crit-healing setup.
+              ko: 치명타 회복 구성의 기반이 되는 치명타 확률입니다.
+            stacks:
+              target: 10
+              min: 1
+              max: 10
+            stacksReason:
+              en: 10% crit per glass, capped at 100%; Scythe adds 5% once, so 10 is the ceiling.
+              ko: 위키 기준 개당 치명타 10%, 100%가 상한이며 낫은 5%를 한 번만 더하니 10개가 최대입니다.
+          - id: Tooth
+            priority: core
+            note:
+              en: Mobile turrets are good at collecting the healing orbs.
+              ko: 이동형 포탑은 회복 구슬을 잘 주워 먹습니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: +2% max HP per orb per stack; 5 makes each orb heal 8 + 10%.
+              ko: 개당 구슬 회복 최대 체력 +2%라 5개면 구슬 하나가 8 + 10%를 회복합니다.
+          - id: Syringe
+            priority: optional
+            note:
+              en: The Carbonizer laser scales with attack speed.
+              ko: 탄화 포탑의 레이저는 공격 속도에 비례해 강해집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: side item; 3 (+45%) speeds the laser before crit items matter more.
+              ko: 보조용이라 3개(+45%)면 레이저가 빨라지고, 이후엔 치명타 아이템이 우선입니다.
+        next:
+          - mid
+      - id: mid
+        phase: mid
+        label:
+          en: Crit sustain
+          ko: 치명타 회복
+        when:
+          en: Once you have some crit chance, turn it into healing.
+          ko: 치명타 확률이 어느 정도 쌓이면 회복으로 바꾸세요.
+        items:
+          - id: HealOnCrit
+            priority: core
+            note:
+              en: Turns turret crits into healing. TR58 hits often, but at a 0.6 proc coefficient.
+              ko: 포탑 치명타를 회복으로 바꿉니다. TR58은 자주 맞히지만 발동 계수가 0.6입니다.
+            stacks:
+              target: 4
+              min: 1
+            stacksReason:
+              en: 4 Scythes heal 20 per crit before TR58's 0.6 proc (12 after).
+              ko: 낫 4개면 치명타당 20 회복(TR58 계수 0.6 적용 시 12)입니다.
+          - id: NearbyDamageBonus
+            priority: optional
+            note:
+              en: TR58 fights at short range, so the close-range bonus is usually active.
+              ko: TR58은 근거리에서 싸워 근거리 피해 보너스가 대부분 적용됩니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: TR58 fights up close, so +20% per crystal is nearly always on; 5 = +100%.
+              ko: TR58은 근접 교전이라 개당 +20%가 거의 항상 켜져 있고, 5개면 +100%입니다.
+          - id: Bandolier
+            priority: optional
+            note:
+              en: Resets turret and Bubble Shield cooldowns.
+              ko: 포탑과 거품 방어막의 재사용 대기시간을 초기화합니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: 1 = 20%, 3 = 37%, 5 = 45%; 3 is where later copies start adding little.
+              ko: 위키 드롭 확률은 1개 20%, 3개 37%, 5개 45%라 3개 이후로는 추가 효율이 작아집니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Stage 5 onward.
+          ko: 5스테이지 이후.
+        items:
+          - id: ExtraLife
+            priority: optional
+            note:
+              en: Turrets revive once per deployment without consuming yours.
+              ko: 포탑이 설치할 때마다 한 번 부활하며 내 것은 소모되지 않습니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; turrets regain it every deployment, so one copy covers them.
+              ko: 전설 아이템이며 포탑은 배치할 때마다 다시 얻으니 1개면 충분합니다.
+          - id: ArmorReductionOnHit
+            priority: optional
+            note:
+              en: Armor shred for bosses.
+              ko: 보스 상대용 방어력 감소입니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: extra copies only lengthen an 8s armor shred that reapplies every 5 hits anyway.
+              ko: 추가 개수는 8초 방어력 감소의 지속시간만 늘리는데, 5번 맞히면 어차피 다시 걸립니다.
+          - id: UtilitySkillMagazine
+            priority: situational
+            note:
+              en: Near-permanent Bubble Shield.
+              ko: 거품 방어막을 거의 상시 유지합니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: one Hardlight gives near-permanent Bubble Shield; its cooldown cut does not stack.
+              ko: 위키 기준 고형광선 재연소장치 1개면 버블 실드를 거의 항상 켤 수 있고, 쿨감은 중첩되지 않습니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: "Loop: crit healing and extra turrets"
+          ko: "루프: 치명타 회복과 포탑 추가"
+        when:
+          en: After the first loop, once crit chance is high and Harvester's Scythe is in place.
+          ko: 첫 루프 이후, 치명타 확률이 높고 수확꾼의 낫을 갖춘 뒤.
+        items:
+          - id: HealOnCrit
+            priority: core
+            stacks:
+              target: 4
+              min: 2
+            note:
+              en: More Scythes raise heal per crit for you and every turret.
+              ko: 낫을 더 모으면 본인과 모든 포탑의 치명타당 회복량이 늘어납니다.
+            stacksReason:
+              en: 4 Scythes heal 20 per crit before TR58's 0.6 proc (12 after).
+              ko: 낫 4개면 치명타당 20 회복(TR58 계수 0.6 적용 시 12)입니다.
+          - id: EquipmentMagazineVoid
+            priority: optional
+            stacks:
+              target: 1
+              max: 1
+            note:
+              en: "Wiki: Lysate Cell allows a third turret; a second one adds nothing to the turret count."
+              ko: 위키 기준 용해물 전지로 포탑을 3개까지 둘 수 있고, 두 번째 전지는 포탑 수를 늘리지 않습니다.
+            stacksReason:
+              en: one Lysate Cell raises the turret limit to 3; more never add a 4th turret.
+              ko: 위키 기준 용해물 전지 1개로 포탑 한도가 3개가 되고, 더 가져도 4번째 포탑은 생기지 않습니다.
+          - id: ExtraLife
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: "Wiki: turrets regain Dio's every time they are deployed."
+              ko: 위키 기준 포탑은 설치할 때마다 디오의 절친을 다시 얻습니다.
+            stacksReason:
+              en: legendary; turrets regain it every deployment, so one copy covers them.
+              ko: 전설 아이템이며 포탑은 배치할 때마다 다시 얻으니 1개면 충분합니다.
+          - id: NearbyDamageBonus
+            priority: optional
+            stacks:
+              target: 5
+              min: 1
+            note:
+              en: "Wiki: Focus Crystal works on both turret types, and TR58 fights up close."
+              ko: 위키 기준 초점 크리스털은 두 포탑 모두에 효과가 있고, TR58은 가까이서 싸웁니다.
+            stacksReason:
+              en: TR58 fights up close, so +20% per crystal is nearly always on; 5 = +100%.
+              ko: TR58은 근접 교전이라 개당 +20%가 거의 항상 켜져 있고, 5개면 +100%입니다.
+        next: []
+    pickOrder:
+      common:
+        - CritGlasses
+        - Tooth
+        - Syringe
+        - NearbyDamageBonus
+      uncommon:
+        - HealOnCrit
+        - Bandolier
+        - Seed
+      legendary:
+        - UtilitySkillMagazine
+        - ExtraLife
+        - ArmorReductionOnHit
+    milestones:
+      - when:
+          en: Every time you pick up an item
+          ko: 아이템을 주울 때마다
+        advice:
+          en: Re-place your turrets so they copy the new item.
+          ko: 새 아이템을 복사하도록 포탑을 다시 설치하세요.
+        take: []
+        stop: []
+      - when:
+          en: Once you have a couple of Lens-Maker's Glasses
+          ko: 렌즈 제작자의 안경이 두어 개 모이면
+        advice:
+          en: "Turn that crit into healing: take Harvester's Scythe over other Uncommons."
+          ko: 그 치명타를 회복으로 바꾸세요. 다른 고급 아이템보다 수확꾼의 낫을 먼저 고르세요.
+        take:
+          - HealOnCrit
+        stop: []
+      - when:
+          en: When crit chance reaches 100%
+          ko: 치명타 확률이 100%에 도달하면
+        advice:
+          en: Stop taking Lens-Maker's Glasses.
+          ko: 렌즈 제작자의 안경은 그만 챙기세요.
+        take: []
+        stop:
+          - CritGlasses
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Take Lysate Cell for a third turret if a Void source offers it, and add Dio's Best Friend for turret revives. Avoid Transcendence and Infusion.
+          ko: 공허 보상에서 용해물 전지가 나오면 세 번째 포탑을 위해 고르고, 포탑 부활용으로 디오의 절친을 더하세요. 초월과 주입 약물은 피하세요.
+        take:
+          - EquipmentMagazineVoid
+          - ExtraLife
+        stop:
+          - ShieldOnly
+          - Infusion
+    avoid:
+      - id: Infusion
+        reason:
+          en: Turrets restart Infusion stacks from zero on each deployment.
+          ko: 포탑은 설치할 때마다 주입 약물 중첩이 0부터 시작합니다.
+      - id: ShieldOnly
+        reason:
+          en: Replaces health with shields, so healing items stop doing anything.
+          ko: 체력이 보호막으로 바뀌어 회복 아이템이 무의미해집니다.
+    evidence: |-
+      Wiki: TR58 follows Engineer, is better at collecting Monster Tooth orbs, benefits from Harvester's Scythe + Lens-Maker's crit healing, 0.6 proc coefficient; Carbonizer laser scales with attack speed. Steam thread (Sep 2024) says mobile turrets are better paired with Thermal Harpoons and Spider Mines, but those alternate skills are not in local-survivors.json, so the loadout uses Pressure Mines and Bubble Shield. Mixed and thinner than the TR12 build.
+
+      Stack counts and progression: Wiki Engineer page: TR58 follows you and collects Monster Tooth orbs, 0.6 proc coefficient, Focus Crystal works on both turret types, flat healing (Leeching Seed, Scythe) for mobile turrets, Dio's regained per deployment, single Hardlight = near-permanent Bubble Shield, Lysate Cell limit of 3 turrets. Scythe 5% crit only on first stack and heal x proc coefficient: Harvester's Scythe wiki page. Lens-Maker's cap: wiki. No Engineer-specific source gives a crit number for taking Scythe, so the milestone is worded loosely. Steam thread (Sep 2024) says mobile turrets last longer through movement. Thin and mixed sources; no boss order.

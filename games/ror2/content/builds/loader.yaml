@@ -1,0 +1,366 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: LoaderBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: strong
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Loader
+  - https://riskofrain2.wiki.gg/wiki/H3AD-5T_v2
+  - https://rogueranker.com/loader-ror2/
+  - https://exputer.com/guides/risk-of-rain-2-loader/
+  - https://www.thegamer.com/risk-of-rain-2-loader-tips-best-items/
+  - https://fpschampion.com/risk-of-rain-2-loader-build-and-gameplay-guide/
+builds:
+  - id: loader-charged-gauntlet-speed-punch
+    title:
+      en: Charged Gauntlet Speed Punch
+      ko: 충전 건틀릿 속도 펀치
+    difficulty: beginner
+    summary:
+      en: Charged Gauntlet gains +30% damage per 1 m/s of velocity and pierces, so movement speed is damage. Grapple in, punch through a pack, and let the 400%+ hits trigger the bands. Gauntlet hits also give Scrap Barrier.
+      ko: 충전 건틀릿은 속도 1m/s마다 피해가 30% 늘고 적을 관통하므로 이동 속도가 곧 딜입니다. 갈고리로 접근해 무리를 뚫고 지나가며, 400% 이상의 피해로 반지를 발동시키세요. 건틀릿 공격은 고철 방벽도 채워 줍니다.
+    loadout:
+      primary: LOADER_PRIMARY_NAME
+      secondary: LOADER_SECONDARY_NAME
+      utility: LOADER_UTILITY_NAME
+      special: LOADER_SPECIAL_ALT_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Early core
+          ko: 초반 핵심
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: Hoof
+            priority: core
+            note:
+              en: Speed feeds Charged Gauntlet damage directly.
+              ko: 이동 속도가 충전 건틀릿 피해로 바로 이어집니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: each Hoof is about +1 m/s, or +30% gauntlet damage; 5 before other items catch up.
+              ko: 염소발 1개가 약 +1m/s, 즉 건틀릿 피해 +30%라 5개까지 모으세요.
+          - id: SprintBonus
+            priority: core
+            note:
+              en: Sprint speed stacks with Hoof for faster charged punches.
+              ko: 폴의 염소발과 함께 질주 속도를 올려 충전 펀치가 더 강해집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +25% sprint per stack adds gauntlet damage; 3 alongside Hoof.
+              ko: 개당 달리기 +25%가 건틀릿 피해로 이어지니 염소발과 함께 3개를 모으세요.
+          - id: NearbyDamageBonus
+            priority: core
+            note:
+              en: Loader is always within 13m, so the bonus is always on.
+              ko: 로더는 항상 13m 안에서 싸워 보너스가 늘 적용됩니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: +20% per stack, always active for Loader; 5 = +100%.
+              ko: 로더에겐 항상 켜지는 개당 +20%라 5개면 +100%입니다.
+          - id: Crowbar
+            priority: optional
+            note:
+              en: Big opening punches on full-health targets.
+              ko: 체력이 가득 찬 적에게 첫 펀치가 강해집니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: optional opener; 2 (+150%) on full-health targets.
+              ko: 선택용 첫 타 보강이라 2개(+150%)면 충분합니다.
+        next:
+          - bands
+          - tempo
+      - id: bands
+        phase: mid
+        label:
+          en: Band punches
+          ko: 반지 펀치
+        when:
+          en: Default mid-game path. Both gauntlets and Thunderslam hit far above the 400% band threshold.
+          ko: 기본 중반 경로입니다. 두 건틀릿과 썬더슬램 모두 반지 조건인 400%를 크게 넘깁니다.
+        items:
+          - id: FireRing
+            priority: core
+            note:
+              en: "Called maybe her best item: nearly every gauntlet hit procs it off cooldown."
+              ko: 로더 최고의 아이템으로 꼽히기도 합니다. 대기시간만 끝나면 거의 모든 건틀릿 공격이 발동시킵니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: 1 turns the tornado on and the 10s recharge never shortens; a 2nd copy doubles its damage (+300%).
+              ko: 1개로 효과가 켜지고 10초 재충전은 줄지 않으니, 2개째로 피해량(+300%)을 두 배로 늘리세요.
+          - id: IceRing
+            priority: core
+            note:
+              en: Procs on the same hits as Kjaro's Band.
+              ko: 캬로의 반지와 같은 공격에 발동합니다.
+            stacks:
+              target: 2
+              min: 1
+            stacksReason:
+              en: 1 turns the ice blast on; a 2nd copy adds +250% damage and +3s slow on the same 10s recharge.
+              ko: 1개로 효과가 켜지고, 2개째는 같은 10초 재충전에 피해 +250%와 둔화 +3초를 더합니다.
+          - id: SecondarySkillMagazine
+            priority: optional
+            note:
+              en: Extra grapples for mobility and more charged approaches.
+              ko: 갈고리 횟수가 늘어 기동력과 충전 돌진 기회가 늘어납니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: 2 extra grapples cover mobility; damage comes from other items.
+              ko: 갈고리 2회 추가면 이동은 충분하고, 딜은 다른 아이템에서 나옵니다.
+          - id: ChainLightning
+            priority: optional
+            note:
+              en: Chain lightning adds a lot of her damage in packs.
+              ko: 무리 상대로 연쇄 번개가 딜을 크게 보탭니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: each Ukulele adds +2 targets and +2m range; 2 covers typical packs.
+              ko: 우쿨렐레는 개당 대상 +2, 사거리 +2m라 2개면 보통 무리를 커버합니다.
+        next:
+          - late
+      - id: tempo
+        phase: mid
+        label:
+          en: Attack speed and barrier
+          ko: 공격 속도와 방벽
+        when:
+          en: Take if you rely on Knuckleboom between gauntlets. More hits mean more Scrap Barrier.
+          ko: 건틀릿 사이에 너클붐을 많이 쓴다면 가져가세요. 적중이 늘수록 고철 방벽도 늘어납니다.
+        items:
+          - id: Syringe
+            priority: core
+            note:
+              en: "Faster Knuckleboom means more barrier between cooldowns. Note: very high attack speed can knock light enemies away."
+              ko: 너클붐이 빨라져 스킬 사이에 방벽을 더 얻습니다. 다만 공격 속도가 너무 높으면 가벼운 적이 밀려납니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: 3 (+45%) speeds Knuckleboom; very high attack speed can knock light enemies away.
+              ko: 3개(+45%)면 너클붐이 빨라지고, 너무 높으면 가벼운 적이 밀려납니다.
+          - id: AttackSpeedAndMoveSpeed
+            priority: optional
+            note:
+              en: Attack speed and move speed in one common item.
+              ko: 흰색 아이템 하나로 공격 속도와 이동 속도를 함께 올립니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +7.5% attack and +7% move speed each; 3 before Hoof and Syringe matter more.
+              ko: 개당 공속 +7.5%, 이속 +7%라 3개까지 모으고 이후엔 염소발과 주사기가 낫습니다.
+          - id: ExplodeOnDeath
+            priority: optional
+            note:
+              en: Adds the crowd control Loader lacks.
+              ko: 로더에게 부족한 광역 처리를 보완합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: side item here; 2 copies give enough pillar damage to finish weakened packs.
+              ko: 이 빌드에선 보조용이라 2개면 약해진 무리를 마무리하기에 충분합니다.
+          - id: Bandolier
+            priority: optional
+            note:
+              en: Charged Gauntlet passes through enemies and picks up the ammo packs on the way.
+              ko: 충전 건틀릿으로 적을 관통하며 지나가는 길에 탄약 상자를 줍습니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: 1 = 20%, 3 = 37%, 5 = 45%; 3 is where later copies start adding little.
+              ko: 위키 드롭 확률은 1개 20%, 3개 37%, 5개 45%라 3개 이후로는 추가 효율이 작아집니다.
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Stage 5 onward, or from Legendary chests.
+          ko: 5스테이지 이후나 전설 상자에서.
+        items:
+          - id: UtilitySkillMagazine
+            priority: core
+            note:
+              en: Extra Charged Gauntlet charges and shorter cooldown. Most of her damage comes from this skill.
+              ko: 충전 건틀릿의 충전 횟수가 늘고 대기시간이 줄어듭니다. 딜 대부분이 이 스킬에서 나옵니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: each adds 2 Charged Gauntlet charges and most damage is that skill; 3 = 7 charges.
+              ko: 개당 차지 건틀릿 충전 +2이고 딜 대부분이 이 스킬이라 3개면 7회입니다.
+          - id: FallBoots
+            priority: optional
+            note:
+              en: Grapple height easily meets the fall distance for max slam damage.
+              ko: 갈고리로 높이 올라가 최대 피해에 필요한 낙하 거리를 쉽게 채웁니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary; one gives full-damage slams, a 2nd only halves the 10s recharge.
+              ko: 전설 아이템이며, 1개로 최대 피해 낙하 공격이 되고 2개째는 10초 재충전만 절반으로 줄입니다.
+          - id: Clover
+            priority: optional
+            note:
+              en: Improves Ukulele and other chance-based procs.
+              ko: 우쿨렐레 등 확률형 발동을 올려 줍니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: legendary and rare; one reroll already makes chance effects far more reliable.
+              ko: 드문 전설 아이템이고, 1개만으로도 확률 효과를 한 번 더 굴려 훨씬 안정적입니다.
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: "Loop: more gauntlets, bigger slams"
+          ko: "루프: 건틀릿 추가, 더 큰 낙하"
+        when:
+          en: After the first loop, once Hardlight Afterburner is in place.
+          ko: 첫 루프 이후, 고형광선 재연소장치를 갖춘 뒤.
+        items:
+          - id: UtilitySkillMagazine
+            priority: core
+            stacks:
+              target: 3
+              min: 2
+            note:
+              en: Each copy adds 2 more Charged Gauntlet charges for boss bursts.
+              ko: 하나마다 충전 건틀릿 충전이 2회씩 늘어 보스 폭딜에 좋습니다.
+            stacksReason:
+              en: each adds 2 Charged Gauntlet charges and most damage is that skill; 3 = 7 charges.
+              ko: 개당 차지 건틀릿 충전 +2이고 딜 대부분이 이 스킬이라 3개면 7회입니다.
+          - id: FallBoots
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: "Wiki: she easily reaches H3AD-5T's max fall damage. A second copy halves its 10s recharge."
+              ko: 위키 기준 로더는 H3AD-5T v2의 최대 낙하 피해 조건을 쉽게 채웁니다. 두 번째 개는 10초 재충전을 절반으로 줄입니다.
+            stacksReason:
+              en: legendary; one gives full-damage slams, a 2nd only halves the 10s recharge.
+              ko: 전설 아이템이며, 1개로 최대 피해 낙하 공격이 되고 2개째는 10초 재충전만 절반으로 줄입니다.
+          - id: AlienHead
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: The wiki lists Alien Head among her cooldown items; it shortens Charged Gauntlet on top of Hardlight.
+              ko: 위키는 외계인 머리를 로더의 쿨타임 아이템으로 꼽습니다. 고형광선 재연소장치에 더해 충전 건틀릿 쿨타임을 줄입니다.
+            stacksReason:
+              en: legendary side pick behind Hardlight; one gives -25% cooldowns.
+              ko: 고형광선 재연소장치 다음 보조용 전설이라 1개로 쿨 -25%면 됩니다.
+          - id: KillEliteFrenzy
+            priority: situational
+            stacks:
+              target: 1
+            note:
+              en: The wiki names Brainstalks as a Loader cooldown item. Elites are common after looping.
+              ko: 위키는 뇌줄기를 로더의 쿨타임 아이템으로 꼽습니다. 루프 후에는 엘리트가 많습니다.
+            stacksReason:
+              en: legendary; one gives a 4s no-cooldown frenzy per elite kill, extras only add 4s.
+              ko: 전설 아이템이며, 1개로 엘리트 처치마다 4초간 재사용 대기시간이 사라지고 추가분은 4초씩만 늘립니다.
+        next: []
+    pickOrder:
+      common:
+        - Hoof
+        - SprintBonus
+        - NearbyDamageBonus
+        - Crowbar
+        - SecondarySkillMagazine
+        - Syringe
+      uncommon:
+        - FireRing
+        - IceRing
+        - ChainLightning
+        - Bandolier
+        - ExplodeOnDeath
+      legendary:
+        - UtilitySkillMagazine
+        - FallBoots
+        - Clover
+        - ArmorReductionOnHit
+    milestones:
+      - when:
+          en: Once you have one of each band
+          ko: 반지를 한 종류씩 갖추면
+        advice:
+          en: "Take both bands before stacking either one: the first copy of each adds a whole new proc, while a second copy only adds damage to a proc you already have. Do not take Singularity Band from a Void cradle or Void Potential: it corrupts every Kjaro's and Runald's Band you hold."
+          ko: 한쪽 반지를 중첩하기 전에 두 반지를 먼저 모두 챙기세요. 각 반지의 첫 개는 발동을 하나 새로 추가하지만, 두 번째 개는 이미 있는 발동의 피해만 올립니다. 공허 요람이나 잠재 공허에서 특이점 반지를 고르지 마세요. 가진 캬로의 반지와 루널드의 반지를 전부 오염시킵니다.
+        take: []
+        stop:
+          - ElementalRingVoid
+      - when:
+          en: When light enemies start flying out of Knuckleboom range
+          ko: 가벼운 적이 너클붐 사거리 밖으로 날아가기 시작하면
+        advice:
+          en: The wiki warns high attack speed knocks light enemies away. Stop adding Syringes and put whites into speed and Focus Crystal.
+          ko: 위키는 공격 속도가 높으면 가벼운 적이 밀려난다고 경고합니다. 군인의 주사기는 그만 모으고 흰색 아이템은 이동 속도와 초점 크리스털에 쓰세요.
+        take:
+          - Hoof
+          - SprintBonus
+          - NearbyDamageBonus
+        stop:
+          - Syringe
+      - when:
+          en: When a legendary is on offer
+          ko: 전설 아이템을 고를 수 있을 때
+        advice:
+          en: Take Hardlight Afterburner first; FPS Champion calls it a must-have and the wiki says most of her damage is the utility skill.
+          ko: 고형광선 재연소장치를 먼저 고르세요. FPS Champion은 필수라고 하고, 위키는 로더 피해 대부분이 유틸리티 스킬이라고 합니다.
+        take:
+          - UtilitySkillMagazine
+        stop: []
+      - when:
+          en: If Shaped Glass or Strides of Heresy is offered
+          ko: 모양이 있는 유리나 이단의 발걸음을 얻을 수 있을 때
+        advice:
+          en: "Skip both: Shaped Glass halves the health her Scrap Barrier is based on (eXputer says avoid), and Strides replaces the gauntlet."
+          ko: 둘 다 고르지 마세요. 모양이 있는 유리는 고철 장벽의 기준인 체력을 절반으로 줄이고(eXputer도 피하라고 함), 이단의 발걸음은 건틀릿을 대체합니다.
+        take: []
+        stop:
+          - LunarDagger
+          - LunarUtilityReplacement
+      - when:
+          en: After the first loop
+          ko: 첫 루프 이후
+        advice:
+          en: Keep stacking Hardlight and movement speed; larger packs make Charged Gauntlet's pierce outscale Thunder Gauntlet, per the wiki.
+          ko: 고형광선 재연소장치와 이동 속도를 계속 쌓으세요. 위키에 따르면 적이 많아질수록 관통하는 충전 건틀릿이 번개 건틀릿보다 강해집니다.
+        take:
+          - UtilitySkillMagazine
+          - Hoof
+          - SprintBonus
+        stop: []
+    avoid:
+      - id: LunarDagger
+        reason:
+          en: Halves your health, which also shrinks the Scrap Barrier her passive grants.
+          ko: 체력이 절반이 되어 패시브로 얻는 고철 방벽도 함께 줄어듭니다.
+      - id: LunarUtilityReplacement
+        reason:
+          en: Replaces your utility skill and takes away the gauntlet that deals most of her damage.
+          ko: 보조 스킬을 대체해 딜 대부분을 맡는 건틀릿을 잃습니다.
+    evidence: |-
+      Wiki: +30% gauntlet damage per 1 m/s, Charged Gauntlet pierces and outscales Thunder Gauntlet late, Ukulele, Kjaro's Band, Hardlight Afterburner, H3AD-5T v2, Bandolier, attack-speed knockback warning. Rogue Ranker (2026 listing): Hoof, Focus Crystal, Crowbar, Backup Magazine, Syringe, both bands, H3AD-5T v2, 57 Leaf Clover, Thunderslam special. eXputer (2023): Kjaro's, Backup Magazine, Lens-Maker's, Focus Crystal, Energy Drink, Hoof, Will-o'-the-wisp, Ukulele, AtG; avoid Shaped Glass. TheGamer (2021): Focus Crystal, Energy Drink, Hoof, Kjaro's as best item. FPS Champion (2022): Mocha, Syringe, Hardlight as a must-have. Strong consensus on speed + Kjaro's Band + Focus Crystal. Rogue Ranker suggests Spiked Fist, which is not in local-survivors.json, so Grapple Fist is used. Thunder Gauntlet is stronger early per the wiki, but guides recommend Charged Gauntlet, so no separate Thunder build. H3AD-5T v2 now scales from distance fallen (Anniversary Update), and Alloyed Collective removed velocity exploits such as geysers.
+
+      Stack counts and progression: Wiki Loader page (quoted directly): +30% per 1 m/s, base speed 7 m/s, Charged Gauntlet 5s cooldown, Ukulele and Kjaro's, Hardlight because most damage is utility, H3AD-5T max height, Bandolier pickup through enemies, attack-speed knockback warning, Brainstalks/Alien Head/Lysate as cooldown items (said in the M551 Pylon context), Charged outscales Thunder with density. Stack math from wiki.gg item data (Hoof +14%, Focus Crystal +20% within 13m, Bandolier formula, Hardlight charges vs non-stacking CDR, H3AD-5T recharge). Pick order: Rogue Ranker (Hoof, Focus, Crowbar, Backup Magazine, Syringe; Kjaro's, Runald's; H3AD-5T, Clover), TheGamer 2021 (Energy Drink, Hoof, Focus, Kjaro's best; Wisp; Shattering Justice), FPS Champion 2022 (Hardlight must-have). Avoid Shaped Glass: eXputer (2023). Disagreements: Rogue Ranker puts H3AD-5T above Hardlight while FPS Champion calls Hardlight a must-have; Rogue Ranker and a search summary say Clover raises band procs, but the wiki says bands ignore luck (Clover still helps Ukulele). A Steam 'Charged Gauntlet challenged' thread says to prioritize movement items over raw damage. No boss order: no source ranks boss items for Loader. Reddit could not be fetched.

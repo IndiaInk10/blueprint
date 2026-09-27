@@ -1,0 +1,1569 @@
+# Theme builds picked for fun rather than the best clear, from community fun-build guides and our own designs.
+kind: item-combos
+schemaVersion: 1
+revision: 1
+updatedAt: 2026-09-27
+sources:
+  - https://gall.dcinside.com/mgallery/board/view/?id=riskofrain2&no=20087
+  - https://gall.dcinside.com/mgallery/board/view/?id=riskofrain2&no=20089
+  - https://steamcommunity.com/app/632360/discussions/0/3183488858474661563/
+  - https://rogueranker.com/risk-of-rain-2-aegis/
+  - https://riskofrain2.wiki.gg/wiki/Blast_Shower
+  - https://riskofrain2.wiki.gg/wiki/Eulogy_Zero
+  - https://md-eksperiment.org/en/post/20251128-risk-of-rain-2-alloyed-collective-full-guide-survivors-18-items-drone-builds-stage-secrets-100-unlocks
+combos:
+  - id: proc-fireworks
+    focus: items
+    title:
+      en: Proc Fireworks
+      ko: 프록 폭죽놀이
+    tagline:
+      en: Stack every on-hit proc item and fill the screen with lightning, missiles and bombs.
+      ko: 프록 아이템만 몰아서 화면을 폭죽으로 채우는 빌드
+    summary:
+      en: Print Soldier's Syringe and Sticky Bomb early so you get more hits and more rolls. Funnel green scrap into Ukulele and AtG Missile printers; once a 57 Leaf Clover shows up the chains become obvious. Skip Void Cradles, since they turn Ukulele and AtG into their void versions.
+      ko: 초반엔 군인의 주사기와 끈끈이 폭탄을 3D 프린터로 뽑아 공격 횟수와 발동 횟수부터 늘립니다. 녹색 재활용 아이템은 우쿨렐레와 AtG 미사일 Mk. 1 프린터에 몰아주고, 57잎 클로버가 뜨면 그때부터 연쇄가 눈에 띄게 터집니다. 공허 요람은 우쿨렐레와 AtG를 공허 버전으로 바꿔 버리니 열지 않는 게 좋습니다.
+    whyFun:
+      en: Every shot sets off lightning and missiles, so the screen never goes quiet.
+      ko: 총 한 번 쏠 때마다 번개랑 미사일이 같이 튀어나가서 화면이 쉴 틈이 없습니다.
+    survivors:
+      - CommandoBody
+      - ToolbotBody
+      - HuntressBody
+      - EngiBody
+    items:
+      - id: ChainLightning
+        target: 4
+      - id: Missile
+        target: 4
+      - id: StickyBomb
+        target: 5
+      - id: Syringe
+        target: 5
+        note:
+          en: More hits per second means more proc rolls.
+          ko: 공격 횟수가 곧 발동 횟수입니다.
+      - id: Clover
+        target: 2
+      - id: MoreMissile
+        target: 1
+      - id: StunAndPierce
+        target: 2
+    avoid:
+      - ChainLightningVoid
+      - MissileVoid
+      - CloverVoid
+      - LunarBadLuck
+    tags:
+      - theme
+      - chaos
+      - team
+  - id: bleed-stack
+    focus: items
+    title:
+      en: Bleed Stacker
+      ko: 출혈 누적
+    tagline:
+      en: Tri-Tip Daggers until everything bleeds out, then spread the bleed on kill.
+      ko: 삼각 단검을 모아서 적을 출혈로 말려 죽이는 조합
+    summary:
+      en: Ten Tri-Tip Daggers give a 100% bleed chance, so print them at every white printer. Shatterspleen bleeds on crits, so pair it with Lens-Maker's Glasses; Noxious Thorn passes a share of the stacked bleed to a nearby enemy on kill. Avoid Void Cradles that could give Needletick.
+      ko: 삼각 단검은 10개면 출혈 확률이 100%가 되니 흰색 3D 프린터가 보이면 우선 뽑습니다. 폭발하는 비장은 치명타로 출혈을 거는 아이템이라 렌즈 제작자의 안경과 같이 가져가고, 독가시가 있으면 적을 처치할 때 쌓여 있던 출혈 일부가 옆 적에게 넘어갑니다. 니들틱이 나올 수 있는 공허 요람은 피합니다.
+    whyFun:
+      en: Bleed numbers pile up, then the target pops and the bleed jumps to the next one.
+      ko: 출혈 숫자가 겹겹이 쌓이다가 적이 터지면서 옆 적한테 번지는 게 보기 좋습니다.
+    survivors:
+      - Bandit2Body
+      - MercBody
+      - CommandoBody
+    items:
+      - id: BleedOnHit
+        target: 10
+        note:
+          en: 10 stacks = 100% bleed chance.
+          ko: 10개면 출혈 확률 100%입니다.
+      - id: BleedOnHitAndExplode
+        target: 1
+        note:
+          en: Bleeds on crit, bleeding enemies explode on death.
+          ko: 치명타 시 출혈, 출혈 중인 적이 죽으면 터집니다.
+      - id: TriggerEnemyDebuffs
+        target: 2
+      - id: CritGlasses
+        target: 5
+      - id: Syringe
+        target: 4
+      - id: AttackSpeedOnCrit
+        target: 1
+    avoid:
+      - BleedOnHitVoid
+    tags:
+      - theme
+      - solo
+  - id: kill-chain
+    focus: items
+    title:
+      en: Chain Explosions
+      ko: 처치 연쇄 폭발
+    tagline:
+      en: "On-kill items only: one kill blows up and ignites the whole pack."
+      ko: 처치할 때마다 폭발과 불이 옆 적에게 옮겨붙는 조합
+    summary:
+      en: Print Will-o'-the-wisp and Gasoline as much as you can and use Ignition Tank to make the Gasoline fire hurt. It shines during teleporter events when packs are dense; Frost Relic or Brainstalks make clears much faster. A Void Cradle can turn your wisps into Voidsent Flame, so decide before you open one.
+      ko: 도깨비불과 휘발유를 흰색·녹색 3D 프린터로 최대한 늘리고, 점화 탱크로 휘발유 불의 피해를 키웁니다. 적이 몰려오는 텔레포터 이벤트 때 가장 잘 돌아가고, 서리 유물이나 뇌줄기가 붙으면 정리 속도가 확 올라갑니다. 공허 요람을 열면 도깨비불이 공허가 보낸 화염으로 바뀔 수 있으니 열기 전에 방향을 정합니다.
+    whyFun:
+      en: Kill the first enemy and the rest of the room goes off on its own.
+      ko: 첫 한 마리만 잡으면 나머지가 알아서 터져서 방 하나가 금방 비는 게 시원합니다.
+    survivors:
+      - HuntressBody
+      - MageBody
+      - ToolbotBody
+    items:
+      - id: ExplodeOnDeath
+        target: 5
+        note:
+          en: If a Voidsent Flame shows up, you can switch the whole build to it instead.
+          ko: 공허가 보낸 화염이 나오면 도깨비불 대신 그쪽으로 통째로 바꾸는 것도 방법입니다.
+      - id: IgniteOnKill
+        target: 5
+      - id: StrengthenBurn
+        target: 2
+      - id: IncreaseDamageOnMultiKill
+        target: 5
+      - id: Icicle
+        target: 1
+      - id: KillEliteFrenzy
+        target: 1
+      - id: TriggerEnemyDebuffs
+        target: 1
+    equipment: Molotov
+    avoid:
+      - ExplodeOnDeathVoid
+    tags:
+      - theme
+      - chaos
+      - team
+  - id: crit-scythe
+    focus: items
+    title:
+      en: Crit Lifesteal
+      ko: 치명타 흡혈
+    tagline:
+      en: Hit 100% crit, then let Harvester's Scythe heal you on every hit.
+      ko: 치명타 확률을 100% 채우고 수확꾼의 낫으로 체력을 채우는 빌드
+    summary:
+      en: Nine Lens-Maker's Glasses plus one Harvester's Scythe reach 100% crit, so turn white scrap into glasses. After that, each extra Scythe adds healing per hit and Predatory Instincts adds attack speed. Railgunner only crits on weak points, so she does not fit.
+      ko: 렌즈 제작자의 안경 9개에 수확꾼의 낫 1개면 치명타 확률이 100%가 되니 흰색 재활용 아이템은 전부 안경으로 바꿉니다. 그다음부터는 수확꾼의 낫을 늘릴수록 한 발마다 회복량이 붙고, 포식 본능으로 공격 속도도 같이 올라갑니다. 레일거너는 약점을 맞힐 때만 치명타가 나서 이 조합과 잘 맞지 않습니다.
+    whyFun:
+      en: The faster you shoot the faster you heal, so you can stand in the fight and trade.
+      ko: 공격 속도가 오를수록 체력이 계속 차올라서 맞으면서 싸워도 잘 안 죽습니다.
+    survivors:
+      - CommandoBody
+      - HuntressBody
+      - MercBody
+    items:
+      - id: CritGlasses
+        target: 9
+        note:
+          en: 9 glasses + 1 scythe = 100% crit.
+          ko: 안경 9개에 낫 1개면 100%입니다.
+      - id: HealOnCrit
+        target: 3
+      - id: AttackSpeedOnCrit
+        target: 2
+      - id: CritDamage
+        target: 1
+      - id: CritAtLowerElevation
+        target: 5
+        note:
+          en: Only while attacking from above the enemy.
+          ko: 적보다 높은 곳에서 공격할 때만 적용됩니다.
+      - id: Syringe
+        target: 5
+    equipment: CritOnUse
+    avoid:
+      - CritGlassesVoid
+    tags:
+      - theme
+      - solo
+  - id: transcendence-shield
+    focus: items
+    title:
+      en: Transcendence Shields
+      ko: 초월 방어막
+    tagline:
+      en: Turn all your health into shield and stack shield items on top.
+      ko: 체력을 전부 방어막으로 바꾸고 방어막 아이템을 쌓는 조합
+    summary:
+      en: You need only one Transcendence from a Lunar Pod; it drops you to 1 HP, so collect some Personal Shield Generators and Bison Steaks first. Shields refill all at once after a few seconds without damage, so play hit-and-run; with Aegis, any overheal becomes barrier. Kinetic Dampener releases a shock pulse when the shield breaks, so it also adds damage here.
+      ko: 초월은 루나 포드에서 하나만 얻으면 되고, 먹는 순간 체력이 1이 되니 그 전에 개인용 방어막 생성기와 들소 스테이크를 어느 정도 모아 둡니다. 방어막은 몇 초 동안 맞지 않으면 한 번에 다 차기 때문에 치고 빠지는 운영이 맞고, 방패를 얻으면 넘치는 회복량이 장벽으로 바뀌어 훨씬 단단해집니다. 운동량 감쇠기는 방어막이 깨질 때 마비 펄스를 터뜨려 줘서 이 빌드에서는 딜 역할도 합니다.
+    whyFun:
+      en: Watching the shield break and snap back to full over and over is oddly addictive.
+      ko: 방어막이 깨졌다가 순식간에 다시 차는 걸 반복하면서 버티는 게 은근히 중독성 있습니다.
+    survivors:
+      - LoaderBody
+      - EngiBody
+    items:
+      - id: ShieldOnly
+        target: 1
+        note:
+          en: One is enough.
+          ko: 하나면 충분합니다.
+      - id: PersonalShield
+        target: 6
+      - id: ShieldBooster
+        target: 3
+      - id: FlatHealth
+        target: 5
+        note:
+          en: Max health becomes shield.
+          ko: 최대 체력이 그대로 방어막이 됩니다.
+      - id: Knurl
+        target: 2
+      - id: CookedSteak
+        target: 1
+        note:
+          en: Cooked by the Wandering CHEF.
+          ko: 떠돌이 셰프에게서 만듭니다.
+      - id: BarrierOnOverHeal
+        target: 2
+      - id: BarrierOnCooldown
+        target: 4
+    avoid:
+      - LunarDagger
+    tags:
+      - theme
+      - long-run
+  - id: unkillable-tank
+    focus: items
+    title:
+      en: Unkillable Tank
+      ko: 안 죽는 탱커
+    tagline:
+      en: Tougher Times, armor plates and armor items until nothing can kill you.
+      ko: 힘들었던 시절과 방어 아이템을 쌓아서 맞아도 안 죽는 빌드
+    summary:
+      en: Tougher Times blocks hits by chance and Repulsion Armor Plate removes a flat amount from every hit, so print both at white printers early. Stone Flux Pauldron doubles health but halves speed, which suits survivors who fight up close. Opening a Void Cradle with Safer Spaces converts all your Tougher Times.
+      ko: 힘들었던 시절은 확률로 피해를 막고 반발성 방어구 철판은 받는 피해를 고정 수치만큼 깎아 주니, 초반에 흰색 3D 프린터로 둘 다 늘리는 게 핵심입니다. 돌의 흐름 견갑은 체력이 두 배가 되는 대신 이동 속도가 절반이 되니 적에게 붙어 싸우는 생존자와 맞습니다. 더 안전한 공간이 든 공허 요람을 열면 힘들었던 시절이 전부 바뀌니 주의합니다.
+    whyFun:
+      en: Standing in the middle of a Monsoon boss fight and barely losing health is pretty funny.
+      ko: 몬순에서 보스 한가운데 서 있어도 체력이 거의 안 빠지는 걸 보면 웃깁니다.
+    survivors:
+      - ToolbotBody
+      - LoaderBody
+      - CrocoBody
+    items:
+      - id: Bear
+        target: 8
+      - id: ArmorPlate
+        target: 10
+      - id: SprintArmor
+        target: 3
+      - id: OutOfCombatArmor
+        target: 5
+      - id: DelayedDamage
+        target: 3
+      - id: HalfSpeedDoubleHealth
+        target: 1
+        note:
+          en: Double health, half move speed.
+          ko: 체력 두 배, 이동 속도 절반입니다.
+      - id: Knurl
+        target: 3
+      - id: BarrierOnOverHeal
+        target: 1
+      - id: ExtraLife
+        target: 1
+    equipment: GainArmor
+    avoid:
+      - BearVoid
+      - LunarDagger
+    tags:
+      - theme
+      - long-run
+      - team
+  - id: ally-army
+    focus: items
+    title:
+      en: Summoner Army
+      ko: 소환수 군단
+    tagline:
+      en: "Pick up every ally-summoning item: Queen's Gland, Empathy Cores, Squid Polyp and friends."
+      ko: 여왕의 분비샘, 공감 코어 같은 아군 소환 아이템을 몰아 받는 조합
+    summary:
+      en: Queen's Gland and Empathy Cores are boss items, so get them from teleporter bosses or Overgrown 3D Printers. Squid Polyp spawns a turret on every interaction, so touch every chest, shrine and drone; Defense Nucleus adds an Alpha Construct whenever you kill an elite. Bolstering Lantern counts nearby allies, so it grows with the army.
+      ko: 여왕의 분비샘과 공감 코어는 보스 아이템이라 텔레포터 보스를 잡거나 과성장 3D 프린터에서 얻습니다. 오징어 폴립은 상자, 성소, 드론 같은 걸 건드릴 때마다 포탑을 소환하니 상호작용을 많이 할수록 좋고, 방어 핵은 엘리트를 잡을 때마다 알파급 인공지능을 붙여 줍니다. 강화의 등불은 근처 아군 수도 세기 때문에 소환수가 늘수록 효과가 커집니다.
+    whyFun:
+      en: Later on beetles, probes and squids follow you around and do the fighting for you.
+      ko: 나중엔 딱정벌레, 탐사정, 오징어 포탑이 우르르 따라다니면서 알아서 싸워 줘서 든든합니다.
+    items:
+      - id: BeetleGland
+        target: 3
+      - id: RoboBallBuddy
+        target: 1
+      - id: Squid
+        target: 5
+      - id: MinorConstructOnKill
+        target: 1
+      - id: GhostOnKill
+        target: 1
+      - id: AttackSpeedPerNearbyAllyOrEnemy
+        target: 3
+        note:
+          en: Counts nearby allies too.
+          ko: 근처 아군 수도 셉니다.
+      - id: WardOnLevel
+        target: 2
+    equipment: GummyClone
+    tags:
+      - theme
+      - solo
+      - long-run
+  - id: freeze-control
+    focus: items
+    title:
+      en: Freeze & Slow Control
+      ko: 빙결·감속 제어
+    tagline:
+      en: Slow, stun and freeze enemies so they never reach you.
+      ko: 적을 느리게 만들고 묶어서 가까이 못 오게 하는 제어 빌드
+    summary:
+      en: Runald's Band triggers on big single hits, so survivors with a heavy skill fit best; Chronobauble and Frost Relic slow the pack while Stun Grenade and Breaching Fin keep it locked down. Pull everything together with Primordial Cube, then freeze it with Artificer or CHEF skills. Skip Void Cradles offering Singularity Band or Tentabauble.
+      ko: 루널드의 반지는 한 번에 큰 피해를 줄 때 발동하니 한 방이 센 스킬이 있는 생존자가 좋고, 시간의 방울과 서리 유물로 느려진 적을 마비 수류탄과 돌파 지느러미로 계속 묶어 둡니다. 태고의 큐브로 적을 한데 모은 다음 아티피셔나 셰프의 스킬로 얼리면 정리가 훨씬 편합니다. 특이점 반지나 촉수 방울이 든 공허 요람은 반지와 방울을 바꿔 버리니 피합니다.
+    whyFun:
+      en: Enemies crawl toward you and freeze before they arrive, so even Monsoon feels relaxed.
+      ko: 적이 다가오기도 전에 느려지고 멈춰 버려서 몬순에서도 여유 있게 싸울 수 있습니다.
+    survivors:
+      - MageBody
+      - ChefBody
+    items:
+      - id: IceRing
+        target: 3
+      - id: SlowOnHit
+        target: 3
+      - id: Icicle
+        target: 1
+      - id: StunChanceOnHit
+        target: 5
+      - id: KnockBackHitEnemies
+        target: 2
+      - id: StunAndPierce
+        target: 1
+    equipment: Blackhole
+    avoid:
+      - SlowOnHitVoid
+      - ElementalRingVoid
+    tags:
+      - theme
+      - team
+  - id: regen-to-damage
+    focus: items
+    title:
+      en: Healing Into Damage
+      ko: 회복 딜러
+    tagline:
+      en: Stack healing and regen, then turn the overflow into damage with Hearty Stew and N'kuhana's Opinion.
+      ko: 체력 회복 아이템을 쌓아서 회복량을 그대로 공격으로 돌리는 빌드
+    summary:
+      en: Hearty Stew is a Wandering CHEF recipe; at full health your regen is added to base damage. N'kuhana's Opinion stores healing and fires it as skulls, so Leeching Seed and Rejuvenation Rack turn into damage on their own. Early on, lean on Bustling Fungus and Cautious Slug while you wait for red items.
+      ko: 든든한 스튜는 떠돌이 셰프에게 재료를 넘겨 만드는 요리로, 체력이 가득 찬 상태에서는 체력 회복량이 기본 피해에 더해집니다. 은쿠하나의 견해는 받은 회복량을 모았다가 해골로 쏘기 때문에 흡혈 씨앗과 회춘의 선반으로 회복량을 불려 두면 알아서 딜이 나옵니다. 초반엔 뿜뿜 버섯과 신중한 민달팽이로 버티면서 빨간 아이템을 기다리면 됩니다.
+    whyFun:
+      en: You mostly just heal, and skulls fly out and melt things anyway.
+      ko: 체력만 채우고 있어도 해골이 날아가서 적이 녹는 게 신기합니다.
+    survivors:
+      - ToolbotBody
+      - CommandoBody
+      - CrocoBody
+    items:
+      - id: Stew
+        target: 2
+        note:
+          en: Cooked by the Wandering CHEF.
+          ko: 떠돌이 셰프에게서 만듭니다.
+      - id: NovaOnHeal
+        target: 1
+      - id: IncreaseHealing
+        target: 2
+      - id: Seed
+        target: 3
+      - id: Mushroom
+        target: 3
+      - id: HealWhileSafe
+        target: 3
+      - id: Medkit
+        target: 3
+      - id: TPHealingNova
+        target: 1
+    equipment: PassiveHealing
+    avoid:
+      - LunarDagger
+    tags:
+      - theme
+      - long-run
+  - id: elite-hunter
+    focus: items
+    title:
+      en: Elite Hunter
+      ko: 엘리트 사냥꾼
+    tagline:
+      en: "Wake of Vultures plus every elite-kill reward: steal aspects, execute elites, farm items."
+      ko: 엘리트를 잡을수록 그 능력을 빼앗아 오는 독수리 무리 중심 조합
+    summary:
+      en: Wake of Vultures gives you an elite's aspect for a while when you kill it, so it comes alive in later loops or with Artifact of Honor on. Old Guillotine finishes low-health elites instantly, and Brainstalks and Defense Nucleus stack more rewards on each elite kill. Carry Trophy Hunter's Tricorn to delete a teleporter boss and take its boss item.
+      ko: 독수리 무리는 엘리트를 처치하면 그 엘리트의 능력을 잠깐 얻는 아이템이라, 엘리트가 많이 나오는 후반 루프나 명예의 유물을 켠 판에서 제대로 돌아갑니다. 낡은 단두대로 체력이 낮은 엘리트를 바로 끝내고, 뇌줄기와 방어 핵으로 엘리트 처치 보상을 겹쳐 받습니다. 장비는 트로피 헌터의 삼각모자를 들고 있다가 텔레포터 보스를 한 번에 처리해 보스 아이템을 챙깁니다.
+    whyFun:
+      en: After a few elite kills you're wearing fire, lightning and ice auras at the same time.
+      ko: 엘리트 몇 마리만 잡아도 불, 번개, 얼음 능력을 한꺼번에 두르고 다니게 됩니다.
+    survivors:
+      - RailgunnerBody
+      - Bandit2Body
+      - LoaderBody
+    items:
+      - id: HeadHunter
+        target: 1
+      - id: ExecuteLowHealthElite
+        target: 3
+      - id: KillEliteFrenzy
+        target: 1
+      - id: MinorConstructOnKill
+        target: 1
+      - id: ItemDropChanceOnKill
+        target: 1
+      - id: BossDamageBonus
+        target: 5
+      - id: Crowbar
+        target: 3
+    equipment: BossHunter
+    tags:
+      - theme
+      - long-run
+  - id: feather-flight
+    focus: items
+    title:
+      en: Twenty Feathers
+      ko: 깃털 스무 개
+    tagline:
+      en: Collect twenty-plus Hopoo Feathers and barely touch the ground.
+      ko: Hopoo 깃털을 스무 개 넘게 모아서 땅을 거의 안 밟고 다니는 빌드
+    summary:
+      en: Hopoo Feather is green, so put all your green scrap into a Feather printer. Wax Quail and Faraday Spur stretch every jump, and Hiker's Boots rewards attacking from above, which fits aerial fights. Land with H3AD-5T v2 so even coming down deals damage.
+      ko: Hopoo 깃털은 녹색 아이템이라 녹색 재활용 아이템을 전부 깃털 프린터에 넣는 식으로 모읍니다. 밀랍 메추라기와 패러데이 박차로 점프 거리를 늘리고, 하이커 장화는 적보다 높은 곳에서 공격할 때 치명타가 붙어서 공중전과 잘 맞습니다. 내려올 때 H3AD-5T v2로 찍으면 착지하면서도 딜이 들어갑니다.
+    whyFun:
+      en: Holding jump carries you from one end of the map to the other, so just moving around is fun.
+      ko: 점프만 누르고 있으면 맵 끝에서 끝까지 날아가서 이동하는 것 자체가 재밌습니다.
+    survivors:
+      - LoaderBody
+      - HuntressBody
+      - MercBody
+      - MageBody
+    items:
+      - id: Feather
+        target: 20
+      - id: JumpBoost
+        target: 3
+      - id: JumpDamageStrike
+        target: 2
+      - id: CritAtLowerElevation
+        target: 5
+        note:
+          en: Crit bonus when attacking from above.
+          ko: 적보다 높은 곳에서 공격하면 치명타가 붙습니다.
+      - id: FallBoots
+        target: 1
+      - id: Hoof
+        target: 3
+      - id: SprintBonus
+        target: 3
+    equipment: Jetpack
+    avoid:
+      - HalfSpeedDoubleHealth
+    tags:
+      - theme
+      - solo
+  - id: equipment-spam
+    focus: equipment
+    title:
+      en: Equipment Spam
+      ko: 장비 난사
+    tagline:
+      en: "Gesture of the Drowned, Fuel Cells and Bottled Chaos: equipment fires on every cooldown."
+      ko: 익사자들의 손짓으로 장비를 쿨마다 자동으로 쓰는 난장판 조합
+    summary:
+      en: Get Gesture of the Drowned from a Lunar Pod or the Bazaar; every Fuel Cell cuts the cooldown further. Bottled Chaos adds random equipment effects on each use and War Horn gives attack speed each time. Hold a big one-shot equipment like Preon Accumulator and just remember it fires on its own.
+      ko: 익사자들의 손짓은 루나 포드나 시간 사이의 시장에서 구하고, 연료 전지를 쌓을수록 장비 쿨타임이 줄어 발동 횟수가 늘어납니다. 병 속의 혼돈은 장비를 쓸 때마다 무작위 장비 효과를 하나 더 터뜨리고, 전투의 뿔피리는 장비를 쓸 때마다 공격 속도를 올려 줍니다. 장비는 프레온 축전기처럼 한 번에 크게 터지는 걸 쥐고, 쿨마다 멋대로 발사된다는 점만 조심합니다.
+    whyFun:
+      en: You never pick what to use; equipment keeps going off, random effects included.
+      ko: 뭘 쓸지 고를 필요 없이 장비가 계속 터지고 가끔 엉뚱한 효과까지 섞여서 매번 난리가 납니다.
+    survivors:
+      - ToolbotBody
+    items:
+      - id: AutoCastEquipment
+        target: 2
+      - id: EquipmentMagazine
+        target: 6
+      - id: RandomEquipmentTrigger
+        target: 3
+        note:
+          en: Each use also fires a random equipment effect.
+          ko: 장비를 쓸 때마다 무작위 장비 효과가 추가로 터집니다.
+      - id: EnergizedOnEquipmentUse
+        target: 3
+      - id: BoostAllStats
+        target: 1
+    equipment: BFG
+    avoid:
+      - EquipmentMagazineVoid
+    tags:
+      - chaos
+      - theme
+      - team
+  - id: blast-shower-bands
+    focus: equipment
+    title:
+      en: Blast Shower Band Reset
+      ko: 폭발 세례 반지 초기화
+    tagline:
+      en: Use Blast Shower to wipe the Band cooldown so Runald's and Kjaro's fire back to back.
+      ko: 폭발 세례로 반지 쿨타임을 계속 지워서 반지를 연달아 터뜨리는 조합
+    summary:
+      en: Kjaro's and Runald's Band trigger on hits of 400%+ damage and then go on a 10-second cooldown that counts as a debuff, so Blast Shower clears it instantly. Make Blast Shower auto-cast with Gesture of the Drowned, then cut its cooldown with Fuel Cells and Soulbound Catalyst. Survivors with one big hit, like Railgunner or Loader, fit best.
+      ko: 캬로의 반지와 루널드의 반지는 400% 이상 피해를 한 방에 주면 발동하고 10초 쿨타임이 생기는데, 이 쿨타임이 디버프처럼 붙어 있어서 폭발 세례를 쓰면 바로 지워집니다. 익사자들의 손짓으로 폭발 세례를 자동 발동하게 만든 뒤 연료 전지와 영혼이 속박된 촉매로 장비 쿨타임을 줄일수록 반지가 자주 터집니다. 한 방이 센 레일거너나 로더가 가장 잘 맞습니다.
+    whyFun:
+      en: The Band effects go off almost without a cooldown and boss health drops noticeably faster.
+      ko: 반지 이펙트가 거의 쿨 없이 계속 터져서 보스 체력이 눈에 띄게 빨리 깎입니다.
+    survivors:
+      - RailgunnerBody
+      - LoaderBody
+      - MageBody
+    items:
+      - id: FireRing
+        target: 2
+      - id: IceRing
+        target: 2
+      - id: AutoCastEquipment
+        target: 1
+      - id: EquipmentMagazine
+        target: 5
+      - id: Talisman
+        target: 1
+        note:
+          en: Kills shorten equipment cooldown.
+          ko: 처치할 때마다 장비 쿨타임이 줄어듭니다.
+      - id: StrengthenBurn
+        target: 2
+    equipment: Cleanse
+    avoid:
+      - ElementalRingVoid
+    tags:
+      - theme
+      - solo
+  - id: crowdfunder-gold
+    focus: equipment
+    title:
+      en: Money Cannon
+      ko: 황금포 돈 폭격
+    tagline:
+      en: Gold-making items feeding The Crowdfunder and War Bonds.
+      ko: 골드 버는 아이템을 모아서 황금포와 전쟁 채권으로 돈을 쏘는 조합
+    summary:
+      en: Brittle Crown pays gold on hit but costs gold when you're hit, so Roll of Pennies and Tougher Times keep the losses down. The Crowdfunder spends gold to fire, so unload it on bosses when you're rich; War Bonds adds missiles for gold earned before the boss event, which suits Ghor's Tome. The house rule is to spend spare gold as ammo, not on chests.
+      ko: 연약한 왕관은 때릴 때 골드를 주지만 맞으면 골드를 잃으니 동전 말이와 힘들었던 시절로 손실을 줄여 둡니다. 황금포는 골드를 소모해서 쏘는 장비라 골드가 넉넉할 때 보스에게 쏟아붓고, 전쟁 채권은 보스 이벤트 전에 번 골드만큼 미사일이 늘어나서 고르의 서와 잘 맞습니다. 남는 골드는 상자 대신 총알로 쓰는 게 이 빌드의 규칙입니다.
+    whyFun:
+      en: Watching the gold counter swing while you literally shoot your money is weirdly satisfying.
+      ko: 골드 숫자가 오르내리는 걸 보면서 번 돈을 그대로 총알로 쓰는 게 묘하게 재밌습니다.
+    items:
+      - id: GoldOnHit
+        target: 1
+        note:
+          en: Gold on hit, but you lose gold when hit.
+          ko: 때리면 골드를 얻고 맞으면 잃습니다.
+      - id: GoldOnHurt
+        target: 5
+      - id: BonusGoldPackOnKill
+        target: 4
+      - id: BarrageOnBoss
+        target: 1
+      - id: Bear
+        target: 4
+        note:
+          en: Blocked hits don't cost Brittle Crown gold.
+          ko: 막아 낸 공격은 왕관 골드를 뺏지 않습니다.
+    equipment: GoldGat
+    avoid:
+      - LunarBadLuck
+    tags:
+      - theme
+      - chaos
+  - id: recycler-gamble
+    focus: equipment
+    title:
+      en: Recycler Gambling
+      ko: 재활용기 도박
+    tagline:
+      en: Reroll every drop with the Recycler and pile on luck and extra-chest items.
+      ko: 재활용기로 아이템을 계속 돌려서 원하는 걸 뽑아 가는 도박 빌드
+    summary:
+      en: The Recycler turns a dropped item into another item of the same tier, so reroll anything you don't like before picking it up. Chance Doll pushes Shrines of Chance toward higher tiers, while Sale Star, Shipping Request Form and Rusted Key add more chests to open. Ultimate Meal from the Wandering CHEF adds luck at full health.
+      ko: 재활용기는 바닥에 떨어진 아이템을 같은 등급의 다른 아이템으로 바꾸니, 상자를 열 때마다 마음에 안 들면 돌리고 줍는 식으로 진행합니다. 확률의 인형으로 확률의 성소에서 한 단계 높은 등급을 노리고, 할인의 별, 배송 요청 양식, 녹슨 열쇠로 챙기는 아이템 수 자체를 늘립니다. 궁극의 요리는 떠돌이 셰프에게서 만들 수 있고 체력이 가득 찼을 때 운이 올라갑니다.
+    whyFun:
+      en: Rolling until the red item you want shows up makes every chest feel like a gacha pull.
+      ko: 원하는 빨간 아이템이 나올 때까지 돌리다 보면 상자 하나하나가 뽑기처럼 느껴집니다.
+    items:
+      - id: ExtraShrineItem
+        target: 3
+      - id: LowerPricedChests
+        target: 2
+      - id: FreeChest
+        target: 2
+      - id: TreasureCache
+        target: 2
+      - id: SpeedOnPickup
+        target: 2
+      - id: UltimateMeal
+        target: 1
+        note:
+          en: Cooked by the Wandering CHEF; luck at full health.
+          ko: 떠돌이 셰프에게서 만들고, 체력이 가득 찼을 때 운이 오릅니다.
+      - id: Clover
+        target: 1
+    equipment: Recycle
+    avoid:
+      - LunarBadLuck
+    tags:
+      - theme
+      - chaos
+      - team
+  - id: drone-army
+    focus: survivor
+    title:
+      en: Drone Squadron
+      ko: 드론 부대
+    tagline:
+      en: Operator stacks every drone item and leads a whole squadron.
+      ko: 드론 아이템을 몰아 받아 드론 부대를 이끄는 오퍼레이터 빌드
+    summary:
+      en: Operator fights alongside his own drones, so drone items are worth the most on him; repair every drone you find on each stage as well. Spare Drone Parts gives every drone a chain gun and Box of Dynamite has them drop dynamite. Bolstering Lantern scales with nearby allies and Faulty Conductor buffs allies around you, so both grow with the squad.
+      ko: 오퍼레이터는 자기 드론을 데리고 싸우는 생존자라 드론 강화 아이템의 효율이 가장 좋고, 스테이지마다 보이는 드론도 전부 고쳐서 수를 늘립니다. 드론 예비 부품은 드론마다 체인 건을 달아 주고, 다이너마이트 상자는 드론이 다이너마이트를 떨구게 합니다. 강화의 등불은 근처 아군 수만큼 공격 속도를 올려 주고 결함 있는 전도체는 주위 아군까지 강화하니 부대가 커질수록 이득입니다.
+    whyFun:
+      en: With ten-plus drones in tow the screen is full of gunfire even when you aren't shooting.
+      ko: 드론 열 대 넘게 끌고 다니면 내가 안 쏴도 화면이 총소리로 가득합니다.
+    survivors:
+      - DroneTechBody
+    items:
+      - id: DroneWeapons
+        target: 2
+        note:
+          en: Chain gun on every drone.
+          ko: 모든 드론에 체인 건이 붙습니다.
+      - id: DronesDropDynamite
+        target: 3
+      - id: AttackSpeedPerNearbyAllyOrEnemy
+        target: 3
+      - id: ShockDamageAura
+        target: 1
+      - id: WardOnLevel
+        target: 2
+      - id: RoboBallBuddy
+        target: 1
+    equipment: DroneBackup
+    tags:
+      - theme
+      - long-run
+      - solo
+  - id: rex-self-damage
+    focus: survivor
+    title:
+      en: REX Blood Price
+      ko: 렉스 자해 빌드
+    tagline:
+      en: REX spends his own health to set off Genesis Loop and Razorwire on purpose.
+      ko: 체력을 일부러 깎아서 태초 고리와 철조망을 터뜨리는 렉스 전용 조합
+    summary:
+      en: REX's Seed Barrage costs health, so he can push himself under Genesis Loop's 25% threshold at will. Razorwire lashes out whenever enemies hit you, and Mired Urn plus Leeching Seed fill the health back up. Corpsebloom spreads healing out over time, which makes it easier to hang around low health.
+      ko: 렉스의 씨앗 세례는 체력을 깎아서 쏘는 스킬이라, 태초 고리가 발동하는 체력 25% 미만 조건을 스스로 만들 수 있습니다. 철조망은 적에게 맞을 때마다 주변을 긁어 주고, 진흙 항아리와 흡혈 씨앗으로 깎인 체력을 다시 채웁니다. 시체꽃은 회복을 천천히 나눠 받게 만들어서 체력이 낮은 구간을 오래 유지하기 좋습니다.
+    whyFun:
+      en: Riding the edge of your health bar and setting off explosions on purpose feels great.
+      ko: 체력바를 아슬아슬하게 유지하면서 폭발을 일부러 터뜨리는 게 손맛이 좋습니다.
+    survivors:
+      - TreebotBody
+    items:
+      - id: NovaOnLowHealth
+        target: 3
+        note:
+          en: Explodes when you drop below 25% health.
+          ko: 체력이 25% 아래로 떨어지면 터집니다.
+      - id: Thorns
+        target: 3
+      - id: RepeatHeal
+        target: 1
+      - id: IncreaseHealing
+        target: 2
+      - id: Seed
+        target: 3
+      - id: SiphonOnLowHealth
+        target: 1
+      - id: Medkit
+        target: 3
+    equipment: LifestealOnHit
+    tags:
+      - theme
+      - solo
+  - id: acrid-cooldown
+    focus: survivor
+    title:
+      en: Acrid Cooldown Spam
+      ko: 애크리드 쿨타임 난사
+    tagline:
+      en: Purity and Light Flux Pauldron on Acrid so Epidemic almost never stops.
+      ko: 순수와 빛의 흐름 견갑으로 쿨타임을 줄여 유행병을 계속 뿌리는 애크리드 빌드
+    summary:
+      en: Acrid's poison deals a share of max health and doesn't depend on proc chance, so Purity's luck penalty hardly costs anything. Light Flux Pauldron halves attack speed but also halves cooldowns, so Neurotoxin and Epidemic come back much faster; Alien Head and Backup Magazine cut them further. Open every Lunar Pod you see.
+      ko: 애크리드의 독은 적 최대 체력 비율로 들어가고 확률 아이템에 기대지 않으니, 순수의 행운 감소가 거의 손해가 되지 않습니다. 빛의 흐름 견갑은 공격 속도를 절반으로 줄이는 대신 쿨타임도 절반으로 줄여 신경독과 유행병을 훨씬 자주 쓸 수 있고, 외계인 머리와 보조 탄창으로 더 줄입니다. 루나 포드가 보이면 일단 열어 보는 게 이 빌드의 시작입니다.
+    whyFun:
+      en: Epidemic bounces around the room almost nonstop and poison spreads to everything.
+      ko: 유행병이 거의 쉬지 않고 방 안을 튀어 다니면서 적 전체에 독이 퍼지는 게 재밌습니다.
+    survivors:
+      - CrocoBody
+    items:
+      - id: LunarBadLuck
+        target: 3
+        note:
+          en: Poison doesn't rely on luck, so the downside barely matters.
+          ko: 독은 확률에 기대지 않아서 단점이 거의 안 느껴집니다.
+      - id: HalfAttackSpeedHalfCooldowns
+        target: 1
+      - id: AlienHead
+        target: 2
+      - id: SecondarySkillMagazine
+        target: 5
+      - id: UtilitySkillMagazine
+        target: 1
+      - id: Bandolier
+        target: 2
+    avoid:
+      - Clover
+    tags:
+      - theme
+      - solo
+  - id: glass-cannon
+    focus: items
+    title:
+      en: Glass Cannon
+      ko: 유리 대포
+    tagline:
+      en: "Stack Shaped Glass: you one-shot everything and everything one-shots you."
+      ko: 모양이 있는 유리를 쌓아서 한 대 치면 죽이고 한 대 맞으면 죽는 빌드
+    summary:
+      en: Each Shaped Glass doubles base damage and halves max health, so three means 8x damage on 1/8 health. Delicate Watch breaks when you drop below 25% health, so treat it as good until the first real hit, and use Crowbar and Focus Crystal to make the opening shot as big as possible. Kill things before they reach you, so long-range survivors are easiest.
+      ko: 모양이 있는 유리는 하나당 기본 피해를 두 배로 늘리고 최대 체력을 절반으로 줄여서, 세 개면 피해 8배에 체력은 8분의 1이 됩니다. 섬세한 시계는 체력이 25% 아래로 떨어지면 깨지니 사실상 한 번 크게 맞을 때까지만 쓰는 아이템이고, 쇠지렛대와 초점 크리스털로 첫 타를 최대한 키웁니다. 적이 다가오기 전에 멀리서 끝내야 하니 사거리가 긴 생존자가 편합니다.
+    whyFun:
+      en: Bosses melt in a few shots, but a single graze kills you, so every fight is tense.
+      ko: 보스를 몇 발 만에 녹이는 대신 스치기만 해도 죽어서 전투마다 긴장됩니다.
+    survivors:
+      - RailgunnerBody
+      - Bandit2Body
+      - MageBody
+    items:
+      - id: LunarDagger
+        target: 3
+        note:
+          en: Each doubles base damage and halves max health.
+          ko: 하나당 기본 피해 2배, 최대 체력 절반입니다.
+      - id: FragileDamageBonus
+        target: 5
+      - id: Crowbar
+        target: 5
+      - id: NearbyDamageBonus
+        target: 5
+      - id: BossDamageBonus
+        target: 5
+      - id: CritGlasses
+        target: 5
+      - id: CritDamage
+        target: 1
+    equipment: CritOnUse
+    tags:
+      - challenge
+      - theme
+      - solo
+  - id: lunar-only
+    focus: items
+    title:
+      en: Lunar-Only Run
+      ko: 루나 아이템 전용 런
+    tagline:
+      en: Skip normal items entirely and finish the run on lunar items alone.
+      ko: 흰색·녹색·빨간색 아이템은 안 줍고 루나 아이템만으로 끝까지 가는 도전
+    summary:
+      en: "Rules: never pick up normal items from chests; only use lunar items from Lunar Pods and the Bazaar. Grab Eulogy Zero first so some chest and printer drops turn lunar, and holding all four Heresy items turns you into the Heretic. Lunar Coins are tight, so save them in the first few stages."
+      ko: 상자에서 나온 일반 아이템은 줍지 않고, 루나 포드와 시간 사이의 시장에서 얻은 루나 아이템만 쓰는 게 규칙입니다. 0의 찬미가를 먼저 구하면 상자와 3D 프린터에서 나오는 아이템 일부가 루나로 바뀌어 고를 게 많아지고, 이단 아이템 네 개를 다 모으면 이단자로 변신합니다. 루나 코인이 늘 모자라니 초반 몇 스테이지는 코인을 아껴 둡니다.
+    whyFun:
+      en: Every item has a downside, so each pickup is a real decision.
+      ko: 아이템마다 단점이 붙어 있어서 뭘 먹을지 매번 고민하게 됩니다.
+    items:
+      - id: RandomlyLunar
+        target: 3
+        note:
+          en: Turns some chest and printer drops into lunar items.
+          ko: 상자·프린터에서 나오는 아이템 일부를 루나로 바꿉니다.
+      - id: LunarSun
+        target: 1
+      - id: LunarDagger
+        target: 2
+      - id: LunarPrimaryReplacement
+        target: 1
+      - id: LunarSecondaryReplacement
+        target: 1
+      - id: LunarUtilityReplacement
+        target: 1
+      - id: LunarSpecialReplacement
+        target: 1
+      - id: ShieldOnly
+        target: 1
+      - id: GoldOnHit
+        target: 1
+    equipment: Tonic
+    avoid:
+      - Clover
+      - Syringe
+      - Crowbar
+    tags:
+      - challenge
+      - chaos
+      - long-run
+  - id: void-only
+    focus: items
+    title:
+      en: Void-Only Run
+      ko: 공허 아이템 런
+    tagline:
+      en: Fill your inventory with void items only, from Void Cradles and Void Potentials.
+      ko: 공허 요람과 잠재 공허만 열어서 보라색 아이템으로 채우는 도전
+    summary:
+      en: Void items corrupt their normal counterparts, so treat normal items as filler until you find Void Cradles. Needletick's Collapse, Polylute and Plasma Shrimp carry the damage, and Benthic Bloom upgrades items every stage. Playing Void Fiend matches the corruption theme nicely.
+      ko: 공허 아이템은 짝이 되는 일반 아이템을 오염시키니, 일반 아이템은 공허 요람을 만나기 전까지 버티는 용도로만 씁니다. 니들틱의 붕괴와 폴리류트, 플라즈마 새우가 주력 딜을 맡고, 물속의 꽃이 스테이지마다 아이템을 한 단계씩 올려 줍니다. 공허 악마로 하면 오염 게이지와 테마가 맞아서 분위기가 삽니다.
+    whyFun:
+      en: An all-purple inventory looks completely different and feels oddly satisfying.
+      ko: 보라색 아이템만 모아 놓으면 인벤토리부터 분위기가 달라서 괜히 뿌듯합니다.
+    survivors:
+      - VoidSurvivorBody
+    items:
+      - id: BleedOnHitVoid
+        target: 5
+        note:
+          en: Collapse is the main damage.
+          ko: 붕괴가 주력 딜입니다.
+      - id: ChainLightningVoid
+        target: 3
+      - id: MissileVoid
+        target: 3
+      - id: CloverVoid
+        target: 2
+        note:
+          en: Upgrades a few items each stage.
+          ko: 스테이지마다 아이템 몇 개를 한 단계 올려 줍니다.
+      - id: ElementalRingVoid
+        target: 2
+      - id: BearVoid
+        target: 3
+      - id: ExplodeOnDeathVoid
+        target: 3
+      - id: ExtraLifeVoid
+        target: 1
+      - id: VoidMegaCrabItem
+        target: 1
+    tags:
+      - challenge
+      - theme
+      - long-run
+  - id: teleporter-rush
+    focus: challenge
+    title:
+      en: Teleporter Rush
+      ko: 텔레포터 러시
+    tagline:
+      en: Barely open chests and sprint straight to the teleporter before difficulty catches up.
+      ko: 상자는 거의 안 열고 텔레포터로 곧장 달려가는 속도전
+    summary:
+      en: Find the teleporter first on every stage and only grab chests and printers on the way. Focused Convergence charges the teleporter faster in a smaller zone, and Red Whip and Energy Drink cut travel time. Difficulty rises with time, so the faster you go the weaker the enemies stay; that is the whole point.
+      ko: 스테이지에 들어가면 텔레포터 위치부터 찾고, 가는 길에 있는 상자와 3D 프린터만 챙깁니다. 집중 충전은 텔레포터 범위를 좁히는 대신 충전을 빠르게 해 주고, 빨간 채찍과 에너지 드링크로 이동 시간을 줄입니다. 난이도가 시간에 따라 오르니 빨리 갈수록 적이 약한 상태로 남는다는 게 이 도전의 핵심입니다.
+    whyFun:
+      en: Reaching stage five before the timer hits ten minutes feels great.
+      ko: 타이머가 10분도 안 됐는데 다섯 번째 스테이지에 와 있으면 기분이 좋습니다.
+    survivors:
+      - LoaderBody
+      - HuntressBody
+      - MercBody
+    items:
+      - id: FocusConvergence
+        target: 3
+        note:
+          en: Faster charge, smaller zone.
+          ko: 충전은 빨라지고 범위는 좁아집니다.
+      - id: SprintOutOfCombat
+        target: 2
+      - id: SprintBonus
+        target: 5
+      - id: Hoof
+        target: 3
+      - id: Feather
+        target: 2
+      - id: TitanGoldDuringTP
+        target: 1
+      - id: Behemoth
+        target: 1
+      - id: BarrageOnBoss
+        target: 1
+    equipment: Gateway
+    avoid:
+      - HalfSpeedDoubleHealth
+    tags:
+      - challenge
+      - solo
+  - id: debuff-stacker
+    focus: items
+    title:
+      en: Debuff Stacker
+      ko: 디버프 몰아주기
+    tagline:
+      en: Pile four or more different debuffs on enemies to trigger Death Mark.
+      ko: 디버프를 네 개 이상 쌓아서 죽음의 표식을 띄우는 조합
+    summary:
+      en: "Death Mark marks enemies with four or more debuffs so they take much more damage, so the goal is several different debuffs: bleed, slow, armor reduction, burn. Tri-Tip Dagger and Chronobauble lay the base, and Symbiotic Scorpion and Shattering Justice strip armor on top. Survivors whose skills already poison or weaken, like Acrid or REX, hit the threshold much faster."
+      ko: 죽음의 표식은 디버프가 4개 이상 걸린 적에게 표식을 붙여 받는 피해를 크게 늘리니, 출혈, 감속, 방어력 감소, 화상처럼 종류가 다른 디버프를 여러 개 거는 게 핵심입니다. 삼각 단검과 시간의 방울로 기본 디버프를 깔고 공생 전갈과 부서진 정의로 방어력까지 깎습니다. 애크리드나 렉스처럼 스킬 자체에 독이나 약화가 붙은 생존자면 조건을 훨씬 빨리 채웁니다.
+    whyFun:
+      en: Debuff icons line up over an enemy's head and the moment the mark lands its health drops fast.
+      ko: 적 머리 위에 디버프 아이콘이 줄줄이 붙다가 표식이 뜨는 순간 체력이 쑥 빠집니다.
+    survivors:
+      - CrocoBody
+      - TreebotBody
+    items:
+      - id: DeathMark
+        target: 1
+        note:
+          en: Needs 4+ debuffs on the target.
+          ko: 대상에게 디버프가 4개 이상 있어야 합니다.
+      - id: BleedOnHit
+        target: 3
+      - id: SlowOnHit
+        target: 2
+      - id: PermanentDebuffOnHit
+        target: 1
+      - id: ArmorReductionOnHit
+        target: 1
+      - id: TriggerEnemyDebuffs
+        target: 2
+      - id: FireRing
+        target: 1
+    equipment: CrippleWard
+    avoid:
+      - SlowOnHitVoid
+      - BleedOnHitVoid
+    tags:
+      - theme
+      - team
+  - id: missile-barrage
+    focus: items
+    title:
+      en: Missile Barrage
+      ko: 미사일 폭격
+    tagline:
+      en: AtG Missiles and Pocket I.C.B.M. until the sky is full of missiles.
+      ko: AtG 미사일과 포켓 I.C.B.M.으로 하늘을 미사일로 덮는 조합
+    summary:
+      en: Collect AtG Missile Mk. 1 at green printers; once Pocket I.C.B.M. arrives each proc fires three missiles and the count jumps. Disposable Missile Launcher also benefits from Pocket I.C.B.M., and Spare Drone Parts makes your drones fire missiles too. Avoid Void Cradles with Plasma Shrimp, which would replace your AtGs.
+      ko: AtG 미사일 Mk. 1을 녹색 3D 프린터로 모으고, 포켓 I.C.B.M.을 얻으면 미사일이 한 번에 세 발씩 나가면서 수가 확 늘어납니다. 일회용 미사일 발사기도 포켓 I.C.B.M.의 효과를 받고, 드론 예비 부품이 있으면 드론도 미사일을 쏩니다. 플라즈마 새우가 든 공허 요람은 AtG를 바꿔 버리니 피합니다.
+    whyFun:
+      en: So many missiles fly that you can't tell what they're hitting; enemies just vanish.
+      ko: 미사일 연기가 화면을 덮을 만큼 날아가서 뭘 맞히는지도 모르게 적이 사라집니다.
+    survivors:
+      - EngiBody
+      - CommandoBody
+      - ToolbotBody
+    items:
+      - id: Missile
+        target: 5
+      - id: MoreMissile
+        target: 2
+        note:
+          en: Every missile item fires extra missiles.
+          ko: 미사일 아이템이 전부 추가 미사일을 쏩니다.
+      - id: BarrageOnBoss
+        target: 1
+      - id: DroneWeapons
+        target: 1
+      - id: Clover
+        target: 1
+      - id: Syringe
+        target: 4
+    equipment: CommandMissile
+    avoid:
+      - MissileVoid
+    tags:
+      - theme
+      - chaos
+  - id: team-support
+    focus: items
+    title:
+      en: Team Support
+      ko: 팀 서포터
+    tagline:
+      en: Warbanner, Lepton Daisy and other items that power up the whole team.
+      ko: 전쟁깃발과 렙톤 데이지처럼 팀 전체를 챙기는 아이템을 모으는 조합
+    summary:
+      en: Warbanner plants a banner on level-up and teleporter events that speeds up nearby allies, and Lepton Daisy heals the whole team while the teleporter charges. Faulty Conductor and Gorag's Opus buff allies around you, and Empathy Cores get stronger with every teammate. Bustling Fungus heals anyone standing in it, so it suits a party that groups up inside the teleporter.
+      ko: 전쟁깃발은 레벨업이나 텔레포터 이벤트 때 깃발을 세워 주변 아군의 공격·이동 속도를 올리고, 렙톤 데이지는 텔레포터 충전 중 팀 전체를 회복시킵니다. 결함 있는 전도체와 고라그의 작품도 주위 아군을 같이 강화하고, 공감 코어는 팀원이 많을수록 탐사정이 세집니다. 뿜뿜 버섯은 범위 안의 팀원도 같이 회복시키니 텔레포터 안에서 뭉쳐 싸우는 파티와 잘 맞습니다.
+    whyFun:
+      en: Your own damage is modest, but you can see everyone around you get much stronger.
+      ko: 내 딜은 적어도 옆 사람들이 확 세지는 게 보여서 멀티에서 은근히 뿌듯합니다.
+    items:
+      - id: WardOnLevel
+        target: 3
+      - id: TPHealingNova
+        target: 2
+      - id: ShockDamageAura
+        target: 1
+      - id: RoboBallBuddy
+        target: 1
+      - id: Mushroom
+        target: 3
+      - id: AttackSpeedPerNearbyAllyOrEnemy
+        target: 3
+    equipment: TeamWarCry
+    tags:
+      - theme
+      - team
+  - id: commando-suppressive-fire
+    focus: survivor
+    title:
+      en: Suppressive Fire Spam
+      ko: 제압 사격 난사
+    tagline:
+      en: Stack attack speed so Suppressive Fire fires more and more bullets.
+      ko: 공격 속도를 쌓아서 제압 사격 탄환 수를 불리는 코만도 빌드
+    summary:
+      en: Suppressive Fire shoots more bullets the higher your attack speed, so keep printing Soldier's Syringe and Mocha. Alien Head brings it back sooner, and Sticky Bomb and Ukulele turn every bullet into a proc roll. The skill stuns, so enemies can't do much while you're firing.
+      ko: 코만도의 제압 사격은 공격 속도가 오를수록 한 번에 쏘는 탄환 수가 늘어나서, 군인의 주사기와 모카를 흰색 3D 프린터로 계속 늘립니다. 외계인 머리로 제압 사격 쿨타임을 줄이고, 끈끈이 폭탄과 우쿨렐레를 붙이면 탄환 하나하나가 발동 기회가 됩니다. 제압 사격 자체에 충격이 붙어 있어서 쏘는 동안 적이 제대로 움직이지 못합니다.
+    whyFun:
+      en: One Suppressive Fire dumps dozens of bullets, which is exactly what Commando should feel like.
+      ko: 제압 사격 한 번에 총알이 수십 발씩 쏟아져서 코만도 하는 맛이 제대로 납니다.
+    survivors:
+      - CommandoBody
+    items:
+      - id: Syringe
+        target: 8
+      - id: AttackSpeedAndMoveSpeed
+        target: 4
+      - id: AlienHead
+        target: 2
+      - id: StickyBomb
+        target: 5
+      - id: ChainLightning
+        target: 2
+      - id: CritGlasses
+        target: 4
+      - id: AttackSpeedOnCrit
+        target: 1
+    avoid:
+      - HalfAttackSpeedHalfCooldowns
+    tags:
+      - theme
+      - solo
+  - id: huntress-glaive-bounce
+    focus: survivor
+    title:
+      en: Glaive Bounce
+      ko: 글레이브 튕기기
+    tagline:
+      en: Every Laser Glaive bounce sets off on-hit items.
+      ko: 레이저 글레이브가 튕길 때마다 프록이 터지는 헌트리스 빌드
+    summary:
+      en: Laser Glaive bounces six times and every bounce is a hit, so each on-hit item fires along the chain. Backup Magazine lets you throw several glaives in a row, and Luminous Shot stores charges when you use your secondary and adds lightning to the next primary shots. Sentient Meat Hook pulls enemies together so the glaive has more targets.
+      ko: 레이저 글레이브는 적 사이를 여섯 번 튕기면서 매번 적중 판정이 나서, 적중 시 발동하는 아이템을 달수록 튕길 때마다 효과가 같이 터집니다. 보조 탄창으로 글레이브를 연달아 던질 수 있게 하고, 빛나는 사격은 보조 스킬을 쓸 때 충전이 쌓여 이후 기본 공격에 번개를 붙여 줍니다. 지능 있는 고기 갈고리가 있으면 적을 한데 끌어모아 글레이브가 튕길 곳이 많아집니다.
+    whyFun:
+      en: Throw one glaive and lightning and bombs trail it through the whole pack.
+      ko: 글레이브 하나 던지면 적 무리 사이로 번개와 폭탄이 줄줄이 따라붙는 게 보기 좋습니다.
+    survivors:
+      - HuntressBody
+    items:
+      - id: SecondarySkillMagazine
+        target: 5
+        note:
+          en: More glaive charges.
+          ko: 글레이브를 여러 번 연달아 던집니다.
+      - id: IncreasePrimaryDamage
+        target: 2
+      - id: ChainLightning
+        target: 3
+      - id: BleedOnHit
+        target: 3
+      - id: StickyBomb
+        target: 3
+      - id: BounceNearby
+        target: 1
+      - id: AlienHead
+        target: 1
+    avoid:
+      - ChainLightningVoid
+    tags:
+      - theme
+      - solo
+  - id: bandit-lights-out
+    focus: survivor
+    title:
+      en: Lights Out Chain
+      ko: 소등 연쇄
+    tagline:
+      en: Kill with Lights Out, reset every cooldown, repeat.
+      ko: 소등으로 처치할 때마다 쿨타임을 초기화하며 한 발씩 끝내는 도적 빌드
+    summary:
+      en: Lights Out resets all your cooldowns on a kill, so the whole build is about making one shot enough. Crowbar adds damage to healthy targets and Old Guillotine finishes low-health elites, which both raise the chance a Lights Out kills. Smoke Bomb, get behind the target for a guaranteed backstab crit, Lights Out, and repeat.
+      ko: 소등은 적을 처치하면 모든 쿨타임이 초기화되니 한 발로 끝낼 수 있게 피해를 키우는 게 핵심입니다. 쇠지렛대는 체력이 많은 적에게 추가 피해를 주고 낡은 단두대는 체력이 낮은 엘리트를 바로 처치해서, 둘 다 소등으로 끝낼 확률을 올려 줍니다. 연막탄으로 숨은 뒤 뒤로 돌아가면 뒤치기로 치명타가 확정이라 연막탄, 소등, 연막탄 순서를 반복합니다.
+    whyFun:
+      en: Every kill brings Lights Out straight back, so you shoot down enemies one after another.
+      ko: 적이 쓰러질 때마다 소등이 바로 돌아와서 한 명씩 차례로 쏴 넘기는 재미가 있습니다.
+    survivors:
+      - Bandit2Body
+    items:
+      - id: Crowbar
+        target: 5
+        note:
+          en: Bonus damage to enemies above 90% health.
+          ko: 체력이 많은 적에게 추가 피해를 줍니다.
+      - id: BossDamageBonus
+        target: 4
+      - id: IncreaseDamageOnMultiKill
+        target: 5
+      - id: CritGlasses
+        target: 3
+      - id: ExecuteLowHealthElite
+        target: 2
+      - id: KillEliteFrenzy
+        target: 1
+      - id: AlienHead
+        target: 1
+    equipment: CritOnUse
+    tags:
+      - theme
+      - solo
+  - id: mult-power-mode
+    focus: survivor
+    title:
+      en: Power Mode Turret
+      ko: 파워 모드 포대
+    tagline:
+      en: MUL-T plants himself in Power Mode and fires both primaries at once.
+      ko: 파워 모드로 멈춰 서서 두 무기를 동시에 쏘는 MUL-T 빌드
+    summary:
+      en: Power Mode fires both primaries at once and adds 100 armor but cuts movement speed by 60%, so build to hold a spot. Bustling Fungus heals while you stand still, which fits best, backed by Repulsion Armor Plate and Tougher Times. Pair a fast weapon like the Auto-Nailgun with a heavy one like the Rebar Puncher.
+      ko: 파워 모드는 주요 공격 두 개를 동시에 쓰고 방어력 100을 얻는 대신 이동 속도가 60% 줄어서, 아예 자리를 잡고 버티는 쪽으로 아이템을 맞춥니다. 뿜뿜 버섯은 멈춰 있을 때 주변을 회복시키니 가장 잘 맞고, 반발성 방어구 철판과 힘들었던 시절로 버팁니다. 무기는 자동 네일건처럼 연사가 빠른 쪽과 철근 펀처처럼 한 방이 센 쪽을 섞으면 좋습니다.
+    whyFun:
+      en: Standing your ground like a tank while pouring nails and rebar at once feels heavy in a good way.
+      ko: 탱크처럼 버티고 서서 네일건과 철근을 동시에 퍼붓는 게 묵직합니다.
+    survivors:
+      - ToolbotBody
+    items:
+      - id: Mushroom
+        target: 5
+        note:
+          en: Heals while standing still.
+          ko: 멈춰 있을 때 회복합니다.
+      - id: ArmorPlate
+        target: 5
+      - id: Bear
+        target: 4
+      - id: Syringe
+        target: 5
+      - id: StickyBomb
+        target: 5
+      - id: ChainLightning
+        target: 2
+      - id: WardOnLevel
+        target: 2
+    avoid:
+      - SprintArmor
+    tags:
+      - theme
+      - team
+  - id: engi-turret-fortress
+    focus: survivor
+    title:
+      en: Turret Fortress
+      ko: 포탑 요새
+    tagline:
+      en: Turrets inherit your items, so turn them into a fortress.
+      ko: 포탑이 아이템을 물려받는 걸 이용해 포탑을 요새로 만드는 엔지니어 빌드
+    summary:
+      en: TR12 Gauss Auto-Turrets inherit all your items and never move, so Bustling Fungus, which heals while standing still, is perfect on them. Stone Flux Pauldron halves speed but doubles health, and the turrets lose nothing from the slow. Engineer himself gets slower too, so fight next to the turrets behind a Bubble Shield.
+      ko: TR12 가우스 자동 포탑은 엔지니어의 아이템을 전부 물려받고 움직이지 않으니, 가만히 있을 때 회복하는 뿜뿜 버섯이 포탑에게 딱 맞습니다. 돌의 흐름 견갑은 이동 속도를 절반으로 줄이는 대신 체력을 두 배로 늘리는데, 포탑은 원래 안 움직여서 단점 없이 체력만 챙깁니다. 대신 엔지니어 본인도 느려지니 포탑 옆에서 거품 방어막을 치고 같이 버티는 식으로 싸웁니다.
+    whyFun:
+      en: Two turrets spraying lightning and missiles hold the line, so teleporter events get easy.
+      ko: 포탑 두 대가 번개와 미사일을 뿜으면서 자리를 지켜 주니 텔레포터 이벤트가 편합니다.
+    survivors:
+      - EngiBody
+    items:
+      - id: Mushroom
+        target: 4
+      - id: HalfSpeedDoubleHealth
+        target: 1
+        note:
+          en: Turrets never move, so they only get the health.
+          ko: 포탑은 원래 안 움직여서 체력만 챙깁니다.
+      - id: Syringe
+        target: 6
+      - id: ChainLightning
+        target: 3
+      - id: StickyBomb
+        target: 4
+      - id: Bear
+        target: 5
+      - id: Missile
+        target: 2
+    tags:
+      - theme
+      - team
+  - id: artificer-ice-wall
+    focus: survivor
+    title:
+      en: Ice Wall Spam
+      ko: 얼음벽 도배
+    tagline:
+      en: Artificer lays Snapfreeze walls nonstop and shatters frozen enemies.
+      ko: 급속 동결을 쉴 새 없이 깔아서 적을 얼려 깨는 아티피셔 빌드
+    summary:
+      en: Snapfreeze raises a wall that freezes enemies, and frozen enemies under 30% health die instantly. Hardlight Afterburner adds Snapfreeze charges and Alien Head cuts the cooldown so you can keep laying walls, while Eclipse Lite gives barrier every time a skill comes back. Use Cast Nano-Spear as the secondary to finish frozen enemies from range.
+      ko: 급속 동결은 적을 얼리는 벽을 세우고, 얼어붙은 적은 체력이 30% 아래면 바로 죽습니다. 고형광선 재연소장치로 급속 동결 충전 횟수를 늘리고 외계인 머리로 쿨타임을 줄여 벽을 계속 깔고, 이클립스 라이트는 스킬 쿨타임이 끝날 때마다 장벽을 줘서 버티는 힘을 채워 줍니다. 보조 스킬은 나노창 투척으로 맞춰 얼린 적을 멀리서도 정리합니다.
+    whyFun:
+      en: Enemies walk into the wall and break apart into ice one after another.
+      ko: 적이 벽에 닿자마자 줄줄이 얼음 조각으로 깨지는 게 시원합니다.
+    survivors:
+      - MageBody
+    items:
+      - id: UtilitySkillMagazine
+        target: 2
+      - id: AlienHead
+        target: 2
+      - id: BarrierOnCooldown
+        target: 4
+        note:
+          en: Barrier each time a skill comes off cooldown.
+          ko: 스킬 쿨타임이 끝날 때마다 장벽을 줍니다.
+      - id: IceRing
+        target: 2
+      - id: Icicle
+        target: 1
+      - id: SecondarySkillMagazine
+        target: 3
+    avoid:
+      - ElementalRingVoid
+    tags:
+      - theme
+      - solo
+  - id: merc-assault-chain
+    focus: survivor
+    title:
+      en: Blinding Assault Chain
+      ko: 돌격 연쇄
+    tagline:
+      en: Chain Blinding Assault from enemy to enemy and stay in the air.
+      ko: 눈부신 돌격을 끊지 않고 이어 가며 공중에 떠 있는 머셔너리 빌드
+    summary:
+      en: Blinding Assault lets you dash again on a hit, so inside a pack you can keep chaining dashes and barely touch the ground. Hardlight Afterburner and Alien Head cover charges and cooldown, and when Brainstalks triggers you can dash nonstop for a while. You're always in melee range, so Focus Crystal and Harvester's Scythe fit well.
+      ko: 눈부신 돌격은 적을 맞히면 한 번 더 돌진할 수 있어서, 적 무리 사이에서는 땅에 거의 안 내려오고 돌진을 이어 갈 수 있습니다. 고형광선 재연소장치와 외계인 머리로 돌격 충전과 쿨타임을 챙기고, 뇌줄기가 켜지면 쿨타임이 사라져서 한동안 돌진만 반복합니다. 늘 붙어서 싸우는 생존자라 초점 크리스털과 수확꾼의 낫이 잘 맞습니다.
+    whyFun:
+      en: Once you get the hang of zipping between enemies you won't want to stop.
+      ko: 적 사이를 번개처럼 튕겨 다니는 게 손에 익으면 멈추기 싫어집니다.
+    survivors:
+      - MercBody
+    items:
+      - id: UtilitySkillMagazine
+        target: 3
+      - id: AlienHead
+        target: 2
+      - id: KillEliteFrenzy
+        target: 1
+      - id: Syringe
+        target: 5
+      - id: NearbyDamageBonus
+        target: 5
+      - id: HealOnCrit
+        target: 2
+      - id: CritGlasses
+        target: 4
+    tags:
+      - theme
+      - solo
+  - id: loader-grapple-speed
+    focus: survivor
+    title:
+      en: Grapple Speed Demon
+      ko: 갈고리 속도광
+    tagline:
+      en: More speed means harder Charged Gauntlet hits for Loader.
+      ko: 이동 속도를 올려 충전 건틀릿을 더 세게 꽂는 로더 빌드
+    summary:
+      en: Charged Gauntlet is Heavy, dealing more damage the faster you move, so movement items like Paul's Goat Hoof and Energy Drink are damage items here. The core loop is grappling toward an enemy and slamming a Charged Gauntlet on arrival; Backup Magazine gives extra grapples for mid-air turns, and H3AD-5T v2 makes diving in from height safe.
+      ko: 충전 건틀릿은 묵직 효과가 있어서 빠르게 움직일수록 피해가 커지니, 폴의 염소발과 에너지 드링크 같은 이동 속도 아이템이 곧 딜 아이템입니다. 갈고리 주먹으로 적에게 날아가면서 충전 건틀릿을 꽂는 게 기본 동작이고, 보조 탄창을 먹으면 갈고리를 연달아 쓸 수 있어서 공중에서 방향을 바꾸기 편합니다. H3AD-5T v2가 있으면 높은 곳에서 떨어지며 들어가도 부담이 없습니다.
+    whyFun:
+      en: Crossing the map on the grapple and landing a punch at full speed puts up huge numbers.
+      ko: 갈고리로 맵을 가로지르다 속도 그대로 주먹을 꽂으면 큰 숫자가 뜨는 게 짜릿합니다.
+    survivors:
+      - LoaderBody
+    items:
+      - id: Hoof
+        target: 8
+        note:
+          en: Speed is damage for Charged Gauntlet.
+          ko: 충전 건틀릿은 속도가 곧 피해입니다.
+      - id: SprintBonus
+        target: 5
+      - id: AttackSpeedAndMoveSpeed
+        target: 4
+      - id: SpeedBoostPickup
+        target: 3
+      - id: SecondarySkillMagazine
+        target: 2
+      - id: JumpDamageStrike
+        target: 1
+      - id: FallBoots
+        target: 1
+    avoid:
+      - HalfSpeedDoubleHealth
+    tags:
+      - theme
+      - solo
+  - id: captain-orbital-strike
+    focus: survivor
+    title:
+      en: Orbital Bombardment
+      ko: 궤도 폭격 함장
+    tagline:
+      en: Captain calls Orbital Probes again and again and fights from the sky.
+      ko: 탐사정 투하를 계속 불러서 하늘에서 폭격하는 캡틴 빌드
+    summary:
+      en: Each Orbital Probe hits far harder than 400%, so it meets Kjaro's and Runald's Band threshold every time. Hardlight Afterburner adds probe charges and Alien Head shortens the cooldown, and Runic Lens gets better the harder you hit, so it pairs well with probes. Add Royal Capacitor and almost everything you do comes down from the sky.
+      ko: 탐사정 투하는 한 발 피해가 400%를 훌쩍 넘어서, 400% 이상 한 방에 발동하는 캬로의 반지와 루널드의 반지 조건을 매번 채웁니다. 고형광선 재연소장치로 탐사정 충전 횟수를 늘리고 외계인 머리로 쿨타임을 줄여서 폭격을 자주 부르고, 룬 렌즈는 피해가 클수록 운석 확률이 올라서 탐사정과 잘 맞습니다. 장비까지 장엄한 축전기로 맞추면 하늘에서 떨어지는 공격만으로 싸우게 됩니다.
+    whyFun:
+      en: Probes, lightning and meteors keep falling in turns, so the battlefield is always under bombardment.
+      ko: 탐사정, 번개, 운석이 번갈아 떨어져서 전장이 늘 폭격 중입니다.
+    survivors:
+      - CaptainBody
+    items:
+      - id: UtilitySkillMagazine
+        target: 3
+      - id: AlienHead
+        target: 2
+      - id: FireRing
+        target: 2
+        note:
+          en: Each probe hits well above 400%, enough to trigger Bands.
+          ko: 탐사정 한 발이 400%를 넘어서 반지가 발동합니다.
+      - id: IceRing
+        target: 1
+      - id: MeteorAttackOnHighDamage
+        target: 1
+      - id: Crowbar
+        target: 4
+      - id: BossDamageBonus
+        target: 3
+    equipment: Lightning
+    avoid:
+      - ElementalRingVoid
+    tags:
+      - theme
+      - team
+  - id: railgunner-one-shot
+    focus: survivor
+    title:
+      en: One-Shot Sniper
+      ko: 한 발 저격
+    tagline:
+      en: Railgunner deletes boss health bars with single M99 shots.
+      ko: M99 스나이퍼 한 발로 보스 체력을 날리는 레일거너 빌드
+    summary:
+      en: Railgunner converts all crit chance into crit damage, so Lens-Maker's Glasses become weak-point damage. M99 Sniper hits for 1000% per shot, triggering the Bands every time, and Backup Magazine adds shots per scope. In boss fights, pop Ocular HUD and hit the weak point to take a big chunk of the health bar in one shot.
+      ko: 레일거너는 치명타 확률이 전부 치명타 피해로 바뀌어서 렌즈 제작자의 안경도 약점 피해를 올리는 아이템이 됩니다. M99 스나이퍼는 한 발에 1000%라 반지가 매번 발동하고, 보조 탄창을 먹으면 조준 한 번에 쏠 수 있는 발 수가 늘어납니다. 보스전에서는 접안 HUD를 켜고 약점을 맞히면 한 발에 체력 막대가 크게 줄어듭니다.
+    whyFun:
+      en: Landing one shot on a boss weak point and watching a huge chunk of health vanish is a rush.
+      ko: 보스 약점에 한 발 꽂았을 때 체력 막대가 뭉텅 날아가는 게 짜릿합니다.
+    survivors:
+      - RailgunnerBody
+    items:
+      - id: FireRing
+        target: 2
+      - id: IceRing
+        target: 2
+      - id: CritGlasses
+        target: 5
+        note:
+          en: Converted to crit damage by her passive.
+          ko: 패시브 때문에 치명타 피해로 바뀝니다.
+      - id: CritDamage
+        target: 1
+      - id: Crowbar
+        target: 5
+      - id: BossDamageBonus
+        target: 5
+      - id: SecondarySkillMagazine
+        target: 3
+      - id: MeteorAttackOnHighDamage
+        target: 1
+    equipment: CritOnUse
+    tags:
+      - theme
+      - solo
+  - id: void-fiend-corruption
+    focus: survivor
+    title:
+      en: Stay Corrupted
+      ko: 오염 유지
+    tagline:
+      en: Void Fiend fights with the corruption gauge kept full as long as possible.
+      ko: 오염 게이지를 최대한 꽉 채운 상태로 싸우는 공허 악마 빌드
+    summary:
+      en: Void Fiend gains corruption from taking damage, landing crits and holding void items, and at full corruption his skills turn into their aggressive forms. Lens-Maker's Glasses and a stack of void items fill the gauge fast so you can stay in that form longer. Healing lowers corruption, so skip automatic healing like Leeching Seed or Harvester's Scythe.
+      ko: 공허 악마는 피해를 받거나 치명타를 넣거나 공허 아이템을 들고 있으면 오염이 차고, 오염이 가득 차면 스킬이 더 공격적인 형태로 바뀝니다. 렌즈 제작자의 안경으로 치명타를 늘리고 공허 아이템을 모아 오염이 빨리 차게 만들면 강화 상태를 오래 유지할 수 있습니다. 치유는 오염을 줄이니 흡혈 씨앗이나 수확꾼의 낫처럼 저절로 회복되는 아이템은 피합니다.
+    whyFun:
+      en: The longer you stay in corrupted form firing the beam, the more your damage changes.
+      ko: 강화 형태로 빔을 쏘며 버티는 시간이 길어질수록 화력이 확 달라집니다.
+    survivors:
+      - VoidSurvivorBody
+    items:
+      - id: CritGlasses
+        target: 6
+        note:
+          en: Crits build corruption.
+          ko: 치명타가 오염을 채웁니다.
+      - id: AttackSpeedOnCrit
+        target: 2
+      - id: Syringe
+        target: 5
+      - id: ChainLightningVoid
+        target: 2
+      - id: MissileVoid
+        target: 2
+      - id: BleedOnHitVoid
+        target: 3
+    avoid:
+      - Seed
+      - HealOnCrit
+      - Mushroom
+      - Medkit
+    tags:
+      - theme
+      - solo
+  - id: false-son-growth
+    focus: survivor
+    title:
+      en: Health Growth
+      ko: 체력 성장
+    tagline:
+      en: False Son stacks only health items to grow Lunar Spikes and his laser.
+      ko: 체력 아이템만 쌓아서 달의 쐐기와 광선을 키우는 거짓된 자손 빌드
+    summary:
+      en: "False Son's skills grow with bonus health from items: more Lunar Spikes and a longer Laser of the Father. Health from levels doesn't count, so collect items that add health directly like Bison Steak, Titanic Knurl and Infusion, and cook Seared Steak and Quick Fix at the Wandering CHEF. Health is your damage here, so surviving and hitting harder come together."
+      ko: 거짓된 자손은 아이템으로 얻은 추가 체력만큼 스킬이 성장해서 달의 쐐기 보유량과 아버지의 광선 지속시간이 늘어납니다. 레벨업으로 오른 체력은 성장에 들어가지 않으니 들소 스테이크, 거인의 혹, 주입 약물처럼 체력을 직접 올리는 아이템을 모으고, 떠돌이 셰프에게서 시어링한 스테이크와 즉효약도 만들어 둡니다. 체력이 곧 딜이라 버티는 것과 때리는 게 같이 좋아집니다.
+    whyFun:
+      en: As your health number climbs you can see how many more spikes you throw at once.
+      ko: 체력이 불어날수록 쐐기를 한 번에 던지는 개수가 늘어나는 게 눈에 보여서 키우는 재미가 확실합니다.
+    survivors:
+      - FalseSonBody
+    items:
+      - id: FlatHealth
+        target: 10
+      - id: Knurl
+        target: 3
+      - id: Infusion
+        target: 3
+      - id: CookedSteak
+        target: 2
+        note:
+          en: Wandering CHEF recipe.
+          ko: 떠돌이 셰프에게서 만듭니다.
+      - id: BonusHealthBoost
+        target: 2
+        note:
+          en: Wandering CHEF recipe.
+          ko: 떠돌이 셰프에게서 만듭니다.
+      - id: HalfSpeedDoubleHealth
+        target: 1
+    avoid:
+      - ShieldOnly
+      - LunarDagger
+    tags:
+      - theme
+      - long-run
+  - id: chef-oil-fire
+    focus: survivor
+    title:
+      en: Oil Fire
+      ko: 기름 불바다
+    tagline:
+      en: CHEF glazes enemies in oil, then sets them all on fire.
+      ko: 글레이징으로 기름을 뿌리고 불을 붙여 한꺼번에 태우는 셰프 빌드
+    summary:
+      en: Oiled enemies take far more burn damage when ignited, so the basic order is Glaze to coat them, then Sear to light them. Ignition Tank boosts burns, Gasoline spreads fire on kill, and Sautéed Worms from the Wandering CHEF adds another way to ignite. Throw Molotov (6-Pack) into oil pools and the whole area goes up.
+      ko: 셰프의 기름을 뒤집어쓴 적은 불이 붙으면 훨씬 큰 화상 피해를 받으니, 글레이징으로 기름을 먼저 뿌리고 시어링으로 불을 붙이는 게 기본 순서입니다. 점화 탱크로 화상 피해를 키우고 휘발유로 처치할 때마다 불을 옮기며, 떠돌이 셰프에게서 튀긴 벌레를 만들어 두면 불을 거는 수단이 하나 더 생깁니다. 화염병(6팩)을 기름 웅덩이에 던지면 그대로 불바다가 됩니다.
+    whyFun:
+      en: Light one oiled pack and the whole group burns down together, which really feels like cooking.
+      ko: 기름 범벅이 된 적 무리에 불 한 번 붙이면 한꺼번에 타들어 가서 진짜 요리하는 기분이 납니다.
+    survivors:
+      - ChefBody
+    items:
+      - id: StrengthenBurn
+        target: 3
+      - id: IgniteOnKill
+        target: 5
+      - id: FireRing
+        target: 2
+      - id: WyrmOnHit
+        target: 1
+        note:
+          en: Wandering CHEF recipe.
+          ko: 떠돌이 셰프에게서 만듭니다.
+      - id: AlienHead
+        target: 2
+      - id: SecondarySkillMagazine
+        target: 2
+    equipment: Molotov
+    avoid:
+      - ElementalRingVoid
+    tags:
+      - theme
+      - team
+  - id: heretic-transcendence
+    focus: survivor
+    title:
+      en: Transcendent Heretic
+      ko: 이단자 초월
+    tagline:
+      en: Transcendence removes the Heretic's health-drain worries and lets shields carry you.
+      ko: 초월로 체력이 새는 부담을 덜고 방어막으로 버티는 이단자 빌드
+    summary:
+      en: Heretic has strong skills but constantly loses health; Transcendence turns health into shield and raises the maximum by 50%, which makes Heretic far easier to play. Shields refill after a short break from damage, so dart out with Strides of Heresy and come back, and grow the shield with Personal Shield Generators and Bison Steaks. Alien Head lets you cycle the Heresy skills more often.
+      ko: 이단자는 체력이 계속 줄어드는 대신 스킬이 강한 생존자인데, 초월을 먹으면 체력이 방어막으로 바뀌고 최대치도 50% 늘어나서 훨씬 편해집니다. 방어막은 잠깐만 안 맞으면 다시 차니 이단의 발걸음으로 빠졌다가 다시 들어가는 식으로 싸우고, 개인용 방어막 생성기와 들소 스테이크로 방어막 양을 늘립니다. 외계인 머리로 쿨타임을 줄이면 이단 스킬을 더 자주 돌릴 수 있습니다.
+    whyFun:
+      en: A character who normally bleeds health can finally stay in fights and use those skills freely.
+      ko: 원래 체력이 줄줄 새는 캐릭터인데 방어막 덕에 오래 버티면서 이단 스킬을 마음껏 쓸 수 있습니다.
+    survivors:
+      - HereticBody
+    items:
+      - id: ShieldOnly
+        target: 1
+      - id: PersonalShield
+        target: 5
+      - id: FlatHealth
+        target: 5
+      - id: Knurl
+        target: 2
+      - id: ShieldBooster
+        target: 2
+      - id: AlienHead
+        target: 2
+      - id: Syringe
+        target: 3
+    avoid:
+      - LunarDagger
+    tags:
+      - theme
+      - solo

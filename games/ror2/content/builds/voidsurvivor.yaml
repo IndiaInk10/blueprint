@@ -1,0 +1,403 @@
+kind: survivor-builds
+schemaVersion: 1
+revision: 5
+updatedAt: 2026-09-26
+survivor: VoidSurvivorBody
+gameVersion: v1.4.1 (Alloyed Collective)
+sourceQuality: mixed
+sources:
+  - https://riskofrain2.wiki.gg/wiki/Void_Fiend
+  - https://rogueranker.com/void-fiend-ror2/
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=2775783244
+  - https://gamerant.com/risk-of-rain-2-best-void-fiend-build-tips/
+  - https://www.thegamer.com/risk-of-rain-2-pro-tips-for-playing-as-void-fiend/
+builds:
+  - id: voidsurvivor-corruption-uptime
+    title:
+      en: Corruption Uptime
+      ko: 타락 유지
+    difficulty: intermediate
+    summary:
+      en: Maximize time in Corrupted form, where every skill is stronger and you gain 100 armor. Corruption rises over time, from crits, from taking damage, and by 2% of minimum per void item, and healing lowers it. So the build uses crit and attack speed, defense that does not heal (barrier, block, armor, shields) and void items, and avoids passive healing.
+      ko: 모든 스킬이 강해지고 방어력 100을 얻는 타락 상태를 최대한 오래 유지합니다. 타락 수치는 시간, 치명타, 피격으로 오르고 공허 아이템 하나당 최소치가 2% 오르며, 회복하면 줄어듭니다. 그래서 치명타와 공격 속도, 회복이 아닌 방어(보호막, 막기, 방어력, 실드), 공허 아이템을 모으고 지속 회복은 피합니다.
+    loadout:
+      primary: VOIDSURVIVOR_PRIMARY_NAME
+      secondary: VOIDSURVIVOR_SECONDARY_NAME
+      utility: VOIDSURVIVOR_UTILITY_NAME
+      special: VOIDSURVIVOR_SPECIAL_NAME
+    root: core
+    nodes:
+      - id: core
+        phase: early
+        label:
+          en: Corruption engine
+          ko: 타락 엔진
+        when:
+          en: Stages 1-2.
+          ko: 1~2스테이지.
+        items:
+          - id: CritGlasses
+            priority: core
+            note:
+              en: Crits add corruption, so you enter Corrupted form faster.
+              ko: 치명타가 타락 수치를 올려 타락 상태에 더 빨리 들어갑니다.
+            stacks:
+              target: 10
+              min: 1
+              max: 10
+            stacksReason:
+              en: 10% crit per stack caps at 100% (wiki, GameRant); drop one for every two Predatory Instincts or Scythes (5% each).
+              ko: 개당 치명타 10%로 10개면 100%입니다(위키, GameRant). 포식 본능이나 수확꾼의 낫(각 5%) 2개마다 1개씩 줄이세요.
+          - id: Syringe
+            priority: core
+            note:
+              en: Corrupted Drown's tick rate scales with attack speed.
+              ko: 타락한 【익??사」의 틱 속도가 공격 속도에 비례합니다.
+            stacks:
+              target: 10
+              min: 1
+            stacksReason:
+              en: +15% attack speed per stack (wiki) raises Corrupted Drown's tick rate (Rogue Ranker); 10 (+150%).
+              ko: 개당 공격 속도 +15%(위키)가 타락한 익사의 틱 속도를 올립니다(Rogue Ranker). 10개(+150%).
+          - id: SecondarySkillMagazine
+            priority: core
+            note:
+              en: All Flood charges refill when entering or leaving Corrupted form.
+              ko: 타락 상태에 들어가거나 나올 때 『침?수」 충전이 모두 채워집니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +1 Flood charge per stack (wiki), all refilled on each form change; 3 before glasses and blocks fall behind.
+              ko: 개당 범람 충전 +1(위키)이고 형태가 바뀔 때마다 모두 채워집니다. 안경과 막기 아이템에 밀리지 않게 3개.
+          - id: Bear
+            priority: core
+            note:
+              en: Blocks hits without healing; can even block Suppress self-damage.
+              ko: 회복 없이 피해를 막고, 【억??제』의 자해 피해도 막을 수 있습니다.
+            stacks:
+              target: 15
+              min: 10
+            stacksReason:
+              en: GameRant says 10-20; block is hyperbolic, 69% at 15 and 75% at 20 (wiki), and past 20 returns are steep.
+              ko: GameRant는 10~20개를 권합니다. 막기 확률은 쌍곡선으로 15개 69%, 20개 75%이고(위키) 20개를 넘으면 효율이 크게 떨어집니다.
+        next:
+          - defense
+          - damage
+      - id: defense
+        phase: mid
+        label:
+          en: Non-healing defense
+          ko: 회복 없는 방어
+        when:
+          en: Take when you die while waiting to corrupt.
+          ko: 타락을 기다리다 죽는다면 고르세요.
+        items:
+          - id: BarrierOnKill
+            priority: core
+            note:
+              en: Barrier on kill keeps you alive without lowering corruption.
+              ko: 처치 시 보호막으로 타락 수치를 줄이지 않고 생존합니다.
+            stacks:
+              target: 10
+            stacksReason:
+              en: GameRant says at least 10 of each non-healing defense; +15 barrier per kill per stack (wiki) and it does not drain corruption.
+              ko: GameRant는 회복이 아닌 방어 아이템을 각각 최소 10개 권합니다. 처치당 보호막 개당 +15(위키)이며 타락을 줄이지 않습니다.
+          - id: ArmorPlate
+            priority: optional
+            note:
+              en: Flat damage reduction, no healing.
+              ko: 회복 없이 고정 피해 감소를 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: flat -5 damage per hit per stack (wiki) fades against late-game hits; 3 as filler.
+              ko: 개당 받는 피해 5 고정 감소(위키)라 후반 큰 피해에는 약합니다. 보조용으로 3개.
+          - id: PersonalShield
+            priority: optional
+            note:
+              en: Shields are not healing, so they do not drain corruption.
+              ko: 실드는 회복이 아니라 타락 수치를 줄이지 않습니다.
+            stacks:
+              target: 5
+            stacksReason:
+              en: +8% max-health shield per stack (wiki) that does not count as healing; 5 give 40%.
+              ko: 개당 최대 체력 8%의 실드(위키)이고 회복으로 치지 않습니다. 5개면 40%.
+          - id: HealOnCrit
+            priority: situational
+            stacks:
+              target: 1
+              max: 2
+            note:
+              en: 1-2 stacks give crit plus a little healing; more heals too much.
+              ko: 1~2개는 치명타와 약간의 회복을 줍니다. 더 많으면 회복이 과해집니다.
+            stacksReason:
+              en: one or two are fine; more healing drains corruption (1% per 1% of max HP healed, wiki).
+              ko: 1~2개는 괜찮지만, 회복이 늘면 타락이 줄어듭니다(최대 체력 1% 회복당 1%, 위키).
+        next:
+          - late
+      - id: damage
+        phase: mid
+        label:
+          en: Corrupted damage
+          ko: 타락 딜
+        when:
+          en: Take when you survive but kills are slow.
+          ko: 생존은 되지만 처치가 느리다면 고르세요.
+        items:
+          - id: AttackSpeedOnCrit
+            priority: core
+            note:
+              en: Crit and attack speed in one item.
+              ko: 치명타와 공격 속도를 한 번에 줍니다.
+            stacks:
+              target: 3
+              min: 1
+            stacksReason:
+              en: the attack speed cap grows +24% per stack (wiki) and each adds 5% crit; 3 give an 84% cap.
+              ko: 공격 속도 상한이 개당 +24% 늘고(위키) 개당 치명타 5%도 줍니다. 3개면 상한 84%.
+          - id: FireRing
+            priority: core
+            note:
+              en: Flood exceeds the 400% threshold, so it triggers the Bands.
+              ko: 『침?수」는 400% 기준을 넘어 반지를 발동시킵니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: Flood triggers it; fixed 10 s recharge, +300% per stack (wiki), so 3 (900%).
+              ko: 범람이 발동시킵니다. 10초 고정 재충전에 개당 +300%(위키)라 3개(900%).
+          - id: IceRing
+            priority: optional
+            note:
+              en: Also triggered by Flood.
+              ko: 마찬가지로 『침?수」로 발동합니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: also triggered by Flood; +250% per stack on a fixed 10 s recharge (wiki), 2 as a companion to Kjaro's.
+              ko: 범람으로도 발동합니다. 10초 고정 재충전에 개당 +250%(위키), 캬로의 반지 보조로 2개.
+          - id: MissileVoid
+            priority: core
+            note:
+              en: One guide calls it a necessity; also raises minimum corruption as a void item.
+              ko: 필수라는 가이드가 있으며, 공허 아이템이라 최소 타락 수치도 올려 줍니다.
+            stacks:
+              target: 5
+              min: 1
+            stacksReason:
+              en: +40% missile damage per stack (wiki), and void items raise minimum corruption by 2% each; 5 is a solid goal.
+              ko: 개당 미사일 피해 +40%(위키)이고 공허 아이템마다 최소 타락이 2% 오릅니다. 5개를 목표로 하세요.
+          - id: ChainLightningVoid
+            priority: optional
+            note:
+              en: Recommended void item that also raises minimum corruption.
+              ko: 추천되는 공허 아이템으로 최소 타락 수치도 올려 줍니다.
+            stacks:
+              target: 3
+            stacksReason:
+              en: +3 hits per stack (wiki) and each void item raises minimum corruption; 3 (9 hits).
+              ko: 개당 타격 +3회(위키)이고 공허 아이템마다 최소 타락이 오릅니다. 3개(9회).
+        next:
+          - late
+      - id: late
+        phase: late
+        label:
+          en: Late game
+          ko: 후반
+        when:
+          en: Red chests, lunar pods and boss drops.
+          ko: 빨간 상자, 달 포드, 보스 보상에서 챙깁니다.
+        items:
+          - id: ShieldOnly
+            priority: situational
+            note:
+              en: Converts health to shields, which don't count as healing, so you get tanky in Corrupted form. The guide says take it ASAP.
+              ko: 체력이 실드로 바뀌는데 실드 회복은 회복으로 치지 않아 타락 상태에서도 단단해집니다. 가이드는 최대한 빨리 챙기라고 합니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one converts health to shields, which are not healing; extras only add +25% health (wiki).
+              ko: 1개로 체력이 실드로 바뀌며 실드는 회복으로 치지 않습니다. 추가분은 체력 +25%만 늘립니다(위키).
+          - id: MoreMissile
+            priority: core
+            note:
+              en: Big damage increase per the item guide.
+              ko: 아이템 가이드 기준 딜이 크게 오릅니다.
+            stacks:
+              target: 1
+            stacksReason:
+              en: one adds 2 missiles to every Plasma Shrimp proc; extras only add +50% missile damage (wiki).
+              ko: 1개로 플라즈마 새우 발동마다 미사일이 2발 늘고, 추가분은 미사일 피해 +50%만 늘립니다(위키).
+          - id: PermanentDebuffOnHit
+            priority: core
+            note:
+              en: Described as 'just broken' on Void Fiend.
+              ko: 공허 악마에게 '그냥 사기'라고 평가됩니다.
+            stacks:
+              target: 2
+            stacksReason:
+              en: core red here; two strip 4 armor per hit, and negative armor keeps adding damage toward a +100% ceiling (wiki).
+              ko: 이 빌드의 핵심 빨간 아이템입니다. 2개면 적중마다 방어력 4를 깎고, 음수 방어력은 최대 +100%까지 피해를 늘립니다(위키).
+          - id: IncreaseHealing
+            priority: situational
+            note:
+              en: Doubles healing so Suppress heals far more when you need an emergency exit; it also drains corruption faster.
+              ko: 회복량이 두 배가 되어 급할 때 【억??제】 회복이 커집니다. 대신 타락 수치도 더 빨리 줄어듭니다.
+            stacks:
+              target: 1
+              max: 1
+            stacksReason:
+              en: one doubles Suppress's emergency heal; more healing only drains corruption faster (wiki).
+              ko: 1개로 억제의 긴급 회복이 두 배가 됩니다. 회복이 더 늘면 타락만 빨리 줄어듭니다(위키).
+        next:
+          - loop
+      - id: loop
+        phase: loop
+        label:
+          en: Void stacking and loop scaling
+          ko: 공허 아이템 누적과 루프 스케일링
+        when:
+          en: After the first loop; void items now both scale damage and raise minimum corruption.
+          ko: 첫 루프 이후. 공허 아이템이 딜과 최소 타락 수치를 함께 올립니다.
+        items:
+          - id: UtilitySkillMagazine
+            priority: core
+            stacks:
+              target: 1
+            note:
+              en: "GameRant's late-game pick: two extra Trespass charges and a shorter cooldown."
+              ko: GameRant가 꼽은 후반 아이템입니다. 「?침?입】 충전 +2와 대기시간 감소.
+            stacksReason:
+              en: one gives two extra Trespass charges (GameRant) and the 33% cooldown cut, which does not stack (wiki).
+              ko: 1개로 침범 충전이 2회 늘고(GameRant) 대기시간 33% 감소는 중첩되지 않습니다(위키).
+          - id: BearVoid
+            priority: optional
+            stacks:
+              target: 15
+              min: 1
+            note:
+              en: "Wiki: Tougher Times and Safer Spaces extend Corrupted form without healing. Corrupts all your Tougher Times, so take it only when you prefer a void item count."
+              ko: "위키: 힘들었던 시절과 더 안전한 공간은 회복 없이 타락 상태를 늘려 줍니다. 힘들었던 시절을 모두 변환하니 공허 아이템 수를 늘리고 싶을 때만 챙기세요."
+            stacksReason:
+              en: picking it up corrupts all Tougher Times, so your ~15 become Safer Spaces, each a void item for minimum corruption.
+              ko: 획득하면 힘들었던 시절이 모두 변환되어 약 15개가 더 안전한 공간이 되고, 각각 최소 타락을 올리는 공허 아이템이 됩니다.
+          - id: ElementalRingVoid
+            priority: situational
+            stacks:
+              target: 5
+              min: 1
+            note:
+              en: Wiki lists Singularity Band as triggered by Flood; it corrupts your Kjaro's and Runald's Bands.
+              ko: 위키는 특이점 반지도 『침?수」로 발동한다고 합니다. 캬로의 반지와 루널드의 반지를 변환합니다.
+            stacksReason:
+              en: it corrupts Kjaro's and Runald's Bands, so your ~5 Bands become 5 Singularity Bands (+100% each, wiki).
+              ko: 캬로의 반지와 루널드의 반지를 모두 변환하므로 반지 약 5개가 특이점 반지 5개(개당 +100%, 위키)가 됩니다.
+          - id: CritDamage
+            priority: optional
+            stacks:
+              target: 1
+            note:
+              en: Once crit is at 100%, more crit chance is wasted (wiki), so crit damage is the remaining way to scale crits.
+              ko: 치명타 100%에 도달하면 치명타 확률은 낭비되므로(위키) 치명타 피해가 남은 성장 수단입니다.
+            stacksReason:
+              en: legendary; one adds +100% crit damage once crit is capped (wiki), and more keeps scaling linearly.
+              ko: 전설 아이템입니다. 치명타 확률이 상한일 때 1개로 치명타 피해 +100%(위키), 이후에도 선형으로 늘어납니다.
+        next: []
+    pickOrder:
+      common:
+        - CritGlasses
+        - Syringe
+        - Bear
+        - SecondarySkillMagazine
+        - BarrierOnKill
+        - ArmorPlate
+        - Hoof
+      uncommon:
+        - AttackSpeedOnCrit
+        - FireRing
+        - IceRing
+        - HealOnCrit
+        - Feather
+      legendary:
+        - PermanentDebuffOnHit
+        - MoreMissile
+        - UtilitySkillMagazine
+    milestones:
+      - when:
+          en: Once crit chance reaches 100%.
+          ko: 치명타 확률이 100%가 되면.
+        advice:
+          en: Stop taking Lens-Maker's Glasses; every crit already builds corruption. Move whites into attack speed and non-healing defense.
+          ko: 렌즈 제작자의 안경은 그만 챙기세요. 모든 공격이 이미 치명타로 타락 수치를 올립니다. 흰색은 공격 속도와 회복 없는 방어로 옮기세요.
+        take:
+          - Syringe
+          - Bear
+        stop:
+          - CritGlasses
+      - when:
+          en: Once you hold 2 Harvester's Scythes.
+          ko: 수확꾼의 낫이 2개가 되면.
+        advice:
+          en: More copies heal enough to drain corruption. Take Predatory Instincts for crit instead.
+          ko: 더 모으면 회복량이 타락 수치를 깎습니다. 치명타는 포식 본능으로 채우세요.
+        take:
+          - AttackSpeedOnCrit
+        stop:
+          - HealOnCrit
+      - when:
+          en: Once you have about 20 Tougher Times.
+          ko: 힘들었던 시절이 20개 정도 되면.
+        advice:
+          en: Block is at 75% and the next 20 add only about 11 points. Spread whites into Topaz Brooch and Repulsion Armor Plate.
+          ko: 막기 확률이 75%이고 다음 20개로도 약 11%p만 오릅니다. 흰색은 황옥 브로치와 반발성 방어구 철판으로 나누세요.
+        take:
+          - BarrierOnKill
+          - ArmorPlate
+        stop:
+          - Bear
+      - when:
+          en: When you have 13+ void items.
+          ko: 공허 아이템이 13개 이상일 때.
+        advice:
+          en: Minimum corruption is 26%+; Rogue Ranker says Suppress can then heal indefinitely since each use costs 25%. Keep taking void items except Weeping Fungus and Lost Seer's Lenses.
+          ko: 최소 타락 수치가 26% 이상이 됩니다. Rogue Ranker에 따르면 【억??제】가 25%를 소모하므로 사실상 계속 회복할 수 있습니다. 눈물 버섯과 사라진 예지자의 렌즈를 뺀 공허 아이템을 계속 챙기세요.
+        take:
+          - MissileVoid
+          - ChainLightningVoid
+        stop: []
+      - when:
+          en: In very long runs, with 50 void items.
+          ko: 아주 긴 런에서 공허 아이템이 50개일 때.
+        advice:
+          en: At 2% each, minimum corruption reaches 100% and locks you in Corrupted form (wiki), so healing no longer knocks you out of it.
+          ko: 개당 2%라 최소 타락 수치가 100%가 되어 타락 상태로 고정되므로(위키) 회복해도 더 이상 풀리지 않습니다.
+        take: []
+        stop: []
+    avoid:
+      - id: RepeatHeal
+        reason:
+          en: Removes 25% corruption, then another 50% over time, making it nearly impossible to corrupt.
+          ko: 타락 수치를 25% 줄인 뒤 50%를 더 서서히 줄여 타락이 거의 불가능해집니다.
+      - id: HealWhileSafe
+        reason:
+          en: Passive healing drains corruption.
+          ko: 지속 회복이 타락 수치를 줄입니다.
+      - id: MushroomVoid
+        reason:
+          en: Heals while sprinting, which makes holding Corrupted form very hard.
+          ko: 달리는 동안 회복되어 타락 상태를 유지하기가 매우 어렵습니다.
+      - id: CritGlassesVoid
+        reason:
+          en: It corrupts your Lens-Maker's Glasses, removing the crit chance that feeds corruption.
+          ko: 렌즈 제작자의 안경을 변환해 타락 수치를 올려 주는 치명타 확률을 없앱니다.
+      - id: Crowbar
+        reason:
+          en: "Patch-sensitive: guides said it amplified Corrupted Suppress self-damage, but patch 1.2.2.0 stopped marking you as the attacker. Low priority, not necessarily harmful now."
+          ko: "패치 영향: 타락한 【억??제】 자해 피해를 키운다는 가이드가 있었지만 1.2.2.0 패치로 자신이 공격자로 판정되지 않게 바뀌었습니다. 지금은 해롭다기보다 우선순위가 낮은 정도입니다."
+      - id: FragileDamageBonus
+        reason:
+          en: Same patch-sensitive self-damage warning as Crowbar.
+          ko: 쇠지렛대와 같은, 패치 영향을 받는 자해 피해 경고입니다.
+    evidence: |-
+      Corruption rules, Backup Magazine refill, crit items, Flood triggering Bands, Topaz Brooch, and the Corpsebloom / Cautious Slug / Weeping Fungus warnings: wiki.gg Void Fiend (strong). Syringe (attack speed scales Corrupted Drown, patch 1.2.2.0), Predatory Instincts, Rejuvenation Rack: Rogue Ranker. Pocket ICBM, Scorpion, Plasma Shrimp, Polylute, Transcendence, Topaz, Tougher Times: Steam item guide 2775783244 (March 2022). Defensive picks, void items raising minimum corruption, and Lost Seer's Lenses to avoid: GameRant (Aug 2022). Disagreements: Rogue Ranker says avoid Crowbar, Focus Crystal and Delicate Watch because of Suppress self-damage, while the 2022 Steam guide rates Focus Crystal 'extremely useful' and patch 1.2.2.0 says Corrupted Suppress no longer procs items on yourself. Crowbar/Watch stay in the avoid list with a patch flag; Focus Crystal is left out. The Steam guide says 'avoid all Heresy items', while wiki.gg says Essence of Heresy builds Ruin quickly with Corrupted Drown, and patch 1.2.3 lets Heresy override both skill versions; left out of the tree. Source quality: mixed. Most dedicated item guides are from 2022; no 2024+ patch changed Void Fiend's corruption beyond a Trespass overheat bug fix in Seekers of the Storm.
+
+      Stack counts and progression: Corruption rules (3%/s build, 6.67%/s decay, crits 2% per proc coefficient, 2% minimum per void item, can reach 100% and lock you in, healing drains 1% per 1% max HP): wiki.gg Void Fiend. 'Stack at least 10-20' of Topaz/Tougher Times/Armor Plate, '20 Tougher Times = 75%', '10 glasses = 100%', 'one or two Harvester's Scythes are acceptable', Hardlight late, avoid Weeping Fungus and Lost Seer's Lenses: GameRant (2022). Tougher Times hyperbolic table and Lens-Maker's effective limit of 10: wiki item pages. '13 void items -> 26% minimum, Suppress heals indefinitely': Rogue Ranker only, not verified in-game. The 50-void-item milestone is my calculation from the wiki's 2% per item. Laser Scope in the loop node follows from the wiki's 100% crit limit; no Void Fiend source names it. Disagreement: a separate search summary quoted '14 void items for permanent corruption', which contradicts the wiki's 2% per item, so it is not used. Steam item guide 2775783244 returned HTTP 429 and could not be re-read. No boss pick order: sources do not rank boss items for Void Fiend.
