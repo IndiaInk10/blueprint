@@ -33,6 +33,7 @@ const en = {
   },
   settings: {
     general: 'General',
+    games: 'Games',
     language: 'Language',
     languageDescription: 'Language of the app and the overlay. Item and survivor names come from your game files in the same language.',
     startup: {
@@ -114,6 +115,7 @@ const ko: Messages = {
   },
   settings: {
     general: '일반',
+    games: '게임별 설정',
     language: '언어',
     languageDescription: '앱과 오버레이의 언어입니다. 아이템·생존자 이름은 같은 언어의 게임 파일에서 가져옵니다.',
     startup: {

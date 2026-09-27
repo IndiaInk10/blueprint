@@ -75,6 +75,7 @@ function hostFor(gameId: string): MainHost {
       log: gameLog,
       storage: new GameStorage(join(app.getPath('userData'), 'games', `${gameId}.json`), gameLog),
       installDir: () => installDirs.get(gameId) ?? null,
+      isGameRunning: () => sessions.info(gameId) !== null,
       readScreen: (regions) => readGameScreen(gameId, regions),
     };
     hosts.set(gameId, host);

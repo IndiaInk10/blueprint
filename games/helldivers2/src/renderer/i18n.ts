@@ -41,6 +41,26 @@ const en = {
     noResults: 'No matches.',
     usedIn: 'Used in these loadouts and combos',
   },
+  graphics: {
+    title: 'DX11 lighting fix',
+    description:
+      'Makes lights and the flashlight reach farther and fade naturally under DX11 (launch option --use-d3d11), and sets Lighting Quality to High. Tuned on an RTX 3070 at 3440x1440.',
+    falloff: 'Light falloff distance',
+    lighting: 'Lighting quality (2 = High)',
+    notes: 'Close the game first: it rewrites this file when it exits. The game may reset the light value when you change lighting quality or a preset; apply again then. The previous file is kept as user_settings.config.bak.',
+    applied: 'Applied',
+    notApplied: 'Not applied',
+    apply: 'Apply',
+    restore: 'Restore backup',
+    doneApply: 'Applied. Start the game to see it.',
+    doneRestore: 'Restored the previous settings.',
+    results: {
+      'game-running': 'Close Helldivers 2 first; it rewrites the file when it exits.',
+      'not-found': 'The settings file was not found. Start the game once so it creates it.',
+      'no-backup': 'There is no backup to restore yet.',
+      done: '',
+    },
+  },
   overlay: {
     empty: 'Pick a loadout or combo in the main app (Show in overlay) and it shows here while you are on the ship.',
     auto: 'Suggested',
@@ -234,6 +254,26 @@ const ko: Hd2Messages = {
     unlimited: '무제한',
     noResults: '검색 결과가 없습니다.',
     usedIn: '이 장비를 쓰는 로드아웃·조합',
+  },
+  graphics: {
+    title: 'DX11 조명 보정',
+    description:
+      'DX11(실행 옵션 --use-d3d11)에서 조명과 손전등이 더 멀리 닿고 자연스럽게 흐려지도록 하고, 조명 품질을 High로 맞춥니다. RTX 3070 · 3440x1440 기준으로 맞춘 값입니다.',
+    falloff: '빛 감쇠 거리',
+    lighting: '조명 품질 (2 = High)',
+    notes: '게임을 끈 상태에서 적용하세요. 게임이 종료할 때 이 파일을 다시 씁니다. 조명 품질이나 프리셋을 바꾸면 게임이 값을 되돌릴 수 있으니 그때 다시 적용하면 됩니다. 이전 파일은 user_settings.config.bak으로 남겨 둡니다.',
+    applied: '적용됨',
+    notApplied: '미적용',
+    apply: '적용',
+    restore: '백업으로 되돌리기',
+    doneApply: '적용했습니다. 게임을 켜면 반영됩니다.',
+    doneRestore: '이전 설정으로 되돌렸습니다.',
+    results: {
+      'game-running': '헬다이버즈 2를 먼저 꺼 주세요. 게임이 종료할 때 파일을 다시 씁니다.',
+      'not-found': '설정 파일을 찾지 못했습니다. 게임을 한 번 실행하면 만들어집니다.',
+      'no-backup': '아직 되돌릴 백업이 없습니다.',
+      done: '',
+    },
   },
   overlay: {
     empty: '메인 앱에서 로드아웃이나 조합을 오버레이에 표시하면, 함선에 있을 때 여기에 나옵니다.',
