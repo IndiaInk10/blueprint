@@ -24,7 +24,9 @@ export function Icon({ src, className, kind }: { src: string | undefined; classN
   if (!src || failed === src) {
     return kind === 'stratagem' ? <StratagemPlaceholder className={className} /> : <span className={`${className} empty`} aria-hidden />;
   }
-  return <img className={className} src={src} alt="" loading="lazy" draggable={false} onError={() => setFailed(src)} />;
+  // Weapon renders are dark and padded; the is-weapon class lifts and crops them (hd2.css).
+  const classes = kind === 'weapon' ? `${className} is-weapon` : className;
+  return <img className={classes} src={src} alt="" loading="lazy" draggable={false} onError={() => setFailed(src)} />;
 }
 
 const CARD_WIDTH = 320;
@@ -137,6 +139,7 @@ export function EquipTile({
   missing?: boolean;
 }) {
   const { content, tr, icon } = useHd2();
+  const t = useT();
   const tier = useTier(kind, id, faction);
   const entry =
     kind === 'weapon'
@@ -151,6 +154,7 @@ export function EquipTile({
     <Hover kind={kind} id={id} note={note}>
       <span className={`hd2-tile kind-${kind}${missing ? ' missing' : ''}`}>
         <span className="hd2-tile-frame">
+          {missing && <span className="hd2-tile-missing">{t.missing.tag}</span>}
           <Icon src={icon(kind, id)} className="hd2-tile-icon" kind={kind} />
           {tier && (
             <span className="hd2-tile-tier">

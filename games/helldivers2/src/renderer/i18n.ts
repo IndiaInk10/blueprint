@@ -187,6 +187,7 @@ const en = {
   },
   missing: {
     title: 'Not owned yet',
+    tag: 'Not owned',
     needs: (warbonds: string) => `Needs ${warbonds}`,
     other: 'Superstore or event only',
   },
@@ -372,6 +373,7 @@ const ko: Hd2Messages = {
   },
   missing: {
     title: '아직 없음',
+    tag: '미보유',
     needs: (warbonds) => `필요한 채권: ${warbonds}`,
     other: '슈퍼 상점·이벤트 전용',
   },
