@@ -25,6 +25,8 @@ export interface MainHost {
   storage: KeyValueStorage;
   /** Install directory of the game, or null while unknown or not installed. */
   installDir(): string | null;
+  /** Whether the game is running now, e.g. to refuse editing files the game rewrites on exit. */
+  isGameRunning(): boolean;
   /**
    * Reads text from parts of the game window with the OS's OCR, the way a screenshot would: the
    * game process is never touched. Resolves to the text lines per region id, or null while the

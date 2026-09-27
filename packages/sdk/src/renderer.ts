@@ -50,6 +50,8 @@ export interface GameRendererModule<S extends GameState = GameState> {
   overlayPanels: OverlayPanel<S>[];
   /** Data sources and credits, shown out of the way under Settings → About. */
   creditsView?: ComponentType;
+  /** Game-specific settings or tools, shown under Settings → Games. */
+  settingsView?: ComponentType;
   /** Everything worth jumping to from the host's global search. Called with the loaded content. */
   search?: (ui: GameUi<any>) => SearchEntry[];
 }

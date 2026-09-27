@@ -38,7 +38,7 @@ function describePanel(panel: OverlayPanel, t: Messages): string {
   }
 }
 
-type Category = 'general' | 'overlay' | 'about';
+type Category = 'general' | 'overlay' | 'games' | 'about';
 
 interface SettingsPageProps {
   games: GameManifest[];
@@ -52,6 +52,8 @@ export function SettingsPage({ games, settings }: SettingsPageProps) {
   const categories: { id: Category; label: string }[] = [
     { id: 'general', label: t.settings.general },
     { id: 'overlay', label: t.settings.overlayTitle },
+    // Only when some game module brings its own settings.
+    ...(games.some((game) => rendererModules.get(game.id)?.settingsView) ? [{ id: 'games' as const, label: t.settings.games }] : []),
     { id: 'about', label: t.settings.about },
   ];
 
@@ -73,6 +75,7 @@ export function SettingsPage({ games, settings }: SettingsPageProps) {
       <div className="settings-body">
         {settings && category === 'general' && <GeneralSettings settings={settings} update={update} />}
         {settings && category === 'overlay' && <OverlaySettings games={games} settings={settings} update={update} />}
+        {category === 'games' && <GamesSettings games={games} />}
         {category === 'about' && <About games={games} />}
       </div>
     </div>
@@ -300,6 +303,41 @@ function About({ games }: { games: GameManifest[] }) {
         <GameCredits key={game.id} game={game} />
       ))}
     </>
+  );
+}
+
+function GamesSettings({ games }: { games: GameManifest[] }) {
+  const t = useMessages();
+  return (
+    <>
+      <h2 className="settings-title">{t.settings.games}</h2>
+      {games.map((game) => (
+        <GameSettingsSection key={game.id} game={game} />
+      ))}
+    </>
+  );
+}
+
+/** A game module's own settings view, with the same content and action access as its other views. */
+function GameSettingsSection({ game }: { game: GameManifest }) {
+  const locale = useLocale();
+  const View = rendererModules.get(game.id)?.settingsView;
+  const bundle = useContentBundle(game.id, locale, null);
+  if (!View) return null;
+  return (
+    <section className="settings-group">
+      <div className="settings-group-title">
+        <SteamArt appId={game.steamAppId} kind="icon" className="game-icon" />
+        {localize(game.displayName, locale)}
+      </div>
+      <div className="setting-row">
+        <div className="setting-text">
+          <GameUiHost gameId={game.id} locale={locale} bundle={bundle}>
+            <View />
+          </GameUiHost>
+        </div>
+      </div>
+    </section>
   );
 }
 

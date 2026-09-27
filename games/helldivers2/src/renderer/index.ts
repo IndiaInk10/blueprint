@@ -4,6 +4,7 @@ import type { Hd2State } from '../state';
 import { ArsenalView } from './ArsenalView';
 import { CombosView } from './CombosView';
 import { CreditsView } from './CreditsView';
+import { GraphicsSettings } from './GraphicsSettings';
 import { LoadoutsView } from './LoadoutsView';
 import { LoadoutPanel } from './LoadoutPanel';
 import { hd2Search } from './search';
@@ -18,6 +19,7 @@ export const hd2Renderer: GameRendererModule<Hd2State> = {
     { id: 'arsenal', title: { ko: '무기고', en: 'Armory' }, component: ArsenalView },
   ],
   creditsView: CreditsView,
+  settingsView: GraphicsSettings,
   search: hd2Search,
   overlayPanels: [
     {

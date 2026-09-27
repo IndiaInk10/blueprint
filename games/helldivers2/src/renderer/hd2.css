@@ -681,6 +681,88 @@
   -webkit-line-clamp: 2;
 }
 
+/* ---- graphics fix (Settings → Games) ---------------------------------------------------- */
+
+.hd2-graphics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 640px;
+}
+
+.hd2-graphics-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--gg-text-strong);
+}
+
+.hd2-graphics-state {
+  padding: 1px 7px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 11px;
+  color: var(--gg-text-muted);
+}
+
+.hd2-graphics-state.ok {
+  background: color-mix(in srgb, var(--gg-positive) 30%, transparent);
+  color: var(--gg-positive-bright);
+}
+
+.hd2-graphics-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--gg-text);
+}
+
+.hd2-graphics-text.muted {
+  color: var(--gg-text-muted);
+}
+
+.hd2-graphics-text.warn {
+  color: #ffb454;
+}
+
+.hd2-graphics-text.ok {
+  color: var(--gg-positive-bright);
+}
+
+.hd2-graphics-values {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: var(--gg-radius);
+  background: rgba(0, 0, 0, 0.2);
+  list-style: none;
+  font-size: 12px;
+}
+
+.hd2-graphics-values li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--gg-text-muted);
+}
+
+.hd2-graphics-values .ok {
+  color: var(--gg-positive-bright);
+}
+
+.hd2-graphics-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.hd2-graphics-actions button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .hd2-panel-hint {
   margin: 8px 0 0;
   font-size: 11px;

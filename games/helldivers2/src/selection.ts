@@ -25,4 +25,7 @@ export const Hd2Action = {
   Select: 'select',
   GetProfile: 'get-profile',
   SetProfile: 'set-profile',
+  GraphicsStatus: 'graphics-status',
+  GraphicsApply: 'graphics-apply',
+  GraphicsRestore: 'graphics-restore',
 } as const;

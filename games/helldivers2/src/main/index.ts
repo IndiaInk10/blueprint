@@ -5,6 +5,7 @@ import { manifest } from '../manifest';
 import { Hd2Action, profileSchema, selectionSchema, type Profile, type Selection } from '../selection';
 import type { Hd2State } from '../state';
 import { bundledContent } from './bundled';
+import { applyLightingFix, graphicsStatus, restoreBackup } from './graphics';
 import { CORNER, PhaseTracker, phaseFromCorner } from './phase';
 
 /** Image source for `icon` file names: the Helldivers 2 wiki's static image path. */
@@ -123,6 +124,17 @@ export const hd2Main: GameMainModule<Hd2State, Hd2Content> = {
   },
   actions: {
     [Hd2Action.GetSelection]: (_payload, { host }) => readSelection(host),
+    [Hd2Action.GraphicsStatus]: () => graphicsStatus(),
+    [Hd2Action.GraphicsApply]: async (_payload, { host }) => {
+      const result = await applyLightingFix(host.isGameRunning());
+      host.log.info('Lighting fix', { result });
+      return result;
+    },
+    [Hd2Action.GraphicsRestore]: async (_payload, { host }) => {
+      const result = await restoreBackup(host.isGameRunning());
+      host.log.info('Settings restored from backup', { result });
+      return result;
+    },
     [Hd2Action.GetProfile]: (_payload, { host }) => readProfile(host),
     [Hd2Action.SetProfile]: (payload, { host }) => {
       const profile = profileSchema.parse(payload);
