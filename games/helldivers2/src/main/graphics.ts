@@ -1,5 +1,5 @@
-// Lighting fix for Helldivers 2 under DX11, applied to the game's own settings file.
-// Tuned on an RTX 3070 at 3440x1440: lights and the flashlight reach farther and fade naturally.
+// Helldivers 2 runs faster on DX11 (--use-d3d11), but its lights then fall off too early. This
+// corrects that in the game's own settings file. Tuned on an RTX 3070 at 3440x1440.
 import { copyFile, readFile, stat, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
