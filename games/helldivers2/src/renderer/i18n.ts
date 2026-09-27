@@ -44,6 +44,10 @@ const en = {
   overlay: {
     empty: 'Pick a loadout or combo in the main app (Show in overlay) and it shows here while you are on the ship.',
     auto: 'Suggested',
+    escHint: 'Press ESC to choose another loadout here.',
+    previous: 'Previous loadout',
+    next: 'Next loadout',
+    backToSuggested: 'Back to suggested',
   },
   credits: {
     guides: 'Community guides',
@@ -234,6 +238,10 @@ const ko: Hd2Messages = {
   overlay: {
     empty: '메인 앱에서 로드아웃이나 조합을 오버레이에 표시하면, 함선에 있을 때 여기에 나옵니다.',
     auto: '추천',
+    escHint: 'ESC를 누르면 여기서 다른 로드아웃을 고를 수 있습니다.',
+    previous: '이전 로드아웃',
+    next: '다음 로드아웃',
+    backToSuggested: '추천으로',
   },
   credits: {
     guides: '커뮤니티 공략',

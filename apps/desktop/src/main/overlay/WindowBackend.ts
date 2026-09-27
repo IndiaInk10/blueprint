@@ -18,6 +18,7 @@ export class WindowBackend {
   readonly window: BrowserWindow;
   private shown = false;
   private tracking = false;
+  private clickThrough = true;
   /** Handle of the followed game window, null while not tracking. */
   trackedWindow: number | null = null;
 
@@ -65,6 +66,14 @@ export class WindowBackend {
     stopWindowTracking();
     this.tracking = false;
     this.trackedWindow = null;
+  }
+
+  /** Click-through lets the game get every click; turned off only while a panel is being used. */
+  setClickThrough(clickThrough: boolean): void {
+    if (this.window.isDestroyed() || clickThrough === this.clickThrough) return;
+    this.clickThrough = clickThrough;
+    if (clickThrough) this.window.setIgnoreMouseEvents(true, { forward: true });
+    else this.window.setIgnoreMouseEvents(false);
   }
 
   setVisible(visible: boolean): void {

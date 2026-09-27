@@ -1,6 +1,7 @@
 import type { Hd2State } from '../state';
 import { Icon } from './EquipTile';
 import { useT } from './i18n';
+import { LoadoutPicker } from './LoadoutPicker';
 import { useHd2, useProfile } from './useHd2';
 import './hd2.css';
 
@@ -8,7 +9,7 @@ import './hd2.css';
  * Lobby panel: the chosen kit at a glance while picking equipment on the ship. In missions the
  * panel stays hidden (see showWhen in the module), so it never covers the HUD.
  */
-export function LoadoutPanel({ state }: { state: Hd2State }) {
+export function LoadoutPanel({ state, interactive = false }: { state: Hd2State; interactive?: boolean }) {
   const { content, tr, icon } = useHd2();
   const t = useT();
   const { profile } = useProfile();
@@ -70,6 +71,7 @@ export function LoadoutPanel({ state }: { state: Hd2State }) {
           </li>
         ))}
       </ul>
+      {interactive ? <LoadoutPicker kit={kit} pinned={!!pinned} /> : <p className="hd2-panel-hint">{t.overlay.escHint}</p>}
     </div>
   );
 }
