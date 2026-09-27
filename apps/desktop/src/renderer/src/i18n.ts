@@ -78,7 +78,6 @@ const en = {
     toggle: (keys: string) => `${keys} shows or hides it`,
     about: 'About',
     dataSources: 'Data sources',
-    fontCredit: 'Font: Pretendard by Kil Hyung-jin, SIL Open Font License 1.1.',
   },
 };
 
@@ -160,7 +159,6 @@ const ko: Messages = {
     toggle: (keys) => `${keys} 키로 켜고 끄기`,
     about: '정보',
     dataSources: '데이터 출처',
-    fontCredit: '글꼴: Pretendard (길형진), SIL Open Font License 1.1.',
   },
 };
 
