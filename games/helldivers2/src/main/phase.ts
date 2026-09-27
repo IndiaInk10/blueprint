@@ -14,3 +14,34 @@ export function phaseFromCorner(lines: readonly string[]): Hd2State['phase'] | n
   // OCR sometimes reads the S as 5 or $; the ship name always starts with SES.
   return /\b[S5$]E[S5$]\b/i.test(text) ? 'lobby' : 'mission';
 }
+
+/** Consecutive agreeing reads needed before the phase changes (reads are ~2 s apart). */
+export const CONFIRM_READS = 2;
+
+/**
+ * Turns noisy per-read guesses into a stable phase: OCR sometimes misreads a single frame, and
+ * the corner changes briefly (menus, map), so one odd read must not flip the overlay.
+ */
+export class PhaseTracker {
+  private current: Hd2State['phase'] = 'unknown';
+  private candidate: Hd2State['phase'] | null = null;
+  private streak = 0;
+
+  constructor(private readonly confirmReads = CONFIRM_READS) {}
+
+  /** Feed one read; returns the new phase when it changes, else null. */
+  observe(read: Hd2State['phase'] | null): Hd2State['phase'] | null {
+    if (read === null || read === this.current) {
+      this.candidate = null;
+      this.streak = 0;
+      return null;
+    }
+    this.streak = read === this.candidate ? this.streak + 1 : 1;
+    this.candidate = read;
+    if (this.streak < this.confirmReads) return null;
+    this.current = read;
+    this.candidate = null;
+    this.streak = 0;
+    return read;
+  }
+}

@@ -5,7 +5,7 @@ import { manifest } from '../manifest';
 import { Hd2Action, profileSchema, selectionSchema, type Profile, type Selection } from '../selection';
 import type { Hd2State } from '../state';
 import { bundledContent } from './bundled';
-import { CORNER, phaseFromCorner } from './phase';
+import { CORNER, PhaseTracker, phaseFromCorner } from './phase';
 
 /** Image source for `icon` file names: the Helldivers 2 wiki's static image path. */
 const IMAGE_BASE_URL = 'https://helldivers.wiki.gg/images/';
@@ -72,7 +72,8 @@ export const hd2Main: GameMainModule<Hd2State, Hd2Content> = {
       id: 'screen',
       priority: SCREEN_PRIORITY,
       start(host, emit) {
-        let phase: Hd2State['phase'] = 'unknown';
+        const tracker = new PhaseTracker();
+        let lastRead: Hd2State['phase'] | null = null;
         let busy = false;
         const timer = setInterval(() => {
           if (busy || !host.readScreen) return;
@@ -80,9 +81,14 @@ export const hd2Main: GameMainModule<Hd2State, Hd2Content> = {
           host
             .readScreen([CORNER])
             .then((texts) => {
-              const next = texts ? phaseFromCorner(texts[CORNER.id] ?? []) : null;
-              if (next && next !== phase) {
-                phase = next;
+              if (!texts) return;
+              const lines = texts[CORNER.id] ?? [];
+              const read = phaseFromCorner(lines);
+              // What the corner said whenever a single read disagrees with the last one.
+              if (read !== lastRead) host.log.info('Corner read', { read, text: lines.join(' | ') });
+              lastRead = read;
+              const phase = tracker.observe(read);
+              if (phase) {
                 host.log.info('Phase changed', { phase });
                 emit({ phase });
               }
